@@ -87,8 +87,6 @@ pip install crfm-helm
 
 ## Data
 
-## :star: Downloading the Dataset
-
 The dataset is publicly available at [BEHAVIOR Annotations](https://github.com/embodied-agent-eval/embodied-agent-eval/blob/main/dataset/behavior_data.json) and [VirtualHome Annotations](https://github.com/embodied-agent-eval/embodied-agent-eval/blob/main/dataset/virtualhome_data.json).
 
 The dataset is in JSON format:

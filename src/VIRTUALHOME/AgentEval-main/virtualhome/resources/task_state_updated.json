@@ -1,0 +1,1871 @@
+{
+  "scene_1": {
+    "Wash clothes": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1045_2",
+        "1073_2",
+        "138_2",
+        "162_2",
+        "194_1",
+        "245_2",
+        "27_2",
+        "389_2",
+        "391_1",
+        "393_2",
+        "417_1",
+        "475_1",
+        "583_2",
+        "621_2",
+        "627_2",
+        "78_1",
+        "804_1",
+        "806_2",
+        "850_1",
+        "954_2",
+        "957_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'washing_machine', 'state': 'PLUGGED_IN'}": 19,
+            "{'name': 'washing_machine', 'state': 'CLOSED'}": 16,
+            "{'name': 'washing_machine', 'state': 'ON'}": 16
+          },
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?|?[<Property.GRABBABLE: 2>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'washing_machine'}": [
+              {
+                "soap": 6,
+                "laundry_detergent": 3,
+                "detergent": 1
+              },
+              10
+            ],
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.HANGABLE: 5>, <Property.CLOTHES: 16>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.COVER_OBJECT: 19>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'washing_machine'}": [
+              {
+                "clothes_pants": 7,
+                "clothes_shirt": 4,
+                "clothes_jacket": 1,
+                "clothes_dress": 2,
+                "clothes_underwear": 1,
+                "sheets": 1
+              },
+              16
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1045_2', -1)",
+        "('1073_2', -1)",
+        "('138_2', -1)",
+        "('162_2', -1)",
+        "('194_1', -1)",
+        "('245_2', -1)",
+        "('27_2', 0)",
+        "('389_2', -1)",
+        "('391_1', -1)",
+        "('393_2', -1)",
+        "('417_1', 0)",
+        "('475_1', -1)",
+        "('583_2', -1)",
+        "('621_2', -1)",
+        "('627_2', -1)",
+        "('78_1', -1)",
+        "('804_1', -1)",
+        "('806_2', -1)",
+        "('850_1', 0)",
+        "('954_2', 0)",
+        "('957_2', -1)"
+      ]
+    },
+    "Turn on light": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1083_1",
+        "11_1",
+        "120_1",
+        "125_2",
+        "150_2",
+        "160_1",
+        "180_2",
+        "205_1",
+        "222_1",
+        "232_2",
+        "310_1",
+        "311_1",
+        "331_2",
+        "339_1",
+        "345_1",
+        "392_1",
+        "394_2",
+        "432_1",
+        "443_2",
+        "445_1",
+        "511_1",
+        "585_1",
+        "604_2",
+        "616_1",
+        "627_1",
+        "705_1",
+        "708_1",
+        "715_2",
+        "737_2",
+        "780_1",
+        "812_1",
+        "835_2",
+        "85_2",
+        "874_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'light', 'state': 'PLUGGED_IN'}": 36,
+            "{'name': 'light', 'state': 'ON'}": 36
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {
+            "{'name': 'floor_lamp', 'state': 'ON'}": 10
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1083_1', -1)",
+        "('11_1', 1)",
+        "('120_1', 0)",
+        "('125_2', 0)",
+        "('150_2', 0)",
+        "('160_1', 0)",
+        "('180_2', 0)",
+        "('205_1', 0)",
+        "('222_1', 0)",
+        "('232_2', 0)",
+        "('310_1', 0)",
+        "('311_1', 1)",
+        "('331_2', 0)",
+        "('339_1', 0)",
+        "('345_1', 0)",
+        "('392_1', 0)",
+        "('394_2', 0)",
+        "('432_1', 1)",
+        "('443_2', 1)",
+        "('445_1', 0)",
+        "('511_1', 0)",
+        "('585_1', 0)",
+        "('604_2', 0)",
+        "('616_1', 0)",
+        "('627_1', 1)",
+        "('705_1', 1)",
+        "('708_1', 0)",
+        "('715_2', 0)",
+        "('737_2', 0)",
+        "('780_1', 0)",
+        "('812_1', 0)",
+        "('835_2', 1)",
+        "('85_2', 0)",
+        "('874_2', 0)"
+      ]
+    },
+    "Brush teeth": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "186_1",
+        "491_2",
+        "696_1",
+        "805_2",
+        "975_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.POURABLE: 10>, <Property.CAN_OPEN: 11>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?'}": [
+              {
+                "tooth_paste": 1
+              },
+              1
+            ],
+            "{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "toothbrush": 1
+              },
+              1
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "toothbrush": 1
+              },
+              1
+            ],
+            "{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.POURABLE: 10>, <Property.CAN_OPEN: 11>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?'}": [
+              {
+                "tooth_paste": 1
+              },
+              1
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_RH|HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "toothbrush": 2
+              },
+              2
+            ]
+          },
+          "accurate_edge_state": {
+            "{'from_name': 'tooth_paste', 'relation': 'INSIDE', 'to_name': 'toothbrush'}": 1
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('186_1', -1)",
+        "('491_2', 0)",
+        "('696_1', 1)",
+        "('805_2', -1)",
+        "('975_1', -1)"
+      ]
+    },
+    "Write an email": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1003_2",
+        "1040_2",
+        "115_2",
+        "122_2",
+        "182_1",
+        "185_2",
+        "273_2",
+        "349_2",
+        "402_1",
+        "407_1",
+        "430_1",
+        "481_2",
+        "622_1",
+        "699_1",
+        "749_2",
+        "792_2",
+        "824_1",
+        "87_2",
+        "884_1",
+        "986_2",
+        "996_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'laptop', 'state': 'ON'}|{'name': 'computer', 'state': 'ON'}": 14
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": [
+            "Type"
+          ]
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": [
+            "Type",
+            "Switch off"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1003_2', 1)",
+        "('1040_2', -1)",
+        "('115_2', 0)",
+        "('122_2', -1)",
+        "('182_1', -1)",
+        "('185_2', -1)",
+        "('273_2', -1)",
+        "('349_2', -1)",
+        "('402_1', -1)",
+        "('407_1', 0)",
+        "('430_1', 0)",
+        "('481_2', 1)",
+        "('622_1', 0)",
+        "('699_1', 0)",
+        "('749_2', -1)",
+        "('792_2', -1)",
+        "('824_1', 0)",
+        "('87_2', 0)",
+        "('884_1', -1)",
+        "('986_2', 1)",
+        "('996_2', 0)"
+      ]
+    },
+    "Put groceries in Fridge": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1004_2",
+        "119_1",
+        "152_2",
+        "155_2",
+        "203_1",
+        "224_2",
+        "247_1",
+        "267_1",
+        "296_1",
+        "298_2",
+        "524_1",
+        "609_2",
+        "650_1",
+        "656_1",
+        "692_2",
+        "703_2",
+        "725_1",
+        "765_1",
+        "772_1",
+        "837_2",
+        "897_1",
+        "89_1",
+        "8_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'freezer', 'state': 'OPEN'}": 8,
+            "{'name': 'freezer', 'state': 'PLUGGED_IN'}": 8
+          },
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.EATABLE: 7>, <Property.CUTTABLE: 9>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.EATABLE: 7>, <Property.CUTTABLE: 9>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?', 'relation': 'INSIDE', 'to_name': 'freezer'}": [
+              {
+                "food_food": 11,
+                "food_carrot": 1,
+                "food_cheese": 1
+              },
+              13
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1004_2', 0)",
+        "('119_1', -1)",
+        "('152_2', 0)",
+        "('155_2', -1)",
+        "('203_1', -1)",
+        "('224_2', -1)",
+        "('247_1', -1)",
+        "('267_1', -1)",
+        "('296_1', -1)",
+        "('298_2', 0)",
+        "('524_1', -1)",
+        "('609_2', 0)",
+        "('650_1', -1)",
+        "('656_1', -1)",
+        "('692_2', -1)",
+        "('703_2', 0)",
+        "('725_1', -1)",
+        "('765_1', -1)",
+        "('772_1', 0)",
+        "('837_2', 0)",
+        "('897_1', -1)",
+        "('89_1', -1)",
+        "('8_1', -1)"
+      ]
+    },
+    "Go to toilet": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1007_2",
+        "158_1",
+        "323_2",
+        "360_2",
+        "430_2",
+        "478_1",
+        "496_1",
+        "624_2",
+        "751_2",
+        "883_2",
+        "992_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'ON', 'to_name': 'toilet'}": [
+              {
+                "character": 4
+              },
+              4
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'FACING', 'to_name': 'toilet'}": [
+              {
+                "character": 2
+              },
+              2
+            ]
+          },
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'INSIDE', 'to_name': 'bathroom'}": 10
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1007_2', -1)",
+        "('158_1', 1)",
+        "('323_2', 0)",
+        "('360_2', -1)",
+        "('430_2', 0)",
+        "('478_1', 0)",
+        "('496_1', 1)",
+        "('624_2', 0)",
+        "('751_2', -1)",
+        "('883_2', -1)",
+        "('992_1', -1)"
+      ]
+    },
+    "Change TV channel": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1019_1",
+        "1026_1",
+        "102_2",
+        "1065_1",
+        "133_2",
+        "140_1",
+        "162_1",
+        "188_1",
+        "198_2",
+        "236_2",
+        "250_1",
+        "319_2",
+        "325_2",
+        "530_1",
+        "538_1",
+        "579_2",
+        "647_2",
+        "664_1",
+        "67_1",
+        "701_1",
+        "729_1",
+        "755_1",
+        "800_1",
+        "803_2",
+        "824_2",
+        "82_1",
+        "858_2",
+        "959_1",
+        "960_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'television', 'state': 'ON'}": 16,
+            "{'name': 'television', 'state': 'PLUGGED_IN'}": 15
+          },
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'HOLDS_RH', 'to_name': 'remote_control'}": [
+              {
+                "character": 19
+              },
+              19
+            ],
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': '?[<Property.HAS_SWITCH: 12>, <Property.LOOKABLE: 14>, <Property.HAS_PLUG: 20>]?|?[<Property.GRABBABLE: 2>, <Property.HAS_SWITCH: 12>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "television": 16,
+                "remote_control": 2
+              },
+              18
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Touch|Push"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1019_1', -1)",
+        "('1026_1', -1)",
+        "('102_2', -1)",
+        "('1065_1', -1)",
+        "('133_2', -1)",
+        "('140_1', -1)",
+        "('162_1', -1)",
+        "('188_1', 0)",
+        "('198_2', -1)",
+        "('236_2', -1)",
+        "('250_1', -1)",
+        "('319_2', -1)",
+        "('325_2', -1)",
+        "('530_1', -1)",
+        "('538_1', -1)",
+        "('579_2', -1)",
+        "('647_2', -1)",
+        "('664_1', -1)",
+        "('67_1', -1)",
+        "('701_1', -1)",
+        "('729_1', -1)",
+        "('755_1', -1)",
+        "('800_1', -1)",
+        "('803_2', 0)",
+        "('824_2', -1)",
+        "('82_1', -1)",
+        "('858_2', -1)",
+        "('959_1', -1)",
+        "('960_2', 0)"
+      ]
+    },
+    "Work": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "101_2",
+        "1068_1",
+        "1085_2",
+        "135_2",
+        "153_2",
+        "196_2",
+        "198_1",
+        "201_2",
+        "232_1",
+        "234_1",
+        "343_2",
+        "373_1",
+        "406_2",
+        "409_2",
+        "419_1",
+        "433_1",
+        "437_2",
+        "440_1",
+        "453_2",
+        "46_1",
+        "475_2",
+        "503_1",
+        "670_2",
+        "719_2",
+        "757_2",
+        "787_2",
+        "795_1",
+        "819_1",
+        "825_1",
+        "874_1",
+        "88_1",
+        "910_1",
+        "91_2",
+        "93_2",
+        "962_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'computer', 'state': 'ON'}": 31
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': 'homework'}": 1,
+            "{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': 'homework'}": 1
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('101_2', 0)",
+        "('1068_1', 0)",
+        "('1085_2', -1)",
+        "('135_2', -1)",
+        "('153_2', 0)",
+        "('196_2', 0)",
+        "('198_1', 0)",
+        "('201_2', 0)",
+        "('232_1', 0)",
+        "('234_1', 0)",
+        "('343_2', 0)",
+        "('373_1', 0)",
+        "('406_2', 0)",
+        "('409_2', 0)",
+        "('419_1', 0)",
+        "('433_1', 0)",
+        "('437_2', 0)",
+        "('440_1', 0)",
+        "('453_2', 0)",
+        "('46_1', 0)",
+        "('475_2', 0)",
+        "('503_1', 0)",
+        "('670_2', 0)",
+        "('719_2', 0)",
+        "('757_2', 0)",
+        "('787_2', 0)",
+        "('795_1', 0)",
+        "('819_1', 0)",
+        "('825_1', -1)",
+        "('874_1', 0)",
+        "('88_1', -1)",
+        "('910_1', 0)",
+        "('91_2', 0)",
+        "('93_2', 0)",
+        "('962_1', 0)"
+      ]
+    },
+    "Wash dishes with dishwasher": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1021_1",
+        "1047_2",
+        "151_2",
+        "174_1",
+        "183_1",
+        "190_1",
+        "201_1",
+        "223_2",
+        "327_2",
+        "366_1",
+        "378_1",
+        "383_1",
+        "403_2",
+        "417_2",
+        "44_1",
+        "453_1",
+        "455_2",
+        "468_2",
+        "487_1",
+        "568_1",
+        "650_2",
+        "783_1",
+        "815_2",
+        "826_1",
+        "856_1",
+        "88_2",
+        "911_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'dishwasher', 'state': 'CLOSED'}": 23,
+            "{'name': 'dishwasher', 'state': 'ON'}": 23
+          },
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?', 'relation': 'ON', 'to_name': 'dishwasher'}": [
+              {
+                "dish_soap": 21
+              },
+              21
+            ],
+            "{'from_name': '?[<Property.SURFACES: 1>, <Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.CAN_OPEN: 11>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'dishwasher'}": [
+              {
+                "plate": 29,
+                "cup": 11,
+                "drinking_glass": 3,
+                "fork": 5,
+                "knife": 3,
+                "spoon": 5,
+                "bowl": 2,
+                "pot": 1
+              },
+              59
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1021_1', -1)",
+        "('1047_2', -1)",
+        "('151_2', -1)",
+        "('174_1', -1)",
+        "('183_1', -1)",
+        "('190_1', 0)",
+        "('201_1', 0)",
+        "('223_2', 0)",
+        "('327_2', 0)",
+        "('366_1', -1)",
+        "('378_1', -1)",
+        "('383_1', 0)",
+        "('403_2', -1)",
+        "('417_2', 0)",
+        "('44_1', -1)",
+        "('453_1', -1)",
+        "('455_2', -1)",
+        "('468_2', -1)",
+        "('487_1', 0)",
+        "('568_1', -1)",
+        "('650_2', 0)",
+        "('783_1', 0)",
+        "('815_2', 0)",
+        "('826_1', 0)",
+        "('856_1', 0)",
+        "('88_2', -1)",
+        "('911_1', 0)"
+      ]
+    },
+    "Go to sleep": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1027_2",
+        "140_2",
+        "181_1",
+        "244_2",
+        "269_2",
+        "274_1",
+        "509_2",
+        "736_1",
+        "875_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'character', 'state': 'LYING'}": 8
+          },
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'ON', 'to_name': '?[<Property.SURFACES: 1>, <Property.SITTABLE: 3>, <Property.LIEABLE: 4>]?'}": [
+              {
+                "bed": 9
+              },
+              9
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Sleep"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1027_2', 0)",
+        "('140_2', -1)",
+        "('181_1', 0)",
+        "('244_2', 0)",
+        "('269_2', 0)",
+        "('274_1', -1)",
+        "('509_2', 0)",
+        "('736_1', -1)",
+        "('875_1', 0)"
+      ]
+    },
+    "Wash hands": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "102_1",
+        "154_2",
+        "176_1",
+        "214_1",
+        "258_2",
+        "499_1",
+        "517_1",
+        "549_2",
+        "562_1",
+        "580_1",
+        "657_1",
+        "660_1",
+        "672_1",
+        "697_1",
+        "710_1",
+        "741_1",
+        "750_2",
+        "805_1",
+        "80_1",
+        "813_2",
+        "928_2",
+        "995_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.COVER_OBJECT: 19>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.HANGABLE: 5>, <Property.CUTTABLE: 9>, <Property.COVER_OBJECT: 19>, <Property.HAS_PAPER: 21>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "towel": 4,
+                "paper_towel": 1
+              },
+              5
+            ],
+            "{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.MOVABLE: 22>, <Property.CREAM: 23>]?|?[<Property.GRABBABLE: 2>, <Property.COVER_OBJECT: 19>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "soap": 10,
+                "towel": 1
+              },
+              11
+            ],
+            "{'from_name': '?character?', 'relation': 'HOLDS_RH', 'to_name': 'towel'}": [
+              {
+                "character": 1
+              },
+              1
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'water', 'relation': 'INSIDE', 'to_name': 'hands_both'}": 2
+          },
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": [
+            "Rinse|Wash"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('102_1', 2)",
+        "('154_2', 2)",
+        "('176_1', 2)",
+        "('214_1', 2)",
+        "('258_2', 2)",
+        "('499_1', 2)",
+        "('517_1', 2)",
+        "('549_2', 2)",
+        "('562_1', 1)",
+        "('580_1', 2)",
+        "('657_1', 2)",
+        "('660_1', 2)",
+        "('672_1', 2)",
+        "('697_1', -1)",
+        "('710_1', 2)",
+        "('741_1', 2)",
+        "('750_2', 1)",
+        "('805_1', 2)",
+        "('80_1', 2)",
+        "('813_2', 2)",
+        "('928_2', 2)",
+        "('995_2', 2)"
+      ]
+    },
+    "Pet cat": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1035_1",
+        "1063_2",
+        "113_2",
+        "12_2",
+        "137_2",
+        "203_2",
+        "220_2",
+        "242_1",
+        "279_2",
+        "287_1",
+        "292_1",
+        "297_1",
+        "363_1",
+        "381_1",
+        "388_2",
+        "38_1",
+        "412_2",
+        "429_1",
+        "437_1",
+        "451_1",
+        "469_2",
+        "479_2",
+        "502_1",
+        "519_1",
+        "575_2",
+        "612_1",
+        "856_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'CLOSE', 'to_name': 'cat'}": 5
+          },
+          "actions": [
+            "Touch"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1035_1', 0)",
+        "('1063_2', -1)",
+        "('113_2', 0)",
+        "('12_2', 0)",
+        "('137_2', 0)",
+        "('203_2', 0)",
+        "('220_2', 0)",
+        "('242_1', 0)",
+        "('279_2', 0)",
+        "('287_1', 0)",
+        "('292_1', 0)",
+        "('297_1', 0)",
+        "('363_1', -1)",
+        "('381_1', 0)",
+        "('388_2', 0)",
+        "('38_1', 0)",
+        "('412_2', -1)",
+        "('429_1', 0)",
+        "('437_1', 0)",
+        "('451_1', 0)",
+        "('469_2', 0)",
+        "('479_2', 0)",
+        "('502_1', 0)",
+        "('519_1', -1)",
+        "('575_2', -1)",
+        "('612_1', 0)",
+        "('856_2', 0)"
+      ]
+    },
+    "Browse internet": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1043_2",
+        "1046_1",
+        "1047_1",
+        "13_2",
+        "145_1",
+        "169_2",
+        "187_2",
+        "216_1",
+        "246_1",
+        "263_2",
+        "274_2",
+        "275_1",
+        "282_1",
+        "365_1",
+        "371_1",
+        "384_1",
+        "385_1",
+        "393_1",
+        "394_1",
+        "406_1",
+        "426_1",
+        "446_1",
+        "521_2",
+        "527_2",
+        "540_1",
+        "60_1",
+        "624_1",
+        "71_2",
+        "7_1",
+        "810_1",
+        "928_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'computer', 'state': 'ON'}": 27
+          },
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': '?[<Property.HAS_SWITCH: 12>, <Property.LOOKABLE: 14>]?'}": [
+              {
+                "computer": 15
+              },
+              15
+            ],
+            "{'from_name': 'character', 'relation': 'HOLDS_RH|HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.HAS_PLUG: 20>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "keyboard": 5,
+                "mouse": 7
+              },
+              12
+            ]
+          },
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'INSIDE', 'to_name': 'home_office'}": 22
+          },
+          "actions": [
+            "Look at|Watch"
+          ]
+        },
+        {
+          "selected_node_state": {
+            "{'name': 'laptop', 'state': 'PLUGGED_IN'}": 1,
+            "{'name': 'laptop', 'state': 'ON'}": 1
+          },
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.HAS_SWITCH: 12>, <Property.LOOKABLE: 14>, <Property.HAS_PLUG: 20>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "laptop": 1
+              },
+              1
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Look at|Watch"
+          ]
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'FACING', 'to_name': 'phone'}": [
+              {
+                "character": 1
+              },
+              1
+            ]
+          },
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': 'phone'}": 1,
+            "{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': 'phone'}": 1
+          },
+          "actions": [
+            "Look at|Watch"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1043_2', -1)",
+        "('1046_1', -1)",
+        "('1047_1', -1)",
+        "('13_2', -1)",
+        "('145_1', -1)",
+        "('169_2', -1)",
+        "('187_2', -1)",
+        "('216_1', -1)",
+        "('246_1', -1)",
+        "('263_2', -1)",
+        "('274_2', -1)",
+        "('275_1', -1)",
+        "('282_1', -1)",
+        "('365_1', -1)",
+        "('371_1', -1)",
+        "('384_1', 0)",
+        "('385_1', -1)",
+        "('393_1', -1)",
+        "('394_1', -1)",
+        "('406_1', -1)",
+        "('426_1', -1)",
+        "('446_1', -1)",
+        "('521_2', -1)",
+        "('527_2', -1)",
+        "('540_1', 2)",
+        "('60_1', 1)",
+        "('624_1', -1)",
+        "('71_2', 0)",
+        "('7_1', 0)",
+        "('810_1', -1)",
+        "('928_1', -1)"
+      ]
+    },
+    "Wash teeth": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1045_1",
+        "1070_1",
+        "158_2",
+        "288_2",
+        "313_2",
+        "320_2",
+        "565_2",
+        "689_1",
+        "718_1",
+        "788_2",
+        "842_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_LH|HOLDS_RH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "toothbrush": 4
+              },
+              4
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1045_1', -1)",
+        "('1070_1', 0)",
+        "('158_2', -1)",
+        "('288_2', -1)",
+        "('313_2', 0)",
+        "('320_2', -1)",
+        "('565_2', -1)",
+        "('689_1', 0)",
+        "('718_1', 0)",
+        "('788_2', -1)",
+        "('842_2', -1)"
+      ]
+    },
+    "Listen to music": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1049_1",
+        "113_1",
+        "14_1",
+        "161_1",
+        "173_1",
+        "199_1",
+        "23_1",
+        "263_1",
+        "305_2",
+        "363_2",
+        "385_2",
+        "403_1",
+        "415_1",
+        "462_2",
+        "463_2",
+        "503_2",
+        "547_2",
+        "59_1",
+        "737_1",
+        "773_1",
+        "910_2",
+        "953_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'stereo', 'state': 'PLUGGED_IN'}": 10,
+            "{'name': 'stereo', 'state': 'CLOSED'}": 10,
+            "{'name': 'stereo', 'state': 'ON'}": 10
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {
+            "{'name': 'cd_player', 'state': 'PLUGGED_IN'}": 5,
+            "{'name': 'cd_player', 'state': 'CLOSED'}": 5,
+            "{'name': 'cd_player', 'state': 'ON'}": 5
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {
+            "{'name': 'dvd_player', 'state': 'PLUGGED_IN'}": 2,
+            "{'name': 'dvd_player', 'state': 'CLOSED'}": 2,
+            "{'name': 'dvd_player', 'state': 'ON'}": 2
+          },
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": []
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'headset', 'relation': 'ON', 'to_name': 'character'}": 3
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1049_1', 2)",
+        "('113_1', 1)",
+        "('14_1', -1)",
+        "('161_1', 0)",
+        "('173_1', 1)",
+        "('199_1', -1)",
+        "('23_1', 0)",
+        "('263_1', 0)",
+        "('305_2', 0)",
+        "('363_2', 2)",
+        "('385_2', 1)",
+        "('403_1', 0)",
+        "('415_1', 3)",
+        "('462_2', 0)",
+        "('463_2', 0)",
+        "('503_2', 1)",
+        "('547_2', -1)",
+        "('59_1', 3)",
+        "('737_1', 0)",
+        "('773_1', 0)",
+        "('910_2', 0)",
+        "('953_1', 1)"
+      ]
+    },
+    "Watch TV": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1057_1",
+        "117_1",
+        "134_1",
+        "144_1",
+        "170_1",
+        "197_2",
+        "21_2",
+        "225_2",
+        "259_1",
+        "306_2",
+        "307_2",
+        "326_1",
+        "329_1",
+        "342_2",
+        "377_2",
+        "383_2",
+        "411_1",
+        "441_2",
+        "454_2",
+        "459_1",
+        "471_2",
+        "510_2",
+        "548_2",
+        "570_2",
+        "595_1",
+        "665_2",
+        "684_2",
+        "74_1",
+        "806_1",
+        "858_1",
+        "979_1",
+        "98_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'television', 'state': 'PLUGGED_IN'}": 27,
+            "{'name': 'television', 'state': 'ON'}": 27
+          },
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': '?[<Property.HAS_SWITCH: 12>, <Property.LOOKABLE: 14>, <Property.HAS_PLUG: 20>]?'}": [
+              {
+                "television": 27
+              },
+              27
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Look at|Watch"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1057_1', 0)",
+        "('117_1', 0)",
+        "('134_1', 0)",
+        "('144_1', -1)",
+        "('170_1', 0)",
+        "('197_2', 0)",
+        "('21_2', 0)",
+        "('225_2', 0)",
+        "('259_1', 0)",
+        "('306_2', -1)",
+        "('307_2', 0)",
+        "('326_1', -1)",
+        "('329_1', 0)",
+        "('342_2', 0)",
+        "('377_2', 0)",
+        "('383_2', 0)",
+        "('411_1', 0)",
+        "('441_2', -1)",
+        "('454_2', 0)",
+        "('459_1', 0)",
+        "('471_2', -1)",
+        "('510_2', -1)",
+        "('548_2', 0)",
+        "('570_2', -1)",
+        "('595_1', 0)",
+        "('665_2', -1)",
+        "('684_2', 0)",
+        "('74_1', 0)",
+        "('806_1', 0)",
+        "('858_1', -1)",
+        "('979_1', -1)",
+        "('98_1', 0)"
+      ]
+    },
+    "Drink": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1064_1",
+        "10_2",
+        "156_1",
+        "171_2",
+        "175_2",
+        "17_1",
+        "181_2",
+        "26_1",
+        "286_2",
+        "291_1",
+        "317_2",
+        "488_2",
+        "510_1",
+        "528_1",
+        "532_1",
+        "589_1",
+        "600_1",
+        "628_2",
+        "657_2",
+        "662_1",
+        "688_1",
+        "787_1",
+        "788_1",
+        "810_2",
+        "814_1",
+        "850_2",
+        "861_2",
+        "878_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_RH|HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "water_glass": 12,
+                "cup": 9,
+                "drinking_glass": 4
+              },
+              25
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Drink"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1064_1', 0)",
+        "('10_2', -1)",
+        "('156_1', 0)",
+        "('171_2', 0)",
+        "('175_2', 0)",
+        "('17_1', -1)",
+        "('181_2', 0)",
+        "('26_1', 0)",
+        "('286_2', 0)",
+        "('291_1', 0)",
+        "('317_2', 0)",
+        "('488_2', 0)",
+        "('510_1', 0)",
+        "('528_1', 0)",
+        "('532_1', 0)",
+        "('589_1', 0)",
+        "('600_1', 0)",
+        "('628_2', -1)",
+        "('657_2', -1)",
+        "('662_1', 0)",
+        "('688_1', 0)",
+        "('787_1', 0)",
+        "('788_1', 0)",
+        "('810_2', -1)",
+        "('814_1', 0)",
+        "('850_2', 0)",
+        "('861_2', 0)",
+        "('878_2', 0)"
+      ]
+    },
+    "Read book": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1073_1",
+        "1087_1",
+        "1088_1",
+        "15_2",
+        "163_1",
+        "16_2",
+        "192_1",
+        "208_2",
+        "221_2",
+        "23_2",
+        "241_2",
+        "243_1",
+        "341_1",
+        "484_1",
+        "504_2",
+        "508_2",
+        "524_2",
+        "544_1",
+        "57_1",
+        "617_2",
+        "628_1",
+        "630_1",
+        "688_2",
+        "693_2",
+        "821_1",
+        "86_1",
+        "896_2",
+        "897_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'HOLDS_RH|HOLDS_LH', 'to_name': '?[<Property.GRABBABLE: 2>, <Property.CUTTABLE: 9>, <Property.CAN_OPEN: 11>, <Property.READABLE: 13>, <Property.HAS_PAPER: 21>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.CLOTHES: 16>, <Property.MOVABLE: 22>]?'}": [
+              {
+                "novel": 23,
+                "address_book": 1,
+                "spectacles": 1
+              },
+              25
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Read|Look at"
+          ]
+        },
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': 'character', 'relation': 'FACING', 'to_name': '?[<Property.HAS_SWITCH: 12>, <Property.LOOKABLE: 14>]?'}": [
+              {
+                "computer": 6
+              },
+              6
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Look at|Watch"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1073_1', 0)",
+        "('1087_1', -1)",
+        "('1088_1', 0)",
+        "('15_2', 0)",
+        "('163_1', 0)",
+        "('16_2', 0)",
+        "('192_1', 0)",
+        "('208_2', 0)",
+        "('221_2', 0)",
+        "('23_2', -1)",
+        "('241_2', 0)",
+        "('243_1', -1)",
+        "('341_1', 0)",
+        "('484_1', 0)",
+        "('504_2', 0)",
+        "('508_2', 0)",
+        "('524_2', -1)",
+        "('544_1', 0)",
+        "('57_1', 0)",
+        "('617_2', 0)",
+        "('628_1', 0)",
+        "('630_1', -1)",
+        "('688_2', 0)",
+        "('693_2', 0)",
+        "('821_1', 0)",
+        "('86_1', 0)",
+        "('896_2', 0)",
+        "('897_2', 0)"
+      ]
+    },
+    "Cook some food": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "1083_2",
+        "141_1",
+        "32_1",
+        "392_2",
+        "755_2",
+        "893_2",
+        "955_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'oven', 'state': 'PLUGGED_IN'}": 3,
+            "{'name': 'oven', 'state': 'CLOSED'}": 3,
+            "{'name': 'oven', 'state': 'ON'}": 3
+          },
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.CAN_OPEN: 11>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?|?[<Property.SURFACES: 1>, <Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.CONTAINERS: 15>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.EATABLE: 7>, <Property.CUTTABLE: 9>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'oven'}": [
+              {
+                "pot": 3,
+                "bowl": 1,
+                "sauce_pan": 1,
+                "food_chicken": 1
+              },
+              6
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('1083_2', 0)",
+        "('141_1', -1)",
+        "('32_1', -1)",
+        "('392_2', 0)",
+        "('755_2', 0)",
+        "('893_2', -1)",
+        "('955_2', -1)"
+      ]
+    },
+    "Relax on sofa": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "124_1",
+        "137_1",
+        "204_2",
+        "268_1",
+        "297_2",
+        "299_1",
+        "300_1",
+        "321_1",
+        "332_2",
+        "379_2",
+        "387_1",
+        "390_2",
+        "3_1",
+        "416_1",
+        "438_1",
+        "442_1",
+        "447_2",
+        "449_1",
+        "455_1",
+        "456_2",
+        "473_1",
+        "490_1",
+        "563_1",
+        "567_2",
+        "570_1",
+        "674_2",
+        "6_1",
+        "742_1",
+        "762_2",
+        "793_2",
+        "798_2",
+        "932_2",
+        "941_2",
+        "96_1",
+        "976_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'character', 'state': 'LYING'}|{'name': 'character', 'state': 'SITTING'}": 35
+          },
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'ON', 'to_name': 'couch'}": [
+              {
+                "character": 35
+              },
+              35
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('124_1', 0)",
+        "('137_1', 0)",
+        "('204_2', 0)",
+        "('268_1', 0)",
+        "('297_2', 0)",
+        "('299_1', 0)",
+        "('300_1', 0)",
+        "('321_1', 0)",
+        "('332_2', 0)",
+        "('379_2', 0)",
+        "('387_1', 0)",
+        "('390_2', 0)",
+        "('3_1', 0)",
+        "('416_1', 0)",
+        "('438_1', 0)",
+        "('442_1', 0)",
+        "('447_2', 0)",
+        "('449_1', 0)",
+        "('455_1', 0)",
+        "('456_2', 0)",
+        "('473_1', 0)",
+        "('490_1', 0)",
+        "('563_1', 0)",
+        "('567_2', 0)",
+        "('570_1', 0)",
+        "('674_2', 0)",
+        "('6_1', 0)",
+        "('742_1', 0)",
+        "('762_2', 0)",
+        "('793_2', 0)",
+        "('798_2', 0)",
+        "('932_2', 0)",
+        "('941_2', 0)",
+        "('96_1', 0)",
+        "('976_1', 0)"
+      ]
+    },
+    "Pick up phone": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "149_1",
+        "154_1",
+        "180_1",
+        "195_1",
+        "211_1",
+        "241_1",
+        "264_1",
+        "265_2",
+        "287_2",
+        "352_1",
+        "360_1",
+        "362_1",
+        "388_1",
+        "416_2",
+        "431_1",
+        "436_1",
+        "442_2",
+        "474_2",
+        "482_2",
+        "497_1",
+        "553_1",
+        "601_2",
+        "70_1",
+        "864_2",
+        "963_2",
+        "974_1",
+        "976_2",
+        "99_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': '?character?', 'relation': 'HOLDS_RH', 'to_name': 'phone'}": [
+              {
+                "character": 26
+              },
+              26
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('149_1', 0)",
+        "('154_1', 0)",
+        "('180_1', 0)",
+        "('195_1', 0)",
+        "('211_1', 0)",
+        "('241_1', 0)",
+        "('264_1', 0)",
+        "('265_2', 0)",
+        "('287_2', 0)",
+        "('352_1', 0)",
+        "('360_1', 0)",
+        "('362_1', -1)",
+        "('388_1', 0)",
+        "('416_2', -1)",
+        "('431_1', 0)",
+        "('436_1', 0)",
+        "('442_2', 0)",
+        "('474_2', 0)",
+        "('482_2', 0)",
+        "('497_1', 0)",
+        "('553_1', 0)",
+        "('601_2', 0)",
+        "('70_1', 0)",
+        "('864_2', 0)",
+        "('963_2', 0)",
+        "('974_1', 0)",
+        "('976_2', 0)",
+        "('99_2', 0)"
+      ]
+    },
+    "Make coffee": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "183_2",
+        "202_2",
+        "229_1",
+        "310_2",
+        "520_2",
+        "592_1",
+        "635_1",
+        "721_2",
+        "764_2",
+        "992_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {
+            "{'name': 'coffe_maker', 'state': 'PLUGGED_IN'}": 10,
+            "{'name': 'coffe_maker', 'state': 'ON'}": 8,
+            "{'name': 'coffe_maker', 'state': 'CLOSED'}": 6
+          },
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.GRABBABLE: 2>, <Property.HAS_PAPER: 21>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.CAN_OPEN: 11>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.DRINKABLE: 6>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'coffe_maker'}": [
+              {
+                "coffee_filter": 9,
+                "ground_coffee": 6,
+                "coffee": 2
+              },
+              17
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": [
+            "Pour"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('183_2', 0)",
+        "('202_2', -1)",
+        "('229_1', 0)",
+        "('310_2', 0)",
+        "('520_2', -1)",
+        "('592_1', -1)",
+        "('635_1', -1)",
+        "('721_2', 0)",
+        "('764_2', 0)",
+        "('992_2', -1)"
+      ]
+    },
+    "Set up table": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "318_1",
+        "419_2",
+        "446_2",
+        "525_2",
+        "710_2",
+        "739_2",
+        "84_1",
+        "93_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {
+            "{'from_name': '?[<Property.SURFACES: 1>, <Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.RECIPIENT: 8>, <Property.POURABLE: 10>, <Property.MOVABLE: 22>]?|?[<Property.GRABBABLE: 2>, <Property.CUTTABLE: 9>, <Property.COVER_OBJECT: 19>, <Property.HAS_PAPER: 21>, <Property.MOVABLE: 22>]?', 'relation': 'ON', 'to_name': 'table'}": [
+              {
+                "plate": 4,
+                "knife": 1,
+                "fork": 1,
+                "cup": 1,
+                "cloth_napkin": 1
+              },
+              8
+            ]
+          },
+          "accurate_edge_state": {},
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('318_1', -1)",
+        "('419_2', 0)",
+        "('446_2', 0)",
+        "('525_2', -1)",
+        "('710_2', 0)",
+        "('739_2', -1)",
+        "('84_1', 0)",
+        "('93_1', 0)"
+      ]
+    },
+    "Get some water": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "368_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'INSIDE', 'to_name': 'dining_room'}": 1
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('368_1', 0)"
+      ]
+    },
+    "Take shower": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "729_2",
+        "975_2"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {
+            "{'from_name': 'character', 'relation': 'CLOSE', 'to_name': 'shower'}": 2
+          },
+          "actions": []
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('729_2', 0)",
+        "('975_2', 0)"
+      ]
+    },
+    "Wash dishes by hand": {
+      "graph_state_path": "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds\\init_and_final_graphs\\TrimmedTestScene1_graph\\results_intentions_march-13-18",
+      "task_file_list": [
+        "231_2",
+        "31_1",
+        "349_1",
+        "397_1",
+        "429_2",
+        "553_2",
+        "594_2",
+        "695_2",
+        "746_1",
+        "961_1",
+        "988_1"
+      ],
+      "goal_candidates": [
+        {
+          "selected_node_state": {},
+          "selected_edge_state": {},
+          "accurate_edge_state": {},
+          "actions": [
+            "Grab",
+            "Wash|Rinse|Scrub|Wipe"
+          ]
+        }
+      ],
+      "task_file_list_with_ans": [
+        "('231_2', 0)",
+        "('31_1', 0)",
+        "('349_1', 0)",
+        "('397_1', 0)",
+        "('429_2', 0)",
+        "('553_2', 0)",
+        "('594_2', 0)",
+        "('695_2', -1)",
+        "('746_1', 0)",
+        "('961_1', 0)",
+        "('988_1', 0)"
+      ]
+    }
+  }
+}

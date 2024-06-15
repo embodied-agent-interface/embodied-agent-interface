@@ -1,0 +1,69 @@
+You are designing instructions for a household robot. The goal is to guide the robot to modify its environment from an initial state to a desired final state. The input will be the changed state of the current environment, and the changed state of the target environment. The output should be a list of action commands so that after the robot executes the action commands sequentially, the environment will change from the current state to the target state. 
+
+Data format:
+The environment state is a dictionary with two keys: "nodes" and "edges". The value of "nodes" is a list of sub-dictionaries, where each sub-dictionary represents an object, a room or the robot itself at home. The sub-dictionary specifies the node's id, category, name (by class_name), prefab_name, position (by bounding_box), properties and states.  The value of "edges" is also a list of sub-dictionaries, where each sub-dictionary represents a relation between nodes. The sub-dictionaries specify "from_id", "to_id" and "relation_type".
+Specifically, the robot itself has "category": "Characters", "class_name": "character", indicating the subject of actions.
+
+The changed state of current environment is those parts in current environment that is different from target environment. Similarly, the changed state of target environment is those parts in target environment that is different from current environment. The changed state emphasizes our target effects and potentially includes sides effects for the output action commands.
+
+Action commands have three types of format, please strictly follow the output format. 1)[action_name] 2) [action_name] <object_name> (object_id) 3) [action_name] <object_name1> (object_id1) <object_name2> (object_id2). Each action_name has a pre-defined number (0, 1, or 2) of objects to be applied. The object of action also needs to satisfied some properties preconditions. For example, SWITCHON's object number is 1. To switch on something, the object should 'HAS_SWITCH'. The rule is represented as SWITCHON = ("Switch on", 1, [['HAS_SWITCH']]). Another example is POUR. POUR's object number is 2. To pour sth A into sth B, A should be pourable and drinkable, and B should be RECIPIENT. The rule is represented as POUR = ("Pour", 2, [['POURABLE', 'DRINKABLE'], ['RECIPIENT']]).
+
+The rule's format is: action_name = (humanized name: str, required_number of parameters: int, preconditions for each objects: List[List[str]]). Here is the complete list of ALL supported actions. 
+
+CLOSE = ("Close", 1, [['CAN_OPEN']]) # as opposed to open sth, CLOSE sth means changing the state from OPEN to CLOSE, not get close to!
+DRINK = ("Drink", 1, [['DRINKABLE', 'RECIPIENT']]) # drink up sth
+FIND = ("Find", 1, [[]]) # find and get close to sth
+WALK = ("Walk", 1, [[]]) # walk towards sth, get close to sth
+GRAB = ("Grab", 1, [['GRABBABLE']]) # graph sth
+LOOKAT = ("Look at", 1, [[]]) # look at sth, face sth
+LOOKAT_SHORT = ("Look at short", 1, [[]]) # shortly look at sth
+LOOKAT_MEDIUM = LOOKAT
+LOOKAT_LONG = ("Look at long", 1, [[]]) # look at sth for long
+OPEN = ("Open", 1, [['CAN_OPEN']]) # open sth, as opposed to close sth
+POINTAT = ("Point at", 1, [[]]) # point at sth
+PUTBACK = ("Put", 2, [['GRABBABLE'], []]) # put object A back to object B
+PUTIN = ("Put in", 2, [['GRABBABLE'], ['CAN_OPEN']]) # put object A into object B
+PUTOBJBACK = ("Put back", 1, [[]]) # put object back to its original place
+RUN = ("Run", 1, [[]]) # run towards sth, get close to sth
+SIT = ("Sit", 1, [['SITTABLE']]) # sit on sth
+STANDUP = ("Stand up", 0) # stand up
+SWITCHOFF = ("Switch off", 1, [['HAS_SWITCH']] ) # switch sth off (normally lamp/light)
+SWITCHON = ("Switch on", 1, [['HAS_SWITCH']]) # switch sth on (normally lamp/light)
+TOUCH = ("Touch", 1, [[]]) # touch sth
+TURNTO = ("Turn to", 1, [[]]) # turn and face sth
+WATCH = ("Watch", 1, [[]]) # watch sth
+WIPE = ("Wipe", 1, [[]]) # wipe sth out
+PUTON = ("PutOn", 1, [['CLOTHES']]) # put on clothes, need to hold the clothes first
+PUTOFF = ("PutOff", 1, [['CLOHES']]) # put off clothes
+GREET = ("Greet", 1, [['PERSON']]) # greet to somebody
+DROP = ("Drop", 1, [[]]) # drop something in robot's current room, need to hold the thing first
+READ = ("Read", 1, [['READABLE']]) # read something, need to hold the thing first
+LIE = ("Lie", 1, [['LIEABLE']]) # lie on something, need to get close the thing first
+POUR = ("Pour", 2, [['POURABLE', 'DRINKABLE'], ['RECIPIENT']]) # pour object A into object B
+TYPE = ("Type", 1, [['HAS_SWITCH']]) # type on keyboard
+PUSH = ("Push", 1, [['MOVABLE']]) # move sth
+PULL = ("Pull", 1, [['MOVABLE']]) # move sth
+MOVE = ("Move", 1, [['MOVABLE']]) # move sth
+WASH = ("Wash", 1, [[]]) # wash sth
+RINSE = ("Rinse", 1, [[]]) # rinse sth
+SCRUB = ("Scrub", 1, [[]]) # scrub sth
+SQUEEZE = ("Squeeze", 1, [['CLOTHES']]) # squeeze the clothes
+PLUGIN = ("PlugIn", 1, [['HAS_PLUG']]) # plug in the plug
+PLUGOUT = ("PlugOut", 1, [['HAS_PLUG']]) # plug out the plug
+CUT = ("Cut", 1, [['EATABLE', 'CUTABLE']]) # cut some food
+EAT = ("Eat", 1, [['EATABLE']]) # eat some food
+RELEASE = ("Release", 1, [[]]) # drop sth inside the current room
+
+
+The action_name should be upper case, the object_name is "class_name" in "nodes" sub-dictionaries and the object_id is "id" in "nodes" sub-dictionaries. An action should strictly follow one of the given formats depending on the predefined number of objects: 1)[action_name] 2) [action_name] <object_name> (object_id) 3) [action_name] <object_name1> (object_id1) <object_name2> (object_id2). Keep the brackets, parenthesis and angle brackets.
+
+Input:
+the changed state of the current environment:
+<cur_change>
+
+the changed state of the target environment:
+<target_change>
+
+Please output the list of action commands (in the given format) so that after the robot executes the action commands sequentially, the current environment state will change to target environment state. Only output the list of action commands with nothing else.
+
+Output:

@@ -1,0 +1,6 @@
+include LICENSE
+
+graft igibson
+prune igibson/data
+
+global-exclude *.py[co]

@@ -1,0 +1,99 @@
+The goal is to guide the robot to take actions from current state to fulfill some node goals and edge goals. The input will be the related objects in the scene, nodes and edges in the current environment, and the desired node goals and edge goals. The output should be action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy the goals. 
+
+Data format:
+Objects in the scene indicates those objects involved in the action execution. It follows the format: <object_name> (object_id)
+
+Nodes and edges in the current environment shows the nodes' names, states and properties, and edges in the environment. 
+Nodes follow the format: object_name, states:... , properties:...
+Edges follow the format: object_name A is ... to object_name B
+ 
+Node goals show the target object states in the ending environment. They follow the format: object_name is ... (some state)
+
+Edge goals show the target relationships of objects in the ending environment. They follow the format: object_name A is ... (some relationship) to object_name B.
+
+Action commands include action name and objects. The number of objects (required_number of parameters) for each action is fixed and is given below, either 0, 1, or 2. The output action commands should be in json format. The dictionary keys should be action names. The dictionary values should be a list containing the objects of the corresponding action, where [] is for 0 object, [object] is for 1 object, [object 1, object 2] is for 2 objects. The action commands order is represented by the order they appear in the json dictionary. The key value pair appearing first will be executed first, the key value pair appearing second will be executed second, so on and so forth.
+
+For example, if you want to first FIND the sink and then PUTBACK cup to the sink, you should express it as {'FIND':['sink'], 'PUTBACK':['cup', 'sink']}
+
+The object of action also needs to satisfied some properties preconditions. For example, SWITCHON's object number is 1. To switch on something, the object should 'HAS_SWITCH'. The rule is represented as SWITCHON = ("Switch on", 1, [['HAS_SWITCH']]). Another example is POUR. POUR's object number is 2. To pour sth A into sth B, A should be pourable and drinkable, and B should be RECIPIENT. The rule is represented as POUR = ("Pour", 2, [['POURABLE', 'DRINKABLE'], ['RECIPIENT']]).
+
+Action Definitions Format:
+Each action is defined as a combination of:
+Action Name (String): A descriptive name for the action.
+Required Number of Parameters (Integer): The count of parameters needed to perform the action.
+Preconditions for Each Object (List of Lists of Strings): Conditions that must be met for each object involved in the action.
+
+Supported Actions List:
+CLOSE: (1, [['CAN_OPEN']]) # Change state from OPEN to CLOSED
+DRINK: (1, [['DRINKABLE', 'RECIPIENT']]) # Consume a drinkable item
+FIND: (1, [[]]) # Locate and approach an item
+WALK: (1, [[]]) # Move towards something
+GRAB: (1, [['GRABBABLE']]) # Take hold of an item that can be grabbed
+LOOK AT: (1, [[]]) # Direct your gaze towards something
+LOOK AT SHORT: (1, [[]]) # Briefly glance at something
+LOOK AT MEDIUM: (1, [[]]) # Look at something for a moderate duration (synonym for LOOK AT)
+LOOK AT LONG: (1, [[]]) # Look at something for an extended period
+OPEN: (1, [['CAN_OPEN']]) # Open an item that can be opened
+POINT AT: (1, [[]]) # Point towards something
+PUT BACK: (2, [['GRABBABLE'], []]) # Place one object back onto or into another
+PUT IN: (2, [['GRABBABLE'], ['CAN_OPEN']]) # Insert one object into another
+PUT OBJECT BACK: (1, [[]]) # Put object back to its original place
+RUN: (1, [[]]) # Run towards something
+SIT: (1, [['SITTABLE']]) # Sit on a suitable object
+STAND UP: (0, []) # Stand up from a sitting or lying position
+SWITCH OFF: (1, [['HAS_SWITCH']]) # Turn off an item with a switch
+SWITCH ON: (1, [['HAS_SWITCH']]) # Turn on an item with a switch
+TOUCH: (1, [[]]) # Physically touch something
+TURN TO: (1, [[]]) # Turn your body to face something
+WATCH: (1, [[]]) # Observe something attentively
+WIPE: (1, [[]]) # Clean or dry something by rubbing
+PUT ON: (1, [['CLOTHES']]) # Dress oneself with an item of clothing
+PUT OFF: (1, [['CLOTHES']]) # Remove an item of clothing
+GREET: (1, [['PERSON']]) # Offer a greeting to a person
+DROP: (1, [[]]) # Let go of something so it falls
+READ: (1, [['READABLE']]) # Read text from an object
+LIE: (1, [['LIEABLE']]) # Lay oneself down on an object
+POUR: (2, [['POURABLE', 'DRINKABLE'], ['RECIPIENT']]) # Transfer a liquid from one container to another
+PUSH: (1, [['MOVABLE']]) # Exert force on something to move it away from you
+PULL: (1, [['MOVABLE']]) # Exert force on something to bring it towards you
+MOVE: (1, [['MOVABLE']]) # Change the location of an object
+WASH: (1, [[]]) # Clean something by immersing and agitating it in water
+RINSE: (1, [[]]) # Remove soap from something by applying water
+SCRUB: (1, [[]]) # Clean something by rubbing it hard with a brush
+SQUEEZE: (1, [['CLOTHES']]) # Compress clothes to extract liquid
+PLUG IN: (1, [['HAS_PLUG']]) # Connect an electrical device to a power source
+PLUG OUT: (1, [['HAS_PLUG']]) # Disconnect an electrical device from a power source
+CUT: (1, [['EATABLE', 'CUTABLE']]) # Cut some food
+EAT: (1, [['EATABLE']]) # Eat some food
+RELEASE: (1, [[]]) # Let go of something inside the current room
+TYPE: (1, [['HAS_SWITCH']]) # Type on a keyboard
+
+Notice: 
+1. CLOSE action is opposed to OPEN action, CLOSE sth means changing the object's state from OPEN to CLOSE. 
+
+2. You cannot [PUTIN] <character> <room name>. If you want robot INSIDE some room, please [WALK] <room name>.
+
+3. The subject of all these actions is <character>, that is, robot itself. Do not include <character> as object_name. NEVER EVER use character as any of the object_name, that is, the argument of actions.
+
+4. The action name should be upper case. Don't output alias but output action name
+
+5. Importantly, if you want to apply ANY action on <object_name>, you should NEAR it. Therefore, you should apply WALK action as [WALK] <object_name> to first get near to the object before you apply any following actions, if you have no clue you are already NEAR <object_name>
+
+6. When output the objects, please only output object names but not their ids. Follow strictly the parameter number for each action. 
+
+Input:
+The relevant objects in the scene are:
+<object_in_scene>
+
+The current environment state is
+<cur_change>
+
+Node goals are:
+<node_goals>
+
+Edge goals are:
+<edge_goals>
+
+Please output the list of action commands (in json format) so that after the robot executes the action commands sequentially, the ending environment would satisfy all the node goals and edge goals. The dictionary keys should be action names. The dictionary values should be a list containing the objects of the corresponding action. Only output the json of action commands in a dictionary with nothing else.
+
+Output:

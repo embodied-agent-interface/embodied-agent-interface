@@ -1,0 +1,15 @@
+Found path: /viscam/u/shiyuz/virtualhome/virtualhome/demo/../linux_exec.v2.2.4.x86_64
+Can't get home directory! 
+(Filename:  Line: 409)
+
+Mono path[0] = '/viscam/u/shiyuz/virtualhome/virtualhome/demo/../linux_exec.v2.2.4_Data/Managed'
+Mono config path = '/viscam/u/shiyuz/virtualhome/virtualhome/demo/../linux_exec.v2.2.4_Data/MonoBleedingEdge/etc'
+Can't get home directory! 
+(Filename:  Line: 409)
+
+Unable to load player prefs
+Can't get home directory! 
+(Filename:  Line: 409)
+
+Unable to synchronize player prefs
+Desktop is 0 x 0 @ 0 Hz

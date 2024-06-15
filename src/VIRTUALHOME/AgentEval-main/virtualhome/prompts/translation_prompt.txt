@@ -1,0 +1,9 @@
+You are a helpful assistant helping to translate goals in json format into goals in natural language to facilitate LLM understanding. The goals describe some objects at home: node goals describe object states and edge goals describe the relationship between objects. For the input node and edge goals in json format, please rephrase them into natural language. Node goals and edge goals should be two lists, respectively, with each node/edge goal be a string in the list. Make sure the number of output goals is the same as the number of input goals, not to leave out any goal. 
+
+Node goals are:
+<node_goals>
+
+Edge goals are:
+<edge_goals>
+
+Output the goals in json dictionary as {'node_goals': OUTPUT NATURAL LANGUAGE NODE GOALS, 'edge_goals': OUTPUT NATURAL LANGUAGE EDGE GOALS}

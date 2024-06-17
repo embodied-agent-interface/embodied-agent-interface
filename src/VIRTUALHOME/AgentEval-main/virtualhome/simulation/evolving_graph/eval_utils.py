@@ -1,5 +1,5 @@
 import os
-from evolving_graph.environment import EnvironmentGraph, EnvironmentState
+from simulation.evolving_graph.environment import EnvironmentGraph
 import json
 import openai
 import time
@@ -8,8 +8,8 @@ import re
 import copy
 from collections import OrderedDict
 
-from evolving_graph.motion_planner import MotionPlanner
-import evolving_graph.utils as utils
+from simulation.evolving_graph.motion_planner import MotionPlanner
+import simulation.evolving_graph.utils as utils
 
 valid_actions = {
     "DRINK": ("DRINK", 1),
@@ -100,6 +100,15 @@ def parse_json(raw_llm_output):
     # format error
     return None
 
+def remove_duplicate_dicts(list_of_dicts):
+    def make_hashable(item):
+        if isinstance(item, dict):
+            return frozenset((key, make_hashable(value)) for key, value in item.items())
+        elif isinstance(item, list):
+            return tuple(make_hashable(element) for element in item)
+        return item
+    unique_dicts = {make_hashable(item): item for item in list_of_dicts}
+    return list(unique_dicts.values())
 
 def extract_script(file_path):
     with open(file_path, "r") as file:
@@ -236,6 +245,7 @@ def check_order_with_or_score(action_goals, input_string):
     cnt = 0
     tot = len(action_goals)
     start_index = 0
+    unsatisfied_action_goals = []
     for goal_group in action_goals:
         options = goal_group.split("|")
         found = False
@@ -249,30 +259,30 @@ def check_order_with_or_score(action_goals, input_string):
                 cnt += 1
                 break
         if not found:
+            unsatisfied_action_goals.append(goal_group)
             break
-    return cnt / tot
+    return cnt, unsatisfied_action_goals
 
-
-def json_to_action(action_json, relevant_id):
+def json_to_action(action_json, relevant_name_to_id):
     actions = []
-    try:
-        for action, objects in action_json.items():
-            if len(objects) == 0:
-                actions.append(f"[{action}]")
-            elif len(objects) == 1:
-                obg_id1 = relevant_id[objects[0]]
-                actions.append(f"[{action}] <{objects[0]}> ({obg_id1})")
-            elif len(objects) == 2:
-                obg_id1 = relevant_id[objects[0]]
-                obg_id2 = relevant_id[objects[1]]
-                actions.append(
-                    f"[{action}] <{objects[0]}> ({obg_id1}) <{objects[1]}> ({obg_id2})"
-                )
-        return actions
-    except Exception as e:
-        print(f"Error in converting json to action: {action_json}")
-        # raise e
-        return []
+    # try:
+    for action, objects in action_json.items():
+        if len(objects) == 0:
+            actions.append(f"[{action}]")
+        elif len(objects) == 1:
+            obg_id1 = relevant_name_to_id[objects[0]]
+            actions.append(f"[{action}] <{objects[0]}> ({obg_id1})")
+        elif len(objects) == 2:
+            obg_id1 = relevant_name_to_id[objects[0]]
+            obg_id2 = relevant_name_to_id[objects[1]]
+            actions.append(
+                f"[{action}] <{objects[0]}> ({obg_id1}) <{objects[1]}> ({obg_id2})"
+            )
+    return actions
+    # except Exception as e:
+    #     print(f"Error in converting json to action: {action_json}")
+    #     # raise e
+    #     return []
 
 
 def get_all_object_in_scene(data_dir, scene) -> str:
@@ -362,9 +372,12 @@ def construct_planner(
     object_placing,
     scenegraph_id=1,
     script_id="11_1",
-    dataset_root="/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds",
+    dataset_root="dataset/programs_processed_precond_nograb_morepreconds",
 ):
     print(f"Scene {scenegraph_id} and script {script_id}")
+    acting_char_id = None
+    if scenegraph_id == 1:
+        acting_char_id=65
     init_scene_graph, actions, final_state_dict, task_name, task_description = (
         get_from_dataset(dataset_root, scenegraph_id, script_id)
     )
@@ -375,6 +388,7 @@ def construct_planner(
         name_equivalence,
         properties_data,
         object_placing,
+        acting_char_id=acting_char_id
     )
     return planner, relevant_id, gd_actions, task_name, task_description
 
@@ -683,6 +697,83 @@ def scene_evaluate(
     return node_success_rate, edge_success_rate, action_success_rate, full_success_rate
 
 
+def scene_evaluate_wID(
+    final_state_dict,
+    accurate_node_goals,
+    accurate_edge_goals,
+    character_id,
+    action_seq=[],
+    action_goals=[],
+):
+    name_equivalence = utils.load_name_equivalence()
+    properties_data = utils.load_properties_data()
+    object_placing = utils.load_object_placing()
+
+
+    final_scene_graph = EnvironmentGraph(final_state_dict)
+    planner = MotionPlanner(
+        final_scene_graph,
+        final_state_dict,
+        name_equivalence,
+        properties_data,
+        object_placing,
+    )
+    id_2_name_dict = planner.id_to_name
+
+    node_match_num = 0
+    edge_match_num = 0
+    action_match_num = 0
+    node_total_num = len(accurate_node_goals)
+    edge_total_num = len(accurate_edge_goals)
+    action_total_num = len(action_goals)
+    unsatisfied_node_goals = []
+    unsatisfied_edge_goals = []
+    unsatisfied_action_goals = []
+    
+    for gd_node_goal in accurate_node_goals:
+        id = gd_node_goal["id"]
+        obj = get_object_based_on_id(id, final_state_dict)
+        if obj is None:
+            print(f"GOAL FAIL! Not found: {gd_node_goal}")
+            continue
+        if gd_node_goal["state"] in obj["states"]:
+            node_match_num += 1
+        else:
+            print(f"GOAL FAIL! Not matched: {gd_node_goal}")
+            unsatisfied_node_goals.append(gd_node_goal)
+
+    # print found goals and not found goals
+    assert node_match_num <= node_total_num, f"{node_match_num=}, {node_total_num=}"
+
+    for gd_edge_goal in accurate_edge_goals:
+        assert isinstance(gd_edge_goal, dict)
+        if gd_edge_goal in final_state_dict["edges"]:
+            edge_match_num += 1
+            break
+        else:
+            print(f"GOAL FAIL! Not found: {gd_edge_goal}")
+            unsatisfied_edge_goals.append(gd_edge_goal)
+
+    assert edge_match_num <= edge_total_num, f"{edge_match_num=}, {edge_total_num=}"
+
+    if len(action_goals) > 0:
+        action_str = " ".join(action_seq)
+        action_match_num, unsatisfied_action_goals = check_order_with_or_score(
+            action_goals, action_str
+        )
+        print(f"{action_match_num=}")
+        print(f"{action_goals=}")
+        print(f"{action_str=}")
+        assert (
+            action_match_num <= action_total_num
+        ), f"{action_match_num=}, {action_total_num=}"
+    
+    all_success = False
+    if node_match_num == node_total_num and edge_match_num == edge_total_num and action_match_num == action_total_num:
+        all_success = True
+
+    return node_match_num, edge_match_num, action_match_num, all_success, unsatisfied_node_goals, unsatisfied_edge_goals, unsatisfied_action_goals
+
 def validate_programs_based_on_goal_states(
     final_state_dict, selected_node_goals, selected_edge_goals, character_id
 ):
@@ -973,10 +1064,19 @@ def find_node_and_edge_in_scene_exact(node_goals, edge_goals, planner):
     return node_goal_exact, edge_goal_exact
 
 
-def check_no_hallucination(action_dict):
+def check_no_hallucination_in_action(action_dict):
     for predicate_name, params in action_dict.items():
+        predicate_name = predicate_name.upper()
         if predicate_name not in valid_actions.keys():
+            print(f"  Action {predicate_name} not in valid actions")
             return False
+    return True
+
+def check_no_hallucination_in_arg(action_json, relevant_id):
+    for action, objects in action_json.items():
+        for obj in objects:
+            if relevant_id.get(obj, None) is None:
+                return False
     return True
 
 
@@ -984,9 +1084,14 @@ def check_action_grammar(action_dict):
     for predicate_name, params in action_dict.items():
         params.remove("") if "" in params else None
         if len(params) != valid_actions[predicate_name][1]:
-            print(f"  Action {predicate_name} has wrong number of parameters")
-            return False
-    return True
+            print(
+                f"Action {predicate_name} has {params} arguments, but expected number is {valid_actions[predicate_name][1]}"
+            )
+            return (
+                False,
+                f"Action {predicate_name} has {params} arguments, but expected number is {valid_actions[predicate_name][1]}",
+            )
+    return True, None
 
 
 def set_error_type(error_dict, error_type):
@@ -1524,7 +1629,6 @@ def extract_action_details(domain_file_path="", content=None):
             content = file.read()
     content = re.sub(r";.*$", "", content, flags=re.MULTILINE)
     content = " ".join(content.split())
-
     def extract_block(content, start_idx):
         open_paren = 1
         i = start_idx
@@ -1537,7 +1641,6 @@ def extract_action_details(domain_file_path="", content=None):
             elif content[i] == ")":
                 open_paren -= 1
         return content[start_idx : i + 1]
-
     actions = {}
     action_pattern = re.compile(r"\(:action\s+(\w+)")
     idx = 0
@@ -1704,7 +1807,7 @@ def print_success_rate_by_category(d):
     for cat in d.keys():
         print(f"{cat} success rate:")
         for k in d[cat].keys():
-            print(f"  {k} success rate: {d[cat][k][2]:.4f}")    
+            print(f"  {k} success rate: {d[cat][k][2]:.4f}, success: {d[cat][k][0]}, total: {d[cat][k][1]}")    
 
 def precision_recall_f1(TP, FP, FN):
     precision = TP / (TP + FP) if TP + FP != 0 else 0.0

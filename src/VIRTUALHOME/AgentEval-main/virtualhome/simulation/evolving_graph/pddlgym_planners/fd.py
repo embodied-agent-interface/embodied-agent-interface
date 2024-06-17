@@ -9,8 +9,8 @@ import subprocess
 import tempfile
 import numpy as np
 import time
-from pddlgym_planners.pddl_planner import PDDLPlanner
-from pddlgym_planners.planner import PlanningFailure
+from simulation.evolving_graph.pddlgym_planners.pddl_planner import PDDLPlanner
+from simulation.evolving_graph.pddlgym_planners.planner import PlanningFailure
 
 FD_URL = "https://github.com/aibasel/downward.git"
 

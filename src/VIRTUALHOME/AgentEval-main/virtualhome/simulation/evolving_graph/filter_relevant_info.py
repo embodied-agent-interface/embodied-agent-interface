@@ -5,12 +5,21 @@ import copy
 import time
 import ast
 
-import evolving_graph.utils as utils
-from evolving_graph.eval_robots import MotionPlanner, at_least_one_matched
-from evolving_graph.execution import Relation, State
-from evolving_graph.scripts import read_script, Action, ScriptObject, ScriptLine, ScriptParseException, Script
-from evolving_graph.execution import ScriptExecutor
-from evolving_graph.environment import EnvironmentGraph, EnvironmentState
+import simulation.evolving_graph.utils as utils
+from simulation.evolving_graph.eval_robots import at_least_one_matched
+from simulation.evolving_graph.execution import Relation, State
+from simulation.evolving_graph.scripts import (
+    read_script,
+    Action,
+    ScriptObject,
+    ScriptLine,
+    ScriptParseException,
+    Script,
+)
+from simulation.evolving_graph.execution import ScriptExecutor
+from simulation.evolving_graph.environment import EnvironmentGraph, EnvironmentState
+from simulation.evolving_graph.eval_utils import *
+
 
 name_equivalence = utils.load_name_equivalence()
 properties_data = utils.load_properties_data()
@@ -39,30 +48,6 @@ state_transform_dictionary = {
 
 }
 
-def get_relevant_nodes(planner: MotionPlanner):
-    init_dict = planner.init_state.to_dict()
-    diff_a, diff_b = planner.filter_unique_subdicts(init_dict, planner.final_state_dict)
-    existing_ids = set()
-    add_ids = set()
-    for dic in [diff_a, diff_b]:
-        for d in dic['nodes']:
-            existing_ids.add(d['id'])
-        for d in dic['edges']:
-            add_ids.add(d['from_id'])
-            add_ids.add(d['to_id'])
-    all_ids = existing_ids.union(add_ids)
-
-    all_nodes = []
-    for node in init_dict['nodes']:
-        tmp = {}
-        node_id = node['id']
-        if node_id in all_ids:
-            tmp['id'] = node_id
-            tmp['obj_name'] = node['class_name']
-            tmp['category'] = node['category']
-            tmp['properties'] = node['properties']
-            all_nodes.append(tmp)
-    return all_nodes, all_ids
 
 def print_relevant_nodes(all_nodes):
     for node in all_nodes:
@@ -75,7 +60,7 @@ def get_formatted_relevant_nodes(all_nodes):
         relevant_nodes.append(f'| {real_obj_name} | {category} | {properties} |')
     return relevant_nodes
 
-def get_initial_states_and_final_goals(planner: MotionPlanner, goal:dict):
+def get_initial_states_and_final_goals(planner, goal:dict):
     init_dict = planner.init_state.to_dict()
     final_state_dict = planner.final_state_dict
     id_2_name_dict = planner.id_to_name
@@ -329,7 +314,7 @@ def get_initial_states_and_final_goals(planner: MotionPlanner, goal:dict):
     return initial_states, final_states, actions_states
     ...
 
-def get_final_goals_in_vh_format(planner: MotionPlanner, goal:dict):
+def get_final_goals_in_vh_format(planner, goal:dict):
     init_dict = planner.init_state.to_dict()
     final_state_dict = planner.final_state_dict
     id_2_name_dict = planner.id_to_name
@@ -397,54 +382,3 @@ def get_final_goals_in_vh_format(planner: MotionPlanner, goal:dict):
 
     return final_states
 
-def get_candidate_id(file_id, task_ans_list):
-    ans_list = [ast.literal_eval(x) for x in task_ans_list]
-    for f_id, ans in ans_list:
-        if f_id == file_id:
-            return ans
-    assert False, f"file id {file_id} not found in task ans list"
-# --------------------------------------------------------------
-
-
-
-def main_filter():
-    data_dir = 'F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\dataset\\programs_processed_precond_nograb_morepreconds'
-    task_dict_dir = "F:\\Projects\\Research\\embodiedAI\\AgentEval\\virtualhome\\resources\\task_state_updated.json"
-
-    task_dict = json.load(open(task_dict_dir, 'r'))
-    scene_str = "scene_1"
-    task_dict = task_dict[scene_str]
-
-    
-
-    for task_name, task_detail in task_dict.items():
-        print(f"task name is {task_name}")
-        graph_path = task_detail['graph_state_path']
-        task_list = task_detail['task_file_list']
-        task_list_ans_list = task_detail['task_file_list_with_ans']
-        goal_candidates = task_detail['goal_candidates']
-        for fild_id in task_list:
-            # we first get candidate num
-            ans_id = get_candidate_id(fild_id, task_list_ans_list)
-            if ans_id == -1:
-                continue
-            # if task_name != 'Write an email':
-            #     continue
-            goal = goal_candidates[ans_id]
-
-            state_file_path = os.path.join(graph_path, f'file{fild_id}.json')
-            state_dict = json.load(open(state_file_path, 'r'))
-            init_state_dict = state_dict['init_graph']
-            final_state_dict = state_dict['final_graph']
-
-            init_scene_graph = EnvironmentGraph(init_state_dict)
-            planner = MotionPlanner(init_scene_graph, final_state_dict, name_equivalence, properties_data, object_placing)
-
-            relevant_nodes, related_ids = get_relevant_nodes(planner)
-            get_formatted_relevant_nodes(relevant_nodes)
-
-            get_initial_states_and_final_goals(planner, goal)
-            return
-
-if __name__ == '__main__':
-    main_filter()

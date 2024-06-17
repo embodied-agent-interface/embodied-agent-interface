@@ -1,4 +1,4 @@
-The task is to guide the robot to take actions from current state to fulfill some node goals, edge goals, and action goals. The input will be the related objects in the scene, nodes and edges in the current environment, and the desired node goals, edge goals, and action goals. The output should be action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy the goals. 
+The task is to guide the robot to take actions from current state to fulfill some node goals, edge goals, and action goals. The input will be the related objects in the scene, nodes and edges in the current environment, and the desired node goals, edge goals, and action goals. The output should be action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy the goals. Additionally, the feedback section illustrates previously attempted action commands, and details the reason why they failed. Please learn from the feedback before your generation.
 
 Data format:
 Objects in the scene indicates those objects involved in the action execution. It follows the format: <object_name> (object_id)
@@ -108,6 +108,9 @@ Edge goals are:
 Action goals are:
 <action_goals>
 
-Please output the list of action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy all the node goals, edge goals and action goals. The dictionary keys should be action names. The dictionary values should be a list containing the objects of the corresponding action. Only output the json of action commands in a dictionary with nothing else.
+Feedback:
+<feedback>
+
+Please output the list of action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy all the node goals, edge goals and action goals. The dictionary keys should be action names. The dictionary values should be a list containing the objects of the corresponding action. The feedback part illustrates the reason why previous outputs failed. Please pay attention to that. Only output the json of action commands in a dictionary with nothing else.
 
 Output:

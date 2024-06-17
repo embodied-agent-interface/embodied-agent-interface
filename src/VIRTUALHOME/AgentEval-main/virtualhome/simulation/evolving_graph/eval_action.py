@@ -1,29 +1,31 @@
 import json
-import sys
-
-sys.path.append("../simulation")
-
 import re
 import copy
-import sys
 import os
 import copy
 import ast
+import os.path as osp
 
-import evolving_graph.utils as utils
-from evolving_graph.eval_utils import *
+import simulation.evolving_graph.utils as utils
+from simulation.evolving_graph.eval_utils import *
+from simulation.evolving_graph.checker import TemporalOrderChecker
 
 
-model_name = "gpt-3.5-turbo-0125"
 system_prompt = "You are an action planner designing action commands for a household robot. For this task, please only output a parsable json string inside brackets. Please start your answer with { and end your answer with }. Don't include any notes or explanations with the output json string."
-use_action = True
 
 
-def action_input_preparation():
-    data_dir = "/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds"
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_LTL_formula_accurate.json"
-    helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/action_sequencing_vh_w_actions.json"
-    scenegraph_id = 1
+def action_input_preparation(args):
+    dataset = args.dataset
+    resource_root = osp.join(args.resource_dir, dataset)
+    data_dir = osp.join(
+        args.dataset_dir, "programs_processed_precond_nograb_morepreconds"
+    )
+    task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
+    prompt_path = osp.join(args.prompt_dir, "action_sequence_prompt_w_action.txt")
+    helm_prompt_path = osp.join(
+        args.helm_dir, "helm_prompt/action_sequencing_vh_w_actions.json"
+    )
+    scenegraph_id = args.scene_id
     scene_id = f"scene_{scenegraph_id}"
     task_dict = json.load(open(task_dict_dir, "r"))
     task_dict = task_dict[scene_id]
@@ -74,7 +76,7 @@ def action_input_preparation():
             object_in_scene, cur_change, _ = motion_planner.get_nl_goal_string()
 
             prompt = open(
-                "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/prompts/action_sequence_prompt_w_action.txt",
+                prompt_path,
                 "r",
             ).read()
             prompt = prompt.replace("<object_in_scene>", object_in_scene)
@@ -91,407 +93,316 @@ def action_input_preparation():
     json.dump(helm_prompt_list, open(helm_prompt_path, "w"), indent=4)
 
 
-def action_llm_prediction():
-    if use_action:
-        helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/action_sequencing_vh_w_actions.json"
-        helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/action_sequencing_vh_w_actions_{model_name}.json"
-    else:
-        helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/action_sequencing_vh_wo_actions.json"
-        helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/action_sequencing_vh_wo_actions_{model_name}.json"
 
-    helm_output = []
-    helm_prompt = json.load(open(helm_prompt_path, "r"))
-    for prompt_dict in helm_prompt:
-        id = prompt_dict["identifier"]
-        prompt = prompt_dict["llm_prompt"]
-        print(f"GPT starts prediction: {id}", flush=True)
-        predicted_action = get_gpt_output(
-            prompt, model_name, temperature=1, system_prompt=system_prompt
-        )
-        helm_output.append({"identifier": id, "llm_output": predicted_action})
-    json.dump(helm_output, open(helm_output_path, "w"), indent=4)
+def action_output_evaluation(args):
+    dataset = args.dataset
+    model_name = args.model_name
+    helm_output_path = osp.join(
+        args.helm_dir, f"helm_output/action_sequencing/{model_name}_outputs.json"
+    )
 
+    resource_root = osp.join(args.resource_dir, dataset)
+    data_dir = osp.join(
+        args.dataset_dir, "programs_processed_precond_nograb_morepreconds"
+    )
 
-def evaluate_action_sequence(
-    data_dir, t_ids, node_goal_list, edge_goal_list, action_goals, num_tasks=50
-):
+    # indexing path
+    task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
+    id_to_task_path = os.path.join(resource_root, "id2task.json")
+
+    # load data
+    task_dicts = json.load(open(task_dict_dir, "r"))
+    helm_output = json.load(open(helm_output_path, "r"))
+    id2task = json.load(open(id_to_task_path, "r"))
 
     properties_data = utils.load_properties_data()
     object_placing = utils.load_object_placing()
     name_equivalence = utils.load_name_equivalence()
 
-    scene_id = [1]
-    program_dir = os.path.join(data_dir, "executable_programs")
+    scenegraph_id = 1
+    scene_id = f"scene_{scenegraph_id}"
+    task_dicts = task_dicts[scene_id]
 
-    tot_num = 0.0
-    pattern = r"file(\d+_\d+)\.txt"
+    # trajectory metrics
+    program_num = 0
 
-    # metrics
+    all_parsing_wrong= 0
+    all_hallucination = 0
+    all_parameter_wrong = 0
+    all_executable_plan = 0
+    all_correct_plan = 0
 
-    # format correct
-    task_valid_correct = 0
-    task_format_correct = 0
-    # no hallucination
-    task_no_hallucination = 0
-    # runtime correct
-    task_executable_plan = 0
-    task_error_dict = {
-        "wrong_order": 0,
-        "missing_step": 0,
-        "affordance": 0,
-        "unseen": 0,
-        "additional_step": 0,
-        "other": 0,
+
+
+    error_code_to_number = {
+        0: 0,
+        1: 0,
+        2: 0,
+        4: 0,
     }
-    # action correct
-    task_actions_correct = 0
-    # everything correct
-    task_correct_plan = 0
+    error_code_to_type = {
+        0: "WRONG_TEMPORAL_ORDER",
+        1: "MISSING_STEP",
+        2: "AFFORDANCE_ERROR",
+        3: "UNSEEN_OBJECT",
+        4: "ADDITIONAL_STEP",
+        5: "UNKNOWN_ERROR",
+    }
 
-    # ---------------
+    # scene metrics
+    all_matched_node = 0
+    all_matched_edge = 0
+    all_matched_action = 0
+    all_matched_all = 0
 
-    wrong_order_num = 0
-    missing_step_num = 0
-    affordance_num = 0
-    unseen_num = 0
-    additional_step_num = 0
-    other_num = 0
+    all_node_goals = 0
+    all_edge_goals = 0
+    all_action_goals = 0
+    all_goals = 0
 
-    helm_prompt_l = []
-    node_success_rate_list = []
-    edge_success_rate_list = []
-    action_success_rate_list = []
-    full_success_rate_list = []
+    for output_dict in helm_output:
+        file_id = output_dict["identifier"]
 
-    for scene in scene_id:
-        scene_dir = os.path.join(
-            program_dir,
-            f"TrimmedTestScene{scene}_graph",
-            "results_intentions_march-13-18",
-        )
-        for file in os.listdir(scene_dir):
-            if not file.endswith(".txt"):
-                continue
-            match = re.search(pattern, file)
-            if match:
-                script_id = match.group(1)
+        # get symbolic goals
+        task = id2task[file_id]
+        print(f"Task is {task}, file_id is {file_id}")
+        program_num += 1
+
+        program_dict = task_dicts[task][file_id]
+        goals = program_dict["vh_goal"]
+        gold_action_goals = goals["actions"]
+        scene_goals = goals["goal"]
+        gold_node_goals = []
+        gold_edge_goals = []
+        for scene_goal in scene_goals:
+            if "id" in scene_goal and "class_name" in scene_goal and "state" in scene_goal:
+                gold_node_goals.append(scene_goal)
+            elif (
+                "from_id" in scene_goal
+                and "to_id" in scene_goal
+                and "relation_type" in scene_goal
+            ):
+                gold_edge_goals.append(scene_goal)
             else:
-                print("Wrong file format. No match found.")
-                continue
-            if script_id not in t_ids:
-                continue
-            # if script_id != '604_2':
-            #     continue
-            # print(f'{script_id=}')
-            tot_num += 1
+                raise ValueError("Scene goal is not in correct format")
+        
+        gold_node_goals = remove_duplicate_dicts(gold_node_goals)
+        gold_edge_goals = remove_duplicate_dicts(gold_edge_goals)
+        gold_action_goals = list(set(gold_action_goals))
 
-            motion_planner, relevant_id, gd_actions, task_name, _ = construct_planner(
-                name_equivalence,
-                properties_data,
-                object_placing,
-                scenegraph_id=scene,
-                script_id=script_id,
-                dataset_root=data_dir,
+        motion_planner, relevant_id, gd_actions, task_name, _ = construct_planner(
+            name_equivalence,
+            properties_data,
+            object_placing,
+            scenegraph_id=scenegraph_id,
+            script_id=file_id,
+            dataset_root=data_dir,
+        )
+        _, _, _, _, _, relevant_name_to_id = (
+            motion_planner.get_symbolic_goal_nl(
+                gold_node_goals, gold_edge_goals, action_goals=gold_action_goals
             )
+        )
 
-            node_goals = copy.deepcopy(node_goal_list)
-            edge_goals = copy.deepcopy(edge_goal_list)
+        _, _, _, all_success, _, _, _ = scene_evaluate_wID(
+            motion_planner.final_state_dict,
+            gold_node_goals,
+            gold_edge_goals,
+            motion_planner.acting_char_id,
+        )
 
-            motion_planner.reset()
-            # relevant node id pairs
-            relevant_nodes_ids = motion_planner.get_relevant_nodes(script_id=script_id)
-            node_goals, edge_goals = find_node_and_edge_in_scene_exact(
-                node_goals, edge_goals, motion_planner
-            )
-            # relevant obj
-            print(f"{node_goals=}")
-            print(f"{edge_goals=}")
-            _, _, node_goal_str, edge_goal_str, relevant_name_to_id = (
-                motion_planner.get_symbolic_goal_nl(node_goals, edge_goals)
-            )
+        if not all_success:
+            program_num -= 1
+            print(f"Program {file_id} did not pass gold test")
+            continue
 
-            object_in_scene, cur_change, _ = motion_planner.get_nl_goal_string()
+        all_node_goals += len(gold_node_goals)
+        all_edge_goals += len(gold_edge_goals)
+        all_action_goals += len(gold_action_goals)
+        all_goals += len(gold_node_goals) + len(gold_edge_goals) + len(gold_action_goals)
 
-            gold_succ = validate_programs_based_on_goal_states(
-                motion_planner.final_state_dict,
-                node_goals,
-                edge_goals,
-                motion_planner.acting_char_id,
-            )
-            if not gold_succ:
-                tot_num -= 1
-                continue
+        executable = False
+        
+        format_error = False
+        hallucination_error = False
+        parameter_error = False
+        
+        actions = output_dict["llm_output"]
+        # if llm output starts with ```json
+        if actions.startswith("```json"):
+            actions = actions[7:]
+        actions = actions.strip().replace("\n", "")
+        actions = actions.replace("\'", "\"")
+        # format check
+        try:
+            actions = json.loads(actions)
+        except Exception as e:
+            print(f"Task {task_name}, file {file_id} prediction has format error")
+            all_parsing_wrong += 1
+            format_error = True
+        
+        if len(actions) == 0:
+            all_parsing_wrong += 1
+            print(f"Task {task_name}, file {file_id} prediction has no prediction")
+            format_error = True
 
-            # NL goals
-            # print(f'{object_in_scene=}', flush=True)
-            # print(f'{cur_change=}', flush=True)
-            # print(f'{node_goal_str=}', flush=True)
-            # print(f'{edge_goal_str=}', flush=True)
-            prompt = open(
-                "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/prompts/action_plan_prompt_goal_nl_json.txt",
-                "r",
-            ).read()
-            prompt = prompt.replace("<object_in_scene>", object_in_scene)
-            prompt = prompt.replace("<cur_change>", cur_change)
-            prompt = prompt.replace("<node_goals>", node_goal_str)
-            prompt = prompt.replace("<edge_goals>", edge_goal_str)
-
-            retry_cnt = 0
-            executable = False
-            retry_tot = 1
-
-            hallucination_error = False
-            runtime_error = False
-            format_correct_flag = False
-
-            while retry_cnt < retry_tot and not format_correct_flag:
-                print("gpt predicts...", flush=True)
-                # initialize errors
-                format_error = False
-
-                actions = get_gpt_output(
-                    message=prompt, json_object=True, temperature=1
-                )
-                original_actions = {}
-
-                try:
-                    actions = json.loads(actions)
-                    for obj_lst in actions.values():
-                        for obj in obj_lst:
-                            if obj not in relevant_name_to_id.keys():
-                                print(f"Object {obj} not in relevant objects")
-                                print(f"{relevant_name_to_id=}")
-                                hallucination_error = True
-                    original_actions = copy.deepcopy(actions)
-                    actions = json_to_action(actions, relevant_name_to_id)
-                    # print(f'after json {actions}')
-                    if isinstance(actions, str):
-                        try:
-                            actions = ast.literal_eval(actions)
-                        except:
-                            actions = actions.split("\n")
-                    format_correct_flag = True
-                except Exception as e:
-                    retry_cnt += 1
-                    print("Fail to generate the action sequence", flush=True)
-                    if retry_cnt < retry_tot:
-                        print("Retry...")
-                        continue
-                    else:
-                        format_error = True
-                        raise e
-                        break
-
-            # format check (try retry_tot times)
-            print(f"{actions=}")
-            if len(actions) > 0 or hallucination_error:
-                task_valid_correct += 1
+        # hallucination check
+        if not format_error:
+            if (
+                check_no_hallucination_in_action(actions)
+                and check_no_hallucination_in_arg(actions, relevant_name_to_id)
+            ):
+                hallucination_error = False
             else:
                 print(
-                    f"Task {task_name}, file {script_id} has no valid action sequence"
+                    f"Task {task_name}, file {file_id} has hallucination error",
+                    flush=True,
                 )
-                format_error = True
+                all_hallucination += 1
+                hallucination_error = True
 
-            # hallucination check
-            if not format_error:
-                if check_no_hallucination(original_actions) and not hallucination_error:
-                    task_no_hallucination += 1
-                else:
-                    print(
-                        f"Task {task_name}, file {script_id} has hallucination error",
-                        flush=True,
+        # parameters number check
+        if not format_error and not hallucination_error:
+            print(f"{actions=}")
+            pass_check, err = check_action_grammar(actions)
+            if pass_check:
+                actions = json_to_action(
+                    actions, relevant_name_to_id=relevant_name_to_id
+                )
+                parameter_error = False
+            else:
+                print(
+                    f"Task {task_name}, file {file_id} has arguments number error",
+                    flush=True,
+                )
+                all_parameter_wrong += 1
+                parameter_error = True
+        
+
+        if not format_error and not hallucination_error and not parameter_error:
+            print(f"{actions=}")
+            if actions == gd_actions:
+                all_executable_plan += 1
+            else:
+                motion_planner.reset()
+                exe_flag = True
+                history_actions = []
+                executable = True
+                prev_env_states = copy.deepcopy(motion_planner.env_state)
+                history_env_states = [copy.deepcopy(prev_env_states.to_dict())]
+                if len(actions) == 0:
+                    exe_flag = False
+                    executable = False
+                for action in actions:
+                    print(f"Current {action=}")
+                    history_env_states_cp = copy.deepcopy(history_env_states)
+                    exe_flag, my_info = (
+                        motion_planner.my_execute_primitive_action_eval(action)
                     )
-                    hallucination_error = True
-
-            # parameters number check
-            if not format_error and not hallucination_error:
-                print(f"{original_actions=}")
-                if check_action_grammar(original_actions):
-                    task_format_correct += 1
-                else:
-                    print(
-                        f"Task {task_name}, file {script_id} has grammar error",
-                        flush=True,
-                    )
-                    format_error = True
-
-            print(f"{format_error=}")
-            print(f"{hallucination_error=}")
-            # runtime check
-            if not format_error and not hallucination_error:
-                print(f"{actions=}")
-                # if gold, directly pass all check
-                if actions == gd_actions:
-                    # tot_succ += 1
-                    task_executable_plan += 1
-                    task_correct_plan += 1
-                else:
-                    # try:
-                    motion_planner.reset()
-                    exe_flag = True
-                    history_actions = []
-                    failed_info = []
-                    # executable = False
-                    prev_env_states = copy.deepcopy(motion_planner.env_state)
-                    history_env_states = [copy.deepcopy(prev_env_states.to_dict())]
-                    if len(actions) == 0:
-                        exe_flag = False
-                    for action in actions:
-                        print(f"{action=}")
-                        exe_flag, my_info = (
-                            motion_planner.my_execute_primitive_action_eval(action)
+                    if not exe_flag:
+                        print(f"Current action {action} not executable.")
+                        print(f"{my_info=}")
+                        formal_info_checker = TemporalOrderChecker(
+                            my_info, history_env_states_cp
                         )
-                        if not exe_flag:
-                            print(f"Current action {action} not executable.")
-                            print(f"{my_info=}")
-                            failed_error_code = my_info.get_error_type()
-                            failed_error_seq = my_info.get_error_string()
-                            failed_error_code, failed_error_seq = (
-                                check_fg_satisfied_in_prev_states(
-                                    history_env_states,
-                                    failed_error_code,
-                                    failed_error_seq,
-                                    node_goals,
-                                    edge_goals,
-                                    motion_planner.acting_char_id,
-                                )
-                            )
+                        formal_info = formal_info_checker.run_checker()
+                        failed_error_code = formal_info.get_error_type()
+                        ADDITIONAL_ERRROR_CODE = 4
+                        assert (
+                            failed_error_code in error_code_to_number
+                        ), f"Unknown error code {failed_error_code}"
+                        error_code_to_number[failed_error_code] += 1
+                        print(f"Encounter error: {error_code_to_type[failed_error_code]}")
+                        if failed_error_code != ADDITIONAL_ERRROR_CODE:
                             if failed_error_code == 0:
                                 print(
-                                    f"Current action {action} has wrong order error on task {script_id}."
+                                    f"Current action {action} has wrong order error on task {file_id}."
                                 )
-                            # failed_action_seq = cur_executed_actions + action_seq
+                            executable = False
                             history_actions_cp = copy.deepcopy(history_actions)
-                            failed_info.append(
-                                (
-                                    failed_error_code,
-                                    history_actions_cp,
-                                    failed_error_seq,
-                                )
-                            )
                             print(f"{failed_error_code=}")
                             print(f"{history_actions_cp=}")
                             break
-                        else:
-                            print(f"Current action {action} executable.", flush=True)
-                            history_actions.append(action)
-                            new_env_state = copy.deepcopy(
-                                motion_planner.env_state.to_dict()
-                            )
-                            history_env_states.append(new_env_state)
-
-                    if exe_flag:
-                        # tot_exec += 1
-                        task_executable_plan += 1
-                        print("Executable!", flush=True)
-                        # executable = True
                     else:
-                        runtime_error = True
-                        if len(failed_info) > 0:
-                            failed_first_item = failed_info[0]
-                            error_type, failed_exe_action_seq, failed_error_seq = (
-                                failed_first_item
-                            )
-                            error_str, task_error_dict = set_error_type(
-                                task_error_dict, error_type
-                            )
-                            print(f"  Wrong Error Type: {error_str}")
-                            print(f"  Wrong Action Sequence: {failed_exe_action_seq}")
-                            print(f"  Wrong Error Sequence: {failed_error_seq}")
-                        else:
-                            print("  We confront an unknown error!")
-                            task_error_dict["other"] += 1
+                        print(f"Current action {action} executable.", flush=True)
+                        history_actions.append(action)
+                        new_env_state = copy.deepcopy(motion_planner.env_state.to_dict())
+                        history_env_states.append(new_env_state)
 
-                        wrong_order_num += task_error_dict["wrong_order"]
-                        missing_step_num += task_error_dict["missing_step"]
-                        affordance_num += task_error_dict["affordance"]
-                        unseen_num += task_error_dict["unseen"]
-                        additional_step_num += task_error_dict["additional_step"]
-                        other_num += task_error_dict["other"]
+                if executable:
+                    all_executable_plan += 1
+                    print("Executable!", flush=True)
 
-            # success plan check
-            if not format_error and not hallucination_error:
-                (
-                    node_success_rate,
-                    edge_success_rate,
-                    action_success_rate,
-                    whole_success_rate,
-                ) = scene_evaluate(
-                    motion_planner.env_state.to_dict(),
-                    node_goals,
-                    edge_goals,
-                    motion_planner.acting_char_id,
-                    relevant_node_ids=relevant_nodes_ids,
-                    action_seq=actions,
-                    action_goals=action_goals,
-                )
-
-                print(f"{node_success_rate=}")
-                print(f"{edge_success_rate=}")
-                print(f"{action_success_rate=}")
-                print(f"{whole_success_rate=}")
-
-                node_success_rate_list.append(node_success_rate)
-                edge_success_rate_list.append(edge_success_rate)
-                action_success_rate_list.append(action_success_rate)
-                full_success_rate_list.append(whole_success_rate)
-
-                # succ = validate_programs_based_on_goal_states(
-                #     motion_planner.env_state.to_dict(),
-                #     node_goals,
-                #     edge_goals,
-                #     motion_planner.acting_char_id,
-                # )
-
-                action_str = " ".join(actions)
-                act_succ = check_order_with_or(action_goals, action_str)
-                if act_succ:
-                    task_actions_correct += 1
-                else:
-                    print(
-                        f"Task {task_name}, file {script_id} does not achieve action goal",
-                        flush=True,
+                node_match_num, edge_match_num, action_match_num, all_pred_success, _, _, _ = (
+                    scene_evaluate_wID(
+                        motion_planner.env_state.to_dict(),
+                        gold_node_goals,
+                        gold_edge_goals,
+                        motion_planner.acting_char_id,
+                        action_seq=history_actions,
+                        action_goals=gold_action_goals,
                     )
+                )
+                print(f'Predicted: {node_match_num=}, {edge_match_num=}, {action_match_num=}')
+                print(f'Gold: {len(gold_node_goals)=}, {len(gold_edge_goals)=}, {len(gold_action_goals)=}')
+                print(f'Goals all satisfied: {all_pred_success=}')
+                all_matched_node += node_match_num
+                all_matched_edge += edge_match_num
+                all_matched_action += action_match_num
+                all_matched_all += node_match_num + edge_match_num + action_match_num
 
-                # if succ and act_succ:
-                #     task_correct_plan += 1
-                #     assert (
-                #         node_success_rate in [-1, 1]
-                #         and edge_success_rate in [-1, 1]
-                #         and action_success_rate in [-1, 1]
-                #     )
-                #     print("EVERYTHING SUCCEED!", flush=True)
-            else:
-                node_success_rate_list.append(-1)
-                edge_success_rate_list.append(-1)
-                action_success_rate_list.append(-1)
-                full_success_rate_list.append(-1)
+                if all_pred_success:
+                    all_correct_plan += 1
+                    print("EVERYTHING SUCCEED!", flush=True)
+        
+    # calculate metrics, keep two decimal digits with percentage
+    print(f'Program number: {program_num}')
+    print(f'Parsing wrong: {all_parsing_wrong}, rate = {100.0 * all_parsing_wrong/program_num:.2f}%')
+    print(f'Hallucination: {all_hallucination}, rate = {100.0 * all_hallucination/program_num:.2f}%')
+    print(f'Parameter wrong: {all_parameter_wrong}, rate = {100.0 * all_parameter_wrong/program_num:.2f}%')
+    print(f'Executable plan: {all_executable_plan}, rate = {100.0 * all_executable_plan/program_num:.2f}%')
+    print(f'Correct plan: {all_correct_plan}, rate = {100.0 * all_correct_plan/program_num:.2f}%')
 
-            if tot_num >= num_tasks:
-                break
 
-        # succ = tot_succ / tot_num if tot_num != 0 else 0
-        # exe_rate = task_executable_plan / tot_num if tot_num != 0 else 0
-        # map_rate = map_suc / tot_num if tot_num != 0 else 0
-        # print(f'For scene {scene}, {tot_succ=}, {tot_num=}, {tot_exec=}, {map_rate=}, {succ=}, {exe_rate=}')
+    all_wrong_order_num = error_code_to_number[0]
+    all_missing_step_num = error_code_to_number[1]
+    all_affordance_num = error_code_to_number[2]
+    all_additional_step_num = error_code_to_number[4]
+    print('For not executable plans:')
+    print(f'Wrong order: {all_wrong_order_num}, rate = {100.0 * all_wrong_order_num/program_num:.2f}%')
+    print(f'Missing step: {all_missing_step_num}, rate = {100.0 * all_missing_step_num/program_num:.2f}%')
+    print(f'Affordance error: {all_affordance_num}, rate = {100.0 * all_affordance_num/program_num:.2f}%')
+    print(f'Additional step: {all_additional_step_num}, rate = {100.0 * all_additional_step_num/program_num:.2f}%')
 
-    return (
-        tot_num,
-        task_valid_correct,
-        task_format_correct,
-        task_no_hallucination,
-        task_executable_plan,
-        task_actions_correct,
-        task_correct_plan,
-        wrong_order_num,
-        missing_step_num,
-        affordance_num,
-        unseen_num,
-        additional_step_num,
-        other_num,
-        node_success_rate_list,
-        edge_success_rate_list,
-        action_success_rate_list,
-        full_success_rate_list,
-        helm_prompt_l,
+    # keep three decimal digits
+    print('For scene metrics:')
+    print(
+        f"Matched node: {all_matched_node}, rate = {100.0 *all_matched_node/all_node_goals:.2f}"
     )
+    print(
+        f"Matched edge: {all_matched_edge}, rate = {100.0 *all_matched_edge/all_edge_goals:.2f}"
+    )
+    print(
+        f"Matched action: {all_matched_action}, rate = {100.0 *all_matched_action/all_action_goals:.2f}"
+    )
+    print(
+        f"Matched all: {all_matched_all}, rate = {100.0 *all_matched_all/all_goals:.2f}"
+    )
+
+    return [
+        100.0 * all_correct_plan / program_num,
+        100.0 * all_executable_plan / program_num,
+        100.0 * all_parsing_wrong / program_num,
+        100.0 * all_hallucination / program_num,
+        100.0 * all_parameter_wrong / program_num,
+        100.0 * all_wrong_order_num / program_num,
+        100.0 * all_missing_step_num / program_num,
+        100.0 * all_affordance_num / program_num,
+        100.0 * all_additional_step_num / program_num,
+        100.0 * all_matched_node / all_node_goals,
+        100.0 * all_matched_edge / all_edge_goals,
+        100.0 * all_matched_action / all_action_goals,
+        100.0 * all_matched_all / all_goals,
+    ]
+
+

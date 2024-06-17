@@ -1,35 +1,28 @@
 import json
 import sys
 
-sys.path.append("../simulation")
-
-import re
 import copy
 import sys
 import os
 import os.path as osp
 import copy
-import ast
-import random
 import math
 from collections import defaultdict
 
-import evolving_graph.utils as utils
-from evolving_graph.eval_utils import *
-from pddlgym_planners.fd import FD
-from visualization import *
-from logic_score import *
+import simulation.evolving_graph.utils as utils
+from simulation.evolving_graph.eval_utils import *
+from simulation.evolving_graph.pddlgym_planners.fd import FD
+from simulation.evolving_graph.logic_score import *
 
 
-model_name = "gpt-3.5-turbo-0125"
-
-def tm_input_preparation():
+def tm_input_preparation(args):
     helm_prompt_list = []
+    dataset = args.dataset
+    scenegraph_id = args.scene_id
+    scene_id = f"scene_{scenegraph_id}"
 
-    dataset = "virtualhome"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
-    )
+    resource_root = osp.join(args.resource_dir, dataset)
+
 
     pddl_root = osp.join(resource_root, "pddl_files")
     pddl_problem_dir = osp.join(resource_root, "problem_pddl")
@@ -37,48 +30,39 @@ def tm_input_preparation():
     os.makedirs(pddl_problem_dir, exist_ok=True)
 
     success_dict_path = osp.join(resource_root, "success_task.json")
-    pred2category_path = osp.join(resource_root, "predicates_category.json")
     id2action_path = osp.join(resource_root, "id2action.json")
     gold_action_path = osp.join(resource_root, "gold_action.json")
 
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
-    prompt_path = (
-        "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/prompts/operator_prompt_complete.txt"
+    task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
+    prompt_path = osp.join(args.prompt_dir, "operator_prompt_complete.txt")
+    helm_prompt_path = osp.join(
+        args.helm_dir, f"helm_prompt/transition_modeling_vh_helm.json"
     )
-    helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/operator_evaluation_vh_final_complete.json"
+    # task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
+    # prompt_path = (
+    #     "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/prompts/operator_prompt_complete.txt"
+    # )
+    # helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/operator_evaluation_vh_final_complete.json"
     # pddl_problem_dir = '/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome'
 
-    pred2category = json.load(open(pred2category_path, "r"))
     task_dict = json.load(open(task_dict_dir, "r"))
     success_file_id = json.load(open(success_dict_path, "r"))
-    predicate_type = set(list(pred2category.values()))
     id2action = json.load(open(id2action_path, "r"))
     gold_action_dict = json.load(open(gold_action_path, "r"))
 
-    task_dict = task_dict["scene_1"]
+    task_dict = task_dict[scene_id]
 
-    for task_name, task_detail in task_dict.items():
+    for task_name, task_dicts in task_dict.items():
         if task_name in ["Wash dishes by hand", "Write an email", "Wash hands"]:
             continue
         print(f"task name is {task_name}")
-        # if task_name not in ['Put groceries in Fridge', 'Wash clothes']:
-        #     continue
         task_name = "_".join(task_name.split())
         task_problem_dir = os.path.join(pddl_problem_dir, task_name)
 
-        task_list = task_detail["task_file_list"]
-        task_list_ans_list = task_detail["task_file_list_with_ans"]
-        print(f"{task_name} has list {task_list}")
-
-        for file_id in task_list:
+        for file_id, _ in task_dicts.items():
             if os.path.exists(success_dict_path):
                 if file_id not in success_file_id:
                     continue
-            # if file_id != '850_1':
-            #     continue
-            ans_id = get_candidate_id(file_id, task_list_ans_list)
-            if ans_id == -1:
-                continue
             
             problem_path = os.path.join(task_problem_dir, f"{file_id}.pddl")
             problem_file = open(problem_path, "r").read()
@@ -99,33 +83,21 @@ def tm_input_preparation():
     # save helm prompt
     json.dump(helm_prompt_list, open(helm_prompt_path, "w"), indent=4)
 
-
-def llm_prediction():
-    
-    helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/operator_evaluation_vh_final_complete.json"
-    helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/operator_evaluation_vh_final_complete_{model_name}.json"
-    helm_output = []
-    helm_prompt = json.load(open(helm_prompt_path, "r"))
-    for prompt_dict in helm_prompt:
-        id = prompt_dict["identifier"]
-        prompt = prompt_dict["llm_prompt"]
-        print(f"GPT starts prediction: {id}", flush=True)
-        predicted_action = get_gpt_output(prompt, model_name, temperature=1)
-        helm_output.append({"identifier": id, "llm_output": predicted_action})
-    json.dump(helm_output, open(helm_output_path, "w"), indent=4)
-
-
-def evaluate_operator_succ():
-    print("Enter function!")
+def tm_output_evaluation(args):
+    model_name = args.model_name
+    dataset = args.dataset
     visualization = False
-    save_results = True
+    save_results = False
 
-    dataset = "virtualhome"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
-    )
+    if dataset == 'virtualhome':
+        timeout = 100
+    elif dataset == 'behavior':
+        timeout = 200
+    
+    resource_root = osp.join(args.resource_dir, dataset)
+    helm_output_path = osp.join(args.helm_dir, f"helm_output/transition_modeling_{dataset}/{model_name}_outputs.json")
+
     # load LLM output
-    helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/operator_evaluation_vh_final_complete_{model_name}.json"
     helm_output = json.load(open(helm_output_path, "r"))
 
     # indexing path
@@ -142,7 +114,7 @@ def evaluate_operator_succ():
     pred2category_path = osp.join(resource_root, "predicates_category.json")
 
     # save path and figure path
-    save_root = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/output/operator_eval_{model_name}"
+    save_root = osp.join(args.output_dir, f"operator_eval_{model_name}")
     if not os.path.exists(save_root):
         os.makedirs(save_root)
     fig_root = os.path.join(save_root, "fig")
@@ -156,27 +128,12 @@ def evaluate_operator_succ():
     precond_predicate_type_res_dict_path = os.path.join(
         save_root, "precond_predicate_type_res_dict.json"
     )
-    precond_predicate_type_res_fig_path = os.path.join(
-        fig_root, "precond_predicate_type_res_dict.png"
-    )
     precond_action_type_dict_path = os.path.join(save_root, "precond_action_type_dict.json")
-    precond_action_type_fig_path = os.path.join(fig_root, "precond_action_type_dict.png")
-    effect_predicate_type_res_dict_path = os.path.join(
-        save_root, "effect_predicate_type_res_dict.json"
-    )
-    effect_predicate_type_res_fig_path = os.path.join(
-        fig_root, "effect_predicate_type_res_dict.png"
-    )
     effect_action_type_dict_path = os.path.join(save_root, "effect_action_type_dict.json")
-    effect_action_type_fig_path = os.path.join(fig_root, "effect_action_type_dict.png")
     full_predicate_type_res_dict_path = os.path.join(
         save_root, "full_predicate_type_res_dict.json"
     )
-    full_predicate_type_res_fig_path = os.path.join(
-        fig_root, "full_predicate_type_res_dict.png"
-    )
     full_action_type_dict_path = os.path.join(save_root, "full_action_type_dict.json")
-    full_action_type_fig_path = os.path.join(fig_root, "full_action_type_dict.png")
 
     precond_predicate_res_dict_path = os.path.join(save_root, "precond_predicate_res_dict.json")
     effect_predicate_res_dict_path = os.path.join(save_root, "effect_predicate_res_dict.json")
@@ -273,56 +230,62 @@ def evaluate_operator_succ():
         precond_predicate_score_dict[pred] = [0, 0, 0]
         effect_predicate_score_dict[pred] = [0, 0, 0]
 
-    # macro avg
-    # for action in action_set:
-    #     operator_score_dict[action] = [0.0, 0.0, 0]  # [precond, effect, total]
-
     planner = FD()
     total_num = 0
     format_wrong_num = 0
+    hallucination_num = 0
+    total_predict_action_num = 0
 
     print("start evaluation")
-    # print(f'{task_dict=}')
-    # predicate_vocabulary = json.loads(open(vocabulary_path, 'r').open())
+
     for output_dict in helm_output:
         file_id = output_dict["identifier"]
         if file_id not in success_file_id:
+            print(f"{file_id} not in success file id!")
             continue
 
         total_num += 1
 
         task_name = id2task[file_id]
         print(f"task name is {task_name}")
-        # if task_name not in ["Turn on light"]:
-        #     continue
         
         task_name = "_".join(task_name.split())
-        task_problem_dir = os.path.join(pddl_problem_dir, task_name)
+        if dataset == 'virtualhome':
+            task_problem_dir = os.path.join(pddl_problem_dir, task_name)
+        elif dataset == 'behavior':
+            task_problem_dir = pddl_problem_dir
         problem_path = os.path.join(task_problem_dir, f"{file_id}.pddl")
         
         category_name_list = id2category[file_id]
         print(f"category names are {category_name_list}")
 
         predicted_action = output_dict["llm_output"]
+        # if llm output starts with ```json
+        if predicted_action.startswith("```json"):
+            predicted_action = predicted_action[7:]
+            predicted_action = predicted_action.strip("```")
+        predicted_action = (
+            predicted_action.strip().replace("\n", "")
+        )
+        predicted_action = predicted_action.replace("'", '"')
         try:
             predicted_action = json.loads(predicted_action)
             predicted_action = predicted_action["output"]
         except Exception as e:
-            try:
-                predicted_action = parse_json(predicted_action)
-                if predicted_action is None:
-                    format_wrong_num += 1
-                    print(f"format wrong num is {format_wrong_num}")
-                else:
-                    predicted_action = predicted_action["output"]
-            except Exception as e:
-                format_wrong_num += 1
-                print(f"format wrong num is {format_wrong_num}")
+            pass
         # print(predicted_action, flush=True)
+
+        try:
+            predicted_action = extract_action_details(content=predicted_action)
+        except Exception as e:
+            format_wrong_num += 1
+            print(f"Error in extracting action details: {e}")
+            print(f"format wrong num is {format_wrong_num}")
+            continue
+
+        print("GPT predicted action body:", flush=True)
         if predicted_action is None or predicted_action == "":
             continue
-        predicted_action = extract_action_details(content=predicted_action)
-        print("GPT predicted action body:", flush=True)
 
         predicted_domain_path = os.path.join(pddl_root, f"predicted_{model_name}")
         gold_domain_path = os.path.join(pddl_root, f"gold_{model_name}")
@@ -336,7 +299,9 @@ def evaluate_operator_succ():
 
         # start eval
         for action_name, action_dict in predicted_action.items():
-            if action_name not in gold_action_dict.keys():
+            total_predict_action_num += 1
+            if action_name not in gold_actions_name:
+                hallucination_num += 1
                 continue
             
             gold_action = gold_actions[action_name]
@@ -450,16 +415,17 @@ def evaluate_operator_succ():
                     task_variate_control_effect_by_type[category_name][action] = [0, 1]
                 else:
                     task_variate_control_effect_by_type[category_name][action][1] += 1
-                
-                action_variate_control[action][1] += 1
-                action_variate_control_precond[action][1] += 1
-                action_variate_control_effect[action][1] += 1
-        
+
+        for action in gold_actions_name:      
+            action_variate_control[action][1] += 1
+            action_variate_control_precond[action][1] += 1
+            action_variate_control_effect[action][1] += 1
+            
         # gold action trial
         for action_name in predicted_action.keys():
             assert predicted_action_copy == predicted_action
-            if action_name not in gold_action_dict.keys():
-                print(f"{action_name} not in gold")
+            if action_name not in gold_actions_name:
+                print(f"{action_name} not in gold! Hallucination!")
                 continue
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
@@ -476,18 +442,17 @@ def evaluate_operator_succ():
                 action_name_key='gold',
             )
             try:
-                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
-                print(f"{pddl_plan=}")
+                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path, timeout=timeout)
                 print(f"Gold test: task {file_id}'s {action_name} succeeded")
             except Exception as e:
-                raise e
                 print(f"Gold test: task {file_id}'s {action_name} failed")
+                raise e
 
         # per action trial
         for action_name in predicted_action.keys():
             assert predicted_action_copy == predicted_action
-            if action_name not in gold_action_dict.keys():
-                print(f"{action_name} not in gold")
+            if action_name not in gold_actions_name:
+                print(f"{action_name} not in gold! Hallucination!")
                 continue
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
@@ -504,7 +469,9 @@ def evaluate_operator_succ():
                 action_name_key=action_name,
             )
             try:
-                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
+                pddl_plan = planner.plan_from_pddl(
+                    domain_file_path, problem_path, timeout=timeout
+                )
                 for category_name in category_name_list:
                     task_variate_control_by_type[category_name][action_name][0] += 1
                 action_variate_control[action_name][0] += 1
@@ -515,8 +482,8 @@ def evaluate_operator_succ():
         # precondition / effect trial
         for action_name in predicted_action.keys():
             assert predicted_action_copy == predicted_action
-            if action_name not in gold_action_dict.keys():
-                print(f"{action_name} not in gold")
+            if action_name not in gold_actions_name:
+                print(f"{action_name} not in gold! Hallucination!")
                 continue
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
@@ -536,7 +503,9 @@ def evaluate_operator_succ():
                 action_name_key=action_name + "_precond",
             )
             try:
-                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
+                pddl_plan = planner.plan_from_pddl(
+                    domain_file_path, problem_path, timeout=timeout
+                )
                 for category_name in category_name_list:
                     task_variate_control_precond_by_type[category_name][action_name][0] += 1
                 action_variate_control_precond[action_name][0] += 1
@@ -546,8 +515,8 @@ def evaluate_operator_succ():
 
         for action_name in predicted_action.keys():
             assert predicted_action_copy == predicted_action
-            if action_name not in gold_action_dict.keys():
-                print(f"{action_name} not in gold")
+            if action_name not in gold_actions_name:
+                print(f"{action_name} not in gold! Hallucination!")
                 continue
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
@@ -567,7 +536,9 @@ def evaluate_operator_succ():
                 action_name_key=action_name + "_effect",
             )
             try:
-                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
+                pddl_plan = planner.plan_from_pddl(
+                    domain_file_path, problem_path, timeout=timeout
+                )
                 for category_name in category_name_list:
                     task_variate_control_effect_by_type[category_name][action_name][0] += 1
                 action_variate_control_effect[action_name][0] += 1
@@ -584,7 +555,9 @@ def evaluate_operator_succ():
             predicted_domain_path,
         )
         try:
-            pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
+            pddl_plan = planner.plan_from_pddl(
+                domain_file_path, problem_path, timeout=timeout
+            )
             for category_name in category_name_list:
                 success_by_task_type_dict[category_name][0] += 1
             print(f"Holistic test: task {file_id} succeeded")
@@ -680,18 +653,14 @@ def evaluate_operator_succ():
 
     print(f'Format wrong num is {format_wrong_num}!!!')
 
-    # post-process success rate by planner on task type
-    success_by_task_type_dict = calculate_success_rate(success_by_task_type_dict)
-    print("Success by task type dict:")
-    print_success_rate(success_by_task_type_dict)
+    
 
     # print out precision recall f1 
     print("Precondition predicate type res dict:")
     print_precision_recall_f1(precond_predicate_type_res_dict)
     print("Effect predicate type res dict:")
     print_precision_recall_f1(effect_predicate_type_res_dict)
-    print("Full predicate type res dict:")
-    print_precision_recall_f1(full_predicate_type_res_dict)
+    
     print("Precondition action type dict:")
     print_precision_recall_f1(precond_action_type_dict)
     print("Effect action type dict:")
@@ -728,6 +697,25 @@ def evaluate_operator_succ():
     print("Action variate control effect:")
     print(action_variate_control_effect)
 
+
+    # post-process success rate by planner on task type
+    print('\n')
+    print(f'{total_num=}')
+    print(f'{format_wrong_num=}, rate={100.*format_wrong_num/total_num:.2f}')
+    print(
+        f"{hallucination_num=}, rate={100.*hallucination_num/total_predict_action_num:.2f}"
+    )
+    success_by_task_type_dict = calculate_success_rate(success_by_task_type_dict)
+    print("MODEL NAME!!! ", model_name)
+    print("\n")
+    print("Success by task type dict:")
+    print_success_rate(success_by_task_type_dict)
+    print("\n")
+    print("Full predicate type res dict:")
+    print_precision_recall_f1(full_predicate_type_res_dict)
+    # output = [full_predicate_type_res_dict, success_by_task_type_dict, 100.*format_wrong_num/total_num, 100.*hallucination_num/total_predict_action_num]
+    output = [task_variate_control_by_type, task_variate_control_precond_by_type, task_variate_control_effect_by_type, action_variate_control, action_variate_control_precond, action_variate_control_effect]
+
     # save results
     if save_results:
         json.dump(precond_predicate_type_res_dict, open(precond_predicate_type_res_dict_path, "w"), indent=4)
@@ -749,394 +737,5 @@ def evaluate_operator_succ():
         json.dump(action_variate_control_precond, open(action_variate_control_precond_path, "w"), indent=4)
         json.dump(action_variate_control_effect, open(action_variate_control_effect_path, "w"), indent=4)
     
-    
+    return output
 
-    
-
-
-    # path_args = {
-    #     "precond_predicate_type_res_dict_path": precond_predicate_type_res_dict_path,
-    #     "precond_predicate_res_dict_path": precond_predicate_res_dict_path,
-    #     "effect_predicate_type_res_dict_path": effect_predicate_type_res_dict_path,
-    #     "effect_predicate_res_dict_path": effect_predicate_res_dict_path,
-    #     "full_predicate_type_res_dict_path": full_predicate_type_res_dict_path,
-    #     "full_predicate_res_dict_path": full_predicate_res_dict_path,
-    #     "precond_predicate_type_res_fig_path": precond_predicate_type_res_fig_path,
-    #     "precond_predicate_res_fig_path": precond_predicate_res_fig_path,
-    #     "effect_predicate_type_res_fig_path": effect_predicate_type_res_fig_path,
-    #     "effect_predicate_res_fig_path": effect_predicate_res_fig_path,
-    #     "full_predicate_type_res_fig_path": full_predicate_type_res_fig_path,
-    #     "full_predicate_res_fig_path": full_predicate_res_fig_path,
-    # }
-
-    # visualization
-    if visualization:
-        operator_visualization(**path_args)
-    return
-
-
-def task_categorization():
-    k = 2
-    # per_task_res_path = os.path.join(save_root, 'per_task_res.json')
-    # full_predicate_type_res_dict_path = os.path.join(save_root, 'full_predicate_type_res_dict.json')
-    resource_root = (
-        "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/virtualhome"
-    )
-    gold_action_path = osp.join(resource_root, "gold_action.json")
-    id2action_path = osp.join(resource_root, "id2action.json")
-    pred_category_path = osp.join(resource_root, "predicates_category.json")
-
-    gold_action_dict = json.load(open(gold_action_path, "r"))
-    id2action = json.load(open(id2action_path, "r"))
-    predicate_categories = json.load(open(pred_category_path, "r"))
-
-    id_to_task_path = os.path.join(resource_root, "id2task.json")
-    id2predicate_path = os.path.join(resource_root, "id2predicate.json")
-    gold_action_w_pred_path = os.path.join(resource_root, "gold_action_w_pred.json")
-    id2category_path = os.path.join(resource_root, f"id2category_{k}.json")
-    task_category_cnt_path = os.path.join(resource_root, f"task_category_cnt_{k}.json")
-    category2id_path = os.path.join(resource_root, f"category2id_{k}.json")
-
-    if os.path.exists(id_to_task_path):
-        id_to_task = json.load(open(id_to_task_path, "r"))
-    else:
-        id_to_task = {}
-        task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
-        task_dict = json.load(open(task_dict_dir, "r"))
-        scene_1_dict = task_dict["scene_1"]
-        for task_name, task_details in scene_1_dict.items():
-            t_ids = task_details["task_file_list_with_ans"]
-            goal_id_to_task = group_by_index(t_ids)
-            for id_list in goal_id_to_task.values():
-                for idx in id_list:
-                    id_to_task[idx] = task_name
-        json.dump(id_to_task, open(id_to_task_path, "w"), indent=4)
-
-    if os.path.exists(gold_action_w_pred_path):
-        gold_action_dict = json.load(open(gold_action_w_pred_path, "r"))
-    else:
-        for action_name, action_dict in gold_action_dict.items():
-            pred_set = set()
-            action_preconditions = action_dict["action_preconditions"]
-            action_effects = action_dict["action_effects"]
-            score, matched, unmatched_pred, unmatched_gold = calculate_logic_score(
-                action_preconditions, action_preconditions
-            )
-            print(f"{score=}, {matched=}, {unmatched_pred=}, {unmatched_gold=}")
-            assert (
-                score == 1.0 and len(unmatched_pred) == 0 and len(unmatched_gold) == 0
-            )
-            pred_set.update(matched)
-            score, matched, unmatched_pred, unmatched_gold = calculate_logic_score(
-                action_effects, action_effects
-            )
-            print(f"{score=}, {matched=}, {unmatched_pred=}, {unmatched_gold=}")
-            assert (
-                score == 1.0 and len(unmatched_pred) == 0 and len(unmatched_gold) == 0
-            )
-            pred_set.update(matched)
-            if "()" in pred_set:
-                pred_set.remove("()")
-            gold_action_dict[action_name]["pred_set"] = list(pred_set)
-
-        json.dump(gold_action_dict, open(gold_action_w_pred_path, "w"), indent=4)
-
-    if os.path.exists(id2predicate_path):
-        id2predicates = json.load(open(id2predicate_path, "r"))
-    else:
-        id2predicates = {}
-        for id, action_list in id2action.items():
-            pred_list = []
-            for action_name in action_list:
-                if action_name not in gold_action_dict.keys():
-                    print(f"{action_name} not in gold!!! Double check!!!")
-                    continue
-                pred_set = gold_action_dict[action_name]["pred_set"]
-                pred_list.extend(pred_set)
-            id2predicates[id] = pred_list
-        json.dump(id2predicates, open(id2predicate_path, "w"), indent=4)
-
-    # calculate IDF
-    pred_frequency = defaultdict(int)
-    for id, pred_list in id2predicates.items():
-        seen_predicates = set()
-        for predicate in pred_list:
-            if predicate == "()":
-                continue
-            if predicate not in seen_predicates:
-                pred_frequency[predicate] += 1
-                seen_predicates.add(predicate)
-
-    total_docs = len(id2predicates)
-    idf_scores = {
-        predicate: math.log(total_docs / df) for predicate, df in pred_frequency.items()
-    }
-
-    print(f"{idf_scores=}")
-    print("\n")
-
-    # Score programs based on categories
-    program_scores = {}
-    for id, pred_list in id2predicates.items():
-        category_scores = defaultdict(float)
-        for predicate in pred_list:
-            if predicate == "()":
-                continue
-            category = predicate_categories[predicate]
-            category_scores[category] += idf_scores[predicate]
-        program_scores[id] = category_scores
-
-    # print(f"{program_scores=}")
-    # print("\n")
-
-    # Categorize each program
-    program_categories = {}
-
-    for id, category_scores in program_scores.items():
-        # take the top k categories
-        topk_categories = sorted(
-            category_scores, key=category_scores.get, reverse=True
-        )[:k]
-        program_categories[id] = topk_categories
-
-    program_category_cnt = {}
-    for category_lst in program_categories.values():
-        for category in category_lst:
-            if category not in program_category_cnt:
-                program_category_cnt[category] = 0
-            program_category_cnt[category] += 1
-
-    category2program = defaultdict(list)
-    for id, category_lst in program_categories.items():
-        for category in category_lst:
-            category2program[category].append(id)
-
-    print(f"{program_categories=}")
-    print("\n")
-    print(f"{program_category_cnt=}")
-    print("\n")
-
-    json.dump(program_categories, open(id2category_path, "w"), indent=4)
-    json.dump(program_category_cnt, open(task_category_cnt_path, "w"), indent=4)
-    json.dump(category2program, open(category2id_path, "w"), indent=4)
-
-
-def operator_visualization(**kwargs):
-    precond_predicate_type_res_dict = json.loads(
-        open(kwargs["precond_predicate_type_res_dict_path"], "r").read()
-    )
-    precond_predicate_res_dict = json.loads(
-        open(kwargs["precond_predicate_res_dict_path"], "r").read()
-    )
-    effect_predicate_type_res_dict = json.loads(
-        open(kwargs["effect_predicate_type_res_dict_path"], "r").read()
-    )
-    effect_predicate_res_dict = json.loads(
-        open(kwargs["effect_predicate_res_dict_path"], "r").read()
-    )
-    full_predicate_type_res_dict = json.loads(
-        open(kwargs["full_predicate_type_res_dict_path"], "r").read()
-    )
-    full_predicate_res_dict = json.loads(
-        open(kwargs["full_predicate_res_dict_path"], "r").read()
-    )
-
-    operator_score_dict = json.loads(
-        open(kwargs["operator_score_dict_path"], "r").read()
-    )
-
-    error_draw_chart(
-        precond_predicate_type_res_dict, kwargs["precond_predicate_type_res_fig_path"]
-    )
-    error_draw_chart(
-        precond_predicate_res_dict,
-        kwargs["precond_predicate_res_fig_path"],
-        rotation=45,
-        divide_k=3,
-    )
-    error_draw_chart(
-        effect_predicate_type_res_dict, kwargs["effect_predicate_type_res_fig_path"]
-    )
-    error_draw_chart(
-        effect_predicate_res_dict,
-        kwargs["effect_predicate_res_fig_path"],
-        rotation=45,
-        divide_k=3,
-    )
-    error_draw_chart(
-        full_predicate_type_res_dict, kwargs["full_predicate_type_res_fig_path"]
-    )
-    error_draw_chart(
-        full_predicate_res_dict,
-        kwargs["full_predicate_res_fig_path"],
-        rotation=45,
-        divide_k=3,
-    )
-
-    draw_bar_chart(operator_score_dict, kwargs["operator_score_fig_path"], divide_k=3)
-
-
-def pddl_problem_construction():
-    properties_data = utils.load_properties_data()
-    object_placing = utils.load_object_placing()
-    name_equivalence = utils.load_name_equivalence()
-    data_path = "/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds/init_and_final_graphs/TrimmedTestScene1_graph/results_intentions_march-13-18"
-    domain_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome.pddl"
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
-    pddl_problem_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome"
-
-    task_dict = json.load(open(task_dict_dir, "r"))
-    scene_str = "scene_1"
-    task_dict = task_dict[scene_str]
-    # predicate_vocabulary = json.loads(open(vocabulary_path, 'r').open())
-    for task_name, task_detail in task_dict.items():
-        # if task_name in ['Wash dishes by hand', 'Write an email', 'Wash hands']:
-        #     continue
-        if task_name != "Pet cat":
-            continue
-        task_name = "_".join(task_name.split())
-        task_problem_dir = os.path.join(pddl_problem_dir, task_name)
-        if not os.path.exists(task_problem_dir):
-            os.makedirs(task_problem_dir)
-        print(f"task name is {task_name}")
-        task_list = task_detail["task_file_list"]
-        task_list_ans_list = task_detail["task_file_list_with_ans"]
-        goal_candidates = task_detail["goal_candidates"]
-        for file_id in task_list:
-            if file_id != "115_2":
-                continue
-            # we first get candidate num
-            ans_id = get_candidate_id(file_id, task_list_ans_list)
-            if ans_id == -1:
-                continue
-            goal = goal_candidates[ans_id]
-
-            problem_dir = os.path.join(task_problem_dir, f"{file_id}.pddl")
-            state_file_path = os.path.join(data_path, f"file{file_id}.json")
-            state_dict = json.load(open(state_file_path, "r"))
-            init_state_dict = state_dict["init_graph"]
-            final_state_dict = state_dict["final_graph"]
-
-            init_scene_graph = EnvironmentGraph(init_state_dict)
-            planner = MotionPlanner(
-                init_scene_graph,
-                final_state_dict,
-                name_equivalence,
-                properties_data,
-                object_placing,
-            )
-
-            relevant_nodes, related_ids = get_relevant_nodes(planner)
-
-            initial_states, goal_states, actions_states, name2id = (
-                get_initial_states_and_final_goals_wo_id(planner, goal, relevant_nodes)
-            )
-
-            pddl_file = create_pddl_problem(
-                domain_path, initial_states, goal_states, relevant_nodes, task_name
-            )
-
-            # save pddl_file
-            with open(problem_dir, "w") as f:
-                f.write(pddl_file)
-            # print(f'{object_in_scene=}')
-            print(f"{relevant_nodes=}")
-            print(f"{related_ids=}")
-            print(f"{initial_states=}")
-            print(f"{goal_states=}")
-            print(f"{actions_states=}")
-            print(f"{name2id=}")
-            print(f"{pddl_file=}")
-    return
-
-
-def construct_behavior_pddl():
-    dataset = "virtualhome"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
-    )
-
-    pddl_problem_dir = osp.join(resource_root, "problem_pddl")
-    os.makedirs(pddl_problem_dir, exist_ok=True)
-
-    problem_pddl_list = json.load(open(problem_pddl, "r"))
-    for pd_dict in problem_pddl_list:
-        identifier = pd_dict["identifier"]
-        problem_pddl = pd_dict["problem_pddl"]
-        problem_pddl_path = osp.join(pddl_problem_dir, f"{identifier}.pddl")
-        with open(problem_pddl_path, "w") as f:
-            special_write(problem_pddl, f)
-
-
-def evaluate_pddl_planner():
-    dataset = "virtualhome"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
-    )
-
-    pddl_root = osp.join(resource_root, "pddl_files")
-    pddl_problem_dir = osp.join(resource_root, "problem_pddl")
-    os.makedirs(pddl_root, exist_ok=True)
-    os.makedirs(pddl_problem_dir, exist_ok=True)
-
-    domain_path = osp.join(resource_root, f"{dataset}.pddl")
-
-    success_dict_path = osp.join(resource_root, "success_task.json")
-    fail_dict_path = osp.join(resource_root, "failed_task.json")
-    id2action_path = osp.join(resource_root, "id2action.json")
-    gold_pddl_plan_path = osp.join(resource_root, "gold_pddl_plan.json")
-
-    planner = FD()
-    failed_list = []
-    successed_list = []
-    id2action = {}
-    gold_pddl_plan_dict = {}
-    save_flag = True
-
-    # search through all files in pddl_problem_dir
-    for task_name in os.listdir(pddl_problem_dir):
-        # remove .pddl in each filename
-        print(f"Current task is {task_name}")
-        if task_name in ["Wash_dishes_by_hand", "Write_an_email", "Wash_hands"]:
-            continue
-        for file_name in os.listdir(osp.join(pddl_problem_dir, task_name)):
-            if not file_name.endswith(".pddl"):
-                continue
-            identifier = file_name.split(".")[0]
-            problem_path = osp.join(pddl_problem_dir, task_name, file_name)
-            print(f"Task identifier is {identifier}")
-            try:
-                # print(f'{cmd_str=}')
-                pddl_plan = planner.plan_from_pddl(domain_path, problem_path)
-                print(f"{pddl_plan=}")
-                gold_action_list = []
-                for act in pddl_plan:
-                    action = act.split()[0]
-                    gold_action_list.append(action)
-                id2action[identifier] = list(set(gold_action_list))
-                gold_pddl_plan_dict[identifier] = pddl_plan
-                successed_list.append(identifier)
-                print("Test passed")
-            except Exception as e:
-                failed_list.append(identifier)
-                print(f"An error occurred: {e}")
-
-    if save_flag:
-        with open(fail_dict_path, "w") as f:
-            json.dump(failed_list, f)
-        with open(id2action_path, "w") as f:
-            json.dump(id2action, f)
-        with open(success_dict_path, "w") as f:
-            json.dump(successed_list, f)
-        with open(gold_pddl_plan_path, "w") as f:
-            json.dump(gold_pddl_plan_dict, f)
-    print(f"{failed_list=}")
-    return
-
-
-def planner_test():
-    domain_file_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/virtualhome/pddl_files/predicted_gpt-4o/11_1_gold.pddl"
-    problem_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/virtualhome/pddl_files/virtualhome/Turn_on_light/11_1.pddl"
-    planner = FD()
-    plan = planner.plan_from_pddl(domain_file_path, problem_path)
-    print(f"{plan=}")

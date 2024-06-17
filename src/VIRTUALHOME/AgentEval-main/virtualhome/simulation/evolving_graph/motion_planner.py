@@ -1,8 +1,8 @@
 import sys
+from typing import Dict, List, Tuple
 
-sys.path.append("../simulation")
-from evolving_graph.execution import Relation, State
-from evolving_graph.scripts import (
+from simulation.evolving_graph.execution import Relation, State
+from simulation.evolving_graph.scripts import (
     read_script,
     Action,
     ScriptObject,
@@ -11,11 +11,10 @@ from evolving_graph.scripts import (
     Script,
     parse_script_line,
 )
-from evolving_graph.execution import ScriptExecutor, ExecutionInfo
-from evolving_graph.environment import EnvironmentGraph, EnvironmentState
-from evolving_graph.prune_graph import *
-import evolving_graph.filter_relevant_info
-from evolving_graph.filter_relevant_info import *
+from simulation.evolving_graph.execution import ScriptExecutor, ExecutionInfo
+from simulation.evolving_graph.environment import EnvironmentGraph, EnvironmentState
+from simulation.evolving_graph.prune_graph import *
+import simulation.evolving_graph.utils as utils
 
 
 class MotionPlanner(object):
@@ -344,6 +343,15 @@ class MotionPlanner(object):
             action_goal_str,
             relevant_name_to_id,
         )
+
+    def get_id_to_name(self) -> Dict[int, str]:
+        id_to_name = {}
+        for d in self.init_state.to_dict()["nodes"]:
+            id_to_name[d["id"]] = d["class_name"]
+        for d in self.final_state_dict["nodes"]:
+            if d["id"] not in id_to_name:
+                id_to_name[d["id"]] = d["class_name"]
+        return id_to_name
 
     def execute_primitive_action(self, action):
         """Proxy for self.env. Maybe need to do some translation here. Scene graph changes"""

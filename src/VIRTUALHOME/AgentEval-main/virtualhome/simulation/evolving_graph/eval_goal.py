@@ -1,40 +1,30 @@
 import json
-import sys
-
-sys.path.append("../simulation")
-
-import re
 import copy
-import sys
 import os
 import os.path as osp
 import copy
-import ast
-import random
-import math
-from collections import defaultdict
 
-import evolving_graph.utils as utils
-from evolving_graph.eval_utils import *
+import simulation.evolving_graph.utils as utils
+from simulation.evolving_graph.eval_utils import *
 
 
-
-model_name = "gpt-4o"
 system_prompt = "You are a helpful assistant in interpreting natural language goals into symbolic goals using given format. For this task, please only output a parsable json string inside brackets. Please start your answer with { and end your answer with }. Don't include any notes or explanations with the output json string."
 
-def goal_input_preparation():
-    dataset = "virtualhome"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
+def goal_input_preparation(args):
+    dataset = args.dataset
+    resource_root = osp.join(args.resource_dir, dataset)
+    data_dir = osp.join(
+        args.dataset_dir, "programs_processed_precond_nograb_morepreconds"
     )
-    data_dir = "/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds"
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_LTL_formula_accurate.json"
-    helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/goal_interpretation_vh_complete.json"
+    task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
+    helm_prompt_path = osp.join(args.helm_dir, "goal_interpretation_vh_complete.json")
     rel_obj_path = os.path.join(resource_root, "relation_object_pairs.json")
     all_rel_path = os.path.join(resource_root, "relation_types.json")
     all_action_path = os.path.join(resource_root, "action_space.json")
-    scenegraph_id = 1
+
+    scenegraph_id = args.scene_id
     scene_id = f"scene_{scenegraph_id}"
+
     all_rel = json.load(open(all_rel_path, "r"))
     action_space = json.load(open(all_action_path, "r"))
     task_dict = json.load(open(task_dict_dir, "r"))
@@ -54,26 +44,6 @@ def goal_input_preparation():
     for task_name, task_dicts in task_dict.items():
         print(f"CURRENT TASK IS {task_name}!")
         for script_id, task_goal_dict in task_dicts.items():
-            # get symbolic goals
-            # goals = task_goal_dict["vh_goal"]
-            # action_goals = goals["actions"]
-            # scene_goals = goals["goal"]
-            # node_goals = []
-            # edge_goals = []
-            # for scene_goal in scene_goals:
-            #     if "id" in scene_goal and "class_name" in scene_goal and "state" in scene_goal:
-            #         node_goals.append(scene_goal)
-            #     elif (
-            #         "from_id" in scene_goal
-            #         and "to_id" in scene_goal
-            #         and "relation_type" in scene_goal
-            #     ):
-            #         edge_goals.append(scene_goal)
-            #     else:
-            #         raise ValueError("Scene goal is not in correct format")
-            # print(f"Before check {node_goals=}")
-            # print(f"Before check {edge_goals=}")
-
             # get task name and description
             motion_planner, _, _, task_name, task_description = (
                 construct_planner(
@@ -108,31 +78,16 @@ def goal_input_preparation():
     json.dump(helm_prompt_list, open(helm_prompt_path, "w"), indent=4)
 
 
-def goal_llm_prediction():
-    helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/goal_interpretation_vh.json"
-    helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/goal_interpretation_vh_{model_name}.json"
-    
-    helm_output = []
-    helm_prompt = json.load(open(helm_prompt_path, "r"))
-    for prompt_dict in helm_prompt:
-        id = prompt_dict["identifier"]
-        prompt = prompt_dict["llm_prompt"]
-        print(f"GPT starts prediction: {id}", flush=True)
-        predicted_action = get_gpt_output(prompt, model_name, temperature=1, system_prompt=system_prompt)
-        helm_output.append({"identifier": id, "llm_output": predicted_action})
-    json.dump(helm_output, open(helm_output_path, "w"), indent=4)
 
-
-def goal_output_evaluation():
-    dataset = "virtualhome"
-    helm_output_path = f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_output/goal_interpretation_vh_{model_name}.json"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
+def goal_output_evaluation(args):
+    dataset = args.dataset
+    model_name = args.model_name
+    helm_output_path = osp.join(
+        args.helm_dir, f"helm_output/goal_interpretation/{model_name}_outputs.json"
     )
-    data_dir = "/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds"
-
-    # indexing path
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_LTL_formula_accurate.json"
+    resource_root = osp.join(args.resource_dir, dataset)
+    data_dir = osp.join(args.dataset_dir, "programs_processed_precond_nograb_morepreconds")
+    task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
     id_to_task_path = os.path.join(resource_root, "id2task.json")
     
     # load data
@@ -144,7 +99,7 @@ def goal_output_evaluation():
     object_placing = utils.load_object_placing()
     name_equivalence = utils.load_name_equivalence()
 
-    scenegraph_id = 1
+    scenegraph_id = args.scene_id
     scene_id = f"scene_{scenegraph_id}"
     task_dicts = task_dicts[scene_id]
 
@@ -173,8 +128,6 @@ def goal_output_evaluation():
         # get symbolic goals
         task = id2task[file_id]
         print(f"Task is {task}, file_id is {file_id}")
-        # if task not in ["Turn on light"]:
-        #     continue
         program_dict = task_dicts[task][file_id]
         goals = program_dict["vh_goal"]
         gold_action_goals = goals["actions"]
@@ -193,30 +146,28 @@ def goal_output_evaluation():
             else:
                 raise ValueError("Scene goal is not in correct format")
         
-        gold_node_goals = list(set(gold_node_goals))
-        gold_edge_goals = list(set(gold_edge_goals))
+        gold_node_goals = remove_duplicate_dicts(gold_node_goals)
+        gold_edge_goals = remove_duplicate_dicts(gold_edge_goals)
         gold_action_goals = list(set(gold_action_goals))
         
         output = output_dict["llm_output"]
+        # if llm output starts with ```json
+        output = output.replace("<|eot_id|>", "")
+        if output.startswith("```json"):
+            output = output[7:]
+            output = output.strip("```")
+        output = output.strip().replace("\n", "")
+        output = output.replace("\'", "\"")
         try:
             output = json.loads(output)
         except Exception as e:
-            try:
-                output = parse_json(output)
-                if output is None or len(output) == 0:
-                    format_wrong_goals += (
-                        len(gold_node_goals)
-                        + len(gold_edge_goals)
-                        + len(gold_action_goals)
-                    )
-                    print(f"format wrong num is {format_wrong_goals}")
-                    continue
-            except Exception as e:
-                format_wrong_goals += (
-                    len(gold_node_goals) + len(gold_edge_goals) + len(gold_action_goals)
-                )
-                print(f"format wrong num is {format_wrong_goals}")
-                continue
+            format_wrong_goals += 1
+            print(f"format wrong num is {format_wrong_goals}")
+            print(
+                f"model {model_name}, task {task}, file_id {file_id} has format wrong output"
+            )
+            continue
+
         
         print(f"Ground truth {gold_node_goals=}")
         print(f"Ground truth {gold_edge_goals=}")
@@ -236,14 +187,13 @@ def goal_output_evaluation():
         for tup in relevant_nodes_ids:
             name_to_id[tup[0]] = tup[1]
             
+        print(f'predicted {output=}')
         pred_node_goals = output.get("node goals", [])
         pred_edge_goals = output.get("edge goals", [])
         pred_action_goals = output.get("action goals", [])
-        if len(pred_action_goals) > 0:
-            pred_action_goals = [pred_action_goal["action"].upper() for pred_action_goal in pred_action_goals]
-        pred_node_goals = list(set(pred_node_goals))
-        pred_edge_goals = list(set(pred_edge_goals))
-        pred_action_goals = list(set(pred_action_goals))
+        pred_node_goals = remove_duplicate_dicts(pred_node_goals)
+        pred_edge_goals = remove_duplicate_dicts(pred_edge_goals)
+        pred_action_goals = remove_duplicate_dicts(pred_action_goals)
 
         print(f'{task_name=}')
         print(f'{task_description=}')
@@ -254,8 +204,19 @@ def goal_output_evaluation():
         delta_FN_node_goals = 0
         print('Predicted node goals:')
         for node_goal in pred_node_goals:
+            if len(node_goal) == 0:
+                continue
+            if "name" not in node_goal or "state" not in node_goal:
+                format_wrong_goals += 1
+                total_node_goals += 1
+                print(f"model {model_name}, task {task}, file_id {file_id} has format wrong output")
+                continue
             if node_goal["name"] not in name_to_id:
                 hallucination_goals += 1
+                print(
+                    f"model {model_name}, task {task}, file_id {file_id} has hallucination output"
+                )
+                print(f'hallucinated output is {node_goal}')
                 continue
             indexed_node_goals = {
                 "id": name_to_id[node_goal["name"]],
@@ -282,8 +243,19 @@ def goal_output_evaluation():
         delta_FP_edge_goals = 0
         delta_FN_edge_goals = 0
         for edge_goal in pred_edge_goals:
+            if len(edge_goal) == 0:
+                continue
+            if "from_name" not in edge_goal or "to_name" not in edge_goal or "relation" not in edge_goal:
+                format_wrong_goals += 1
+                total_edge_goals += 1
+                print(
+                    f"model {model_name}, task {task}, file_id {file_id} has format wrong output"
+                )
+                continue
             if edge_goal["from_name"] not in name_to_id or edge_goal["to_name"] not in name_to_id:
                 hallucination_goals += 1
+                print(f'model {model_name}, task {task}, file_id {file_id} has hallucination output')
+                print(f'hallucinated output is {edge_goal}')
                 continue
             indexed_edge_goals = {"from_id": name_to_id[edge_goal["from_name"]], "to_id": name_to_id[edge_goal["to_name"]], "relation_type": edge_goal["relation"]}
             print(indexed_edge_goals)
@@ -306,7 +278,17 @@ def goal_output_evaluation():
         delta_FP_action_goals = 0
         delta_FN_action_goals = 0
         gold_action_goals_cp = copy.deepcopy(gold_action_goals)
-        for action_goal in pred_action_goals:
+        for action_goal_dict in pred_action_goals:
+            if len(action_goal_dict) == 0:
+                continue
+            if "action" not in action_goal_dict:
+                format_wrong_goals += 1
+                total_action_goals += 1
+                print(
+                    f"model {model_name}, task {task}, file_id {file_id} has format wrong output"
+                )
+                continue
+            action_goal = action_goal_dict["action"].upper()
             print(action_goal)
             found_flag = False
             for gd_action_goals in gold_action_goals_cp:
@@ -332,9 +314,6 @@ def goal_output_evaluation():
         print(
             f"TP_action_goals: {delta_TP_acion_goals}, FP_action_goals: {delta_FP_action_goals}, FN_action_goals: {delta_FN_action_goals}"
         )
-        assert total_node_goals == TP_node_goals + FP_node_goals
-        assert total_edge_goals == TP_edge_goals + FP_edge_goals
-        assert total_action_goals == TP_action_goals + FP_action_goals
     
     node_precision, node_recall, node_f1 = precision_recall_f1(TP_node_goals, FP_node_goals, FN_node_goals)
     print(f"Node: TP: {TP_node_goals}, FP: {FP_node_goals}, FN: {FN_node_goals}, Precision: {node_precision}, Recall: {node_recall}, F1: {node_f1}")
@@ -358,6 +337,8 @@ def goal_output_evaluation():
     hallucination_rate = hallucination_goals / (total_node_goals + total_edge_goals + total_action_goals)
     print(f"Hallucination num is {hallucination_goals}, Total goals num is {total_node_goals + total_edge_goals + total_action_goals}")
     print(f"Hallucination rate is {hallucination_rate}")
+
+    return [node_precision, node_recall, node_f1, edge_precision, edge_recall, edge_f1, action_precision, action_recall, action_f1, all_precision, all_recall, all_f1, format_wrong_rate, hallucination_rate]
     
 
 

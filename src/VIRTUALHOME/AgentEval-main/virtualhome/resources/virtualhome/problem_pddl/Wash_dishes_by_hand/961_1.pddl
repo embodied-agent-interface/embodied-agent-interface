@@ -1,0 +1,40 @@
+(define (problem Wash_dishes_by_hand)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    dish_soap plate dining_room bathroom dishrack sink kitchen_counter food_kiwi - object
+)
+    (:init
+    (surfaces kitchen_counter)
+    (containers sink)
+    (recipient sink)
+    (grabbable plate)
+    (movable plate)
+    (recipient plate)
+    (surfaces plate)
+    (cream dish_soap)
+    (grabbable dish_soap)
+    (movable dish_soap)
+    (pourable dish_soap)
+    (grabbable dishrack)
+    (movable dishrack)
+    (surfaces dishrack)
+    (cuttable food_kiwi)
+    (eatable food_kiwi)
+    (grabbable food_kiwi)
+    (movable food_kiwi)
+    (next_to plate food_kiwi)
+    (ontop food_kiwi plate)
+    (next_to plate sink)
+    (next_to sink dish_soap)
+    (next_to sink plate)
+    (next_to food_kiwi plate)
+    (inside character bathroom)
+    (next_to dish_soap sink)
+)
+    (:goal
+    (and
+    )
+)
+    )
+    

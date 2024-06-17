@@ -180,17 +180,5 @@ tmp*.py
 log
 pics
 virtualhome/output
-virtualhome/resources/pddl_files/virtualhome/*
-virtualhome/resources/pddl_files/hiking/*
-!virtualhome/resources/pddl_files/virtualhome.pddl
-virtualhome/resources/pddl_files/failed_task.json
-virtualhome/resources/pddl_files/success_task.json
-virtualhome/resources/pddl_files/gold_action copy.json
-virtualhome/resources/pddl_files/hiking.pddl
-virtualhome/resources/pddl_files/gold
-virtualhome/resources/pddl_files/predicted
-virtualhome/resources/behavior/problem_pddl
 virtualhome/resources/virtualhome/pddl_files
-virtualhome/resources/virtualhome/problem_pddl
-virtualhome/resources/behavior/*
 virtualhome/helm

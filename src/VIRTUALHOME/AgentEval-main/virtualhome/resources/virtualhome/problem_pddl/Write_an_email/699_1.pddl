@@ -1,0 +1,41 @@
+(define (problem Write_an_email)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    keyboard computer check dining_room home_office chair mail - object
+)
+    (:init
+    (clean computer)
+    (off computer)
+    (clean mail)
+    (closed mail)
+    (grabbable chair)
+    (movable chair)
+    (sittable chair)
+    (surfaces chair)
+    (grabbable keyboard)
+    (has_plug keyboard)
+    (movable keyboard)
+    (has_switch computer)
+    (lookable computer)
+    (can_open mail)
+    (grabbable mail)
+    (has_paper mail)
+    (movable mail)
+    (readable mail)
+    (grabbable check)
+    (has_paper check)
+    (movable check)
+    (readable check)
+    (next_to chair check)
+    (next_to check chair)
+    (inside character dining_room)
+    (inside check mail)
+)
+    (:goal
+    (and
+        (on computer)
+    )
+)
+    )
+    

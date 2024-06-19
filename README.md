@@ -24,23 +24,31 @@
 
 ## Table of Contents
 
-  * [Overview](#overview)
-  * [Requirements](#requirements)
-  * [Data](#data)
-  * [Code](#code)
-  * [Prompt](#prompt)
-      * [Goal Interpretation](#)
-      * [Action Sequencing](#)
-      * [Subgoal Decomposition](#)
-      * [Transition Modeling](#)
-  * [Evaluation](#evaluation)
-      * [Goal Interpretation](#)
-      * [Action Sequencing](#)
-      * [Subgoal Decomposition](#)
-      * [Transition Modeling](#)
-  * [BEHAVIOR Symbolic Simulator Implementation](#behavior)
-      * [Evolving Graph](#)
-      * [Transition Modeling](#)
+- [Embodied Agent Interface (eAgent): Benchmarking LLMs for Embodied Decision Making](#embodied-agent-interface-eagent-benchmarking-llms-for-embodied-decision-making)
+  - [:dizzy: Dataset Highlights](#dizzy-dataset-highlights)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Requirements](#requirements)
+  - [Data](#data)
+    - [VirtualHome original dataset (Optional)](#virtualhome-original-dataset-optional)
+  - [Code](#code)
+  - [Prompt](#prompt)
+    - [Goal Interpretation](#goal-interpretation)
+      - [VirtualHome](#virtualhome)
+    - [Action Sequencing](#action-sequencing)
+    - [Subgoal Decomposition](#subgoal-decomposition)
+    - [Transition Modeling](#transition-modeling)
+  - [Evaluation](#evaluation)
+    - [Goal Interpretation](#goal-interpretation-1)
+      - [Evaluation script](#evaluation-script)
+    - [Action Sequencing](#action-sequencing-1)
+      - [Evaluation script](#evaluation-script-1)
+    - [Subgoal Decomposition](#subgoal-decomposition-1)
+    - [Transition Modeling](#transition-modeling-1)
+      - [Evaluation script](#evaluation-script-2)
+  - [BEHAVIOR Symbolic Simulator Implementation](#behavior-symbolic-simulator-implementation)
+    - [Evolving Graph](#evolving-graph)
+    - [Transition Modeling](#transition-modeling-2)
 
 <!-- <i> **please see [paper](https://arxiv.org/abs/2308.09126) for precise operationalizations. </i> -->
 
@@ -129,6 +137,14 @@ The dataset is in JSON format:
 }
 ```
 
+### VirtualHome original dataset (Optional)
+```
+cd src/VIRTUALHOME/AgentEval-main/virtualhome/
+mkdir dataset
+./helper_scripts/download_dataset.sh
+```
+Use the above commands to download the scene graph dataset of VirtualHome. This dataset will be used in the `prompt generation` of the tasks on VirtualHome, providing necessary information to LLM. If you are using the provided prompts, this step is not necessary.
+
 ## Code
 
 The code structure for `EAgent` is as follows:
@@ -176,6 +192,13 @@ The code structure for `EAgent` is as follows:
 ------------------------ prompts
 ------------ VirtualHome  # Evaluator on VirtualHome
 -------------------- virtualhome/prompts
+```
+
+#### VirtualHome
+```
+cd src/VIRTUALHOME/AgentEval-main/virtualhome/
+mkdir dataset
+python agent_eval.py --mode input --eval_type goal --resource_dir resources/ --helm_dir helm/ --dataset_dir dataset/ --prompt_dir prompts/
 ```
 
 ### Action Sequencing
@@ -226,6 +249,11 @@ The code structure for `EAgent` is as follows:
 -------------------- motion_planner.py
 -------------------- eval_goal.py
 ```
+#### Evaluation script
+VirtualHome:
+```
+bash src/VIRTUALHOME/AgentEval-main/virtualhome/goal_eval_vh.py
+```
 
 ### Action Sequencing
 ```
@@ -240,6 +268,12 @@ The code structure for `EAgent` is as follows:
 ---------------- virtualhome/simulation/evolving_graph
 -------------------- motion_planner.py
 -------------------- eval_action.py
+```
+
+#### Evaluation script
+VirtualHome:
+```
+bash src/VIRTUALHOME/AgentEval-main/virtualhome/action_eval_vh.py
 ```
 
 ### Subgoal Decomposition
@@ -274,6 +308,12 @@ The code structure for `EAgent` is as follows:
 ------------------------ planner_test.py
 ------------------------ pddlgym_planners
 ```
+#### Evaluation script
+VirtualHome:
+```
+bash src/VIRTUALHOME/AgentEval-main/virtualhome/transition_eval_vh.py
+```
+
 
 ## BEHAVIOR Symbolic Simulator Implementation
 

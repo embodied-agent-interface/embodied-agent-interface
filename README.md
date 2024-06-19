@@ -34,7 +34,6 @@
   - [Code](#code)
   - [Prompt](#prompt)
     - [Goal Interpretation](#goal-interpretation)
-      - [VirtualHome](#virtualhome)
     - [Action Sequencing](#action-sequencing)
     - [Subgoal Decomposition](#subgoal-decomposition)
     - [Transition Modeling](#transition-modeling)
@@ -192,13 +191,6 @@ The code structure for `EAgent` is as follows:
 ------------------------ prompts
 ------------ VirtualHome  # Evaluator on VirtualHome
 -------------------- virtualhome/prompts
-```
-
-#### VirtualHome
-```
-cd src/VIRTUALHOME/AgentEval-main/virtualhome/
-mkdir dataset
-python agent_eval.py --mode input --eval_type goal --resource_dir resources/ --helm_dir helm/ --dataset_dir dataset/ --prompt_dir prompts/
 ```
 
 ### Action Sequencing

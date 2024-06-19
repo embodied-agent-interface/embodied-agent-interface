@@ -1,0 +1,1370 @@
+[
+    {
+        "identifier": "27_2",
+        "llm_output": "{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"PUTIN\": [\"clothes_jacket\", \"washing_machine\"],\n    \"PUTIN\": [\"soap\", \"washing_machine\"],\n    \"CLOSE\": [\"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]}"
+    },
+    {
+        "identifier": "417_1",
+        "llm_output": "{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_pants\", \"clothes_shirt\", \"clothes_pants\", \"clothes_shirt\", \"soap\"],\n    \"PUTBACK\": [\"clothes_pants\", \"washing_machine\"],\n    \"PUTBACK\": [\"clothes_shirt\", \"washing_machine\"],\n    \"PUTBACK\": [\"clothes_shirt\", \"washing_machine\"],\n    \"PUTBACK\": [\"clothes_pants\", \"washing_machine\"],\n    \"PUTBACK\": [\"soap\", \"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]}"
+    },
+    {
+        "identifier": "850_1",
+        "llm_output": "{\n    \"WALK\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_pants\"],\n    \"PUTON\": [\"clothes_pants\"],\n    \"GRAB\": [\"laundry_detergent\"],\n    \"PUTIN\": [\"laundry_detergent\", \"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]}"
+    },
+    {
+        "identifier": "954_2",
+        "llm_output": "{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"PUTIN\": [\n        \"clothes_shirt\",\n        \"washing_machine\"\n    ],\n    \"PUTIN\": [\n        \"clothes_pants\",\n        \"washing_machine\"\n    ],\n    \"PUTIN\": [\n        \"clothes_underwear\",\n        \"washing_machine\"\n    ],\n    \"PUTIN\": [\n        \"soap\",\n        \"washing_machine\"\n    ],\n    \"PUTIN\": [\n        \"clothes_dress\",\n        \"washing_machine\"\n    ],\n    \"SWITCHON\": [\"washing_machine\"]}"
+    },
+    {
+        "identifier": "11_1",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "120_1",
+        "llm_output": "{\n    \"FIND\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"FIND\": [\"light\"],\n    \"PLUGIN\": [\"light\"]}"
+    },
+    {
+        "identifier": "125_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"GRAB\": [\"light\"],\n    \"PLUGIN\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "150_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "160_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "180_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "205_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "222_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "232_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "310_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "311_1",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "331_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "339_1",
+        "llm_output": "{ \"STANDUP\": [], \"WALK\": [\"dining_room\"], \"SIT\": [\"dining_room\"]}"
+    },
+    {
+        "identifier": "345_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "392_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "394_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "432_1",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "443_2",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "445_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "511_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "585_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "604_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"]}"
+    },
+    {
+        "identifier": "616_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "627_1",
+        "llm_output": "{ \"WALK\": [\"dining_room\"], \"LOOKAT\": [\"floor_lamp\"], \"TURNTO\": [\"home_office\"]}"
+    },
+    {
+        "identifier": "705_1",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "708_1",
+        "llm_output": "{\n    \"FIND\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"FIND\": [\"light\"]}"
+    },
+    {
+        "identifier": "715_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"GRAB\": [\"light\"],\n    \"PLUGIN\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "737_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "780_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"],\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "812_1",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "835_2",
+        "llm_output": "{\n    \"WALK\": [\"floor_lamp\"],\n    \"SWITCHON\": [\"floor_lamp\"]}"
+    },
+    {
+        "identifier": "85_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "874_2",
+        "llm_output": "{\n    \"WALK\": [\"light\"],\n    \"SWITCHON\": [\"light\"]}"
+    },
+    {
+        "identifier": "491_2",
+        "llm_output": "{\n    \"WALK\": [\"tooth_paste\"],\n    \"FIND\": [\"tooth_paste\"],\n    \"GRAB\": [\"tooth_paste\"],\n    \"WALK\": [\"toothbrush\"],\n    \"FIND\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"]}"
+    },
+    {
+        "identifier": "696_1",
+        "llm_output": "{\n    \"WALK\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"],\n    \"WALK\": [\"home_office\"],\n    \"GRAB\": [\"tooth_paste\"],\n    \"PUTIN\": [\"toothbrush\", \"tooth_paste\"]}"
+    },
+    {
+        "identifier": "1003_2",
+        "llm_output": "{ \"WALK\": [\"computer\"], \"TYPE\": [\"computer\"], \"SWITCHOFF\": [\"computer\"]}"
+    },
+    {
+        "identifier": "115_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "407_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "430_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "481_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"],\n    \"SWITCHOFF\": [\"computer\"]}"
+    },
+    {
+        "identifier": "622_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "699_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "824_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "87_2",
+        "llm_output": "{\n    \"WALK\": [\"laptop\"],\n    \"GRAB\": [\"laptop\"],\n    \"WALK\": [\"powersocket\"],\n    \"PLUGIN\": [\"laptop\"]}"
+    },
+    {
+        "identifier": "986_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"],\n    \"SWITCHOFF\": [\"computer\"]}"
+    },
+    {
+        "identifier": "996_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "1004_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"PUTIN\": [\"food_food\", \"freezer\"]}"
+    },
+    {
+        "identifier": "152_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"PUTIN\": [\"food_food\", \"freezer\"]}"
+    },
+    {
+        "identifier": "298_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"PUTIN\": [\"food_food\", \"freezer\"]}"
+    },
+    {
+        "identifier": "609_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"WALK\": [\"bathroom\"]}"
+    },
+    {
+        "identifier": "703_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"PUTIN\": [\"food_food\", \"freezer\"]}"
+    },
+    {
+        "identifier": "772_1",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"]}"
+    },
+    {
+        "identifier": "837_2",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"PUTIN\": [\"food_cheese\", \"freezer\"]}"
+    },
+    {
+        "identifier": "158_1",
+        "llm_output": "{\n    \"WALK\": [\"bathroom\"],\n    \"TURNTO\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "323_2",
+        "llm_output": "{\n    \"WALK\": [\"toilet\"],\n    \"SIT\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "430_2",
+        "llm_output": "{\n    \"WALK\": [\"toilet\"],\n    \"SIT\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "478_1",
+        "llm_output": "{\n    \"WALK\": [\"toilet\"],\n    \"SIT\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "496_1",
+        "llm_output": "{\n    \"WALK\": [\"bathroom\"],\n    \"TURNTO\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "624_2",
+        "llm_output": "{\n    \"WALK\": [\"toilet\"],\n    \"SIT\": [\"toilet\"]}"
+    },
+    {
+        "identifier": "188_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"TURNTO\": [\"television\"],\n    \"SWITCHON\": [\"television\"],\n    \"TOUCH\": [\"television\"],\n    \"GRAB\": [\"remote_control\"]}"
+    },
+    {
+        "identifier": "803_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"TOUCH\": [\"television\"],\n    \"WALK\": [\"remote_control\"],\n    \"PUSH\": [\"remote_control\"]}"
+    },
+    {
+        "identifier": "960_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"TURNTO\": [\"television\"],\n    \"TOUCH\": [\"television\"],\n    \"GRAB\": [\"remote_control\"]}"
+    },
+    {
+        "identifier": "101_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "1068_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "153_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "196_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "198_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "201_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"keyboard\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "232_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "234_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "343_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "373_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "406_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"keyboard\"]}"
+    },
+    {
+        "identifier": "409_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "419_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "433_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "437_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "440_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "453_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "46_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "475_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "503_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "670_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"]}"
+    },
+    {
+        "identifier": "719_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "757_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"keyboard\"]}"
+    },
+    {
+        "identifier": "787_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"FIND\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "795_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "819_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "874_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "910_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "91_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "93_2",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "962_1",
+        "llm_output": "{\n    \"WALK\": [\"computer\"],\n    \"SWITCHON\": [\"computer\"]}"
+    },
+    {
+        "identifier": "190_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"GRAB\": [\"bowl\"],\n    \"PUTIN\": [\"bowl\", \"dishwasher\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "201_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"CLOSE\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "223_2",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\n        [\"plate\", \"dishwasher\"],\n        [\"plate\", \"dishwasher\"],\n        [\"dish_soap\", \"dishwasher\"]\n    ]}"
+    },
+    {
+        "identifier": "327_2",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"WALK\": [\"plate\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"WALK\": [\"dish_soap\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "383_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"]}"
+    },
+    {
+        "identifier": "417_2",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\n        \"drinking_glass\",\n        \"dishwasher\"\n    ],\n    \"PUTIN\": [\n        \"fork\",\n        \"dishwasher\"\n    ],\n    \"PUTIN\": [\n        \"plate\",\n        \"dishwasher\"\n    ],\n    \"PUTIN\": [\n        \"drinking_glass\",\n        \"dishwasher\"\n    ],\n    \"PUTIN\": [\n        \"dish_soap\",\n        \"dishwasher\"\n    ],\n    \"CLOSE\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "487_1",
+        "llm_output": "{ \"WALK\": [\"dishwasher\"], \"OPEN\": [\"dishwasher\"], \"SWITCHON\": [\"dishwasher\"], \"PUTIN\": [[\"plate\", \"dishwasher\"], [\"spoon\", \"dishwasher\"], [\"cup\", \"dishwasher\"], [\"dish_soap\", \"dishwasher\"], [\"fork\", \"dishwasher\"]], \"CLOSE\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "650_2",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [[\"plate\", \"dishwasher\"], [\"dish_soap\", \"dishwasher\"], [\"pot\", \"dishwasher\"]]}"
+    },
+    {
+        "identifier": "783_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"PUTIN\": [\n        [\"plate\", \"plate\", \"plate\", \"plate\", \"plate\", \"cup\", \"dish_soap\"],\n        \"dishwasher\"\n    ],\n    \"CLOSE\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "815_2",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"]}"
+    },
+    {
+        "identifier": "826_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"WALK\": [\"dining_room\"],\n    \"GRAB\": [\"fork\", \"plate\", \"spoon\", \"cup\", \"knife\", \"dish_soap\"],\n    \"WALK\": [\"dishwasher\"],\n    \"PUTIN\": [\"fork\", \"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"spoon\", \"dishwasher\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"PUTIN\": [\"knife\", \"dishwasher\"],\n    \"PUTIN\": [\"spoon\", \"dishwasher\"],\n    \"PUTIN\": [\"fork\", \"dishwasher\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"PUTIN\": [\"spoon\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"PUTIN\": [\"knife\", \"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "856_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"]}"
+    },
+    {
+        "identifier": "911_1",
+        "llm_output": "{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"CLOSE\": [\"dishwasher\"]}"
+    },
+    {
+        "identifier": "1027_2",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "181_1",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "244_2",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "269_2",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "509_2",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "875_1",
+        "llm_output": "{\n    \"WALK\": [\"bed\"],\n    \"LIE\": [],\n    \"SLEEP\": []}"
+    },
+    {
+        "identifier": "102_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"RINSE\": [\"sink\"],\n    \"WALK\": [\"home_office\"]}"
+    },
+    {
+        "identifier": "154_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"],\n    \"WALK\": [\"dining_room\"]}"
+    },
+    {
+        "identifier": "176_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"]}"
+    },
+    {
+        "identifier": "214_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"]}"
+    },
+    {
+        "identifier": "258_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"RINSE\": [\"soap\"],\n    \"WALK\": [\"bedroom\"]}"
+    },
+    {
+        "identifier": "499_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"],\n    \"WALK\": [\"paper_towel\"],\n    \"GRAB\": [\"paper_towel\"],\n    \"WASH\": [\"hands_both\"],\n    \"PUTBACK\": [\"paper_towel\", \"bathroom_counter\"]}"
+    },
+    {
+        "identifier": "517_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"]}"
+    },
+    {
+        "identifier": "549_2",
+        "llm_output": "{\n    \"WALK\": [\"soap\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"]}"
+    },
+    {
+        "identifier": "562_1",
+        "llm_output": "{\n    \"WALK\": [\"water\"],\n    \"GRAB\": [\"water\"],\n    \"WALK\": [\"hands_both\"],\n    \"PUTIN\": [\"water\", \"hands_both\"]}"
+    },
+    {
+        "identifier": "580_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"],\n    \"WALK\": [\"bedroom\"]}"
+    },
+    {
+        "identifier": "657_1",
+        "llm_output": "{\n    \"WALK\": [\"faucet\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"faucet\"],\n    \"WALK\": [\"towel\"],\n    \"GRAB\": [\"towel\"],\n    \"WASH\": [\"towel\"]}"
+    },
+    {
+        "identifier": "660_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"bathroom_counter\"]}"
+    },
+    {
+        "identifier": "672_1",
+        "llm_output": "{\n    \"WALK\": [\"faucet\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"faucet\"],\n    \"WALK\": [\"towel\"],\n    \"GRAB\": [\"towel\"],\n    \"WASH\": [\"towel\"]}"
+    },
+    {
+        "identifier": "710_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"]}"
+    },
+    {
+        "identifier": "741_1",
+        "llm_output": "{\n    \"WALK\": [\"soap\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"faucet\"]}"
+    },
+    {
+        "identifier": "750_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"water\"],\n    \"DRINK\": [\"water\"],\n    \"PUTBACK\": [\"water\", \"sink\"],\n    \"WALK\": [\"bedroom\"]}"
+    },
+    {
+        "identifier": "805_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"sink\"],\n    \"WALK\": [\"dining_room\"]}"
+    },
+    {
+        "identifier": "80_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"bathroom_counter\"]}"
+    },
+    {
+        "identifier": "813_2",
+        "llm_output": "{\n    \"WALK\": [\"bathroom\"],\n    \"RINSE\": [\"hands_both\"],\n    \"WALK\": [\"home_office\"]}"
+    },
+    {
+        "identifier": "928_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"RINSE\": [\"sink\"],\n    \"WALK\": [\"home_office\"]}"
+    },
+    {
+        "identifier": "995_2",
+        "llm_output": "{\n    \"WALK\": [\"faucet\"],\n    \"TURNTO\": [\"faucet\"],\n    \"GRAB\": [\"soap\"],\n    \"RINSE\": [\"soap\"],\n    \"PUTBACK\": [\"soap\", \"faucet\"]}"
+    },
+    {
+        "identifier": "1035_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "113_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "12_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "137_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "203_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "220_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "242_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "279_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "287_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "292_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "297_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "381_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "388_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "38_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "429_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "437_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "451_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "469_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "479_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "502_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "612_1",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "856_2",
+        "llm_output": "{\n    \"WALK\": [\"cat\"],\n    \"TOUCH\": [\"cat\"],\n    \"TOUCH\": [\"cat\"]}"
+    },
+    {
+        "identifier": "384_1",
+        "llm_output": "{\n    \"LOOKAT\": [\"computer\"],\n    \"WALK\": [\"computer\"],\n    \"GRAB\": [\"keyboard\"],\n    \"GRAB\": [\"mouse\"],\n    \"TURNTO\": [\"computer\"]}"
+    },
+    {
+        "identifier": "540_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"LOOKAT\": [\"phone\"],\n    \"GRAB\": [\"phone\"]}"
+    },
+    {
+        "identifier": "60_1",
+        "llm_output": "{\n    \"LOOKAT\": [\"laptop\"],\n    \"WALK\": [\"laptop\"],\n    \"TURNTO\": [\"laptop\"]}"
+    },
+    {
+        "identifier": "71_2",
+        "llm_output": "{\n    \"LOOKAT\": [\"computer\"],\n    \"WALK\": [\"computer\"],\n    \"GRAB\": [\"keyboard\"],\n    \"GRAB\": [\"mouse\"],\n    \"SIT\": [\"chair\"],\n    \"PUTON\": [\"keyboard\"],\n    \"PUTON\": [\"mouse\"]}"
+    },
+    {
+        "identifier": "7_1",
+        "llm_output": "{\n    \"LOOKAT\": [\"computer\"],\n    \"WALK\": [\"computer\"],\n    \"GRAB\": [\"mouse\"],\n    \"TURNTO\": [\"computer\"]}"
+    },
+    {
+        "identifier": "1070_1",
+        "llm_output": "{\n    \"WALK\": [\"toothbrush\"],\n    \"FIND\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"],\n    \"WALK\": [\"home_office\"],\n    \"LOOKAT\": [\"character\"],\n    \"PUTBACK\": [\"toothbrush\", \"character\"]}"
+    },
+    {
+        "identifier": "313_2",
+        "llm_output": "{\n    \"WALK\": [\"bathroom\"],\n    \"FIND\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"],\n    \"WALK\": [\"dining_room\"],\n    \"POINTAT\": [\"toothbrush\"]}"
+    },
+    {
+        "identifier": "689_1",
+        "llm_output": "{\n    \"WALK\": [\"toothbrush_holder\"],\n    \"LOOKAT\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"],\n    \"WALK\": [\"bedroom\"],\n    \"TURNTO\": [\"character\"],\n    \"PUTBACK\": [\"toothbrush\", \"toothbrush_holder\"]}"
+    },
+    {
+        "identifier": "718_1",
+        "llm_output": "{\n    \"WALK\": [\"toothbrush\"],\n    \"LOOKAT\": [\"toothbrush\"],\n    \"GRAB\": [\"toothbrush\"]}"
+    },
+    {
+        "identifier": "1049_1",
+        "llm_output": "{\n    \"WALK\": [\"dvd_player\"],\n    \"SWITCHON\": [\"dvd_player\"]}"
+    },
+    {
+        "identifier": "113_1",
+        "llm_output": "{\n    \"WALK\": [\"cd_player\"],\n    \"SWITCHON\": [\"cd_player\"]}"
+    },
+    {
+        "identifier": "161_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "173_1",
+        "llm_output": "{\n    \"WALK\": [\"cd_player\"],\n    \"GRAB\": [\"cd_player\"],\n    \"PLUGIN\": [\"cd_player\"],\n    \"SWITCHON\": [\"cd_player\"]}"
+    },
+    {
+        "identifier": "23_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "263_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "305_2",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"GRAB\": [\"stereo\"],\n    \"PLUGIN\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "363_2",
+        "llm_output": "{\n    \"WALK\": [\"dvd_player\"],\n    \"GRAB\": [\"dvd_player\"],\n    \"WALK\": [\"bedroom\"],\n    \"PUTBACK\": [\"dvd_player\", \"bedroom\"],\n    \"SWITCHON\": [\"dvd_player\"]}"
+    },
+    {
+        "identifier": "385_2",
+        "llm_output": "{\n    \"WALK\": [\"cd_player\"],\n    \"SWITCHON\": [\"cd_player\"]}"
+    },
+    {
+        "identifier": "403_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "415_1",
+        "llm_output": "{\n    \"WALK\": [\"headset\"],\n    \"GRAB\": [\"headset\"],\n    \"WALK\": [\"character\"],\n    \"PUTON\": [\"headset\"]}"
+    },
+    {
+        "identifier": "462_2",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "463_2",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "503_2",
+        "llm_output": "{\n    \"WALK\": [\"cd_player\"],\n    \"GRAB\": [\"cd_player\"],\n    \"SWITCHON\": [\"cd_player\"]}"
+    },
+    {
+        "identifier": "59_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"headset\"],\n    \"PUTON\": [\"headset\"]}"
+    },
+    {
+        "identifier": "737_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "773_1",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"GRAB\": [\"stereo\"],\n    \"PLUGIN\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "910_2",
+        "llm_output": "{\n    \"WALK\": [\"stereo\"],\n    \"SWITCHON\": [\"stereo\"],\n    \"CLOSE\": [\"stereo\"]}"
+    },
+    {
+        "identifier": "953_1",
+        "llm_output": "{\n    \"WALK\": [\"cd_player\"],\n    \"SWITCHON\": [\"cd_player\"]}"
+    },
+    {
+        "identifier": "1057_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "117_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "134_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"PLUGIN\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "170_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "197_2",
+        "llm_output": "{\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "21_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "225_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"WATCH\": [\"television\"]}"
+    },
+    {
+        "identifier": "259_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "307_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "329_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "342_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "377_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "383_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "411_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "454_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "459_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "548_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "595_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "684_2",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"TURNTO\": [\"television\"]}"
+    },
+    {
+        "identifier": "74_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "806_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "98_1",
+        "llm_output": "{\n    \"WALK\": [\"television\"],\n    \"LOOKAT\": [\"television\"],\n    \"SWITCHON\": [\"television\"]}"
+    },
+    {
+        "identifier": "1064_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "156_1",
+        "llm_output": "{\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"]}"
+    },
+    {
+        "identifier": "171_2",
+        "llm_output": "{\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"],\n    \"DROP\": [\"cup\"]}"
+    },
+    {
+        "identifier": "175_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"]}"
+    },
+    {
+        "identifier": "181_2",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "26_1",
+        "llm_output": "{\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"]}"
+    },
+    {
+        "identifier": "286_2",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "291_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "317_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"FIND\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"]}"
+    },
+    {
+        "identifier": "488_2",
+        "llm_output": "{\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "510_1",
+        "llm_output": "{\n    \"WALK\": [\"drinking_glass\"],\n    \"GRAB\": [\"drinking_glass\"],\n    \"DRINK\": [\"drinking_glass\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "528_1",
+        "llm_output": "{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"],\n    \"GRAB\": [\"drinking_glass\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "532_1",
+        "llm_output": "{\n    \"WALK\": [\"drinking_glass\"],\n    \"GRAB\": [\"drinking_glass\"],\n    \"WALK\": [\"water\"],\n    \"GRAB\": [\"water\"],\n    \"WALK\": [\"sink\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "589_1",
+        "llm_output": "{\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "600_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "662_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "688_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"],\n    \"DRINK\": [\"water\"]}"
+    },
+    {
+        "identifier": "787_1",
+        "llm_output": "{\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "788_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"FIND\": [\"drinking_glass\"],\n    \"GRAB\": [\"drinking_glass\"],\n    \"WALK\": [\"faucet\"],\n    \"OPEN\": [\"faucet\"],\n    \"FIND\": [\"water\"],\n    \"GRAB\": [\"water\"],\n    \"PUTIN\": [\"water\", \"drinking_glass\"],\n    \"WALK\": [\"character\"],\n    \"DRINK\": [\"drinking_glass\"]}"
+    },
+    {
+        "identifier": "814_1",
+        "llm_output": "{\n    \"WALK\": [\"cupboard\"],\n    \"OPEN\": [\"cupboard\"],\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "850_2",
+        "llm_output": "{ \"WALK\": [\"kitchen_cabinet\"], \"FIND\": [\"water_glass\"], \"GRAB\": [\"water_glass\"], \"DRINK\": [\"water_glass\"], \"DROP\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "861_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"cup\"],\n    \"DRINK\": [\"cup\"]}"
+    },
+    {
+        "identifier": "878_2",
+        "llm_output": "{\n    \"WALK\": [\"cupboard\"],\n    \"OPEN\": [\"cupboard\"],\n    \"WALK\": [\"water_glass\"],\n    \"GRAB\": [\"water_glass\"],\n    \"DRINK\": [\"water_glass\"]}"
+    },
+    {
+        "identifier": "1073_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "1088_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "15_2",
+        "llm_output": "{\n    \"WALK\": [\"address_book\"],\n    \"GRAB\": [\"address_book\"],\n    \"READ\": [\"address_book\"]}"
+    },
+    {
+        "identifier": "163_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "16_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "192_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "208_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "221_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "241_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "341_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"WALK\": [\"spectacles\"],\n    \"GRAB\": [\"spectacles\"],\n    \"WALK\": [\"character\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "484_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "504_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "508_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "544_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "57_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "617_2",
+        "llm_output": "{\n    \"WALK\": [\"nightstand\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "628_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "688_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "693_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "821_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "86_1",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "896_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "897_2",
+        "llm_output": "{\n    \"WALK\": [\"novel\"],\n    \"GRAB\": [\"novel\"],\n    \"READ\": [\"novel\"]}"
+    },
+    {
+        "identifier": "1083_2",
+        "llm_output": "{\n    \"WALK\": [\"oven\"],\n    \"GRAB\": [\"pot\"],\n    \"PUTON\": [\"oven\"],\n    \"PUTBACK\": [\"pot\", \"oven\"]}"
+    },
+    {
+        "identifier": "392_2",
+        "llm_output": "{\n    \"WALK\": [\"oven\"],\n    \"OPEN\": [\"oven\"],\n    \"SWITCHON\": [\"oven\"]}"
+    },
+    {
+        "identifier": "755_2",
+        "llm_output": "{\n    \"WALK\": [\"oven\"],\n    \"GRAB\": [\"sauce_pan\"],\n    \"PUTIN\": [\"sauce_pan\", \"oven\"],\n    \"SWITCHON\": [\"oven\"]}"
+    },
+    {
+        "identifier": "124_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "137_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "204_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "268_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "297_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "299_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "300_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "321_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "332_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "379_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "387_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "390_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "3_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "416_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "438_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "442_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "447_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "449_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "455_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "456_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "473_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "490_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "563_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "567_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "570_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "674_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "6_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "742_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "762_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "793_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "798_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "932_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "941_2",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "96_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"SIT\": [\"couch\"]}"
+    },
+    {
+        "identifier": "976_1",
+        "llm_output": "{\n    \"WALK\": [\"couch\"],\n    \"LIE\": [\"couch\"]}"
+    },
+    {
+        "identifier": "149_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"LOOKAT\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"SIT\": [\"table\"]}"
+    },
+    {
+        "identifier": "154_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"],\n    \"POINTAT\": [\"phone\"]}"
+    },
+    {
+        "identifier": "180_1",
+        "llm_output": "{\n    \"STANDUP\": [],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"SIT\": [\"floor\"]}"
+    },
+    {
+        "identifier": "195_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"LOOKAT\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"RAISE\": [\"phone\"],\n    \"TURNTO\": [\"character\"],\n    \"GIVE\": [\"phone\"]}"
+    },
+    {
+        "identifier": "211_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "241_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "264_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"FIND\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"],\n    \"FIND\": [\"character\"],\n    \"HOLDS_RH\": [\"character\", \"phone\"]}"
+    },
+    {
+        "identifier": "265_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"],\n    \"POINTAT\": [\"phone\"]}"
+    },
+    {
+        "identifier": "287_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "352_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "360_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"PUTBACK\": [\"phone\", \"dining_room\"]}"
+    },
+    {
+        "identifier": "388_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"PUTBACK\": [\"phone\", \"dining_room\"]}"
+    },
+    {
+        "identifier": "431_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"RIGHT_HAND\": []}"
+    },
+    {
+        "identifier": "436_1",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"HOLDS_RH\": [\"phone\"]}"
+    },
+    {
+        "identifier": "442_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "474_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "482_2",
+        "llm_output": "{ \"WALK\": [\"phone\"], \"GRAB\": [\"phone\"], \"WALK\": [\"character\"], \"PUTIN\": [\"phone\", \"trashcan\"]}"
+    },
+    {
+        "identifier": "497_1",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"PUTBACK\": [\"phone\", \"dining_room\"]}"
+    },
+    {
+        "identifier": "553_1",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"HOLDS_RH\": [\"phone\"]}"
+    },
+    {
+        "identifier": "601_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"SWITCHON\": [\"phone\"]}"
+    },
+    {
+        "identifier": "70_1",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"LOOKAT\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"TURNTO\": [\"dining_room\"],\n    \"HOLDS_RH\": [\"phone\"]}"
+    },
+    {
+        "identifier": "864_2",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"PUTBACK\": [\"phone\", \"home_office\"]}"
+    },
+    {
+        "identifier": "963_2",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"HOLDS_RH\": [\"phone\"]}"
+    },
+    {
+        "identifier": "974_1",
+        "llm_output": "{\n    \"FIND\": [\"phone\"],\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"HOLDS_RH\": [\"phone\"]}"
+    },
+    {
+        "identifier": "976_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"LOOKAT\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"RAISE\": [\"phone\"],\n    \"TURNTO\": [\"bedroom\"],\n    \"WALK\": [\"bedroom\"]}"
+    },
+    {
+        "identifier": "99_2",
+        "llm_output": "{\n    \"WALK\": [\"phone\"],\n    \"GRAB\": [\"phone\"],\n    \"WALK\": [\"character\"]}"
+    },
+    {
+        "identifier": "183_2",
+        "llm_output": "{\n    \"WALK\": [\"coffe_maker\"],\n    \"POUR\": [\"water\", \"coffe_maker\"],\n    \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n    \"SWITCHON\": [\"coffe_maker\"]}"
+    },
+    {
+        "identifier": "229_1",
+        "llm_output": "{\n    \"WALK\": [\"coffe_maker\"],\n    \"POUR\": [\"water\", \"coffe_maker\"],\n    \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n    \"SWITCHON\": [\"coffe_maker\"]}"
+    },
+    {
+        "identifier": "310_2",
+        "llm_output": "{\n    \"WALK\": [\"coffe_maker\"],\n    \"POUR\": [\"water\", \"coffe_maker\"],\n    \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n    \"WALK\": [\"coffee_filter\"],\n    \"OPEN\": [\"coffee_filter\"],\n    \"SWITCHON\": [\"coffe_maker\"]}"
+    },
+    {
+        "identifier": "721_2",
+        "llm_output": "{\n    \"WALK\": [\"coffe_maker\"],\n    \"POUR\": [\"water\", \"coffe_maker\"],\n    \"POUR\": [\"ground_coffee\", \"coffe_maker\"]}"
+    },
+    {
+        "identifier": "764_2",
+        "llm_output": "{\n    \"WALK\": [\"coffe_maker\"],\n    \"POUR\": [\"water\", \"coffe_maker\"],\n    \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n    \"SWITCHON\": [\"coffe_maker\"]}"
+    },
+    {
+        "identifier": "419_2",
+        "llm_output": "{\n    \"WALK\": [\"table\"],\n    \"GRAB\": [\"cloth_napkin\"],\n    \"PUTON\": [\"table\", \"cloth_napkin\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTON\": [\"table\", \"plate\"],\n    \"GRAB\": [\"fork\"],\n    \"PUTON\": [\"table\", \"fork\"],\n    \"GRAB\": [\"cup\"],\n    \"PUTON\": [\"table\", \"cup\"],\n    \"GRAB\": [\"knife\"],\n    \"PUTON\": [\"table\", \"knife\"]}"
+    },
+    {
+        "identifier": "446_2",
+        "llm_output": "{\n    \"WALK\": [\"table\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTON\": [\"plate\", \"table\"]}"
+    },
+    {
+        "identifier": "710_2",
+        "llm_output": "{\n    \"WALK\": [\"kitchen_cabinet\"],\n    \"FIND\": [\"plate\"],\n    \"GRAB\": [\"plate\"],\n    \"WALK\": [\"table\"],\n    \"PUTON\": [\"plate\"]}"
+    },
+    {
+        "identifier": "84_1",
+        "llm_output": "{ \"WALK\": [\"table\"], \"LOOKAT\": [\"table\"], \"SIT\": [\"table\"], \"STANDUP\": []}"
+    },
+    {
+        "identifier": "93_1",
+        "llm_output": "{ \"WALK\": [\"dining_room\"], \"LOOKAT\": [\"dining_room\"], \"STANDUP\": []}"
+    },
+    {
+        "identifier": "368_1",
+        "llm_output": "{\n    \"WALK\": [\"dining_room\"]}"
+    },
+    {
+        "identifier": "729_2",
+        "llm_output": "{\n    \"WALK\": [\"shower\"],\n    \"STANDUP\": []}"
+    },
+    {
+        "identifier": "975_2",
+        "llm_output": "{\n    \"WALK\": [\"shower\"],\n    \"STANDUP\": []}"
+    },
+    {
+        "identifier": "231_2",
+        "llm_output": "{\n    \"WALK\": [\"plate\"],\n    \"GRAB\": [\"plate\"],\n    \"WALK\": [\"water\"],\n    \"GRAB\": [\"water\"],\n    \"WALK\": [\"dish_soap\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"WASH\": [\"plate\", \"dish_soap\"],\n    \"RINSE\": [\"plate\", \"water\"]}"
+    },
+    {
+        "identifier": "31_1",
+        "llm_output": "{ \"GRAB\": [\"bowl\"], \"WALK\": [\"sink\"], \"GRAB\": [\"sponge\"], \"WASH\": [\"bowl\"], \"PUTBACK\": [\"bowl\", \"sink\"], \"PUTBACK\": [\"sponge\", \"sink\"]}"
+    },
+    {
+        "identifier": "349_1",
+        "llm_output": "{ \"GRAB\": [\"dish_soap\"], \"WALK\": [\"faucet\"], \"GRAB\": [\"plate\"], \"WASH\": [\"plate\"], \"PUTBACK\": [\"plate\", \"faucet\"], \"PUTBACK\": [\"dish_soap\", \"faucet\"]}"
+    },
+    {
+        "identifier": "397_1",
+        "llm_output": "{\n    \"WALK\": [\"plate\"],\n    \"GRAB\": [\"plate\"],\n    \"WALK\": [\"dish_soap\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"WALK\": [\"sink\"],\n    \"WASH\": [\"plate\"]}"
+    },
+    {
+        "identifier": "429_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"GRAB\": [\"sink\"],\n    \"WASH\": [\"dish_soap\"],\n    \"RINSE\": [\"dish_soap\"]}"
+    },
+    {
+        "identifier": "553_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"plate\"],\n    \"GRAB\": [\"soap\"],\n    \"WASH\": [\"plate\"]}"
+    },
+    {
+        "identifier": "594_2",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"GRAB\": [\"plate\"],\n    \"WASH\": [\"plate\"],\n    \"RINSE\": [\"plate\"]}"
+    },
+    {
+        "identifier": "746_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"sponge\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"WASH\": [\"sponge\", \"dish_soap\"],\n    \"GRAB\": [\"water\"],\n    \"WASH\": [\"sponge\", \"water\"]}"
+    },
+    {
+        "identifier": "961_1",
+        "llm_output": "{\n    \"WALK\": [\"sink\"],\n    \"GRAB\": [\"plate\"],\n    \"GRAB\": [\"food_kiwi\"],\n    \"WASH\": [\"plate\"],\n    \"PUTIN\": [\"plate\", \"sink\"]}"
+    },
+    {
+        "identifier": "988_1",
+        "llm_output": "{\n    \"WALK\": [\"faucet\"],\n    \"GRAB\": [\"faucet\"],\n    \"GRAB\": [\"bowl\"],\n    \"WASH\": [\"bowl\"],\n    \"RINSE\": [\"bowl\"]}"
+    }
+]

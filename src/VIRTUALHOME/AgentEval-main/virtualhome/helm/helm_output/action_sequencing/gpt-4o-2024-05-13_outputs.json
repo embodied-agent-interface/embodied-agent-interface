@@ -1,0 +1,1370 @@
+[
+    {
+        "identifier": "27_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"WALK\": [\"soap\"],\n    \"GRAB\": [\"soap\"],\n    \"WALK\": [\"washing_machine\"],\n    \"PUTIN\": [\"soap\", \"washing_machine\"],\n    \"WALK\": [\"basket_for_clothes\"],\n    \"GRAB\": [\"clothes_jacket\"],\n    \"WALK\": [\"washing_machine\"],\n    \"PUTIN\": [\"clothes_jacket\", \"washing_machine\"],\n    \"CLOSE\": [\"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]\n}"
+    },
+    {
+        "identifier": "417_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_pants\"],\n    \"PUTON\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_shirt\"],\n    \"PUTON\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_shirt\"],\n    \"PUTON\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_pants\"],\n    \"PUTON\": [\"washing_machine\"],\n    \"GRAB\": [\"soap\"],\n    \"PUTON\": [\"washing_machine\"],\n    \"CLOSE\": [\"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]\n}"
+    },
+    {
+        "identifier": "850_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"laundry_detergent\"],\n  \"GRAB\": [\"laundry_detergent\"],\n  \"WALK\": [\"washing_machine\"],\n  \"PUTON\": [\"laundry_detergent\"],\n  \"SWITCHON\": [\"washing_machine\"]\n}"
+    },
+    {
+        "identifier": "954_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"washing_machine\"],\n    \"OPEN\": [\"washing_machine\"],\n    \"GRAB\": [\"clothes_shirt\"],\n    \"PUTON\": [\"clothes_shirt\"],\n    \"GRAB\": [\"clothes_pants\"],\n    \"PUTON\": [\"clothes_pants\"],\n    \"GRAB\": [\"clothes_underwear\"],\n    \"PUTON\": [\"clothes_underwear\"],\n    \"GRAB\": [\"soap\"],\n    \"PUTON\": [\"soap\"],\n    \"GRAB\": [\"clothes_dress\"],\n    \"PUTON\": [\"clothes_dress\"],\n    \"CLOSE\": [\"washing_machine\"],\n    \"SWITCHON\": [\"washing_machine\"]\n}"
+    },
+    {
+        "identifier": "11_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "120_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "125_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"PLUGIN\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "150_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "160_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "180_2",
+        "llm_output": "```json\n{\n  \"STANDUP\": [],\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "205_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "222_1",
+        "llm_output": "{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "232_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "310_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "311_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "331_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "339_1",
+        "llm_output": "```json\n{\n  \"STANDUP\": []\n}"
+    },
+    {
+        "identifier": "345_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "392_1",
+        "llm_output": "{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "394_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "432_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "443_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "445_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "511_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "585_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "604_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "616_1",
+        "llm_output": "{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "627_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"]\n}"
+    },
+    {
+        "identifier": "705_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "708_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "715_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"PLUGIN\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "737_2",
+        "llm_output": "{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "780_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"],\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "812_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "835_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"floor_lamp\"],\n  \"SWITCHON\": [\"floor_lamp\"]\n}"
+    },
+    {
+        "identifier": "85_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"light\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "874_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bedroom\"],\n  \"SWITCHON\": [\"light\"]\n}"
+    },
+    {
+        "identifier": "491_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"tooth_paste\"],\n  \"GRAB\": [\"tooth_paste\"],\n  \"WALK\": [\"toothbrush\"],\n  \"GRAB\": [\"toothbrush\"]\n}"
+    },
+    {
+        "identifier": "696_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"toothbrush\"],\n  \"GRAB\": [\"toothbrush\"],\n  \"GRAB\": [\"tooth_paste\"]\n}"
+    },
+    {
+        "identifier": "1003_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"keyboard\"],\n  \"TYPE\": [\"keyboard\"],\n  \"TYPE\": [\"keyboard\"],\n  \"WALK\": [\"computer\"],\n  \"SWITCHOFF\": [\"computer\"],\n  \"WALK\": [\"walllamp\"],\n  \"SWITCHOFF\": [\"walllamp\"]\n}"
+    },
+    {
+        "identifier": "115_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "407_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"keyboard\"],\n  \"TYPE\": [\"keyboard\"]\n}"
+    },
+    {
+        "identifier": "430_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "481_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"SWITCHOFF\": [\"computer\"],\n  \"SWITCHOFF\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "622_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "699_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "824_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "87_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"laptop\"],\n  \"SWITCHON\": [\"laptop\"],\n  \"TYPE\": [\"laptop\"],\n  \"TYPE\": [\"laptop\"]\n}"
+    },
+    {
+        "identifier": "986_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"home_office\"],\n    \"WALK\": [\"computer\"],\n    \"TYPE\": [\"computer\"],\n    \"SWITCHOFF\": [\"computer\"],\n    \"WALK\": [\"keyboard\"],\n    \"TYPE\": [\"keyboard\"],\n    \"SWITCHOFF\": [\"keyboard\"]\n}"
+    },
+    {
+        "identifier": "996_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"TYPE\": [\"computer\"],\n  \"TYPE\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "1004_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"food_food\"],\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"PUTIN\": [\"food_food\", \"freezer\"]\n}"
+    },
+    {
+        "identifier": "152_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"food_food\"],\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"PUTIN\": [\"food_food\", \"freezer\"]\n}"
+    },
+    {
+        "identifier": "298_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"GRAB\": [\"food_food\"],\n  \"PUTIN\": [\"food_food\", \"freezer\"]\n}"
+    },
+    {
+        "identifier": "609_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"]\n}"
+    },
+    {
+        "identifier": "703_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"food_food\"],\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"PUTIN\": [\"food_food\", \"freezer\"]\n}"
+    },
+    {
+        "identifier": "772_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"freezer\"],\n    \"OPEN\": [\"freezer\"]\n}"
+    },
+    {
+        "identifier": "837_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"WALK\": [\"food_cheese\"],\n  \"GRAB\": [\"food_cheese\"],\n  \"PUTIN\": [\"food_cheese\", \"freezer\"]\n}"
+    },
+    {
+        "identifier": "158_1",
+        "llm_output": "```json\n{\n  \"STANDUP\": [],\n  \"WALK\": [\"bathroom\"],\n  \"TURNTO\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "323_2",
+        "llm_output": "{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"toilet\"],\n  \"SIT\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "430_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"toilet\"],\n  \"SIT\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "478_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"toilet\"],\n  \"SIT\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "496_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"TURNTO\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "624_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"toilet\"],\n  \"SIT\": [\"toilet\"]\n}"
+    },
+    {
+        "identifier": "188_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"remote_control\"],\n  \"GRAB\": [\"remote_control\"],\n  \"WALK\": [\"television\"],\n  \"TOUCH\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"TURNTO\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "803_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"remote_control\"],\n  \"GRAB\": [\"remote_control\"],\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"TOUCH\": [\"remote_control\"]\n}"
+    },
+    {
+        "identifier": "960_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"remote_control\"],\n  \"GRAB\": [\"remote_control\"],\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"TURNTO\": [\"television\"],\n  \"TOUCH\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "101_2",
+        "llm_output": "{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "1068_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "153_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "196_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "198_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "201_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "232_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "234_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "343_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "373_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "406_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "409_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "419_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "433_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "437_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "440_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "453_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "46_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "475_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "503_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "670_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "719_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "757_2",
+        "llm_output": "{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "787_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "795_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "819_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "874_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "910_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "91_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "93_2",
+        "llm_output": "{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "962_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"SWITCHON\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "190_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n  \"GRAB\": [\"bowl\"],\n  \"PUTBACK\": [\"bowl\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "201_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "223_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTON\": [\"dish_soap\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "327_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"WALK\": [\"plate\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"dishwasher\"],\n  \"PUTBACK\": [\"plate\", \"dishwasher\"],\n  \"WALK\": [\"dish_soap\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"dishwasher\"],\n  \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "383_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTON\": [\"dishwasher\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"PUTON\": [\"dishwasher\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTON\": [\"dishwasher\"],\n    \"CLOSE\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "417_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"GRAB\": [\"drinking_glass\"],\n    \"PUTBACK\": [\"drinking_glass\", \"dishwasher\"],\n    \"GRAB\": [\"fork\"],\n    \"PUTBACK\": [\"fork\", \"dishwasher\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTBACK\": [\"plate\", \"dishwasher\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n    \"CLOSE\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "487_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"dishwasher\"],\n    \"OPEN\": [\"dishwasher\"],\n    \"WALK\": [\"plate\"],\n    \"GRAB\": [\"plate\"],\n    \"PUTIN\": [\"plate\", \"dishwasher\"],\n    \"WALK\": [\"fork\"],\n    \"GRAB\": [\"fork\"],\n    \"PUTIN\": [\"fork\", \"dishwasher\"],\n    \"WALK\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"PUTIN\": [\"cup\", \"dishwasher\"],\n    \"WALK\": [\"spoon\"],\n    \"GRAB\": [\"spoon\"],\n    \"PUTIN\": [\"spoon\", \"dishwasher\"],\n    \"WALK\": [\"dish_soap\"],\n    \"GRAB\": [\"dish_soap\"],\n    \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n    \"CLOSE\": [\"dishwasher\"],\n    \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "650_2",
+        "llm_output": "{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"WALK\": [\"table\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"dishwasher\"],\n  \"PUTIN\": [\"plate\", \"dishwasher\"],\n  \"WALK\": [\"table\"],\n  \"GRAB\": [\"pot\"],\n  \"WALK\": [\"dishwasher\"],\n  \"PUTIN\": [\"pot\", \"dishwasher\"],\n  \"WALK\": [\"dish_soap\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"dishwasher\"],\n  \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "783_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTON\": [\"cup\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTON\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "815_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"table\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"PUTIN\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTIN\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "826_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"fork\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"spoon\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"knife\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"spoon\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"fork\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"spoon\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"GRAB\": [\"knife\"],\n  \"PUTON\": [\"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "856_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "911_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dishwasher\"],\n  \"OPEN\": [\"dishwasher\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTBACK\": [\"cup\", \"dishwasher\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"PUTBACK\": [\"dish_soap\", \"dishwasher\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"dishwasher\"],\n  \"CLOSE\": [\"dishwasher\"],\n  \"SWITCHON\": [\"dishwasher\"]\n}"
+    },
+    {
+        "identifier": "1027_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bedroom\"],\n  \"LIE\": [\"bed\"],\n  \"SLEEP\": []\n}"
+    },
+    {
+        "identifier": "181_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bedroom\"],\n  \"WALK\": [\"bed\"],\n  \"LIE\": [\"bed\"]\n}"
+    },
+    {
+        "identifier": "244_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bedroom\"],\n  \"LIE\": [\"bed\"],\n  \"SLEEP\": []\n}"
+    },
+    {
+        "identifier": "269_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bedroom\"],\n  \"WALK\": [\"bed\"],\n  \"LIE\": [\"bed\"]\n}"
+    },
+    {
+        "identifier": "509_2",
+        "llm_output": "{\n  \"WALK\": [\"bed\"],\n  \"LIE\": [\"bed\"],\n  \"SLEEP\": []\n}"
+    },
+    {
+        "identifier": "875_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bed\"],\n  \"LIE\": [\"bed\"]\n}"
+    },
+    {
+        "identifier": "102_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"sink\"],\n  \"RINSE\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "154_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "176_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"sink\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "214_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"soap\"]\n}"
+    },
+    {
+        "identifier": "258_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"sink\"],\n  \"RINSE\": [\"sink\"],\n  \"WASH\": [\"sink\"]\n}"
+    },
+    {
+        "identifier": "499_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "517_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "549_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"soap\"],\n  \"GRAB\": [\"soap\"],\n  \"RINSE\": [],\n  \"WASH\": []\n}"
+    },
+    {
+        "identifier": "562_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"faucet\"],\n  \"GRAB\": [\"water\"]\n}"
+    },
+    {
+        "identifier": "580_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "657_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"faucet\"],\n  \"RINSE\": [\"soap\"],\n  \"RINSE\": [\"towel\"]\n}"
+    },
+    {
+        "identifier": "660_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"sink\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "672_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "710_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WASH\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "741_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"faucet\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "750_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"sink\"],\n  \"GRAB\": [\"water\"],\n  \"POUR\": [\"water\", \"hands_both\"]\n}"
+    },
+    {
+        "identifier": "805_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"sink\"],\n  \"RINSE\": [\"soap\"],\n  \"RINSE\": [\"towel\"]\n}"
+    },
+    {
+        "identifier": "80_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "813_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "928_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"RINSE\": [\"hands_both\"],\n  \"WASH\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "995_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WASH\": [\"hands_both\"],\n  \"RINSE\": [\"hands_both\"]\n}"
+    },
+    {
+        "identifier": "1035_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "113_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "12_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "137_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "203_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "220_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "242_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "279_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "287_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "292_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "297_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "381_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "388_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "38_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "429_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "437_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "451_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "469_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "479_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "502_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "612_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "856_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cat\"],\n  \"TOUCH\": [\"cat\"],\n  \"TOUCH\": [\"cat\"]\n}"
+    },
+    {
+        "identifier": "384_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"computer\"],\n  \"LOOKAT\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"GRAB\": [\"keyboard\"],\n  \"GRAB\": [\"mouse\"]\n}"
+    },
+    {
+        "identifier": "540_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"LOOKAT\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "60_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"laptop\"],\n  \"SWITCHON\": [\"laptop\"],\n  \"LOOKAT\": [\"laptop\"]\n}"
+    },
+    {
+        "identifier": "71_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"LOOKAT\": [\"computer\"],\n  \"GRAB\": [\"keyboard\"],\n  \"GRAB\": [\"mouse\"]\n}"
+    },
+    {
+        "identifier": "7_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"mouse\"],\n  \"GRAB\": [\"mouse\"],\n  \"WALK\": [\"computer\"],\n  \"LOOKAT\": [\"computer\"],\n  \"SWITCHON\": [\"computer\"],\n  \"LOOKAT\": [\"computer\"]\n}"
+    },
+    {
+        "identifier": "1070_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"GRAB\": [\"toothbrush\"]\n}"
+    },
+    {
+        "identifier": "313_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"GRAB\": [\"toothbrush\"]\n}"
+    },
+    {
+        "identifier": "689_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"toothbrush\"],\n  \"GRAB\": [\"toothbrush\"]\n}"
+    },
+    {
+        "identifier": "718_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"toothbrush\"]\n}"
+    },
+    {
+        "identifier": "1049_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"dvd_player\"],\n  \"SWITCHON\": [\"dvd_player\"]\n}"
+    },
+    {
+        "identifier": "113_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cd_player\"],\n  \"SWITCHON\": [\"cd_player\"]\n}"
+    },
+    {
+        "identifier": "161_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "173_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cd_player\"],\n  \"PLUGIN\": [\"cd_player\"],\n  \"SWITCHON\": [\"cd_player\"]\n}"
+    },
+    {
+        "identifier": "23_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "263_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "305_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "363_2",
+        "llm_output": "{\n  \"WALK\": [\"dvd_player\"],\n  \"SWITCHON\": [\"dvd_player\"]\n}"
+    },
+    {
+        "identifier": "385_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cd_player\"],\n  \"SWITCHON\": [\"cd_player\"]\n}"
+    },
+    {
+        "identifier": "403_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "415_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"headset\"],\n  \"GRAB\": [\"headset\"],\n  \"PUTON\": [\"headset\"]\n}"
+    },
+    {
+        "identifier": "462_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "463_2",
+        "llm_output": "```json\n{\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "503_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cd_player\"],\n  \"SWITCHON\": [\"cd_player\"]\n}"
+    },
+    {
+        "identifier": "59_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"headset\"],\n    \"PUTON\": [\"headset\"]\n}"
+    },
+    {
+        "identifier": "737_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "773_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "910_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"stereo\"],\n  \"SWITCHON\": [\"stereo\"]\n}"
+    },
+    {
+        "identifier": "953_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cd_player\"],\n  \"SWITCHON\": [\"cd_player\"]\n}"
+    },
+    {
+        "identifier": "1057_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "117_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "134_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"television\"],\n  \"PLUGIN\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "170_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "197_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "21_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "225_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "259_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "307_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "329_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "342_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "377_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "383_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "411_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "454_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "459_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "548_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "595_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "684_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "74_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"SWITCHON\": [\"television\"],\n  \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "806_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"television\"],\n  \"LOOKAT\": [\"television\"],\n  \"SWITCHON\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "98_1",
+        "llm_output": "```json\n{\n    \"WALK\": [\"television\"],\n    \"SWITCHON\": [\"television\"],\n    \"LOOKAT\": [\"television\"]\n}"
+    },
+    {
+        "identifier": "1064_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"FIND\": [\"water_glass\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "156_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"cup\"],\n  \"GRAB\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "171_2",
+        "llm_output": "{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"cup\"],\n  \"WALK\": [\"sink\"],\n  \"POUR\": [\"water\", \"cup\"],\n  \"DRINK\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "175_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"kitchen_counter\"],\n  \"GRAB\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "181_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"freezer\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "26_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cup\"],\n  \"GRAB\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "286_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "291_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "317_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"cup\"],\n  \"DRINK\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "488_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"dining_room\"],\n    \"FIND\": [\"cup\"],\n    \"GRAB\": [\"cup\"],\n    \"WALK\": [\"sink\"],\n    \"POUR\": [\"water\", \"cup\"],\n    \"DRINK\": [\"cup\"],\n    \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "510_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"]\n}"
+    },
+    {
+        "identifier": "528_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"GRAB\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"]\n}"
+    },
+    {
+        "identifier": "532_1",
+        "llm_output": "{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"]\n}"
+    },
+    {
+        "identifier": "589_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"FIND\": [\"cup\"],\n  \"GRAB\": [\"cup\"],\n  \"DRINK\": [\"cup\"],\n  \"DRINK\": [\"cup\"]\n}"
+    },
+    {
+        "identifier": "600_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "662_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "688_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "787_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"kitchen_counter\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "788_1",
+        "llm_output": "{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"drinking_glass\"],\n  \"DRINK\": [\"drinking_glass\"]\n}"
+    },
+    {
+        "identifier": "814_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water\"],\n  \"DRINK\": [\"water\"]\n}"
+    },
+    {
+        "identifier": "850_2",
+        "llm_output": "{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "861_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"dining_room\"],\n    \"WALK\": [\"kitchen_counter\"],\n    \"GRAB\": [\"cup\"],\n    \"WALK\": [\"sink\"],\n    \"DRINK\": [\"water\"],\n    \"DRINK\": [\"water\"]\n}"
+    },
+    {
+        "identifier": "878_2",
+        "llm_output": "{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"],\n  \"DRINK\": [\"water_glass\"]\n}"
+    },
+    {
+        "identifier": "1073_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "1088_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "15_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"FIND\": [\"address_book\"],\n  \"GRAB\": [\"address_book\"],\n  \"READ\": [\"address_book\"]\n}"
+    },
+    {
+        "identifier": "163_1",
+        "llm_output": "{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "16_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"coffee_table\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "192_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "208_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "221_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "241_2",
+        "llm_output": "```json\n{\n  \"STANDUP\": [],\n  \"WALK\": [\"home_office\"],\n  \"FIND\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "341_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"cupboard\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"spectacles\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "484_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"chair\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "504_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "508_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "544_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "57_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"WALK\": [\"couch\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "617_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"nightstand\"],\n  \"OPEN\": [\"nightstand\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "628_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "688_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "693_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"chair\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "821_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "86_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "896_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"desk\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "897_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"novel\"],\n  \"GRAB\": [\"novel\"],\n  \"READ\": [\"novel\"]\n}"
+    },
+    {
+        "identifier": "1083_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"oven\"],\n    \"OPEN\": [\"oven\"],\n    \"GRAB\": [\"pot\"],\n    \"PUTON\": [\"pot\", \"oven\"],\n    \"SWITCHON\": [\"oven\"],\n    \"CLOSE\": [\"oven\"]\n}"
+    },
+    {
+        "identifier": "392_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"freezer\"],\n  \"OPEN\": [\"freezer\"],\n  \"GRAB\": [\"pot\"],\n  \"CLOSE\": [\"freezer\"],\n  \"WALK\": [\"oven\"],\n  \"PUTON\": [\"pot\"],\n  \"SWITCHON\": [\"oven\"]\n}"
+    },
+    {
+        "identifier": "755_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"sauce_pan\"],\n  \"WALK\": [\"oven\"],\n  \"PUTON\": [\"sauce_pan\"],\n  \"SWITCHON\": [\"oven\"]\n}"
+    },
+    {
+        "identifier": "124_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "137_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "204_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "268_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "297_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "299_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "300_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "321_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "332_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "379_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "387_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "390_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "3_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "416_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "438_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "442_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "447_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "449_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "455_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "456_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "473_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "490_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "563_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "567_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "570_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "674_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "6_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "742_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "762_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "793_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "798_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "932_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "941_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "96_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"SIT\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "976_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"couch\"],\n  \"LIE\": [\"couch\"]\n}"
+    },
+    {
+        "identifier": "149_1",
+        "llm_output": "```json\n{\n  \"STANDUP\": [],\n  \"WALK\": [\"table\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "154_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "180_1",
+        "llm_output": "```json\n{\n  \"STANDUP\": [],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "195_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"table\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "211_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "241_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "264_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "265_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "287_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "352_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "360_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "388_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "431_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "436_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"FIND\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "442_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "474_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "482_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "497_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "553_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "601_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "70_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "864_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "963_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "974_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "976_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "99_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"phone\"],\n  \"GRAB\": [\"phone\"]\n}"
+    },
+    {
+        "identifier": "183_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"coffe_maker\"],\n  \"OPEN\": [\"coffe_maker\"],\n  \"POUR\": [\"water\", \"coffe_maker\"],\n  \"CLOSE\": [\"coffe_maker\"],\n  \"SWITCHON\": [\"coffe_maker\"]\n}"
+    },
+    {
+        "identifier": "229_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"coffe_maker\"],\n  \"OPEN\": [\"coffe_maker\"],\n  \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n  \"POUR\": [\"coffee_filter\", \"coffe_maker\"],\n  \"CLOSE\": [\"coffe_maker\"],\n  \"SWITCHON\": [\"coffe_maker\"]\n}"
+    },
+    {
+        "identifier": "310_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"coffee_filter\"],\n  \"GRAB\": [\"coffee_filter\"],\n  \"WALK\": [\"coffe_maker\"],\n  \"POUR\": [\"coffee_filter\", \"coffe_maker\"],\n  \"WALK\": [\"ground_coffee\"],\n  \"GRAB\": [\"ground_coffee\"],\n  \"WALK\": [\"coffe_maker\"],\n  \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n  \"SWITCHON\": [\"coffe_maker\"]\n}"
+    },
+    {
+        "identifier": "721_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"coffe_maker\"],\n  \"PLUGOUT\": [\"coffe_maker\"],\n  \"PLUGIN\": [\"coffe_maker\"],\n  \"SWITCHON\": [\"coffe_maker\"],\n  \"POUR\": [\"water\", \"coffe_maker\"],\n  \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n  \"CLOSE\": [\"coffe_maker\"]\n}"
+    },
+    {
+        "identifier": "764_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"WALK\": [\"coffe_maker\"],\n  \"OPEN\": [\"coffe_maker\"],\n  \"POUR\": [\"ground_coffee\", \"coffe_maker\"],\n  \"POUR\": [\"coffee_filter\", \"coffe_maker\"],\n  \"CLOSE\": [\"coffe_maker\"],\n  \"SWITCHON\": [\"coffe_maker\"]\n}"
+    },
+    {
+        "identifier": "419_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"GRAB\": [\"cloth_napkin\"],\n  \"PUTBACK\": [\"cloth_napkin\", \"table\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"table\"],\n  \"GRAB\": [\"fork\"],\n  \"PUTBACK\": [\"fork\", \"table\"],\n  \"GRAB\": [\"cup\"],\n  \"PUTBACK\": [\"cup\", \"table\"],\n  \"GRAB\": [\"knife\"],\n  \"PUTBACK\": [\"knife\", \"table\"]\n}"
+    },
+    {
+        "identifier": "446_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"],\n  \"OPEN\": [\"cupboard\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"table\"],\n  \"GRAB\": [\"plate\"],\n  \"PUTBACK\": [\"plate\", \"table\"]\n}"
+    },
+    {
+        "identifier": "710_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"OPEN\": [\"kitchen_cabinet\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"table\"],\n  \"PUTBACK\": [\"plate\", \"table\"],\n  \"WALK\": [\"kitchen_cabinet\"],\n  \"CLOSE\": [\"kitchen_cabinet\"]\n}"
+    },
+    {
+        "identifier": "84_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"]\n}"
+    },
+    {
+        "identifier": "93_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"]\n}"
+    },
+    {
+        "identifier": "368_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dining_room\"]\n}"
+    },
+    {
+        "identifier": "729_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"shower\"]\n}"
+    },
+    {
+        "identifier": "975_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bathroom\"],\n  \"WALK\": [\"shower\"]\n}"
+    },
+    {
+        "identifier": "231_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"plate\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"dish_soap\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"dining_room\"],\n  \"WASH\": [\"plate\"],\n  \"WASH\": [\"dish_soap\"]\n}"
+    },
+    {
+        "identifier": "31_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"sink\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"GRAB\": [\"sponge\"],\n  \"SCRUB\": [\"sink\"],\n  \"WASH\": [\"sink\"]\n}"
+    },
+    {
+        "identifier": "349_1",
+        "llm_output": "{\n  \"WALK\": [\"dish_soap\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"plate\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"faucet\"],\n  \"WASH\": [\"plate\"]\n}"
+    },
+    {
+        "identifier": "397_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"dish_soap\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"plate\"],\n  \"GRAB\": [\"plate\"],\n  \"WALK\": [\"bathroom\"],\n  \"WASH\": [\"plate\"],\n  \"WASH\": [\"dish_soap\"]\n}"
+    },
+    {
+        "identifier": "429_2",
+        "llm_output": "```json\n{\n  \"WALK\": [\"kitchen_counter\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"sink\"],\n  \"GRAB\": [\"sink\"],\n  \"WASH\": [\"sink\"]\n}"
+    },
+    {
+        "identifier": "553_2",
+        "llm_output": "```json\n{\n    \"WALK\": [\"food_kiwi\"],\n    \"GRAB\": [\"food_kiwi\"],\n    \"WALK\": [\"food_food\"],\n    \"GRAB\": [\"food_food\"],\n    \"WALK\": [\"sink\"],\n    \"WASH\": [\"food_kiwi\"],\n    \"WASH\": [\"food_food\"]\n}"
+    },
+    {
+        "identifier": "594_2",
+        "llm_output": "```json\n{\n  \"GRAB\": [\"dish_soap\"],\n  \"GRAB\": [\"plate\"],\n  \"WASH\": [\"plate\"],\n  \"WASH\": [\"dish_soap\"]\n}"
+    },
+    {
+        "identifier": "746_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"home_office\"],\n  \"GRAB\": [\"sponge\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"WALK\": [\"sink\"],\n  \"WASH\": [\"sponge\"]\n}"
+    },
+    {
+        "identifier": "961_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"sink\"],\n  \"GRAB\": [\"dish_soap\"],\n  \"GRAB\": [\"plate\"],\n  \"WASH\": [\"plate\"],\n  \"WASH\": [\"plate\"]\n}"
+    },
+    {
+        "identifier": "988_1",
+        "llm_output": "```json\n{\n  \"WALK\": [\"bowl\"],\n  \"GRAB\": [\"bowl\"],\n  \"WALK\": [\"faucet\"],\n  \"WASH\": [\"bowl\"]\n}"
+    }
+]

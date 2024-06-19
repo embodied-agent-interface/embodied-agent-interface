@@ -1,0 +1,1370 @@
+[
+    {
+        "identifier": "27_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"washing_machine\", \"state\": \"ON\"}, {\"name\": \"clothes_jacket\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"clothes_jacket\", \"relation\": \"INSIDE\", \"to_name\": \"washing_machine\"}, {\"from_name\": \"soap\", \"relation\": \"INSIDE\", \"to_name\": \"washing_machine\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards basket_for_clothes, get near to basket_for_clothes\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "417_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"washing_machine\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"WASH\", \"description\": \"wash sth\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "850_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"washing_machine\", \"state\": \"OPEN\"}, {\"name\": \"clothes_pants\", \"state\": \"DIRTY\"}, {\"name\": \"washing_machine\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk into laundry room.\"}, {\"action\": \"PUTIN\", \"description\": \"Put dirty clothes into washing machine.\"}, {\"action\": \"POUR\", \"description\": \"Measure laundry detergent and place into washing machine.\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "954_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"washing_machine\", \"state\": \"ON\"}, {\"name\": \"clothes_dress\", \"state\": \"CLEAN\"}, {\"name\": \"clothes_pants\", \"state\": \"CLEAN\"}, {\"name\": \"clothes_shirt\", \"state\": \"CLEAN\"}, {\"name\": \"clothes_underwear\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```\n<|eot_id|>"
+    },
+    {
+        "identifier": "11_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"floor_lamp\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "120_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "125_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "150_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "160_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "180_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "205_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"light\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"SWITCHON\",\n\"description\": \"switch sth on (normally lamp/light)\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "222_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "232_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "310_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"light\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "311_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'floor_lamp', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "331_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"light\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "339_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "345_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "392_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"light\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"FIND\",\n\"description\": \"find and get near to sth\"\n},\n{\n\"action\": \"WALK\",\n\"description\": \"walk towards sth, get near to sth\"\n},\n{\n\"action\": \"SWITCHON\",\n\"description\": \"switch sth on (normally lamp/light)\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "394_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "432_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'floor_lamp', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "443_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"floor_lamp\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "445_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "511_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "585_1",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"floor_lamp\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n<|eot_id|>"
+    },
+    {
+        "identifier": "604_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'ON'}, {'name': 'light', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}, {'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "616_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"light\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"SWITCHON\",\n\"description\": \"switch sth on (normally lamp/light)\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "627_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"floor_lamp\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "705_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"floor_lamp\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"SWITCHON\",\n\"description\": \"switch sth on (normally lamp/light)\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "708_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "715_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to light\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "737_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "780_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "812_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "835_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'floor_lamp', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "85_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'SWITCHON', 'description': 'switch sth on (normally lamp/light)'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "874_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "491_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "696_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1003_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"None\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "115_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "407_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}],\n\"edge goals\": [],\n\"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on the chair\"}, {\"action\": \"TYPE\", \"description\": \"Type in the keyboard\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "430_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'TYPE', 'description': 'type the email'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "481_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"OFF\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "622_1",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"keyboard\", \"relation\": \"PLUGGED_IN\", \"to_name\": \"computer\"}, {\"from_name\": \"mouse\", \"relation\": \"PLUGGED_IN\", \"to_name\": \"computer\"}], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type the email on the keyboard\"}]}\n<|eot_id|>"
+    },
+    {
+        "identifier": "699_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'TYPE', 'description': 'type on keyboard'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "824_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'TYPE', 'description': 'type my email at the keyboard'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "87_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"laptop\",\n        \"state\": \"ON\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": [\n    {\n        \"action\": \"WALK\",\n        \"description\": \"walk to home office\"\n    },\n    {\n        \"action\": \"SWITCHON\",\n        \"description\": \"switch on laptop\"\n    },\n    {\n        \"action\": \"TYPE\",\n        \"description\": \"use keyboard to send mail\"\n    }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "986_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"SWITCHOFF\", \"description\": \"switch sth off (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "996_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1004_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to fridge\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "152_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"CLOSE\", \"description\": \"as opposed to open sth, CLOSE sth means changing the state from OPEN to CLOSE, not get close to!\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "298_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'freezer', 'state': 'OPEN'}, {'name': 'food_food', 'state': 'INSIDE'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "609_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "703_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'freezer', 'state': 'OPEN'}], 'edge goals': [], 'action goals': [{'action': 'PUTIN', 'description': 'put object A into object B'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "772_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"milk\", \"state\": \"INSIDE\"}, {\"name\": \"food_turkey\", \"state\": \"INSIDE\"}, {\"name\": \"food_egg\", \"state\": \"INSIDE\"}, {\"name\": \"food_fish\", \"state\": \"INSIDE\"}, {\"name\": \"food_chicken\", \"state\": \"INSIDE\"}, {\"name\": \"freezer\", \"state\": \"CLOSED\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "837_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'food_vegetable', 'state': 'COLD'}, {'name': 'food_egg', 'state': 'COLD'}, {'name': 'food_cheese', 'state': 'COLD'}, {'name': 'milk', 'state': 'COLD'}, {'name': 'freezer', 'state': 'CLOSED'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "158_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "323_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to the bathroom.\"}, {\"action\": \"FIND\", \"description\": \"Find the toilet.\"}, {\"action\": \"SIT\", \"description\": \"Sit on the toilet.\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "430_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"toilet\", \"state\": \"OCCUPIED\"}, {\"name\": \"toilet\", \"state\": \"FLUSHED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"toilet_paper\", \"state\": \"CUT\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "478_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"toilet\",\n        \"state\": \"OCCUPIED\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "496_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the entrance of the bathroom\"}, {\"action\": \"TURNTO\", \"description\": \"turn to the door\"}, {\"action\": \"OPEN\", \"description\": \"open the door to the bathroom\"}, {\"action\": \"WALK\", \"description\": \"walk inside of the bathroom\"}, {\"action\": \"FIND\", \"description\": \"find the toilet inside of the bathroom and walk over to it\"}, {\"action\": \"TURNTO\", \"description\": \"turn and look at the toilet\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "624_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"toilet\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "188_1",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'television', 'state': 'ON'}], \"edge goals\": [], \"action goals\": [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "803_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "960_2",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'television', 'state': 'ON'}], \"edge goals\": [], \"action goals\": [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "101_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit at desk\"}, {\"action\": \"TYPE\", \"description\": \"enter password\"}, {\"action\": \"OPEN\", \"description\": \"open application\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1068_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'WALK', 'description': 'walk to home office'}, {'action': 'FIND', 'description': 'find computer'}, {'action': 'SWITCHON', 'description': 'switch on computer'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "153_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"computer\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "196_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"},\n{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"chair\"}\n],\n\"action goals\": [\n{\"action\": \"TYPE\", \"description\": \"type work into the computer\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "198_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to mouse\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "201_2",
+        "llm_output": "<|eot_id|>"
+    },
+    {
+        "identifier": "232_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "234_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [{'from_name': 'character', 'relation': 'ON', 'to_name': 'chair'}], 'action goals': [{'action': 'TYPE', 'description': 'type on keyboard'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "343_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [{'from_name': 'character', 'relation': 'ON', 'to_name': 'chair'}], 'action goals': [{'action': 'TYPE', 'description': 'None'}, {'action': 'FIND', 'description': 'None'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "373_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to home_office\"},\n{\"action\": \"TURNTO\", \"description\": \"turn to computer\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "406_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{'name': 'computer', 'state': 'ON'}, \n{'name': 'character', 'state': 'SITTING'}\n], \n\"edge goals\": [\n{'from_name': 'character', 'relation': 'FACING', 'to_name': 'computer'}\n], \n\"action goals\": [\n{'action': 'TYPE', 'description': 'typing text with the keyboard when needed'}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "409_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [], 'action goals': [{'action': 'WALK', 'description': 'Walk to home office.'}, {'action': 'SIT', 'description': 'Sit on chair.'}, {'action': 'SWITCHON', 'description': 'Switch on computer.'}, {'action': 'TYPE', 'description': 'type in keyboard.'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "419_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'WALK', 'description': 'walk towards desk, get near to desk'}, {'action': 'SIT', 'description': 'sit on chair'}, {'action': 'TURNTO', 'description': 'turn and face computer'}, {'action': 'LOOKAT', 'description': 'look at computer, face computer'}, {'action': 'TYPE', 'description': 'type on keyboard'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "433_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "437_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [{'from_name': 'character', 'relation': 'ON', 'to_name': 'chair'}, {'from_name': 'computer', 'relation': 'ON', 'to_name': 'desk'}], 'action goals': [{'action': 'TYPE', 'description': 'type on keyboard'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "440_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [], 'action goals': [{'action': 'TYPE', 'description': 'None'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "453_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards home_office, get near to home_office\"}, {\"action\": \"SIT\", \"description\": \"sit on chair\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "46_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"computer\",\n        \"state\": \"ON\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "475_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'character', 'state': 'SITTING'}, {'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "503_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "670_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'computer', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "719_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "757_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to computer\"}, {\"action\": \"TOUCH\", \"description\": \"touch computer\"}, {\"action\": \"LOOKAT\", \"description\": \"look at computer\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "787_2",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"None\"}]}\n<|eot_id|>"
+    },
+    {
+        "identifier": "795_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "819_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "874_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"chair\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the home office\"},\n{\"action\": \"OPEN\", \"description\": \"open the door of the office room\"},\n{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "910_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "91_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n},\n{\n\"name\": \"computer\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"chair\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "93_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards desk\"}, {\"action\": \"SIT\", \"description\": \"sit on chair\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "962_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to computer\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the computer screen\"}, {\"action\": \"MOVE\", \"description\": \"move the mouse\"}, {\"action\": \"TOUCH\", \"description\": \"click the mouse\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "190_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'dishwasher', 'state': 'ON'}], 'edge goals': [{'from_name': 'bowl', 'relation': 'INSIDE', 'to_name': 'dishwasher'}, {'from_name': 'plate', 'relation': 'INSIDE', 'to_name': 'dishwasher'}], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "201_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'dishwasher', 'state': 'ON'}, {'name': 'plate', 'state': 'CLEAN'}], 'edge goals': [], 'action goals': []}\n```\n<|eot_id|>"
+    },
+    {
+        "identifier": "223_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put plate in dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put dish_soap in dishwasher\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "327_2",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"dishwasher\", \"state\": \"CLEAN\"}, {\"name\": \"dishwasher\", \"state\": \"CLOSED\"}, {\"name\": \"dishwasher\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n<|eot_id|>"
+    },
+    {
+        "identifier": "383_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"dishwasher\",\n        \"state\": \"FULL\"\n    },\n    {\n        \"name\": \"dishwasher\",\n        \"state\": \"CLOSED\"\n    },\n    {\n        \"name\": \"dishwasher\",\n        \"state\": \"ON\"\n    },\n    {\n        \"name\": \"plate\",\n        \"state\": \"CLEAN\"\n    },\n    {\n        \"name\": \"plate\",\n        \"state\": \"CLEAN\"\n    }\n],\n\"edge goals\": [\n    {\n        \"from_name\": \"plate\",\n        \"relation\": \"INSIDE\",\n        \"to_name\": \"dishwasher\"\n    },\n    {\n        \"from_name\": \"plate\",\n        \"relation\": \"INSIDE\",\n        \"to_name\": \"dishwasher\"\n    },\n    {\n        \"from_name\": \"dish_soap\",\n        \"relation\": \"INSIDE\",\n        \"to_name\": \"dishwasher\"\n    }\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "417_2",
+        "llm_output": "{\n\"node goals\": [\n{\"name\": \"dishwasher\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}<|eot_id|>"
+    },
+    {
+        "identifier": "487_1",
+        "llm_output": "{\n\"node goals\": [\n    {\n        \"name\": \"plate\",\n        \"state\": \"CLEAN\"\n    },\n    {\n        \"name\": \"dishwasher\",\n        \"state\": \"ON\"\n    }\n],\n\"edge goals\": [\n    {\n        \"from_name\": \"plate\",\n        \"relation\": \"INSIDE\",\n        \"to_name\": \"dishwasher\"\n    }\n],\n\"action goals\": []\n}<|eot_id|>"
+    },
+    {
+        "identifier": "650_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dishwasher\", \"state\": \"ON\"}], \"edge goals\": [{\"from_name\": \"plate\", \"relation\": \"INSIDE\", \"to_name\": \"dishwasher\"}], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "783_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'dishwasher', 'state': 'ON'}, {'name': 'dishwasher', 'state': 'FULL'}, {'name': 'plate', 'state': 'CLEAN'}, {'name': 'plate', 'state': 'CLEAN'}, {'name': 'plate', 'state': 'CLEAN'}, {'name': 'plate', 'state': 'CLEAN'}, {'name': 'plate', 'state': 'CLEAN'}, {'name': 'cup', 'state': 'CLEAN'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "815_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "826_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"FULL\"}, {\"name\": \"dish_soap\", \"state\": \"EMPTY\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"fork\", \"state\": \"CLEAN\"}, {\"name\": \"fork\", \"state\": \"CLEAN\"}, {\"name\": \"knife\", \"state\": \"CLEAN\"}, {\"name\": \"knife\", \"state\": \"CLEAN\"}, {\"name\": \"spoon\", \"state\": \"CLEAN\"}, {\"name\": \"spoon\", \"state\": \"CLEAN\"}, {\"name\": \"spoon\", \"state\": \"CLEAN\"}, {\"name\": \"dishwasher\", \"state\": \"CLOSED\"}, {\"name\": \"dishwasher\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "856_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"plate\", \"relation\": \"INSIDE\", \"to_name\": \"dishwasher\"}, {\"from_name\": \"dish_soap\", \"relation\": \"INSIDE\", \"to_name\": \"dishwasher\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "911_1",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'dishwasher', 'state': 'ON'}, {'name': 'dishwasher', 'state': 'CLOSED'}], \"edge goals\": [], \"action goals\": [{'action': 'WASH', 'description': 'wash sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1027_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"LYING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"bed\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "181_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "244_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"LYING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"bed\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "269_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"character\", \"state\": \"LYING\"}, \n{\"name\": \"bed\", \"state\": \"OCCUPIED\"}\n], \n\"edge goals\": [], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"Walk to the bedroom\"}, \n{\"action\": \"FIND\", \"description\": \"Find the bed\"}, \n{\"action\": \"LIE\", \"description\": \"Lie down on the bed\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "509_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'light', 'state': 'OFF'}, {'name': 'character', 'state': 'LYING'}, {'name': 'bed', 'state': 'OCCUPIED'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "875_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'character', 'state': 'LYING'}, {'name': 'pillow', 'state': 'CLEAN'}, {'name': 'bed', 'state': 'OCCUPIED'}], 'edge goals': [{'from_name': 'pillow', 'relation': 'ON', 'to_name': 'bed'}], 'action goals': [{'action': 'LOOKAT', 'description': 'look at the pillow'}, {'action': 'LIE', 'description': 'lie down in bed'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "102_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "154_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"OFF\"}, {\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "176_1",
+        "llm_output": "{\n'node goals': [{'name': 'soap', 'state': 'GRABBED'}, {'name': 'hands_both', 'state': 'WET'}], 'edge goals': [], 'action goals': [{'action': 'WASH', 'description': 'wash sth'}]}\n<|eot_id|>"
+    },
+    {
+        "identifier": "214_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards bathroom\"}, {\"action\": \"FIND\", \"description\": \"find and get near to sink\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "258_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to kitchen\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on water\"}, {\"action\": \"FIND\", \"description\": \"find soap\"}, {\"action\": \"WASH\", \"description\": \"wash hands\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "499_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "517_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "549_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash hands with soap\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "562_1",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'faucet', 'state': 'ON'}], \"edge goals\": [], \"action goals\": [{'action': 'WASH', 'description': 'wash sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "580_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"faucet\", \"state\": \"OFF\"}, {\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "657_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "660_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"hands_both\", \"state\": \"CLEAN\"}, {\"name\": \"soap\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "672_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "710_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to bathroom\"}, {\"action\": \"WASH\", \"description\": \"wash the hands\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "741_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "750_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}, {\"name\": \"soap\", \"state\": \"CLEAN\"}, {\"name\": \"water\", \"state\": \"OFF\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "805_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'faucet', 'state': 'OFF'}, {'name': 'soap', 'state': 'CLEAN'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [], 'action goals': [{'action': 'WASH', 'description': 'wash sth'}, {'action': 'RINSE', 'description': 'rinse sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "80_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"OFF\"}, {\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "813_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the water\"}, {\"action\": \"WASH\", \"description\": \"wash hands\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "928_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SCRUB\", \"description\": \"scrub sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "995_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1035_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "113_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "12_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cat\"}, {\"action\": \"TOUCH\", \"description\": \"touch cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "137_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"TOUCH\", \"description\": \"None\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "203_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "220_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cat\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "242_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "279_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "287_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cat\"}, {\"action\": \"TOUCH\", \"description\": \"touch cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "292_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{'action': 'WALK', 'description': 'walk towards cat, get near to cat'}, {'action': 'TOUCH', 'description': 'touch cat'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "297_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"PET\", \"description\": \"pet the cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "381_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk up to the cat.\"}, {\"action\": \"TOUCH\", \"description\": \"Pet the cat with your hand.\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "388_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "38_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cat\"}, {\"action\": \"TOUCH\", \"description\": \"touch cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "429_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "437_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"TOUCH\", \"description\": \"pet the cat on the back\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "451_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "469_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on the couch\"}, {\"action\": \"TOUCH\", \"description\": \"touch cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "479_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'cat', 'state': 'PLEASED'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "502_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "612_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "856_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk into bedrrom and to the sofa.\"}, {\"action\": \"SIT\", \"description\": \"Sit on the sofa\"}, {\"action\": \"TOUCH\", \"description\": \"touch cat\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "384_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}\n],\n\"action goals\": [\n{\"action\": \"TYPE\", \"description\": \"type in the address\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "540_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'phone', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'GRAB', 'description': 'graph sth'}, {'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "60_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"laptop\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"use keyboard to browse internet\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "71_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "7_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"chair\"}\n],\n\"action goals\": [\n{\"action\": \"TYPE\", \"description\": \"None\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1070_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards bathroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the toothbrush holder\"}, {\"action\": \"GRAB\", \"description\": \"graph toothbrush from toothbrush holder\"}, {\"action\": \"FIND\", \"description\": \"find and get near to tooth_paste\"}, {\"action\": \"SQUEEZE\", \"description\": \"squeeze the tooth_paste into toothbrush\"}, {\"action\": \"WASH\", \"description\": \"wash the teeth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "313_2",
+        "llm_output": "<|eot_id|>"
+    },
+    {
+        "identifier": "689_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "718_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1049_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"dvd_player\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the DVD player\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the dvd player\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the sofa\"}, {\"action\": \"SIT\", \"description\": \"sit on the sofa\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "113_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"cd_player\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "161_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "173_1",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cd_player\"}]\n}<|eot_id|>"
+    },
+    {
+        "identifier": "23_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'stereo', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "263_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to stereo\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "305_2",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n<|eot_id|>"
+    },
+    {
+        "identifier": "363_2",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'dvd_player', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], \"edge goals\": [], \"action goals\": [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "385_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}, {\"name\": \"cd_player\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "403_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "415_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"phone\", \"state\": \"ON\"},\n{\"name\": \"headset\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"FIND\", \"description\": \"find and get near to the phone\"},\n{\"action\": \"GRAB\", \"description\": \"graph the phone\"},\n{\"action\": \"FIND\", \"description\": \"find and get near to the headset\"},\n{\"action\": \"PUTON\", \"description\": \"put on the headset\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "462_2",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'stereo', 'state': 'ON'}], \"edge goals\": [], \"action goals\": [{'action': 'WALK', 'description': 'walk to bedroom'}, {'action': 'FIND', 'description': 'find stereo'}, {'action': 'SWITCHON', 'description': 'switch on stereo'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "463_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "503_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"remote_control\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to CD player\"}, {\"action\": \"SIT\", \"description\": \"go and sit in a chair\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "59_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"phone\", \"state\": \"ON\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"phone\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_LH\", \"to_name\": \"headset\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk towards living room\"},\n{\"action\": \"GRAB\", \"description\": \"graph cellphone\"},\n{\"action\": \"GRAB\", \"description\": \"grab headset\"},\n{\"action\": \"PUTON\", \"description\": \"put on headset\"},\n{\"action\": \"TYPE\", \"description\": \"type with cellphone\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "737_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "773_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to radio\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "910_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'stereo', 'state': 'ON'}], 'edge goals': [], 'action goals': []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "953_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to the living\"}, {\"action\": \"TURNTO\", \"description\": \"turn to the music stand\"}, {\"action\": \"SWITCHON\", \"description\": \"Switch on the CD player\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1057_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "117_1",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'television', 'state': 'ON'}], \"edge goals\": [], \"action goals\": [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "134_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, {\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "170_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}],\n\"edge goals\": [],\n\"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "197_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'television', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "21_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "225_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "259_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to remote_control\"}, {\"action\": \"GRAB\", \"description\": \"graph remote_control\"}, {\"action\": \"FIND\", \"description\": \"find and get near to couch\"}, {\"action\": \"SIT\", \"description\": \"sit on couch\"}, {\"action\": \"FIND\", \"description\": \"find and get near to television\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "307_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "329_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "342_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "377_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "383_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "411_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}, {\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to television\"}, {\"action\": \"WALK\", \"description\": \"walk towards sofa, get near to sofa\"}, {\"action\": \"FIND\", \"description\": \"find and get near to remote_control\"}, {\"action\": \"GRAB\", \"description\": \"graph remote_control\"}, {\"action\": \"SWITCHON\", \"description\": \"switch television on (normally lamp/light)\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "454_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'television', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [], 'action goals': [{'action': 'WATCH', 'description': 'watch sth'}, {'action': 'GRAB', 'description': 'graph sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "459_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"television\", \"state\": \"ON\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}\n],\n\"action goals\": [\n{\"action\": \"WATCH\", \"description\": \"watch television\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "548_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"WATCH\", \"description\": \"watch sth\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "595_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}, {\"from_name\": \"remote_control\", \"relation\": \"ON\", \"to_name\": \"coffee_table\"}], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "684_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "74_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "806_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'television', 'state': 'ON'}, {'name': 'character', 'state': 'SITTING'}], 'edge goals': [{'from_name': 'remote_control', 'relation': 'HOLDS_RH', 'to_name': 'remote_control'}], 'action goals': [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "98_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'television', 'state': 'ON'}], 'edge goals': [], 'action goals': [{'action': 'WATCH', 'description': 'watch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1064_1",
+        "llm_output": "```json\n{\n\"node goals\": [],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"DRINK\",\n\"description\": \"drink up sth\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "156_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"cup\", \"state\": \"EMPTY\"}],\n\"edge goals\": [],\n\"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up water\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "171_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"None\"}, {\"action\": \"DRINK\", \"description\": \"None\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "175_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to cup\"}, {\"action\": \"GRAB\", \"description\": \"graph cup\"}, {\"action\": \"OPEN\", \"description\": \"open faucet\"}, {\"action\": \"POUR\", \"description\": \"pour water into cup\"}, {\"action\": \"DRINK\", \"description\": \"drink up water\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "181_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to water_glass\"}, {\"action\": \"GRAB\", \"description\": \"graph water_glass\"}, {\"action\": \"FIND\", \"description\": \"find and get near to freezer\"}, {\"action\": \"OPEN\", \"description\": \"open freezer\"}, {\"action\": \"GRAB\", \"description\": \"graph water\"}, {\"action\": \"POUR\", \"description\": \"pour water into water_glass\"}, {\"action\": \"DRINK\", \"description\": \"drink up water_glass\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "26_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "286_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "291_1",
+        "llm_output": "```json\n{'node goals': [], 'edge goals': [], 'action goals': [{'action': 'DRINK', 'description': 'drink up sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "317_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'faucet', 'state': 'ON'}, {'name': 'faucet', 'state': 'OFF'}, {'name': 'cup', 'state': 'FULL'}], 'edge goals': [], 'action goals': [{'action': 'DRINK', 'description': 'drink up sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "488_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards kitchen\"}, {\"action\": \"GRAB\", \"description\": \"graph cup\"}, {\"action\": \"WALK\", \"description\": \"walk towards sink\"}, {\"action\": \"TURNTO\", \"description\": \"turn and face sink\"}, {\"action\": \"POUR\", \"description\": \"pour water into cup\"}, {\"action\": \"DRINK\", \"description\": \"drink up water\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "510_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "528_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "532_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'faucet', 'state': 'OFF'}, {'name': 'drinking_glass', 'state': 'CLEAN'}], 'edge goals': [], 'action goals': [{'action': 'DRINK', 'description': 'drink up sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "589_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "600_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards fridge\"}, {\"action\": \"FIND\", \"description\": \"find and get near to fridge\"}, {\"action\": \"OPEN\", \"description\": \"open fridge\"}, {\"action\": \"FIND\", \"description\": \"find and get near to water_glass\"}, {\"action\": \"DRINK\", \"description\": \"drink up water_glass\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "662_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards kitchen\"}, {\"action\": \"FIND\", \"description\": \"find and get near to water glass\"}, {\"action\": \"GRAB\", \"description\": \"graph water glass\"}, {\"action\": \"FIND\", \"description\": \"find and get near to water\"}, {\"action\": \"POUR\", \"description\": \"pour water into water glass\"}, {\"action\": \"DRINK\", \"description\": \"drink up water from water glass\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "688_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"water_glass\",\n        \"state\": \"FULL\"\n    },\n    {\n        \"name\": \"faucet\",\n        \"state\": \"OFF\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": [\n    {\n        \"action\": \"GRAB\",\n        \"description\": \"None\"\n    },\n    {\n        \"action\": \"POUR\",\n        \"description\": \"None\"\n    },\n    {\n        \"action\": \"DRINK\",\n        \"description\": \"None\"\n    }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "787_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "788_1",
+        "llm_output": "{\n\"node goals\": [\n{\"name\": \"faucet\", \"state\": \"ON\"}, \n{\"name\": \"drinking_glass\", \"state\": \"FULL\"}\n], \n\"edge goals\": [], \n\"action goals\": [\n{\"action\": \"DRINK\", \"description\": \"drink up sth\"}\n]\n}<|eot_id|>"
+    },
+    {
+        "identifier": "814_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards cupboard\"}, {\"action\": \"OPEN\", \"description\": \"open cupboard\"}, {\"action\": \"FIND\", \"description\": \"find and get near to water_glass\"}, {\"action\": \"GRAB\", \"description\": \"graph water_glass\"}, {\"action\": \"DRINK\", \"description\": \"drink up water\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "850_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"POUR\", \"description\": \"pour object A into object B\"}, {\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "861_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"DRINK\", \"description\": \"drink up sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "878_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"water_glass\",\n\"state\": \"FULL\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"DRINK\",\n\"description\": \"drink up sth\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1073_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to home office\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on light\"}, {\"action\": \"GRAB\", \"description\": \"grab a book\"}, {\"action\": \"SIT\", \"description\": \"sit in chair\"}, {\"action\": \"READ\", \"description\": \"start to read the book\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1088_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "15_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'address_book', 'state': 'OPEN'}], 'edge goals': [], 'action goals': [{'action': 'READ', 'description': 'read something, need to hold the thing first'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "163_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "16_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "192_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"novel\", \"state\": \"OPEN\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "208_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "221_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "241_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"novel\",\n\"state\": \"OPEN\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"novel\",\n\"relation\": \"HOLDS_RH\",\n\"to_name\": \"novel\"\n}\n],\n\"action goals\": [\n{\n\"action\": \"FIND\",\n\"description\": \"find and get near to sth\"\n},\n{\n\"action\": \"READ\",\n\"description\": \"read something, need to hold the thing first\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "341_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"novel\",\n        \"state\": \"OPEN\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": [\n    {\n        \"action\": \"READ\",\n        \"description\": \"read something, need to hold the thing first\"\n    }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "484_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "504_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "508_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"novel\", \"state\": \"OPEN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}\n],\n\"action goals\": [\n{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "544_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"novel\", \"state\": \"OPEN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"novel\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}\n], \n\"action goals\": [\n{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "57_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n},\n{\n\"name\": \"novel\",\n\"state\": \"OPEN\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": [\n{\n\"action\": \"READ\",\n\"description\": \"read something, need to hold the thing first\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "617_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}, {\"name\": \"nightstand\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "628_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'novel', 'state': 'OPEN'}], 'edge goals': [], 'action goals': [{'action': 'READ', 'description': 'read something, need to hold the thing first'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "688_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"spectacles\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "693_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"character\",\n        \"state\": \"SITTING\"\n    },\n    {\n        \"name\": \"novel\",\n        \"state\": \"OPEN\"\n    }\n],\n\"edge goals\": [],\n\"action goals\": [\n    {\n        \"action\": \"FIND\",\n        \"description\": \"find and get near to sth\"\n    },\n    {\n        \"action\": \"SIT\",\n        \"description\": \"sit on sth\"\n    },\n    {\n        \"action\": \"READ\",\n        \"description\": \"read something, need to hold the thing first\"\n    }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "821_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "86_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "896_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"Find book\"}, {\"action\": \"GRAB\", \"description\": \"grab book\"}, {\"action\": \"READ\", \"description\": \"read book\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "897_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"novel\", \"relation\": \"ON\", \"to_name\": \"table\"}, {\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"chair\"}], \"action goals\": [{\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "1083_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"oven\", \"state\": \"ON\"},\n{\"name\": \"pot\", \"state\": \"ON\"},\n{\"name\": \"food_vegetable\", \"state\": \"COOKED\"},\n{\"name\": \"water\", \"state\": \"HOT\"}\n],\n\"edge goals\": [\n{\"from_name\": \"pot\", \"relation\": \"ON\", \"to_name\": \"oven\"}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "392_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find fridge\"}, {\"action\": \"WALK\", \"description\": \"walk to fridge\"}, {\"action\": \"OPEN\", \"description\": \"open fridge\"}, {\"action\": \"FIND\", \"description\": \"find food\"}, {\"action\": \"GRAB\", \"description\": \"grab food\"}, {\"action\": \"CLOSE\", \"description\": \"close fridge door\"}, {\"action\": \"FIND\", \"description\": \"find frying pan\"}, {\"action\": \"WALK\", \"description\": \"walk to frying pan\"}, {\"action\": \"GRAB\", \"description\": \"grab frying pan\"}, {\"action\": \"FIND\", \"description\": \"find stove\"}, {\"action\": \"WALK\", \"description\": \"walk to stove\"}, {\"action\": \"PUTON\", \"description\": \"put frying pan on stove\"}, {\"action\": \"PUTIN\", \"description\": \"put food in frying pan\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on stove\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "755_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"COOK\", \"description\": \"Unspecified\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "124_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "137_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "204_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n    {\n        \"name\": \"character\",\n        \"state\": \"SITTING\"\n    },\n    {\n        \"name\": \"television\",\n        \"state\": \"ON\"\n    }\n],\n\"edge goals\": [\n    {\n        \"from_name\": \"character\",\n        \"relation\": \"ON\",\n        \"to_name\": \"couch\"\n    }\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "268_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "297_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"OFF\"}, {\"name\": \"pillow\", \"state\": \"GRABBED\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [{\"from_name\": \"pillow\", \"relation\": \"ON\", \"to_name\": \"couch\"}], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "299_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sofa, get near to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit on sofa\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "300_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "321_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "332_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "379_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"LYING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "387_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards couch, get near to couch\"}, {\"action\": \"SIT\", \"description\": \"sit on couch\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "390_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "3_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "416_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"character\", \"state\": \"LYING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"ON\", \"to_name\": \"couch\"}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "438_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "442_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"Find the sofa and get near to sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "447_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "449_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WATCH\", \"description\": \"watch sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "455_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n  {\n    \"name\": \"character\",\n    \"state\": \"SITTING\"\n  }\n],\n\"edge goals\": [\n  {\n    \"from_name\": \"character\",\n    \"relation\": \"ON\",\n    \"to_name\": \"couch\"\n  }\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "456_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "473_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "490_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"SIT\",\n\"description\": \"sit on sth\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "563_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "567_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "570_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"couch\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "674_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to the sofa and sit on it.\"}, {\"action\": \"SIT\", \"description\": \"sit on sofa\"}, {\"action\": \"LIE\", \"description\": \"lay down on sofa\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "6_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WATCH\", \"description\": \"watch sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "742_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "762_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"LYING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "793_2",
+        "llm_output": "```json\n{'node goals': [{'name': 'television', 'state': 'ON'}, {'name': 'character', 'state': 'LYING'}], 'edge goals': [], 'action goals': [{'action': 'WALK', 'description': 'walk towards sth, get near to sth'}, {'action': 'LIE', 'description': 'lie on something, need to get close the thing first'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "798_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"SITTING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "932_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "941_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "96_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "976_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"character\",\n\"state\": \"LYING\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"ON\",\n\"to_name\": \"couch\"\n}\n],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "149_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph phone\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "154_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bedroom\"}, {\"action\": \"GRAB\", \"description\": \"graph phone\"}, {\"action\": \"PUSH\", \"description\": \"move button\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "180_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "195_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "211_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "241_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"Find phone\"}, {\"action\": \"GRAB\", \"description\": \"Pick the phone up\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "264_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"phone\", \"state\": \"GRABBED\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"FIND\", \"description\": \"find and get near to phone\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "265_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards phone\"}, {\"action\": \"GRAB\", \"description\": \"graph phone\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "287_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "352_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "360_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "388_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"GREET\", \"description\": \"greet to somebody\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "431_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"phone\",\n\"state\": \"ON\"\n}\n],\n\"edge goals\": [\n{\n\"from_name\": \"character\",\n\"relation\": \"CLOSE\",\n\"to_name\": \"phone\"\n}\n],\n\"action goals\": [\n{\n\"action\": \"GRAB\",\n\"description\": \"graph sth\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "436_1",
+        "llm_output": "```json\n{\n\"node goals\": [],\n\"edge goals\": [],\n\"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "442_2",
+        "llm_output": "```json\n{\n\"node goals\": [],\n\"edge goals\": [\n  {\n    \"from_name\": \"character\",\n    \"relation\": \"HOLDS_RH\",\n    \"to_name\": \"phone\"\n  }\n],\n\"action goals\": [\n  {\n    \"action\": \"FIND\",\n    \"description\": \"Find the phone and grab it.\"\n  },\n  {\n    \"action\": \"GRAB\",\n    \"description\": \"Find the phone and grab it.\"\n  }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "474_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"Find the phone and get near to it\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "482_2",
+        "llm_output": "```json\n{\n\"node goals\": [],\n\"edge goals\": [{'from_name': 'phone', 'relation': 'HOLDS_RH', 'to_name': 'phone'}],\n\"action goals\": [{'action': 'GRAB', 'description': 'graph sth'}]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "497_1",
+        "llm_output": "```json\n{'node goals': [], 'edge goals': [], 'action goals': [{'action': 'WALK', 'description': 'Walk to home office'}, {'action': 'GRAB', 'description': 'Grab phone 1'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "553_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"Walk to the phone\"}, {\"action\": \"GRAB\", \"description\": \"Grab the phone\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "601_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph phone\"}, {\"action\": \"TOUCH\", \"description\": \"touch button\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "70_1",
+        "llm_output": "```json\n{'node goals': [{'name': 'phone', 'state': 'PLUGGED_OUT'}], 'edge goals': [], 'action goals': [{'action': 'GRAB', 'description': 'graph sth'}, {'action': 'TOUCH', 'description': 'touch sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "864_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "963_2",
+        "llm_output": "```json\n{'node goals': [], 'edge goals': [{'from_name': 'character', 'relation': 'HOLDS_RH', 'to_name': 'phone'}], 'action goals': [{'action': 'GRAB', 'description': 'graph sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "974_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"Find the telephone.\"}, {\"action\": \"GRAB\", \"description\": \"Grab the telephone.\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "976_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"phone\",\n\"state\": \"PLUGGED_OUT\"\n},\n{\n\"name\": \"phone\",\n\"state\": \"GRABBED\"\n}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "99_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "183_2",
+        "llm_output": "{\n\"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"ON\"}, {\"name\": \"coffe_maker\", \"state\": \"CLOSED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards coffee maker, get near to coffee maker\"}, {\"action\": \"FIND\", \"description\": \"find and get near to coffee maker\"}, {\"action\": \"FIND\", \"description\": \"find and get near to coffee filter\"}, {\"action\": \"PUTIN\", \"description\": \"put coffee filter into coffee maker\"}, {\"action\": \"FIND\", \"description\": \"find and get near to ground coffee\"}, {\"action\": \"FIND\", \"description\": \"find and get near to water\"}, {\"action\": \"POUR\", \"description\": \"pour ground coffee into coffee maker\"}, {\"action\": \"POUR\", \"description\": \"pour water into coffee maker\"}]\n}<|eot_id|>"
+    },
+    {
+        "identifier": "229_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"OPEN\"}, {\"name\": \"coffe_maker\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put coffee_filter into coffe_maker\"}, {\"action\": \"PUTIN\", \"description\": \"put ground_coffee into coffee_filter\"}, {\"action\": \"POUR\", \"description\": \"pour water into coffe_maker\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "310_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"OPEN\"}, {\"name\": \"coffe_maker\", \"state\": \"ON\"}, {\"name\": \"ground_coffee\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"POUR\", \"description\": \"pour water into coffee maker\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "721_2",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"coffe_maker\", \"state\": \"OPEN\"}, {\"name\": \"coffe_maker\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"POUR\", \"description\": \"pour water into coffee maker\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "764_2",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"OPEN\"}, {\"name\": \"coffe_maker\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": []}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "419_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n  {\n    \"name\": \"cloth_napkin\",\n    \"state\": \"ON\"\n  },\n  {\n    \"name\": \"plate\",\n    \"state\": \"ON\"\n  },\n  {\n    \"name\": \"knife\",\n    \"state\": \"ON\"\n  },\n  {\n    \"name\": \"fork\",\n    \"state\": \"ON\"\n  },\n  {\n    \"name\": \"cup\",\n    \"state\": \"ON\"\n  }\n],\n\"edge goals\": [\n  {\n    \"from_name\": \"cloth_napkin\",\n    \"relation\": \"ON\",\n    \"to_name\": \"table\"\n  },\n  {\n    \"from_name\": \"plate\",\n    \"relation\": \"ON\",\n    \"to_name\": \"table\"\n  },\n  {\n    \"from_name\": \"knife\",\n    \"relation\": \"ON\",\n    \"to_name\": \"table\"\n  },\n  {\n    \"from_name\": \"fork\",\n    \"relation\": \"ON\",\n    \"to_name\": \"table\"\n  },\n  {\n    \"from_name\": \"cup\",\n    \"relation\": \"ON\",\n    \"to_name\": \"table\"\n  }\n],\n\"action goals\": [\n  {\n    \"action\": \"WALK\",\n    \"description\": \"Walk to dining room\"\n  },\n  {\n    \"action\": \"WALK\",\n    \"description\": \"walk to dining table\"\n  }\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "446_2",
+        "llm_output": "{\n\"node goals\": [], \"edge goals\": [{\"from_name\": \"plate\", \"relation\": \"ON\", \"to_name\": \"table\"}, {\"from_name\": \"plate\", \"relation\": \"ON\", \"to_name\": \"table\"}], \"action goals\": []\n}<|eot_id|>"
+    },
+    {
+        "identifier": "710_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [{\"from_name\": \"plate\", \"relation\": \"ON\", \"to_name\": \"table\"}], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "84_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find a table\"}, {\"action\": \"MOVE\", \"description\": \"pull table\"}, {\"action\": \"WALK\", \"description\": \"walk to living rook\"}, {\"action\": \"PUSH\", \"description\": \"push table\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "93_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"hair\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [],\n\"action goals\": []\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "368_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"POUR\", \"description\": \"pour water\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "729_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards bathroom\"}, {\"action\": \"FIND\", \"description\": \"find and get near to shower\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "975_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"OPEN\", \"description\": \"open the shower\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "231_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "31_1",
+        "llm_output": "```json\n{\"node goals\": [{\"name\": \"faucet\", \"state\": \"OFF\"}, {\"name\": \"bowl\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"sponge\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash the bowl and plate\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "349_1",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "397_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"plate\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"WASH\", \"description\": \"wash sth\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "429_2",
+        "llm_output": "```json\n{\"node goals\": [], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash the dishes with dish soap\"}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "553_2",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'plate', 'state': 'CLEAN'}], \"edge goals\": [], \"action goals\": [{'action': 'WASH', 'description': 'wash sth'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "594_2",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\"name\": \"plate\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [], \n\"action goals\": [\n{\"action\": \"WASH\", \"description\": \"wash sth\"}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "746_1",
+        "llm_output": "```json\n{\"node goals\": [{'name': 'drinking_glass', 'state': 'CLEAN'}], \"edge goals\": [], \"action goals\": [{'action': 'WASH', 'description': 'wash the drinking glass'}]}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "961_1",
+        "llm_output": "```json\n{\n\"node goals\": [\n{\n\"name\": \"plate\",\n\"state\": \"CLEAN\"\n},\n{\n\"name\": \"sink\",\n\"state\": \"CLEAN\"\n}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\n\"action\": \"WALK\",\n\"description\": \"walk towards sth, get near to sth\"\n},\n{\n\"action\": \"SCRUB\",\n\"description\": \"scrub sth\"\n},\n{\n\"action\": \"RINSE\",\n\"description\": \"rinse sth\"\n}\n]\n}\n```<|eot_id|>"
+    },
+    {
+        "identifier": "988_1",
+        "llm_output": "```json\n{\n\"node goals\": [{\"name\": \"bowl\", \"state\": \"CLEAN\"}, {\"name\": \"cupboard\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}]}\n```<|eot_id|>"
+    }
+]

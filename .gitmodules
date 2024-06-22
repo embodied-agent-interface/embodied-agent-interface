@@ -1,4 +1,3 @@
 [submodule "src/BEHAVIOR/iGibson"]
 	path = src/BEHAVIOR/iGibson
 	url = https://github.com/JamesKrW/iGibson.git
-

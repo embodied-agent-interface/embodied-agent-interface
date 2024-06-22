@@ -73,13 +73,16 @@ pip install virtualhome
 ```
 [BEHAVIOR](https://github.com/StanfordVL/iGibson)
 ```bash
-# Install miniconda
-curl -LO http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-bash Miniconda-latest-Linux-x86_64.sh
-rm Miniconda-latest-Linux-x86_64.sh
+# install igibson
+git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git --recursive
+cd src/BEHAVIOR/iGibson
+pip install -e .
 
-# Add conda to your PATH
-echo "export PATH=$HOME/.miniconda/bin:$PATH" >> .bashrc 
+# install bddl
+git clone https://github.com/StanfordVL/bddl.git
+cd bddl
+git checkout tags/v1.0.1
+pip install -e .
 ```
 
 Finally, setup HELM for LLM inference:

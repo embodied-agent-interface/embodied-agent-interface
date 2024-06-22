@@ -62,10 +62,11 @@ To run the code, first set up a unified environment:
 # Create your virtual environment and activate it:
 conda update -y conda
 conda create -n eagent python=3.8 pip
-conda activate helm
+conda activate eagent
 ```
 
 Then, setup the following required simulators:
+
 [VirtualHome](https://github.com/zsyJosh/AgentEval/tree/main) 
 ```bash
 pip install virtualhome
@@ -81,7 +82,8 @@ rm Miniconda-latest-Linux-x86_64.sh
 echo "export PATH=$HOME/.miniconda/bin:$PATH" >> .bashrc 
 ```
 
-Finally, setup HELM for LLM inference
+Finally, setup HELM for LLM inference:
+
 [HELM](https://github.com/bryanzhou008/helm)
 ```bash
 # Install all HELM dependencies:

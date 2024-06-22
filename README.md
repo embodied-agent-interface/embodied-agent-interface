@@ -1,5 +1,3 @@
-# Embodied Agent Interface (eAgent): Benchmarking LLMs for Embodied Decision Making
- 
 <h2 align="center">  Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making </h2>
 
 <p align="center">
@@ -24,7 +22,7 @@
 
 ## Table of Contents
 
-- [Embodied Agent Interface (eAgent): Benchmarking LLMs for Embodied Decision Making](#embodied-agent-interface-eagent-benchmarking-llms-for-embodied-decision-making)
+- [Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making](#embodied-agent-interface-eagent-benchmarking-llms-for-embodied-decision-making)
   - [:dizzy: Dataset Highlights](#dizzy-dataset-highlights)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -59,8 +57,15 @@ To address these limitations, we propose a generalized interface, Embodied Agent
 ## Requirements
 
 
-To run the code, first set up the simulators: 
+To run the code, first set up a unified environment: 
+```bash
+# Create your virtual environment and activate it:
+conda update -y conda
+conda create -n eagent python=3.8 pip
+conda activate helm
+```
 
+Then, setup the following required simulators:
 [VirtualHome](https://github.com/zsyJosh/AgentEval/tree/main) 
 ```bash
 pip install virtualhome
@@ -74,22 +79,13 @@ rm Miniconda-latest-Linux-x86_64.sh
 
 # Add conda to your PATH
 echo "export PATH=$HOME/.miniconda/bin:$PATH" >> .bashrc 
-
-# Update conda and create a virtual environment for iGibson
-conda update -y conda
-conda create -y -n igibson python=3.8
-conda activate igibson
 ```
-[HELM](https://github.com/stanford-crfm/helm)
+
+Finally, setup HELM for LLM inference
+[HELM](https://github.com/bryanzhou008/helm)
 ```bash
-# Create a virtual environment.
-# Only run this the first time.
-conda create -n crfm-helm python=3.8 pip
-
-# Activate the virtual environment.
-conda activate crfm-helm
-
-pip install crfm-helm
+# Install all HELM dependencies:
+./src/LLMs/helm-embodied_eval/install-dev.sh
 ```
 
 ## Data

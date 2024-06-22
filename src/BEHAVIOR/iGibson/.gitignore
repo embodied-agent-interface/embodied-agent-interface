@@ -1,0 +1,89 @@
+*.pyc
+*.pyd
+*.pkl
+*.so
+*.egg-info/
+.DS_Store
+*.pth
+src/
+pw
+*.o
+*.ipynb
+*.ipynb_checkpoints/
+*.out
+npz/
+*.npy
+dev/transfer.c
+*.jpg
+*.png
+*.bmp
+*.bak
+*.zip
+.*.swp
+
+docs/apidoc
+
+# vscode
+.vscode/
+
+# Physics
+physics/*.txt
+physics/*.json
+# Physics assets
+physics/models
+
+*/events*
+0_VRDemoSettings.txt
+
+# VR
+# This is the folder where the pyd files get put after setup.py builds gibson
+Release
+
+cnn_policy*
+*ppo_policy*
+checkpoint
+*.log
+*.log.*
+*.model.*
+examples/train/models/
+
+log_*/
+baselines/
+aws/
+monitor_*
+comparison/
+0.monitor.csvpaper/
+0.monitor.csv
+
+cvpr/
+gibson/cpp-household
+
+*.idea*
+
+# Plotting
+examples/scripts/plot*
+
+# Models
+nav_models
+
+gibson/assets
+*.pdf
+.cache
+notebook
+build
+dist
+
+# Directories used for QC pipeline
+igibson/utils/data_utils/mesh_decimation/collision
+igibson/utils/data_utils/mesh_decimation/visual
+igibson/utils/data_utils/mesh_decimation/final_videos
+
+# libcryptopp
+igibson/render/mesh_renderer/libcryptopp.so.8.6
+igibson/render/mesh_renderer/libcryptopp.dylib
+igibson/render/mesh_renderer/libcryptopp.8.6.dylib
+
+# Coverage
+.coverage
+coverage.xml
+tmp*

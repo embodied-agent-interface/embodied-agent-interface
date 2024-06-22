@@ -12,7 +12,7 @@ from typing import List
 import lark
 from lark import Transformer, v_args
 
-import simple_tl as tl
+import igibson.evaluation.eval_subgoal_plan.tl_formula.simple_tl as tl
 
 grammar = r"""
 
@@ -36,8 +36,8 @@ primitive_stmt: "not" primitive_stmt -> not_stmt
 
 %import common.WS
 %ignore WS
-VARNAME: /[a-zA-Z_]\w*/
-VARNAMEWITHID: /[a-zA-Z_]\w*\.[0-9]+/
+VARNAME: /[a-zA-Z_\-]\w*/
+VARNAMEWITHID: /[a-zA-Z_\-]\w*\.[0-9]+/
 NUM: /\d+/
 """
 

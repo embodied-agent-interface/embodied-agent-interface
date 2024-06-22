@@ -1,15 +1,4 @@
-[submodule "src/BEHAVIOR/iGibson/igibson/render/pybind11"]
-	path = src/BEHAVIOR/iGibson/igibson/render/pybind11
-	url = https://github.com/pybind/pybind11.git
-[submodule "src/BEHAVIOR/iGibson/igibson/render/glfw"]
-	path = src/BEHAVIOR/iGibson/igibson/render/glfw
-	url = https://github.com/glfw/glfw
-[submodule "src/BEHAVIOR/iGibson/igibson/render/glm"]
-	path = src/BEHAVIOR/iGibson/igibson/render/glm
-	url = https://github.com/g-truc/glm
-[submodule "src/BEHAVIOR/iGibson/igibson/render/cryptopp"]
-	path = src/BEHAVIOR/iGibson/igibson/render/cryptopp
-	url = https://github.com/fxia22/cryptopp
-[submodule "src/BEHAVIOR/iGibson/igibson/render/openvr"]
-	path = src/BEHAVIOR/iGibson/igibson/render/openvr
-	url = https://github.com/ValveSoftware/openvr
+[submodule "src/BEHAVIOR/iGibson"]
+	path = src/BEHAVIOR/iGibson
+	url = https://github.com/JamesKrW/iGibson.git
+

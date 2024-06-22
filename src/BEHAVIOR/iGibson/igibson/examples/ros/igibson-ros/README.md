@@ -1,1 +1,0 @@
-Please refer to [our documentation](http://svl.stanford.edu/igibson/docs/ros_integration.html).

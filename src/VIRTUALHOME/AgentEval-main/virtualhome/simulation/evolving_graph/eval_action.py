@@ -160,6 +160,7 @@ def action_output_evaluation(args):
     all_action_goals = 0
     all_goals = 0
 
+    error_info = {}
     for output_dict in helm_output:
         file_id = output_dict["identifier"]
 
@@ -239,6 +240,7 @@ def action_output_evaluation(args):
         except Exception as e:
             print(f"Task {task_name}, file {file_id} prediction has format error")
             all_parsing_wrong += 1
+            actions = None
             format_error = True
         
         if len(actions) == 0:
@@ -288,6 +290,7 @@ def action_output_evaluation(args):
                 exe_flag = True
                 history_actions = []
                 executable = True
+                error_action = None
                 prev_env_states = copy.deepcopy(motion_planner.env_state)
                 history_env_states = [copy.deepcopy(prev_env_states.to_dict())]
                 if len(actions) == 0:
@@ -302,6 +305,7 @@ def action_output_evaluation(args):
                     if not exe_flag:
                         print(f"Current action {action} not executable.")
                         print(f"{my_info=}")
+                        error_action = action
                         formal_info_checker = TemporalOrderChecker(
                             my_info, history_env_states_cp
                         )
@@ -332,6 +336,19 @@ def action_output_evaluation(args):
                 if executable:
                     all_executable_plan += 1
                     print("Executable!", flush=True)
+                    error_info[file_id] = {
+                        "executable": executable,
+                        "actions": actions,
+                        "error_type": None,
+                        "error_action": None,
+                    }
+                else:
+                    error_info[file_id] = {
+                        "executable": executable,
+                        "actions": actions,
+                        "error_type": error_code_to_type[failed_error_code].lower(),
+                        "error_action": error_action
+                    }
 
                 node_match_num, edge_match_num, action_match_num, all_pred_success, _, _, _ = (
                     scene_evaluate_wID(
@@ -354,7 +371,32 @@ def action_output_evaluation(args):
                 if all_pred_success:
                     all_correct_plan += 1
                     print("EVERYTHING SUCCEED!", flush=True)
-        
+
+        else:
+            if format_error:
+                error_info[file_id] = {
+                    "executable": False,
+                    "actions": actions,
+                    "error_type": "parsing error",
+                    "error_action": None,
+                }
+            elif hallucination_error:
+                error_info[file_id] = {
+                    "executable": False,
+                    "actions": actions,
+                    "error_type": "hallucination error",
+                    "error_action": None,
+                }
+            elif parameter_error:
+                error_info[file_id] = {
+                    "executable": False,
+                    "actions": actions,
+                    "error_type": "parameter error",
+                    "error_action": None,
+                }
+            else:
+                raise ValueError("Unknown error type")
+
     # calculate metrics, keep two decimal digits with percentage
     print(f'Program number: {program_num}')
     print(f'Parsing wrong: {all_parsing_wrong}, rate = {100.0 * all_parsing_wrong/program_num:.2f}%')
@@ -389,21 +431,37 @@ def action_output_evaluation(args):
         f"Matched all: {all_matched_all}, rate = {100.0 *all_matched_all/all_goals:.2f}"
     )
 
-    return [
-        100.0 * all_correct_plan / program_num,
-        100.0 * all_executable_plan / program_num,
-        100.0 * all_parsing_wrong / program_num,
-        100.0 * all_hallucination / program_num,
-        100.0 * all_parameter_wrong / program_num,
-        100.0 * all_wrong_order_num / program_num,
-        100.0 * all_missing_step_num / program_num,
-        100.0 * all_affordance_num / program_num,
-        100.0 * all_additional_step_num / program_num,
-        100.0 * all_matched_node / all_node_goals,
-        100.0 * all_matched_edge / all_edge_goals,
-        100.0 * all_matched_action / all_action_goals,
-        100.0 * all_matched_all / all_goals,
-    ]
+    summary = {
+        "goal_evaluation": {
+            "task_success_rate": round(100.0 * all_correct_plan / program_num, 4),
+            "state_goal": round(100.0 * all_matched_node / all_node_goals, 4),
+            "relation_goal": round(100.0 * all_matched_edge / all_edge_goals, 4),
+            "action_goal": round(100.0 * all_matched_action / all_action_goals, 4),
+            "total_goal": round(100.0 * all_matched_all / all_goals, 4),
+        },
+        "trajectory_evaluation": {
+            "execution_success_rate": round(
+                100.0 * all_executable_plan / program_num, 1
+            ),
+            "grammar_error": {
+                "parsing": round(100.0 * all_parsing_wrong / program_num, 4),
+                "hallucination": round(100.0 * all_hallucination / program_num, 4),
+                "predicate_argument_number": round(
+                    100.0 * all_parameter_wrong / program_num, 4
+                ),
+            },
+            "runtime_error": {
+                "wrong_order": round(100.0 * all_wrong_order_num / program_num, 4),
+                "missing_step": round(100.0 * all_missing_step_num / program_num, 4),
+                "affordance_error": round(100.0 * all_affordance_num / program_num, 4),
+                "additional_step": round(
+                    100.0 * all_additional_step_num / program_num, 4
+                ),
+            },
+        },
+    }
+
+    return summary, error_info
 
 
 def end_to_end_action_eval(args):
@@ -859,20 +917,55 @@ def end_to_end_action_eval(args):
     print(
         f"Matched all: {all_matched_all}, rate = {100.0 *all_matched_all/all_goals:.2f}"
     )
+    summary = {
+        "goal_evaluation": {
+            "goal_success_rate": round(
+                100.0 * all_correct_plan / program_num, 
+                1),
+            "state_goal": round(
+                100.0 * all_matched_node / all_node_goals,
+                1),
+            "relation_goal": round(
+                100.0 * all_matched_edge / all_edge_goals,
+                1),
+            "action_goal": round(
+                100.0 * all_matched_action / all_action_goals,
+                1),
+            "total": round(
+                100.0 * all_matched_all / all_goals,
+                1),
+        },
+        "trajectory_evaluation": {
+            "execution_success_rate": round(
+                100.0 * all_executable_plan / program_num,
+                1),
+            "grammar_error": {
+                "parsing": round(
+                    100.0 * all_parsing_wrong / program_num,
+                    1),
+                "hallucination": round(
+                    100.0 * all_hallucination / program_num,
+                    1),
+                "predicate_argument_number": round(
+                    100.0 * all_parameter_wrong / program_num,
+                    1),
+            },
+            "runtime_error": {
+                "wrong_order": round(
+                    100.0 * all_wrong_order_num / program_num,
+                    1),
+                "missing_step": round(
+                    100.0 * all_missing_step_num / program_num,
+                    1),
+                "affordance_error": round(
+                    100.0 * all_affordance_num / program_num,
+                    1),
+                "additional_step": round(
+                    100.0 * all_additional_step_num / program_num,
+                    1),
+            },
+        },
+    }
 
-    return [
-        100.0 * all_correct_plan / program_num,
-        100.0 * all_executable_plan / program_num,
-        100.0 * all_parsing_wrong / program_num,
-        100.0 * all_hallucination / program_num,
-        100.0 * all_parameter_wrong / program_num,
-        100.0 * all_wrong_order_num / program_num,
-        100.0 * all_missing_step_num / program_num,
-        100.0 * all_affordance_num / program_num,
-        100.0 * all_additional_step_num / program_num,
-        100.0 * all_matched_node / all_node_goals,
-        100.0 * all_matched_edge / all_edge_goals,
-        100.0 * all_matched_action / all_action_goals,
-        100.0 * all_matched_all / all_goals,
-    ]   
+    return summary
         

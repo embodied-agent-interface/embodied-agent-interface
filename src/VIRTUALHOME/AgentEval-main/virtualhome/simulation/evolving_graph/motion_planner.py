@@ -237,8 +237,6 @@ class MotionPlanner(object):
         return object_in_scene, goal_str, relevant_name_to_id
 
     def get_symbolic_goal_nl(self, node_goals, edge_goals, action_goals=None) -> str:
-        # print(f'{node_goals=}')
-        # print(f'{edge_goals=}')
         relevant_name_to_id = {}
         object_in_scene = ""
         change_in_init = ""
@@ -275,7 +273,6 @@ class MotionPlanner(object):
             object_in_scene += "\n"
             relevant_name_to_id[str(node_dict["class_name"])] = node_dict["id"]
         object_in_scene += "-----------------\n"
-        # print('Init change\n')
         change_in_init += "Nodes:\n"
         for node_id in existing_nodes:
             node_dict = self.env_graph.get_node(node_id).to_dict()

@@ -23,7 +23,6 @@ def tm_input_preparation(args):
 
     resource_root = osp.join(args.resource_dir, dataset)
 
-
     pddl_root = osp.join(resource_root, "pddl_files")
     pddl_problem_dir = osp.join(resource_root, "problem_pddl")
     os.makedirs(pddl_root, exist_ok=True)
@@ -36,15 +35,8 @@ def tm_input_preparation(args):
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
     prompt_path = osp.join(args.prompt_dir, "operator_prompt_complete.txt")
     helm_prompt_path = osp.join(
-        args.helm_dir, f"helm_prompt/transition_modeling_vh_helm.json"
+        args.helm_dir, "helm_prompt/transition_modeling_vh_helm.json"
     )
-    # task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
-    # prompt_path = (
-    #     "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/prompts/operator_prompt_complete.txt"
-    # )
-    # helm_prompt_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/helm/helm_prompt/operator_evaluation_vh_final_complete.json"
-    # pddl_problem_dir = '/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome'
-
     task_dict = json.load(open(task_dict_dir, "r"))
     success_file_id = json.load(open(success_dict_path, "r"))
     id2action = json.load(open(id2action_path, "r"))
@@ -63,7 +55,7 @@ def tm_input_preparation(args):
             if os.path.exists(success_dict_path):
                 if file_id not in success_file_id:
                     continue
-            
+
             problem_path = os.path.join(task_problem_dir, f"{file_id}.pddl")
             problem_file = open(problem_path, "r").read()
 
@@ -83,19 +75,23 @@ def tm_input_preparation(args):
     # save helm prompt
     json.dump(helm_prompt_list, open(helm_prompt_path, "w"), indent=4)
 
+
 def tm_output_evaluation(args):
     model_name = args.model_name
     dataset = args.dataset
     visualization = False
     save_results = False
 
-    if dataset == 'virtualhome':
+    if dataset == "virtualhome":
         timeout = 100
-    elif dataset == 'behavior':
+    elif dataset == "behavior":
         timeout = 200
-    
+
     resource_root = osp.join(args.resource_dir, dataset)
-    helm_output_path = osp.join(args.helm_dir, f"helm_output/transition_modeling_{dataset}/{model_name}_outputs.json")
+    helm_output_path = osp.join(
+        args.helm_dir,
+        f"helm_output/transition_modeling_{dataset}/{model_name}_outputs.json",
+    )
 
     # load LLM output
     helm_output = json.load(open(helm_output_path, "r"))
@@ -125,31 +121,6 @@ def tm_output_evaluation(args):
     os.makedirs(pddl_root, exist_ok=True)
     os.makedirs(pddl_problem_dir, exist_ok=True)
 
-    precond_predicate_type_res_dict_path = os.path.join(
-        save_root, "precond_predicate_type_res_dict.json"
-    )
-    precond_action_type_dict_path = os.path.join(save_root, "precond_action_type_dict.json")
-    effect_action_type_dict_path = os.path.join(save_root, "effect_action_type_dict.json")
-    full_predicate_type_res_dict_path = os.path.join(
-        save_root, "full_predicate_type_res_dict.json"
-    )
-    full_action_type_dict_path = os.path.join(save_root, "full_action_type_dict.json")
-
-    precond_predicate_res_dict_path = os.path.join(save_root, "precond_predicate_res_dict.json")
-    effect_predicate_res_dict_path = os.path.join(save_root, "effect_predicate_res_dict.json")
-    full_predicate_res_dict_path = os.path.join(save_root, "full_predicate_res_dict.json")
-    
-    success_by_task_type_dict_path = os.path.join(save_root, "success_by_task_type_dict.json")
-
-    task_variate_control_by_type_path = os.path.join(save_root, "task_variate_control_by_type.json")
-    task_variate_control_precond_by_type_path = os.path.join(save_root, "task_variate_control_precond_by_type.json")
-    task_variate_control_effect_by_type_path = os.path.join(save_root, "task_variate_control_effect_by_type.json")
-    action_variate_control_path = os.path.join(save_root, "action_variate_control.json")
-    action_variate_control_precond_path = os.path.join(save_root, "action_variate_control_precond.json")
-    action_variate_control_effect_path = os.path.join(save_root, "action_variate_control_effect.json")
-
-    per_task_res_path = os.path.join(save_root, "per_task_res.json")
-
     # load indexing dict
     id2action = json.load(open(id2action_path, "r"))
     id2category = json.load(open(id2category_path, "r"))
@@ -159,12 +130,11 @@ def tm_output_evaluation(args):
     pred2category = json.load(open(pred2category_path, "r"))
 
     categories_set = {
-        "object states",
-        "object affordance",
-        "object orientation",
-        "object tools",
-        "spatial relations",
-        "non-spatial relations",
+        "object_states",
+        "object_affordance",
+        "object_orientation",
+        "spatial_relations",
+        "non-spatial_relations",
     }
     action_set = set()
     for action_list in id2action.values():
@@ -175,11 +145,10 @@ def tm_output_evaluation(args):
 
     # load evaluation dict
     gold_action_dict = json.load(open(gold_action_path, "r"))
-    
 
     # logical score (precison, recall, f1)
-    # 1. precond logical score based on type 
-    # 2. effect logical score based on type 
+    # 1. precond logical score based on type
+    # 2. effect logical score based on type
     # 3. precond logical score per action (fig)
     # 4. effect logical score per action (fig)
     # potentially record score for each predicate
@@ -194,25 +163,25 @@ def tm_output_evaluation(args):
     precond_predicate_score_dict = {}
     effect_predicate_score_dict = {}
     full_predicate_score_dict = {}
-    
+
     # 5. success rate by planner on task type
     success_by_task_type_dict = {}
 
     # sensitivity analysis
     # 6. action success rate by planner on task type (precond, effect) -- change all operators/precond/effect by predicted in task
-    task_variate_control_by_type = {} # all
-    task_variate_control_precond_by_type = {} # precond
-    task_variate_control_effect_by_type = {} # effect
+    task_variate_control_by_type = {}  # all
+    task_variate_control_precond_by_type = {}  # precond
+    task_variate_control_effect_by_type = {}  # effect
     # 7. action success rate by planner for all action (precond, effect)
-    action_variate_control = {} # all
-    action_variate_control_precond = {} # precond
-    action_variate_control_effect = {} # effect
+    action_variate_control = {}  # all
+    action_variate_control_precond = {}  # precond
+    action_variate_control_effect = {}  # effect
 
     for category_type in categories_set:
         # [success(TP), precond false positive fail(FP), missing fail(FN)]
         precond_predicate_type_res_dict[category_type] = [0, 0, 0]
         effect_predicate_type_res_dict[category_type] = [0, 0, 0]
-        success_by_task_type_dict[category_type] = [0, 0] # [success, total]
+        success_by_task_type_dict[category_type] = [0, 0]  # [success, total]
         task_variate_control_by_type[category_type] = {}
         task_variate_control_precond_by_type[category_type] = {}
         task_variate_control_effect_by_type[category_type] = {}
@@ -222,9 +191,9 @@ def tm_output_evaluation(args):
         # [success(TP), precond false positive fail(FP), missing fail(FN)]
         precond_action_type_dict[action] = [0, 0, 0]
         effect_action_type_dict[action] = [0, 0, 0]
-        action_variate_control[action] = [0, 0] # [success, total]
-        action_variate_control_precond[action] = [0, 0] # [success, total]
-        action_variate_control_effect[action] = [0, 0] # [success, total]
+        action_variate_control[action] = [0, 0]  # [success, total]
+        action_variate_control_precond[action] = [0, 0]  # [success, total]
+        action_variate_control_effect[action] = [0, 0]  # [success, total]
 
     for pred in predicate_set:
         precond_predicate_score_dict[pred] = [0, 0, 0]
@@ -248,14 +217,14 @@ def tm_output_evaluation(args):
 
         task_name = id2task[file_id]
         print(f"task name is {task_name}")
-        
+
         task_name = "_".join(task_name.split())
-        if dataset == 'virtualhome':
+        if dataset == "virtualhome":
             task_problem_dir = os.path.join(pddl_problem_dir, task_name)
-        elif dataset == 'behavior':
+        elif dataset == "behavior":
             task_problem_dir = pddl_problem_dir
         problem_path = os.path.join(task_problem_dir, f"{file_id}.pddl")
-        
+
         category_name_list = id2category[file_id]
         print(f"category names are {category_name_list}")
 
@@ -264,9 +233,7 @@ def tm_output_evaluation(args):
         if predicted_action.startswith("```json"):
             predicted_action = predicted_action[7:]
             predicted_action = predicted_action.strip("```")
-        predicted_action = (
-            predicted_action.strip().replace("\n", "")
-        )
+        predicted_action = predicted_action.strip().replace("\n", "")
         predicted_action = predicted_action.replace("'", '"')
         try:
             predicted_action = json.loads(predicted_action)
@@ -303,7 +270,7 @@ def tm_output_evaluation(args):
             if action_name not in gold_actions_name:
                 hallucination_num += 1
                 continue
-            
+
             gold_action = gold_actions[action_name]
 
             # print predicted action
@@ -346,7 +313,6 @@ def tm_output_evaluation(args):
                 action_dict["action_effects"], gold_action["action_effects"]
             )
 
-
             # record precondition
             for pred in matched_precond:
                 if pred == "()":
@@ -369,7 +335,7 @@ def tm_output_evaluation(args):
                 precond_predicate_type_res_dict[pred2category[pred]][2] += 1
                 precond_action_type_dict[action_name][2] += 1
                 precond_predicate_score_dict[pred][2] += 1
-            
+
             # record effect
             for pred in matched_effect:
                 if pred == "()":
@@ -391,7 +357,6 @@ def tm_output_evaluation(args):
                 effect_predicate_type_res_dict[pred2category[pred]][2] += 1
                 effect_action_type_dict[action_name][2] += 1
                 effect_predicate_score_dict[pred][2] += 1
-
 
         predicted_action_copy = copy.deepcopy(predicted_action)
         # success rate by planner & sensitivity analysis
@@ -416,12 +381,41 @@ def tm_output_evaluation(args):
                 else:
                     task_variate_control_effect_by_type[category_name][action][1] += 1
 
-        for action in gold_actions_name:      
+        for action in gold_actions_name:
             action_variate_control[action][1] += 1
             action_variate_control_precond[action][1] += 1
             action_variate_control_effect[action][1] += 1
-            
+
         # gold action trial
+        # for action_name in predicted_action.keys():
+        #     assert predicted_action_copy == predicted_action
+        #     if action_name not in gold_actions_name:
+        #         print(f"{action_name} not in gold! Hallucination!")
+        #         continue
+        #     single_variate_action = {}
+        #     gold_action_dict_copy = copy.deepcopy(gold_action_dict)
+        #     for gd_action_name in gold_actions_name:
+        #         single_variate_action[gd_action_name] = copy.deepcopy(
+        #             gold_action_dict_copy[gd_action_name]
+        #         )
+        #     domain_file_path = complete_pddl_domain(
+        #         single_variate_action,
+        #         gold_action_dict,
+        #         domain_pd_path,
+        #         file_id,
+        #         predicted_domain_path,
+        #         action_name_key="gold",
+        #     )
+        #     try:
+        #         pddl_plan = planner.plan_from_pddl(
+        #             domain_file_path, problem_path, timeout=timeout
+        #         )
+        #         print(f"Gold test: task {file_id}'s {action_name} succeeded")
+        #     except Exception as e:
+        #         print(f"Gold test: task {file_id}'s {action_name} failed")
+        #         raise e
+
+        # per action trial
         for action_name in predicted_action.keys():
             assert predicted_action_copy == predicted_action
             if action_name not in gold_actions_name:
@@ -433,32 +427,9 @@ def tm_output_evaluation(args):
                 single_variate_action[gd_action_name] = copy.deepcopy(
                     gold_action_dict_copy[gd_action_name]
                 )
-            domain_file_path = complete_pddl_domain(
-                single_variate_action,
-                gold_action_dict,
-                domain_pd_path,
-                file_id,
-                predicted_domain_path,
-                action_name_key='gold',
+            single_variate_action[action_name] = copy.deepcopy(
+                predicted_action_copy[action_name]
             )
-            try:
-                pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path, timeout=timeout)
-                print(f"Gold test: task {file_id}'s {action_name} succeeded")
-            except Exception as e:
-                print(f"Gold test: task {file_id}'s {action_name} failed")
-                raise e
-
-        # per action trial
-        for action_name in predicted_action.keys():
-            assert predicted_action_copy == predicted_action
-            if action_name not in gold_actions_name:
-                print(f"{action_name} not in gold! Hallucination!")
-                continue
-            single_variate_action = {}
-            gold_action_dict_copy = copy.deepcopy(gold_action_dict)
-            for gd_action_name in gold_actions_name:
-                single_variate_action[gd_action_name] = copy.deepcopy(gold_action_dict_copy[gd_action_name])
-            single_variate_action[action_name] = copy.deepcopy(predicted_action_copy[action_name])
             # print(f"{single_variate_action=}")
             domain_file_path = complete_pddl_domain(
                 single_variate_action,
@@ -488,9 +459,9 @@ def tm_output_evaluation(args):
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
             for gd_action_name in gold_actions_name:
-                single_variate_action[gd_action_name] = copy.deepcopy(gold_action_dict_copy[
-                    gd_action_name
-                ])
+                single_variate_action[gd_action_name] = copy.deepcopy(
+                    gold_action_dict_copy[gd_action_name]
+                )
             single_variate_action[action_name]["action_preconditions"] = copy.deepcopy(
                 predicted_action_copy[action_name]["action_preconditions"]
             )
@@ -507,7 +478,9 @@ def tm_output_evaluation(args):
                     domain_file_path, problem_path, timeout=timeout
                 )
                 for category_name in category_name_list:
-                    task_variate_control_precond_by_type[category_name][action_name][0] += 1
+                    task_variate_control_precond_by_type[category_name][action_name][
+                        0
+                    ] += 1
                 action_variate_control_precond[action_name][0] += 1
                 print(f"Precondition test: task {file_id}'s {action_name} succeeded")
             except Exception as e:
@@ -521,9 +494,9 @@ def tm_output_evaluation(args):
             single_variate_action = {}
             gold_action_dict_copy = copy.deepcopy(gold_action_dict)
             for gd_action_name in gold_actions_name:
-                single_variate_action[gd_action_name] = (
-                    copy.deepcopy(gold_action_dict_copy[gd_action_name]
-                ))
+                single_variate_action[gd_action_name] = copy.deepcopy(
+                    gold_action_dict_copy[gd_action_name]
+                )
             single_variate_action[action_name]["action_effects"] = copy.deepcopy(
                 predicted_action_copy[action_name]["action_effects"]
             )
@@ -540,7 +513,9 @@ def tm_output_evaluation(args):
                     domain_file_path, problem_path, timeout=timeout
                 )
                 for category_name in category_name_list:
-                    task_variate_control_effect_by_type[category_name][action_name][0] += 1
+                    task_variate_control_effect_by_type[category_name][action_name][
+                        0
+                    ] += 1
                 action_variate_control_effect[action_name][0] += 1
                 print(f"Effect test: task {file_id}'s {action_name} succeeded")
             except Exception as e:
@@ -564,37 +539,6 @@ def tm_output_evaluation(args):
         except Exception as e:
             print(f"Holistic test: task {file_id} failed")
 
-        # single action ablation
-        # ablation_action = "walk_towards"
-        # if ablation_action not in task_ablation_dict.keys():
-        #     task_ablation_dict[ablation_action] = {}
-        # if task_name not in task_ablation_dict[ablation_action].keys():
-        #     task_ablation_dict[ablation_action][task_name] = [0, 1]
-        # else:
-        #     task_ablation_dict[ablation_action][task_name][1] += 1
-        # print(f"Ablation on {ablation_action}!")
-        # walk_ablation = predicted_action_copy
-        # walk_ablation[ablation_action] = gold_action_dict[ablation_action]
-        # domain_file_path = complete_pddl_domain(
-        #     walk_ablation,
-        #     gold_action_dict,
-        #     domain_pd_path,
-        #     file_id,
-        #     predicted_domain_path,
-        #     action_name_key=ablation_action + "_ablation",
-        # )
-        # try:
-        #     pddl_plan = planner.plan_from_pddl(domain_file_path, problem_path)
-        #     task_ablation_dict[ablation_action][task_name][0] += 1
-        #     print(f"Ablation test: task {file_id} succeeded")
-        # except:
-        #     print(f"Ablation test: task {file_id} failed")
-
-        sys.stdout.flush()
-
-
-    # results post-processing logical scores
-
     # full is the sum of precond and effect
     for category_type in categories_set:
         full_predicate_type_res_dict[category_type] = [
@@ -605,7 +549,7 @@ def tm_output_evaluation(args):
             precond_predicate_type_res_dict[category_type][2]
             + effect_predicate_type_res_dict[category_type][2],
         ]
-    
+
     # full is the sum of precond and effect
     for action in action_set:
         full_action_type_dict[action] = [
@@ -613,13 +557,16 @@ def tm_output_evaluation(args):
             precond_action_type_dict[action][1] + effect_action_type_dict[action][1],
             precond_action_type_dict[action][2] + effect_action_type_dict[action][2],
         ]
-    
+
     # full is the sum of precond and effect
     for pred in predicate_set:
         full_predicate_score_dict[pred] = [
-            precond_predicate_score_dict[pred][0] + effect_predicate_score_dict[pred][0],
-            precond_predicate_score_dict[pred][1] + effect_predicate_score_dict[pred][1],
-            precond_predicate_score_dict[pred][2] + effect_predicate_score_dict[pred][2],
+            precond_predicate_score_dict[pred][0]
+            + effect_predicate_score_dict[pred][0],
+            precond_predicate_score_dict[pred][1]
+            + effect_predicate_score_dict[pred][1],
+            precond_predicate_score_dict[pred][2]
+            + effect_predicate_score_dict[pred][2],
         ]
 
     # precond logical score based on type
@@ -632,7 +579,9 @@ def tm_output_evaluation(args):
         effect_predicate_type_res_dict
     )
 
-    full_predicate_type_res_dict = calculate_precision_recall_f1(full_predicate_type_res_dict)
+    full_predicate_type_res_dict = calculate_precision_recall_f1(
+        full_predicate_type_res_dict
+    )
 
     # precond logical score per action
     precond_action_type_dict = calculate_precision_recall_f1(precond_action_type_dict)
@@ -641,26 +590,27 @@ def tm_output_evaluation(args):
     effect_action_type_dict = calculate_precision_recall_f1(effect_action_type_dict)
 
     full_action_type_dict = calculate_precision_recall_f1(full_action_type_dict)
-    
+
     # precondition predicate score per predicate
-    precond_predicate_score_dict = calculate_precision_recall_f1(precond_predicate_score_dict)
+    precond_predicate_score_dict = calculate_precision_recall_f1(
+        precond_predicate_score_dict
+    )
 
     # effect predicate score per predicate
-    effect_predicate_score_dict = calculate_precision_recall_f1(effect_predicate_score_dict)
+    effect_predicate_score_dict = calculate_precision_recall_f1(
+        effect_predicate_score_dict
+    )
 
     # full predicate score per predicate
     full_predicate_score_dict = calculate_precision_recall_f1(full_predicate_score_dict)
 
-    print(f'Format wrong num is {format_wrong_num}!!!')
-
-    
-
-    # print out precision recall f1 
+    print(f"Format wrong num is {format_wrong_num}!!!")
+    # print out precision recall f1
     print("Precondition predicate type res dict:")
     print_precision_recall_f1(precond_predicate_type_res_dict)
     print("Effect predicate type res dict:")
     print_precision_recall_f1(effect_predicate_type_res_dict)
-    
+
     print("Precondition action type dict:")
     print_precision_recall_f1(precond_action_type_dict)
     print("Effect action type dict:")
@@ -674,9 +624,10 @@ def tm_output_evaluation(args):
     print("Full predicate score dict:")
     print_precision_recall_f1(full_predicate_score_dict)
 
-
     # post-process sensitivity analysis
-    task_variate_control_by_type = calculate_success_rate_by_category(task_variate_control_by_type)
+    task_variate_control_by_type = calculate_success_rate_by_category(
+        task_variate_control_by_type
+    )
     task_variate_control_precond_by_type = calculate_success_rate_by_category(
         task_variate_control_precond_by_type
     )
@@ -697,11 +648,10 @@ def tm_output_evaluation(args):
     print("Action variate control effect:")
     print(action_variate_control_effect)
 
-
     # post-process success rate by planner on task type
-    print('\n')
-    print(f'{total_num=}')
-    print(f'{format_wrong_num=}, rate={100.*format_wrong_num/total_num:.2f}')
+    print("\n")
+    print(f"{total_num=}")
+    print(f"{format_wrong_num=}, rate={100.*format_wrong_num/total_num:.2f}")
     print(
         f"{hallucination_num=}, rate={100.*hallucination_num/total_predict_action_num:.2f}"
     )
@@ -713,364 +663,68 @@ def tm_output_evaluation(args):
     print("\n")
     print("Full predicate type res dict:")
     print_precision_recall_f1(full_predicate_type_res_dict)
-    # output = [full_predicate_type_res_dict, success_by_task_type_dict, 100.*format_wrong_num/total_num, 100.*hallucination_num/total_predict_action_num]
-    output = [task_variate_control_by_type, task_variate_control_precond_by_type, task_variate_control_effect_by_type, action_variate_control, action_variate_control_precond, action_variate_control_effect]
 
-    # save results
-    if save_results:
-        json.dump(precond_predicate_type_res_dict, open(precond_predicate_type_res_dict_path, "w"), indent=4)
-        json.dump(effect_predicate_type_res_dict, open(effect_predicate_type_res_dict_path, "w"), indent=4)
-        json.dump(full_predicate_type_res_dict, open(full_predicate_type_res_dict_path, "w"), indent=4)
-        json.dump(precond_action_type_dict, open(precond_action_type_dict_path, "w"), indent=4)
-        json.dump(effect_action_type_dict, open(effect_action_type_dict_path, "w"), indent=4)
-        json.dump(full_action_type_dict, open(full_action_type_dict_path, "w"), indent=4)
-        json.dump(precond_predicate_score_dict, open(precond_predicate_res_dict_path, "w"), indent=4)
-        json.dump(effect_predicate_score_dict, open(effect_predicate_res_dict_path, "w"), indent=4)
-        json.dump(full_predicate_score_dict, open(full_predicate_res_dict_path, "w"), indent=4)
-        json.dump(
-            success_by_task_type_dict, open(success_by_task_type_dict_path, "w"), indent=4
-        )
-        json.dump(task_variate_control_by_type, open(task_variate_control_by_type_path, "w"), indent=4)
-        json.dump(task_variate_control_precond_by_type, open(task_variate_control_precond_by_type_path, "w"), indent=4)
-        json.dump(task_variate_control_effect_by_type, open(task_variate_control_effect_by_type_path, "w"), indent=4)
-        json.dump(action_variate_control, open(action_variate_control_path, "w"), indent=4)
-        json.dump(action_variate_control_precond, open(action_variate_control_precond_path, "w"), indent=4)
-        json.dump(action_variate_control_effect, open(action_variate_control_effect_path, "w"), indent=4)
-    
-    return output
-
-
-def task_categorization(args):
-    k = args.k
-    dataset = args.dataset
-    resource_root = osp.join(args.resource_dir, dataset)
-    gold_action_path = osp.join(resource_root, "gold_action.json")
-    id2action_path = osp.join(resource_root, "id2action.json")
-    pred_category_path = osp.join(resource_root, "predicates_category.json")
-
-    gold_action_dict = json.load(open(gold_action_path, "r"))
-    id2action = json.load(open(id2action_path, "r"))
-    predicate_categories = json.load(open(pred_category_path, "r"))
-
-    id_to_task_path = os.path.join(resource_root, "id2task.json")
-    id2predicate_path = os.path.join(resource_root, "id2predicate.json")
-    gold_action_w_pred_path = os.path.join(resource_root, "gold_action_w_pred.json")
-    id2category_path = os.path.join(resource_root, f"id2category_{k}.json")
-    task_category_cnt_path = os.path.join(resource_root, f"task_category_cnt_{k}.json")
-    category2id_path = os.path.join(resource_root, f"category2id_{k}.json")
-
-    if dataset == 'virtualhome':
-        if os.path.exists(id_to_task_path):
-            id_to_task = json.load(open(id_to_task_path, "r"))
-        else:
-            id_to_task = {}
-            task_dict_dir = osp.join(resource_root, "task_state_updated.json")
-            task_dict = json.load(open(task_dict_dir, "r"))
-            scene_1_dict = task_dict["scene_1"]
-            for task_name, task_details in scene_1_dict.items():
-                t_ids = task_details["task_file_list_with_ans"]
-                goal_id_to_task = group_by_index(t_ids)
-                for id_list in goal_id_to_task.values():
-                    for idx in id_list:
-                        id_to_task[idx] = task_name
-            json.dump(id_to_task, open(id_to_task_path, "w"), indent=4)
-    elif dataset == 'behavior':
-        if os.path.exists(id_to_task_path):
-            id_to_task = json.load(open(id_to_task_path, "r"))
-        else:
-            id_to_task = {}
-            for id in id2action.keys():
-                id_to_task[id] = id
-            json.dump(id_to_task, open(id_to_task_path, "w"), indent=4)
-            
-
-    if os.path.exists(gold_action_w_pred_path):
-        gold_action_dict = json.load(open(gold_action_w_pred_path, "r"))
-    else:
-        for action_name, action_dict in gold_action_dict.items():
-            pred_set = set()
-            action_preconditions = action_dict["action_preconditions"]
-            action_effects = action_dict["action_effects"]
-            score, matched, unmatched_pred, unmatched_gold = calculate_logic_score(
-                action_preconditions, action_preconditions
-            )
-            print(f"{score=}, {matched=}, {unmatched_pred=}, {unmatched_gold=}")
-            assert (
-                score == 1.0 and len(unmatched_pred) == 0 and len(unmatched_gold) == 0
-            )
-            pred_set.update(matched)
-            score, matched, unmatched_pred, unmatched_gold = calculate_logic_score(
-                action_effects, action_effects
-            )
-            print(f"{score=}, {matched=}, {unmatched_pred=}, {unmatched_gold=}")
-            assert (
-                score == 1.0 and len(unmatched_pred) == 0 and len(unmatched_gold) == 0
-            )
-            pred_set.update(matched)
-            if "()" in pred_set:
-                pred_set.remove("()")
-            gold_action_dict[action_name]["pred_set"] = list(pred_set)
-
-        json.dump(gold_action_dict, open(gold_action_w_pred_path, "w"), indent=4)
-
-    if os.path.exists(id2predicate_path):
-        id2predicates = json.load(open(id2predicate_path, "r"))
-    else:
-        id2predicates = {}
-        for id, action_list in id2action.items():
-            pred_list = []
-            for action_name in action_list:
-                if action_name not in gold_action_dict.keys():
-                    print(f"{action_name} not in gold!!! Double check!!!")
-                    continue
-                pred_set = gold_action_dict[action_name]["pred_set"]
-                pred_list.extend(pred_set)
-            id2predicates[id] = pred_list
-        json.dump(id2predicates, open(id2predicate_path, "w"), indent=4)
-
-    # calculate IDF
-    pred_frequency = defaultdict(int)
-    for id, pred_list in id2predicates.items():
-        seen_predicates = set()
-        for predicate in pred_list:
-            if predicate == "()":
-                continue
-            if predicate not in seen_predicates:
-                pred_frequency[predicate] += 1
-                seen_predicates.add(predicate)
-
-    total_docs = len(id2predicates)
-    idf_scores = {
-        predicate: math.log(total_docs / df) for predicate, df in pred_frequency.items()
+    summary = {
+        "object_states": {
+            "precision": round(
+                100 * full_predicate_type_res_dict["object_states"][3], 4
+            ),
+            "recall": round(100 * full_predicate_type_res_dict["object_states"][4], 4),
+            "f1": round(100 * full_predicate_type_res_dict["object_states"][5], 4),
+            "planner_success_rate": round(
+                100 * success_by_task_type_dict["object_states"][2], 4
+            ),
+        },
+        "object_affordance": {
+            "precision": round(
+                100 * full_predicate_type_res_dict["object_affordance"][3], 4
+            ),
+            "recall": round(
+                100 * full_predicate_type_res_dict["object_affordance"][4], 4
+            ),
+            "f1": round(100 * full_predicate_type_res_dict["object_affordance"][5], 4),
+            "planner_success_rate": round(
+                100 * success_by_task_type_dict["object_affordance"][2], 4
+            ),
+        },
+        "object_orientation": {
+            "precision": round(
+                100 * full_predicate_type_res_dict["object_orientation"][3], 4
+            ),
+            "recall": round(
+                100 * full_predicate_type_res_dict["object_orientation"][4], 4
+            ),
+            "f1": round(100 * full_predicate_type_res_dict["object_orientation"][5], 4),
+            "planner_success_rate": round(
+                100 * success_by_task_type_dict["object_orientation"][2], 4
+            ),
+        },
+        "spatial_relations": {
+            "precision": round(
+                100 * full_predicate_type_res_dict["spatial_relations"][3], 4
+            ),
+            "recall": round(
+                100 * full_predicate_type_res_dict["spatial_relations"][4], 4
+            ),
+            "f1": round(100 * full_predicate_type_res_dict["spatial_relations"][5], 4),
+            "planner_success_rate": round(
+                100 * success_by_task_type_dict["spatial_relations"][2], 4
+            ),
+        },
+        "non-spatial_relations": {
+            "precision": round(
+                100 * full_predicate_type_res_dict["non-spatial_relations"][3], 4
+            ),
+            "recall": round(
+                100 * full_predicate_type_res_dict["non-spatial_relations"][4], 4
+            ),
+            "f1": round(
+                100 * full_predicate_type_res_dict["non-spatial_relations"][5], 4
+            ),
+            "planner_success_rate": round(
+                100 * success_by_task_type_dict["non-spatial_relations"][2], 4
+            ),
+        },
     }
 
-    print(f"{idf_scores=}")
-    print("\n")
-
-    # Score programs based on categories
-    program_scores = {}
-    for id, pred_list in id2predicates.items():
-        category_scores = defaultdict(float)
-        for predicate in pred_list:
-            if predicate == "()":
-                continue
-            category = predicate_categories[predicate]
-            category_scores[category] += idf_scores[predicate]
-        program_scores[id] = category_scores
-
-    # print(f"{program_scores=}")
-    # print("\n")
-
-    # Categorize each program
-    program_categories = {}
-
-    for id, category_scores in program_scores.items():
-        # take the top k categories
-        topk_categories = sorted(
-            category_scores, key=category_scores.get, reverse=True
-        )[:k]
-        program_categories[id] = topk_categories
-
-    program_category_cnt = {}
-    for category_lst in program_categories.values():
-        for category in category_lst:
-            if category not in program_category_cnt:
-                program_category_cnt[category] = 0
-            program_category_cnt[category] += 1
-
-    category2program = defaultdict(list)
-    for id, category_lst in program_categories.items():
-        for category in category_lst:
-            category2program[category].append(id)
-
-    print(f"{program_categories=}")
-    print("\n")
-    print(f"{program_category_cnt=}")
-    print("\n")
-
-    json.dump(program_categories, open(id2category_path, "w"), indent=4)
-    json.dump(program_category_cnt, open(task_category_cnt_path, "w"), indent=4)
-    json.dump(category2program, open(category2id_path, "w"), indent=4)
-
-
-def pddl_problem_construction(args):
-    properties_data = utils.load_properties_data()
-    object_placing = utils.load_object_placing()
-    name_equivalence = utils.load_name_equivalence()
-    data_path = "/viscam/u/shiyuz/virtualhome/virtualhome/dataset/programs_processed_precond_nograb_morepreconds/init_and_final_graphs/TrimmedTestScene1_graph/results_intentions_march-13-18"
-    domain_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome.pddl"
-    task_dict_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/task_state_updated.json"
-    pddl_problem_dir = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/pddl_files/virtualhome"
-
-    task_dict = json.load(open(task_dict_dir, "r"))
-    scene_str = "scene_1"
-    task_dict = task_dict[scene_str]
-    # predicate_vocabulary = json.loads(open(vocabulary_path, 'r').open())
-    for task_name, task_detail in task_dict.items():
-        # if task_name in ['Wash dishes by hand', 'Write an email', 'Wash hands']:
-        #     continue
-        if task_name != "Pet cat":
-            continue
-        task_name = "_".join(task_name.split())
-        task_problem_dir = os.path.join(pddl_problem_dir, task_name)
-        if not os.path.exists(task_problem_dir):
-            os.makedirs(task_problem_dir)
-        print(f"task name is {task_name}")
-        task_list = task_detail["task_file_list"]
-        task_list_ans_list = task_detail["task_file_list_with_ans"]
-        goal_candidates = task_detail["goal_candidates"]
-        for file_id in task_list:
-            if file_id != "115_2":
-                continue
-            # we first get candidate num
-            ans_id = get_candidate_id(file_id, task_list_ans_list)
-            if ans_id == -1:
-                continue
-            goal = goal_candidates[ans_id]
-
-            problem_dir = os.path.join(task_problem_dir, f"{file_id}.pddl")
-            state_file_path = os.path.join(data_path, f"file{file_id}.json")
-            state_dict = json.load(open(state_file_path, "r"))
-            init_state_dict = state_dict["init_graph"]
-            final_state_dict = state_dict["final_graph"]
-
-            init_scene_graph = EnvironmentGraph(init_state_dict)
-            planner = MotionPlanner(
-                init_scene_graph,
-                final_state_dict,
-                name_equivalence,
-                properties_data,
-                object_placing,
-            )
-
-            relevant_nodes, related_ids = get_relevant_nodes(planner)
-
-            initial_states, goal_states, actions_states, name2id = (
-                get_initial_states_and_final_goals_wo_id(planner, goal, relevant_nodes)
-            )
-
-            pddl_file = create_pddl_problem(
-                domain_path, initial_states, goal_states, relevant_nodes, task_name
-            )
-
-            # save pddl_file
-            with open(problem_dir, "w") as f:
-                f.write(pddl_file)
-            # print(f'{object_in_scene=}')
-            print(f"{relevant_nodes=}")
-            print(f"{related_ids=}")
-            print(f"{initial_states=}")
-            print(f"{goal_states=}")
-            print(f"{actions_states=}")
-            print(f"{name2id=}")
-            print(f"{pddl_file=}")
-    return
-
-
-def evaluate_pddl_planner():
-    dataset = "behavior"
-    resource_root = (
-        f"/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/{dataset}"
-    )
-
-    pddl_root = osp.join(resource_root, "pddl_files")
-    pddl_problem_dir = osp.join(resource_root, "problem_pddl")
-    os.makedirs(pddl_root, exist_ok=True)
-    os.makedirs(pddl_problem_dir, exist_ok=True)
-
-    domain_path = osp.join(resource_root, f"{dataset}.pddl")
-
-    success_dict_path = osp.join(resource_root, "success_task.json")
-    fail_dict_path = osp.join(resource_root, "failed_task.json")
-    id2action_path = osp.join(resource_root, "id2action.json")
-    gold_pddl_plan_path = osp.join(resource_root, "gold_pddl_plan.json")
-
-    planner = FD()
-    failed_list = []
-    successed_list = []
-    id2action = {}
-    gold_pddl_plan_dict = {}
-    save_flag = True
-
-    # search through all files in pddl_problem_dir
-    for file_name in os.listdir(pddl_problem_dir):
-        # remove .pddl in each filename
-        if not file_name.endswith(".pddl"):
-            continue
-        
-        problem_path = osp.join(pddl_problem_dir, file_name)
-        identifier = file_name.split(".")[0]
-        print(f"Task identifier is {identifier}")
-        try:
-            # print(f'{cmd_str=}')
-            pddl_plan = planner.plan_from_pddl(domain_path, problem_path, timeout=200)
-            print(f"{pddl_plan=}")
-            gold_action_list = []
-            for act in pddl_plan:
-                action = act.split()[0]
-                gold_action_list.append(action)
-            id2action[identifier] = list(set(gold_action_list))
-            gold_pddl_plan_dict[identifier] = pddl_plan
-            successed_list.append(identifier)
-            print("Test passed")
-        except Exception as e:
-            failed_list.append(identifier)
-            print(f"An error occurred: {e}")
-
-    if save_flag:
-        with open(fail_dict_path, "w") as f:
-            json.dump(failed_list, f)
-        with open(id2action_path, "w") as f:
-            json.dump(id2action, f)
-        with open(success_dict_path, "w") as f:
-            json.dump(successed_list, f)
-        with open(gold_pddl_plan_path, "w") as f:
-            json.dump(gold_pddl_plan_dict, f)
-    print(f"{failed_list=}")
-    return
-
-
-def planner_test():
-    domain_file_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/behavior/pddl_files/predicted_gpt-4o-2024-05-13/assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37_gold.pddl"
-    problem_path = "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/resources/behavior/problem_pddl/assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37.pddl"
-    planner = FD()
-    plan = planner.plan_from_pddl(domain_file_path, problem_path, timeout=200)
-    print(f"{plan=}")
-
-
-def overall_calculation():
-    results_path = (
-        "/viscam/u/shiyuz/svl_project/AgentEval/virtualhome/output/BH_transition.json"
-    )
-    results = json.load(open(results_path, "r"))
-
-    for model_name, model_results in results.items():
-        # print(f"Model name is {model_name}")
-        total_TP = 0 
-        total_FP = 0
-        total_FN = 0
-        total_success = 0
-        total_number = 0
-        f1_dict = model_results[0]
-        success_dict = model_results[1]
-        for task_type, f1_list in f1_dict.items():
-            if task_type == "object tools":
-                continue
-            TP = f1_list[0]
-            FP = f1_list[1]
-            FN = f1_list[2]
-            success_rate = success_dict[task_type]
-            total_TP += TP
-            total_FP += FP
-            total_FN += FN
-            total_success += success_rate[0]
-            total_number += success_rate[1]
-            # print(f"{task_type}: {f1_list}, {success_rate}")
-        precision = total_TP / (total_TP + total_FP)
-        recall = total_TP / (total_TP + total_FN)
-        f1 = 2 * precision * recall / (precision + recall)
-        success_rate = total_success / total_number
-        print(f"{model_name} overall:  {f1=}, {success_rate=}")
-    
-
-    
+    return summary, None

@@ -3,6 +3,7 @@ import copy
 import os
 import os.path as osp
 import copy
+import sys
 
 import simulation.evolving_graph.utils as utils
 from simulation.evolving_graph.eval_utils import *
@@ -11,8 +12,7 @@ from simulation.evolving_graph.eval_utils import *
 system_prompt = "You are a helpful assistant in interpreting natural language goals into symbolic goals using given format. For this task, please only output a parsable json string inside brackets. Please start your answer with { and end your answer with }. Don't include any notes or explanations with the output json string."
 
 def goal_input_preparation(args):
-    dataset = args.dataset
-    resource_root = osp.join(args.resource_dir, dataset)
+    resource_root = osp.join(args.resource_dir, 'virtualhome')
     data_dir = osp.join(
         args.dataset_dir, "programs_processed_precond_nograb_morepreconds"
     )
@@ -80,12 +80,11 @@ def goal_input_preparation(args):
 
 
 def goal_output_evaluation(args):
-    dataset = args.dataset
     model_name = args.model_name
     helm_output_path = osp.join(
         args.helm_dir, f"helm_output/goal_interpretation/{model_name}_outputs.json"
     )
-    resource_root = osp.join(args.resource_dir, dataset)
+    resource_root = osp.join(args.resource_dir, 'virtualhome')
     data_dir = osp.join(args.dataset_dir, "programs_processed_precond_nograb_morepreconds")
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
     id_to_task_path = os.path.join(resource_root, "id2task.json")
@@ -338,8 +337,22 @@ def goal_output_evaluation(args):
     print(f"Hallucination num is {hallucination_goals}, Total goals num is {total_node_goals + total_edge_goals + total_action_goals}")
     print(f"Hallucination rate is {hallucination_rate}")
 
-    return [node_precision, node_recall, node_f1, edge_precision, edge_recall, edge_f1, action_precision, action_recall, action_f1, all_precision, all_recall, all_f1, format_wrong_rate, hallucination_rate]
-    
+    summary = {
+        "node_precision": round(100 * node_precision, 4),
+        "node_recall": round(100 * node_recall, 4),
+        "node_f1": round(100 * node_f1, 4),
+        "edge_precision": round(100 * edge_precision, 4),
+        "edge_recall": round(100 * edge_recall, 4),
+        "edge_f1": round(100 * edge_f1, 4),
+        "action_precision": round(100 * action_precision, 4),
+        "action_recall": round(100 * action_recall, 4),
+        "action_f1": round(100 * action_f1, 4),
+        "all_precision": round(100 * all_precision, 4),
+        "all_recall": round(100 * all_recall, 4),
+        "all_f1": round(100 * all_f1, 4),
+    }
+
+    return summary, None
 
 
 

@@ -1,0 +1,1186 @@
+[
+    {
+        "identifier": "27_2",
+        "llm_output": "{\n\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (next_to ?char ?obj2)\\n    (holds_rh ?char ?obj1)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "417_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1)\\n               )\\n  :effect (and\\n                (obj_ontop ?obj1 ?obj2)\\n                (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (open ?obj)\\n               )\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (closed ?obj)\\n               )\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "850_1",
+        "llm_output": "```json\n{\"output\": \"(:action switch_off\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (on ?obj)\\n  )\\n  :effect (off ?obj)\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n    (not (holds_rh ?char ?obj))\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "954_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                 (next_to ?char ?obj2)\\n                 (grabbable ?obj1)\\n                 (holds_rh ?char ?obj1))\\n  :effect (and\\n              (obj_ontop ?obj1 ?obj2)\\n              (not (holds_rh ?char ?obj1))))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj))\\n  :effect (on ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (open ?obj))\\n  :effect (closed ?obj))\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (closed ?obj))\\n  :effect (open ?obj))\"}"
+    },
+    {
+        "identifier": "11_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "120_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "125_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n    (not (off ?obj))\\n  )\\n)\"\n}"
+    },
+    {
+        "identifier": "150_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (and\\n        (on ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "160_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "180_2",
+        "llm_output": "```json\n{\"output\": \"(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj))\\n  :effect (on ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (and\\n              (not (sitting ?char))\\n)\\n)\\n\"}"
+    },
+    {
+        "identifier": "205_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n           (next_to ?char ?obj)\\n           )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                   (next_to ?char ?obj)\\n                   (has_switch ?obj)\\n                   )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "222_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "232_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "310_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n           )\\n  :effect (and (next_to ?char ?obj))\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n           )\\n  :effect (and (on ?obj))\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "311_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "331_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "345_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "392_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "394_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (and\\n        (on ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "432_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "443_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "445_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_switch ?obj)\\n               )\\n  :effect (and\\n                (on ?obj)\\n               )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "511_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "585_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (inside ?char ?obj)\\n             )\\n  :effect (and\\n               (next_to ?char ?obj)\\n           )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                    (next_to ?char ?obj)\\n                    (has_switch ?obj)\\n                 )\\n  :effect (and\\n               (on ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "604_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (and\\n        (on ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "616_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (and\\n        (on ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "705_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj))\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj)))\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_in ?obj)\\n    (off ?obj))\\n  :effect (and\\n    (on ?obj)\\n    (not (off ?obj))))\\n\"\n}"
+    },
+    {
+        "identifier": "708_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "715_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "737_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "780_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "812_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (has_switch ?obj) (next_to ?char ?obj))\\n  :effect (on ?obj))\\n\"}"
+    },
+    {
+        "identifier": "835_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj))\\n  :effect (plugged_in ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj))\\n  :effect (on ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "85_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (and\\n        (on ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "874_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (and\\n                (next_to ?char ?obj)\\n           )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (on ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "491_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (or\\n               (and\\n                (holds_rh ?char ?obj)\\n               )\\n               (and\\n                (holds_lh ?char ?obj)\\n               )\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "696_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (or\\n               (and\\n                (holds_rh ?char ?obj))\\n               (and\\n                (holds_lh ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "1004_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (closed ?obj)\\n                (next_to ?char ?obj))\\n  :effect (and\\n               (open ?obj)\\n               (not (closed ?obj)))\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "152_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_inside\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1)\\n                (open ?obj2)\\n               )\\n  :effect (and\\n                (obj_inside ?obj1 ?obj2)\\n                (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n                (closed ?obj)\\n               )\\n  :effect (open ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (grabbable ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "298_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_inside\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (next_to ?char ?obj2)\\n    (can_open ?obj2)\\n    (open ?obj2)\\n    (holds_rh ?char ?obj1)\\n  )\\n  :effect (and\\n    (obj_inside ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (next_to ?char ?obj)\\n    (can_open ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (next_to ?char ?obj)\\n    (grabbable ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "609_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (closed ?obj)\\n    (next_to ?char ?obj))\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj))\\n\"}"
+    },
+    {
+        "identifier": "703_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_inside\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1)\\n                (can_open ?obj2)\\n                (open ?obj2))\\n  :effect (and\\n           (obj_inside ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1)))\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n                (closed ?obj))\\n  :effect (open ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (grabbable ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "772_1",
+        "llm_output": "{\n\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "837_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_inside\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (can_open ?obj2)\\n    (open ?obj2)\\n    (next_to ?char ?obj2) \\n  )\\n  :effect (and\\n    (obj_inside ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "158_1",
+        "llm_output": "{\n\"output\": \"(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (and\\n                (not (inside ?char ?room)))\\n  :effect (and\\n           (inside ?char ?room)))\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (inside ?char ?room)\\n                (inside ?obj ?room))\\n  :effect (facing ?char ?obj))\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (not (sitting ?char)))\"\n}"
+    },
+    {
+        "identifier": "323_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n           (next_to ?char ?obj)\\n           )\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (sittable ?obj)\\n                (next_to ?char ?obj)\\n           )\\n  :effect (ontop ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "430_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t(sittable ?obj)\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n  :effect (and\\n\\t\\t(ontop ?char ?obj)\\n\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "478_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n           (next_to ?char ?obj)\\n           )\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                   (sittable ?obj)\\n                   (next_to ?char ?obj)\\n                   )\\n  :effect (ontop ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "496_1",
+        "llm_output": "{\n\"output\": \"(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (inside ?char ?room)\\n  :effect ()\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (facing ?char ?obj)\\n  :effect ()\\n)\"\n}"
+    },
+    {
+        "identifier": "624_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (sittable ?obj)\\n                (next_to ?char ?obj)\\n  )\\n  :effect (ontop ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "188_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (inside ?char ?room)\\n  :effect (and (next_to ?char ?obj) (not (inside ?char ?room)))\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (grabbable ?obj) (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (has_switch ?obj) (next_to ?char ?obj))\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "803_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and (next_to ?char ?obj))\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (grabbable ?obj) (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (next_to ?char ?obj))\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (has_switch ?obj) (next_to ?char ?obj))\\n  :effect (on ?obj)\\n)\"\n}"
+    },
+    {
+        "identifier": "960_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (lookable ?obj)\\n    (not (facing ?char ?obj))\\n  )\\n  :effect (and\\n    (facing ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "101_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "1068_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n                (plugged_out ?obj))\\n  :effect (plugged_in ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lookable ?obj))\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n                (off ?obj))\\n  :effect (on ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "153_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lookable ?obj)\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "196_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "198_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "201_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "232_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "234_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (exists (?p - object) (and (plugged_out ?obj) (obj_next_to ?p ?obj) (has_plug ?obj)))\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n    (not (off ?obj))\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "343_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (plugged_out ?obj))\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (off ?obj))\\n  :effect (on ?obj)\\n)\"\n}"
+    },
+    {
+        "identifier": "373_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj))\\n  :effect (plugged_in ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (lookable ?obj))\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj))\\n  :effect (on ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "406_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "409_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "419_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n            )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n            )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "433_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "437_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "440_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (plugged_out ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (off ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "453_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "46_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "475_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "503_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (exists (?ps - object) (and (plugged_out ?obj) (obj_next_to ?obj ?ps))))\\n  :effect (and\\n             (plugged_in ?obj)\\n             (not (plugged_out ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (plugged_in ?obj)\\n                 )\\n  :effect (and\\n             (on ?obj)\\n             (not (off ?obj))\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "670_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (plugged_out ?obj)\\n                 (exists (?ps - object) (and (obj_next_to ?obj ?ps) (plugged_in ?ps))))\\n  :effect (and\\n                (plugged_in ?obj)\\n                (not (plugged_out ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                    (has_switch ?obj)\\n                    (next_to ?char ?obj)\\n                    (off ?obj)\\n                )\\n  :effect (and\\n                (on ?obj)\\n                (not (off ?obj))\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "719_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "757_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "787_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "795_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "819_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "874_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (plugged_out ?obj)\\n                (next_to ?char ?obj))\\n  :effect (plugged_in ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n                (off ?obj))\\n  :effect (on ?obj))\\n\"}"
+    },
+    {
+        "identifier": "910_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "91_2",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (exists (?ps - object) (and (plugged_out ?obj) (obj_next_to ?obj ?ps))))\\n  :effect (and\\n             (plugged_in ?obj)\\n             (not (plugged_out ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (plugged_in ?obj)\\n                 )\\n  :effect (and\\n             (on ?obj)\\n             (not (off ?obj))\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "93_2",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "962_1",
+        "llm_output": "```json\n{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "190_1",
+        "llm_output": "```json\n{\"output\": \"(:action switch_off\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (on ?obj)\\n  )\\n  :effect (and\\n    (off ?obj)\\n  )\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (not (holds_rh ?char ?obj1))\\n    (obj_ontop ?obj1 ?obj2)\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n    (not (holds_rh ?char ?obj))\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (plugged_out ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "201_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1))\\n  :effect (and\\n           (obj_ontop ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1)))\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_switch ?obj))\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (grabbable ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj))\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj))\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_plug ?obj))\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "223_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1)\\n               )\\n  :effect (and\\n                (obj_ontop ?obj1 ?obj2)\\n                (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n                (off ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (closed ?obj)\\n               )\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (open ?obj)\\n               )\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n                (plugged_out ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "327_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (inside ?char ?obj)\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "383_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (next_to ?char ?obj2)\\n    (holds_rh ?char ?obj1))\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj))\\n  :effect (on ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n    (not (holds_rh ?char ?obj)))\\n  :effect (holds_rh ?char ?obj))\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj))\\n  :effect (open ?obj))\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj))\\n  :effect (closed ?obj))\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj))\\n  :effect (plugged_in ?obj))\\n\"}"
+    },
+    {
+        "identifier": "417_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (not (holds_rh ?char ?obj1))\\n    (obj_ontop ?obj1 ?obj2)\\n  )\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "487_1",
+        "llm_output": "{\n\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (inside_room ?char ?obj)\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n    (not (open ?obj))\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (plugged_out ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj))\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "650_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (grabbable ?obj1)\\n                (holds_rh ?char ?obj1)\\n                (next_to ?char ?obj2)\\n               )\\n  :effect (and\\n                (obj_ontop ?obj1 ?obj2)\\n                (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "783_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1)\\n               )\\n  :effect (and\\n                (obj_ontop ?obj1 ?obj2)\\n                (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_switch ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (grabbable ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n               )\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n               )\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_plug ?obj)\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "815_2",
+        "llm_output": "```json\n{\"output\": \"(:action switch_off\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (on ?obj)\\n  )\\n  :effect (and\\n    (off ?obj)\\n    (not (on ?obj))\\n  )\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n    (not (off ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n    (not (open ?obj))\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n    (plugged_out ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj))\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "826_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (and\\n    (on ?obj)\\n    (not (off ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n    (not (holds_rh ?char ?obj))\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n    (not (open ?obj))\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (plugged_out ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (plugged_in ?obj)\\n    (not (plugged_out ?obj))\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "856_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (next_to ?char ?obj2)\\n                (holds_rh ?char ?obj1))\\n  :effect (and\\n           (obj_ontop ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1)))\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_switch ?obj)\\n                (off ?obj))\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (grabbable ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n                (closed ?obj))\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (can_open ?obj)\\n                (open ?obj))\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (has_plug ?obj)\\n                (plugged_out ?obj))\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "911_1",
+        "llm_output": "{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (closed ?obj)\\n    (not (open ?obj))\\n  )\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "1027_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (and\\n                (next_to ?char ?obj)\\n           )\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "181_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (and\\n                (next_to ?char ?obj)\\n           )\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lieable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\"\n}"
+    },
+    {
+        "identifier": "244_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition \\n    (and\\n        (not (next_to ?char ?obj))\\n    )\\n  :effect \\n    (and\\n        (next_to ?char ?obj)\\n    )\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition \\n    (and\\n        (lieable ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect \\n    (and\\n        (lying ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "269_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t(next_to ?char ?obj)\\n\\t\\t(lieable ?obj)\\n\\t)\\n  :effect (and\\n\\t\\t(lying ?char)\\n\\t\\t(ontop ?char ?obj)\\n\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "509_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lieable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "875_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "1035_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "113_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "12_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "137_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "203_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "220_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "242_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "279_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "287_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "292_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "297_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "381_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "388_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "38_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "429_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "437_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"}"
+    },
+    {
+        "identifier": "451_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "469_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "479_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "502_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "612_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "856_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "384_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (and\\n                (next_to ?char ?room))\\n  :effect (inside ?char ?room))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj))\\n  :effect (on ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (or\\n                (and\\n                (holds_rh ?char ?obj))\\n                (and\\n                (holds_lh ?char ?obj))))\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj))\\n  :effect (facing ?char ?obj))\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n                (exists (?socket - object) (and (obj_next_to ?socket ?obj) (plugged_out ?obj))))\\n  :effect (plugged_in ?obj))\\n\"}"
+    },
+    {
+        "identifier": "540_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (grabbable ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj)\\n  )\\n  :effect (facing ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "60_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (off ?obj)\\n                 )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "71_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (and\\n                 (inside_room ?room ?room)\\n                 (next_to ?char ?room)\\n                 )\\n  :effect (inside ?char ?room)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj)\\n                 )\\n  :effect (or\\n           (holds_rh ?char ?obj)\\n           (holds_lh ?char ?obj)\\n           )\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_plug ?obj)\\n                 (next_to ?char ?obj)\\n                 (exists (?socket - object) (and (plugged_out ?obj) (obj_next_to ?socket ?obj) (next_to ?char ?socket))))\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "7_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (and\\n                (next_to ?char ?room)\\n               )\\n  :effect (inside ?char ?room)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n               )\\n  :effect (facing ?char ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n                (exists (?p - object) (and (obj_next_to ?obj ?p) (plugged_out ?obj)))\\n               )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "1070_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "313_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (or\\n    (holds_rh ?char ?obj)\\n    (holds_lh ?char ?obj)\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "689_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (or\\n           (and (holds_rh ?char ?obj))\\n           (and (holds_lh ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and (next_to ?char ?obj))\\n)\\n\"}"
+    },
+    {
+        "identifier": "718_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_lh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "1049_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t\\t(has_switch ?obj)\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n  :effect (and\\n\\t\\t\\t(on ?obj)\\n\\t\\t\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "113_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "161_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t(has_switch ?obj)\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n  :effect (and\\n\\t\\t(on ?obj)\\n\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "173_1",
+        "llm_output": "{\n\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (and\\n    (not (sitting ?char))\\n  )\\n)\"\n}"
+    },
+    {
+        "identifier": "23_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "263_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t(has_switch ?obj)\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n  :effect (and\\n\\t\\t(on ?obj)\\n\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "305_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "363_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (on ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "385_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "403_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "415_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (holds_rh ?char ?obj)\\n                (not (next_to ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action put_on_character\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (holds_rh ?char ?obj)\\n                (clothes ?obj)\\n               )\\n  :effect (ontop ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "462_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "463_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "503_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "59_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (holds_rh ?char ?obj)\\n                (not (next_to ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (inside ?char ?room)\\n                (obj_inside ?obj ?room)\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action put_on_character\\n  :parameters (?char - character ?obj - object)\\n  :precondition (holds_rh ?char ?obj)\\n  :effect (ontop ?obj ?char)\\n)\\n\"}"
+    },
+    {
+        "identifier": "737_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "773_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "910_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "953_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "1057_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (has_switch ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "117_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "134_1",
+        "llm_output": "{\"output\": \"(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_plug ?obj)\\n                (next_to ?char ?obj)\\n                (plugged_out ?obj))\\n  :effect (and\\n               (plugged_in ?obj)\\n               (not (plugged_out ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (not (facing ?char ?obj)))\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n                (off ?obj))\\n  :effect (and\\n               (on ?obj)\\n               (not (off ?obj))\\n           )\\n)\"}"
+    },
+    {
+        "identifier": "170_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "197_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "21_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t\\t(has_switch ?obj)\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "225_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "259_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "307_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t\\t(has_switch ?obj)\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t\\t\\t)\\n  :effect (on ?obj)\\n)\"\n}"
+    },
+    {
+        "identifier": "329_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj))\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "342_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "377_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "383_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t\\t(has_switch ?obj)\\n\\t\\t\\t(next_to ?char ?obj)\\n\\t)\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "411_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj))\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "454_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "459_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "548_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "595_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n\\t\\t(has_switch ?obj)\\n\\t\\t(next_to ?char ?obj)\\n\\t)\\n  :effect (and\\n\\t\\t(on ?obj)\\n\\t)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "684_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (has_switch ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (on ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "74_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "806_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "98_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n           (next_to ?char ?obj)\\n          )\\n)\\n(:action turn_to\\n  :parameters (?char - character ?obj - object)\\n  :precondition (next_to ?char ?obj)\\n  :effect (facing ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 )\\n  :effect (on ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "1064_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "156_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "171_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (open ?obj)\\n                (not (closed ?obj))\\n           )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "175_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "181_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (obj_next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (obj_next_to ?char ?obj))\\n               )\\n  :effect (obj_next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "26_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (obj_next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (obj_next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "286_2",
+        "llm_output": "{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "291_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "317_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "488_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "510_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "528_1",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "532_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "589_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "600_1",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (open ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj))\\n\"}"
+    },
+    {
+        "identifier": "662_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "688_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (or\\n               (and (holds_rh ?char ?obj))\\n               (and (holds_lh ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "787_1",
+        "llm_output": "{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "788_1",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "814_1",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (closed ?obj)\\n               )\\n  :effect (and\\n                (open ?obj)\\n                (not (closed ?obj))\\n           )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "850_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (can_open ?obj) (next_to ?char ?obj) (closed ?obj))\\n  :effect (open ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (grabbable ?obj) (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (inside ?char ?obj1) (obj_inside ?obj ?obj2) (inside_room ?obj2 ?obj1))\\n  :effect (next_to ?char ?obj))\\n\"}"
+    },
+    {
+        "identifier": "861_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (holds_rh ?char ?obj)\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n                (next_to ?char ?obj)\\n           )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "878_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (can_open ?obj)\\n                (next_to ?char ?obj)\\n                (closed ?obj)\\n               )\\n  :effect (and\\n                (open ?obj)\\n                (not (closed ?obj))\\n           )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "1073_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "1088_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"}"
+    },
+    {
+        "identifier": "15_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "163_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "16_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "192_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "208_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "221_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "241_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (not (sitting ?char)))\\n\"\n}"
+    },
+    {
+        "identifier": "341_1",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (or\\n    (holds_rh ?char ?obj)\\n    (holds_lh ?char ?obj)\\n  )\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "484_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                   (inside ?char ?room)\\n                   (obj_inside ?obj ?room)\\n                 )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "504_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "508_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "544_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "57_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "617_2",
+        "llm_output": "```json\n{\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n\"}"
+    },
+    {
+        "identifier": "628_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "688_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "693_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (obj_next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (obj_next_to ?char ?obj))\\n  :effect (obj_next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "821_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (obj_next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (obj_next_to ?char ?obj))\\n               )\\n  :effect (obj_next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "86_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (holds_rh ?char ?obj)\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (and\\n                (next_to ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "896_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (or\\n    (holds_rh ?char ?obj)\\n    (holds_lh ?char ?obj)\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "897_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj)))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "1083_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (next_to ?char ?obj2)\\n    (holds_rh ?char ?obj1)\\n    (movable ?obj1))\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj))\\n  :effect (on ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj))\\n  :effect (closed ?obj))\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj))\\n  :effect (open ?obj))\"}"
+    },
+    {
+        "identifier": "392_2",
+        "llm_output": "{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "755_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (grabbable ?obj1)\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "124_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (sittable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "137_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "204_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (next_to ?char ?obj)\\n    (lieable ?obj)\\n  )\\n  :effect (and\\n    (lying ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\"\n}"
+    },
+    {
+        "identifier": "268_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\"\n}"
+    },
+    {
+        "identifier": "297_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lieable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "299_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "300_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "321_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition \\n    (and\\n        (movable ?obj)\\n    )\\n  :effect \\n    (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition \\n    (and\\n        (sittable ?obj)\\n        (next_to ?char ?obj)\\n    )\\n  :effect \\n    (and\\n        (sitting ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\\n\"}"
+    },
+    {
+        "identifier": "332_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "379_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (lieable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (lying ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "387_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "390_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "3_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "416_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n               )\\n)\\n\"}"
+    },
+    {
+        "identifier": "438_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "442_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "447_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (sittable ?obj)\\n                (next_to ?char ?obj)\\n                )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n                )\\n)\\n\"}"
+    },
+    {
+        "identifier": "449_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (lieable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "455_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (next_to ?char ?obj)\\n        (sittable ?obj)\\n    )\\n  :effect (and\\n        (sitting ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "456_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (next_to ?char ?obj)\\n    (lieable ?obj)\\n  )\\n  :effect (and\\n    (lying ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "473_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (sittable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "490_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "563_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (next_to ?char ?obj)\\n        (lieable ?obj)\\n    )\\n  :effect (and\\n        (lying ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\"\n}"
+    },
+    {
+        "identifier": "567_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (next_to ?char ?obj)\\n        (lieable ?obj)\\n    )\\n  :effect (and\\n        (lying ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "570_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n        (next_to ?char ?obj)\\n        (sittable ?obj)\\n    )\\n  :effect (and\\n        (sitting ?char)\\n        (ontop ?char ?obj)\\n    )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "674_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "6_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "742_1",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "762_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "793_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "798_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "932_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "941_2",
+        "llm_output": "```json\n{\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (sittable ?obj)\\n               )\\n  :effect (and\\n                (sitting ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"}"
+    },
+    {
+        "identifier": "96_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action sit\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (sittable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (sitting ?char)\\n    (ontop ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "976_1",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action lie\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (next_to ?char ?obj)\\n                (lieable ?obj)\\n               )\\n  :effect (and\\n                (lying ?char)\\n                (ontop ?char ?obj)\\n           )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "149_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and (grabbable ?obj) (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (not (sitting ?char)))\\n\"}"
+    },
+    {
+        "identifier": "154_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "180_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj)\\n                 (sitting ?char)\\n                )\\n  :effect (and\\n            (holds_rh ?char ?obj)\\n            (not (sitting ?char))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (not (next_to ?char ?obj))\\n                )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action standup\\n  :parameters (?char - character)\\n  :precondition (sitting ?char)\\n  :effect (not (sitting ?char))\\n)\\n\"}"
+    },
+    {
+        "identifier": "195_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "211_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "241_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "264_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "265_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "287_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "352_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "360_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (inside ?char ?obj)\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "388_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (inside ?char ?obj)\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "431_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "436_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "442_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "474_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "482_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "497_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "553_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "601_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (obj_next_to ?obj ?char)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n    (not (obj_next_to ?obj ?char))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (obj_next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (obj_next_to ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "70_1",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "864_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (or\\n                   (next_to ?char ?obj)\\n                   (ontop ?char ?obj)\\n                   (inside ?char ?obj)\\n                )\\n  )\\n  :effect (or\\n              (and (holds_rh ?char ?obj))\\n              (and (holds_lh ?char ?obj))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\"\n}"
+    },
+    {
+        "identifier": "963_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "974_1",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (not (next_to ?char ?obj))\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "976_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (inside ?char ?room)\\n                (obj_inside ?obj ?room)\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "99_2",
+        "llm_output": "{\n\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "183_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                 (next_to ?char ?obj2)\\n                 (holds_rh ?char ?obj1)\\n                 (movable ?obj1))\\n  :effect (and\\n           (obj_ontop ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (off ?obj))\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (open ?obj))\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (closed ?obj))\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "229_1",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                 (next_to ?char ?obj2)\\n                 (holds_rh ?char ?obj1)\\n                 (movable ?obj1))\\n  :effect (and\\n           (obj_ontop ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1))))\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (inside ?char ?room)\\n                 (inside ?obj ?room))\\n  :effect (next_to ?char ?obj))\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (next_to ?char ?obj)\\n                 (has_switch ?obj))\\n  :effect (on ?obj))\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (next_to ?char ?obj)\\n                 (grabbable ?obj))\\n  :effect (holds_rh ?char ?obj))\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (next_to ?char ?obj)\\n                 (can_open ?obj))\\n  :effect (closed ?obj))\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (next_to ?char ?obj)\\n                 (can_open ?obj))\\n  :effect (open ?obj))\"}"
+    },
+    {
+        "identifier": "310_2",
+        "llm_output": "{\n\"output\": \"(:action switch_off\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (on ?obj)\\n  )\\n  :effect (off ?obj)\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n    (off ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (open ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "721_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2) \\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_switch ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (open ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (closed ?obj)\\n)\\n(:action plug_in\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (has_plug ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (plugged_in ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "764_2",
+        "llm_output": "```json\n{\"output\": \"(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                 (next_to ?char ?obj2)\\n                 (holds_rh ?char ?obj1)\\n                 (movable ?obj1))\\n  :effect (and\\n           (obj_ontop ?obj1 ?obj2)\\n           (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n(:action switch_on\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (has_switch ?obj)\\n                 (next_to ?char ?obj)\\n                 (off ?obj))\\n  :effect (on ?obj)\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (grabbable ?obj)\\n                 (next_to ?char ?obj))\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action close\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (open ?obj))\\n  :effect (closed ?obj)\\n)\\n(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                 (can_open ?obj)\\n                 (next_to ?char ?obj)\\n                 (closed ?obj))\\n  :effect (open ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "419_2",
+        "llm_output": "```json\n{\"output\": \"(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (grabbable ?obj)\\n                (next_to ?char ?obj)\\n               )\\n  :effect (holds_rh ?char ?obj)\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n                (holds_rh ?char ?obj1)\\n                (next_to ?char ?obj2)\\n               )\\n  :effect (and\\n            (obj_ontop ?obj1 ?obj2)\\n            (not (holds_rh ?char ?obj1))\\n           )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n                (not (next_to ?char ?obj))\\n               )\\n  :effect (next_to ?char ?obj)\\n)\\n\"}"
+    },
+    {
+        "identifier": "446_2",
+        "llm_output": "{\n\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n    (closed ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "710_2",
+        "llm_output": "{\n\"output\": \"(:action open\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (can_open ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (open ?obj)\\n    (not (closed ?obj))\\n  )\\n)\\n(:action grab\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (grabbable ?obj)\\n    (next_to ?char ?obj)\\n  )\\n  :effect (and\\n    (holds_rh ?char ?obj)\\n  )\\n)\\n(:action put_on\\n  :parameters (?char - character ?obj1 - object ?obj2 - object)\\n  :precondition (and\\n    (holds_rh ?char ?obj1)\\n    (next_to ?char ?obj2)\\n  )\\n  :effect (and\\n    (obj_ontop ?obj1 ?obj2)\\n    (not (holds_rh ?char ?obj1))\\n  )\\n)\\n(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition (and\\n    (not (next_to ?char ?obj))\\n  )\\n  :effect (and\\n    (next_to ?char ?obj)\\n  )\\n)\\n\"\n}"
+    },
+    {
+        "identifier": "368_1",
+        "llm_output": "{\n\"output\": \"(:action walk_into\\n  :parameters (?char - character ?room - object)\\n  :precondition (and\\n                (not (inside ?char ?room)))\\n  :effect (and\\n           (inside ?char ?room)\\n           (not (sitting ?char))\\n           (not (lying ?char))\\n))\\n\"\n}"
+    },
+    {
+        "identifier": "729_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj))\\n\"\n}"
+    },
+    {
+        "identifier": "975_2",
+        "llm_output": "{\n\"output\": \"(:action walk_towards\\n  :parameters (?char - character ?obj - object)\\n  :precondition ()\\n  :effect (next_to ?char ?obj)\\n)\\n\"\n}"
+    }
+]

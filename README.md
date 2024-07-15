@@ -242,11 +242,6 @@ The code structure for `EAgent` is as follows:
 -------------------- motion_planner.py
 -------------------- eval_goal.py
 ```
-#### Evaluation script
-VirtualHome:
-```
-bash src/VIRTUALHOME/AgentEval-main/virtualhome/goal_eval_vh.py
-```
 
 ### Action Sequencing
 ```
@@ -263,11 +258,6 @@ bash src/VIRTUALHOME/AgentEval-main/virtualhome/goal_eval_vh.py
 -------------------- eval_action.py
 ```
 
-#### Evaluation script
-VirtualHome:
-```
-bash src/VIRTUALHOME/AgentEval-main/virtualhome/action_eval_vh.py
-```
 
 ### Subgoal Decomposition
 ```
@@ -301,11 +291,7 @@ bash src/VIRTUALHOME/AgentEval-main/virtualhome/action_eval_vh.py
 ------------------------ planner_test.py
 ------------------------ pddlgym_planners
 ```
-#### Evaluation script
-VirtualHome:
-```
-bash src/VIRTUALHOME/AgentEval-main/virtualhome/transition_eval_vh.py
-```
+
 
 
 ## BEHAVIOR Symbolic Simulator Implementation

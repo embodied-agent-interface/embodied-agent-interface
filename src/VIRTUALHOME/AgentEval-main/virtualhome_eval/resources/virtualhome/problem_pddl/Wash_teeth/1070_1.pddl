@@ -1,0 +1,40 @@
+(define (problem Wash_teeth)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    bathroom home_office teeth toothbrush_holder tooth_paste toothbrush - object
+)
+    (:init
+    (containers toothbrush_holder)
+    (grabbable toothbrush_holder)
+    (grabbable teeth)
+    (obj_next_to toothbrush toothbrush_holder)
+    (obj_ontop toothbrush toothbrush_holder)
+    (movable toothbrush_holder)
+    (cream tooth_paste)
+    (pourable tooth_paste)
+    (inside_room tooth_paste bathroom)
+    (obj_next_to toothbrush_holder toothbrush)
+    (inside_room toothbrush_holder bathroom)
+    (movable toothbrush)
+    (movable teeth)
+    (grabbable toothbrush)
+    (obj_next_to toothbrush_holder teeth)
+    (obj_next_to tooth_paste toothbrush_holder)
+    (inside_room toothbrush bathroom)
+    (obj_next_to teeth toothbrush_holder)
+    (inside_room teeth bathroom)
+    (obj_next_to toothbrush_holder tooth_paste)
+    (inside character home_office)
+    (recipient toothbrush)
+    (grabbable tooth_paste)
+    (movable tooth_paste)
+    (can_open tooth_paste)
+)
+    (:goal
+    (and
+        (holds_rh character toothbrush)
+    )
+)
+    )
+    

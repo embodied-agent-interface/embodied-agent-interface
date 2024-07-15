@@ -1,0 +1,1370 @@
+[
+    {
+        "identifier": "27_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"washing_machine\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"washing_machine\", \"state\": \"CLOSED\"}, {\"name\": \"washing_machine\", \"state\": \"ON\"}, {\"name\": \"basket_for_clothes\", \"state\": \"OPEN\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"clothes_jacket\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the kitchen and find the basket of clothes\"}, {\"action\": \"PUTIN\", \"description\": \"put the soap and clothes into the washing machine\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the washing machine\"}] }"
+    },
+    {
+        "identifier": "417_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"washing_machine\", \"state\": \"ON\"}, {\"name\": \"washing_machine\", \"state\": \"CLOSED\"}, {\"name\": \"washing_machine\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOAD\", \"description\": \"load dirty clothes into the washing machine\"}] }"
+    },
+    {
+        "identifier": "850_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"clothes_pants\", \"state\": \"DIRTY\"}, {\"name\": \"washing_machine\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"washing_machine\", \"state\": \"CLOSED\"}, {\"name\": \"washing_machine\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into laundry room\"}, {\"action\": \"OPEN\", \"description\": \"open washing machine door\"}, {\"action\": \"PUTIN\", \"description\": \"put dirty clothes into washing machine\"}, {\"action\": \"PUTIN\", \"description\": \"measure laundry detergent and place into washing machine\"}, {\"action\": \"SWITCHON\", \"description\": \"turn dial to appropriate wash setting\"}, {\"action\": \"SWITCHON\", \"description\": \"power on\"}] }"
+    },
+    {
+        "identifier": "954_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"clothes_dress\", \"state\": \"DIRTY\"}, {\"name\": \"clothes_pants\", \"state\": \"DIRTY\"}, {\"name\": \"clothes_shirt\", \"state\": \"DIRTY\"}, {\"name\": \"clothes_underwear\", \"state\": \"DIRTY\"}, {\"name\": \"washing_machine\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"washing_machine\", \"state\": \"CLOSED\"}, {\"name\": \"washing_machine\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"GRAB\", \"description\": \"get the dirty clothes basket\"}, {\"action\": \"PUTIN\", \"description\": \"put all the clothes in washing machine\"}, {\"action\": \"PUTIN\", \"description\": \"add soap\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on machine\"}] }"
+    },
+    {
+        "identifier": "11_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "120_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "125_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "150_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"push any light button to turn it on\"}] }"
+    },
+    {
+        "identifier": "160_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}] }"
+    },
+    {
+        "identifier": "180_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "205_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}] }"
+    },
+    {
+        "identifier": "222_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch light on\"}] }"
+    },
+    {
+        "identifier": "232_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "310_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "311_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "331_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "339_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch light on\"}] }"
+    },
+    {
+        "identifier": "345_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}] }"
+    },
+    {
+        "identifier": "392_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "394_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}] }"
+    },
+    {
+        "identifier": "432_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "443_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "445_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}] }"
+    },
+    {
+        "identifier": "511_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}] }"
+    },
+    {
+        "identifier": "585_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}] }"
+    },
+    {
+        "identifier": "604_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on light\"}] }"
+    },
+    {
+        "identifier": "616_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "627_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}] }"
+    },
+    {
+        "identifier": "705_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the lamp\"}] }"
+    },
+    {
+        "identifier": "708_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch light on\"}] }"
+    },
+    {
+        "identifier": "715_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}] }"
+    },
+    {
+        "identifier": "737_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch light on\"}] }"
+    },
+    {
+        "identifier": "780_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "812_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch the light on\"}] }"
+    },
+    {
+        "identifier": "835_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\" }] }"
+    },
+    {
+        "identifier": "85_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on light\"}] }"
+    },
+    {
+        "identifier": "874_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the light\"}] }"
+    },
+    {
+        "identifier": "491_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"tooth_paste\", \"state\": \"GRABBED\"}, {\"name\": \"toothbrush\", \"state\": \"GRABBED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab tooth_paste\"}, {\"action\": \"GRAB\", \"description\": \"grab toothbrush\"}, {\"action\": \"LOOKAT\", \"description\": \"look at tooth_paste\"}, {\"action\": \"LOOKAT\", \"description\": \"look at toothbrush\"}, {\"action\": \"LOOKAT\", \"description\": \"look at character\"}, {\"action\": \"OPEN\", \"description\": \"open tooth_paste\"}, {\"action\": \"OPEN\", \"description\": \"open toothbrush\"}, {\"action\": \"TOUCH\", \"description\": \"touch tooth_paste\"}, {\"action\": \"TOUCH\", \"description\": \"touch toothbrush\"}, {\"action\": \"TOUCH\", \"description\": \"touch character\"}, {\"action\": \"PUTIN\", \"description\": \"put tooth_paste into mouth\"}, {\"action\": \"PUTIN\", \"description\": \"put toothbrush into mouth\"}, {\"action\": \"PUTIN\", \"description\": \"put character into bathroom\"}, {\"action\": \"RELEASE\", \"description\": \"release tooth_paste\"}, {\"action\": \"RELEASE\", \"description\": \"release toothbrush\"}, {\"action\": \"RELEASE\", \"description\": \"release character\"}] }"
+    },
+    {
+        "identifier": "696_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"tooth_paste\", \"state\": \"GRABBED\"}, {\"name\": \"toothbrush\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab tooth_paste\"}, {\"action\": \"GRAB\", \"description\": \"grab toothbrush\"}] }"
+    },
+    {
+        "identifier": "1003_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"MOVE\", \"description\": \"move to the home office\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"RELEASE\", \"description\": \"drop the email inside the current room\"}] }"
+    },
+    {
+        "identifier": "115_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, \n{\"name\": \"keyboard\", \"state\": \"FREE\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"TO\", \"to_name\": \"home_office\"}\n], \n\"action goals\": [\n{\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}, \n{\"action\": \"PLUGIN\", \"description\": \"plug in the computer\"}, \n{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}\n]\n}"
+    },
+    {
+        "identifier": "407_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"address_book\", \"state\": \"GRABBED\"}, \n{\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"} \n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SIT\", \"to_name\": \"chair\"}, \n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"address_book\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"} \n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to Home office\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the chair\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}, \n{\"action\": \"FIND\", \"description\": \"find address in addressbook\"}, \n{\"action\": \"TYPE\", \"description\": \"type in the keyboard\"}, \n{\"action\": \"WRITE\", \"description\": \"write mail\"} \n] \n}"
+    },
+    {
+        "identifier": "430_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "481_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"OCCUPIED\"}, {\"name\": \"mouse\", \"state\": \"OCCUPIED\"}, {\"name\": \"computer\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"CLICK\", \"description\": \"click send\"}, {\"action\": \"CLOSE\", \"description\": \"close e-mail provider\"}, {\"action\": \"SWITCHOFF\", \"description\": \"switch off computer\"}] }"
+    },
+    {
+        "identifier": "622_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"mouse\"}, {\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the office\"}, {\"action\": \"SIT\", \"description\": \"sit down on chair\"}, {\"action\": \"PLUGIN\", \"description\": \"plug in the computer\"}, {\"action\": \"TYPE\", \"description\": \"type the email on the keyboard\"}] }"
+    },
+    {
+        "identifier": "699_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"LOOKAT\", \"description\": \"look at something\"}] }"
+    },
+    {
+        "identifier": "824_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cpuscreen\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}, {\"action\": \"TYPE\", \"description\": \"type on the keyboard\"}] }"
+    },
+    {
+        "identifier": "87_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"laptop\", \"state\": \"ON\"}, {\"name\": \"laptop\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on laptop\"}, {\"action\": \"GRAB\", \"description\": \"grab mouse and keyboard\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "986_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the Home Office\"}, {\"action\": \"FIND\", \"description\": \"find the computer\"}, {\"action\": \"SIT\", \"description\": \"sit in the chair\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}, {\"action\": \"TYPE\", \"description\": \"start typing the email\"}, {\"action\": \"SWITCHOFF\", \"description\": \"switch the computer off\"}] }"
+    },
+    {
+        "identifier": "996_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "1004_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"freezer\", \"state\": \"OPEN\"},\n{\"name\": \"food_food\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"WALK\", \"to_name\": \"kitchen\"},\n{\"from_name\": \"character\", \"relation\": \"WALK\", \"to_name\": \"fridge\"},\n{\"from_name\": \"character\", \"relation\": \"LOOKAT\", \"to_name\": \"bags\"},\n{\"from_name\": \"character\", \"relation\": \"GRAB\", \"to_name\": \"groceries\"},\n{\"from_name\": \"character\", \"relation\": \"PUTIN\", \"to_name\": \"freezer\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to kitchen\"},\n{\"action\": \"WALK\", \"description\": \"walk to fridge\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at bags\"},\n{\"action\": \"GRAB\", \"description\": \"grab groceries\"},\n{\"action\": \"PUTIN\", \"description\": \"put groceries in fridge\"}\n]\n}"
+    },
+    {
+        "identifier": "152_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"freezer\", \"state\": \"OPEN\"}, {\"name\": \"food_food\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}] }"
+    },
+    {
+        "identifier": "298_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"freezer\", \"state\": \"OPEN\"},\n{\"name\": \"food_food\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"CLOSE\", \"to_name\": \"freezer\"},\n{\"from_name\": \"character\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"}\n],\n\"action goals\": [\n{\"action\": \"OPEN\", \"description\": \"open the freezer\"}\n]\n}"
+    },
+    {
+        "identifier": "609_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"freezer\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}] }"
+    },
+    {
+        "identifier": "703_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"freezer\", \"state\": \"OPEN\"},\n{\"name\": \"food_food\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"TO\", \"to_name\": \"dining_room\"},\n{\"from_name\": \"character\", \"relation\": \"TO\", \"to_name\": \"kitchen\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to kitchen\"},\n{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}\n]\n}"
+    },
+    {
+        "identifier": "772_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"freezer\", \"state\": \"OPEN\"},\n{\"name\": \"milk\", \"state\": \"CLEAN\"},\n{\"name\": \"milk\", \"state\": \"INSIDE\"},\n{\"name\": \"food_turkey\", \"state\": \"CLEAN\"},\n{\"name\": \"food_turkey\", \"state\": \"INSIDE\"},\n{\"name\": \"food_egg\", \"state\": \"CLEAN\"},\n{\"name\": \"food_egg\", \"state\": \"INSIDE\"},\n{\"name\": \"food_fish\", \"state\": \"CLEAN\"},\n{\"name\": \"food_fish\", \"state\": \"INSIDE\"},\n{\"name\": \"food_chicken\", \"state\": \"CLEAN\"},\n{\"name\": \"food_chicken\", \"state\": \"INSIDE\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"WALK\", \"to_name\": \"kitchen\"},\n{\"from_name\": \"character\", \"relation\": \"OPEN\", \"to_name\": \"freezer\"},\n{\"from_name\": \"milk\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"},\n{\"from_name\": \"food_turkey\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"},\n{\"from_name\": \"food_egg\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"},\n{\"from_name\": \"food_fish\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"},\n{\"from_name\": \"food_chicken\", \"relation\": \"INSIDE\", \"to_name\": \"freezer\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to kitchen\"},\n{\"action\": \"OPEN\", \"description\": \"open fridge\"},\n{\"action\": \"PUTIN\", \"description\": \"put milk in fridge\"},\n{\"action\": \"PUTIN\", \"description\": \"put turkey in fridge\"},\n{\"action\": \"PUTIN\", \"description\": \"put eggs in fridge\"},\n{\"action\": \"PUTIN\", \"description\": \"put fish in fridge\"},\n{\"action\": \"PUTIN\", \"description\": \"put chicken in fridge\"}\n]\n}"
+    },
+    {
+        "identifier": "837_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"kitchen_counter\", \"state\": \"OPEN\"}, {\"name\": \"food_vegetable\", \"state\": \"CLEAN\"}, {\"name\": \"food_egg\", \"state\": \"CLEAN\"}, {\"name\": \"food_cheese\", \"state\": \"CLEAN\"}, {\"name\": \"milk\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PULL\", \"description\": \"pull the groceries into the kitchen\"}, {\"action\": \"PUTON\", \"description\": \"put the groceries on the counter\"}, {\"action\": \"PUTIN\", \"description\": \"put the vegetables, eggs, cheese, and milk in the fridge\"}] }"
+    },
+    {
+        "identifier": "158_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"STANDING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "323_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toilet\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth\"}, {\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "430_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toilet\", \"state\": \"OCCUPIED\"}, {\"name\": \"toilet_paper\", \"state\": \"GRABBED\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"toilet\", \"state\": \"OPEN\"}, {\"name\": \"toilet\", \"state\": \"FLUSHED\"}, {\"name\": \"toilet\", \"state\": \"OFF\"}, {\"name\": \"toilet\", \"state\": \"CLOSED\"}, {\"name\": \"toilet\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the bathroom\"}, {\"action\": \"SIT\", \"description\": \"sit on the toilet\"}, {\"action\": \"GRAB\", \"description\": \"grab toilet paper\"}, {\"action\": \"GRAB\", \"description\": \"grab soap\"}, {\"action\": \"WASH\", \"description\": \"wash hands\"}, {\"action\": \"FLUSH\", \"description\": \"flush the toilet\"}, {\"action\": \"STANDUP\", \"description\": \"stand up from the toilet\"}] }"
+    },
+    {
+        "identifier": "478_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toilet\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into the bath room and go to the toilet\"}] }"
+    },
+    {
+        "identifier": "496_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toilet\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the entrance of the bathroom\"}, {\"action\": \"OPEN\", \"description\": \"open the door to the bathroom\"}, {\"action\": \"WALK\", \"description\": \"walk inside of the bathroom\"}, {\"action\": \"FIND\", \"description\": \"find the toilet inside of the bathroom\"}, {\"action\": \"WALK\", \"description\": \"walk over to the toilet\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the toilet\"}] }"
+    },
+    {
+        "identifier": "624_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"toilet\", \"state\": \"OPEN\"}, \n{\"name\": \"toilet\", \"state\": \"CLOSED\"}, \n{\"name\": \"toilet\", \"state\": \"SITTING\"}, \n{\"name\": \"toilet_paper\", \"state\": \"CLEAN\"}, \n{\"name\": \"character\", \"state\": \"SITTING\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"toilet\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"toilet_paper\"}\n], \n\"action goals\": [\n{\"action\": \"LOOKAT\", \"description\": \"look at the toilet\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the toilet\"}, \n{\"action\": \"GRAB\", \"description\": \"grab the toilet paper\"}, \n{\"action\": \"WIPE\", \"description\": \"wipe the toilet paper\"}, \n{\"action\": \"STANDUP\", \"description\": \"stand up from the toilet\"}, \n{\"action\": \"OPEN\", \"description\": \"open the door to exit\"}\n] \n}"
+    },
+    {
+        "identifier": "188_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"remote_control\", \"state\": \"ON\"},\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}\n],\n\"action goals\": [\n{\"action\": \"SWITCHON\", \"description\": \"switch the remote control on\"}\n]\n}"
+    },
+    {
+        "identifier": "803_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab TV remote\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on TV\"}, {\"action\": \"SWITCH\", \"description\": \"switch channel\"}] }"
+    },
+    {
+        "identifier": "960_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"remote_control\", \"state\": \"ON\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the remote control\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the television\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the television\"}] }"
+    },
+    {
+        "identifier": "101_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"bedroom\", \"state\": \"CLEAN\"}, {\"name\": \"home_office\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, {\"action\": \"SIT\", \"description\": \"sit at desk\"}, {\"action\": \"GRAB\", \"description\": \"grab mouse and keyboard\"}, {\"action\": \"LOOKAT\", \"description\": \"look at computer\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "1068_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to home office\"}, {\"action\": \"FIND\", \"description\": \"find computer\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}] }"
+    },
+    {
+        "identifier": "153_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}] }"
+    },
+    {
+        "identifier": "196_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"GRABBED\"}, {\"name\": \"desk\", \"state\": \"OCCUPIED\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to over to desk\"}, {\"action\": \"SIT\", \"description\": \"sit down on chair\"}, {\"action\": \"LOOKAT\", \"description\": \"face the computer\"}, {\"action\": \"PLUGIN\", \"description\": \"turn the computer on\"}, {\"action\": \"GRAB\", \"description\": \"use arms to place hands on the keyboard\"}, {\"action\": \"TYPE\", \"description\": \"type work into the computer\"}, {\"action\": \"LOOKAT\", \"description\": \"use eyes to review\"}] }"
+    },
+    {
+        "identifier": "198_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on chair\"}, {\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, {\"action\": \"FIND\", \"description\": \"find mouse\"}] }"
+    },
+    {
+        "identifier": "201_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, \n{\"name\": \"computer\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"bedroom\"}\n], \n\"action goals\": [\n{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, \n{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}\n]\n}"
+    },
+    {
+        "identifier": "232_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PULL\", \"description\": \"pull out my chair\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on my computer\"}, {\"action\": \"GRAB\", \"description\": \"begin my task\"}] }"
+    },
+    {
+        "identifier": "234_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, {\"action\": \"SIT\", \"description\": \"sit in the chair\"}, {\"action\": \"GRAB\", \"description\": \"grab the keyboard and mouse\"}] }"
+    },
+    {
+        "identifier": "343_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}, {\"action\": \"SIT\", \"description\": \"sit on the chair\"}, {\"action\": \"GRAB\", \"description\": \"grab key board\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"LOOKAT\", \"description\": \"look at computer\"}] }"
+    },
+    {
+        "identifier": "373_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}] }"
+    },
+    {
+        "identifier": "406_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"computer\", \"state\": \"CLEAN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"}], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at computer\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}] }"
+    },
+    {
+        "identifier": "409_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"chair\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"keyboard\", \"state\": \"FREE\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}, \n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}\n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to home office\"}, \n{\"action\": \"SIT\", \"description\": \"sit on chair\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on computer\"}, \n{\"action\": \"TYPE\", \"description\": \"type in keyboard\"}\n] \n}"
+    },
+    {
+        "identifier": "419_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to home office\"}, {\"action\": \"WALK\", \"description\": \"walk to desk\"}, {\"action\": \"SIT\", \"description\": \"sit in chair\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on computer\"}, {\"action\": \"LOOKAT\", \"description\": \"look at computer\"}, {\"action\": \"TYPE\", \"description\": \"click mouse and type on keyboard\"}] }"
+    },
+    {
+        "identifier": "433_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}] }"
+    },
+    {
+        "identifier": "437_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"GRABBED\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"GRABBED\"}, {\"name\": \"mousepad\", \"state\": \"CLEAN\"}, {\"name\": \"desk\", \"state\": \"OCCUPIED\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into the office\"}, {\"action\": \"SIT\", \"description\": \"sit down on the chair\"}, {\"action\": \"TURNON\", \"description\": \"turn on the computer\"}, {\"action\": \"GRAB\", \"description\": \"grab the mouse and keyboard\"}, {\"action\": \"USE\", \"description\": \"use the mouse and keyboard to work on the computer\"}] }"
+    },
+    {
+        "identifier": "440_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "453_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"keyboard\", \"state\": \"FREE\"} \n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}, \n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"} \n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the office\"}, \n{\"action\": \"SIT\", \"description\": \"sit down in the chair\"}, \n{\"action\": \"SWITCHON\", \"description\": \"turn on the computer\"}, \n{\"action\": \"TYPE\", \"description\": \"start typing on the keyboard\"} \n] \n}"
+    },
+    {
+        "identifier": "46_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"desk\", \"state\": \"CLEAN\"}, {\"name\": \"home_office\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"MOVE\", \"description\": \"move to the home office and sit at the desk\"}, {\"action\": \"PLUGIN\", \"description\": \"plug in the computer\"}, {\"action\": \"OPEN\", \"description\": \"open the computer\"}] }"
+    },
+    {
+        "identifier": "475_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"desk\", \"state\": \"FREE\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into home office\"}, {\"action\": \"WALK\", \"description\": \"walk to desk\"}, {\"action\": \"SIT\", \"description\": \"sit at chair\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on computer\"}] }"
+    },
+    {
+        "identifier": "503_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}] }"
+    },
+    {
+        "identifier": "670_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"computer\", \"state\": \"CLEAN\"}, {\"name\": \"home_office\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, {\"action\": \"PLUGIN\", \"description\": \"plug in the computer\"}, {\"action\": \"MOVE\", \"description\": \"move to home office\"}] }"
+    },
+    {
+        "identifier": "719_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, \n{\"name\": \"computer\", \"state\": \"CLEAN\"}, \n{\"name\": \"chair\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"character\", \"state\": \"SITTING\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"mouse\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"}\n], \n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on chair\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at computer\"}, \n{\"action\": \"TYPE\", \"description\": \"type on keyboard\"}, \n{\"action\": \"CLICK\", \"description\": \"click with mouse\"}\n]\n}"
+    },
+    {
+        "identifier": "757_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"computer\", \"state\": \"CLEAN\"}, \n{\"name\": \"mouse\", \"state\": \"GRABBED\"}, \n{\"name\": \"keyboard\", \"state\": \"GRABBED\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"mouse\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"}\n], \n\"action goals\": [\n{\"action\": \"LOOKAT\", \"description\": \"look at the computer\"}, \n{\"action\": \"GRAB\", \"description\": \"grab the mouse\"}, \n{\"action\": \"GRAB\", \"description\": \"grab the keyboard\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}, \n{\"action\": \"TYPE\", \"description\": \"type on the keyboard\"}\n] \n}"
+    },
+    {
+        "identifier": "787_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the office\"}, {\"action\": \"FIND\", \"description\": \"find the computer\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the computer\"}, {\"action\": \"FIND\", \"description\": \"find the chair\"}, {\"action\": \"SIT\", \"description\": \"sit down\"}, {\"action\": \"FIND\", \"description\": \"find the keyboard and mouse\"}, {\"action\": \"TYPE\", \"description\": \"type on the keyboard\"}] }"
+    },
+    {
+        "identifier": "795_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"computer\", \"state\": \"ON\"},\n{\"name\": \"keyboard\", \"state\": \"FREE\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"chair\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"keyboard\"},\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the bedroom\"},\n{\"action\": \"FIND\", \"description\": \"find the computer\"},\n{\"action\": \"SIT\", \"description\": \"sit in the chair\"},\n{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"},\n{\"action\": \"TYPE\", \"description\": \"type in the keyboard\"}\n] \n}"
+    },
+    {
+        "identifier": "819_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"desk\", \"state\": \"OCCUPIED\"}, {\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"MOVE\", \"description\": \"move sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}] }"
+    },
+    {
+        "identifier": "874_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"chair\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"home_office\", \"state\": \"CLEAN\"} \n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"chair\"} \n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the home office\"}, \n{\"action\": \"OPEN\", \"description\": \"open the door of the office room\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the chair\"} \n] \n}"
+    },
+    {
+        "identifier": "910_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}] }"
+    },
+    {
+        "identifier": "91_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"home_office\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "93_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"desk\", \"state\": \"OCCUPIED\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to Office\"}, {\"action\": \"WALK\", \"description\": \"walk to desk\"}, {\"action\": \"SIT\", \"description\": \"sit down in chair\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on computer\"}, {\"action\": \"START\", \"description\": \"start homework\"}] }"
+    },
+    {
+        "identifier": "962_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"computer\", \"state\": \"ON\"}, \n{\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, \n{\"name\": \"computer\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"computer\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"mouse\"}\n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the living room\"}, \n{\"action\": \"FIND\", \"description\": \"find the computer\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at the computer screen\"}, \n{\"action\": \"GRAB\", \"description\": \"graph the mouse\"}, \n{\"action\": \"MOVE\", \"description\": \"move and click the mouse to select buttons on the screen\"}\n] \n}"
+    },
+    {
+        "identifier": "190_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"bowl\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"bowl\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"plate\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"dish_soap\"}], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}] }"
+    },
+    {
+        "identifier": "201_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put the plate into the dishwasher\"}] }"
+    },
+    {
+        "identifier": "223_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch dishwasher on\"}, {\"action\": \"OPEN\", \"description\": \"open dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put soap in dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put plates in dishwasher\"}] }"
+    },
+    {
+        "identifier": "327_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}, {\"name\": \"kitchen_counter\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put the dishes into the dishwasher\"}, {\"action\": \"CLOSE\", \"description\": \"close the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"add soap into the dishwasher\"}, {\"action\": \"SWITCHON\", \"description\": \"turn the dishwasher on\"}] }"
+    },
+    {
+        "identifier": "383_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLOSED\"}, {\"name\": \"dish_soap\", \"state\": \"GRABBED\"}, {\"name\": \"plate\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the kitchen\"}, {\"action\": \"OPEN\", \"description\": \"open the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put plates into the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put dish soap into the dishwasher\"}, {\"action\": \"CLOSE\", \"description\": \"close the dishwasher\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the dishwasher\"}] }"
+    },
+    {
+        "identifier": "417_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOAD\", \"description\": \"load the dishes into the dishwasher\"}, {\"action\": \"START\", \"description\": \"start the dishwasher\"}] }"
+    },
+    {
+        "identifier": "487_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}] }"
+    },
+    {
+        "identifier": "650_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}] }"
+    },
+    {
+        "identifier": "783_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put dirty dishes and glasses into the dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put dish soap into the dishwasher\"}, {\"action\": \"CLOSE\", \"description\": \"close the dishwasher\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the dishwasher\"}] }"
+    },
+    {
+        "identifier": "815_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the plate on the table\"}, {\"action\": \"PUTIN\", \"description\": \"put the plate and dish soap in the dishwasher\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the dishwasher\"}] }"
+    },
+    {
+        "identifier": "826_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}, {\"name\": \"dish_soap\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open dishwasher\"}, {\"action\": \"PUTIN\", \"description\": \"put dish soap into dishwasher\"}, {\"action\": \"CLOSE\", \"description\": \"close dishwasher\"}, {\"action\": \"SWITCHON\", \"description\": \"start dishwasher\"}] }"
+    },
+    {
+        "identifier": "856_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"dishwasher\", \"state\": \"ON\"}, \n{\"name\": \"dishwasher\", \"state\": \"OPEN\"}, \n{\"name\": \"dish_soap\", \"state\": \"GRABBED\"}, \n{\"name\": \"plate\", \"state\": \"GRABBED\"}, \n{\"name\": \"plate\", \"state\": \"CLEAN\"}, \n{\"name\": \"dish_soap\", \"state\": \"GRABBED\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"plate\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"dish_soap\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"dishwasher\"}\n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab plate\"}, \n{\"action\": \"GRAB\", \"description\": \"grab dish soap\"}, \n{\"action\": \"PUTIN\", \"description\": \"put plate in dishwasher\"}, \n{\"action\": \"PUTIN\", \"description\": \"put dish soap in dishwasher\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on dishwasher\"}\n] \n}"
+    },
+    {
+        "identifier": "911_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"dishwasher\", \"state\": \"ON\"}, {\"name\": \"dishwasher\", \"state\": \"OPEN\"}, {\"name\": \"dishwasher\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open sth\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"CLOSE\", \"description\": \"close sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}] }"
+    },
+    {
+        "identifier": "1027_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth\"}, {\"action\": \"LIE\", \"description\": \"lie on something\"}, {\"action\": \"CLOSE_EYES\", \"description\": \"close eyes\"}] }"
+    },
+    {
+        "identifier": "181_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}, {\"name\": \"bed\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}] }"
+    },
+    {
+        "identifier": "244_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth\"}, {\"action\": \"LIE\", \"description\": \"lie on something\"}] }"
+    },
+    {
+        "identifier": "269_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"bed\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards the bedroom\"}, {\"action\": \"FIND\", \"description\": \"find and get near to the bed\"}, {\"action\": \"LIE\", \"description\": \"lie on the bed\"}, {\"action\": \"CLOSE\", \"description\": \"close your eyes\"}, {\"action\": \"WAIT\", \"description\": \"wait\"}] }"
+    },
+    {
+        "identifier": "509_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}, {\"name\": \"bed\", \"state\": \"OCCUPIED\"}, {\"name\": \"sheets\", \"state\": \"COVERED\"}, {\"name\": \"light\", \"state\": \"OFF\"}, {\"name\": \"clothes_pants\", \"state\": \"FREE\"}, {\"name\": \"clothes_shirt\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into bedroom\"}, {\"action\": \"PUTOFF\", \"description\": \"change out of clothing into pajamas\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off the light\"}, {\"action\": \"LIE\", \"description\": \"lie down in bed and pull sheets over me\"}, {\"action\": \"RELEASE\", \"description\": \"go to sleep\"}] }"
+    },
+    {
+        "identifier": "875_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"LYING\"}, {\"name\": \"bed\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bedroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the pillow\"}, {\"action\": \"PUT\", \"description\": \"put pillow into bed\"}, {\"action\": \"LIE\", \"description\": \"lie down in bed\"}, {\"action\": \"SLEEP\", \"description\": \"sleep well\"}] }"
+    },
+    {
+        "identifier": "102_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}] }"
+    },
+    {
+        "identifier": "154_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TURNON\", \"description\": \"turn on the water\"}, {\"action\": \"GRAB\", \"description\": \"put soap on hands\"}, {\"action\": \"TOUCH\", \"description\": \"rub hands together\"}, {\"action\": \"RELEASE\", \"description\": \"rinse hands off\"}, {\"action\": \"TURNOFF\", \"description\": \"turn off the water\"}, {\"action\": \"GRAB\", \"description\": \"towel off hands\"}] }"
+    },
+    {
+        "identifier": "176_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"DIRTY\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph soap\"}, {\"action\": \"PUTIN\", \"description\": \"put soap into hands\"}, {\"action\": \"WASH\", \"description\": \"wash hands over sink\"}] }"
+    },
+    {
+        "identifier": "214_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"sink\", \"state\": \"OCCUPIED\"}, {\"name\": \"bathroom_counter\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"FIND\", \"description\": \"find sink\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on faucet\"}, {\"action\": \"GRAB\", \"description\": \"put soap in hands\"}, {\"action\": \"WASH\", \"description\": \"wash and rinse hands\"}] }"
+    },
+    {
+        "identifier": "258_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_counter\", \"state\": \"CLEAN\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"HOT\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to kitchen\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on water\"}, {\"action\": \"FIND\", \"description\": \"find soap\"}, {\"action\": \"APPLY\", \"description\": \"apply to hand\"}, {\"action\": \"LATHER\", \"description\": \"lather\"}, {\"action\": \"RINSE\", \"description\": \"rinse\"}, {\"action\": \"DRY\", \"description\": \"dry hands\"}] }"
+    },
+    {
+        "identifier": "499_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TURNON\", \"description\": \"turn on the water\"}, {\"action\": \"GRAB\", \"description\": \"put soap on hands\"}, {\"action\": \"RINSE\", \"description\": \"rinse hands\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off the water\"}, {\"action\": \"GRAB\", \"description\": \"dry hands\"}] }"
+    },
+    {
+        "identifier": "517_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"turn on the water in the sink\"}, {\"action\": \"GRAB\", \"description\": \"apply soap to hands\"}, {\"action\": \"LOOKAT\", \"description\": \"rub hands together\"}, {\"action\": \"LOOKAT\", \"description\": \"rinse hands with water\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off the water\"}] }"
+    },
+    {
+        "identifier": "549_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"hands_both\", \"state\": \"DIRTY\"}, \n{\"name\": \"soap\", \"state\": \"GRABBED\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"soap\"}\n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab soap\"}, \n{\"action\": \"WASH\", \"description\": \"wash hands with soap\"}, \n{\"action\": \"RELEASE\", \"description\": \"drop soap\"}\n]\n}"
+    },
+    {
+        "identifier": "562_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"hands_both\", \"state\": \"WET\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch faucet on\"}, {\"action\": \"GRAB\", \"description\": \"hold out hands\"}, {\"action\": \"TOUCH\", \"description\": \"get hands wet\"}] }"
+    },
+    {
+        "identifier": "580_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the soap\"}, {\"action\": \"SQUEEZE\", \"description\": \"squeeze some soap onto hands\"}, {\"action\": \"WASH\", \"description\": \"wash hands briefly\"}, {\"action\": \"RINSE\", \"description\": \"rinse hands briefly\"}, {\"action\": \"Wipe\", \"description\": \"wipe hands on a towel\"}] }"
+    },
+    {
+        "identifier": "657_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"DIRTY\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards bathroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at faucet\"}, {\"action\": \"SWITCHON\", \"description\": \"switch faucet on\"}, {\"action\": \"GRAB\", \"description\": \"grab hands\"}, {\"action\": \"WET\", \"description\": \"wet hands\"}, {\"action\": \"APPLY\", \"description\": \"apply soap\"}, {\"action\": \"RUB\", \"description\": \"rub hands\"}, {\"action\": \"RINSE\", \"description\": \"rinse hands\"}, {\"action\": \"SWITCHOFF\", \"description\": \"switch faucet off\"}, {\"action\": \"DRY\", \"description\": \"dry hands\"}] }"
+    },
+    {
+        "identifier": "660_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"DIRTY\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk towards sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"OPEN\", \"description\": \"open sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}, {\"action\": \"TURNON\", \"description\": \"switch sth on\"}, {\"action\": \"PUSH\", \"description\": \"move sth\"}, {\"action\": \"SCRUB\", \"description\": \"scrub sth\"}, {\"action\": \"RINSE\", \"description\": \"rinse sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}, {\"action\": \"SWITCHOFF\", \"description\": \"switch sth off\"}] }"
+    },
+    {
+        "identifier": "672_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"towel\", \"state\": \"GRABBED\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"hands_both\", \"state\": \"DIRTY\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the towel\"}, {\"action\": \"OPEN\", \"description\": \"open the faucet\"}, {\"action\": \"GRAB\", \"description\": \"grab the soap\"}, {\"action\": \"GRAB\", \"description\": \"grab the hands\"}, {\"action\": \"WASH\", \"description\": \"wash the hands with soap\"}, {\"action\": \"RELEASE\", \"description\": \"release the hands\"}, {\"action\": \"GRAB\", \"description\": \"grab the towel again\"}, {\"action\": \"WIPE\", \"description\": \"wipe the hands with the towel\"}] }"
+    },
+    {
+        "identifier": "710_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"WALK\", \"description\": \"walk to sink\"}, {\"action\": \"TURN_ON\", \"description\": \"turn on the water\"}, {\"action\": \"GRAB\", \"description\": \"grab the soap\"}, {\"action\": \"WASH\", \"description\": \"wash the hands\"}] }"
+    },
+    {
+        "identifier": "741_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"WASH\", \"description\": \"wash sth\"}, {\"action\": \"PUTBACK\", \"description\": \"put object A back to object B\"}, {\"action\": \"RELEASE\", \"description\": \"drop sth inside the current room\"}] }"
+    },
+    {
+        "identifier": "750_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"DIRTY\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab soap\"}, {\"action\": \"TURNON\", \"description\": \"turn on the water\"}, {\"action\": \"WET\", \"description\": \"wet your hands\"}, {\"action\": \"RUB\", \"description\": \"rub hands together so that the soap lathers\"}, {\"action\": \"RINSE\", \"description\": \"rinse off the soap with water\"}, {\"action\": \"TOFF\", \"description\": \"turn off the sink\"}, {\"action\": \"DRY\", \"description\": \"dry your hands with a towel\"}] }"
+    },
+    {
+        "identifier": "805_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"soap\", \"state\": \"GRABBED\"}, {\"name\": \"towel\", \"state\": \"GRABBED\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"sink\", \"state\": \"OCCUPIED\"}, {\"name\": \"soap\", \"state\": \"WET\"}, {\"name\": \"towel\", \"state\": \"WET\"}, {\"name\": \"faucet\", \"state\": \"OFF\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into the bathroom\"}, {\"action\": \"WALK\", \"description\": \"walk to the sink\"}, {\"action\": \"TURNON\", \"description\": \"turn on tap\"}, {\"action\": \"GRAB\", \"description\": \"get soap\"}, {\"action\": \"WASH\", \"description\": \"wash and rinse hands\"}, {\"action\": \"TURNOFF\", \"description\": \"turn off tap\"}, {\"action\": \"GRAB\", \"description\": \"dry hands\"}] }"
+    },
+    {
+        "identifier": "80_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the sink\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the faucet\"}, {\"action\": \"GRAB\", \"description\": \"put soap on hands\"}, {\"action\": \"TOUCH\", \"description\": \"rub hands together under the water\"}, {\"action\": \"WASH\", \"description\": \"rinse off hands\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off faucet\"}, {\"action\": \"DRY\", \"description\": \"dry hands\"}] }"
+    },
+    {
+        "identifier": "813_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the water\"}, {\"action\": \"WASH\", \"description\": \"wash hands\"}] }"
+    },
+    {
+        "identifier": "928_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}, {\"action\": \"SCRUB\", \"description\": \"scrub sth\"}] }"
+    },
+    {
+        "identifier": "995_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"hands_both\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}] }"
+    },
+    {
+        "identifier": "1035_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "113_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "12_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "137_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TOUCH\", \"description\": \"stimulate a feline tactily\"}] }"
+    },
+    {
+        "identifier": "203_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PET\", \"description\": \"pet the cat\"}] }"
+    },
+    {
+        "identifier": "220_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"PET\", \"description\": \"pet sth gently\"}] }"
+    },
+    {
+        "identifier": "242_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TOUCH\", \"description\": \"pet the cat by touching it\"}, {\"action\": \"FIND\", \"description\": \"find the cat\"}] }"
+    },
+    {
+        "identifier": "279_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at the cat\"}, {\"action\": \"GRAB\", \"description\": \"graph the cat\"}, {\"action\": \"PET\", \"description\": \"pet the cat\"}] }"
+    },
+    {
+        "identifier": "287_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "292_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"CLEAN\"},\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"couch\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"hair\"}\n],\n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on sth\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"},\n{\"action\": \"GRAB\", \"description\": \"graph sth\"}\n]\n}"
+    },
+    {
+        "identifier": "297_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "381_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "388_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"FIND\", \"description\": \"find and get near to sth\"},\n{\"action\": \"GRAB\", \"description\": \"graph sth\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}\n]\n}"
+    },
+    {
+        "identifier": "38_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"PET\", \"description\": \"pet sth\"}] }"
+    },
+    {
+        "identifier": "429_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"CLEAN\"},\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"cat\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cat\"}\n],\n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on sth\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"},\n{\"action\": \"TOUCH\", \"description\": \"touch sth\"}\n]\n}"
+    },
+    {
+        "identifier": "437_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"},\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"cat\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cat\"}\n],\n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on sth\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"},\n{\"action\": \"TOUCH\", \"description\": \"touch sth\"}\n]\n}"
+    },
+    {
+        "identifier": "451_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PET\", \"description\": \"pet the cat\"}] }"
+    },
+    {
+        "identifier": "469_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cat\"}], \"action goals\": [{\"action\": \"PET\", \"description\": \"pet the cat\"}] }"
+    },
+    {
+        "identifier": "479_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"TOUCH\", \"description\": \"pet the cat\"}] }"
+    },
+    {
+        "identifier": "502_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "612_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cat\", \"state\": \"PLEASED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth for long\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth for long\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth for long\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "856_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"cat\", \"state\": \"PLEASED\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"couch\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cat\"}\n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk into bedroom and to the sofa\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the sofa\"}, \n{\"action\": \"TOUCH\", \"description\": \"touch cat\"}\n]\n}"
+    },
+    {
+        "identifier": "384_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"desk\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the computer at the desk in my home office\"}, {\"action\": \"SIT\", \"description\": \"sit in the chair\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the computer\"}, {\"action\": \"TYPE\", \"description\": \"type in the address\"}, {\"action\": \"WATCH\", \"description\": \"view the computer\"}] }"
+    },
+    {
+        "identifier": "540_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"phone\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up my phone\"}, {\"action\": \"TOUCH\", \"description\": \"touch it to navigate to the web browser\"}, {\"action\": \"LOOKAT\", \"description\": \"read or watch the content within those websites\"}] }"
+    },
+    {
+        "identifier": "60_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"laptop\", \"state\": \"ON\"}, {\"name\": \"laptop\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"GRABBED\"}, {\"name\": \"keyboard\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on laptop\"}, {\"action\": \"GRAB\", \"description\": \"grab mouse and keyboard\"}, {\"action\": \"LOOKAT\", \"description\": \"look at laptop\"}] }"
+    },
+    {
+        "identifier": "71_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"mouse\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"computer\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the computer\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the computer\"}, {\"action\": \"TYPE\", \"description\": \"type on the keyboard\"}] }"
+    },
+    {
+        "identifier": "7_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"computer\", \"state\": \"ON\"}, {\"name\": \"mouse\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"keyboard\", \"state\": \"PLUGGED_IN\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch computer on\"}, {\"action\": \"GRAB\", \"description\": \"grab mouse\"}, {\"action\": \"TYPE\", \"description\": \"type on keyboard\"}] }"
+    },
+    {
+        "identifier": "1070_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toothbrush\", \"state\": \"GRABBED\"}, {\"name\": \"tooth_paste\", \"state\": \"GRABBED\"}, {\"name\": \"teeth\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the toothbrush from the toothbrush holder\"}, {\"action\": \"FIND\", \"description\": \"find the toothpaste\"}, {\"action\": \"SQUEEZE\", \"description\": \"squeeze the toothpaste into toothbrush\"}, {\"action\": \"WASH\", \"description\": \"wash the teeth\"}] }"
+    },
+    {
+        "identifier": "313_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toothbrush\", \"state\": \"CLEAN\"}, {\"name\": \"teeth\", \"state\": \"CLEAN\"}, {\"name\": \"tooth_paste\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab toothbrush\"}, {\"action\": \"GRAB\", \"description\": \"grab tooth_paste\"}, {\"action\": \"GRAB\", \"description\": \"grab teeth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at teeth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at toothbrush\"}, {\"action\": \"LOOKAT\", \"description\": \"look at tooth_paste\"}, {\"action\": \"OPEN\", \"description\": \"open tooth_paste\"}, {\"action\": \"TOUCH\", \"description\": \"touch teeth\"}, {\"action\": \"TOUCH\", \"description\": \"touch toothbrush\"}, {\"action\": \"TOUCH\", \"description\": \"touch tooth_paste\"}, {\"action\": \"PUTBACK\", \"description\": \"put toothbrush back\"}, {\"action\": \"PUTBACK\", \"description\": \"put tooth_paste back\"}, {\"action\": \"PUTBACK\", \"description\": \"put teeth back\"}] }"
+    },
+    {
+        "identifier": "689_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"toothbrush\", \"state\": \"GRABBED\"},\n{\"name\": \"tooth_paste\", \"state\": \"GRABBED\"},\n{\"name\": \"toothbrush_holder\", \"state\": \"OCCUPIED\"},\n{\"name\": \"character\", \"state\": \"SITTING\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"toothbrush\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_LH\", \"to_name\": \"tooth_paste\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"toothbrush_holder\"}\n],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab toothbrush\"},\n{\"action\": \"GRAB\", \"description\": \"grab tooth_paste\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at toothbrush_holder\"}\n]\n}"
+    },
+    {
+        "identifier": "718_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"toothbrush\", \"state\": \"GRABBED\"}, {\"name\": \"tooth_paste\", \"state\": \"GRABBED\"}, {\"name\": \"toothbrush\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph toothbrush\"}, {\"action\": \"GRAB\", \"description\": \"graph tooth_paste\"}, {\"action\": \"OPEN\", \"description\": \"open tooth_paste\"}, {\"action\": \"LOOKAT\", \"description\": \"look at toothbrush\"}, {\"action\": \"LOOKAT\", \"description\": \"look at tooth_paste\"}, {\"action\": \"TOUCH\", \"description\": \"touch toothbrush\"}, {\"action\": \"TOUCH\", \"description\": \"touch tooth_paste\"}, {\"action\": \"PUTIN\", \"description\": \"put toothbrush back to its original place\"}, {\"action\": \"PUTIN\", \"description\": \"put tooth_paste back to its original place\"}] }"
+    },
+    {
+        "identifier": "1049_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"dvd_player\", \"state\": \"ON\"}, \n{\"name\": \"dvd_player\", \"state\": \"OPEN\"}, \n{\"name\": \"dvd_player\", \"state\": \"PLUGGED_IN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}\n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to living room\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at the DVD player\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on the DVD player\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at the sofa\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the sofa\"}, \n{\"action\": \"LISTEN\", \"description\": \"listen the music\"}\n] \n}"
+    },
+    {
+        "identifier": "113_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"PLAY\", \"description\": \"play sth\"}] }"
+    },
+    {
+        "identifier": "161_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch stereo on\"}] }"
+    },
+    {
+        "identifier": "173_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"cd_player\", \"state\": \"ON\"}, \n{\"name\": \"cd_player\", \"state\": \"OPEN\"}, \n{\"name\": \"cd_player\", \"state\": \"PLUGGED_IN\"}, \n{\"name\": \"headset\", \"state\": \"GRABBED\"} \n], \n\"edge goals\": [\n{\"from_name\": \"cd_player\", \"relation\": \"ON\", \"to_name\": \"headset\"}, \n{\"from_name\": \"cd_player\", \"relation\": \"OPEN\", \"to_name\": \"headset\"} \n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"find and get near to headset\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at cd_player\"} \n] \n}"
+    },
+    {
+        "identifier": "23_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "263_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch stereo on\"}, {\"action\": \"OPEN\", \"description\": \"open stereo\"}] }"
+    },
+    {
+        "identifier": "305_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"mouse\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"chair\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch stereo on\"}, {\"action\": \"SIT\", \"description\": \"sit on chair\"}, {\"action\": \"LOOKAT\", \"description\": \"look at stereo\"}] }"
+    },
+    {
+        "identifier": "363_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"music_player\", \"state\": \"ON\"}, {\"name\": \"music_player\", \"state\": \"OPEN\"}, {\"name\": \"music_player\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to Living room\"}, {\"action\": \"GRAB\", \"description\": \"grab the music player\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the player\"}, {\"action\": \"PUTIN\", \"description\": \"put CD into the player\"}, {\"action\": \"SIT\", \"description\": \"sit in the chair\"}, {\"action\": \"LISTEN\", \"description\": \"listen to music\"}] }"
+    },
+    {
+        "identifier": "385_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick CD\"}, {\"action\": \"PUTIN\", \"description\": \"put CD in CD player\"}, {\"action\": \"SWITCHON\", \"description\": \"play music\"}] }"
+    },
+    {
+        "identifier": "403_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "415_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"ON\"}, {\"name\": \"headset\", \"state\": \"ON\"}, {\"name\": \"headset\", \"state\": \"GRABBED\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"headset\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_LH\", \"to_name\": \"phone\"}], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to telephone\"}, {\"action\": \"GRAB\", \"description\": \"graph telephone\"}, {\"action\": \"FIND\", \"description\": \"find and get near to headset\"}, {\"action\": \"PUTON\", \"description\": \"put on headset\"}, {\"action\": \"LOOKAT\", \"description\": \"look at telephone and listen to music\"}] }"
+    },
+    {
+        "identifier": "462_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}, {\"name\": \"headset\", \"state\": \"ON\"}, {\"name\": \"headset\", \"state\": \"GRABBED\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to my bedroom\"}, {\"action\": \"LOOKAT\", \"description\": \"locate my stereo\"}, {\"action\": \"GRAB\", \"description\": \"put on my headphones\"}, {\"action\": \"SIT\", \"description\": \"sit to listen\"}] }"
+    },
+    {
+        "identifier": "463_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "503_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cd_player\", \"state\": \"ON\"}, {\"name\": \"cd_player\", \"state\": \"OPEN\"}, {\"name\": \"remote_control\", \"state\": \"ON\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"CLOSE\", \"to_name\": \"chair\"}, {\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"remote_control\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to CD player\"}, {\"action\": \"TURNON\", \"description\": \"turn CD player on\"}, {\"action\": \"SIT\", \"description\": \"sit in a chair\"}, {\"action\": \"TURNON\", \"description\": \"turn remote control on\"}] }"
+    },
+    {
+        "identifier": "59_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"phone\", \"state\": \"ON\"}, {\"name\": \"headset\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"GRAB\", \"description\": \"grab cellphone\"}, {\"action\": \"GRAB\", \"description\": \"grab headset\"}, {\"action\": \"PUTON\", \"description\": \"put on headset\"}, {\"action\": \"TYPE\", \"description\": \"type with cellphone\"}] }"
+    },
+    {
+        "identifier": "737_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}] }"
+    },
+    {
+        "identifier": "773_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}, {\"name\": \"stereo\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the stereo\"}, {\"action\": \"OPEN\", \"description\": \"open the stereo\"}, {\"action\": \"FIND\", \"description\": \"find a station that you like by switching through the channels\"}] }"
+    },
+    {
+        "identifier": "910_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"stereo\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch stereo on\"}] }"
+    },
+    {
+        "identifier": "953_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"music_stand\", \"state\": \"OPEN\"},\n{\"name\": \"cd_player\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"TO\", \"to_name\": \"music_stand\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"music_stand\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cd_player\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the living\"},\n{\"action\": \"TURNTO\", \"description\": \"turn to the music stand\"},\n{\"action\": \"SWITCHON\", \"description\": \"switch on the CD player\"}\n]\n}"
+    },
+    {
+        "identifier": "1057_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to remote_control\"}, {\"action\": \"GRAB\", \"description\": \"graph remote_control\"}, {\"action\": \"SWITCHON\", \"description\": \"switch television on (normally lamp/light)\"}, {\"action\": \"LOOKAT\", \"description\": \"look at television, face television\"}] }"
+    },
+    {
+        "identifier": "117_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up the remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the television\"}, {\"action\": \"LOOKAT\", \"description\": \"aim the remote at the television\"}, {\"action\": \"SWITCHON\", \"description\": \"press the power button\"}, {\"action\": \"FLIP_CHANNELS\", \"description\": \"flip the channels\"}] }"
+    },
+    {
+        "identifier": "134_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "170_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"GRAB\", \"description\": \"grab the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"GRAB\", \"description\": \"grab the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"GRAB\", \"description\": \"grab the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"GRAB\", \"description\": \"grab the TV remote\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, {\"action\": \"GRAB\", \"description\": \"grab the TV remote\"}, {\"action\": \"LOOKAT\", \"description:"
+    },
+    {
+        "identifier": "197_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"SWITCHON\", \"description\": \"switch sth on (normally lamp/light)\"}, {\"action\": \"WATCH\", \"description\": \"watch sth\"}] }"
+    },
+    {
+        "identifier": "21_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": []}, {\"name\": \"table\", \"state\": \"FREE\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"television\", \"state\": [\"ON\", \"CLEAN\", \"PLUGGED_IN\"]}, {\"name\": \"dining_room\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}, {\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"}], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on couch\"}, {\"action\": \"GRAB\", \"description\": \"grab remote control\"}, {\"action\": \"LOOKAT\", \"description\": \"look at television\"}] }"
+    },
+    {
+        "identifier": "225_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"coffee_table\", \"state\": \"CLEAN\"},\n{\"name\": \"remote_control\", \"state\": \"ON\"},\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"},\n{\"from_name\": \"remote_control\", \"relation\": \"HOLDS_RH\", \"to_name\": \"character\"},\n{\"from_name\": \"remote_control\", \"relation\": \"ON\", \"to_name\": \"television\"},\n{\"from_name\": \"television\", \"relation\": \"ON\", \"to_name\": \"remote_control\"}\n],\n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit down\"},\n{\"action\": \"SWITCHON\", \"description\": \"turn on the TV with the remote control\"}\n]\n}"
+    },
+    {
+        "identifier": "259_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"CLEAN\"},\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"remote_control\", \"state\": \"GRABBED\"},\n{\"name\": \"television\", \"state\": \"ON\"},\n{\"name\": \"dining_room\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"},\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"}\n],\n\"action goals\": [\n{\"action\": \"STANDUP\", \"description\": \"stand up\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at television\"},\n{\"action\": \"GRAB\", \"description\": \"grab remote control\"},\n{\"action\": \"SWITCHON\", \"description\": \"switch on television\"}\n]\n}"
+    },
+    {
+        "identifier": "307_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}, {\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"find and get near to the remote control\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the television\"}, {\"action\": \"SWITCHON\", \"description\": \"switch the television on\"}]}"
+    },
+    {
+        "identifier": "329_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"ON\"}, {\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"WALK\", \"description\": \"walk to TV\"}, {\"action\": \"GRAB\", \"description\": \"grab TV remote\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on TV\"}, {\"action\": \"PUTDOWN\", \"description\": \"put down the remote\"}, {\"action\": \"WALK\", \"description\": \"walk to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit in sofa\"}, {\"action\": \"LOOKAT\", \"description\": \"watch TV\"}] }"
+    },
+    {
+        "identifier": "342_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"television\", \"state\": \"ON\"}, \n{\"name\": \"television\", \"state\": \"PLUGGED_IN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}\n], \n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on the couch\"}, \n{\"action\": \"LOOKAT\", \"description\": \"find a show\"}, \n{\"action\": \"WATCH\", \"description\": \"watch it\"}\n]\n}"
+    },
+    {
+        "identifier": "377_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"television\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch television on\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the screen\"}] }"
+    },
+    {
+        "identifier": "383_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"television\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into the living room\"}, {\"action\": \"SIT\", \"description\": \"sit down on the sofa\"}, {\"action\": \"GRAB\", \"description\": \"pick up the remote control\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the television with the remote control\"}, {\"action\": \"PUTDOWN\", \"description\": \"put down the remote control\"}, {\"action\": \"WATCH\", \"description\": \"watch the television\"}] }"
+    },
+    {
+        "identifier": "411_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to Living room\"}, {\"action\": \"FIND\", \"description\": \"find Television\"}, {\"action\": \"WALK\", \"description\": \"walk to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit on sofa\"}, {\"action\": \"FIND\", \"description\": \"find Remote\"}, {\"action\": \"GRAB\", \"description\": \"grab remote\"}, {\"action\": \"TURNTO\", \"description\": \"turn to television\"}, {\"action\": \"LOOKAT\", \"description\": \"look at television\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on Television\"}] }"
+    },
+    {
+        "identifier": "454_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"},\n{\"name\": \"remote_control\", \"state\": \"GRABBED\"},\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the living room\"},\n{\"action\": \"GRAB\", \"description\": \"grab the remote and turn on the television\"},\n{\"action\": \"SIT\", \"description\": \"sit on the sofa\"}\n]\n}"
+    },
+    {
+        "identifier": "459_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"},\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"remote_control\", \"state\": \"GRABBED\"},\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}\n],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"pick up the remote control\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at the guide button\"},\n{\"action\": \"CLICK\", \"description\": \"click the channel button\"}\n]\n}"
+    },
+    {
+        "identifier": "548_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch on the TV with remote control\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}] }"
+    },
+    {
+        "identifier": "595_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"},\n{\"name\": \"character\", \"state\": []},\n{\"name\": \"remote_control\", \"state\": \"GRABBED\"},\n{\"name\": \"coffee_table\", \"state\": \"OCCUPIED\"},\n{\"name\": \"television\", \"state\": \"ON\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"couch\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"},\n{\"from_name\": \"character\", \"relation\": \"CLOSE\", \"to_name\": \"coffee_table\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}\n],\n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on the couch\"},\n{\"action\": \"GRAB\", \"description\": \"pick up the remote control\"},\n{\"action\": \"PUTDOWN\", \"description\": \"put down the remote control on the coffee table\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at the television\"}\n]\n}"
+    },
+    {
+        "identifier": "684_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick it up\"}, {\"action\": \"LOOKAT\", \"description\": \"turn in the tv\"}, {\"action\": \"WATCH\", \"description\": \"watch\"}] }"
+    },
+    {
+        "identifier": "74_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}, {\"name\": \"remote_control\", \"state\": \"GRABBED\"}, {\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}, {\"from_name\": \"character\", \"relation\": \"CLOSE\", \"to_name\": \"couch\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab TV remote\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on TV\"}, {\"action\": \"SIT\", \"description\": \"sit down on the sofa\"}, {\"action\": \"LOOKAT\", \"description\": \"look at TV\"}] }"
+    },
+    {
+        "identifier": "806_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"remote_control\", \"state\": \"GRABBED\"}, \n{\"name\": \"television\", \"state\": \"ON\"}, \n{\"name\": \"dining_room\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"remote_control\"}, \n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}\n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"pick up the remote\"}, \n{\"action\": \"WALK\", \"description\": \"walk to the couch\"}, \n{\"action\": \"SIT\", \"description\": \"sit in the couch\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at the TV\"}, \n{\"action\": \"SWITCHON\", \"description\": \"turn on the TV\"}\n]\n}"
+    },
+    {
+        "identifier": "98_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch television on\"}] }"
+    },
+    {
+        "identifier": "1064_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab water_glass\"}, {\"action\": \"DRINK\", \"description\": \"drink water_glass\"}, {\"action\": \"RELEASE\", \"description\": \"release water_glass\"}] }"
+    },
+    {
+        "identifier": "156_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cup\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the cup\"}, {\"action\": \"POUR\", \"description\": \"pour water from the cup\"}, {\"action\": \"RELEASE\", \"description\": \"release the cup\"}] }"
+    },
+    {
+        "identifier": "171_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cup\", \"state\": \"GRABBED\"}, {\"name\": \"cup\", \"state\": \"FULL\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cup\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab a cup from the cupboard\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the sink\"}, {\"action\": \"PUT\", \"description\": \"put cup under faucet\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on faucet til cup is full\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off faucet\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the cup\"}, {\"action\": \"TOUCH\", \"description\": \"drink from cup\"}] }"
+    },
+    {
+        "identifier": "175_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"faucet\", \"state\": \"ON\"}, \n{\"name\": \"faucet\", \"state\": \"OPEN\"}, \n{\"name\": \"cup\", \"state\": \"CLEAN\"}, \n{\"name\": \"cup\", \"state\": \"FULL\"}, \n{\"name\": \"kitchen_counter\", \"state\": \"FREE\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"kitchen_counter\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cup\"}\n], \n\"action goals\": [\n{\"action\": \"FIND\", \"description\": \"find and get near to cup\"}, \n{\"action\": \"GRAB\", \"description\": \"graph cup\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at cup, face cup\"}, \n{\"action\": \"OPEN\", \"description\": \"open faucet\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at faucet, face faucet\"}, \n{\"action\": \"FILL\", \"description\": \"fill cup with water\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at cup, face cup\"}, \n{\"action\": \"DRINK\", \"description\": \"drink up cup\"}\n]\n}"
+    },
+    {
+        "identifier": "181_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"water_glass\", \"state\": \"GRABBED\"},\n{\"name\": \"water\", \"state\": \"COLD\"},\n{\"name\": \"water_glass\", \"state\": \"FULL\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water_glass\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"kitchen\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water\"}\n],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"find and get near to water glass\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at fridge\"},\n{\"action\": \"OPEN\", \"description\": \"open fridge\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at water\"},\n{\"action\": \"GRAB\", \"description\": \"find and get near to water\"},\n{\"action\": \"POUR\", \"description\": \"pour object A into object B\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at water_glass\"},\n{\"action\": \"DRINK\", \"description\": \"drink up sth\"}\n]\n}"
+    },
+    {
+        "identifier": "26_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cup\", \"state\": \"FULL\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the cup\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the cup\"}, {\"action\": \"POUR\", \"description\": \"pour water into the cup\"}, {\"action\": \"GRAB\", \"description\": \"grab the cup again\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the cup again\"}, {\"action\": \"MOVE\", \"description\": \"move to the living room\"}, {\"action\": \"SIT\", \"description\": \"sit down\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the cup again\"}, {\"action\": \"TOUCH\", \"description\": \"touch the cup and drink from it\"}] }"
+    },
+    {
+        "identifier": "286_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"CLEAN\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}, {\"name\": \"water_glass\", \"state\": \"HOT\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab a waterglass from the cupboard\"}, {\"action\": \"OPEN\", \"description\": \"open the fridge\"}, {\"action\": \"POUR\", \"description\": \"pour the water into the cup\"}, {\"action\": \"DRINK\", \"description\": \"drink it\"}] }"
+    },
+    {
+        "identifier": "291_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab water_glass\"}, {\"action\": \"LOOKAT\", \"description\": \"look at water_glass\"}, {\"action\": \"DRINK\", \"description\": \"drink water from water_glass\"}] }"
+    },
+    {
+        "identifier": "317_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"cup\", \"state\": \"GRABBED\"}, \n{\"name\": \"cup\", \"state\": \"FULL\"}, \n{\"name\": \"faucet\", \"state\": \"ON\"}, \n{\"name\": \"faucet\", \"state\": \"OFF\"}, \n{\"name\": \"cup\", \"state\": \"HOT\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cup\"}, \n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"sink\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"faucet\"}\n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab the cup\"}, \n{\"action\": \"WALK\", \"description\": \"walk to the sink\"}, \n{\"action\": \"OPEN\", \"description\": \"open the faucet using the cold water handle\"}, \n{\"action\": \"PUTIN\", \"description\": \"put the cup under the running water\"}, \n{\"action\": \"TURNOFF\", \"description\": \"turn off the cold water handle\"}, \n{\"action\": \"LOOKAT\", \"description\": \"bring the cup to the mouth and take a drink\"}\n]\n}"
+    },
+    {
+        "identifier": "488_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"cup\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"COLD\"}, {\"name\": \"sink\", \"state\": \"CLEAN\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"cup\"}, {\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"sink\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab a glass\"}, {\"action\": \"WALK\", \"description\": \"walk to sink\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sink\"}, {\"action\": \"LOOKAT\", \"description\": \"look at tap\"}, {\"action\": \"TOUCH\", \"description\": \"touch tap\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on tap\"}, {\"action\": \"LOOKAT\", \"description\": \"look at glass\"}, {\"action\": \"TOUCH\", \"description\": \"touch glass\"}, {\"action\": \"POUR\", \"description\": \"pour water into glass\"}, {\"action\": \"LOOKAT\", \"description\": \"look at glass\"}, {\"action\": \"TOUCH\", \"description\": \"touch glass\"}, {\"action\": \"DRINK\", \"description\": \"drink from glass\"}] }"
+    },
+    {
+        "identifier": "510_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"drinking_glass\", \"state\": \"FULL\"}, {\"name\": \"water\", \"state\": \"COLD\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"take a glass out of the cabinet\"}, {\"action\": \"WALK\", \"description\": \"walk to the sink\"}, {\"action\": \"OPEN\", \"description\": \"turn the water on and fill the glass\"}, {\"action\": \"LOOKAT\", \"description\": \"take a drink\"}] }"
+    },
+    {
+        "identifier": "528_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"drinking_glass\", \"state\": \"FULL\"},\n{\"name\": \"water\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab the drinking_glass\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at the water\"},\n{\"action\": \"POUR\", \"description\": \"pour the water into the drinking_glass\"}\n]\n}"
+    },
+    {
+        "identifier": "532_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"drinking_glass\", \"state\": \"CLEAN\"}, {\"name\": \"drinking_glass\", \"state\": \"FULL\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab a drinking glass\"}, {\"action\": \"OPEN\", \"description\": \"open the cabinet containing the drinking glasses\"}, {\"action\": \"CLOSE\", \"description\": \"close the cabinet\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the sink\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the faucet\"}, {\"action\": \"TOUCH\", \"description\": \"touch the glass under the stream of water\"}, {\"action\": \"RELEASE\", \"description\": \"drop the glass away from the stream of water\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the glass\"}, {\"action\": \"TOUCH\", \"description\": \"touch the glass to bring it to mouth\"}, {\"action\": \"RELEASE\", \"description\": \"drop the glass after drinking\"}] }"
+    },
+    {
+        "identifier": "589_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"POUR\", \"description\": \"pour object A into object B\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}] }"
+    },
+    {
+        "identifier": "600_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"water_glass\", \"state\": \"FULL\"},\n{\"name\": \"water_glass\", \"state\": \"GRABBED\"},\n{\"name\": \"water_glass\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"kitchen\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water_glass\"},\n{\"from_name\": \"water_glass\", \"relation\": \"INSIDE\", \"to_name\": \"kitchen\"},\n{\"from_name\": \"water_glass\", \"relation\": \"INSIDE\", \"to_name\": \"fridge\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to kitchen\"},\n{\"action\": \"FIND\", \"description\": \"find fridge\"},\n{\"action\": \"OPEN\", \"description\": \"open fridge\"},\n{\"action\": \"FIND\", \"description\": \"find water glass\"},\n{\"action\": \"DRINK\", \"description\": \"drink from water glass\"}\n]\n}"
+    },
+    {
+        "identifier": "662_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"COLD\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to kitchen\"}, {\"action\": \"FIND\", \"description\": \"find water glass\"}, {\"action\": \"GRAB\", \"description\": \"grab water glass\"}, {\"action\": \"FIND\", \"description\": \"find water\"}, {\"action\": \"POUR\", \"description\": \"pour water in water glass\"}, {\"action\": \"DRINK\", \"description\": \"drink water from water glass\"}] }"
+    },
+    {
+        "identifier": "688_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"CLEAN\"}, {\"name\": \"water\", \"state\": \"CLEAN\"}, {\"name\": \"faucet\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the water_glass\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the sink\"}, {\"action\": \"OPEN\", \"description\": \"open the faucet\"}, {\"action\": \"POUR\", \"description\": \"pour water from the faucet into the water_glass\"}] }"
+    },
+    {
+        "identifier": "787_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"GRABBED\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find a cup\"}, {\"action\": \"GRAB\", \"description\": \"pick up the cup\"}, {\"action\": \"FIND\", \"description\": \"find the water faucet\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on the water faucet\"}, {\"action\": \"FILL\", \"description\": \"fill the cup\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off the water faucet\"}, {\"action\": \"DRINK\", \"description\": \"drink the water\"}] }"
+    },
+    {
+        "identifier": "788_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_cabinet\", \"state\": \"OPEN\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"drinking_glass\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the drinking glass\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the drinking glass\"}, {\"action\": \"TOUCH\", \"description\": \"touch the drinking glass\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the faucet\"}, {\"action\": \"TOUCH\", \"description\": \"touch the faucet\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the kitchen cabinet\"}, {\"action\": \"TOUCH\", \"description\": \"touch the kitchen cabinet\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the character\"}, {\"action\": \"TOUCH\", \"description\": \"touch the character\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the kitchen counter\"}, {\"action\": \"TOUCH\", \"description\": \"touch the kitchen counter\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the sink\"}, {\"action\": \"TOUCH\", \"description\": \"touch the sink\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the water\"}, {\"action\": \"TOUCH\", \"description\": \"touch the water\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the bathroom\"}, {\"action\": \"TOUCH\", \"description\": \"touch the bathroom\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the dining room\"}, {\"action\": \"TOUCH\", \"description\": \"touch the dining room\"}] }"
+    },
+    {
+        "identifier": "814_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"GRABBED\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}, {\"name\": \"water_glass\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the water glass\"}, {\"action\": \"FILL\", \"description\": \"fill the glass with water\"}, {\"action\": \"DRINK\", \"description\": \"drink water\"}] }"
+    },
+    {
+        "identifier": "850_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"OPEN\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}], \"edge goals\": [{\"from_name\": \"faucet\", \"relation\": \"ON\", \"to_name\": \"faucet\"}, {\"from_name\": \"faucet\", \"relation\": \"OPEN\", \"to_name\": \"faucet\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water_glass\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up a water glass\"}, {\"action\": \"LOOKAT\", \"description\": \"bring the glass of water to lips\"}, {\"action\": \"DRINK\", \"description\": \"drink up sth\"}] }"
+    },
+    {
+        "identifier": "861_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_counter\", \"state\": \"OPEN\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"water\", \"state\": \"COLD\"}, {\"name\": \"cup\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open the faucet\"}, {\"action\": \"GRAB\", \"description\": \"get the cup\"}, {\"action\": \"POUR\", \"description\": \"pour water in the cup\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off the faucet\"}, {\"action\": \"LOOKAT\", \"description\": \"drink the water\"}] }"
+    },
+    {
+        "identifier": "878_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"water_glass\", \"state\": \"GRABBED\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}, {\"name\": \"water_glass\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"get a cup\"}, {\"action\": \"FILL\", \"description\": \"fill cup\"}, {\"action\": \"DRINK\", \"description\": \"drink up sth\"}] }"
+    },
+    {
+        "identifier": "1073_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"character\", \"state\": \"SITTING\"},\n{\"name\": \"novel\", \"state\": \"OPEN\"},\n{\"name\": \"chair\", \"state\": \"OCCUPIED\"},\n{\"name\": \"light\", \"state\": \"ON\"},\n{\"name\": \"home_office\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"},\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"novel\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}\n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to home office\"},\n{\"action\": \"SWITCHON\", \"description\": \"turn on light\"},\n{\"action\": \"GRAB\", \"description\": \"grab a book\"},\n{\"action\": \"SIT\", \"description\": \"sit in chair\"},\n{\"action\": \"READ\", \"description\": \"start to read the book\"}\n] \n}"
+    },
+    {
+        "identifier": "1088_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}] }"
+    },
+    {
+        "identifier": "15_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"coffee_maker\", \"state\": \"ON\"}, {\"name\": \"coffee_maker\", \"state\": \"OPEN\"}, {\"name\": \"coffee_maker\", \"state\": \"PLUGGED_IN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch coffee maker on\"}, {\"action\": \"OPEN\", \"description\": \"open coffee maker\"}, {\"action\": \"PUTIN\", \"description\": \"put ground coffee in filter\"}, {\"action\": \"PUTIN\", \"description\": \"put filter in main basket\"}, {\"action\": \"PUTIN\", \"description\": \"fill reservoir with water\"}, {\"action\": \"PLUGIN\", \"description\": \"plug in the coffee maker\"}] }"
+    },
+    {
+        "identifier": "163_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}] }"
+    },
+    {
+        "identifier": "16_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"novel\", \"state\": \"OPEN\"},\n{\"name\": \"chair\", \"state\": \"OCCUPIED\"},\n{\"name\": \"coffee_table\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"},\n{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"},\n{\"from_name\": \"novel\", \"relation\": \"ON\", \"to_name\": \"coffee_table\"}\n],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"pick up a book from the coffee table\"},\n{\"action\": \"SIT\", \"description\": \"sit in the armchair\"},\n{\"action\": \"OPEN\", \"description\": \"open the book\"}\n]\n}"
+    },
+    {
+        "identifier": "192_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"novel\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"take a book from the shelf\"}, {\"action\": \"SIT\", \"description\": \"sit on sofa\"}, {\"action\": \"LOOKAT\", \"description\": \"start reading\"}] }"
+    },
+    {
+        "identifier": "208_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"floor_lamp\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"turn a light on\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the book\"}] }"
+    },
+    {
+        "identifier": "221_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}] }"
+    },
+    {
+        "identifier": "241_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up book\"}, {\"action\": \"OPEN\", \"description\": \"open book\"}, {\"action\": \"READ\", \"description\": \"read the book\"}] }"
+    },
+    {
+        "identifier": "341_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick my book\"}, {\"action\": \"LOOKAT\", \"description\": \"read a while\"}] }"
+    },
+    {
+        "identifier": "484_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up a book\"}, {\"action\": \"SIT\", \"description\": \"sit down in a chair\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the book\"}] }"
+    },
+    {
+        "identifier": "504_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"OPEN\", \"description\": \"open sth, as opposed to close sth\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}] }"
+    },
+    {
+        "identifier": "508_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"bedroom\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit down\"}, {\"action\": \"GRAB\", \"description\": \"pick up book\"}, {\"action\": \"LOOKAT\", \"description\": \"read book\"}] }"
+    },
+    {
+        "identifier": "544_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up your book\"}] }"
+    },
+    {
+        "identifier": "57_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the couch in the living room\"}, {\"action\": \"SIT\", \"description\": \"sit on the couch\"}, {\"action\": \"READ\", \"description\": \"read the book\"}] }"
+    },
+    {
+        "identifier": "617_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"bed\", \"state\": \"OCCUPIED\"}, {\"name\": \"bedroom\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the book out of the nightstand\"}, {\"action\": \"LIE\", \"description\": \"lay down in bed\"}, {\"action\": \"OPEN\", \"description\": \"open the book\"}, {\"action\": \"READ\", \"description\": \"read the book\"}] }"
+    },
+    {
+        "identifier": "628_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"take a book from the shelf\"}, {\"action\": \"SIT\", \"description\": \"sit in the sofa\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the book\"}] }"
+    },
+    {
+        "identifier": "688_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"spectacles\", \"state\": \"ON\"}, {\"name\": \"light\", \"state\": \"ON\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"spectacles\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}, {\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"light\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"put on reading glasses\"}, {\"action\": \"SWITCHON\", \"description\": \"turn the light by the couch on\"}, {\"action\": \"LOOKAT\", \"description\": \"look at the book\"}] }"
+    },
+    {
+        "identifier": "693_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find a book I like\"}, {\"action\": \"PULL\", \"description\": \"pull out a chair\"}, {\"action\": \"SIT\", \"description\": \"sit in it\"}, {\"action\": \"OPEN\", \"description\": \"open the book to read\"}] }"
+    },
+    {
+        "identifier": "821_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"chair\", \"state\": \"OCCUPIED\"}, {\"name\": \"table\", \"state\": \"FREE\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}, {\"from_name\": \"character\", \"relation\": \"SITTING\", \"to_name\": \"chair\"}, {\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"table\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "86_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"novel\", \"state\": \"OPEN\"},\n{\"name\": \"novel\", \"state\": \"GRABBED\"},\n{\"name\": \"novel\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"novel\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"novel\"}\n],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the Living Room\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at the Cabinet\"},\n{\"action\": \"FIND\", \"description\": \"find a Textbook\"},\n{\"action\": \"GRAB\", \"description\": \"grab the textbook\"},\n{\"action\": \"OPEN\", \"description\": \"open the Textbook\"},\n{\"action\": \"READ\", \"description\": \"read the textbook\"}\n] \n}"
+    },
+    {
+        "identifier": "896_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"bookmark\", \"state\": \"GRABBED\"}, {\"name\": \"couch\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to book\"}, {\"action\": \"GRAB\", \"description\": \"graph book\"}, {\"action\": \"SIT\", \"description\": \"sit on couch\"}, {\"action\": \"OPEN\", \"description\": \"open book\"}, {\"action\": \"READ\", \"description\": \"read something, need to hold the thing first\"}, {\"action\": \"CLOSE\", \"description\": \"close book after reading\"}] }"
+    },
+    {
+        "identifier": "897_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"light\", \"state\": \"ON\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN\"}, {\"name\": \"novel\", \"state\": \"OPEN\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"novel\", \"state\": \"CLEAN"
+    },
+    {
+        "identifier": "1083_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"oven\", \"state\": \"ON\"}, {\"name\": \"pot\", \"state\": \"OPEN\"}, {\"name\": \"food_vegetable\", \"state\": \"COOKED\"}, {\"name\": \"water\", \"state\": \"HOT\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"TOUCH\", \"to_name\": \"oven\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"pot\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"food_vegetable\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water\"}], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to kicthen\"}, {\"action\": \"FIND\", \"description\": \"find stove\"}, {\"action\": \"FIND\", \"description\": \"find cooking pot\"}, {\"action\": \"FIND\", \"description\": \"find vegetables\"}, {\"action\": \"FIND\", \"description\": \"find water\"}, {\"action\": \"PUTIN\", \"description\": \"put vegetables in cooking pot\"}, {\"action\": \"POUR\", \"description\": \"pour water to cooking pot\"}, {\"action\": \"PUTON\", \"description\": \"put cooking pot on stove\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on stove\"}] }"
+    },
+    {
+        "identifier": "392_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"freezer\", \"state\": \"OPEN\"}, {\"name\": \"pot\", \"state\": \"OPEN\"}, {\"name\": \"oven\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find fridge\"}, {\"action\": \"WALK\", \"description\": \"walk to fridge\"}, {\"action\": \"OPEN\", \"description\": \"open fridge\"}, {\"action\": \"FIND\", \"description\": \"find food\"}, {\"action\": \"GRAB\", \"description\": \"grab food\"}, {\"action\": \"CLOSE\", \"description\": \"close fridge door\"}, {\"action\": \"FIND\", \"description\": \"find frying pan\"}, {\"action\": \"WALK\", \"description\": \"walk to frying pan\"}, {\"action\": \"GRAB\", \"description\": \"grab frying pan\"}, {\"action\": \"FIND\", \"description\": \"find stove\"}, {\"action\": \"WALK\", \"description\": \"walk to stove\"}, {\"action\": \"PUTON\", \"description\": \"put frying pan on stove\"}, {\"action\": \"PUTIN\", \"description\": \"put food in frying pan\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on stove\"}] }"
+    },
+    {
+        "identifier": "755_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"oven\", \"state\": \"ON\"}, {\"name\": \"sauce_pan\", \"state\": \"CLEAN\"}, {\"name\": \"pasta\", \"state\": \"COOKED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the pasta\"}, {\"action\": \"PUTIN\", \"description\": \"put the pasta into the sauce_pan\"}, {\"action\": \"SWITCHON\", \"description\": \"switch the oven on\"}] }"
+    },
+    {
+        "identifier": "124_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"character\", \"state\": \"SITTING\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"couch\"}\n], \n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on sth\"}\n] \n}"
+    },
+    {
+        "identifier": "137_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "204_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"character\", \"state\": \"SITTING\"}, \n{\"name\": \"coffee\", \"state\": \"HOT\"}, \n{\"name\": \"television\", \"state\": \"ON\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"television\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"coffee\"}\n], \n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on couch\"}, \n{\"action\": \"GRAB\", \"description\": \"grab coffee\"}, \n{\"action\": \"LOOKAT\", \"description\": \"look at television\"}\n]\n}"
+    },
+    {
+        "identifier": "268_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"light\", \"state\": \"ON\"} \n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"FACING\", \"to_name\": \"couch\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"couch\"} \n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk into the living room\"}, \n{\"action\": \"WALK\", \"description\": \"walk to the couch\"}, \n{\"action\": \"SIT\", \"description\": \"sit on the couch\"}, \n{\"action\": \"SWITCHON\", \"description\": \"turn on the light\"} \n] \n}"
+    },
+    {
+        "identifier": "297_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"pillow\", \"state\": \"GRABBED\"}, {\"name\": \"lamp\", \"state\": \"OFF\"}, {\"name\": \"chair\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHOFF\", \"description\": \"switch the lamp off\"}, {\"action\": \"GRAB\", \"description\": \"grab the pillow off the chair\"}, {\"action\": \"PUTON\", \"description\": \"put the pillow on the couch\"}, {\"action\": \"LIE\", \"description\": \"lie down on the couch\"}] }"
+    },
+    {
+        "identifier": "299_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"WALK\", \"description\": \"walk to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit in sofa\"}, {\"action\": \"LOOKAT_SHORT\", \"description\": \"relax\"}] }"
+    },
+    {
+        "identifier": "300_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit on sofa\"}] }"
+    },
+    {
+        "identifier": "321_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"water_glass\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "332_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "379_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}] }"
+    },
+    {
+        "identifier": "387_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"FIND\", \"description\": \"find couch\"}, {\"action\": \"SIT\", \"description\": \"sit on couch\"}] }"
+    },
+    {
+        "identifier": "390_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk into the living room\"}, {\"action\": \"WALK\", \"description\": \"walk up to the sofa\"}, {\"action\": \"SIT\", \"description\": \"sit down on the sofa\"}] }"
+    },
+    {
+        "identifier": "3_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "416_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}] }"
+    },
+    {
+        "identifier": "438_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "442_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "447_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"novel\", \"state\": \"GRABBED\"}, {\"name\": \"coffee_cup\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the living room\"}, {\"action\": \"OPEN\", \"description\": \"open the door\"}, {\"action\": \"FIND\", \"description\": \"find a comfy sofa\"}, {\"action\": \"SIT\", \"description\": \"sit on the sofa\"}, {\"action\": \"READ\", \"description\": \"read a book or sip a cup of coffee and relax\"}] }"
+    },
+    {
+        "identifier": "449_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"character\", \"state\": \"LYING\"}, \n{\"name\": \"television\", \"state\": \"ON\"} \n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"LYING\", \"to_name\": \"couch\"}, \n{\"from_name\": \"television\", \"relation\": \"ON\", \"to_name\": \"character\"} \n], \n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk over to the sofa\"}, \n{\"action\": \"LIE\", \"description\": \"lie down on the sofa\"}, \n{\"action\": \"SWITCHON\", \"description\": \"turn on and watch TV\"} \n] \n}"
+    },
+    {
+        "identifier": "455_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "456_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, \n{\"name\": \"couch\", \"state\": \"SITTING\"}, \n{\"name\": \"couch\", \"state\": \"LYING\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"couch\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"couch\"}\n], \n\"action goals\": [\n{\"action\": \"SIT\", \"description\": \"sit on sth\"}, \n{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}, \n{\"action\": \"PUTOBJBACK\", \"description\": \"put object back to its original place\"}\n] \n}"
+    },
+    {
+        "identifier": "473_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"sheets\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"PUTON\", \"description\": \"put on clothes, need to hold the clothes first\"}] }"
+    },
+    {
+        "identifier": "490_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"WALK\", \"description\": \"walk to sofa\"}, {\"action\": \"SIT\", \"description\": \"sit in sofa\"}] }"
+    },
+    {
+        "identifier": "563_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"LIE\", \"description\": \"lie on something, need to get close the thing first\"}] }"
+    },
+    {
+        "identifier": "567_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "570_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "674_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"PUTFEETUP\", \"description\": \"put feet up on sth\"}, {\"action\": \"LAYDOWN\", \"description\": \"lay down sth\"}] }"
+    },
+    {
+        "identifier": "6_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"WATCH\", \"description\": \"watch sth\"}] }"
+    },
+    {
+        "identifier": "742_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "762_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the living room\"}, {\"action\": \"FIND\", \"description\": \"find the sofa\"}, {\"action\": \"WALK\", \"description\": \"walk to the sofa\"}, {\"action\": \"LIE\", \"description\": \"lie in the sofa\"}] }"
+    },
+    {
+        "identifier": "793_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"television\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to my living room\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on the television\"}, {\"action\": \"LIE\", \"description\": \"lay on the sofa\"}] }"
+    },
+    {
+        "identifier": "798_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "932_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"FIND\", \"description\": \"find sofa\"}, {\"action\": \"SIT\", \"description\": \"sit in sofa\"}] }"
+    },
+    {
+        "identifier": "941_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "96_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"SITTING\"}, {\"name\": \"character\", \"state\": \"LYING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "976_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"couch\", \"state\": \"OCCUPIED\"}, {\"name\": \"character\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SIT\", \"description\": \"sit on sth\"}] }"
+    },
+    {
+        "identifier": "149_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "154_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "180_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}] }"
+    },
+    {
+        "identifier": "195_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "211_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "241_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick the phone up\"}] }"
+    },
+    {
+        "identifier": "264_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "265_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "287_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "352_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the phone\"}] }"
+    },
+    {
+        "identifier": "360_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "388_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"phone\", \"state\": \"GRABBED\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"FIND\", \"description\": \"find and get near to phone\"},\n{\"action\": \"GRAB\", \"description\": \"graph phone\"},\n{\"action\": \"LOOKAT\", \"description\": \"look at phone, face phone\"}\n]\n}"
+    },
+    {
+        "identifier": "431_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "436_1",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"phone\", \"state\": \"GRABBED\"}\n],\n\"edge goals\": [],\n\"action goals\": [\n{\"action\": \"WALK\", \"description\": \"walk to the phone\"},\n{\"action\": \"GRAB\", \"description\": \"reach for the phone and pick up the phone\"}\n]\n}"
+    },
+    {
+        "identifier": "442_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the phone\"}] }"
+    },
+    {
+        "identifier": "474_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the phone\"}] }"
+    },
+    {
+        "identifier": "482_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "497_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "553_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "601_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "70_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"TOUCH\", \"description\": \"touch sth\"}, {\"action\": \"PLUGIN\", \"description\": \"plug in the plug\"}] }"
+    },
+    {
+        "identifier": "864_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "963_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"PUTON\", \"description\": \"put on clothes, need to hold the clothes first\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}] }"
+    },
+    {
+        "identifier": "974_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find and get near to sth\"}, {\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "976_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}] }"
+    },
+    {
+        "identifier": "99_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"phone\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab the phone\"}] }"
+    },
+    {
+        "identifier": "183_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"ON\"}, {\"name\": \"coffe_maker\", \"state\": \"CLOSED\"}, {\"name\": \"coffee_filter\", \"state\": \"GRABBED\"}, {\"name\": \"ground_coffee\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find coffee maker\"}, {\"action\": \"FIND\", \"description\": \"find coffee filter\"}, {\"action\": \"PLACE\", \"description\": \"place coffee filter in coffee maker\"}, {\"action\": \"FIND\", \"description\": \"find ground coffee\"}, {\"action\": \"FIND\", \"description\": \"find water\"}, {\"action\": \"PUT\", \"description\": \"put ground coffee and water in coffee maker\"}, {\"action\": \"CLOSE\", \"description\": \"close coffee maker\"}, {\"action\": \"SWITCHON\", \"description\": \"switch on coffee maker\"}] }"
+    },
+    {
+        "identifier": "229_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"ON\"}, {\"name\": \"coffee_filter\", \"state\": \"GRABBED\"}, {\"name\": \"ground_coffee\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"put filter in main basket\"}, {\"action\": \"GRAB\", \"description\": \"put ground coffee in filter\"}, {\"action\": \"GRAB\", \"description\": \"fill reservoir with water\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on coffee maker\"}] }"
+    },
+    {
+        "identifier": "310_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"coffe_maker\", \"state\": \"ON\"}, \n{\"name\": \"coffe_maker\", \"state\": \"OPEN\"}, \n{\"name\": \"coffee_filter\", \"state\": \"GRABBED\"}, \n{\"name\": \"ground_coffee\", \"state\": \"GRABBED\"}, \n{\"name\": \"water\", \"state\": \"CLEAN\"}\n], \n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"coffee_filter\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"ground_coffee\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"water\"}, \n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"coffe_maker\"}\n], \n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab the coffee filter\"}, \n{\"action\": \"GRAB\", \"description\": \"grab the ground coffee\"}, \n{\"action\": \"GRAB\", \"description\": \"grab the water\"}, \n{\"action\": \"PUTIN\", \"description\": \"put the ground coffee into the coffee maker\"}, \n{\"action\": \"PUTIN\", \"description\": \"put the water into the coffee maker\"}, \n{\"action\": \"OPEN\", \"description\": \"open the coffee maker\"}, \n{\"action\": \"CLOSE\", \"description\": \"close the coffee maker\"}, \n{\"action\": \"SWITCHON\", \"description\": \"switch on the coffee maker\"}\n] \n}"
+    },
+    {
+        "identifier": "721_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"coffe_maker\", \"state\": \"ON\"},\n{\"name\": \"coffe_maker\", \"state\": \"OPEN\"},\n{\"name\": \"coffe_maker\", \"state\": \"CLEAN\"},\n{\"name\": \"water\", \"state\": \"CLEAN\"},\n{\"name\": \"coffee_filter\", \"state\": \"CLEAN\"},\n{\"name\": \"ground_coffee\", \"state\": \"GRABBED\"}\n],\n\"edge goals\": [\n{\"from_name\": \"coffe_maker\", \"relation\": \"PLUGGED_IN\", \"to_name\": \"coffe_maker\"},\n{\"from_name\": \"coffe_maker\", \"relation\": \"OPEN\", \"to_name\": \"coffe_maker\"}\n],\n\"action goals\": [\n{\"action\": \"PLUGIN\", \"description\": \"plug in the coffee maker\"},\n{\"action\": \"OPEN\", \"description\": \"open the coffee maker lid\"},\n{\"action\": \"FIND\", \"description\": \"find coffee maker\"},\n{\"action\": \"PUTIN\", \"description\": \"put water into coffee maker\"},\n{\"action\": \"PUTOBJBACK\", \"description\": \"put coffee filter into coffee maker\"},\n{\"action\": \"PUTOBJBACK\", \"description\": \"put Ground Coffee into coffee maker\"},\n{\"action\": \"CLOSE\", \"description\": \"close the coffee maker\"},\n{\"action\": \"SWITCHON\", \"description\": \"switch on the coffee maker\"}\n]\n}"
+    },
+    {
+        "identifier": "764_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"coffe_maker\", \"state\": \"ON\"}, {\"name\": \"coffee_filter\", \"state\": \"GRABBED\"}, {\"name\": \"ground_coffee\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"put filter in main basket\"}, {\"action\": \"GRAB\", \"description\": \"put ground coffee in filter\"}, {\"action\": \"GRAB\", \"description\": \"fill reservoir with water\"}, {\"action\": \"SWITCHON\", \"description\": \"turn on coffee maker\"}] }"
+    },
+    {
+        "identifier": "419_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"table\", \"state\": \"CLEAN\"}, {\"name\": \"chair\", \"state\": \"FREE\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"knife\", \"state\": \"CLEAN\"}, {\"name\": \"fork\", \"state\": \"CLEAN\"}, {\"name\": \"cup\", \"state\": \"CLEAN\"}, {\"name\": \"cloth_napkin\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to dining room\"}, {\"action\": \"WALK\", \"description\": \"walk to dining table\"}, {\"action\": \"ARRANGE\", \"description\": \"arrange chairs\"}, {\"action\": \"SET\", \"description\": \"set napkin\"}, {\"action\": \"SET\", \"description\": \"set plate\"}, {\"action\": \"SET\", \"description\": \"set knife\"}, {\"action\": \"SET\", \"description\": \"set fork and glass on table\"}] }"
+    },
+    {
+        "identifier": "446_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"table\", \"state\": \"CLEAN\"}, {\"name\": \"cupboard\", \"state\": \"CLOSED\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab dishes\"}, {\"action\": \"WALK\", \"description\": \"walk to dining room\"}, {\"action\": \"FIND\", \"description\": \"find table\"}, {\"action\": \"PUTON\", \"description\": \"put dishes on table\"}] }"
+    },
+    {
+        "identifier": "710_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"table\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"kitchen_cabinet\", \"state\": \"OPEN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the kitchen\"}, {\"action\": \"OPEN\", \"description\": \"open the kitchen cabinet\"}, {\"action\": \"GRAB\", \"description\": \"grab the plate\"}, {\"action\": \"PUTON\", \"description\": \"put the plate on the table\"}] }"
+    },
+    {
+        "identifier": "84_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"table\", \"state\": \"FREE\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to entrance hall\"}, {\"action\": \"FIND\", \"description\": \"find a table\"}, {\"action\": \"PULL\", \"description\": \"pull table\"}, {\"action\": \"WALK\", \"description\": \"walk to living room\"}, {\"action\": \"PUSH\", \"description\": \"push table\"}] }"
+    },
+    {
+        "identifier": "93_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"table\", \"state\": \"SITTING\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"PULL\", \"description\": \"move sth\"}, {\"action\": \"PLACE\", \"description\": \"put object A face up on object B\"}, {\"action\": \"WALK\", \"description\": \"walk towards sth, get near to sth\"}] }"
+    },
+    {
+        "identifier": "368_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"cloth_napkin\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"graph sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"MOVE\", \"description\": \"move sth\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"PUTIN\", \"description\": \"put object A into object B\"}, {\"action\": \"LOOKAT\", \"description\": \"look at sth, face sth\"}, {\"action\": \"PUTBACK\", \"description\": \"put object A back to object B\"}] }"
+    },
+    {
+        "identifier": "729_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"shower\", \"state\": \"ON\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"FIND\", \"description\": \"find shower\"}, {\"action\": \"LOOKAT_LONG\", \"description\": \"look at shower for long\"}] }"
+    },
+    {
+        "identifier": "975_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"shower\", \"state\": \"ON\"}, {\"name\": \"shower\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FIND\", \"description\": \"find the dresses\"}, {\"action\": \"FIND\", \"description\": \"find the towel\"}, {\"action\": \"WALK\", \"description\": \"walk to bathroom\"}, {\"action\": \"FIND\", \"description\": \"find the shower\"}, {\"action\": \"OPEN\", \"description\": \"open the shower\"}, {\"action\": \"LOOKAT\", \"description\": \"take a shower\"}] }"
+    },
+    {
+        "identifier": "231_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dish_soap\", \"state\": \"GRABBED\"}, {\"name\": \"water\", \"state\": \"GRABBED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to kitchen\"}, {\"action\": \"FIND\", \"description\": \"find soap\"}, {\"action\": \"PUTIN\", \"description\": \"put soap into hand\"}, {\"action\": \"PUTIN\", \"description\": \"put water into hand\"}, {\"action\": \"GRAB\", \"description\": \"grab plate\"}, {\"action\": \"GRAB\", \"description\": \"grab soap\"}, {\"action\": \"GRAB\", \"description\": \"grab water\"}, {\"action\": \"LOOKAT\", \"description\": \"look at plate\"}, {\"action\": \"LOOKAT\", \"description\": \"look at soap\"}, {\"action\": \"LOOKAT\", \"description\": \"look at water\"}, {\"action\": \"WASH\", \"description\": \"wash plate\"}, {\"action\": \"RINSE\", \"description\": \"rinse plate\"}, {\"action\": \"PUTBACK\", \"description\": \"put plate back to its original place\"}] }"
+    },
+    {
+        "identifier": "31_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_counter\", \"state\": \"OPEN\"}, {\"name\": \"sink\", \"state\": \"CLEAN\"}, {\"name\": \"dish_soap\", \"state\": \"GRABBED\"}, {\"name\": \"bowl\", \"state\": \"GRABBED\"}, {\"name\": \"sponge\", \"state\": \"GRABBED\"}, {\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dishrack\", \"state\": \"FULL\"}], \"edge goals\": [{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"dish_soap\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"bowl\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"sponge\"}, {\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"plate\"}], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab dish soap\"}, {\"action\": \"GRAB\", \"description\": \"grab bowl\"}, {\"action\": \"GRAB\", \"description\": \"grab sponge\"}, {\"action\": \"GRAB\", \"description\": \"grab plate\"}, {\"action\": \"PUTIN\", \"description\": \"put bowl into dishrack\"}, {\"action\": \"PUTIN\", \"description\": \"put plate into dishrack\"}, {\"action\": \"SWITCHOFF\", \"description\": \"turn off faucet\"}, {\"action\": \"PUTBACK\", \"description\": \"put sponge back\"}] }"
+    },
+    {
+        "identifier": "349_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"faucet\", \"state\": \"ON\"}, {\"name\": \"faucet\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"SWITCHON\", \"description\": \"switch faucet on\"}, {\"action\": \"GRAB\", \"description\": \"grab the plate to wash\"}, {\"action\": \"FIND\", \"description\": \"find the soap\"}, {\"action\": \"WASH\", \"description\": \"wash the dishes by hand\"}] }"
+    },
+    {
+        "identifier": "397_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"character\", \"state\": \"SITTING\"}, {\"name\": \"dining_room\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"pick up dish\"}, {\"action\": \"PUTIN\", \"description\": \"put in soapy water\"}, {\"action\": \"WASH\", \"description\": \"wash dish\"}] }"
+    },
+    {
+        "identifier": "429_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_counter\", \"state\": \"CLEAN\"}, {\"name\": \"kitchen_counter\", \"state\": \"OPEN\"}, {\"name\": \"sink\", \"state\": \"CLEAN\"}, {\"name\": \"dish_soap\", \"state\": \"FULL\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"FILL\", \"description\": \"fill the sink with soap and water\"}, {\"action\": \"WASH\", \"description\": \"wash the dishes\"}, {\"action\": \"RINSE\", \"description\": \"rinse the dishes with clean water\"}, {\"action\": \"PUTIN\", \"description\": \"put the dishes in the drying rack\"}] }"
+    },
+    {
+        "identifier": "553_2",
+        "llm_output": "{ \"node goals\": [{\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"soap\", \"state\": \"CLEAN\"}, {\"name\": \"water\", \"state\": \"CLEAN\"}, {\"name\": \"kitchen_counter\", \"state\": \"CLEAN\"}, {\"name\": \"cupboard\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"GRAB\", \"description\": \"grab a plate\"}, {\"action\": \"PUTON\", \"description\": \"put soap on sponge\"}, {\"action\": \"WASH\", \"description\": \"wash plate with sponge\"}, {\"action\": \"RINSE\", \"description\": \"rinse with water\"}, {\"action\": \"PUTBACK\", \"description\": \"put away plate in cupboard\"}] }"
+    },
+    {
+        "identifier": "594_2",
+        "llm_output": "{ \n\"node goals\": [\n{\"name\": \"bathroom_counter\", \"state\": \"OPEN\"},\n{\"name\": \"plate\", \"state\": \"CLEAN\"},\n{\"name\": \"dish_soap\", \"state\": \"GRABBED\"},\n{\"name\": \"sink\", \"state\": \"CLEAN\"}\n],\n\"edge goals\": [\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"dish_soap\"},\n{\"from_name\": \"character\", \"relation\": \"HOLDS_RH\", \"to_name\": \"plate\"},\n{\"from_name\": \"character\", \"relation\": \"CLOSE\", \"to_name\": \"bathroom_counter\"}\n],\n\"action goals\": [\n{\"action\": \"GRAB\", \"description\": \"grab a dish rag\"},\n{\"action\": \"PUTIN\", \"description\": \"put dishes in dish water\"},\n{\"action\": \"WASH\", \"description\": \"wash sth\"}\n]\n}"
+    },
+    {
+        "identifier": "746_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"drinking_glass\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash sth\"}] }"
+    },
+    {
+        "identifier": "961_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"kitchen_counter\", \"state\": \"CLEAN\"}, {\"name\": \"kitchen_counter\", \"state\": \"OPEN\"}, {\"name\": \"sink\", \"state\": \"CLEAN\"}, {\"name\": \"plate\", \"state\": \"CLEAN\"}, {\"name\": \"dish_soap\", \"state\": \"GRABBED\"}, {\"name\": \"dish_soap\", \"state\": \"EMPTY\"}, {\"name\": \"dishrack\", \"state\": \"CLEAN\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WALK\", \"description\": \"walk to the kitchen\"}, {\"action\": \"TURN_TO\", \"description\": \"turn to the sink\"}, {\"action\": \"PUT_INTO\", \"description\": \"put the plate into the sink\"}, {\"action\": \"GRAB\", \"description\": \"grab and squeeze the dish soap\"}, {\"action\": \"SCRUB\", \"description\": \"scrub the plate\"}, {\"action\": \"RINSE\", \"description\": \"rinse the plate\"}, {\"action\": \"PUT_INTO\", \"description\": \"put the plate into the dish rack\"}] }"
+    },
+    {
+        "identifier": "988_1",
+        "llm_output": "{ \"node goals\": [{\"name\": \"bowl\", \"state\": \"CLEAN\"}, {\"name\": \"cupboard\", \"state\": \"CLOSED\"}], \"edge goals\": [], \"action goals\": [{\"action\": \"WASH\", \"description\": \"wash dish in sink\"}, {\"action\": \"DRY\", \"description\": \"dry\"}, {\"action\": \"PUTIN\", \"description\": \"put in cupboard\"}] }"
+    }
+]

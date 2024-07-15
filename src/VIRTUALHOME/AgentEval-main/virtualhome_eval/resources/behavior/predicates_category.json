@@ -1,0 +1,19 @@
+{
+    "inside": "spatial_relations",
+    "nextto": "spatial_relations",
+    "ontop": "spatial_relations",
+    "under": "spatial_relations",
+    "cooked": "object_states",
+    "dusty": "object_states",
+    "frozen": "object_states",
+    "open": "object_states",
+    "stained": "object_states",
+    "sliced": "object_states",
+    "soaked": "object_states",
+    "toggled_on": "object_states",
+    "onfloor": "spatial_relations",
+    "holding": "non-spatial_relations",
+    "handsfull": "non-spatial_relations",
+    "in_reach_of_agent": "spatial_relations",
+    "same_obj": "non-spatial_relations"
+}

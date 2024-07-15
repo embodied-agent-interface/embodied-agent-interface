@@ -1,0 +1,43 @@
+(define (problem Drink)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    bathroom freezer water_glass water cupboard dining_room - object
+)
+    (:init
+    (inside_room water dining_room)
+    (inside_room freezer dining_room)
+    (closed freezer)
+    (plugged_in freezer)
+    (clean freezer)
+    (has_switch freezer)
+    (obj_next_to freezer cupboard)
+    (obj_next_to water_glass cupboard)
+    (pourable water)
+    (obj_next_to cupboard freezer)
+    (obj_next_to cupboard water_glass)
+    (closed cupboard)
+    (movable water_glass)
+    (pourable water_glass)
+    (inside_room water_glass dining_room)
+    (clean cupboard)
+    (obj_inside water_glass cupboard)
+    (inside_room cupboard dining_room)
+    (obj_inside water freezer)
+    (containers cupboard)
+    (can_open freezer)
+    (can_open cupboard)
+    (drinkable water)
+    (has_plug freezer)
+    (inside character bathroom)
+    (recipient water_glass)
+    (grabbable water_glass)
+    (containers freezer)
+)
+    (:goal
+    (and
+        (holds_rh character water_glass)
+    )
+)
+    )
+    

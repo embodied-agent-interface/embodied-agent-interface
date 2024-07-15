@@ -1,0 +1,43 @@
+(define (problem Work)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    mouse keyboard chair computer - object
+)
+    (:init
+    (obj_next_to chair mouse)
+    (surfaces chair)
+    (obj_next_to chair keyboard)
+    (obj_next_to keyboard computer)
+    (plugged_out computer)
+    (grabbable mouse)
+    (has_plug keyboard)
+    (obj_next_to computer keyboard)
+    (facing chair computer)
+    (movable chair)
+    (obj_next_to computer chair)
+    (sittable chair)
+    (has_switch computer)
+    (obj_next_to keyboard chair)
+    (obj_next_to keyboard mouse)
+    (grabbable keyboard)
+    (obj_next_to mouse computer)
+    (obj_next_to mouse keyboard)
+    (has_plug mouse)
+    (grabbable chair)
+    (obj_next_to mouse chair)
+    (lookable computer)
+    (clean computer)
+    (off computer)
+    (obj_next_to computer mouse)
+    (movable mouse)
+    (movable keyboard)
+    (obj_next_to chair computer)
+)
+    (:goal
+    (and
+        (on computer)
+    )
+)
+    )
+    

@@ -1,0 +1,40 @@
+(define (problem Change_TV_channel)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    home_office remote_control bedroom chair television - object
+)
+    (:init
+    (grabbable remote_control)
+    (has_plug television)
+    (surfaces chair)
+    (clean television)
+    (obj_next_to television remote_control)
+    (movable chair)
+    (movable remote_control)
+    (obj_next_to chair television)
+    (obj_next_to remote_control television)
+    (sittable chair)
+    (plugged_in television)
+    (obj_next_to television chair)
+    (lookable television)
+    (obj_inside remote_control home_office)
+    (has_switch remote_control)
+    (off television)
+    (inside_room chair bedroom)
+    (grabbable chair)
+    (has_switch television)
+    (inside character bedroom)
+    (obj_inside television home_office)
+    (obj_inside chair home_office)
+)
+    (:goal
+    (and
+        (on television)
+        (plugged_in television)
+        (holds_rh character remote_control)
+        (facing character television)
+    )
+)
+    )
+    

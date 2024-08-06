@@ -3,5 +3,5 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "behavior-eval"
+name = "sphinx"
 dynamic = ["version", "description"]

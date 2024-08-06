@@ -2,7 +2,7 @@ Embodied Agent Interface
 =====================================================================================
 
 A Single Line to Evaluate LLMs for Embodied Decision Making
-----------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Welcome! **``Embodied Agent Interface``** is a single-line evaluation
 pipeline to evaluate LLMs for embodied decision making, which aims to tackle the

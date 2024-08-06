@@ -1,7 +1,8 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
 [project]
-name = "sphinx"
+name = "lumache"
+authors = [{name = "Graziella", email = "graziella@lumache"}]
 dynamic = ["version", "description"]

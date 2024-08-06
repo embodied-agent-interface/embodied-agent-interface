@@ -1,9 +1,9 @@
-Embodied Agent Interface
+Embodied Agent Interface: A Single Line to Evaluate LLMs for Embodied Decision Making
 ========================
 
 Welcome! **``Embodied Agent Interface``** is a single-line evaluation
-pipeline to evaluate LLMs for embodied agents, which aims to tackle the
-following challenges in building embodied decision-making agents:
+pipeline to evaluate LLMs for embodied decision making, which aims to tackle the
+following challenges in building LLM-based embodied agents:
 
 -  Standardization of goal specifications.
 -  Standardization of modules and interfaces.
@@ -94,7 +94,7 @@ The dataset is in JSON format. Here's an example entry:
       }
     }
 
-    
+
 Installation and Usage Guide for ``behavior-eval``
 ==================================================
 

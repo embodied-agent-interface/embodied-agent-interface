@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'EAgent'
-copyright = '2024, Yu ZHou'
+copyright = '2024, Yu Zhou'
 author = 'Yu Zhou'
 
 release = '0.1'

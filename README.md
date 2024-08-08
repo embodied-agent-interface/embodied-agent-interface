@@ -1,5 +1,13 @@
 <h1 align="center">  Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making </h1>
 
+
+[![](https://img.shields.io/badge/website-EAgent-purple?style=plastic&logo=Google%20chrome)](https://embodied-agent-eval.github.io/)
+[![](https://img.shields.io/badge/Dataset-yellow?style=plastic&logo=Hugging%20face)](https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset)
+[![](https://img.shields.io/badge/docker-eval--embodied--agent-brightblue?style=plastic&logo=Docker)](https://hub.docker.com/r/jameskrw/eval-embodied-agent) 
+[![](https://img.shields.io/badge/doc-online-blue?style=plastic&logo=Read%20the%20Docs)](https://embodied-agent-eval.readthedocs.io/en/latest/#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 <p align="center">
     <a href="https://limanling.github.io/">Manling Li</a>, <a href="https://www.linkedin.com/in/shiyu-zhao-1124a0266/">Shiyu Zhao</a>, <a href="https://github.com/QinengWang-Aiden">Qineng Wang</a>, <a href="https://jameskrw.github.io/">Kangrui Wang</a>, <a href="https://bryanzhou008.github.io/">Yu Zhou</a>, <a href="https://example.com/sanjana-srivastava">Sanjana Srivastava</a>, <a href="https://example.com/cem-gokmen">Cem Gokmen</a>, <a href="https://example.com/tony-lee">Tony Lee</a>, <a href="https://sites.google.com/site/lieranli/">Li Erran Li</a>, <a href="https://example.com/ruohan-zhang">Ruohan Zhang</a>, <a href="https://example.com/weiyu-liu">Weiyu Liu</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>, <a href="https://jiayuanm.com/">Jiayuan Mao</a>, <a href="https://jiajunwu.com/">Jiajun Wu</a>
 </p>
@@ -13,16 +21,6 @@
 <a href="https://cs.stanford.edu/~manlingl/projects/embodied-eval" target="_blank"><img src="./EAgent.png" alt="EAgent" width="80%" height="80%" border="10" /></a>
 </p>
 <!-- <p align="center" style="color: #87CEEB"> Click for the youtube teaser video </p> -->
-
-
-
-[![](https://img.shields.io/badge/website-EAgent-purple?style=plastic&logo=Google%20chrome)](https://embodied-agent-eval.github.io/)
-[![](https://img.shields.io/badge/Dataset-yellow?style=plastic&logo=Hugging%20face)](https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset)
-[![](https://img.shields.io/badge/docker-eval--embodied--agent-brightblue?style=plastic&logo=Docker)](https://hub.docker.com/r/jameskrw/eval-embodied-agent) 
-[![](https://img.shields.io/badge/doc-online-blue?style=plastic&logo=Read%20the%20Docs)](https://embodied-agent-eval.readthedocs.io/en/latest/#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-</div>
-
 
 
 ## :dizzy: Dataset Highlights 

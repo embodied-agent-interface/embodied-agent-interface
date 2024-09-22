@@ -115,7 +115,12 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
        ```
        git clone https://github.com/embodied-agent-eval/iGibson.git --recursive
        cd iGibson
-       pip install -e .  
+       pip install -e .
+
+    4. Download Assets
+       ```
+        python -m behavior_eval.utils.download_utils
+       ```
     
     We've successfully tested the installation on Linux servers, Windows 10+, and Mac OS X.
 

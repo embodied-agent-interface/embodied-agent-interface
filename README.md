@@ -92,6 +92,8 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
    ```
 
 5. **(Optional) Install iGibson for behavior evaluation**:
+   If you need to use `behavior_eval`, you must install iGibson.
+
    There might be issues during the installation of `iGibson`. 
 
     To minimize and identify potential issues, we recommend:

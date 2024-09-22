@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='embodied-agent-eval',
+    name='eagent-eval',
     version='0.0.1',
     packages=find_packages(),
     python_requires='>=3.8',
@@ -13,6 +13,7 @@ setup(
         "ipdb",
         "networkx>=3.1",
         "numpy>=1.20.0",
+        "fire",
     ],
     include_package_data=True,
     package_data={

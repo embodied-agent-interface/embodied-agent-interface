@@ -3,7 +3,7 @@ import ast
 import json
 import behavior_eval
 from typing import Optional, Union, Any
-from behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt import generate_meta_prompt
+from behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt import get_meta_prompt_component
 from behavior_eval.evaluation.action_sequence.action_sequence_evaluator import ActionSequenceEvaluator
 from behavior_eval.tl_formula.bddl_to_tl import translate_bddl_final_states_into_simplified_tl
 
@@ -38,11 +38,13 @@ def convert_dict_to_list(dict_file_path, list_dict_path):
         json.dump(list_data, f, indent=4)
 
 def get_subgoal_prompt(env: ActionSequenceEvaluator):
-    meta_prompt_file_path = os.path.join(behavior_eval.subgoal_dec_resources_path, 'prompts', 'meta_prompt.json')
-    generate_meta_prompt(meta_prompt_file_path)
+    # meta_prompt_file_path = os.path.join(behavior_eval.subgoal_dec_resources_path, 'prompts', 'meta_prompt.json')
+    # generate_meta_prompt(meta_prompt_file_path)
 
-    with open(meta_prompt_file_path, 'r') as f:
-        prompt_components = json.load(f)
+    # with open(meta_prompt_file_path, 'r') as f:
+    #     prompt_components = json.load(f)
+
+    prompt_components = get_meta_prompt_component()
 
     task_name = env.transition_model.config['task']
     objects_str = env.get_objects_str().strip()

@@ -9,6 +9,7 @@ from virtualhome_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils imp
 
 def generate_prompts(args):
     dataset = args.dataset
+    output_dir = args.output_dir
     evaluation_dir = args.evaluation_dir
     assert dataset == 'virtualhome', 'Subgoal decomposition is only supported for VirtualHome dataset'
     resource_root = osp.join(args.resource_dir, dataset)
@@ -29,7 +30,7 @@ def generate_prompts(args):
     object_placing = utils.load_object_placing()
     name_equivalence = utils.load_name_equivalence()
 
-    helm_prompt_path = os.path.join(evaluation_dir, 'subgoal_decomposition', 'prompts', 'helm_prompts.json')
+    helm_prompt_path = osp.join(output_dir, "helm_prompt.json")
     helm_prompt_list = json.load(open(helm_prompt_path, "r")) if osp.exists(helm_prompt_path) else None
     helm_prompt_list = [] if helm_prompt_list is None else helm_prompt_list
     for task_name, task_detail in task_dict.items():

@@ -54,26 +54,6 @@ class goal_interpretation_data():
             
 
 
-
-        # self.all_models = [
-        #     "claude-3-haiku-20240307", 
-        #     "claude-3-opus-20240229", 
-        #     "claude-3-sonnet-2024022", 
-        #     "gemini-1.0-pro", 
-        #     "gemini-1.5-flash-preview-0514", 
-        #     "gemini-1.5-pro-preview-0409", 
-        #     "gpt-3.5-turbo-0125", 
-        #     "gpt-4-turbo-2024-04-09", 
-        #     "gpt-4o-2024-05-13", 
-        #     "llama-3-8b-chat", 
-        #     "llama-3-70b-chat", 
-        #     "mistral-large-2402", 
-        #     "mixtral-8x22b-instruct-v0.1",
-        #     "cohere-command-r",
-        #     "cohere-command-r-plus"
-        # ]
-
-
 def extract_model_names(llm_response_dir):
     # List to store the extracted model names
     model_names = []
@@ -118,7 +98,7 @@ def is_edge_condition(condition):
         for state in object_states["edge_states"]:
             if is_state_condition(state, condition):
                 return True
-                     
+
     # if that does not work, check based on the length of the condition
     except:
         if condition[0] == "not":
@@ -480,10 +460,44 @@ def evaluate_dataset(result_reference_list, DATA):
     return dataset_results_evaluated, sorted_model_results_evaluated 
 
 
-  
+def parse_json(raw_llm_output, model_name):
+    '''
+    This function takes in the raw output from an LLM model and parses it into JSON format.
+    
+    ----------------------------Required Inputs----------------------------
+    raw_llm_output (str): the raw output from the LLM model
+    model_name (str): the name of the LLM model
+    -----------------------------------------------------------------------
+    
+    ----------------------------Produced Outputs----------------------------
+    parsed_output (dict): the parsed output in JSON format
+    error_message (str): an error message if the raw output could not be parsed
+    ------------------------------------------------------------------------
+    
+    '''
+    # Replace single quotes with double quotes
+    raw_llm_output = raw_llm_output.lower().replace("'", '"').replace("toggledon", "toggled_on")
+    
+    # Extract the substring between the first { and the first } after it
+    match = re.search(r"{[^{}]*}", raw_llm_output, re.DOTALL)
+
+    if match:
+        result = match.group(0)
+
+        # Print the final cleaned result
+        try:
+            parsed_result = json.loads(result)
+            return parsed_result, None
+        except:
+            error_message = f"{model_name} produced valid JSON-like content but did not follow the designated format. This example will have score 0."
+    else:
+        error_message = f"{model_name} did not produce valid JSON-like content. This example will have score 0."
+    
+    # For either error case, treat as if model predicted nothing
+    return {"node goals": [], "edge goals": []}, error_message
 
 
-        
+
 
 
 
@@ -502,6 +516,7 @@ def evaluate_results(llm_response_dir, result_dir):
     
     ----------------------------Produced Outputs----------------------------
     error analysis for all 15 models ({model_name}_outputs.json)
+    parsing error analysis for all 15 models ({model_name}_non_parsable_outputs.json)
     ------------------------------------------------------------------------
     
     '''
@@ -514,8 +529,36 @@ def evaluate_results(llm_response_dir, result_dir):
 
     for model_name in DATA.all_models:
         save_path = f"{llm_response_dir}/{model_name}_outputs.json"
+        
         with open(save_path, 'r') as json_file:
-            ALL_RESULTS[model_name] = json.load(json_file)
+            raw_llm_outputs = json.load(json_file)
+
+        llm_results_list = {}
+        error_cases = []
+
+        for item in raw_llm_outputs:
+            
+            # parse the raw llm output and save it to the llm_results_list
+            parsed_output, error_message = parse_json(item["llm_output"], model_name)
+            llm_results_list[item["identifier"]] = parsed_output
+            
+            # if error message is not None, save the error case
+            if error_message:
+                error_cases.append({
+                    "identifier": item["identifier"],
+                    "output": item["llm_output"],
+                    "error_message": error_message
+                })
+        
+        if error_cases != []:
+            parsing_errors_save_path = f"{result_dir}/parsing_errors/{model_name}_non_parsable_outputs.json"
+            os.makedirs(os.path.dirname(parsing_errors_save_path), exist_ok=True)
+            with open(parsing_errors_save_path, "w") as file:
+                    json.dump(error_cases, file, indent=4)
+                    
+            # print(f"\n{model_name} made one or more format errors in its raw response, error cases and details are saved to {parsing_errors_save_path} \n")
+
+        ALL_RESULTS[model_name] = llm_results_list
 
     
     ALL_METRICS = {}
@@ -527,7 +570,6 @@ def evaluate_results(llm_response_dir, result_dir):
         for demo in DATA.demo_names:
             goal_conds = DATA.demo_to_conds[demo]['goal_conditions']
             model_pred = model_results[demo]
-            # model_pred = [i for i in model_results if i['identifier'] == demo][0]['llm_output']    
             result_reference_list.append(
                 {   
                     "identifier": demo,
@@ -539,12 +581,19 @@ def evaluate_results(llm_response_dir, result_dir):
         
         ALL_METRICS[model_name], sorted_model_results_evaluated = evaluate_dataset(result_reference_list, DATA)
         
+        performance_scores_save_path = f"{result_dir}/performance_scores/{model_name}_performance_scores.json"
+        os.makedirs(os.path.dirname(performance_scores_save_path), exist_ok=True)
+        with open(performance_scores_save_path, 'w') as json_file:
+            json.dump(ALL_METRICS[model_name], json_file, indent=4)
+        
+        
         error_analysis_save_path = f"{result_dir}/error_analysis/{model_name}_error_analysis.json"
         os.makedirs(os.path.dirname(error_analysis_save_path), exist_ok=True)
         with open(error_analysis_save_path, 'w') as json_file:
             json.dump(sorted_model_results_evaluated, json_file, indent=4)
     
-    print(f"results saved to {result_dir}/error_analysis/")
-
-if __name__ == "__main__":
-    evaluate_results()
+    print("\n--------------------------------------------------------------------------------------")
+    print(f"* Final model performance scores are saved to {result_dir}/performance_scores/ \n")
+    print(f"* Detailed error analysis are saved to {result_dir}/error_analysis/ \n")
+    print(f"* If models made format errors, error cases and details can be found at {result_dir}/parsing_errors/ \n")
+    

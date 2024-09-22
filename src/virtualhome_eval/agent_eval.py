@@ -62,7 +62,7 @@ def agent_evaluation(
     """
 
     # Create output directory if it doesn't exist
-    output_dir=os.path.join(output_dir, "virtualhome", mode, eval_type)
+    output_dir=os.path.join(output_dir, f"{dataset}", mode)
     if not osp.exists(output_dir):
         os.makedirs(output_dir)
 

@@ -49,15 +49,6 @@ def main():
     )
 
     args = parser.parse_args()
-    
-    # do argument checking
-    # 1. if llm_response_path is None, then mode must be generate_prompts
-    # 2. llm_response_path must contain a folder named "eval_type"
-    
-    if args.mode == "evaluate_results":
-        if not os.path.exists(os.path.join(args.llm_response_path, args.eval_type)):
-            print(f"Error: {args.llm_response_path} must contain a folder named {args.eval_type} for evaluation")
-            exit(1)
         
     
     if args.dataset == "behavior":

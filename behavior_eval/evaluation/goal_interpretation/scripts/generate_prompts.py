@@ -5,8 +5,6 @@ import behavior_eval
 
 
 
-
-
 def generate_prompts(result_dir):
     '''
     This script is used to generate GPT prompts for goal conditions for the demos in the dataset.
@@ -23,7 +21,6 @@ def generate_prompts(result_dir):
     ----------------------------Produced Outputs----------------------------
     all final generated prompts (prompt_save_path)
     ------------------------------------------------------------------------
-    
     '''
     
     
@@ -94,12 +91,3 @@ def generate_prompts(result_dir):
         json.dump(identifier_prompt_list, json_file, indent=4)
     
     print("prompts saved to: ", prompt_save_path)
-
-
-
-def main():
-    generate_prompts()
-    
-
-if __name__ == "__main__":
-    main()

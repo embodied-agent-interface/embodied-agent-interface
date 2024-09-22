@@ -46,6 +46,9 @@ def generate_prompts(worker_num: Optional[int] = 1, result_dir: Optional[str] = 
         demo_list = new_demo_list
         result_list.extend(existing_results)
     
+    for demo_name in list(processed_identifiers):
+        print(f"Skipping {demo_name}")
+        
     worker_num = min(worker_num, len(demo_list))
     task_queue = Queue()
     workers = []

@@ -37,7 +37,7 @@ def main():
     parser.add_argument(
         "--num-workers",
         type=int,
-        default=1,
+        default=4,
         help="Number of workers for multiprocessing (default: 1)",
     )
     
@@ -49,7 +49,7 @@ def main():
     )
 
     args = parser.parse_args()
-        
+    print(args)
     
     if args.dataset == "behavior":
         from behavior_eval.agent_eval import agent_evaluation as behavior_agent_evaluation

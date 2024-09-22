@@ -1,0 +1,13 @@
+Change TV channel
+Grab the remote. Point it toward the TV, and press the channel button.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <remote_control> (1.1000)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <television> (1.410)
+[TURNTO] <television> (1.410)
+[POINTAT] <television> (1.410)
+[FIND] <button> (1.1001)
+[TOUCH] <button> (1.1001)

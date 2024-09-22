@@ -1,0 +1,11 @@
+Cook some food
+I enter the kitchen, get a cooking pot, fill it with water and set it on the stove to boil. I add noodles, let the noodle cook, then drain the noodles and place them in a bowl with some olive oil and spices. Enjoy.
+
+
+[FIND] <water> (1.1000)
+[GRAB] <water> (1.1000)
+[FIND] <pot> (1.1001)
+[POUR] <water> (1.1000) <pot> (1.1001)
+[FIND] <pot> (1.1001)
+[GRAB] <pot> (1.1001)
+[PUTOBJBACK] <pot> (1.1001)

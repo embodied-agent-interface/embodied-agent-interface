@@ -1,0 +1,9 @@
+Watch TV
+I come home and go to the sofa for turn off the tv and relax
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)

@@ -1,0 +1,7 @@
+Relax on sofa
+I am going to lay on the sofa and relax.
+
+
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[LIE] <couch> (1.352)

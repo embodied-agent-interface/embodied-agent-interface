@@ -1,0 +1,15 @@
+Change TV channel
+Changing channel
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (1.410)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[TURNTO] <television> (1.410)
+[POINTAT] <television> (1.410)
+[DROP] <remote_control> (1.1000)

@@ -1,0 +1,11 @@
+Read book
+I walk into the living room. I pick up a book. I sit down in a chair and read the book.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <novel> (1.1000)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[READ] <novel> (1.1000)

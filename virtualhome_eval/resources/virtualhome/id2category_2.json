@@ -1,0 +1,1186 @@
+{
+    "975_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "729_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "201_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "815_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "487_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "383_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "223_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "190_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "856_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "327_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "783_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "911_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "826_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "650_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "417_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "703_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "1004_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "152_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "772_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "837_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "609_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "298_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "755_2": [
+        "object_states",
+        "non-spatial_relations"
+    ],
+    "1083_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "392_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "696_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "491_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "600_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "286_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "156_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "1064_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "181_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "26_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "291_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "532_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "814_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "488_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "688_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "850_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "510_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "528_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "589_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "175_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "788_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "878_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "662_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "787_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "861_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "171_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "317_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "963_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "287_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "352_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "195_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "431_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "974_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "474_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "154_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "241_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "388_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "180_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "442_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "265_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "482_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "360_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "264_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "99_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "553_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "149_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "436_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "211_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "976_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "601_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "70_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "864_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "497_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "323_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "624_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "478_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "496_1": [
+        "spatial_relations",
+        "object_orientation"
+    ],
+    "430_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "158_1": [
+        "spatial_relations",
+        "object_orientation"
+    ],
+    "181_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "269_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "509_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "1027_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "244_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "875_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "313_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "718_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "689_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "1070_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "449_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "299_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "6_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "473_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "563_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "976_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "379_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "490_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "416_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "124_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "297_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "332_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "96_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "447_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "268_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "300_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "442_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "321_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "438_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "793_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "3_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "941_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "742_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "390_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "674_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "570_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "455_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "932_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "567_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "387_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "204_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "137_1": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "456_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "798_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "762_2": [
+        "object_affordance",
+        "spatial_relations"
+    ],
+    "220_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "388_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "437_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "279_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "137_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "292_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "203_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "469_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "12_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "856_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "242_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "479_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "502_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "38_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "429_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "113_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "451_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "1035_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "297_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "287_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "381_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "612_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "60_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "71_2": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "384_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "540_1": [
+        "object_orientation",
+        "non-spatial_relations"
+    ],
+    "7_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "417_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "27_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "850_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "954_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "454_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "225_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "806_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "377_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "342_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "595_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "329_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "411_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "1057_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "197_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "98_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "74_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "459_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "170_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "307_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "684_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "21_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "117_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "259_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "548_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "134_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "383_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "415_1": [
+        "spatial_relations",
+        "non-spatial_relations"
+    ],
+    "403_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "737_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "173_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "363_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "773_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "463_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "161_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "59_1": [
+        "spatial_relations",
+        "non-spatial_relations"
+    ],
+    "23_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "910_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "462_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "263_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "953_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "1049_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "113_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "385_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "305_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "503_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "1088_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "617_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "57_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "221_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "192_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "341_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "628_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "821_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "688_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "693_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "897_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "504_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "163_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "16_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "896_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "15_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "484_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "208_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "86_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "508_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "544_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "1073_1": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "241_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "721_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "229_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "310_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "183_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "764_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "188_1": [
+        "object_states",
+        "object_orientation"
+    ],
+    "803_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "960_2": [
+        "object_states",
+        "object_orientation"
+    ],
+    "345_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "812_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "874_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "616_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "394_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "715_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "222_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "445_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "311_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "432_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "331_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "85_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "780_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "511_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "205_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "585_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "180_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "11_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "125_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "708_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "392_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "835_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "705_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "443_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "232_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "737_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "604_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "150_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "310_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "160_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "120_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "710_2": [
+        "object_states",
+        "non-spatial_relations"
+    ],
+    "419_2": [
+        "non-spatial_relations",
+        "spatial_relations"
+    ],
+    "446_2": [
+        "object_states",
+        "non-spatial_relations"
+    ],
+    "368_1": [
+        "spatial_relations",
+        "object_states"
+    ],
+    "101_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "232_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "409_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "787_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "819_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "910_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "406_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "153_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "437_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "503_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "670_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "234_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "475_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "757_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "719_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "343_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "198_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "373_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "93_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "433_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "962_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "91_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "1068_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "453_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "46_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "196_2": [
+        "object_states",
+        "object_affordance"
+    ],
+    "419_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "874_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "795_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "440_1": [
+        "object_states",
+        "object_affordance"
+    ],
+    "201_2": [
+        "object_states",
+        "object_affordance"
+    ]
+}

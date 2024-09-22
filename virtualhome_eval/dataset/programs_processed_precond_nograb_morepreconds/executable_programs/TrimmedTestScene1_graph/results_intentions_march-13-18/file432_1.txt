@@ -1,0 +1,7 @@
+Turn on light
+Walk over to light switch, flip the switch to the on position
+
+
+[WALK] <home_office> (1.319)
+[WALK] <floor_lamp> (1.1000)
+[SWITCHON] <floor_lamp> (1.1000)

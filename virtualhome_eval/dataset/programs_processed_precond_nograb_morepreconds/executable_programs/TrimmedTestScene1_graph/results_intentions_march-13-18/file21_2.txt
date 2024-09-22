@@ -1,0 +1,19 @@
+Watch TV
+I go to living room, sit on sofa, find the remote control on the table, switch on TV and watch the TV.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <table> (1.355)
+[TURNTO] <table> (1.355)
+[LOOKAT] <table> (1.355)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[PUTOBJBACK] <remote_control> (1.1000)
+[TURNTO] <television> (1.410)
+[TURNTO] <television> (1.410)
+[WATCH] <television> (1.410)

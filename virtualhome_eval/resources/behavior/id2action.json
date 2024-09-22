@@ -1,0 +1,692 @@
+{
+    "cleaning_table_after_clearing_0_Merom_1_int_0_2021-06-06_19-48-44": [
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_dishtowel",
+        "release",
+        "open"
+    ],
+    "locking_every_door_0_Merom_1_int_0_2021-10-20_05-53-14": [
+        "navigate_to",
+        "close"
+    ],
+    "installing_a_fax_machine_0_Beechwood_0_int_0_2021-10-25_20-22-22": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "toggle_on",
+        "grasp"
+    ],
+    "setting_mousetraps_0_Beechwood_1_int_0_2021-10-26_13-53-26": [
+        "navigate_to",
+        "place_onfloor",
+        "place_nextto",
+        "grasp"
+    ],
+    "cleaning_closet_0_Beechwood_1_int_0_2021-10-25_19-50-32": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "clean_dusty_towel",
+        "open"
+    ],
+    "locking_every_window_0_Merom_1_int_0_2021-11-01_14-51-10": [
+        "navigate_to",
+        "close"
+    ],
+    "cleaning_up_refrigerator_0_Wainscott_0_int_1_2021-06-23_17-46-01": [
+        "place_inside",
+        "soak",
+        "place_nextto",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_rag",
+        "open"
+    ],
+    "cleaning_out_drawers_0_Benevolence_1_int_0_2021-10-20_05-03-27": [
+        "navigate_to",
+        "place_nextto",
+        "open",
+        "grasp"
+    ],
+    "cleaning_windows_0_Wainscott_0_int_0_2021-05-23_23-07-05": [
+        "clean_dusty_rag",
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "release",
+        "open"
+    ],
+    "cleaning_kitchen_cupboard_0_Pomaria_1_int_0_2021-10-26_13-05-36": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "clean_dusty_cloth",
+        "release",
+        "open"
+    ],
+    "organizing_file_cabinet_0_Pomaria_0_int_0_2021-06-08_15-27-20": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "brushing_lint_off_clothing_0_Pomaria_2_int_0_2021-06-04_17-41-56": [
+        "clean_dusty_brush",
+        "navigate_to",
+        "place_nextto_ontop",
+        "release",
+        "grasp"
+    ],
+    "cleaning_a_car_0_Ihlen_0_int_0_2021-09-11_16-37-11": [
+        "place_inside",
+        "clean_dusty_rag",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "organizing_school_stuff_0_Wainscott_1_int_0_2021-08-24_22-56-24": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "packing_lunches_0_Beechwood_0_int_0_2021-10-26_11-03-14": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "defrosting_freezer_0_Beechwood_0_int_0_2021-10-25_23-10-43": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25": [
+        "navigate_to",
+        "place_onfloor",
+        "grasp"
+    ],
+    "cleaning_stove_0_Wainscott_0_int_0_2021-09-11_12-51-07": [
+        "clean_dusty_rag",
+        "soak",
+        "place_nextto",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_rag",
+        "open"
+    ],
+    "packing_picnics_0_Wainscott_0_int_0_2021-10-26_11-07-29": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "cleaning_floors_0_Merom_0_int_1_2021-06-23_16-12-28": [
+        "clean_dusty_brush",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_brush",
+        "release",
+        "grasp"
+    ],
+    "picking_up_trash_0_Beechwood_0_int_1_2021-10-26_14-06-49": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "storing_food_0_Rs_int_0_2021-10-25_21-27-36": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "cleaning_bedroom_0_Benevolence_2_int_0_2021-06-06_18-10-59": [
+        "place_inside",
+        "place_nextto",
+        "clean_dusty_vacuum",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "watering_houseplants_0_Beechwood_0_int_0_2021-10-26_15-20-01": [
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "release",
+        "grasp"
+    ],
+    "putting_away_Halloween_decorations_0_Rs_int_0_2021-10-25_22-42-17": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "cleaning_carpets_0_Wainscott_1_int_0_2021-09-11_01-12-41": [
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_handowel",
+        "grasp"
+    ],
+    "putting_up_Christmas_decorations_inside_0_Ihlen_1_int_0_2021-06-03_14-27-09": [
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "setting_up_candles_0_Wainscott_0_int_0_2021-10-26_13-40-51": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "open",
+        "grasp"
+    ],
+    "sorting_books_0_Pomaria_1_int_0_2021-10-26_13-27-18": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "grasp"
+    ],
+    "cleaning_up_the_kitchen_only_0_Pomaria_1_int_0_2021-10-26_00-50-16": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "release",
+        "open"
+    ],
+    "moving_boxes_to_storage_0_Merom_0_int_0_2021-06-11_20-04-35": [
+        "navigate_to",
+        "place_onfloor",
+        "grasp",
+        "place_nextto_ontop"
+    ],
+    "preparing_a_shower_for_child_0_Ihlen_0_int_0_2021-10-25_21-36-25": [
+        "navigate_to",
+        "place_nextto",
+        "grasp"
+    ],
+    "packing_bags_or_suitcase_0_Merom_1_int_0_2021-10-26_10-04-07": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "storing_the_groceries_0_Beechwood_0_int_0_2021-10-26_13-13-47": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "filling_a_Christmas_stocking_0_Rs_int_0_2021-06-04_18-47-42": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "release",
+        "open"
+    ],
+    "making_tea_0_Wainscott_0_int_0_2021-10-26_12-49-48": [
+        "slice",
+        "soak_teapot",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "release",
+        "open"
+    ],
+    "waxing_cars_or_other_vehicles_0_Ihlen_0_int_0_2021-10-25_23-03-46": [
+        "navigate_to",
+        "open",
+        "clean_dusty_rag",
+        "grasp"
+    ],
+    "cleaning_oven_0_Benevolence_1_int_0_2021-09-11_12-20-40": [
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_rag",
+        "release",
+        "open"
+    ],
+    "cleaning_microwave_oven_0_Benevolence_1_int_0_2021-09-11_01-27-10": [
+        "clean_dusty_rag",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_rag",
+        "release",
+        "grasp"
+    ],
+    "cleaning_up_after_a_meal_0_Wainscott_0_int_0_2021-10-20_05-33-24": [
+        "navigate_to",
+        "release",
+        "clean_stained_dishwasher",
+        "grasp"
+    ],
+    "re-shelving_library_books_0_Rs_int_0_2021-10-25_21-22-26": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "grasp"
+    ],
+    "laying_tile_floors_0_Beechwood_0_int_0_2021-10-26_17-26-23": [
+        "navigate_to",
+        "place_onfloor",
+        "grasp"
+    ],
+    "packing_car_for_trip_0_Ihlen_0_int_0_2021-10-26_10-27-23": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "opening_presents_0_Benevolence_2_int_0_2021-10-25_21-10-48": [
+        "navigate_to",
+        "open"
+    ],
+    "installing_alarms_0_Merom_1_int_0_2021-05-23_23-02-24": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "toggle_on",
+        "grasp"
+    ],
+    "cleaning_high_chair_0_Wainscott_0_int_0_2021-06-05_18-03-15": [
+        "navigate_to",
+        "clean_dusty_cloth",
+        "open",
+        "grasp"
+    ],
+    "putting_away_Christmas_decorations_0_Wainscott_0_int_0_2021-06-06_17-03-25": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "opening_packages_0_Benevolence_2_int_0_2021-10-25_21-06-42": [
+        "navigate_to",
+        "open"
+    ],
+    "packing_child_s_bag_0_Beechwood_1_int_0_2021-10-26_10-33-11": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "cleaning_garage_0_Ihlen_0_int_0_2021-08-24_17-40-48": [
+        "place_inside",
+        "clean_dusty_rag",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "bottling_fruit_0_Wainscott_0_int_0_2021-05-24_19-46-46": [
+        "place_inside",
+        "slice-carvingknife",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "release",
+        "open"
+    ],
+    "filling_an_Easter_basket_0_Benevolence_1_int_1_2021-09-10_00-09-54": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "cleaning_bathtub_0_Pomaria_0_int_0_2021-09-10_16-22-10": [
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_brush",
+        "release",
+        "open"
+    ],
+    "serving_a_meal_0_Merom_1_int_0_2021-10-26_00-34-17": [
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "packing_adult_s_bags_0_Ihlen_1_int_0_2021-10-26_09-54-15": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "installing_a_scanner_0_Pomaria_0_int_0_2021-06-08_18-34-59": [
+        "navigate_to",
+        "place_under",
+        "toggle_on",
+        "grasp"
+    ],
+    "collecting_aluminum_cans_0_Ihlen_1_int_0_2021-06-06_20-13-28": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "washing_cars_or_other_vehicles_0_Ihlen_0_int_0_2021-10-25_22-38-10": [
+        "clean_dusty_rag",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_rag",
+        "release",
+        "grasp"
+    ],
+    "throwing_away_leftovers_0_Ihlen_1_int_0_2021-06-04_19-52-40": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "polishing_silver_0_Merom_1_int_0_2021-10-26_11-43-15": [
+        "navigate_to",
+        "open",
+        "clean_dusty_rag",
+        "grasp"
+    ],
+    "cleaning_toilet_0_Merom_0_int_1_2021-06-23_17-35-48": [
+        "soak",
+        "place_onfloor",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_brush",
+        "grasp"
+    ],
+    "preparing_salad_0_Pomaria_1_int_1_2021-10-26_14-17-24": [
+        "slice-carvingknife",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "release",
+        "open"
+    ],
+    "cleaning_shoes_0_Pomaria_2_int_0_2021-09-11_13-59-22": [
+        "clean_dusty_rag",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_rag",
+        "release",
+        "grasp"
+    ],
+    "boxing_books_up_for_storage_0_Benevolence_1_int_0_2021-09-10_15-35-47": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "putting_leftovers_away_0_Ihlen_1_int_0_2021-06-08_13-42-57": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "cleaning_cupboards_0_Wainscott_1_int_1_2021-08-25_16-40-44": [
+        "clean_dusty_brush",
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "sorting_groceries_0_Wainscott_0_int_0_2021-10-26_13-36-01": [
+        "place_inside",
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "packing_boxes_for_household_move_or_trip_0_Ihlen_1_int_0_2021-06-08_19-16-19": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "washing_pots_and_pans_0_Pomaria_1_int_0_2021-10-26_13-06-44": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "clean_stained_brush",
+        "release",
+        "open"
+    ],
+    "loading_the_dishwasher_0_Benevolence_1_int_0_2021-10-20_06-10-42": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "installing_a_printer_0_Pomaria_0_int_0_2021-06-08_18-33-07": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "toggle_on",
+        "grasp"
+    ],
+    "picking_up_take-out_food_0_Ihlen_1_int_0_2021-06-10_22-09-43": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "grasp"
+    ],
+    "cleaning_barbecue_grill_0_Ihlen_0_int_0_2021-09-10_16-02-39": [
+        "clean_dusty_rag",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_rag",
+        "release",
+        "grasp"
+    ],
+    "installing_a_modem_0_Beechwood_0_int_0_2021-10-25_20-28-55": [
+        "navigate_to",
+        "place_under",
+        "toggle_on",
+        "grasp"
+    ],
+    "serving_hors_d_oeuvres_0_Wainscott_0_int_0_2021-10-26_14-00-22": [
+        "place_nextto",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "clearing_the_table_after_dinner_0_Ihlen_0_int_0_2021-10-25_23-01-51": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "laying_wood_floors_0_Pomaria_1_int_0_2021-10-25_20-46-59": [
+        "navigate_to",
+        "place_nextto",
+        "grasp",
+        "place_onfloor"
+    ],
+    "cleaning_sneakers_0_Pomaria_1_int_0_2021-10-26_13-36-08": [
+        "clean_stained_towel",
+        "soak",
+        "place_onfloor",
+        "toggle_on",
+        "navigate_to",
+        "clean_dusty_towel",
+        "release",
+        "grasp"
+    ],
+    "polishing_furniture_0_Ihlen_0_int_0_2021-10-26_11-35-40": [
+        "navigate_to",
+        "place_under",
+        "grasp",
+        "clean_dusty_rag"
+    ],
+    "mopping_floors_0_Benevolence_2_int_0_2021-10-25_21-01-58": [
+        "place_inside",
+        "soak",
+        "clean_stained_cloth",
+        "place_nextto",
+        "open",
+        "toggle_on",
+        "navigate_to",
+        "release",
+        "grasp"
+    ],
+    "cleaning_the_pool_0_Ihlen_0_int_0_2021-06-01_15-30-31": [
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_brush",
+        "place_nextto_ontop",
+        "grasp"
+    ],
+    "vacuuming_floors_0_Ihlen_1_int_0_2021-06-08_18-03-55": [
+        "navigate_to",
+        "clean_dusty_vacuum",
+        "grasp"
+    ],
+    "preserving_food_0_Rs_int_0_2021-08-25_15-53-33": [
+        "place_inside",
+        "slice-carvingknife",
+        "navigate_to",
+        "cook",
+        "place_nextto_ontop",
+        "release",
+        "grasp"
+    ],
+    "sorting_mail_0_Wainscott_0_int_1_2021-10-26_14-38-16": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "grasp"
+    ],
+    "polishing_shoes_0_Wainscott_0_int_0_2021-06-10_21-28-31": [
+        "soak",
+        "place_nextto",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_rag",
+        "grasp"
+    ],
+    "cleaning_the_hot_tub_0_Ihlen_0_int_0_2021-08-24_22-19-07": [
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_stained_brush",
+        "grasp"
+    ],
+    "organizing_boxes_in_garage_0_Ihlen_0_int_0_2021-08-24_22-59-54": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "washing_dishes_0_Benevolence_1_int_0_2021-06-08_18-07-48": [
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_brush",
+        "open"
+    ],
+    "cleaning_bathrooms_0_Benevolence_0_int_1_2021-06-12_19-33-28": [
+        "place_inside",
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "clean_stained_rag",
+        "open"
+    ],
+    "packing_food_for_work_0_Ihlen_1_int_0_2021-06-08_19-36-15": [
+        "place_inside",
+        "grasp",
+        "navigate_to",
+        "place_nextto_ontop",
+        "open"
+    ],
+    "washing_floor_0_Ihlen_1_int_1_2021-10-26_14-53-28": [
+        "clean_stained_towel",
+        "soak",
+        "toggle_on",
+        "navigate_to",
+        "clean_dusty_towel",
+        "grasp"
+    ],
+    "rearranging_furniture_0_Pomaria_2_int_1_2021-06-22_16-39-21": [
+        "navigate_to",
+        "place_nextto",
+        "grasp"
+    ],
+    "collect_misplaced_items_0_Wainscott_0_int_1_2021-10-26_18-48-11": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "open",
+        "grasp"
+    ],
+    "putting_dishes_away_after_cleaning_0_Ihlen_1_int_0_2021-10-25_22-54-09": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ],
+    "unpacking_suitcase_0_Benevolence_1_int_0_2021-06-08_17-58-34": [
+        "navigate_to",
+        "place_nextto_ontop",
+        "open",
+        "grasp"
+    ],
+    "cleaning_freezer_0_Pomaria_1_int_0_2021-10-26_12-59-25": [
+        "clean_stained_towel",
+        "soak",
+        "toggle_on",
+        "grasp",
+        "navigate_to",
+        "release",
+        "open"
+    ],
+    "thawing_frozen_food_0_Pomaria_1_int_0_2021-10-26_13-10-33": [
+        "navigate_to",
+        "place_nextto",
+        "open",
+        "grasp"
+    ],
+    "chopping_vegetables_0_Rs_int_0_2021-05-25_22-01-16": [
+        "place_inside",
+        "slice",
+        "grasp",
+        "navigate_to",
+        "open"
+    ],
+    "putting_away_toys_0_Ihlen_0_int_0_2021-10-25_22-47-44": [
+        "navigate_to",
+        "place_inside",
+        "open",
+        "grasp"
+    ]
+}

@@ -1,0 +1,8 @@
+Browse internet
+Walk to the Home Office.  Find the computer.  Turn on the computer.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)

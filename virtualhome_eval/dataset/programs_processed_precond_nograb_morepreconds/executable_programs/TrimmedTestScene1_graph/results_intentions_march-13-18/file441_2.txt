@@ -1,0 +1,8 @@
+Watch TV
+Walk to the room, in which the TV is located. Turn on TV pressing the power button for the TV. Watch TV.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (1.410)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)

@@ -1,0 +1,11 @@
+Pick up phone
+I'll enter the location containing the phone. Once there, I'll locate the phone, and move close to it. I'll then use my hand to pick up the phone such that I can then use it.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <phone> (1.1000)
+[FIND] <phone> (1.1000)
+[WALK] <phone> (1.1000)
+[TURNTO] <phone> (1.1000)
+[LOOKAT] <phone> (1.1000)
+[GRAB] <phone> (1.1000)

@@ -1,0 +1,16 @@
+Drink
+GOING TO DRINK WATER IN KITCHEN
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <water> (1.1000)
+[FIND] <water> (1.1000)
+[GRAB] <water> (1.1000)
+[FIND] <water_glass> (1.1001)
+[POUR] <water> (1.1000) <water_glass> (1.1001)
+[GRAB] <water_glass> (1.1001)
+[DRINK] <water_glass> (1.1001)
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)

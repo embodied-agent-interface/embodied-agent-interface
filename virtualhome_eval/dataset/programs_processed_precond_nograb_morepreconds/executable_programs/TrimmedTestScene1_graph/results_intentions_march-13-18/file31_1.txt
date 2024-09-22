@@ -1,0 +1,28 @@
+Wash dishes by hand
+I go to the kitchen and turn on the faucet. I get dish soap and put it into the sink. I grab a sponge and a bowl and start cleaning it. I put the bowl into the dishrack. I find a plate and clean it as well. I put it into the dishrack, turn off the faucet and put the sponge back.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <faucet> (1.232)
+[SWITCHON] <faucet> (1.232)
+[FIND] <dish_soap> (1.1000)
+[GRAB] <dish_soap> (1.1000)
+[FIND] <bowl> (1.1001)
+[GRAB] <bowl> (1.1001)
+[POUR] <dish_soap> (1.1000) <sink> (1.231)
+[PUTOBJBACK] <dish_soap> (1.1000)
+[FIND] <sponge> (1.1002)
+[GRAB] <sponge> (1.1002)
+[FIND] <bowl> (1.1001)
+[SCRUB] <bowl> (1.1001)
+[RINSE] <bowl> (1.1001)
+[FIND] <dishrack> (1.1003)
+[PUTBACK] <bowl> (1.1001) <dishrack> (1.1003)
+[FIND] <plate> (1.1004)
+[GRAB] <plate> (1.1004)
+[SCRUB] <plate> (1.1004)
+[RINSE] <plate> (1.1004)
+[PUTBACK] <plate> (1.1004) <dishrack> (1.1003)
+[SWITCHOFF] <faucet> (1.232)
+[PUTOBJBACK] <sponge> (1.1002)

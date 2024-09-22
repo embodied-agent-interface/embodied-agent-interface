@@ -1,0 +1,8 @@
+Write an email
+I go to the home office to find the computer. I turn switch computer on , i open the email. i write the email and  send it.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)

@@ -1,0 +1,17 @@
+Drink
+I enter the kitchen and grab a waterglass from the cupboard. I open the fridge and grap some water. I pour the water into the cup and drink it.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <cupboard> (1.229)
+[FIND] <cupboard> (1.229)
+[OPEN] <cupboard> (1.229)
+[FIND] <water_glass> (1.1000)
+[GRAB] <water_glass> (1.1000)
+[WALK] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[WALK] <water> (1.1001)
+[FIND] <water> (1.1001)
+[GRAB] <water> (1.1001)
+[POUR] <water> (1.1001) <water_glass> (1.1000)
+[DRINK] <water_glass> (1.1000)

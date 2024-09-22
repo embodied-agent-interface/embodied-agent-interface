@@ -1,0 +1,13 @@
+Pet cat
+My cat looks like it wants attention, so I will go pet it on the couch.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <light> (1.411)
+[FIND] <light> (1.411)
+[SWITCHON] <light> (1.411)
+[FIND] <cat> (1.1000)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[TURNTO] <cat> (1.1000)
+[TOUCH] <cat> (1.1000)

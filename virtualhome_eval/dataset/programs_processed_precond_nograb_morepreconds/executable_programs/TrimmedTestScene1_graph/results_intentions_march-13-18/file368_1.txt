@@ -1,0 +1,14 @@
+Get some water
+I pour water, take a cloth, go to the dining room, clean, take the cloth to the kitchen
+
+
+[FIND] <cloth_napkin> (1.1000)
+[GRAB] <cloth_napkin> (1.1000)
+[WALK] <dining_room> (1.201)
+[WALK] <chair> (1.1001)
+[FIND] <chair> (1.1001)
+[TURNTO] <chair> (1.1001)
+[WIPE] <chair> (1.1001)
+[PUSH] <chair> (1.1001)
+[WALK] <dining_room> (1.201)
+[DROP] <cloth_napkin> (1.1000)

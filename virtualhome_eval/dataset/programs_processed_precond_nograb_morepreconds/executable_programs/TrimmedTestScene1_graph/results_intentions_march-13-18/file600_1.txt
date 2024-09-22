@@ -1,0 +1,11 @@
+Drink
+walk to kitchen ,find fridge ,open fridge ,find water  glass , drink from water glass
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <freezer> (1.289)
+[FIND] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[FIND] <water_glass> (1.1000)
+[GRAB] <water_glass> (1.1000)
+[DRINK] <water_glass> (1.1000)

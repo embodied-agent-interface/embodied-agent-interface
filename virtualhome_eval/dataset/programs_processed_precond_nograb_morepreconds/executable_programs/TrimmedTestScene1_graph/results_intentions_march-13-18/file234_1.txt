@@ -1,0 +1,13 @@
+Work
+I walk into the home office and to the computer to switch it on. I sit in the chair and operate the computer with the keyboard and mouse.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <mouse> (1.413)
+[GRAB] <mouse> (1.413)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

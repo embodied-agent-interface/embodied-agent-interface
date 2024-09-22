@@ -1,0 +1,9 @@
+Read book
+I go to the book case, I select a book, I go back and sit down, then I read.
+
+
+[WALK] <filing_cabinet> (1.399)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[WALK] <couch> (1.352)
+[READ] <novel> (1.1000)

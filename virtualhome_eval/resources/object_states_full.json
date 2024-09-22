@@ -1,0 +1,2553 @@
+{
+    "character": [
+        "LYING",
+        "SITTING"
+    ],
+    "computer": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "bathroom": [
+        "CLEAN"
+    ],
+    "floor": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty"
+    ],
+    "wall": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty"
+    ],
+    "ceiling": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty"
+    ],
+    "mat": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "grabbed",
+        "unfolded"
+    ],
+    "curtain": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "open"
+    ],
+    "ceilinglamp": [
+        "CLEAN",
+        "ON"
+    ],
+    "walllamp": [
+        "CLEAN",
+        "ON"
+    ],
+    "bathtub": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "free",
+        "occupied",
+        "wet"
+    ],
+    "towel_rack": [
+        "CLEAN",
+        "empty",
+        "free",
+        "full",
+        "grabbed",
+        "occupied"
+    ],
+    "wallshelf": [
+        "CLEAN"
+    ],
+    "shower": [
+        "CLEAN",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "clean",
+        "cold",
+        "dirty",
+        "free",
+        "hot",
+        "occupied",
+        "off",
+        "on"
+    ],
+    "toilet": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OFF",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "flushed",
+        "free",
+        "occupied",
+        "open"
+    ],
+    "bathroom_cabinet": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "bathroom_counter": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "free",
+        "full",
+        "occupied",
+        "open"
+    ],
+    "sink": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "empty",
+        "free",
+        "full",
+        "occupied"
+    ],
+    "faucet": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "off",
+        "on"
+    ],
+    "door": [
+        "CLEAN",
+        "OPEN",
+        "closed",
+        "open"
+    ],
+    "doorjamb": [
+        "CLEAN",
+        "OPEN"
+    ],
+    "window": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "open"
+    ],
+    "light": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "off",
+        "on"
+    ],
+    "bedroom": [
+        "CLEAN"
+    ],
+    "tablelamp": [
+        "CLEAN",
+        "ON"
+    ],
+    "trashcan": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "empty",
+        "full",
+        "open"
+    ],
+    "nightstand": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "broken",
+        "closed",
+        "open"
+    ],
+    "bookshelf": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "chair": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "desk": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "free",
+        "occupied",
+        "open"
+    ],
+    "bed": [
+        "CLEAN",
+        "done",
+        "free",
+        "occupied",
+        "undone"
+    ],
+    "table": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "occupied"
+    ],
+    "dresser": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "hanger": [
+        "CLEAN",
+        "empty",
+        "free",
+        "full",
+        "grabbed",
+        "occupied"
+    ],
+    "closetdrawer": [
+        "CLEAN"
+    ],
+    "mouse": [
+        "CLEAN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "free",
+        "grabbed",
+        "occupied",
+        "plugged",
+        "unplugged"
+    ],
+    "mousepad": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty"
+    ],
+    "keyboard": [
+        "CLEAN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "free",
+        "grabbed",
+        "occupied",
+        "plugged",
+        "unplugged"
+    ],
+    "cpuscreen": [
+        "CLEAN"
+    ],
+    "drawing": [
+        "CLEAN",
+        "grabbed",
+        "hanged",
+        "unhanged"
+    ],
+    "orchid": [
+        "CLEAN"
+    ],
+    "pillow": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "photoframe": [
+        "CLEAN"
+    ],
+    "dining_room": [
+        "CLEAN"
+    ],
+    "tvstand": [
+        "CLEAN"
+    ],
+    "bench": [
+        "CLEAN",
+        "empty",
+        "free",
+        "occupied"
+    ],
+    "cupboard": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "kitchen_counter": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "free",
+        "occupied",
+        "open"
+    ],
+    "powersocket": [
+        "CLEAN"
+    ],
+    "phone": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "television": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "off",
+        "on"
+    ],
+    "wall_clock": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "broken",
+        "grabbed",
+        "hanged",
+        "off",
+        "on",
+        "unhanged"
+    ],
+    "stovefan": [
+        "CLEAN"
+    ],
+    "freezer": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "clean",
+        "closed",
+        "dirty",
+        "off",
+        "on",
+        "open"
+    ],
+    "coffe_maker": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "free",
+        "occupied",
+        "off",
+        "on",
+        "open"
+    ],
+    "toaster": [
+        "CLEAN",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "clean",
+        "dirty",
+        "free",
+        "occupied",
+        "off",
+        "on"
+    ],
+    "oven": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "closed",
+        "cold",
+        "hot",
+        "off",
+        "on",
+        "open"
+    ],
+    "tray": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed"
+    ],
+    "microwave": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "clean",
+        "closed",
+        "dirty",
+        "free",
+        "occupied",
+        "off",
+        "on",
+        "open"
+    ],
+    "home_office": [
+        "CLEAN"
+    ],
+    "couch": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "occupied"
+    ],
+    "filing_cabinet": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "check": [
+        "CLEAN",
+        "broken",
+        "full",
+        "grabbed"
+    ],
+    "homework": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "detergent": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "cutting_board": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "pencil": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "hair": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "combed",
+        "dirty",
+        "grabbed",
+        "uncombed"
+    ],
+    "food_carrot": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cooked",
+        "dirty",
+        "grabbed",
+        "uncooked"
+    ],
+    "measuring_cup": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "food_food": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cold",
+        "cooked",
+        "dirty",
+        "grabbed",
+        "hot",
+        "sliced",
+        "uncooked"
+    ],
+    "towel": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "folded",
+        "grabbed",
+        "unfolded",
+        "wet"
+    ],
+    "food_peanut_butter": [
+        "CLEAN",
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "iron": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "cold",
+        "grabbed",
+        "hot",
+        "off",
+        "on"
+    ],
+    "bookmark": [
+        "CLEAN",
+        "grabbed",
+        "occupied"
+    ],
+    "washing_machine": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "broken",
+        "closed",
+        "empty",
+        "full",
+        "off",
+        "on",
+        "open"
+    ],
+    "clothes_pants": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "laundry_detergent": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "food_orange": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cut",
+        "dirty",
+        "full",
+        "grabbed",
+        "peeled ",
+        "squeezed"
+    ],
+    "hairbrush": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "tape": [
+        "CLEAN",
+        "broken",
+        "cut",
+        "full",
+        "grabbed"
+    ],
+    "knife": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "free",
+        "grabbed",
+        "occupied",
+        "sharpened",
+        "unsharpened",
+        "wet"
+    ],
+    "jelly": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "cold",
+        "grabbed",
+        "hot",
+        "open"
+    ],
+    "mail": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "grabbed",
+        "open"
+    ],
+    "controller": [
+        "CLEAN",
+        "PLUGGED_IN",
+        "grabbed"
+    ],
+    "toilet_paper": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cut",
+        "dirty",
+        "dry",
+        "full",
+        "grabbed",
+        "wet"
+    ],
+    "box": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "dustpan": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "nail_polish": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "closed",
+        "dirty",
+        "empty",
+        "grabbed",
+        "open"
+    ],
+    "coin": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "beer": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "cold",
+        "grabbed",
+        "open"
+    ],
+    "clothes_underwear": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "empty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "basket_for_clothes": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "soap": [
+        "CLEAN",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "crayon": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "bag": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "cup": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cold",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "coffee": [
+        "CLEAN",
+        "cold",
+        "grabbed",
+        "hot"
+    ],
+    "purse": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "shaving_cream": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "scissors": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "oil": [
+        "CLEAN",
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "bowl": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cold",
+        "dirty",
+        "dry",
+        "grabbed",
+        "hot",
+        "wet"
+    ],
+    "sheets": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "grabbed",
+        "unfolded"
+    ],
+    "dishwasher": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "broken",
+        "empty",
+        "full",
+        "off",
+        "on",
+        "open"
+    ],
+    "dish_soap": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "fork": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "dishrack": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "plate": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "cold",
+        "dirty",
+        "dry",
+        "grabbed",
+        "hot",
+        "wet"
+    ],
+    "spoon": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "shoes": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "wooden_spoon": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "spectacles": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "food_onion": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "cut",
+        "grabbed",
+        "hot",
+        "peeled",
+        "rotten",
+        "uncooked"
+    ],
+    "food_salt": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "food_kiwi": [
+        "CLEAN",
+        "cold",
+        "cut",
+        "full",
+        "grabbed",
+        "peeled",
+        "rotten"
+    ],
+    "conditioner": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "dvd_player": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "closed",
+        "grabbed",
+        "off",
+        "on",
+        "open",
+        "plugged",
+        "unplugged"
+    ],
+    "hands_both": [
+        "CLEAN",
+        "clean",
+        "dirty"
+    ],
+    "water": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "frozen",
+        "hot"
+    ],
+    "bills": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "comb": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "juice": [
+        "CLEAN",
+        "cold",
+        "grabbed",
+        "hot",
+        "rotten"
+    ],
+    "clothes_hat": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "ground_coffee": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "grabbed",
+        "open"
+    ],
+    "hairdryer": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "cd": [
+        "CLEAN",
+        "DIRTY",
+        "broken",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "dirt": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "band-aids": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "light_bulb": [
+        "CLEAN",
+        "ON",
+        "broken",
+        "cold",
+        "grabbed",
+        "hot",
+        "off",
+        "on"
+    ],
+    "instrument_guitar": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "broken",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "ice": [
+        "CLEAN",
+        "grabbed",
+        "melted"
+    ],
+    "brush": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "food_bacon": [
+        "CLEAN",
+        "cooked",
+        "frozen",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "deck_of_cards": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "tea": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "grabbed",
+        "hot"
+    ],
+    "pot": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "clean",
+        "closed",
+        "cold",
+        "dirty",
+        "grabbed",
+        "hot",
+        "open"
+    ],
+    "clothes_socks": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "clothes_shirt": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "form": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "tooth_paste": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "shampoo": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "mouthwash": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "glue": [
+        "CLEAN",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "board_game": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "floor_lamp": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "broken",
+        "off",
+        "on"
+    ],
+    "rag": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "grabbed",
+        "unfolded"
+    ],
+    "food_donut": [
+        "CLEAN",
+        "cut",
+        "full",
+        "grabbed"
+    ],
+    "remote_control": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "grabbed",
+        "on"
+    ],
+    "centerpiece": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "mop_bucket": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "coffee_filter": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "oven_mitts": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "table_cloth": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "grabbed",
+        "unfolded"
+    ],
+    "cat": [
+        "CLEAN",
+        "grabbed",
+        "pleased"
+    ],
+    "dough": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "laptop": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "broken",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "food_ice_cream": [
+        "CLEAN",
+        "frozen",
+        "grabbed",
+        "melted"
+    ],
+    "food_cheese": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "cut",
+        "full",
+        "grabbed",
+        "hot",
+        "rotten",
+        "uncooked"
+    ],
+    "button": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "tea_bag": [
+        "CLEAN",
+        "cooked",
+        "dry",
+        "grabbed",
+        "uncooked",
+        "wet"
+    ],
+    "blow_dryer": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "broken",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "novel": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "grabbed",
+        "open"
+    ],
+    "laser_pointer": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "picture": [
+        "CLEAN",
+        "grabbed",
+        "hanged"
+    ],
+    "instrument_violin": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "dog": [
+        "CLEAN",
+        "grabbed",
+        "hurt",
+        "pleased"
+    ],
+    "coffee_pot": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OPEN",
+        "burning",
+        "clean",
+        "cold",
+        "dirty",
+        "grabbed",
+        "hot",
+        "open"
+    ],
+    "needle": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "microphone": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "console": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "closed",
+        "grabbed",
+        "off",
+        "on",
+        "open",
+        "plugged",
+        "unplugged"
+    ],
+    "mop": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "food_rice": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "video_game_controller": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "clothes_dress": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "toothbrush": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "alcohol": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "empty",
+        "frozen",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "clothes_scarf": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "keys": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "colander": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "food_bread": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "cut",
+        "full",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "foundation": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "stereo": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "grabbed",
+        "off",
+        "on",
+        "open",
+        "plugged",
+        "unplugged"
+    ],
+    "food_pizza": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "creditcard": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "food_steak": [
+        "CLEAN",
+        "cooked",
+        "cut",
+        "frozen",
+        "full",
+        "grabbed",
+        "hot",
+        "rotten",
+        "uncooked"
+    ],
+    "folder": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "grabbed",
+        "open"
+    ],
+    "clothes_jacket": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "food_jam": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "cold",
+        "grabbed",
+        "open",
+        "warm"
+    ],
+    "pajamas": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "lighter": [
+        "CLEAN",
+        "ON",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "clothes_gloves": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "envelope": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "grabbed",
+        "open"
+    ],
+    "kitchen_cabinet": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "clean",
+        "closed",
+        "dirty",
+        "open"
+    ],
+    "sponge": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "grabbed",
+        "wet"
+    ],
+    "shoe_rack": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "alarm_clock": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "broken",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "clothes_skirt": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "folded",
+        "free",
+        "grabbed",
+        "occupied",
+        "unfolded"
+    ],
+    "napkin": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "dry",
+        "folded",
+        "grabbed",
+        "unfolded",
+        "wet"
+    ],
+    "chessboard": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "piano_bench": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "food_cake": [
+        "CLEAN",
+        "cold",
+        "full",
+        "grabbed",
+        "sliced"
+    ],
+    "thread": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "toothbrush_holder": [
+        "CLEAN",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "kettle": [
+        "CLEAN",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "clean",
+        "cold",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "hot",
+        "off",
+        "on"
+    ],
+    "cards": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "after_shave": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "food_butter": [
+        "CLEAN",
+        "cold",
+        "grabbed",
+        "hot"
+    ],
+    "milk": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "closed",
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "hot",
+        "open",
+        "rotten"
+    ],
+    "drinking_glass": [
+        "CLEAN",
+        "clean",
+        "cold",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "broom": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "candle": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "burning",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "shoe-shine_kit": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "empty",
+        "grabbed",
+        "open"
+    ],
+    "diary": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "grabbed",
+        "open"
+    ],
+    "stamp": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "razor": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "scrabble": [
+        "CLEAN",
+        "grabbed"
+    ],
+    "newspaper": [
+        "CLEAN",
+        "CLOSED",
+        "OPEN",
+        "grabbed",
+        "open"
+    ],
+    "food_egg": [
+        "CLEAN",
+        "broken",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "rotten",
+        "uncooked"
+    ],
+    "face": [
+        "CLEAN",
+        "clean",
+        "dirty",
+        "shaved",
+        "unshaved"
+    ],
+    "wine": [
+        "CLEAN",
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "cloth_napkin": [
+        "CLEAN",
+        "clean",
+        "dirty",
+        "dry",
+        "free",
+        "grabbed",
+        "occupied",
+        "wet"
+    ],
+    "headset": [
+        "CLEAN",
+        "broken",
+        "grabbed"
+    ],
+    "food_noodles": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "pasta": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "dry_pasta": [
+        "CLEAN",
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "teeth": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "toy": [
+        "CLEAN",
+        "DIRTY",
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "water_glass": [
+        "CLEAN",
+        "clean",
+        "cold",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "coffee_table": [
+        "CLEAN",
+        "clean",
+        "dirty",
+        "free",
+        "occupied"
+    ],
+    "vacuum_cleaner": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "empty",
+        "full",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "electric_shaver": [
+        "CLEAN",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "clean",
+        "dirty",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "blender": [
+        "CLEAN",
+        "CLOSED",
+        "DIRTY",
+        "OFF",
+        "ON",
+        "OPEN",
+        "PLUGGED_IN",
+        "clean",
+        "closed",
+        "dirty",
+        "grabbed",
+        "off",
+        "on",
+        "open"
+    ],
+    "address_book": [
+        "CLEAN",
+        "CLOSED",
+        "grabbed",
+        "open"
+    ],
+    "music_stand": [
+        "CLEAN",
+        "CLOSED",
+        "folded",
+        "free",
+        "occupied",
+        "open",
+        "unfolded"
+    ],
+    "sauce_pan": [
+        "CLEAN",
+        "clean",
+        "cold",
+        "dirty",
+        "grabbed",
+        "hot"
+    ],
+    "cd_player": [
+        "CLEAN",
+        "CLOSED",
+        "OFF",
+        "ON",
+        "PLUGGED_IN",
+        "PLUGGED_OUT",
+        "broken",
+        "clean",
+        "closed",
+        "dirty",
+        "grabbed",
+        "off",
+        "on",
+        "open",
+        "plugged",
+        "unplugged"
+    ],
+    "food_chicken": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "cooked",
+        "cut",
+        "full",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "electrical_outlet": [
+        "CLEAN",
+        "OFF",
+        "ON",
+        "broken",
+        "on"
+    ],
+    "coffee_cup": [
+        "CLEAN",
+        "clean",
+        "cold",
+        "dirty",
+        "dry",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "paper_towel": [
+        "CLEAN",
+        "clean",
+        "dirty",
+        "dry",
+        "empty",
+        "grabbed",
+        "wet"
+    ],
+    "food_vegetable": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "cooked",
+        "cut",
+        "eatable",
+        "frozen",
+        "full",
+        "grabbed",
+        "hot",
+        "peeled",
+        "rotten",
+        "uncooked"
+    ],
+    "food_turkey": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "cooked",
+        "frozen",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "food_fish": [
+        "CLEAN",
+        "burning",
+        "cold",
+        "cooked",
+        "frozen",
+        "grabbed",
+        "hot",
+        "peeled",
+        "rotten",
+        "uncooked"
+    ],
+    "hands_left": [
+        "clean",
+        "dirty",
+        "hurt"
+    ],
+    "food_oatmeal": [
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "document": [
+        "cut",
+        "grabbed"
+    ],
+    "blanket": [
+        "clean",
+        "dirty",
+        "folded",
+        "grabbed",
+        "unfolded"
+    ],
+    "instrument_piano": [
+        "broken",
+        "free",
+        "occupied"
+    ],
+    "hands_right": [
+        "clean",
+        "dirty",
+        "hurt"
+    ],
+    "glass": [
+        "broken",
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "sofa": [
+        "clean",
+        "dirty",
+        "free",
+        "occupied"
+    ],
+    "wine_glass": [
+        "clean",
+        "cold",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "notes": [
+        "grabbed"
+    ],
+    "placemat": [
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "magazine": [
+        "grabbed",
+        "open"
+    ],
+    "fax_machine": [
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "pantry": [
+        "closed",
+        "empty",
+        "full",
+        "open"
+    ],
+    "telephone": [
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "food_banana": [
+        "cold",
+        "cut",
+        "full",
+        "grabbed",
+        "hot",
+        "peeled",
+        "rotten"
+    ],
+    "man": [
+        "clean",
+        "dirty",
+        "happy",
+        "pleased",
+        "sad"
+    ],
+    "video_game_console": [
+        "closed",
+        "free",
+        "occupied",
+        "off",
+        "on",
+        "open",
+        "plugged",
+        "unplugged"
+    ],
+    "arms_left": [
+        "clean",
+        "dirty"
+    ],
+    "mug": [
+        "clean",
+        "dirty",
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "legs_both": [
+        "clean",
+        "dirty"
+    ],
+    "printer": [
+        "off",
+        "on",
+        "open"
+    ],
+    "cookingpot": [
+        "clean",
+        "closed",
+        "cold",
+        "dirty",
+        "grabbed",
+        "hot",
+        "open"
+    ],
+    "duster": [
+        "clean",
+        "dirty",
+        "grabbed"
+    ],
+    "bird": [
+        "hurt",
+        "pleased"
+    ],
+    "ironing_board": [
+        "folded",
+        "free",
+        "occupied",
+        "unfolded"
+    ],
+    "eyes_both": [
+        "closed",
+        "open"
+    ],
+    "cellphone": [
+        "broken",
+        "grabbed",
+        "off",
+        "on"
+    ],
+    "woman": [
+        "clean",
+        "cold",
+        "dirty",
+        "happy",
+        "hot",
+        "pleased",
+        "sad"
+    ],
+    "slippers": [
+        "clean",
+        "dirty",
+        "free",
+        "grabbed",
+        "occupied"
+    ],
+    "drying_rack": [
+        "clean",
+        "dirty",
+        "empty",
+        "full"
+    ],
+    "eye_right": [
+        "closed",
+        "open",
+        "pleased"
+    ],
+    "face_soap": [
+        "grabbed"
+    ],
+    "paper": [
+        "grabbed"
+    ],
+    "mirror": [
+        "clean",
+        "dirty",
+        "hanged"
+    ],
+    "comforter": [
+        "empty",
+        "free",
+        "full",
+        "grabbed",
+        "occupied"
+    ],
+    "carpet": [
+        "clean",
+        "dirty",
+        "folded",
+        "unfolded"
+    ],
+    "groceries": [
+        "grabbed"
+    ],
+    "lighting": [
+        "off",
+        "on"
+    ],
+    "lightswitch": [
+        "off",
+        "on"
+    ],
+    "closet": [
+        "closed",
+        "empty",
+        "full",
+        "open"
+    ],
+    "lamp": [
+        "off",
+        "on"
+    ],
+    "book": [
+        "grabbed",
+        "open"
+    ],
+    "pen": [
+        "grabbed"
+    ],
+    "food_snack": [
+        "cooked",
+        "grabbed",
+        "uncooked"
+    ],
+    "cabinet": [
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "sauce": [
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "hot"
+    ],
+    "food_cereal": [
+        "closed",
+        "cold",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "arms_both": [
+        "clean",
+        "dirty",
+        "hurt"
+    ],
+    "notebook": [
+        "grabbed",
+        "open"
+    ],
+    "cleaning_bottle": [
+        "broken",
+        "closed",
+        "empty",
+        "full",
+        "grabbed",
+        "open"
+    ],
+    "shredder": [
+        "free",
+        "occupied",
+        "off",
+        "on"
+    ],
+    "fly": [
+        "hurt",
+        "pleased"
+    ],
+    "facial_cleanser": [
+        "empty",
+        "grabbed"
+    ],
+    "legs_left": [
+        "clean",
+        "dirty"
+    ],
+    "love_seat": [
+        "empty",
+        "free",
+        "occupied"
+    ],
+    "painting": [
+        "grabbed",
+        "hanged",
+        "unhanged"
+    ],
+    "fridge": [
+        "clean",
+        "closed",
+        "dirty",
+        "off",
+        "on",
+        "open"
+    ],
+    "arms_right": [
+        "clean",
+        "dirty"
+    ],
+    "receipt": [
+        "grabbed"
+    ],
+    "food_potato": [
+        "cold",
+        "cooked",
+        "cut",
+        "full",
+        "grabbed",
+        "hot",
+        "rotten",
+        "uncooked"
+    ],
+    "food_lemon": [
+        "cooked",
+        "cut",
+        "full",
+        "grabbed",
+        "uncooked"
+    ],
+    "stove": [
+        "closed",
+        "cold",
+        "hot",
+        "off",
+        "on",
+        "open"
+    ],
+    "eye_left": [
+        "closed",
+        "open"
+    ],
+    "highlighter": [
+        "grabbed"
+    ],
+    "fryingpan": [
+        "clean",
+        "cold",
+        "dirty",
+        "grabbed",
+        "hot"
+    ],
+    "food_apple": [
+        "clean",
+        "cold",
+        "cooked",
+        "cut",
+        "dirty",
+        "full",
+        "grabbed",
+        "peeled",
+        "rotten",
+        "uncooked"
+    ],
+    "printing_paper": [
+        "grabbed"
+    ],
+    "radio": [
+        "broken",
+        "grabbed",
+        "off",
+        "on",
+        "plugged",
+        "unplugged"
+    ],
+    "food_hamburger": [
+        "cold",
+        "cooked",
+        "cut",
+        "frozen",
+        "grabbed",
+        "hot",
+        "rotten",
+        "uncooked"
+    ],
+    "food_fruit": [
+        "clean",
+        "cold",
+        "cooked",
+        "cut",
+        "dirty",
+        "full",
+        "grabbed",
+        "hot",
+        "peeled",
+        "squeezed",
+        "uncooked"
+    ],
+    "feet_both": [
+        "clean",
+        "cold",
+        "dirty",
+        "hot",
+        "hurt"
+    ],
+    "mechanical_pencil": [
+        "grabbed"
+    ],
+    "chef_knife": [
+        "clean",
+        "dirty",
+        "dry",
+        "free",
+        "grabbed",
+        "occupied",
+        "sharpened",
+        "unsharpened",
+        "wet"
+    ],
+    "food_dessert": [
+        "cold",
+        "cooked",
+        "grabbed",
+        "hot",
+        "uncooked"
+    ],
+    "mini-fridge": [
+        "broken",
+        "closed",
+        "off",
+        "on",
+        "open"
+    ],
+    "feet_left": [
+        "clean",
+        "dirty"
+    ],
+    "crackers": [
+        "closed",
+        "grabbed",
+        "open"
+    ],
+    "feet_right": [
+        "clean",
+        "dirty"
+    ],
+    "food_sugar": [
+        "grabbed"
+    ],
+    "cleaning_solution": [
+        "empty",
+        "full",
+        "grabbed"
+    ],
+    "child": [
+        "clean",
+        "dirty",
+        "happy",
+        "pleased",
+        "sad"
+    ],
+    "textbook": [
+        "grabbed",
+        "open"
+    ],
+    "note_pad": [
+        "broken",
+        "grabbed",
+        "open"
+    ],
+    "garbage_can": [
+        "clean",
+        "closed",
+        "dirty",
+        "empty",
+        "full",
+        "open"
+    ],
+    "legs_right": [
+        "clean",
+        "dirty"
+    ]
+}

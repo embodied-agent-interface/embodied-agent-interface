@@ -1,0 +1,9 @@
+Pick up phone
+Pick up phone
+
+
+[WALK] <table> (1.226)
+[FIND] <phone> (1.247)
+[TURNTO] <phone> (1.247)
+[LOOKAT] <phone> (1.247)
+[GRAB] <phone> (1.247)

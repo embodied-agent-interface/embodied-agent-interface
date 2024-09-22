@@ -1,0 +1,200 @@
+{
+    "walk_towards": {
+        "action_name": "walk_towards",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (not (sitting ?char)) (not (lying ?char)))",
+        "action_effects": "(and (next_to ?char ?obj) (forall (?far_obj - object) (when (not (obj_next_to ?far_obj ?obj)) (not (next_to ?char ?far_obj)))) (forall (?close_obj - object) (when (obj_next_to ?close_obj ?obj) (next_to ?char ?close_obj))))"
+    },
+    "walk_into": {
+        "action_name": "walk_into",
+        "action_parameters": "(?char - character ?room - object)",
+        "action_preconditions": "(and (not (sitting ?char)) (not (lying ?char)))",
+        "action_effects": "(and (inside ?char ?room) (forall (?far_obj - object) (when (not (inside_room ?far_obj ?room)) (not (next_to ?char ?far_obj)))) )"
+    },
+    "find": {
+        "action_name": "find",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(next_to ?char ?obj)",
+        "action_effects": "()"
+    },
+    "sit": {
+        "action_name": "sit",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj) (sittable ?obj) (not (sitting ?char)))",
+        "action_effects": "(and (sitting ?char) (ontop ?char ?obj))"
+    },
+    "standup": {
+        "action_name": "standup",
+        "action_parameters": "(?char - character)",
+        "action_preconditions": "(or (sitting ?char) (lying ?char))",
+        "action_effects": "(and (not (sitting ?char)) (not (lying ?char)))"
+    },
+    "grab": {
+        "action_name": "grab",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (grabbable ?obj) (next_to ?char ?obj) (not (exists (?obj2 - object) (and (obj_inside ?obj ?obj2) (closed ?obj2)))) (not (and (exists (?obj3 - object) (holds_lh ?char ?obj3)) (exists (?obj4 - object) (holds_rh ?char ?obj4)))))",
+        "action_effects": "(and (when (exists (?obj3 - object) (holds_lh ?char ?obj3)) (holds_rh ?char ?obj)) (when (exists (?obj4 - object) (holds_rh ?char ?obj4)) (holds_lh ?char ?obj)) (when (not (and (exists (?obj3 - object) (holds_lh ?char ?obj3)) (exists (?obj4 - object) (holds_rh ?char ?obj4)))) (holds_rh ?char ?obj)) )"
+    },
+    "open": {
+        "action_name": "open",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (can_open ?obj) (closed ?obj) (next_to ?char ?obj) (not (on ?obj)))",
+        "action_effects": "(and (open ?obj) (not (closed ?obj)))"
+    },
+    "close": {
+        "action_name": "close",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (can_open ?obj) (open ?obj) (next_to ?char ?obj))",
+        "action_effects": "(and (closed ?obj) (not (on ?obj)))"
+    },
+    "put_on": {
+        "action_name": "put_on",
+        "action_parameters": "(?char - character ?obj1 - object ?obj2 - object)",
+        "action_preconditions": "(or (and (next_to ?char ?obj2) (holds_lh ?char ?obj1)) (and (next_to ?char ?obj2) (holds_rh ?char ?obj1)) )",
+        "action_effects": "(and (obj_next_to ?obj1 ?obj2) (obj_ontop ?obj1 ?obj2) (not (holds_lh ?char ?obj1)) (not (holds_rh ?char ?obj1)))"
+    },
+    "put_on_character": {
+        "action_name": "put_on_character",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (holds_lh ?char ?obj) (holds_rh ?char ?obj))",
+        "action_effects": "(and (on_char ?obj ?char) (not (holds_lh ?char ?obj)) (not (holds_rh ?char ?obj)))"
+    },
+    "put_inside": {
+        "action_name": "put_inside",
+        "action_parameters": "(?char - character ?obj1 - object ?obj2 - object)",
+        "action_preconditions": "(or (and (next_to ?char ?obj2) (holds_lh ?char ?obj1) (not (can_open ?obj2))) (and (next_to ?char ?obj2) (holds_lh ?char ?obj1) (open ?obj2)) (and (next_to ?char ?obj2) (holds_rh ?char ?obj1) (not (can_open ?obj2))) (and (next_to ?char ?obj2) (holds_rh ?char ?obj1) (open ?obj2)) )",
+        "action_effects": "(and (obj_inside ?obj1 ?obj2) (not (holds_lh ?char ?obj1)) (not (holds_rh ?char ?obj1)))"
+    },
+    "switch_on": {
+        "action_name": "switch_on",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (has_switch ?obj) (off ?obj) (plugged_in ?obj) (next_to ?char ?obj))",
+        "action_effects": "(and (on ?obj) (not (off ?obj)))"
+    },
+    "switch_off": {
+        "action_name": "switch_off",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (has_switch ?obj) (on ?obj) (next_to ?char ?obj))",
+        "action_effects": "(and (off ?obj) (not (on ?obj)))"
+    },
+    "drink": {
+        "action_name": "drink",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (and (drinkable ?obj) (holds_lh ?char ?obj)) (and (drinkable ?obj) (holds_rh ?char ?obj)) (and (recipient ?obj) (holds_lh ?char ?obj)) (and (recipient ?obj) (holds_rh ?char ?obj)) )",
+        "action_effects": "()"
+    },
+    "turn_to": {
+        "action_name": "turn_to",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "()",
+        "action_effects": "(facing ?char ?obj)"
+    },
+    "look_at": {
+        "action_name": "look_at",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(facing ?char ?obj)",
+        "action_effects": "()"
+    },
+    "wipe": {
+        "action_name": "wipe",
+        "action_parameters": "(?char - character ?obj1 - object ?obj2 - object)",
+        "action_preconditions": "(or (and (next_to ?char ?obj1) (holds_lh ?char ?obj2)) (and (next_to ?char ?obj1) (holds_rh ?char ?obj2)) )",
+        "action_effects": "(and (clean ?obj1) (not (dirty ?obj1)))"
+    },
+    "drop": {
+        "action_name": "drop",
+        "action_parameters": "(?char - character ?obj - object ?room - object)",
+        "action_preconditions": "(or (and (holds_lh ?char ?obj) (obj_inside ?obj ?room)) (and (holds_rh ?char ?obj) (obj_inside ?obj ?room)) )",
+        "action_effects": "(and (not (holds_lh ?char ?obj)) (not (holds_rh ?char ?obj)))"
+    },
+    "read": {
+        "action_name": "read",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (and (readable ?obj) (holds_lh ?char ?obj)) (and (readable ?obj) (holds_rh ?char ?obj)) )",
+        "action_effects": "()"
+    },
+    "touch": {
+        "action_name": "touch",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (and (readable ?obj) (holds_lh ?char ?obj) (not (exists (?obj2 - object) (and (obj_inside ?obj ?obj2) (closed ?obj2))))) (and (readable ?obj) (holds_rh ?char ?obj) (not (exists (?obj2 - object) (and (obj_inside ?obj ?obj2) (closed ?obj2))))) )",
+        "action_effects": "()"
+    },
+    "lie": {
+        "action_name": "lie",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (lieable ?obj) (next_to ?char ?obj) (not (lying ?char)))",
+        "action_effects": "(and (lying ?char) (ontop ?char ?obj) (not (sitting ?char)))"
+    },
+    "pour": {
+        "action_name": "pour",
+        "action_parameters": "(?char - character ?obj1 - object ?obj2 - object)",
+        "action_preconditions": "(or (and (pourable ?obj1) (holds_lh ?char ?obj1) (recipient ?obj2) (next_to ?char ?obj2)) (and (pourable ?obj1) (holds_rh ?char ?obj1) (recipient ?obj2) (next_to ?char ?obj2)) (and (drinkable ?obj1) (holds_lh ?char ?obj1) (recipient ?obj2) (next_to ?char ?obj2)) (and (drinkable ?obj1) (holds_rh ?char ?obj1) (recipient ?obj2) (next_to ?char ?obj2)) )",
+        "action_effects": "(obj_inside ?obj1 ?obj2)"
+    },
+    "type": {
+        "action_name": "type",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (has_switch ?obj) (next_to ?char ?obj))",
+        "action_effects": "()"
+    },
+    "watch": {
+        "action_name": "watch",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (lookable ?obj) (facing ?char ?obj) (not (exists (?obj2 - object) (and (obj_inside ?obj ?obj2) (closed ?obj2)))))",
+        "action_effects": "()"
+    },
+    "move": {
+        "action_name": "move",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (movable ?obj) (next_to ?char ?obj) (not (exists (?obj2 - object) (and (obj_inside ?obj ?obj2) (closed ?obj2)))))",
+        "action_effects": "()"
+    },
+    "wash": {
+        "action_name": "wash",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj))",
+        "action_effects": "(and (clean ?obj) (not (dirty ?obj)))"
+    },
+    "squeeze": {
+        "action_name": "squeeze",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj) (clothes ?obj))",
+        "action_effects": "()"
+    },
+    "plug_in": {
+        "action_name": "plug_in",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (and (next_to ?char ?obj) (has_plug ?obj) (plugged_out ?obj)) (and (next_to ?char ?obj) (has_switch ?obj) (plugged_out ?obj)) )",
+        "action_effects": "(and (plugged_in ?obj) (not (plugged_out ?obj)))"
+    },
+    "plug_out": {
+        "action_name": "plug_out",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj) (has_plug ?obj) (plugged_in ?obj) (not (on ?obj)))",
+        "action_effects": "(and (plugged_out ?obj) (not (plugged_in ?obj)))"
+    },
+    "cut": {
+        "action_name": "cut",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj) (eatable ?obj) (cuttable ?obj))",
+        "action_effects": "()"
+    },
+    "eat": {
+        "action_name": "eat",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(and (next_to ?char ?obj) (eatable ?obj))",
+        "action_effects": "()"
+    },
+    "sleep": {
+        "action_name": "sleep",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (lying ?char) (sitting ?char))",
+        "action_effects": "()"
+    },
+    "wake_up": {
+        "action_name": "wake_up",
+        "action_parameters": "(?char - character ?obj - object)",
+        "action_preconditions": "(or (lying ?char) (sitting ?char))",
+        "action_effects": "()"
+    }
+}

@@ -1,0 +1,13 @@
+Watch TV
+I walk to the living room. I reach for the remote. I push the on button on the remote. I sit down on the couch and watch television.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <button> (1.1000)
+[FIND] <button> (1.1000)
+[PUSH] <button> (1.1000)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <television> (1.410)
+[TURNTO] <television> (1.410)
+[WATCH] <television> (1.410)

@@ -1,0 +1,18 @@
+Put groceries in Fridge
+Put the groceries on the table into the fridge
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <table> (1.226)
+[FIND] <food_chicken> (1.1000)
+[GRAB] <food_chicken> (1.1000)
+[FIND] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[PUTBACK] <food_chicken> (1.1000) <freezer> (1.289)
+[CLOSE] <freezer> (1.289)
+[FIND] <food_carrot> (1.1001)
+[GRAB] <food_carrot> (1.1001)
+[FIND] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[PUTIN] <food_carrot> (1.1001) <freezer> (1.289)
+[CLOSE] <freezer> (1.289)

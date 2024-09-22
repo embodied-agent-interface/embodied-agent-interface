@@ -1,0 +1,14 @@
+Write an email
+go to home office,switch on computer and send the mail by typing with keyboard
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

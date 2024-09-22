@@ -1,0 +1,10 @@
+Browse internet
+I go to the living room, where my computer is. I locate it, switch it on and type desired URL adress in the web browser.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

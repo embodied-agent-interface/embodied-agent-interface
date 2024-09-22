@@ -1,0 +1,8 @@
+Pick up phone
+walk to phone, grab phone, pick up phone, put to ear
+
+
+[WALK] <home_office> (1.319)
+[WALK] <phone> (1.1000)
+[FIND] <phone> (1.1000)
+[GRAB] <phone> (1.1000)

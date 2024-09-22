@@ -1,0 +1,12 @@
+Read book
+Walk to the Living Room. Look at the Cabinet. Find a Textbook. Grab the textbook. Open the Textbook. Read the textbook.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <filing_cabinet> (1.399)
+[FIND] <filing_cabinet> (1.399)
+[TURNTO] <filing_cabinet> (1.399)
+[LOOKAT] <filing_cabinet> (1.399)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[READ] <novel> (1.1000)

@@ -1,0 +1,10 @@
+Work
+I need to complete work on my computer, so I will be pulling out my chair, turning on my computer and begin my task.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[PULL] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)

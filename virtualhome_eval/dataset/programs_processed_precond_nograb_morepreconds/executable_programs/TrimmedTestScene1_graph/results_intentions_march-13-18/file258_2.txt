@@ -1,0 +1,15 @@
+Wash hands
+walk to kitchen, turn on water, find soap, apply to hand, lather, rinse, dry hands
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <sink> (1.231)
+[FIND] <faucet> (1.232)
+[SWITCHON] <faucet> (1.232)
+[FIND] <soap> (1.1000)
+[GRAB] <soap> (1.1000)
+[SCRUB] <soap> (1.1000)
+[PUTOBJBACK] <soap> (1.1000)
+[FIND] <water> (1.1001)
+[RINSE] <water> (1.1001)

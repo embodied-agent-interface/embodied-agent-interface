@@ -1,0 +1,16 @@
+Drink
+I walk to the kitchen. I find a cup. I pick up the cup. I find the water faucet. I turn on the water faucet. I fill the cup. I turn off the water faucet. I drink the water.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <water_glass> (1.1000)
+[FIND] <water_glass> (1.1000)
+[GRAB] <water_glass> (1.1000)
+[FIND] <faucet> (1.232)
+[SWITCHON] <faucet> (1.232)
+[FIND] <water> (1.1001)
+[FIND] <sink> (1.231)
+[PUTBACK] <water_glass> (1.1000) <sink> (1.231)
+[GRAB] <water_glass> (1.1000)
+[SWITCHOFF] <faucet> (1.232)
+[DRINK] <water_glass> (1.1000)

@@ -1,0 +1,23 @@
+Write an email
+I wrote the task completion in a Notebook. After completing the work, I send email to my Superior. I done this task in day to day activity.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <mail> (1.1000)
+[OPEN] <mail> (1.1000)
+[FIND] <check> (1.1001)
+[GRAB] <check> (1.1001)
+[READ] <check> (1.1001)
+[FIND] <keyboard> (1.415)
+[TURNTO] <keyboard> (1.415)
+[LOOKAT] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)

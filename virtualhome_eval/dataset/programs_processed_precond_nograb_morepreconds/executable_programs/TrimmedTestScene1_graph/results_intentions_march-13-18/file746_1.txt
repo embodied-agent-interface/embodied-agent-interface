@@ -1,0 +1,15 @@
+Wash dishes by hand
+Wash the drinking glasses by hand
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <dish_soap> (1.1000)
+[FIND] <dish_soap> (1.1000)
+[GRAB] <dish_soap> (1.1000)
+[RUN] <water> (1.1001)
+[FIND] <sink> (1.231)
+[PUTBACK] <dish_soap> (1.1000) <sink> (1.231)
+[FIND] <sponge> (1.1002)
+[GRAB] <sponge> (1.1002)
+[FIND] <drinking_glass> (1.1003)
+[WASH] <drinking_glass> (1.1003)

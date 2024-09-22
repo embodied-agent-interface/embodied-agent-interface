@@ -1,0 +1,19 @@
+Watch TV
+Sit down, turn on the TV with the remote control that is on the coffee table.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <coffee_table> (1.1000)
+[TURNTO] <coffee_table> (1.1000)
+[LOOKAT] <coffee_table> (1.1000)
+[FIND] <remote_control> (1.1001)
+[GRAB] <remote_control> (1.1001)
+[FIND] <television> (1.410)
+[TURNTO] <television> (1.410)
+[LOOKAT] <television> (1.410)
+[TURNTO] <television> (1.410)
+[POINTAT] <television> (1.410)
+[SWITCHON] <television> (1.410)

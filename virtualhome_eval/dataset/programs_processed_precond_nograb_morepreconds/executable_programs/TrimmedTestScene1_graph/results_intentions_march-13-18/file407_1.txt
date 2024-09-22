@@ -1,0 +1,13 @@
+Write an email
+Walk to Home office. Sit on the chair. Switch on the computer. Find address in addressbook. Type in the keyboard. Write mail.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <address_book> (1.1000)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

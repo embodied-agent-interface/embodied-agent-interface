@@ -1,0 +1,11 @@
+Pick up phone
+Go to the phone and pick it up.
+
+
+[RUN] <home_office> (1.319)
+[RUN] <table> (1.355)
+[FIND] <phone> (1.1000)
+[GRAB] <phone> (1.1000)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[TOUCH] <phone> (1.1000)

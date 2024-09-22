@@ -1,0 +1,8 @@
+Turn on light
+I go home and it's dark so I can not see anything
+
+
+[WALK] <home_office> (1.319)
+[WALK] <floor_lamp> (1.1000)
+[FIND] <floor_lamp> (1.1000)
+[SWITCHON] <floor_lamp> (1.1000)

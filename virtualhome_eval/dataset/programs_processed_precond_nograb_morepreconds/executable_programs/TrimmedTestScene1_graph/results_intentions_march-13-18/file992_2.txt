@@ -1,0 +1,18 @@
+Make coffee
+Go to the kitchen, locate coffee and coffee maker
+
+
+[FIND] <coffe_maker> (1.290)
+[OPEN] <coffe_maker> (1.290)
+[WALK] <coffee> (1.1000)
+[FIND] <coffee> (1.1000)
+[GRAB] <coffee> (1.1000)
+[POUR] <coffee> (1.1000) <coffe_maker> (1.290)
+[WALK] <water> (1.1001)
+[FIND] <water> (1.1001)
+[GRAB] <water> (1.1001)
+[POUR] <water> (1.1001) <coffe_maker> (1.290)
+[SWITCHON] <coffe_maker> (1.290)
+[DRINK] <coffee> (1.1000)
+[FIND] <cup> (1.1002)
+[WASH] <cup> (1.1002)

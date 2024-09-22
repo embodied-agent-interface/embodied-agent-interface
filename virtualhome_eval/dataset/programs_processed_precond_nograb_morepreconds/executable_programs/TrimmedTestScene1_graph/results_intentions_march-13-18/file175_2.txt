@@ -1,0 +1,14 @@
+Drink
+To go kitchen and find a cup. open the faucet and fill water in the cup and drink.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <faucet> (1.232)
+[SWITCHON] <faucet> (1.232)
+[FIND] <cup> (1.1000)
+[GRAB] <cup> (1.1000)
+[TURNTO] <faucet> (1.232)
+[POINTAT] <faucet> (1.232)
+[SWITCHOFF] <faucet> (1.232)
+[DRINK] <cup> (1.1000)

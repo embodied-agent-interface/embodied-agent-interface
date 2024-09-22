@@ -1,0 +1,13 @@
+Work
+I walk into the office where I see my computer on the desk. I go to sit down and turn on computer. I begin typing.
+
+
+[FIND] <computer> (1.170)
+[TURNTO] <computer> (1.170)
+[LOOKAT] <computer> (1.170)
+[WALK] <desk> (1.104)
+[FIND] <chair> (1.103)
+[SIT] <chair> (1.103)
+[SWITCHON] <computer> (1.170)
+[FIND] <keyboard> (1.168)
+[TYPE] <keyboard> (1.168)

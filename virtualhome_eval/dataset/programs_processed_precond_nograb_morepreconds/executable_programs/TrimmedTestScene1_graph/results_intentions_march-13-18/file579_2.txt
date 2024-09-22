@@ -1,0 +1,10 @@
+Change TV channel
+change the tv channel
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <remote_control> (1.1000)
+[FIND] <button> (1.1001)
+[PUSH] <button> (1.1001)

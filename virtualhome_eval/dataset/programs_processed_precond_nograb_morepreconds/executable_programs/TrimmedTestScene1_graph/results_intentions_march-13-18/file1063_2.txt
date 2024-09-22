@@ -1,0 +1,13 @@
+Pet cat
+Every time this animal is seen, you must approach it and show compassion for it by petting it in a gentle manner.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <bedroom> (1.67)
+[WALK] <bedroom> (1.67)
+[WALK] <home_office> (1.319)
+[WALK] <home_office> (1.319)
+[WALK] <cat> (1.1000)
+[FIND] <cat> (1.1000)
+[FIND] <brush> (1.1001)
+[GRAB] <brush> (1.1001)

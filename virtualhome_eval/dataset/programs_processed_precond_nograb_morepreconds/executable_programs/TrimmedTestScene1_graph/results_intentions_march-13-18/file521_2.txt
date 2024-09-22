@@ -1,0 +1,18 @@
+Browse internet
+I go to my home office. I sit on the chair right in front of my computer. I turn on the computer. Use the mouse to open the web browser. Use the keyboard to type the URL that I want to visit.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <mouse> (1.413)
+[TOUCH] <mouse> (1.413)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)

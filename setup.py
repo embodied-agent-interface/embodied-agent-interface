@@ -14,6 +14,7 @@ setup(
         "networkx>=3.1",
         "numpy>=1.20.0",
         "fire",
+        "gdown",
     ],
     include_package_data=True,
     package_data={

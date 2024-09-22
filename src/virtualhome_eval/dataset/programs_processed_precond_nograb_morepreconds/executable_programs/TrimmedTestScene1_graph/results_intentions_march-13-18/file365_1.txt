@@ -1,0 +1,11 @@
+Browse internet
+For browsing internet walk to home office. Find Computer. Walk to Computer. Find Chair. Sit in a chair and switch on computer. Connect with internet and browse the net.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[WALK] <computer> (1.417)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[SWITCHON] <computer> (1.417)

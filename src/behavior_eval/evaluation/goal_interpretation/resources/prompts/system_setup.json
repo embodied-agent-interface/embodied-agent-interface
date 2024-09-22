@@ -1,0 +1,7 @@
+{
+    "system_prompt": "For this task, please only output a parsable json string inside brackets. Please start your answer with { and end your answer with }. Don't include any notes or explanations with the output json string.",
+    "stop_sequences": [
+        "}"
+    ],
+    "max_output_tokens": 2048
+}

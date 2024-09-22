@@ -1,0 +1,12 @@
+Browse internet
+I go in my office, sit at my desk turn on the computer, then type on my keyboard and open my web browser.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <desk> (1.357)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

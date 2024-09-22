@@ -1,0 +1,16 @@
+Work
+Find a PC and do homework
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[FIND] <mouse> (1.413)
+[FIND] <check> (1.1000)
+[FIND] <homework> (1.1001)
+[GRAB] <homework> (1.1001)
+[FIND] <homework> (1.1001)
+[READ] <homework> (1.1001)
+[SWITCHOFF] <computer> (1.417)

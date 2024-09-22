@@ -1,0 +1,11 @@
+Browse internet
+I pick up my phone. I touch it to navigate to the web browser. I can swipe and tap the screen to visit different websites. Then I read or watch the content within those websites.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <phone> (1.1000)
+[FIND] <phone> (1.1000)
+[GRAB] <phone> (1.1000)
+[TOUCH] <phone> (1.1000)
+[TURNTO] <phone> (1.1000)
+[LOOKAT] <phone> (1.1000)

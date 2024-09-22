@@ -1,0 +1,9 @@
+Write an email
+Find the computer. Open the emailing software. Create a new email. Type in the text, the address and the object with the keyboard. Send it.
+
+
+[FIND] <computer> (1.170)
+[TURNTO] <computer> (1.170)
+[LOOKAT] <computer> (1.170)
+[FIND] <keyboard> (1.168)
+[TYPE] <keyboard> (1.168)

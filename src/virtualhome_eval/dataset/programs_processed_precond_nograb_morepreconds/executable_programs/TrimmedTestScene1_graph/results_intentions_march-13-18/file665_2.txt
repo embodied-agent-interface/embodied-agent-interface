@@ -1,0 +1,13 @@
+Watch TV
+I am sitting in the living room.  I turn on the television.  I select a channel using the remote control.  I set down the remote control.  I watch the television.
+
+
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <button> (1.1001)
+[PUSH] <button> (1.1001)
+[PUTOBJBACK] <remote_control> (1.1000)

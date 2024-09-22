@@ -1,0 +1,10 @@
+Set up table
+walk to home office ,find table , put table cloth on table
+
+
+[WALK] <home_office> (1.319)
+[WALK] <table> (2.355)
+[FIND] <table> (2.355)
+[FIND] <table_cloth> (3.1000)
+[GRAB] <table_cloth> (3.1000)
+[PUTBACK] <table_cloth> (3.1000) <table> (2.355)

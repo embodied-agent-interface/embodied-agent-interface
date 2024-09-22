@@ -1,0 +1,8 @@
+Pet cat
+Find cat. Walk to cat. Pick up cat. Pet the cat.
+
+
+[FIND] <cat> (1.1000)
+[WALK] <home_office> (1.319)
+[WALK] <cat> (1.1000)
+[TOUCH] <cat> (1.1000)

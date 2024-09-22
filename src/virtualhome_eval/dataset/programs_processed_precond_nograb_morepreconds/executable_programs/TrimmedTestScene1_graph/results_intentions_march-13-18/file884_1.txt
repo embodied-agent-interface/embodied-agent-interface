@@ -1,0 +1,15 @@
+Write an email
+i went near the computer and turned it on. then sent the mail
+
+
+[WALK] <home_office> (1.319)
+[WALK] <table> (1.355)
+[FIND] <table> (1.355)
+[WALK] <table> (1.355)
+[FIND] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <mail> (1.1000)
+[TURNTO] <mail> (1.1000)

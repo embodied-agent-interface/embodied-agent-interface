@@ -1,0 +1,16 @@
+Wash dishes with dishwasher
+Walk to Kitchen. Look at sink. Grab dish soap. Open dishwasher. Put dish soap in dishwasher. Close dishwasher. Switch on dishwasher.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <sink> (1.231)
+[TURNTO] <sink> (1.231)
+[LOOKAT] <sink> (1.231)
+[FIND] <dish_soap> (1.1000)
+[GRAB] <dish_soap> (1.1000)
+[FIND] <dishwasher> (1.1001)
+[OPEN] <dishwasher> (1.1001)
+[PUTBACK] <dish_soap> (1.1000) <dishwasher> (1.1001)
+[CLOSE] <dishwasher> (1.1001)
+[SWITCHON] <dishwasher> (1.1001)

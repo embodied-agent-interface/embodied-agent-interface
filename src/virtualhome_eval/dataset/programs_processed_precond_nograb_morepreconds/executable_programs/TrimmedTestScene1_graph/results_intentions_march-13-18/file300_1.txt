@@ -1,0 +1,8 @@
+Relax on sofa
+Go to living room.  Find sofa.  Sit on sofa.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)

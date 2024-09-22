@@ -1,0 +1,12 @@
+Put groceries in Fridge
+Walk to kitchen counter, grab a grocery, walk to fridge, open fridge, put the grocery into fridge, and close fridge
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <kitchen_counter> (1.230)
+[FIND] <food_food> (1.1000)
+[GRAB] <food_food> (1.1000)
+[WALK] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[PUTIN] <food_food> (1.1000) <freezer> (1.289)
+[CLOSE] <freezer> (1.289)

@@ -1,0 +1,7 @@
+Relax on sofa
+walk to living room, walk to sofa, sit in sofa
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)

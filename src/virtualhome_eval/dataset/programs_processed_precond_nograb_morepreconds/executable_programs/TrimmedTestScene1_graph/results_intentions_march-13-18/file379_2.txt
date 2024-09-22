@@ -1,0 +1,8 @@
+Relax on sofa
+go to living room and lie down on the sofa.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[LIE] <couch> (1.352)

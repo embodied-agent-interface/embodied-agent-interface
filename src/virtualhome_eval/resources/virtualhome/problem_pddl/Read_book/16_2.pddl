@@ -1,0 +1,40 @@
+(define (problem Read_book)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    novel home_office coffee_table computer chair dining_room - object
+)
+    (:init
+    (obj_next_to coffee_table novel)
+    (surfaces chair)
+    (obj_next_to novel coffee_table)
+    (facing chair computer)
+    (readable novel)
+    (movable chair)
+    (obj_next_to computer chair)
+    (movable coffee_table)
+    (sittable chair)
+    (has_switch computer)
+    (obj_inside novel home_office)
+    (has_paper novel)
+    (movable novel)
+    (cuttable novel)
+    (grabbable chair)
+    (inside character dining_room)
+    (grabbable novel)
+    (lookable computer)
+    (can_open novel)
+    (surfaces coffee_table)
+    (obj_inside computer home_office)
+    (obj_ontop novel coffee_table)
+    (obj_inside chair home_office)
+    (obj_inside coffee_table home_office)
+    (obj_next_to chair computer)
+)
+    (:goal
+    (and
+        (holds_rh character novel)
+    )
+)
+    )
+    

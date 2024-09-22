@@ -1,0 +1,10 @@
+Drink
+walk to kitchen, walk to table, grab water glass and drink water
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <table> (1.226)
+[FIND] <water_glass> (1.1000)
+[GRAB] <water_glass> (1.1000)
+[DRINK] <water_glass> (1.1000)
+[PUTBACK] <water_glass> (1.1000) <table> (1.226)

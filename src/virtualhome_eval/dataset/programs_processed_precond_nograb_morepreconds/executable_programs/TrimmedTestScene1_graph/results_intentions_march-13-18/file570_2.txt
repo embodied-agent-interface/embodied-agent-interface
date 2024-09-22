@@ -1,0 +1,10 @@
+Watch TV
+I pick up remote. I turn on tv. I push on the remote. I change the channel.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <remote_control> (1.1000)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)

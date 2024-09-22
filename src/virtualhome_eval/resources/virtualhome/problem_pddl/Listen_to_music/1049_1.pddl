@@ -1,0 +1,43 @@
+(define (problem Listen_to_music)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    bathroom home_office couch television dvd_player - object
+)
+    (:init
+    (has_plug television)
+    (clean dvd_player)
+    (surfaces couch)
+    (can_open dvd_player)
+    (plugged_in dvd_player)
+    (obj_inside couch home_office)
+    (closed dvd_player)
+    (lieable couch)
+    (obj_next_to couch television)
+    (lookable television)
+    (off dvd_player)
+    (grabbable dvd_player)
+    (movable couch)
+    (facing couch television)
+    (surfaces dvd_player)
+    (sittable couch)
+    (has_plug dvd_player)
+    (movable dvd_player)
+    (obj_next_to couch dvd_player)
+    (has_switch television)
+    (obj_next_to dvd_player couch)
+    (has_switch dvd_player)
+    (inside character bathroom)
+    (obj_inside television home_office)
+    (obj_next_to television couch)
+    (obj_inside dvd_player home_office)
+)
+    (:goal
+    (and
+        (closed dvd_player)
+        (on dvd_player)
+        (plugged_in dvd_player)
+    )
+)
+    )
+    

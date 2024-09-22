@@ -1,0 +1,17 @@
+Write an email
+Switch on computer, Use keybord and mouse to open e-mail provider, type requested e-mail, click send, close e-mail provider, turn off computer
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <mouse> (1.413)
+[FIND] <keyboard> (1.415)
+[FIND] <mail> (1.1000)
+[OPEN] <mail> (1.1000)
+[TYPE] <keyboard> (1.415)
+[FIND] <button> (1.1001)
+[PUSH] <button> (1.1001)
+[CLOSE] <mail> (1.1000)
+[SWITCHOFF] <computer> (1.417)

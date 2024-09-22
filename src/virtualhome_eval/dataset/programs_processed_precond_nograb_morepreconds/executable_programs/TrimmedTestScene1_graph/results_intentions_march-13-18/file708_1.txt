@@ -1,0 +1,12 @@
+Turn on light
+Go to the living room and turn on the lights
+
+
+[WALK] <home_office> (1.319)
+[WALK] <light> (3.411)
+[FIND] <light> (3.411)
+[SWITCHON] <light> (3.411)
+[WALK] <bedroom> (2.67)
+[WALK] <light> (2.169)
+[FIND] <light> (2.169)
+[SWITCHON] <light> (2.169)

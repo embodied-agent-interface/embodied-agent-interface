@@ -1,0 +1,26 @@
+Write an email
+go to the home office and write an email
+
+
+[RUN] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <mouse> (1.413)
+[GRAB] <mouse> (1.413)
+[TOUCH] <mouse> (1.413)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[GRAB] <keyboard> (1.415)
+[TOUCH] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[TYPE] <keyboard> (1.415)
+[TOUCH] <mouse> (1.413)
+[SWITCHOFF] <computer> (1.417)

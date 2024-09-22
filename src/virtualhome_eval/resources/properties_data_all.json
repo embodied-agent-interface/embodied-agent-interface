@@ -1,0 +1,2025 @@
+{
+    "addressbook": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "notes": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "aftershave": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "facecream": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "alarmclock": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "clock": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "alcohol": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "armsboth": [
+        "BODY_PART"
+    ],
+    "armsleft": [
+        "BODY_PART"
+    ],
+    "armsright": [
+        "BODY_PART"
+    ],
+    "bag": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "band-aids": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "basketforclothes": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "clothespile": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "bathroomcabinet": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "bathroomcounter": [
+        "SURFACES"
+    ],
+    "bathtub": [
+        "SITTABLE",
+        "LIEABLE"
+    ],
+    "bed": [
+        "SURFACES",
+        "SITTABLE",
+        "LIEABLE"
+    ],
+    "beer": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "bench": [
+        "SURFACES",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "bills": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "bird": [],
+    "blanket": [
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "blender": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "blowdryer": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "boardgame": [
+        "SURFACES",
+        "GRABBABLE",
+        "LOOKABLE",
+        "MOVABLE"
+    ],
+    "book": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "bookmark": [
+        "GRABBABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "bookshelf": [
+        "SURFACES",
+        "CONTAINERS"
+    ],
+    "bowl": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "dishbowl": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "box": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "broom": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "brush": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "button": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cabinet": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "candle": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "cards": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "carpet": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "rug": [
+        "SURFACES",
+        "GRABBABLE",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "cat": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cd": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cdplayer": [
+        "SURFACES",
+        "GRABBABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "radio": [
+        "SURFACES",
+        "GRABBABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "ceiling": [],
+    "cellphone": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "centerpiece": [
+        "GRABBABLE",
+        "LOOKABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "chair": [
+        "SURFACES",
+        "GRABBABLE",
+        "SITTABLE",
+        "MOVABLE"
+    ],
+    "check": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "paper": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "chefknife": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "chessboard": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "child": [
+        "PERSON"
+    ],
+    "cleaningbottle": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "dishwashingliquid": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "cleaningsolution": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "closet": [
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "clothnapkin": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "napkin": [
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "papertowel": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CUTTABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "clothesdress": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesgloves": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clotheshat": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesjacket": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothespants": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "pants": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesscarf": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesshirt": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "shirt": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesskirt": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothessocks": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "clothesunderwear": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "coffemaker": [
+        "RECIPIENT",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "coffeemaker": [
+        "RECIPIENT",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "coffee": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "coffeecup": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "mug": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "coffeefilter": [
+        "GRABBABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "coffeepot": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "coffeetable": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "coin": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "colander": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "comb": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "comforter": [
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "computer": [
+        "HAS_SWITCH",
+        "LOOKABLE"
+    ],
+    "cpucase": [
+        "HAS_SWITCH",
+        "LOOKABLE"
+    ],
+    "pc": [
+        "HAS_SWITCH",
+        "LOOKABLE"
+    ],
+    "conditioner": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "console": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "controller": [
+        "GRABBABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "remotecontrol": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "cookingpot": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "couch": [
+        "SURFACES",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "sofa": [
+        "SURFACES",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "crackers": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "crayon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "crayons": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "creditcard": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cup": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "waterglass": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "wineglass": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "cupboard": [
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "kitchencabinets": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "curtain": [
+        "CAN_OPEN",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "curtains": [
+        "CAN_OPEN",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "cuttingboard": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "deckofcards": [
+        "GRABBABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "desk": [
+        "SURFACES",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "cputable": [
+        "SURFACES",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "detergent": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "diary": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "journal": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "dirt": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "dishsoap": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "dishrack": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "dishwasher": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS"
+    ],
+    "document": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "dog": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "door": [
+        "CAN_OPEN"
+    ],
+    "dough": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "drawing": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "LOOKABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "wallpictureframe": [
+        "GRABBABLE",
+        "HANGABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "dresser": [
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "drinkingglass": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "drypasta": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "dryingrack": [
+        "SURFACES"
+    ],
+    "duster": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "dustpan": [
+        "GRABBABLE",
+        "HANGABLE",
+        "MOVABLE"
+    ],
+    "dvdplayer": [
+        "SURFACES",
+        "GRABBABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "electricshaver": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "electricaloutlet": [
+        "HAS_SWITCH"
+    ],
+    "envelope": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "eyeleft": [
+        "CAN_OPEN",
+        "BODY_PART"
+    ],
+    "eyeright": [
+        "CAN_OPEN",
+        "BODY_PART"
+    ],
+    "eyesboth": [
+        "CAN_OPEN",
+        "BODY_PART"
+    ],
+    "face": [
+        "BODY_PART"
+    ],
+    "facesoap": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "barsoap": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "facialcleanser": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "faucet": [
+        "HAS_SWITCH"
+    ],
+    "faxmachine": [
+        "HAS_SWITCH",
+        "HAS_PLUG"
+    ],
+    "printer": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "feetboth": [
+        "BODY_PART"
+    ],
+    "feetleft": [
+        "BODY_PART"
+    ],
+    "feetright": [
+        "BODY_PART"
+    ],
+    "filingcabinet": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "floor": [
+        "SURFACES"
+    ],
+    "floorlamp": [
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "lamp": [
+        "HAS_SWITCH",
+        "HAS_PLUG"
+    ],
+    "fly": [],
+    "folder": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "CONTAINERS",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "foodapple": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "apple": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodbacon": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodbanana": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "banana": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodbread": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "bread": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "breadslice": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodbutter": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "foodcake": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodcarrot": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "carrot": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodcereal": [
+        "GRABBABLE",
+        "EATABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "cereal": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "foodcheese": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "foodchicken": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "chicken": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "fooddessert": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "cupcake": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "milkshake": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "pancake": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "pie": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "poundcake": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "pudding": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "sundae": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "watermelon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "creamybuns": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "fooddonut": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodegg": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodfish": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "salmon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodfood": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "potato": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "bellpepper": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "chocolatesyrup": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "whippedcream": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "bananas": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cutlets": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "chinesefood": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "pear": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "plum": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "orange": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cucumber": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "tomato": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodfruit": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodhamburger": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "mincedmeat": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodicecream": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "foodjam": [
+        "GRABBABLE",
+        "EATABLE",
+        "CAN_OPEN",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "foodkiwi": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodlemon": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "lemon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodnoodles": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "foodoatmeal": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "foodonion": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodorange": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodpeanutbutter": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "foodpizza": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodpotato": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodrice": [
+        "GRABBABLE",
+        "EATABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "foodsalt": [
+        "GRABBABLE",
+        "EATABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "condimentshaker": [
+        "GRABBABLE",
+        "EATABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "foodsnack": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "candybar": [
+        "GRABBABLE",
+        "EATABLE",
+        "MOVABLE"
+    ],
+    "saltcrackers": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "chips": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "foodsteak": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodsugar": [
+        "GRABBABLE",
+        "EATABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "foodturkey": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "foodvegetable": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "salad": [
+        "GRABBABLE",
+        "EATABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "fork": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cutleryfork": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "form": [
+        "GRABBABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "foundation": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "freezer": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "fridge": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "fryingpan": [
+        "SURFACES",
+        "GRABBABLE",
+        "RECIPIENT",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "garbagecan": [
+        "CAN_OPEN",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "glass": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "glue": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "groceries": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "lime": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "groundcoffee": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "hair": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "BODY_PART",
+        "MOVABLE"
+    ],
+    "hairbrush": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "hairdryer": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "handsboth": [
+        "BODY_PART"
+    ],
+    "handsleft": [
+        "BODY_PART"
+    ],
+    "handsright": [
+        "BODY_PART"
+    ],
+    "hanger": [
+        "GRABBABLE",
+        "HANGABLE",
+        "MOVABLE"
+    ],
+    "coatrack": [
+        "GRABBABLE",
+        "HANGABLE",
+        "MOVABLE"
+    ],
+    "headset": [
+        "GRABBABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "highlighter": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "pen": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "homework": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "ice": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "instrumentguitar": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "instrumentpiano": [],
+    "instrumentviolin": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "iron": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "ironingboard": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "jelly": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "juice": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "kettle": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "keyboard": [
+        "GRABBABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "keys": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "kitchencabinet": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "kitchencounter": [
+        "SURFACES"
+    ],
+    "kitchencounterdrawers": [
+        "CONTAINERS",
+        "CAN_OPEN"
+    ],
+    "knife": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "cutleryknife": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "laptop": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "laserpointer": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "laundrydetergent": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "legsboth": [
+        "BODY_PART"
+    ],
+    "legsleft": [
+        "BODY_PART"
+    ],
+    "legsright": [
+        "BODY_PART"
+    ],
+    "light": [
+        "HAS_SWITCH",
+        "HAS_PLUG"
+    ],
+    "lightswitch": [
+        "HAS_SWITCH",
+        "HAS_PLUG"
+    ],
+    "lightbulb": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "lighter": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "MOVABLE"
+    ],
+    "lighting": [
+        "HAS_SWITCH",
+        "HAS_PLUG"
+    ],
+    "loveseat": [
+        "SURFACES",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "magazine": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "mail": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "man": [
+        "PERSON"
+    ],
+    "mat": [
+        "SURFACES",
+        "GRABBABLE",
+        "SITTABLE",
+        "LIEABLE",
+        "MOVABLE"
+    ],
+    "measuringcup": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "mechanicalpencil": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "microphone": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "microwave": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "milk": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "mini-fridge": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "mirror": [],
+    "mop": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "mopbucket": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "bucket": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "mouse": [
+        "GRABBABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "mousepad": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "mousemat": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "mouthwash": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "musicstand": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "nailpolish": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "needle": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "newspaper": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "nightstand": [
+        "SURFACES",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "notepad": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "notebook": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "novel": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "oil": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "condimentbottle": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "oven": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "stove": [
+        "SURFACES",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS"
+    ],
+    "ovenmitts": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "painting": [
+        "GRABBABLE",
+        "HANGABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "pajamas": [
+        "GRABBABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "pantry": [
+        "SURFACES"
+    ],
+    "pasta": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "pencil": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "phone": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "wallphone": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "pianobench": [
+        "SURFACES",
+        "GRABBABLE",
+        "SITTABLE",
+        "MOVABLE"
+    ],
+    "picture": [
+        "GRABBABLE",
+        "HANGABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "pillow": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "placemat": [
+        "SURFACES",
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "plate": [
+        "SURFACES",
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "pot": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "printingpaper": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "purse": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "CAN_OPEN",
+        "CONTAINERS",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "rag": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "razor": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "receipt": [
+        "GRABBABLE",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "sauce": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "saucepan": [
+        "SURFACES",
+        "GRABBABLE",
+        "RECIPIENT",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "scissors": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "scrabble": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "shampoo": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "lotionbottle": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "hairproduct": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "shavingcream": [
+        "GRABBABLE",
+        "POURABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "sheets": [
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "shoe-shinekit": [
+        "GRABBABLE",
+        "CAN_OPEN",
+        "MOVABLE"
+    ],
+    "shoerack": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "shoes": [
+        "GRABBABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "slippers": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "shower": [],
+    "stall": [],
+    "shredder": [
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "sink": [
+        "RECIPIENT",
+        "CONTAINERS"
+    ],
+    "soap": [
+        "GRABBABLE",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "spectacles": [
+        "GRABBABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "glasses": [
+        "GRABBABLE",
+        "CLOTHES",
+        "MOVABLE"
+    ],
+    "sponge": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "washingsponge": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "spoon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "stamp": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "stereo": [
+        "SURFACES",
+        "GRABBABLE",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "table": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "diningtable": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "kitchentable": [
+        "SURFACES",
+        "MOVABLE"
+    ],
+    "tablecloth": [
+        "SURFACES",
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "tape": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "tea": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "teabag": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "teeth": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "telephone": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "television": [
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG"
+    ],
+    "tv": [
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG"
+    ],
+    "walltv": [
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG"
+    ],
+    "textbook": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "CAN_OPEN",
+        "READABLE",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "thread": [
+        "GRABBABLE",
+        "CUTTABLE",
+        "MOVABLE"
+    ],
+    "toaster": [
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "toilet": [
+        "SITTABLE",
+        "CAN_OPEN",
+        "CONTAINERS"
+    ],
+    "toiletpaper": [
+        "GRABBABLE",
+        "HANGABLE",
+        "CUTTABLE",
+        "COVER_OBJECT",
+        "HAS_PAPER",
+        "MOVABLE"
+    ],
+    "toothpaste": [
+        "GRABBABLE",
+        "POURABLE",
+        "CAN_OPEN",
+        "MOVABLE",
+        "CREAM"
+    ],
+    "toothbrush": [
+        "GRABBABLE",
+        "RECIPIENT",
+        "MOVABLE"
+    ],
+    "toothbrushholder": [
+        "GRABBABLE",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "towel": [
+        "GRABBABLE",
+        "COVER_OBJECT",
+        "MOVABLE"
+    ],
+    "towelrack": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "toy": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "sportsball": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "teddybear": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "globe": [
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "trashcan": [
+        "CAN_OPEN",
+        "CONTAINERS",
+        "MOVABLE"
+    ],
+    "tray": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "oventray": [
+        "SURFACES",
+        "GRABBABLE",
+        "MOVABLE"
+    ],
+    "vacuumcleaner": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "videogameconsole": [
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "videogamecontroller": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "wall": [],
+    "wallclock": [
+        "GRABBABLE",
+        "HAS_SWITCH",
+        "LOOKABLE",
+        "HAS_PLUG",
+        "MOVABLE"
+    ],
+    "washingmachine": [
+        "RECIPIENT",
+        "CAN_OPEN",
+        "HAS_SWITCH",
+        "CONTAINERS",
+        "HAS_PLUG"
+    ],
+    "water": [
+        "DRINKABLE",
+        "POURABLE"
+    ],
+    "bottlewater": [
+        "DRINKABLE",
+        "POURABLE"
+    ],
+    "window": [
+        "CAN_OPEN"
+    ],
+    "wine": [
+        "GRABBABLE",
+        "DRINKABLE",
+        "POURABLE",
+        "MOVABLE"
+    ],
+    "woman": [
+        "PERSON"
+    ],
+    "woodenspoon": [
+        "GRABBABLE",
+        "MOVABLE"
+    ]
+}

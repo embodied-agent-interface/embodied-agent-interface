@@ -1,0 +1,19 @@
+Read book
+I want to read a book in my living room, but must first put my reading glasses on and turn the light by the couch on so I can see what I am reading.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <novel> (1.1000)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[FIND] <spectacles> (1.1001)
+[GRAB] <spectacles> (1.1001)
+[PUTON] <spectacles> (1.1001)
+[FIND] <light> (1.411)
+[PLUGIN] <light> (1.411)
+[SWITCHON] <light> (1.411)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[TURNTO] <novel> (1.1000)
+[LOOKAT] <novel> (1.1000)
+[READ] <novel> (1.1000)

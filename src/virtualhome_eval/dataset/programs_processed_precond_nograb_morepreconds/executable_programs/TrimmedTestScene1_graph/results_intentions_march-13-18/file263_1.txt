@@ -1,0 +1,8 @@
+Listen to music
+Find radio, turn it on
+
+
+[WALK] <home_office> (1.319)
+[WALK] <stereo> (1.1000)
+[FIND] <stereo> (1.1000)
+[SWITCHON] <stereo> (1.1000)

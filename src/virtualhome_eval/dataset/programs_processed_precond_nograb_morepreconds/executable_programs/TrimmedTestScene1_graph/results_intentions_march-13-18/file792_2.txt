@@ -1,0 +1,19 @@
+Write an email
+I find the computer. I find the chair next to the computer and walk over to it. I pull the chair out and sit in it. I put my hands on the keyboard. I look at the computer. I start typing the email.
+
+
+[FIND] <computer> (1.170)
+[FIND] <chair> (1.103)
+[TURNTO] <chair> (1.103)
+[LOOKAT] <chair> (1.103)
+[TURNTO] <chair> (1.103)
+[WALK] <chair> (1.103)
+[PULL] <chair> (1.103)
+[SIT] <chair> (1.103)
+[FIND] <keyboard> (1.168)
+[TOUCH] <keyboard> (1.168)
+[FIND] <computer> (1.170)
+[TURNTO] <computer> (1.170)
+[LOOKAT] <computer> (1.170)
+[WATCH] <computer> (1.170)
+[TYPE] <keyboard> (1.168)

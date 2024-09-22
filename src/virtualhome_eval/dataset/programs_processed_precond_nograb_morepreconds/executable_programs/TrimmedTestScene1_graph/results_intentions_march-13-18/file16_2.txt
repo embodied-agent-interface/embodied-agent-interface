@@ -1,0 +1,12 @@
+Read book
+I walk to the living room and pick up a book from the coffee table. I find my favorite chair.  I sit in the armchair and open the book.  I read.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <novel> (1.1000)
+[FIND] <novel> (1.1000)
+[WALK] <coffee_table> (1.1001)
+[GRAB] <novel> (1.1000)
+[WALK] <chair> (1.356)
+[SIT] <chair> (1.356)
+[READ] <novel> (1.1000)

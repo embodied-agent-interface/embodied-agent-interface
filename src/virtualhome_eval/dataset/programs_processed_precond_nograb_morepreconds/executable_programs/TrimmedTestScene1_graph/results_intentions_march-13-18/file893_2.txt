@@ -1,0 +1,15 @@
+Cook some food
+I walk in the kitchen, I open the fridge and remove the Chicken. I grab frying fan and put it on stove. I put chicken in the frying pan and I cook food.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <freezer> (1.289)
+[FIND] <freezer> (1.289)
+[OPEN] <freezer> (1.289)
+[FIND] <food_chicken> (1.1000)
+[GRAB] <food_chicken> (1.1000)
+[FIND] <pot> (1.1001)
+[GRAB] <pot> (1.1001)
+[FIND] <oven> (1.295)
+[PUTBACK] <pot> (1.1001) <oven> (1.295)
+[PUTBACK] <food_chicken> (1.1000) <oven> (1.295)

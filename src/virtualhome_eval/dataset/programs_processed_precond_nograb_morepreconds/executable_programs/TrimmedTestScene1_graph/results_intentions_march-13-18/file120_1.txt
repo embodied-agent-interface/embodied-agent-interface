@@ -1,0 +1,14 @@
+Turn on light
+Go to the kitchen and living room and turn on the lights.
+
+
+[RUN] <dining_room> (1.201)
+[WALK] <light> (1.245)
+[FIND] <light> (1.245)
+[SWITCHON] <light> (1.245)
+[WALK] <home_office> (1.319)
+[WALK] <light> (2.411)
+[FIND] <light> (2.411)
+[SWITCHON] <light> (2.411)
+[FIND] <floor_lamp> (1.1000)
+[SWITCHON] <floor_lamp> (1.1000)

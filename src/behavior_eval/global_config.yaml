@@ -1,0 +1,7 @@
+demo_name_path: data/demo_names.json
+demo_stats_path: data/demo_stats.json
+action_seq_resources_path: evaluation/action_sequence/resources
+goal_int_resources_path: evaluation/goal_interpretation/resources
+trans_model_resources_path: evaluation/transition_modeling/resources
+subgoal_dec_resources_path: evaluation/subgoal_decomposition/resources
+subgoal_vocab_path: evaluation/subgoal_decomposition/resources/base_vocabulary.json

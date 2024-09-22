@@ -1,0 +1,19 @@
+Wash dishes by hand
+Walk to the kitchen and turn to the sink. Put the plate into the sink. Grab and squeeze the dish soap. Scrub the plate then rinse it. Put the plate into the dish rack.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <sink> (1.231)
+[TURNTO] <sink> (1.231)
+[FIND] <plate> (1.1000)
+[GRAB] <plate> (1.1000)
+[PUTBACK] <plate> (1.1000) <sink> (1.231)
+[FIND] <dish_soap> (1.1001)
+[GRAB] <dish_soap> (1.1001)
+[SQUEEZE] <dish_soap> (1.1001)
+[SCRUB] <plate> (1.1000)
+[RINSE] <plate> (1.1000)
+[GRAB] <plate> (1.1000)
+[FIND] <dishrack> (1.1002)
+[PUTBACK] <plate> (1.1000) <dishrack> (1.1002)

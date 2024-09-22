@@ -1,0 +1,12 @@
+Put groceries in Fridge
+Collect groceries from kitchen table. Put it inside the fridge.
+
+
+[FIND] <food_food> (1.1000)
+[GRAB] <food_food> (1.1000)
+[WALK] <home_office> (1.319)
+[WALK] <freezer> (1.1001)
+[FIND] <freezer> (1.1001)
+[OPEN] <freezer> (1.1001)
+[PUTOBJBACK] <food_food> (1.1000)
+[CLOSE] <freezer> (1.1001)

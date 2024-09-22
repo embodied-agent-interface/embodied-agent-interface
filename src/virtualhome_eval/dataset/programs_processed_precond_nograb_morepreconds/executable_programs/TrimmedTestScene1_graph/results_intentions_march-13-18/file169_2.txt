@@ -1,0 +1,10 @@
+Browse internet
+Go to the office an open the computer at the desk
+
+
+[FIND] <chair> (1.103)
+[SIT] <chair> (1.103)
+[FIND] <keyboard> (1.168)
+[GRAB] <keyboard> (1.168)
+[FIND] <computer> (1.170)
+[SWITCHON] <computer> (1.170)

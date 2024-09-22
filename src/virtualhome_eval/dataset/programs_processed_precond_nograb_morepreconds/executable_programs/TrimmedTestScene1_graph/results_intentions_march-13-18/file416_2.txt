@@ -1,0 +1,7 @@
+Pick up phone
+I am going to answer the phone.
+
+
+[FIND] <phone> (1.247)
+[GRAB] <phone> (1.247)
+[PUTOBJBACK] <phone> (1.247)

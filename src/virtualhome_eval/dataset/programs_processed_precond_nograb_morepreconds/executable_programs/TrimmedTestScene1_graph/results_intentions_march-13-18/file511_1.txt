@@ -1,0 +1,6 @@
+Turn on light
+Walk over to light switch. Turn on lights.
+
+
+[WALK] <light> (1.245)
+[SWITCHON] <light> (1.245)

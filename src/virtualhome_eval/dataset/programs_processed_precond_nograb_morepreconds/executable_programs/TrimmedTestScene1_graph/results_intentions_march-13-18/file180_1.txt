@@ -1,0 +1,11 @@
+Pick up phone
+Find the phone
+
+
+[STANDUP]
+[FIND] <phone> (1.247)
+[GRAB] <phone> (1.247)
+[TOUCH] <phone> (1.247)
+[PLUGIN] <phone> (1.247)
+[TURNTO] <phone> (1.247)
+[POINTAT] <phone> (1.247)

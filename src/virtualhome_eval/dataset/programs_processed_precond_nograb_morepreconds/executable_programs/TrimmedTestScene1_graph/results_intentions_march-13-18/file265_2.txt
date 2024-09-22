@@ -1,0 +1,10 @@
+Pick up phone
+I go to the living room and pick up the phone
+
+
+[WALK] <home_office> (1.319)
+[WALK] <phone> (1.1000)
+[FIND] <phone> (1.1000)
+[GRAB] <phone> (1.1000)
+[FIND] <button> (1.1001)
+[TOUCH] <button> (1.1001)

@@ -1,0 +1,15 @@
+Change TV channel
+its time for my favorite show and im going change with the help of remote control and watch
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (1.410)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[TOUCH] <remote_control> (1.1000)
+[TURNTO] <television> (1.410)
+[WATCH] <television> (1.410)

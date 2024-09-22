@@ -1,0 +1,8 @@
+Pet cat
+I walk to the living room. I find the cat. I pet the cat.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <cat> (1.1000)
+[FIND] <cat> (1.1000)
+[TOUCH] <cat> (1.1000)

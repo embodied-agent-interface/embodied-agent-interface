@@ -1,0 +1,16 @@
+Browse internet
+first ill go to the entrance hall ill enter into my home office after that i will switch on mylaptop and then with the use of mouse and keyboard i will browse
+
+
+[WALK] <home_office> (1.319)
+[WALK] <home_office> (1.319)
+[WALK] <keyboard> (1.415)
+[FIND] <keyboard> (1.415)
+[GRAB] <keyboard> (1.415)
+[FIND] <laptop> (1.1000)
+[SWITCHON] <laptop> (1.1000)
+[FIND] <mouse> (1.413)
+[TOUCH] <mouse> (1.413)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <laptop> (1.1000)
+[WATCH] <laptop> (1.1000)

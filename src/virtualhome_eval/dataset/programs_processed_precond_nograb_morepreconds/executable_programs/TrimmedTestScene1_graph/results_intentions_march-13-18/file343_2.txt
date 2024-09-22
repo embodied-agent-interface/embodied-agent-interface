@@ -1,0 +1,16 @@
+Work
+Find Computer. Switch on computer.Sit on the chair.grab key board.type keyboard. click mouse.look at  computer.
+
+
+[FIND] <computer> (1.170)
+[SWITCHON] <computer> (1.170)
+[FIND] <chair> (1.103)
+[SIT] <chair> (1.103)
+[FIND] <keyboard> (1.168)
+[GRAB] <keyboard> (1.168)
+[TYPE] <keyboard> (1.168)
+[FIND] <mouse> (1.166)
+[TURNTO] <mouse> (1.166)
+[POINTAT] <mouse> (1.166)
+[TURNTO] <computer> (1.170)
+[LOOKAT] <computer> (1.170)

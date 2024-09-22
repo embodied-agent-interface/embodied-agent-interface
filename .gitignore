@@ -5,7 +5,6 @@
 *.egg-info/
 .DS_Store
 *.pth
-src/
 pw
 *.o
 *.ipynb

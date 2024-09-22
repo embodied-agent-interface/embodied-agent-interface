@@ -1,0 +1,8 @@
+Work
+turn computer on, open application to work with
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)

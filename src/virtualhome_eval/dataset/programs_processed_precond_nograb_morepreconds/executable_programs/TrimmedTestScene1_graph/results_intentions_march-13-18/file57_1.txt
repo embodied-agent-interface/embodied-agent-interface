@@ -1,0 +1,11 @@
+Read book
+Walk to the couch in the living room, sit on ti and read the book
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[READ] <novel> (1.1000)

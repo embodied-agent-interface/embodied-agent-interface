@@ -1,0 +1,7 @@
+Turn on light
+I walk into the living room and then I walk to the light switch in there and turn the lights on
+
+
+[WALK] <home_office> (1.319)
+[WALK] <floor_lamp> (1.1000)
+[SWITCHON] <floor_lamp> (1.1000)

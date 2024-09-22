@@ -1,0 +1,8 @@
+Turn on light
+push any ligth button to turn it on, for example in the living room
+
+
+[WALK] <home_office> (1.319)
+[WALK] <light> (1.411)
+[FIND] <light> (1.411)
+[SWITCHON] <light> (1.411)

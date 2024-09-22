@@ -1,0 +1,15 @@
+Drink
+Drink water from a cup
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <cup> (1.1000)
+[FIND] <cup> (1.1000)
+[GRAB] <cup> (1.1000)
+[FIND] <faucet> (1.232)
+[WALK] <sink> (1.231)
+[PUTBACK] <cup> (1.1000) <sink> (1.231)
+[SWITCHON] <faucet> (1.232)
+[SWITCHOFF] <faucet> (1.232)
+[GRAB] <cup> (1.1000)
+[DRINK] <cup> (1.1000)

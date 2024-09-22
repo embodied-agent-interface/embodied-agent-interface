@@ -42,3 +42,4 @@ dist
 coverage.xml
 
 **/results/**
+**/data/**

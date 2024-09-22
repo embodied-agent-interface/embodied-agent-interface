@@ -54,6 +54,9 @@ class goal_interpretation_data():
             
 
 
+import os
+import re
+
 def extract_model_names(llm_response_dir):
     # List to store the extracted model names
     model_names = []
@@ -61,14 +64,21 @@ def extract_model_names(llm_response_dir):
     # Get all files in the directory
     files = os.listdir(llm_response_dir)
     
-    # Define a regex pattern to match the model name part of the filename
-    pattern = re.compile(r"^(.*?)_outputs\.json$")
+    # Define regex patterns to match both file naming conventions
+    pattern1 = re.compile(r"^(.*?)_outputs\.json$")
+    pattern2 = re.compile(r"^(.*?)\.json$")
     
     for file in files:
-        match = pattern.match(file)
-        if match:
-            # Extract the model name from the filename and add it to the list
-            model_names.append(match.group(1))
+        match1 = pattern1.match(file)
+        match2 = pattern2.match(file)
+        
+        if match1:
+            # Extract the model name from filenames like "model-name_outputs.json"
+            model_names.append(match1.group(1))
+        elif match2 and not file.endswith("_outputs.json"):
+            # Extract the model name from filenames like "model-name.json"
+            # but exclude files that end with "_outputs.json" to avoid duplication
+            model_names.append(match2.group(1))
 
     return model_names
 
@@ -530,7 +540,14 @@ def evaluate_results(llm_response_dir, result_dir):
     ALL_RESULTS = {}
 
     for model_name in DATA.all_models:
-        save_path = f"{llm_response_dir}/{model_name}_outputs.json"
+        
+        # save_path = f"{llm_response_dir}/{model_name}_outputs.json"
+        try:
+            save_path = [i for i in os.listdir(llm_response_dir) if model_name in i][0]
+            assert save_path.endswith(".json")
+        except:
+            print(f"Error: {model_name} does not have a corresponding json output file in {llm_response_dir}")
+            exit(1)
         
         with open(save_path, 'r') as json_file:
             raw_llm_outputs = json.load(json_file)

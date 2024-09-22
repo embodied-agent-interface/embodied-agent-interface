@@ -23,9 +23,6 @@ def evaluate_results(args):
     output_dir = args.output_dir
     if not osp.exists(output_dir):
         os.makedirs(output_dir)
-    output_dir = os.path.join(output_dir, "action_sequence")
-    if not osp.exists(output_dir):
-        os.makedirs(output_dir)
 
     # indexing path
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
@@ -58,7 +55,7 @@ def evaluate_results(args):
         4: "ADDITIONAL_STEP",
         5: "UNKNOWN_ERROR",
     }
-    llm_response_path = osp.join(llm_response_path, "action_sequence")
+    llm_response_path = osp.join(llm_response_path, dataset, "action_sequencing")
     logger.info(f"load llm response from {llm_response_path}")
     model_file = extract_model_names(llm_response_path)
     all_results = {}

@@ -55,8 +55,7 @@ def generate_prompts(result_dir):
 
 
 
-
-    demo_to_llm_prompts = {}
+    identifier_prompt_list = []
     
     
     
@@ -81,16 +80,26 @@ def generate_prompts(result_dir):
         prompt = prompt.replace('<instructions_str>', instructions_string)
         
         # save the prompts as well
-        demo_to_llm_prompts[demo_name] = prompt
+        identifier_prompt_list.append(
+            {
+                "identifier": demo_name,
+                "llm_prompt": prompt
+            }
+        )
         
         
         
     # save the prompts
     with open(prompt_save_path, 'w') as json_file:
-        json.dump(demo_to_llm_prompts, json_file, indent=4)
+        json.dump(identifier_prompt_list, json_file, indent=4)
     
     print("prompts saved to: ", prompt_save_path)
+
+
+
+def main():
+    generate_prompts()
     
 
 if __name__ == "__main__":
-    generate_prompts()
+    main()

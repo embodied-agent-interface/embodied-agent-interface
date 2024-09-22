@@ -460,6 +460,8 @@ def evaluate_dataset(result_reference_list, DATA):
     return dataset_results_evaluated, sorted_model_results_evaluated 
 
 
+
+
 def parse_json(raw_llm_output, model_name):
     '''
     This function takes in the raw output from an LLM model and parses it into JSON format.
@@ -593,7 +595,9 @@ def evaluate_results(llm_response_dir, result_dir):
             json.dump(sorted_model_results_evaluated, json_file, indent=4)
     
     print("\n--------------------------------------------------------------------------------------")
-    print(f"* Final model performance scores are saved to {result_dir}/performance_scores/ \n")
-    print(f"* Detailed error analysis are saved to {result_dir}/error_analysis/ \n")
-    print(f"* If models made format errors, error cases and details can be found at {result_dir}/parsing_errors/ \n")
+    print(f"* If models made format errors, find error details at {result_dir}/parsing_errors/\n")
+    print(f"* Detailed error analyses are at {result_dir}/error_analysis/\n")
+    print(f"* Final model performance scores are at {result_dir}/performance_scores/\n")
+    print("Success! All models have been evaluated.")
+    print("--------------------------------------------------------------------------------------")
     

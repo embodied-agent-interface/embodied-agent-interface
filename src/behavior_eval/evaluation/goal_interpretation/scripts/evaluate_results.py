@@ -530,7 +530,14 @@ def evaluate_results(llm_response_dir, result_dir):
     ALL_RESULTS = {}
 
     for model_name in DATA.all_models:
-        save_path = f"{llm_response_dir}/{model_name}_outputs.json"
+        
+        # save_path = f"{llm_response_dir}/{model_name}_outputs.json"
+        try:
+            save_path = [i for i in os.listdir(llm_response_dir) if model_name in i][0]
+            assert save_path.endswith(".json")
+        except:
+            print(f"Error: {model_name} does not have a corresponding json output file in {llm_response_dir}")
+            exit(1)
         
         with open(save_path, 'r') as json_file:
             raw_llm_outputs = json.load(json_file)

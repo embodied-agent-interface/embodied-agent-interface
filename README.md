@@ -98,7 +98,7 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
 
     To minimize and identify potential issues, we recommend:
     
-    1. Review the system requirements section of the [iGibson installation guide](https://stanfordvl.github.io/iGibson/installation.html).
+    1. please make sure python=3.8 and your system meets minimum requirements in [iGibson installation guide](https://stanfordvl.github.io/iGibson/installation.html).
     
     2. **Install CMake Using Conda (do not use pip)**: 
        ```
@@ -106,7 +106,7 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
        ```
     
     3. **Install `iGibson`**:
-       We provided a script for automatically installing `iGibson`, please make sure python=3.8 and your system meets minimum requirements as mentioned in `1`:
+       We provided a script for automatically installing `iGibson`
        ```
        python -m behavior_eval.utils.install_igibson_utils
        ```

@@ -106,7 +106,7 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
        ```
     
     3. **Install `iGibson`**:
-       We provided a script for automatically installing `iGibson`, please make sure python=3.8:
+       We provided a script for automatically installing `iGibson`, please make sure python=3.8 and your system meets minimum requirements as mentioned in `1`:
        ```
        python -m behavior_eval.utils.install_igibson_utils
        ```

@@ -149,6 +149,10 @@ Once the installation is complete, you can start using the Embodied Agent Interf
    ```bash
    eagent-eval --dataset virtualhome --eval-type action_sequence --mode evaluate_results
    ```
+5. **Download helm output files to reproduce evaluation**:
+   ```bash
+   python -m eagent_eval.utils.download_utils
+   ```
 
 
 

@@ -27,10 +27,13 @@ from virtualhome_eval.evaluation.subgoal_decomposition.scripts.evaluate_results 
     evaluate_results as subgoal_output_evaluation,
 )
 
+import eagent_eval
+
 package_path = os.path.dirname(os.path.abspath(__file__))
 default_resource_dir = os.path.join(package_path, "resources")
 default_dataset_dir = os.path.join(package_path, "dataset")
 default_evaluation_dir = os.path.join(package_path, "evaluation")
+default_llm_response_path = eagent_eval.helm_output_path
 
 def agent_evaluation(
     mode="generate_prompts",
@@ -60,6 +63,8 @@ def agent_evaluation(
     Returns:
         dict or None: Evaluation results if mode is 'evaluate_results', None otherwise.
     """
+    if llm_response_path is None:
+        llm_response_path = default_llm_response_path
 
     # Create output directory if it doesn't exist
     output_dir=os.path.join(output_dir, "virtualhome", mode, eval_type)

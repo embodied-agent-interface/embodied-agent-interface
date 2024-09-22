@@ -553,7 +553,7 @@ def evaluate_results(llm_response_dir, result_dir):
                 })
         
         if error_cases != []:
-            parsing_errors_save_path = f"{result_dir}/parsing_errors/{model_name}_non_parsable_outputs.json"
+            parsing_errors_save_path = f"{result_dir}/log/parsing_errors/{model_name}_non_parsable_outputs.json"
             os.makedirs(os.path.dirname(parsing_errors_save_path), exist_ok=True)
             with open(parsing_errors_save_path, "w") as file:
                     json.dump(error_cases, file, indent=4)
@@ -583,21 +583,20 @@ def evaluate_results(llm_response_dir, result_dir):
         
         ALL_METRICS[model_name], sorted_model_results_evaluated = evaluate_dataset(result_reference_list, DATA)
         
-        performance_scores_save_path = f"{result_dir}/performance_scores/{model_name}_performance_scores.json"
+        performance_scores_save_path = f"{result_dir}/summary/{model_name}_performance_scores.json"
         os.makedirs(os.path.dirname(performance_scores_save_path), exist_ok=True)
         with open(performance_scores_save_path, 'w') as json_file:
             json.dump(ALL_METRICS[model_name], json_file, indent=4)
         
         
-        error_analysis_save_path = f"{result_dir}/error_analysis/{model_name}_error_analysis.json"
+        error_analysis_save_path = f"{result_dir}/log/detailed_analyses/{model_name}_detailed_analysis.json"
         os.makedirs(os.path.dirname(error_analysis_save_path), exist_ok=True)
         with open(error_analysis_save_path, 'w') as json_file:
             json.dump(sorted_model_results_evaluated, json_file, indent=4)
     
     print("\n--------------------------------------------------------------------------------------")
-    print(f"* If models made format errors, find error details at {result_dir}/parsing_errors/\n")
-    print(f"* Detailed error analyses are at {result_dir}/error_analysis/\n")
-    print(f"* Final model performance scores are at {result_dir}/performance_scores/\n")
-    print("Success! All models have been evaluated.")
+    print(f"* If LMs have format issues, see details -> {result_dir}/log/parsing_errors/\n")
+    print(f"* Detailed sample error analyses -> {result_dir}/log/detailed_analyses/\n")
+    print(f"* Final model performance scores -> {result_dir}/summary/")
     print("--------------------------------------------------------------------------------------")
-    
+    print(f"Success! All models have been evaluated.")

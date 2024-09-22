@@ -105,13 +105,13 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
        conda install cmake
        ```
     
-    3. **Install `iGibson`**: 
+    3. **Install `iGibson`**:
        We provided a script for automatically installing `iGibson`:
        ```
        python -m behavior_eval.utils.install_igibson_utils
        ```
        
-       You can also do it on your own:
+       You can also do it on your own, please make sure python=3.8:
        ```
        git clone https://github.com/embodied-agent-eval/iGibson.git --recursive
        cd iGibson

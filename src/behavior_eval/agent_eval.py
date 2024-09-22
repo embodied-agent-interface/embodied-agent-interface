@@ -10,6 +10,7 @@ from behavior_eval.evaluation.transition_modeling.scripts.generate_prompts impor
 from virtualhome_eval.agent_eval import agent_evaluation as virtualhome_agent_evaluation
 import os
 import sys
+import eagent_eval
 def agent_evaluation(
         mode="generate_prompts",
         eval_type="goal_interpretation",
@@ -27,30 +28,39 @@ def agent_evaluation(
     """
     output_dir = os.path.join(output_dir, 'behavior',mode, eval_type)
     os.makedirs(output_dir,exist_ok=True)
-    if eval_type=="evaluate_results":
+    if mode=="evaluate_results":
         if llm_response_path is None:
-            print("Error: llm_response_dir is required for evaluate_results")
-            sys.exit(1)
+            print(f"did not provide llm_response_path, set to default: {eagent_eval.helm_output_path}")
+            llm_response_path=eagent_eval.helm_output_path
+        
+        
+        llm_response_path_eval_type=os.path.join(llm_response_path,'behavior',eval_type)
+        if os.path.exists(llm_response_path_eval_type) is False:
+            print(f"Error: eval-type dir {llm_response_path_eval_type} under {llm_response_path} does not exist")
+            print("Please run python -m eagent_eval.utils.download_utils to download the data \n or provide the correct path")
+            
+            
+            
     if mode not in ["evaluate_results","generate_prompts"]:
-        print("Error: Invalid function, must be evaluate_results or generate_prompts")
+        print("Error: Invalid mode {mode}, must be evaluate_results or generate_prompts")
         sys.exit(1)
     if eval_type not in ["goal_interpretation","action_sequence","subgoal_decomposition","transition_modeling"]:
-        print(f"Invalid module {eval_type}, must be goal_interpretation,action_sequence,subgoal_decomposition,transition_modeling")
+        print(f"Invalid eval_type {eval_type}, must be goal_interpretation,action_sequence,subgoal_decomposition,transition_modeling")
         sys.exit(1)
         
     if eval_type == "action_sequence":
         if mode == "evaluate_results":
-            action_sequence_evaluate_results(os.path.join(llm_response_path,eval_type),num_workers,output_dir)
+            action_sequence_evaluate_results(llm_response_path_eval_type,num_workers,output_dir)
         elif mode == "generate_prompts":
             action_sequence_generate_prompts(num_workers,output_dir)
     elif eval_type == "goal_interpretation":
         if mode == "evaluate_results":
-            goal_interpretation_evaluate_results(os.path.join(llm_response_path,eval_type), output_dir)
+            goal_interpretation_evaluate_results(llm_response_path_eval_type, output_dir)
         elif mode == "generate_prompts":
             goal_interpretation_generate_prompts(output_dir)
     elif eval_type == "subgoal_decomposition":
         if mode == "evaluate_results":
-            subgoal_decomposition_evaluate_results(os.path.join(llm_response_path,eval_type), num_workers, output_dir)
+            subgoal_decomposition_evaluate_results(llm_response_path_eval_type, num_workers, output_dir)
         elif mode == "generate_prompts":
             subgoal_decomposition_generate_prompts(num_workers, output_dir)
     elif eval_type == "transition_modeling":
@@ -60,6 +70,7 @@ def agent_evaluation(
                 eval_type=eval_type,
                 output_dir=output_dir,
                 dataset="behavior",
+                llm_response_path=os.path.join(llm_response_path,'behavior'),
             )
         elif mode == "generate_prompts":
             transition_modeling_generate_prompts(output_dir)

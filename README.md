@@ -82,7 +82,7 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
 
 3. **Create and Activate a Conda Environment**:
    ```bash
-   conda create -n eagent python=3.11 -y
+   conda create -n eagent python=3.8 -y 
    conda activate eagent
    ```
 

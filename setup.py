@@ -21,7 +21,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'eagent-eval=cli:main',  
+            'eagent-eval=eagent_eval.cli:main',  
         ],
     },
 )

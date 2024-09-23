@@ -58,6 +58,7 @@ def main():
             eval_type=args.eval_type,
             llm_response_path=args.llm_response_path,
             output_dir=args.output_dir,
+            num_workers=args.num_workers,
         )
     elif args.dataset == "virtualhome":
         from virtualhome_eval.agent_eval import agent_evaluation as virtualhome_agent_evaluation
@@ -67,6 +68,7 @@ def main():
             llm_response_path=args.llm_response_path,
             output_dir=args.output_dir,
             dataset=args.dataset,
+            num_workers=args.num_workers,
         )
 
 

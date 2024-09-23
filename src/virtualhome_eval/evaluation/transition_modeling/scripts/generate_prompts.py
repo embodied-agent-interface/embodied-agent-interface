@@ -26,10 +26,7 @@ def generate_prompts(args):
     gold_action_path = osp.join(resource_root, "gold_action.json")
 
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
-    evaluation_dir = args.evaluation_dir
-    helm_prompt_path = osp.join(
-        evaluation_dir, "transition_modeling/prompts/helm_prompts.json"
-    )
+    helm_prompt_path = osp.join(args.output_dir, "helm_prompt.json")
     task_dict = json.load(open(task_dict_dir, "r"))
     success_file_id = json.load(open(success_dict_path, "r"))
     id2action = json.load(open(id2action_path, "r"))

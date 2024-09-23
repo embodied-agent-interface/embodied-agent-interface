@@ -83,12 +83,12 @@ def simulate_one_llm(args, llm_response_path, worker_num: int=5, result_dir: str
 
 def evaluate_results(args):
     dataset = args.dataset
-    llm_response_path = os.path.join(args.llm_response_path, 'subgoal_decomposition')
+    llm_response_path = os.path.join(
+        args.llm_response_path, dataset, "subgoal_decomposition"
+    )
     model_names = extract_model_names(llm_response_path)
     all_results = {}
     output_dir = args.output_dir
-    os.makedirs(output_dir, exist_ok=True)
-    output_dir = os.path.join(output_dir, "subgoal_decomposition")
     os.makedirs(output_dir, exist_ok=True)
     for model_name in model_names:
         output_path = os.path.join(output_dir, model_name)

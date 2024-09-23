@@ -12,6 +12,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 def evaluate_results(args):
+    dataset = args.dataset
     llm_response_path = args.llm_response_path
     resource_root = osp.join(args.resource_dir, "virtualhome")
     data_dir = osp.join(
@@ -20,10 +21,6 @@ def evaluate_results(args):
     output_dir = args.output_dir
     if not osp.exists(output_dir):
         os.makedirs(output_dir)
-    output_dir = os.path.join(output_dir, "goal_interpretation")
-    if not osp.exists(output_dir):
-        os.makedirs(output_dir)
-
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
     id_to_task_path = os.path.join(resource_root, "id2task.json")
 
@@ -40,7 +37,7 @@ def evaluate_results(args):
     scene_id = f"scene_{scenegraph_id}"
     task_dicts = task_dicts[scene_id]
 
-    llm_response_path = osp.join(llm_response_path, 'goal_interpretation')
+    llm_response_path = osp.join(llm_response_path, dataset, "goal_interpretation")
     logger.info(f'load llm response from {llm_response_path}')
     model_file = extract_model_names(llm_response_path)
 

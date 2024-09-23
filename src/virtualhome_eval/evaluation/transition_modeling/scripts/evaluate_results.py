@@ -13,6 +13,7 @@ logger = logging.getLogger(__name__)
 
 def evaluate_results(args):
     dataset = args.dataset
+    output_dir = args.output_dir
 
     if dataset == "virtualhome":
         timeout = 100
@@ -65,11 +66,8 @@ def evaluate_results(args):
     output_dir = args.output_dir
     if not osp.exists(output_dir):
         os.makedirs(output_dir)
-    output_dir = os.path.join(output_dir, "transition_modeling")
-    if not osp.exists(output_dir):
-        os.makedirs(output_dir)
-    
-    llm_response_path = osp.join(llm_response_path, "transition_modeling")
+
+    llm_response_path = osp.join(llm_response_path, dataset, "transition_modeling")
     logger.info(f"load llm response from {llm_response_path}")
     model_file = extract_model_names(llm_response_path)
 

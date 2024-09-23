@@ -10,13 +10,14 @@ logger = logging.getLogger(__name__)
 
 def generate_prompts(args):
     dataset = args.dataset
+    output_dir = args.output_dir
     resource_root = osp.join(args.resource_dir, dataset)
     data_dir = osp.join(
         args.dataset_dir, "programs_processed_precond_nograb_morepreconds"
     )
     task_dict_dir = osp.join(resource_root, "task_state_LTL_formula_accurate.json")
     evaluation_dir = args.evaluation_dir
-    helm_prompt_path = osp.join(evaluation_dir, "action_sequence/prompts/helm_prompts.json")
+    helm_prompt_path = osp.join(output_dir, "helm_prompt.json")
     scenegraph_id = args.scene_id
     scene_id = f"scene_{scenegraph_id}"
     task_dict = json.load(open(task_dict_dir, "r"))

@@ -40,13 +40,6 @@ def evaluate_results(args):
     scene_id = f"scene_{scenegraph_id}"
     task_dicts = task_dicts[scene_id]
 
-    # trajectory metrics
-    error_code_to_number = {
-        0: 0,
-        1: 0,
-        2: 0,
-        4: 0,
-    }
     error_code_to_type = {
         0: "WRONG_TEMPORAL_ORDER",
         1: "MISSING_STEP",
@@ -61,6 +54,13 @@ def evaluate_results(args):
     all_results = {}
     
     for model_name in model_file:
+        # trajectory metrics
+        error_code_to_number = {
+            0: 0,
+            1: 0,
+            2: 0,
+            4: 0,
+        }
         logger.info(f'Model name is {model_name}')
         llm_response_json = os.path.join(
             llm_response_path, f"{model_name}_outputs.json"

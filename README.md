@@ -137,7 +137,7 @@ Once the installation is complete, you can start using the Embodied Agent Interf
 
 2. **Generate Prompts for Behavior Evaluation**:
    ```bash
-   eagent-eval --dataset behavior --eval-type action_sequence --mode generate_prompts
+   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
    ```
 
 3. **Evaluate Action Sequencing in VirtualHome Dataset**:
@@ -147,7 +147,7 @@ Once the installation is complete, you can start using the Embodied Agent Interf
 
 4. **Evaluate Results in VirtualHome Dataset**:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequence --mode evaluate_results
+   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
    ```
 5. **Download helm output files to reproduce evaluation**:
    ```bash

@@ -348,6 +348,7 @@ def evaluate_results(args):
                     logger.info(f"Action test: task {file_id}'s {action_name} succeeded")
                 except Exception as e:
                     logger.info(f"Action test: task {file_id}'s {action_name} failed")
+                    logger.info(f"Test error: {e}")
 
 
             # all action trial
@@ -494,7 +495,7 @@ def evaluate_results(args):
             f"{hallucination_num=}, rate={100.*hallucination_num/total_predict_action_num:.2f}"
         )
         success_by_task_type_dict = calculate_success_rate(success_by_task_type_dict)
-        logger.info("MODEL NAME!!! ", model_name)
+        logger.info("MODEL NAME!!! %s", model_name)
         logger.info("\n")
         logger.info("Success by task type dict:")
         print_success_rate(success_by_task_type_dict)

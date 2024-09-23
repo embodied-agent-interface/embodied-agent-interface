@@ -68,6 +68,7 @@ def main():
             llm_response_path=args.llm_response_path,
             output_dir=args.output_dir,
             dataset=args.dataset,
+            num_workers=args.num_workers,
         )
 
 

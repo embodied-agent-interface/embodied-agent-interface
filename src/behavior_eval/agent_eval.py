@@ -19,7 +19,7 @@ def agent_evaluation(
         llm_response_path:Optional[str]=None,
     ):
     """
-    eval_type: goal_interpretation,action_sequence,subgoal_decomposition,transition_modeling
+    eval_type: goal_interpretation,action_sequencing,subgoal_decomposition,transition_modeling
     mode: evaluate_results,generate_prompts
     num_workers: number of workers for multiprocessing
     llm_response_dir: directory containing llm responses (helm outputs)
@@ -45,11 +45,11 @@ def agent_evaluation(
     if mode not in ["evaluate_results","generate_prompts"]:
         print("Error: Invalid mode {mode}, must be evaluate_results or generate_prompts")
         sys.exit(1)
-    if eval_type not in ["goal_interpretation","action_sequence","subgoal_decomposition","transition_modeling"]:
-        print(f"Invalid eval_type {eval_type}, must be goal_interpretation,action_sequence,subgoal_decomposition,transition_modeling")
+    if eval_type not in ["goal_interpretation","action_sequencing","subgoal_decomposition","transition_modeling"]:
+        print(f"Invalid eval_type {eval_type}, must be goal_interpretation,action_sequencing,subgoal_decomposition,transition_modeling")
         sys.exit(1)
         
-    if eval_type == "action_sequence":
+    if eval_type == "action_sequencing":
         if mode == "evaluate_results":
             action_sequence_evaluate_results(llm_response_path_eval_type,num_workers,output_dir)
         elif mode == "generate_prompts":

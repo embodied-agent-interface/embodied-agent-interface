@@ -22,15 +22,40 @@ def simulate_llm_response(
             eval_statistics.update_eval_rst_dict(task_name, True, str(report))
         eval_statistics.save_eval_rst_dict()
 
-def worker_task(queue, lock, eval_stat_path, task_names, args):
+def worker_task(queue, lock, eval_stat_path, task_names, passing_args):
     while True:
         task = queue.get()
         if task is None:
             break
         scene_id, file_id, llm_response = task
+        args = dict_args_to_args(passing_args)
         simulate_llm_response(args, scene_id, file_id, lock, llm_response, eval_stat_path, task_names)
 
-def simulate_one_llm(args, llm_response_path, worker_num: int=5, result_dir: str='./results'):
+def args_to_dict(args):
+    new_args = {}
+    new_args['mode'] = args.mode
+    new_args['eval_type'] = args.eval_type
+    new_args['resource_dir'] = args.resource_dir
+    new_args['llm_response_path'] = args.llm_response_path
+    new_args['dataset_dir'] = args.dataset_dir
+    new_args['dataset'] = args.dataset
+    new_args['output_dir'] = args.output_dir
+    new_args['scene_id'] = args.scene_id
+    new_args['evaluation_dir'] = args.evaluation_dir
+    new_args['num_workers'] = args.num_workers
+    return new_args
+
+def dict_args_to_args(dict_args):
+    class Args:
+        pass
+    args = Args()
+    for key, value in dict_args.items():
+        setattr(args, key, value)
+    return args
+    
+
+
+def simulate_one_llm(args, llm_response_path, result_dir: str='./results'):
     manager = Manager()
     lock = manager.Lock()
 
@@ -48,13 +73,14 @@ def simulate_one_llm(args, llm_response_path, worker_num: int=5, result_dir: str
         task_name = f'scene_{scene_id}_{file_id}'
         if not eval_statistics.check_evaluated_task(task_name):
             real_task_list.append((scene_id, file_id, llm_response))
-
+    worker_num = args.num_workers
     if worker_num > 1:
         worker_num = min(worker_num, len(real_task_list))
         task_queue = Queue()
         workers = []
         for i in range(worker_num):
-            worker = Process(target=worker_task, args=(task_queue, lock, eval_stat_path, task_names, args))
+            dict_args = args_to_dict(args)
+            worker = Process(target=worker_task, args=(task_queue, lock, eval_stat_path, task_names, dict_args))
             worker.start()
             workers.append(worker)
         

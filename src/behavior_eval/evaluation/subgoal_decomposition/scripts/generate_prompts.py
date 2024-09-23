@@ -4,7 +4,7 @@ import behavior_eval
 import fire
 from multiprocessing import Process, Manager, Queue
 import behavior_eval
-from behavior_eval.evaluation.action_sequence.action_sequence_evaluator import ActionSequenceEvaluator
+from behavior_eval.evaluation.action_sequencing.action_sequence_evaluator import ActionSequenceEvaluator
 from behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils import get_subgoal_prompt
 
 

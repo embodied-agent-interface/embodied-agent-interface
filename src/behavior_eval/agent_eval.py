@@ -1,7 +1,7 @@
 
 from typing import Optional
-from behavior_eval.evaluation.action_sequence.scripts.evaluate_results import evaluate_results as action_sequence_evaluate_results
-from behavior_eval.evaluation.action_sequence.scripts.generate_prompts import generate_prompts as action_sequence_generate_prompts
+from behavior_eval.evaluation.action_sequencing.scripts.evaluate_results import evaluate_results as action_sequence_evaluate_results
+from behavior_eval.evaluation.action_sequencing.scripts.generate_prompts import generate_prompts as action_sequence_generate_prompts
 from behavior_eval.evaluation.goal_interpretation.scripts.evaluate_results import evaluate_results as goal_interpretation_evaluate_results
 from behavior_eval.evaluation.goal_interpretation.scripts.generate_prompts import generate_prompts as goal_interpretation_generate_prompts
 from behavior_eval.evaluation.subgoal_decomposition.scripts.generate_prompts import generate_prompts as subgoal_decomposition_generate_prompts
@@ -26,6 +26,7 @@ def agent_evaluation(
     output_dir: directory to store results
     output_dir: directory to store results
     """
+    output_dir_for_tm=output_dir
     output_dir = os.path.join(output_dir, 'behavior',mode, eval_type)
     os.makedirs(output_dir,exist_ok=True)
     if mode=="evaluate_results":
@@ -68,9 +69,9 @@ def agent_evaluation(
             virtualhome_agent_evaluation(
                 mode=mode,
                 eval_type=eval_type,
-                output_dir=output_dir,
+                output_dir=output_dir_for_tm,
                 dataset="behavior",
-                llm_response_path=os.path.join(llm_response_path,'behavior'),
+                llm_response_path=os.path.join(llm_response_path),
             )
         elif mode == "generate_prompts":
             transition_modeling_generate_prompts(output_dir)

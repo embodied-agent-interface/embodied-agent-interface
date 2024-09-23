@@ -4,7 +4,7 @@ import json
 import behavior_eval
 from typing import Optional, Union, Any
 from behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt import get_meta_prompt_component
-from behavior_eval.evaluation.action_sequence.action_sequence_evaluator import ActionSequenceEvaluator
+from behavior_eval.evaluation.action_sequencing.action_sequence_evaluator import ActionSequenceEvaluator
 from behavior_eval.tl_formula.bddl_to_tl import translate_bddl_final_states_into_simplified_tl
 
 def translate_addressable_obj_into_tl_obj(address_obj):

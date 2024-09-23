@@ -311,7 +311,7 @@ def evaluate_results(args):
 
         format_wrong_rate = format_wrong_goals / (
             total_node_goals + total_edge_goals + total_action_goals
-        )
+        ) if total_node_goals + total_edge_goals + total_action_goals > 0 else 0
         logger.info(
             f"Format wrong num is {format_wrong_goals}, Total goals num is {total_node_goals + total_edge_goals + total_action_goals}"
         )
@@ -319,7 +319,7 @@ def evaluate_results(args):
 
         hallucination_rate = hallucination_goals / (
             total_node_goals + total_edge_goals + total_action_goals
-        )
+        ) if total_node_goals + total_edge_goals + total_action_goals > 0 else 0
         logger.info(
             f"Hallucination num is {hallucination_goals}, Total goals num is {total_node_goals + total_edge_goals + total_action_goals}"
         )

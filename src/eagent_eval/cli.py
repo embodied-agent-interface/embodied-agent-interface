@@ -13,7 +13,7 @@ def main():
     parser.add_argument(
         "--eval-type",
         choices=[
-            "action_sequence",
+            "action_sequencing",
             "transition_modeling",
             "goal_interpretation",
             "subgoal_decomposition",

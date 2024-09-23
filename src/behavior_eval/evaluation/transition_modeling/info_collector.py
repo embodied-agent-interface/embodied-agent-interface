@@ -1,4 +1,4 @@
-from behavior_eval.evaluation.action_sequence.action_sequence_evaluator import ActionSequenceEvaluator
+from behavior_eval.evaluation.action_sequencing.action_sequence_evaluator import ActionSequenceEvaluator
 import os
 import json
 import fire

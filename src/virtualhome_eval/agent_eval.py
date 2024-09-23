@@ -8,7 +8,7 @@ from virtualhome_eval.evaluation.goal_interpretation.scripts.generate_prompts im
 from virtualhome_eval.evaluation.transition_modeling.scripts.generate_prompts import (
     generate_prompts as tm_input_preparation,
 )
-from virtualhome_eval.evaluation.action_sequence.scripts.generate_prompts import (
+from virtualhome_eval.evaluation.action_sequencing.scripts.generate_prompts import (
     generate_prompts as action_input_preparation,
 )
 from virtualhome_eval.evaluation.subgoal_decomposition.scripts.generate_prompts import (
@@ -20,7 +20,7 @@ from virtualhome_eval.evaluation.goal_interpretation.scripts.evaluate_results im
 from virtualhome_eval.evaluation.transition_modeling.scripts.evaluate_results import (
     evaluate_results as tm_output_evaluation,
 )
-from virtualhome_eval.evaluation.action_sequence.scripts.evaluate_results import (
+from virtualhome_eval.evaluation.action_sequencing.scripts.evaluate_results import (
     evaluate_results as action_output_evaluation,
 )
 from virtualhome_eval.evaluation.subgoal_decomposition.scripts.evaluate_results import (
@@ -52,7 +52,7 @@ def agent_evaluation(
 
     Args:
         mode (str): The evaluation mode ('generate_prompts' or 'evaluate_results').
-        eval_type (str): The type of evaluation ('action_sequence', 'transition_model', 'goal_interpretation', or 'subgoal_decomposition').
+        eval_type (str): The type of evaluation ('action_sequencing', 'transition_model', 'goal_interpretation', or 'subgoal_decomposition').
         resource_dir (str): Path to the resources directory.
         llm_response_path (str): Path to the LLM response directory.
         dataset_dir (str): Path to the dataset directory.
@@ -67,7 +67,7 @@ def agent_evaluation(
         llm_response_path = default_llm_response_path
 
     # Create output directory if it doesn't exist
-    output_dir=os.path.join(output_dir, f"{dataset}", mode)
+    output_dir=os.path.join(output_dir, f"{dataset}", mode, eval_type)
     if not osp.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -88,8 +88,8 @@ def agent_evaluation(
     args.num_workers = num_workers
 
     if mode == "generate_prompts":
-        if eval_type == "action_sequence":
-            log_file = setup_logging(function_name="action_sequence_prompts")
+        if eval_type == "action_sequencing":
+            log_file = setup_logging(function_name="action_sequencing_prompts")
             logger = logging.getLogger(__name__)
             prompt_path = action_input_preparation(args)
         elif eval_type == "transition_modeling":
@@ -107,8 +107,8 @@ def agent_evaluation(
         print(f"Prompts generated and saved to {prompt_path}")
         return None
     elif mode == "evaluate_results":
-        if eval_type == "action_sequence":
-            log_file = setup_logging(function_name="action_sequence_eval")
+        if eval_type == "action_sequencing":
+            log_file = setup_logging(function_name="action_sequencing_eval")
             logger = logging.getLogger(__name__)
             all_results = action_output_evaluation(args)
         elif eval_type == "transition_modeling":

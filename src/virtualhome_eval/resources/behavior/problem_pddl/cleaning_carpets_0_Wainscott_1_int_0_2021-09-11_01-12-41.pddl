@@ -1,0 +1,6 @@
+(define (problem cleaning_carpets)
+    (:domain igibson)
+    (:objects agent_n_01_1 - agent floor_n_01_1 floor_n_01_2 - floor_n_01 hand_towel_n_01_1 - hand_towel_n_01 sink_n_01_1 - sink_n_01)
+    (:init (onfloor agent_n_01_1 floor_n_01_1) (onfloor hand_towel_n_01_1 floor_n_01_2) (same_obj agent_n_01_1 agent_n_01_1) (same_obj floor_n_01_1 floor_n_01_1) (same_obj floor_n_01_2 floor_n_01_2) (same_obj hand_towel_n_01_1 hand_towel_n_01_1) (same_obj sink_n_01_1 sink_n_01_1) (stained floor_n_01_1))
+    (:goal (not (stained floor_n_01_1)))
+)

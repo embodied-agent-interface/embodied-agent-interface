@@ -1,0 +1,16 @@
+Wash dishes by hand
+Walk into Kitchen, walk to sink, grab a plate,put soap on sponge,wash plate with sponge, rinse with water, put away plate in cupboard.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <sink> (1.231)
+[FIND] <plate> (1.1000)
+[GRAB] <plate> (1.1000)
+[FIND] <soap> (1.1001)
+[GRAB] <soap> (1.1001)
+[PUTBACK] <soap> (1.1001) <plate> (1.1000)
+[FIND] <water> (1.1002)
+[RINSE] <water> (1.1002)
+[FIND] <cupboard> (1.229)
+[OPEN] <cupboard> (1.229)
+[PUTBACK] <plate> (1.1000) <cupboard> (1.229)

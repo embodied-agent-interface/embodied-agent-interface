@@ -1,0 +1,11 @@
+Pick up phone
+I hear the phone ringing in the living room. I walk to the living room and go to the phone. I pick it up and answer the phone.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <phone> (1.1000)
+[FIND] <phone> (1.1000)
+[TURNTO] <phone> (1.1000)
+[LOOKAT] <phone> (1.1000)
+[GRAB] <phone> (1.1000)
+[SWITCHON] <phone> (1.1000)

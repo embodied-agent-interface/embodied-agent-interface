@@ -1,0 +1,14 @@
+Change TV channel
+I go the living room, look for my tv remote control, take the control and then sit down on the couch and turn on the TV and push the buttons on the remote control to change the channel.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <remote_control> (1.1000)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <button> (1.1001)
+[PUSH] <button> (1.1001)

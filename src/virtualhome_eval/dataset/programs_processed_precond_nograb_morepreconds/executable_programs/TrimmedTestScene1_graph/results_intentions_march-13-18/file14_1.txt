@@ -1,0 +1,11 @@
+Listen to music
+Walk into living room, look for radio, grab on button
+
+
+[WALK] <home_office> (1.319)
+[WALK] <stereo> (1.1000)
+[FIND] <stereo> (1.1000)
+[TURNTO] <stereo> (1.1000)
+[LOOKAT] <stereo> (1.1000)
+[FIND] <button> (1.1001)
+[GRAB] <button> (1.1001)

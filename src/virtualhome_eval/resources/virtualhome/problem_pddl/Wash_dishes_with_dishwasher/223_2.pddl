@@ -1,0 +1,43 @@
+(define (problem Wash_dishes_with_dishwasher)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    home_office dishwasher dish_soap plate dining_room - object
+)
+    (:init
+    (inside_room plate dining_room)
+    (recipient plate)
+    (obj_inside dish_soap dishwasher)
+    (obj_next_to dishwasher dish_soap)
+    (grabbable dish_soap)
+    (plugged_out dishwasher)
+    (grabbable plate)
+    (inside_room dishwasher dining_room)
+    (movable dish_soap)
+    (cream dish_soap)
+    (surfaces plate)
+    (pourable dish_soap)
+    (obj_next_to plate dishwasher)
+    (closed dishwasher)
+    (clean dishwasher)
+    (inside_room dish_soap dining_room)
+    (can_open dishwasher)
+    (off dishwasher)
+    (has_switch dishwasher)
+    (movable plate)
+    (obj_next_to dishwasher plate)
+    (inside character home_office)
+    (containers dishwasher)
+    (obj_inside plate dishwasher)
+    (obj_next_to dish_soap dishwasher)
+)
+    (:goal
+    (and
+        (closed dishwasher)
+        (on dishwasher)
+        (obj_ontop dish_soap dishwasher)
+        (obj_ontop plate dishwasher)
+    )
+)
+    )
+    

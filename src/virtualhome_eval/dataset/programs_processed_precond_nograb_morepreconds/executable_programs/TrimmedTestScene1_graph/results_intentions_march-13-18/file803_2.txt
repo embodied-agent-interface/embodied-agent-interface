@@ -1,0 +1,15 @@
+Change TV channel
+I walk in living room. I find TV remote. I grab TV remote. I sit on sofa. I switch on TV. I switch channel.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <remote_control> (1.1000)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[TURNTO] <remote_control> (1.1000)
+[LOOKAT] <remote_control> (1.1000)
+[PUSH] <remote_control> (1.1000)

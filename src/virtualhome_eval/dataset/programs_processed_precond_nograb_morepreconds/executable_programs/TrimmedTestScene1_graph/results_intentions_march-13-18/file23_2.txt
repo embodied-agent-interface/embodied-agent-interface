@@ -1,0 +1,18 @@
+Read book
+First I walk into the living room, I find the lamp and switch it on. Then I find a book, grab it, sit in the sofa, open the book and read it. When I'm finished, I find a bookmark, grab it and put it in the book. Then I close the book, put it back, and switch off the lamp.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <floor_lamp> (1.1000)
+[FIND] <floor_lamp> (1.1000)
+[SWITCHON] <floor_lamp> (1.1000)
+[FIND] <novel> (1.1001)
+[GRAB] <novel> (1.1001)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[READ] <novel> (1.1001)
+[FIND] <bookmark> (1.1002)
+[GRAB] <bookmark> (1.1002)
+[PUTBACK] <bookmark> (1.1002) <novel> (1.1001)
+[PUTOBJBACK] <novel> (1.1001)
+[SWITCHOFF] <floor_lamp> (1.1000)

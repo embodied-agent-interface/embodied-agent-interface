@@ -1,0 +1,7 @@
+Turn on light
+walk to living room, find lamp, switch on.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <floor_lamp> (1.1000)
+[FIND] <floor_lamp> (1.1000)

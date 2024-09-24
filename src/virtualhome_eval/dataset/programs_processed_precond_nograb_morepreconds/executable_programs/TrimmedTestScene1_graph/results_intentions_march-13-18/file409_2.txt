@@ -1,0 +1,12 @@
+Work
+Walk to home office. Sit on chair. Switch on computer. type in keyboard.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

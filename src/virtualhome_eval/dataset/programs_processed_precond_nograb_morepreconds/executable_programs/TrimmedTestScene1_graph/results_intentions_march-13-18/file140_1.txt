@@ -1,0 +1,12 @@
+Change TV channel
+Take TV remote to change TV Channel. Press channel/program +/- button on TV remote.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (1.410)
+[FIND] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <button> (1.1001)
+[TOUCH] <button> (1.1001)

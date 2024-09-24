@@ -1,0 +1,42 @@
+(define (problem Listen_to_music)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    bathroom stereo headset bedroom chair - object
+)
+    (:init
+    (obj_next_to stereo chair)
+    (grabbable headset)
+    (surfaces chair)
+    (can_open stereo)
+    (inside_room stereo bedroom)
+    (movable chair)
+    (sittable chair)
+    (has_plug stereo)
+    (off stereo)
+    (surfaces stereo)
+    (plugged_in stereo)
+    (inside_room chair bedroom)
+    (obj_next_to chair stereo)
+    (movable headset)
+    (grabbable chair)
+    (obj_next_to headset stereo)
+    (closed stereo)
+    (inside_room headset bedroom)
+    (has_switch stereo)
+    (clean stereo)
+    (obj_next_to stereo headset)
+    (grabbable stereo)
+    (inside character bathroom)
+    (movable stereo)
+    (clothes headset)
+)
+    (:goal
+    (and
+        (closed stereo)
+        (on stereo)
+        (plugged_in stereo)
+    )
+)
+    )
+    

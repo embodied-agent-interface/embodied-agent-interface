@@ -1,0 +1,12 @@
+Write an email
+walk to home office and switch on laptop and with the useof mouse and keyboard send mail
+
+
+[WALK] <home_office> (1.319)
+[WALK] <laptop> (1.1000)
+[FIND] <laptop> (1.1000)
+[SWITCHON] <laptop> (1.1000)
+[FIND] <mouse> (1.413)
+[GRAB] <mouse> (1.413)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

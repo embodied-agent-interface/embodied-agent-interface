@@ -1,0 +1,20 @@
+Read book
+I finish of washes dishes, go to the living room, pick my book and read a while
+
+
+[FIND] <plate> (1.1000)
+[GRAB] <plate> (1.1000)
+[FIND] <cupboard> (1.229)
+[OPEN] <cupboard> (1.229)
+[PUTBACK] <plate> (1.1000) <cupboard> (1.229)
+[WALK] <home_office> (1.319)
+[WALK] <novel> (1.1001)
+[FIND] <novel> (1.1001)
+[GRAB] <novel> (1.1001)
+[FIND] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <coffee_table> (1.1002)
+[TOUCH] <coffee_table> (1.1002)
+[FIND] <spectacles> (1.1003)
+[GRAB] <spectacles> (1.1003)
+[READ] <novel> (1.1001)

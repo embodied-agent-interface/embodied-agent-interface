@@ -1,0 +1,43 @@
+(define (problem Cook_some_food)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    freezer oven pot - object
+)
+    (:init
+    (can_open pot)
+    (off oven)
+    (closed oven)
+    (closed freezer)
+    (clean freezer)
+    (plugged_in freezer)
+    (obj_next_to oven pot)
+    (has_switch freezer)
+    (recipient pot)
+    (plugged_in oven)
+    (obj_inside pot oven)
+    (clean oven)
+    (obj_inside pot freezer)
+    (can_open freezer)
+    (grabbable pot)
+    (has_plug oven)
+    (can_open oven)
+    (containers oven)
+    (obj_next_to pot freezer)
+    (has_plug freezer)
+    (obj_next_to pot oven)
+    (obj_next_to freezer pot)
+    (movable pot)
+    (containers freezer)
+    (has_switch oven)
+)
+    (:goal
+    (and
+        (closed oven)
+        (on oven)
+        (plugged_in oven)
+        (obj_ontop pot oven)
+    )
+)
+    )
+    

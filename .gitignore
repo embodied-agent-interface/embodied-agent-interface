@@ -1,3 +1,45 @@
-process_dataset
+*.pyc
+*.pyd
+*.pkl
+*.so
+*.egg-info/
+.DS_Store
+*.pth
+pw
+*.o
+*.ipynb
+*.ipynb_checkpoints/
+*.out
+npz/
+*.npy
+dev/transfer.c
+*.jpg
+*.png
+*.bmp
+*.bak
+*.zip
+.*.swp
 
-dataset/*old*
+
+docs/apidoc
+
+# vscode
+.vscode/
+
+
+# Models
+nav_models
+
+*.pdf
+.cache
+notebook
+build
+dist
+
+# Coverage
+.coverage
+coverage.xml
+
+**/results/**
+**/data/**
+**/output/**

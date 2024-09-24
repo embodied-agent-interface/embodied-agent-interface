@@ -1,0 +1,15 @@
+Browse internet
+I want to search the web so I go into my office, see my computer on the desk so I go sit in front of it, turn on the computer and use the keyboard to browse the internet.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <desk> (1.357)
+[FIND] <desk> (1.357)
+[TURNTO] <desk> (1.357)
+[LOOKAT] <desk> (1.357)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)

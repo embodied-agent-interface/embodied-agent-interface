@@ -1,0 +1,10 @@
+Change TV channel
+walk to living room ,find television ,find remote control ,switch on remote control and change the channel
+
+
+[WALK] <home_office> (1.319)
+[WALK] <television> (2.410)
+[FIND] <television> (2.410)
+[FIND] <remote_control> (3.1000)
+[TURNTO] <remote_control> (3.1000)
+[SWITCHON] <remote_control> (3.1000)

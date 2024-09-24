@@ -1,0 +1,11 @@
+Browse internet
+go to the room, sit in the chair, turn on the computer, look for the news
+
+
+[WALK] <bedroom> (1.67)
+[WALK] <chair> (1.103)
+[FIND] <chair> (1.103)
+[SIT] <chair> (1.103)
+[FIND] <computer> (1.170)
+[SWITCHON] <computer> (1.170)
+[FIND] <newspaper> (1.1000)

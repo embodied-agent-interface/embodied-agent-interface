@@ -1,0 +1,22 @@
+Browse internet
+"I walk to the entrance hall"  "I walk to the home office"  "I look for desk" "I find the desk" "I look for chair" "Ifind the chair" "I look for computer" "I find the computer" I sit in Chair"  "I switch on to the computer"  "I browse the internet"
+
+
+[WALK] <home_office> (1.319)
+[WALK] <home_office> (1.319)
+[WALK] <desk> (1.357)
+[FIND] <desk> (1.357)
+[TURNTO] <desk> (1.357)
+[LOOKAT] <desk> (1.357)
+[FIND] <desk> (1.357)
+[FIND] <chair> (1.356)
+[TURNTO] <chair> (1.356)
+[LOOKAT] <chair> (1.356)
+[FIND] <chair> (1.356)
+[FIND] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <computer> (1.417)
+[SIT] <chair> (1.356)
+[SWITCHON] <computer> (1.417)
+[WATCH] <computer> (1.417)

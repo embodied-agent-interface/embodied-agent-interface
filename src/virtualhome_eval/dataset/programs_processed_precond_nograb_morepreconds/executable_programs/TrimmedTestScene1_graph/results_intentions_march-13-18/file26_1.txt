@@ -1,0 +1,20 @@
+Drink
+I go to the kitchen, I pour water into a glass, I go back to the living room, sit down, and drink it.
+
+
+[STANDUP]
+[WALK] <dining_room> (1.201)
+[WALK] <cup> (1.1000)
+[FIND] <cup> (1.1000)
+[GRAB] <cup> (1.1000)
+[WALK] <faucet> (1.232)
+[SWITCHON] <faucet> (1.232)
+[FIND] <water> (1.1001)
+[FIND] <sink> (1.231)
+[PUTBACK] <cup> (1.1000) <sink> (1.231)
+[GRAB] <cup> (1.1000)
+[SWITCHOFF] <faucet> (1.232)
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[DRINK] <cup> (1.1000)

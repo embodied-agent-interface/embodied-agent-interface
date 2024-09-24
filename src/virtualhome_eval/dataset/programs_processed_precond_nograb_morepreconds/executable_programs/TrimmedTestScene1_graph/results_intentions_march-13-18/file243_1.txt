@@ -1,0 +1,13 @@
+Read book
+Go to living room, take textbook from table sit on a chair and close book after reading and put back on table.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <table> (1.355)
+[FIND] <table> (1.355)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[READ] <novel> (1.1000)
+[PUTOBJBACK] <novel> (1.1000)

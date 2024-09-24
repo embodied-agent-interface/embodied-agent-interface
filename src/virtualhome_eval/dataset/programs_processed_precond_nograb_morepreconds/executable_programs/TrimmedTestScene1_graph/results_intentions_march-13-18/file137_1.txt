@@ -1,0 +1,9 @@
+Relax on sofa
+allow sofa to support weight in order to decrease gravity induced entropy
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[FIND] <couch> (1.352)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)

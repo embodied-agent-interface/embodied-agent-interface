@@ -1,0 +1,12 @@
+Work
+Using a computer
+
+
+[FIND] <chair> (1.103)
+[SIT] <chair> (1.103)
+[FIND] <computer> (1.170)
+[SWITCHON] <computer> (1.170)
+[FIND] <mouse> (1.166)
+[TOUCH] <mouse> (1.166)
+[FIND] <keyboard> (1.168)
+[TYPE] <keyboard> (1.168)

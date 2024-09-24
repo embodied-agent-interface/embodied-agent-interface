@@ -1,0 +1,13 @@
+Read book
+Walk to home office, turn on light, grab a book, sit in chair, start to read the book
+
+
+[WALK] <home_office> (1.319)
+[WALK] <light> (1.411)
+[FIND] <light> (1.411)
+[SWITCHON] <light> (1.411)
+[FIND] <novel> (1.1000)
+[GRAB] <novel> (1.1000)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[READ] <novel> (1.1000)

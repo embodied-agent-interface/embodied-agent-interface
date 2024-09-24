@@ -1,0 +1,10 @@
+Turn on light
+walk in kitchen. switch on light. walk in living room. switch on light.walk in entrance hall. switch on light.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <light> (1.245)
+[FIND] <light> (1.245)
+[SWITCHON] <light> (1.245)
+[WALK] <home_office> (1.319)
+[WALK] <home_office> (1.319)

@@ -1,0 +1,6262 @@
+{
+  "scene_1": {
+    "Wash clothes": {
+      "27_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "ON"
+            },
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(washing_machine.1001) and ON(washing_machine.1001) and PLUGGED_IN(washing_machine.1001) and ONTOP(clothes_jacket.1003, washing_machine.1001) and ONTOP(soap.1002, washing_machine.1001))"
+      },
+      "417_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(washing_machine.1000) and ON(washing_machine.1000) and PLUGGED_IN(washing_machine.1000) and ONTOP(clothes_pants.1001, washing_machine.1000) and ONTOP(clothes_shirt.1004, washing_machine.1000) and ONTOP(clothes_shirt.1003, washing_machine.1000) and ONTOP(clothes_pants.1002, washing_machine.1000) and ONTOP(soap.1005, washing_machine.1000))"
+      },
+      "850_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "washing_machine",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(washing_machine.1000) and ON(washing_machine.1000) and PLUGGED_IN(washing_machine.1000) and ONTOP(clothes_pants.1001, washing_machine.1000) and ONTOP(laundry_detergent.1002, washing_machine.1000))"
+      },
+      "954_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "ON"
+            },
+            {
+              "id": 1001,
+              "class_name": "washing_machine",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1006,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(washing_machine.1001) and ON(washing_machine.1001) and PLUGGED_IN(washing_machine.1001) and ONTOP(clothes_shirt.1004, washing_machine.1001) and ONTOP(clothes_pants.1003, washing_machine.1001) and ONTOP(clothes_underwear.1005, washing_machine.1001) and ONTOP(soap.1006, washing_machine.1001) and ONTOP(clothes_dress.1002, washing_machine.1001))"
+      }
+    },
+    "Turn on light": {
+      "11_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "120_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "125_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "150_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "160_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1002,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1002,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.1002) and PLUGGED_IN(light.1002) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "180_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245))"
+      },
+      "205_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169))"
+      },
+      "222_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "232_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 1001,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1001,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245) and ON(light.1001) and PLUGGED_IN(light.1001) and ON(light.1000) and PLUGGED_IN(light.1000))"
+      },
+      "310_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169))"
+      },
+      "311_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "331_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "339_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": []
+        },
+        "tl_goal": null
+      },
+      "345_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "392_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.64) and PLUGGED_IN(light.64))"
+      },
+      "394_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245))"
+      },
+      "432_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "443_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "445_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.1000) and PLUGGED_IN(light.1000) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "511_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245))"
+      },
+      "585_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245) and ON(light.1000) and PLUGGED_IN(light.1000) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "604_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.64) and PLUGGED_IN(light.64) and ON(light.1000) and PLUGGED_IN(light.1000))"
+      },
+      "616_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 64,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.64) and PLUGGED_IN(light.64))"
+      },
+      "627_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": []
+        },
+        "tl_goal": null
+      },
+      "705_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "708_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "715_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169))"
+      },
+      "737_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "780_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 411,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245) and ON(light.1000) and PLUGGED_IN(light.1000) and ON(light.411) and PLUGGED_IN(light.411))"
+      },
+      "812_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169))"
+      },
+      "835_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "floor_lamp",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(floor_lamp.1000)"
+      },
+      "85_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 245,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.245) and PLUGGED_IN(light.245))"
+      },
+      "874_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "ON"
+            },
+            {
+              "id": 169,
+              "class_name": "light",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(ON(light.169) and PLUGGED_IN(light.169))"
+      }
+    },
+    "Brush teeth": {
+      "491_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1001
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(HOLDS_LH(character.65, tooth_paste.1001) and HOLDS_RH(character.65, toothbrush.1000))"
+      },
+      "696_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1001
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(HOLDS_LH(character.65, toothbrush.1001) and HOLDS_RH(character.65, tooth_paste.1000))"
+      }
+    },
+    "Write an email": {
+      "1003_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE",
+            "SWITCHOFF"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then exists x0. (SWITCHOFF(x0)))"
+      },
+      "115_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "407_1": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "430_1": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "481_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE",
+            "SWITCHOFF"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then exists x0. (SWITCHOFF(x0)))"
+      },
+      "622_1": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "699_1": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "824_1": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.417))"
+      },
+      "87_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "laptop",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(laptop.1000))"
+      },
+      "986_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE",
+            "SWITCHOFF"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then exists x0. (SWITCHOFF(x0)))"
+      },
+      "996_2": {
+        "vh_goal": {
+          "actions": [
+            "TYPE"
+          ],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TYPE(x0)) then ON(computer.1001))"
+      }
+    },
+    "Put groceries in Fridge": {
+      "1004_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "INSIDE",
+              "to_id": 289
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289) and INSIDE(food_food.1000, freezer.289))"
+      },
+      "152_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "INSIDE",
+              "to_id": 289
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289) and INSIDE(food_food.1000, freezer.289))"
+      },
+      "298_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "INSIDE",
+              "to_id": 289
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289) and INSIDE(food_food.1000, freezer.289))"
+      },
+      "609_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289))"
+      },
+      "703_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "INSIDE",
+              "to_id": 289
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289) and INSIDE(food_food.1000, freezer.289))"
+      },
+      "772_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289))"
+      },
+      "837_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "OPEN"
+            },
+            {
+              "id": 289,
+              "class_name": "freezer",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "INSIDE",
+              "to_id": 289
+            }
+          ]
+        },
+        "tl_goal": "(OPEN(freezer.289) and PLUGGED_IN(freezer.289) and INSIDE(food_cheese.1001, freezer.289))"
+      }
+    },
+    "Go to toilet": {
+      "158_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 1
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 37
+            }
+          ]
+        },
+        "tl_goal": "(INSIDE(character.65, bathroom.1) and FACING(character.65, toilet.37))"
+      },
+      "323_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 37
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(character.65, toilet.37)"
+      },
+      "430_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 37
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(character.65, toilet.37)"
+      },
+      "478_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 37
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(character.65, toilet.37)"
+      },
+      "496_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 1
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 37
+            }
+          ]
+        },
+        "tl_goal": "(INSIDE(character.65, bathroom.1) and FACING(character.65, toilet.37))"
+      },
+      "624_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(character.65, toilet.1000)"
+      }
+    },
+    "Change TV channel": {
+      "188_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH|PUSH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((TOUCH(x0) or PUSH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410) and HOLDS_RH(character.65, remote_control.1000)))"
+      },
+      "803_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH|PUSH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 1000
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((TOUCH(x0) or PUSH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, remote_control.1000) and HOLDS_RH(character.65, remote_control.1000)))"
+      },
+      "960_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH|PUSH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((TOUCH(x0) or PUSH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410) and HOLDS_RH(character.65, remote_control.1000)))"
+      }
+    },
+    "Work": {
+      "101_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "1068_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "153_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "196_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "198_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "201_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "232_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "234_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "343_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "373_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "406_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "409_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "419_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "433_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "437_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "440_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "453_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "46_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "475_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "503_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "670_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "719_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "757_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "787_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "795_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 170,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.170)"
+      },
+      "819_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "874_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "910_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "91_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "93_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      },
+      "962_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            }
+          ]
+        },
+        "tl_goal": "ON(computer.417)"
+      }
+    },
+    "Wash dishes with dishwasher": {
+      "190_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1001) and ON(dishwasher.1001) and ONTOP(bowl.1000, dishwasher.1001) and ONTOP(dish_soap.1003, dishwasher.1001) and ONTOP(plate.1002, dishwasher.1001))"
+      },
+      "201_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(plate.1001, dishwasher.1000) and ONTOP(dish_soap.1002, dishwasher.1000))"
+      },
+      "223_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(dish_soap.1001, dishwasher.1000) and ONTOP(plate.1003, dishwasher.1000) and ONTOP(plate.1002, dishwasher.1000))"
+      },
+      "327_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(plate.1001, dishwasher.1000) and ONTOP(dish_soap.1002, dishwasher.1000))"
+      },
+      "383_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(plate.1001, dishwasher.1000) and ONTOP(dish_soap.1003, dishwasher.1000) and ONTOP(plate.1002, dishwasher.1000))"
+      },
+      "417_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(drinking_glass.1001, dishwasher.1000) and ONTOP(fork.1004, dishwasher.1000) and ONTOP(plate.1003, dishwasher.1000) and ONTOP(drinking_glass.1002, dishwasher.1000) and ONTOP(dish_soap.1005, dishwasher.1000))"
+      },
+      "487_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1001) and ON(dishwasher.1001) and ONTOP(spoon.1004, dishwasher.1001) and ONTOP(plate.1000, dishwasher.1001) and ONTOP(cup.1003, dishwasher.1001) and ONTOP(dish_soap.1005, dishwasher.1001) and ONTOP(fork.1002, dishwasher.1001))"
+      },
+      "650_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1001) and ON(dishwasher.1001) and ONTOP(plate.1000, dishwasher.1001) and ONTOP(dish_soap.1003, dishwasher.1001) and ONTOP(pot.1002, dishwasher.1001))"
+      },
+      "783_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1006,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1007,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(plate.1001, dishwasher.1000) and ONTOP(plate.1004, dishwasher.1000) and ONTOP(plate.1003, dishwasher.1000) and ONTOP(cup.1006, dishwasher.1000) and ONTOP(plate.1002, dishwasher.1000) and ONTOP(plate.1005, dishwasher.1000) and ONTOP(dish_soap.1007, dishwasher.1000))"
+      },
+      "815_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 1001
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1001) and ON(dishwasher.1001) and ONTOP(plate.1000, dishwasher.1001) and ONTOP(dish_soap.1002, dishwasher.1001))"
+      },
+      "826_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1013,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1009,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1006,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1012,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1014,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1008,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1010,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1015,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1016,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1007,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1011,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(fork.1001, dishwasher.1000) and ONTOP(plate.1004, dishwasher.1000) and ONTOP(plate.1003, dishwasher.1000) and ONTOP(spoon.1013, dishwasher.1000) and ONTOP(cup.1009, dishwasher.1000) and ONTOP(plate.1006, dishwasher.1000) and ONTOP(knife.1012, dishwasher.1000) and ONTOP(spoon.1014, dishwasher.1000) and ONTOP(fork.1002, dishwasher.1000) and ONTOP(cup.1008, dishwasher.1000) and ONTOP(cup.1010, dishwasher.1000) and ONTOP(spoon.1015, dishwasher.1000) and ONTOP(dish_soap.1016, dishwasher.1000) and ONTOP(plate.1005, dishwasher.1000) and ONTOP(cup.1007, dishwasher.1000) and ONTOP(knife.1011, dishwasher.1000))"
+      },
+      "856_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(plate.1001, dishwasher.1000) and ONTOP(dish_soap.1002, dishwasher.1000))"
+      },
+      "911_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dishwasher",
+              "state": "ON"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 1000
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dishwasher.1000) and ON(dishwasher.1000) and ONTOP(cup.1001, dishwasher.1000) and ONTOP(dish_soap.1003, dishwasher.1000) and ONTOP(plate.1002, dishwasher.1000))"
+      }
+    },
+    "Go to sleep": {
+      "1027_2": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      },
+      "181_1": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      },
+      "244_2": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      },
+      "269_2": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      },
+      "509_2": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      },
+      "875_1": {
+        "vh_goal": {
+          "actions": [
+            "SLEEP"
+          ],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 105
+            }
+          ]
+        },
+        "tl_goal": "(SLEEP() then (LYING(character.65) and ONTOP(character.65, bed.105)))"
+      }
+    },
+    "Wash hands": {
+      "102_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "154_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "176_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "214_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "258_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "499_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "517_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "549_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "562_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1000,
+              "relation_type": "INSIDE",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "INSIDE(water.1000, hands_both.1001)"
+      },
+      "580_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "657_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "660_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "672_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "710_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "741_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "750_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1001,
+              "relation_type": "INSIDE",
+              "to_id": 1002
+            }
+          ]
+        },
+        "tl_goal": "INSIDE(water.1001, hands_both.1002)"
+      },
+      "805_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "80_1": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "813_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "928_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      },
+      "995_2": {
+        "vh_goal": {
+          "actions": [
+            "RINSE|WASH"
+          ],
+          "goal": []
+        },
+        "tl_goal": "exists x0. ((RINSE(x0) or WASH(x0)))"
+      }
+    },
+    "Pet cat": {
+      "1035_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "113_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "12_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "137_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "203_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "220_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "242_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "279_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "287_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "292_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "297_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "381_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "388_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "38_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "429_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "437_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "451_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "469_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "479_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "502_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "612_1": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      },
+      "856_2": {
+        "vh_goal": {
+          "actions": [
+            "TOUCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (TOUCH(x0)) then NEXT_TO(character.65, cat.1000))"
+      }
+    },
+    "Browse internet": {
+      "384_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 417
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 415
+            },
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 319
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 413
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(computer.417) and FACING(character.65, computer.417) and HOLDS_LH(character.65, keyboard.415) and INSIDE(character.65, home_office.319) and HOLDS_RH(character.65, mouse.413)))"
+      },
+      "540_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 1000
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 1000
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (FACING(character.65, phone.1000) and FACING(character.65, phone.1000) and HOLDS_RH(character.65, phone.1000)))"
+      },
+      "60_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "laptop",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "laptop",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(laptop.1000) and PLUGGED_IN(laptop.1000) and FACING(character.65, laptop.1000)))"
+      },
+      "71_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 417
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 415
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 413
+            },
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 319
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(computer.417) and FACING(character.65, computer.417) and HOLDS_LH(character.65, keyboard.415) and HOLDS_RH(character.65, mouse.413) and INSIDE(character.65, home_office.319)))"
+      },
+      "7_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 417,
+              "class_name": "computer",
+              "state": "ON"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 417
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 413
+            },
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 319
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(computer.417) and FACING(character.65, computer.417) and HOLDS_RH(character.65, mouse.413) and INSIDE(character.65, home_office.319)))"
+      }
+    },
+    "Wash teeth": {
+      "1070_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, toothbrush.1001)"
+      },
+      "313_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_LH(character.65, toothbrush.1001)"
+      },
+      "689_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1002
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_LH(character.65, toothbrush.1002)"
+      },
+      "718_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_LH(character.65, toothbrush.1001)"
+      }
+    },
+    "Listen to music": {
+      "1049_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "dvd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "dvd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "dvd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dvd_player.1000) and ON(dvd_player.1000) and PLUGGED_IN(dvd_player.1000))"
+      },
+      "113_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(cd_player.1000) and ON(cd_player.1000) and PLUGGED_IN(cd_player.1000))"
+      },
+      "161_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "173_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(cd_player.1000) and ON(cd_player.1000) and PLUGGED_IN(cd_player.1000))"
+      },
+      "23_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "263_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "305_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "363_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "dvd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "dvd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1001,
+              "class_name": "dvd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(dvd_player.1001) and ON(dvd_player.1001) and PLUGGED_IN(dvd_player.1001))"
+      },
+      "385_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(cd_player.1000) and ON(cd_player.1000) and PLUGGED_IN(cd_player.1000))"
+      },
+      "403_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "415_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 65
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(headset.1000, character.65)"
+      },
+      "462_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "463_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "503_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "cd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(cd_player.1000) and ON(cd_player.1000) and PLUGGED_IN(cd_player.1000))"
+      },
+      "59_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 65
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(headset.1001, character.65)"
+      },
+      "737_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "773_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "910_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "ON"
+            },
+            {
+              "id": 1000,
+              "class_name": "stereo",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(stereo.1000) and ON(stereo.1000) and PLUGGED_IN(stereo.1000))"
+      },
+      "953_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 1001,
+              "class_name": "cd_player",
+              "state": "CLOSED"
+            },
+            {
+              "id": 1001,
+              "class_name": "cd_player",
+              "state": "ON"
+            },
+            {
+              "id": 1001,
+              "class_name": "cd_player",
+              "state": "PLUGGED_IN"
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(cd_player.1001) and ON(cd_player.1001) and PLUGGED_IN(cd_player.1001))"
+      }
+    },
+    "Watch TV": {
+      "1057_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "117_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "134_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "170_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "197_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "21_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "225_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "259_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "307_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "329_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "342_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "377_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "383_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "411_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "454_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "459_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "548_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 248,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 248,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 248
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.248) and PLUGGED_IN(television.248) and FACING(character.65, television.248)))"
+      },
+      "595_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "684_2": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "74_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "806_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      },
+      "98_1": {
+        "vh_goal": {
+          "actions": [
+            "LOOKAT|WATCH"
+          ],
+          "goal": [
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "ON"
+            },
+            {
+              "id": 410,
+              "class_name": "television",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "FACING",
+              "to_id": 410
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and PLUGGED_IN(television.410) and FACING(character.65, television.410)))"
+      }
+    },
+    "Drink": {
+      "1064_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "156_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "171_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "175_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "181_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "26_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "286_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "291_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1001))"
+      },
+      "317_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1001))"
+      },
+      "488_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "510_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, drinking_glass.1001))"
+      },
+      "528_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, drinking_glass.1000))"
+      },
+      "532_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, drinking_glass.1001))"
+      },
+      "589_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "600_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "662_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "688_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then (HOLDS_RH(character.65, water_glass.1000) and HOLDS_LH(character.65, water_glass.1000)))"
+      },
+      "787_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "788_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, drinking_glass.1001))"
+      },
+      "814_1": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      },
+      "850_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1001))"
+      },
+      "861_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, cup.1000))"
+      },
+      "878_2": {
+        "vh_goal": {
+          "actions": [
+            "DRINK"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (DRINK(x0)) then HOLDS_RH(character.65, water_glass.1000))"
+      }
+    },
+    "Read book": {
+      "1073_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "1088_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "15_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, address_book.1000))"
+      },
+      "163_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "16_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "192_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "208_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1001))"
+      },
+      "221_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1001))"
+      },
+      "241_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "341_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1003
+            },
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1001
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then (HOLDS_LH(character.65, spectacles.1003) and HOLDS_RH(character.65, novel.1001)))"
+      },
+      "484_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "504_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "508_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "544_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "57_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "617_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "628_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "688_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "693_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "821_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "86_1": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      },
+      "896_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_LH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_LH(character.65, novel.1000))"
+      },
+      "897_2": {
+        "vh_goal": {
+          "actions": [
+            "READ|LOOKAT"
+          ],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. ((READ(x0) or LOOKAT(x0))) then HOLDS_RH(character.65, novel.1000))"
+      }
+    },
+    "Cook some food": {
+      "1083_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "CLOSED"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "ON"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 295
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(oven.295) and ON(oven.295) and PLUGGED_IN(oven.295) and ONTOP(pot.1003, oven.295))"
+      },
+      "392_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "CLOSED"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "ON"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 295
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(oven.295) and ON(oven.295) and PLUGGED_IN(oven.295) and ONTOP(pot.1001, oven.295))"
+      },
+      "755_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "CLOSED"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "ON"
+            },
+            {
+              "id": 295,
+              "class_name": "oven",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 295
+            }
+          ]
+        },
+        "tl_goal": "(CLOSED(oven.295) and ON(oven.295) and PLUGGED_IN(oven.295) and ONTOP(sauce_pan.1003, oven.295))"
+      }
+    },
+    "Relax on sofa": {
+      "124_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "137_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "204_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "268_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "297_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "299_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "300_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "321_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "332_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "379_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "387_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "390_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "3_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "416_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "438_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "442_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "447_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "449_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "455_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "456_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "473_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "490_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "563_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "567_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "570_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "674_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "6_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "742_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "762_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "793_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "798_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "932_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "941_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "96_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "SITTING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(SITTING(character.65) and ONTOP(character.65, couch.352))"
+      },
+      "976_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "id": 65,
+              "class_name": "character",
+              "state": "LYING"
+            },
+            {
+              "from_id": 65,
+              "relation_type": "ON",
+              "to_id": 352
+            }
+          ]
+        },
+        "tl_goal": "(LYING(character.65) and ONTOP(character.65, couch.352))"
+      }
+    },
+    "Pick up phone": {
+      "149_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "154_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "180_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "195_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "211_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "241_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "264_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "265_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "287_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "352_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "360_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "388_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "431_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "436_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "442_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "474_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "482_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "497_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "553_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "601_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      },
+      "70_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "864_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "963_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "974_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "976_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 1000
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.1000)"
+      },
+      "99_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "HOLDS_RH",
+              "to_id": 247
+            }
+          ]
+        },
+        "tl_goal": "HOLDS_RH(character.65, phone.247)"
+      }
+    },
+    "Make coffee": {
+      "183_2": {
+        "vh_goal": {
+          "actions": [
+            "POUR"
+          ],
+          "goal": [
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "CLOSED"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "ON"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 290
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 290
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (exists x1. (POUR(x0,x1))) then (CLOSED(coffe_maker.290) and ON(coffe_maker.290) and PLUGGED_IN(coffe_maker.290) and ONTOP(coffee_filter.1000, coffe_maker.290) and ONTOP(ground_coffee.1001, coffe_maker.290)))"
+      },
+      "229_1": {
+        "vh_goal": {
+          "actions": [
+            "POUR"
+          ],
+          "goal": [
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "CLOSED"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "ON"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 290
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 290
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (exists x1. (POUR(x0,x1))) then (CLOSED(coffe_maker.290) and ON(coffe_maker.290) and PLUGGED_IN(coffe_maker.290) and ONTOP(coffee_filter.1000, coffe_maker.290) and ONTOP(ground_coffee.1001, coffe_maker.290)))"
+      },
+      "310_2": {
+        "vh_goal": {
+          "actions": [
+            "POUR"
+          ],
+          "goal": [
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "CLOSED"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "ON"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 290
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 290
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (exists x1. (POUR(x0,x1))) then (CLOSED(coffe_maker.290) and ON(coffe_maker.290) and PLUGGED_IN(coffe_maker.290) and ONTOP(coffee_filter.1000, coffe_maker.290) and ONTOP(ground_coffee.1001, coffe_maker.290)))"
+      },
+      "721_2": {
+        "vh_goal": {
+          "actions": [
+            "POUR"
+          ],
+          "goal": [
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "CLOSED"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "ON"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 290
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 290
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (exists x1. (POUR(x0,x1))) then (CLOSED(coffe_maker.290) and ON(coffe_maker.290) and PLUGGED_IN(coffe_maker.290) and ONTOP(ground_coffee.1002, coffe_maker.290) and ONTOP(coffee_filter.1001, coffe_maker.290)))"
+      },
+      "764_2": {
+        "vh_goal": {
+          "actions": [
+            "POUR"
+          ],
+          "goal": [
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "CLOSED"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "ON"
+            },
+            {
+              "id": 290,
+              "class_name": "coffe_maker",
+              "state": "PLUGGED_IN"
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 290
+            },
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 290
+            }
+          ]
+        },
+        "tl_goal": "(exists x0. (exists x1. (POUR(x0,x1))) then (CLOSED(coffe_maker.290) and ON(coffe_maker.290) and PLUGGED_IN(coffe_maker.290) and ONTOP(coffee_filter.1000, coffe_maker.290) and ONTOP(ground_coffee.1001, coffe_maker.290)))"
+      }
+    },
+    "Set up table": {
+      "419_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 226
+            },
+            {
+              "from_id": 1002,
+              "relation_type": "ON",
+              "to_id": 226
+            },
+            {
+              "from_id": 1004,
+              "relation_type": "ON",
+              "to_id": 226
+            },
+            {
+              "from_id": 1005,
+              "relation_type": "ON",
+              "to_id": 226
+            },
+            {
+              "from_id": 1003,
+              "relation_type": "ON",
+              "to_id": 226
+            }
+          ]
+        },
+        "tl_goal": "(ONTOP(cloth_napkin.1001, table.226) and ONTOP(plate.1002, table.226) and ONTOP(fork.1004, table.226) and ONTOP(cup.1005, table.226) and ONTOP(knife.1003, table.226))"
+      },
+      "446_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 226
+            },
+            {
+              "from_id": 1000,
+              "relation_type": "ON",
+              "to_id": 226
+            }
+          ]
+        },
+        "tl_goal": "(ONTOP(plate.1001, table.226) and ONTOP(plate.1000, table.226))"
+      },
+      "710_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 1001,
+              "relation_type": "ON",
+              "to_id": 226
+            }
+          ]
+        },
+        "tl_goal": "ONTOP(plate.1001, table.226)"
+      },
+      "84_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": []
+        },
+        "tl_goal": null
+      },
+      "93_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": []
+        },
+        "tl_goal": null
+      }
+    },
+    "Get some water": {
+      "368_1": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "INSIDE",
+              "to_id": 201
+            }
+          ]
+        },
+        "tl_goal": "INSIDE(character.65, dining_room.201)"
+      }
+    },
+    "Take shower": {
+      "729_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 36
+            }
+          ]
+        },
+        "tl_goal": "NEXT_TO(character.65, shower.36)"
+      },
+      "975_2": {
+        "vh_goal": {
+          "actions": [],
+          "goal": [
+            {
+              "from_id": 65,
+              "relation_type": "CLOSE",
+              "to_id": 36
+            }
+          ]
+        },
+        "tl_goal": "NEXT_TO(character.65, shower.36)"
+      }
+    },
+    "Wash dishes by hand": {
+      "231_2": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "31_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "349_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "397_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "429_2": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "553_2": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "594_2": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "746_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "961_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      },
+      "988_1": {
+        "vh_goal": {
+          "actions": [
+            "GRAB",
+            "WASH|RINSE|SCRUB|WIPE"
+          ],
+          "goal": []
+        },
+        "tl_goal": "(exists x0. (GRAB(x0)) then exists x0. ((WASH(x0) or RINSE(x0) or SCRUB(x0) or WIPE(x0))))"
+      }
+    }
+  }
+}

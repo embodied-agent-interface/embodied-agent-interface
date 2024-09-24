@@ -1,0 +1,11 @@
+Pet cat
+The cat is laying on the couch in the living room. I want to pet it, so I am going to walk to the living room, sit on the couch, and pet the cat.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[FIND] <cat> (1.1000)
+[TURNTO] <cat> (1.1000)
+[LOOKAT] <cat> (1.1000)
+[TOUCH] <cat> (1.1000)

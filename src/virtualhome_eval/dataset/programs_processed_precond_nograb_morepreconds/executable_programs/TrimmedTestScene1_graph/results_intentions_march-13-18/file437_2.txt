@@ -1,0 +1,14 @@
+Work
+I walk into the office. I see my computer sitting on the desk. I walk over to the desk and sit down. I turn on the computer. I begin to use the keys and  mouse on the mousepad to work on the computer.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <computer> (1.417)
+[FIND] <computer> (1.417)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[SWITCHON] <computer> (1.417)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)
+[FIND] <mouse> (1.413)
+[GRAB] <mouse> (1.413)

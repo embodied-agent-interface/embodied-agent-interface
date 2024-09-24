@@ -1,0 +1,18 @@
+Work
+I go to my home office, sit on the chair and turn on the computer. I open my email account to look for all the information I need.I pull up my online task on the computer to look at what the assigned task is.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <chair> (1.356)
+[FIND] <chair> (1.356)
+[SIT] <chair> (1.356)
+[FIND] <computer> (1.417)
+[SWITCHON] <computer> (1.417)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)
+[FIND] <mouse> (1.413)
+[GRAB] <mouse> (1.413)
+[FIND] <keyboard> (1.415)
+[TYPE] <keyboard> (1.415)
+[TURNTO] <computer> (1.417)
+[LOOKAT] <computer> (1.417)

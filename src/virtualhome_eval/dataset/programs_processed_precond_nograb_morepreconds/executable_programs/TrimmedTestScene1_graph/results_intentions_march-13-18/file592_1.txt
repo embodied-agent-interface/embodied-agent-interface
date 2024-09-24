@@ -1,0 +1,16 @@
+Make coffee
+Enter kitchen, find coffee maker, find coffee filter, pick up coffee filter, put it in coffee maker, find coffee, pour coffee into filter, turn on.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <coffe_maker> (1.290)
+[FIND] <coffe_maker> (1.290)
+[FIND] <coffee_filter> (1.1000)
+[GRAB] <coffee_filter> (1.1000)
+[OPEN] <coffe_maker> (1.290)
+[PUTBACK] <coffee_filter> (1.1000) <coffe_maker> (1.290)
+[WALK] <coffee> (1.1001)
+[FIND] <coffee> (1.1001)
+[GRAB] <coffee> (1.1001)
+[POUR] <coffee> (1.1001) <coffe_maker> (1.290)
+[SWITCHON] <coffe_maker> (1.290)

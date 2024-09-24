@@ -1,0 +1,16 @@
+Wash dishes with dishwasher
+I walk into the kitchen and go to the dishwasher. I open the dishwasher and grab the dishes. Iplace the dishes into the dishwasher then close it. I add soap then turn the dishwasher on.
+
+
+[WALK] <dining_room> (1.201)
+[WALK] <dishwasher> (1.1000)
+[OPEN] <dishwasher> (1.1000)
+[WALK] <kitchen_counter> (1.230)
+[FIND] <plate> (1.1001)
+[GRAB] <plate> (1.1001)
+[PUTBACK] <plate> (1.1001) <dishwasher> (1.1000)
+[FIND] <dish_soap> (1.1002)
+[GRAB] <dish_soap> (1.1002)
+[PUTBACK] <dish_soap> (1.1002) <dishwasher> (1.1000)
+[CLOSE] <dishwasher> (1.1000)
+[SWITCHON] <dishwasher> (1.1000)

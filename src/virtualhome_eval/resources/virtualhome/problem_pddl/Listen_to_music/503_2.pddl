@@ -1,0 +1,40 @@
+(define (problem Listen_to_music)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    remote_control chair cd_player - object
+)
+    (:init
+    (grabbable remote_control)
+    (obj_next_to chair remote_control)
+    (surfaces chair)
+    (obj_next_to cd_player chair)
+    (movable cd_player)
+    (movable chair)
+    (movable remote_control)
+    (sittable chair)
+    (obj_next_to chair cd_player)
+    (has_switch cd_player)
+    (has_switch remote_control)
+    (closed cd_player)
+    (clean cd_player)
+    (off cd_player)
+    (grabbable chair)
+    (obj_next_to remote_control chair)
+    (plugged_in cd_player)
+    (obj_next_to remote_control cd_player)
+    (obj_next_to cd_player remote_control)
+    (grabbable cd_player)
+    (surfaces cd_player)
+    (has_plug cd_player)
+    (can_open cd_player)
+)
+    (:goal
+    (and
+        (closed cd_player)
+        (on cd_player)
+        (plugged_in cd_player)
+    )
+)
+    )
+    

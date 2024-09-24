@@ -1,0 +1,14 @@
+Relax on sofa
+I want to relax on the sofa to some relaxing music in the living room.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <light> (1.411)
+[FIND] <light> (1.411)
+[SWITCHON] <light> (1.411)
+[WALK] <stereo> (1.1000)
+[PLUGIN] <stereo> (1.1000)
+[SWITCHON] <stereo> (1.1000)
+[WALK] <couch> (1.352)
+[SIT] <couch> (1.352)
+[LIE] <couch> (1.352)

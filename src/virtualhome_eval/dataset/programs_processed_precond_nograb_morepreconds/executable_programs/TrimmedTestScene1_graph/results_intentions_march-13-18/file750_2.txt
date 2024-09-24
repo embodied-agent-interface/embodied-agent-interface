@@ -1,0 +1,19 @@
+Wash hands
+Go into the bathroom and go over to the sink. Grab soap and turn on the water. Wet your hands and rub them together so that the soap lathers. Rub the soap all over your hands thoroughly. Rinse off the soap with water and turn off the sink. Dry your hands with a towel.
+
+
+[WALK] <bathroom> (1.1)
+[WALK] <sink> (1.42)
+[FIND] <soap> (1.1000)
+[GRAB] <soap> (1.1000)
+[FIND] <water> (1.1001)
+[GRAB] <water> (1.1001)
+[FIND] <hands_both> (1.1002)
+[POUR] <water> (1.1001) <hands_both> (1.1002)
+[FIND] <hands_both> (1.1002)
+[SCRUB] <hands_both> (1.1002)
+[PUTOBJBACK] <soap> (1.1000)
+[RINSE] <hands_both> (1.1002)
+[FIND] <towel> (1.1003)
+[GRAB] <towel> (1.1003)
+[WIPE] <hands_both> (1.1002)

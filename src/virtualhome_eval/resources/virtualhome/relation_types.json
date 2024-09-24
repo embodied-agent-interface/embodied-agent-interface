@@ -1,0 +1,9 @@
+{
+    "ON": "An object rests atop another, like a book on a table.",
+    "FACING": "One object is oriented towards another, as in a person facing a wall.",
+    "HOLDS_LH": "An object is held or supported by the left hand, like a left hand holding a ball.",
+    "INSIDE": "An object is contained within another, like coins inside a jar.",
+    "BETWEEN": "An object is situated spatially between two entities, like a park between two buildings.",
+    "HOLDS_RH": "An object is grasped or carried by the right hand, such as a right hand holding a pen.",
+    "CLOSE": "Objects are near each other without touching, like two close-standing trees."
+  }

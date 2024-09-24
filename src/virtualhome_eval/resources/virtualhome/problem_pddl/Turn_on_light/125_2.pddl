@@ -1,0 +1,42 @@
+(define (problem Turn_on_light)
+    (:domain virtualhome)
+    (:objects
+    character - character
+    home_office light bedroom computer chair - object
+)
+    (:init
+    (obj_next_to computer light)
+    (surfaces chair)
+    (has_plug light)
+    (has_switch light)
+    (inside_room light bedroom)
+    (facing chair computer)
+    (obj_next_to light computer)
+    (movable chair)
+    (obj_next_to computer chair)
+    (sittable chair)
+    (plugged_out light)
+    (has_switch computer)
+    (obj_next_to light chair)
+    (obj_next_to light light)
+    (clean light)
+    (inside_room chair bedroom)
+    (grabbable chair)
+    (obj_next_to chair light)
+    (lookable computer)
+    (obj_inside computer home_office)
+    (inside character bedroom)
+    (off light)
+    (inside_room computer bedroom)
+    (obj_inside chair home_office)
+    (obj_next_to chair computer)
+    (obj_inside light home_office)
+)
+    (:goal
+    (and
+        (on light)
+        (plugged_in light)
+    )
+)
+    )
+    

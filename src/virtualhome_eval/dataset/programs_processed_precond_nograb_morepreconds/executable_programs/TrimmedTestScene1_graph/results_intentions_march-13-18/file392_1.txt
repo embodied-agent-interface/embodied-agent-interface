@@ -1,0 +1,7 @@
+Turn on light
+find lightswitch. walk to light switch. turn on light.
+
+
+[FIND] <light> (1.64)
+[WALK] <light> (1.64)
+[SWITCHON] <light> (1.64)

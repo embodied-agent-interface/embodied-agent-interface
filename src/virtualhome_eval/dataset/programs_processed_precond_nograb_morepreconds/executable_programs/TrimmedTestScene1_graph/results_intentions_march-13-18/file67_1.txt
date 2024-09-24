@@ -1,0 +1,16 @@
+Change TV channel
+walk to living room.grab remote control. look at television. switch on television. lift remote control. push remote control. watch television. switch off television. put back remote control.
+
+
+[WALK] <home_office> (1.319)
+[WALK] <remote_control> (1.1000)
+[FIND] <remote_control> (1.1000)
+[GRAB] <remote_control> (1.1000)
+[FIND] <television> (1.410)
+[TURNTO] <television> (1.410)
+[LOOKAT] <television> (1.410)
+[SWITCHON] <television> (1.410)
+[PUSH] <remote_control> (1.1000)
+[WATCH] <television> (1.410)
+[SWITCHOFF] <television> (1.410)
+[PUTOBJBACK] <remote_control> (1.1000)

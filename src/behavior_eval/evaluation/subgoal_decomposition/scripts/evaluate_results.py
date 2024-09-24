@@ -33,7 +33,7 @@ def simulate_one_llm(llm_response_path, llm_name: str, worker_num: int=1, result
     manager = Manager()
     lock = manager.Lock()
 
-    llm_name = os.path.basename(llm_response_path).split('.')[0]
+    # llm_name = os.path.basename(llm_response_path).split('_')[0]
     eval_stat_path = os.path.join(result_dir, 'log', f'{llm_name}.json')
     os.makedirs(os.path.dirname(eval_stat_path), exist_ok=True)
 

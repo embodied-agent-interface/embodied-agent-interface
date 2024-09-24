@@ -67,29 +67,25 @@ To address these limitations, we propose a generalized interface, Embodied Agent
 
 To install the Embodied Agent Interface (EAgent) for benchmarking Large Language Models (LLMs) for embodied decision-making, follow these steps:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
-   cd embodied-agent-eval
-   ```
-
-2. **Checkout the Development Branch**:
-   ```bash
-   git checkout dev
-   ```
-
-3. **Create and Activate a Conda Environment**:
+1. **Create and Activate a Conda Environment**:
    ```bash
    conda create -n eagent python=3.8 -y 
    conda activate eagent
    ```
 
-4. **Install the Package**:
+2. **Install from pypi**:
    ```bash
+   pip install eagent-eval
+   ```
+   
+3. **Install from source**:
+   ```bash
+   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
+   cd embodied-agent-eval
    pip install -e .
    ```
 
-5. **(Optional) Install iGibson for behavior evaluation**:
+4. **(Optional) Install iGibson for behavior evaluation**:
    If you need to use `behavior_eval`, you must install iGibson.
 
    There might be issues during the installation of `iGibson`. 

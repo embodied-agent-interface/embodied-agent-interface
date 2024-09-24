@@ -258,8 +258,9 @@ def generate_system_setup(prompt_file_path):
 def get_meta_prompt_component():
     prompts = {}
     prompts['system_prompt'] = system_prompt
-    prompts['target_task'] = target_task_info
+    prompts['target_task'] = target_task_prompt
     return prompts
 
 if __name__ == '__main__':
-    logger.info(system_prompt+target_task_prompt)
+    # logger.info(system_prompt+target_task_prompt)
+    ...

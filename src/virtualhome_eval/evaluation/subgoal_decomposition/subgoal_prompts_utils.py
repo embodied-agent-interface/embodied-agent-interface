@@ -204,3 +204,7 @@ def get_initial_states_and_final_goals(planner: MotionPlanner, node_goals: list,
 def add_task_info_into_prompt(prompt_path, task_name, relv_objs, init_states, final_states, final_actions, necessity):
     prompt = json.load(open(prompt_path, 'r'))['target_task']
     return prompt.replace("<task_name>", task_name).replace("<relevant_objects>", relv_objs).replace("<initial_states>", init_states).replace("<final_states>", final_states).replace("<final_actions>", final_actions).replace("<necessity>", necessity)
+
+def add_task_info_into_prompt_component(template_prompt, task_name, relv_objs, init_states, final_states, final_actions, necessity):
+    target_task = template_prompt['target_task']
+    return target_task.replace("<task_name>", task_name).replace("<relevant_objects>", relv_objs).replace("<initial_states>", init_states).replace("<final_states>", final_states).replace("<final_actions>", final_actions).replace("<necessity>", necessity)

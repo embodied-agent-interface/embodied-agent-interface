@@ -3,9 +3,9 @@ import json
 import os.path as osp
 import virtualhome_eval.simulation.evolving_graph.utils as utils
 from multiprocessing import Process, Manager, Queue
-from virtualhome_eval.evaluation.subgoal_decomposition.prompts.meta_prompt import generate_meta_prompt, generate_system_setup
+from virtualhome_eval.evaluation.subgoal_decomposition.prompts.meta_prompt import generate_meta_prompt, generate_system_setup, get_meta_prompt_component
 from virtualhome_eval.simulation.evolving_graph.eval_utils import *
-from virtualhome_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils import get_relevant_nodes, get_formatted_relevant_nodes, get_initial_states_and_final_goals, add_task_info_into_prompt, prompt_generated
+from virtualhome_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils import get_relevant_nodes, get_formatted_relevant_nodes, get_initial_states_and_final_goals, add_task_info_into_prompt_component, prompt_generated
 
 def generate_prompts(args):
     dataset = args.dataset
@@ -20,8 +20,8 @@ def generate_prompts(args):
     task_dict = json.load(open(task_dict_dir, "r"))
     task_dict = task_dict[scene_id]
 
-    meta_prompt_file_path = os.path.join(evaluation_dir, 'subgoal_decomposition', 'prompts', 'meta_prompt.json')
-    generate_meta_prompt(meta_prompt_file_path)
+    # meta_prompt_file_path = os.path.join(evaluation_dir, 'subgoal_decomposition', 'prompts', 'meta_prompt.json')
+    # generate_meta_prompt(meta_prompt_file_path)
     system_setup_file_path = os.path.join(evaluation_dir, 'subgoal_decomposition', 'prompts', 'system_setup.json')
     generate_system_setup(system_setup_file_path)
 
@@ -81,7 +81,8 @@ def generate_prompts(args):
                 continue
 
             necessity = 'Yes' if action_states_str != "None" else 'No'
-            prompt = add_task_info_into_prompt(meta_prompt_file_path, task_name, relevant_nodes_str, init_states_str, final_states_str, action_states_str, necessity)
+            template_prompt = get_meta_prompt_component()
+            prompt = add_task_info_into_prompt_component(template_prompt, task_name, relevant_nodes_str, init_states_str, final_states_str, action_states_str, necessity)
             helm_prompt_list.append(
                 {
                     'identifier': f'{scene_id}_{file_id}',

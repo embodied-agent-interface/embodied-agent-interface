@@ -5,8 +5,6 @@
 [![](https://img.shields.io/badge/dataset-download-yellow?style=plastic&logo=Data)](https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset)
 [![](https://img.shields.io/badge/docker-eval--embodied--agent-blue?style=plastic&logo=Docker)](https://hub.docker.com/r/jameskrw/eval-embodied-agent) 
 [![](https://img.shields.io/badge/docs-online-blue?style=plastic&logo=Read%20the%20Docs)](https://embodied-agent-eval.readthedocs.io/en/latest/#)
-[![](https://img.shields.io/badge/pip-behavior--eval-brightgreen?style=plastic&logo=Python)](https://pypi.org/project/behavior-eval/) 
-[![](https://img.shields.io/badge/pip-virtualhome--eval-brightgreen?style=plastic&logo=Python)](https://pypi.org/project/virtualhome-eval/) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -69,29 +67,25 @@ To address these limitations, we propose a generalized interface, Embodied Agent
 
 To install the Embodied Agent Interface (EAgent) for benchmarking Large Language Models (LLMs) for embodied decision-making, follow these steps:
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
-   cd embodied-agent-eval
-   ```
-
-2. **Checkout the Development Branch**:
-   ```bash
-   git checkout dev
-   ```
-
-3. **Create and Activate a Conda Environment**:
+1. **Create and Activate a Conda Environment**:
    ```bash
    conda create -n eagent python=3.8 -y 
    conda activate eagent
    ```
 
-4. **Install the Package**:
+2. **Install from pypi**:
    ```bash
+   pip install eagent-eval
+   ```
+   
+3. **Install from source**:
+   ```bash
+   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
+   cd embodied-agent-eval
    pip install -e .
    ```
 
-5. **(Optional) Install iGibson for behavior evaluation**:
+4. **(Optional) Install iGibson for behavior evaluation**:
    If you need to use `behavior_eval`, you must install iGibson.
 
    There might be issues during the installation of `iGibson`. 

@@ -65,94 +65,252 @@ We aim to evaluate Large Language Models (LLMs) for embodied decision making. Wh
 
 To address these limitations, we propose a generalized interface, Embodied Agent Interface (EAgent), that supports the formalization of various types of tasks and input-output specifications of LLM-based modules. Specifically, it allows us to unify 1) a broad set of embodied decision-making tasks involving both state and temporally extended goals, 2) four commonly-used LLM-based modules for decision making: goal interpretation, subgoal decomposition, action sequencing, and transition modeling, and 3) a collection of fine-grained metrics which break down evaluation into various types of errors, such as hallucination errors, affordance errors, various types of planning errors, etc. Overall, our benchmark offers a comprehensive assessment of LLMs' performance for different subtasks, pinpointing the strengths and weaknesses in LLM-powered embodied AI systems and providing insights for effective and selective use of LLMs in embodied decision making. 
 
-## Installation
-
-To install the Embodied Agent Interface (EAgent) for benchmarking Large Language Models (LLMs) for embodied decision-making, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
-   cd embodied-agent-eval
-   ```
-
-2. **Checkout the Development Branch**:
-   ```bash
-   git checkout dev
-   ```
-
-3. **Create and Activate a Conda Environment**:
-   ```bash
-   conda create -n eagent python=3.8 -y 
-   conda activate eagent
-   ```
-
-4. **Install the Package**:
-   ```bash
-   pip install -e .
-   ```
-
-5. **(Optional) Install iGibson for behavior evaluation**:
-   If you need to use `behavior_eval`, you must install iGibson.
-
-   There might be issues during the installation of `iGibson`. 
-
-    To minimize and identify potential issues, we recommend:
-    
-    1. please make sure python=3.8 and your system meets minimum requirements in [iGibson installation guide](https://stanfordvl.github.io/iGibson/installation.html).
-    
-    2. **Install CMake Using Conda (do not use pip)**: 
-       ```
-       conda install cmake
-       ```
-    
-    3. **Install `iGibson`**:
-       We provided a script for automatically installing `iGibson`
-       ```
-       python -m behavior_eval.utils.install_igibson_utils
-       ```
-       
-       You can also do it on your own:
-       ```
-       git clone https://github.com/embodied-agent-eval/iGibson.git --recursive
-       cd iGibson
-       pip install -e .
-
-    4. Download Assets
-       ```
-        python -m behavior_eval.utils.download_utils
-       ```
-    
-    We've successfully tested the installation on Linux servers, Windows 10+, and Mac OS X.
+## Requirements
 
 
+To run the code, first set up a unified environment: 
+```bash
+# Create your virtual environment and activate it:
+conda update -y conda
+conda create -n eagent python=3.8 pip
+conda activate eagent
+```
 
-## Examples
+Then, setup the following required simulators:
 
-Once the installation is complete, you can start using the Embodied Agent Interface (EAgent) for evaluation. Below are a few examples of how to run the evaluation.
+[VirtualHome](https://github.com/zsyJosh/AgentEval/tree/main) 
+```bash
+pip install virtualhome
+```
+[BEHAVIOR](https://github.com/StanfordVL/iGibson)
+```bash
+# install igibson
+git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git --recursive
+cd src/BEHAVIOR/iGibson
+pip install -e .
 
-1. **View Available Arguments**:
-   ```bash
-   eagent-eval --help
-   ```
+# install bddl
+git clone https://github.com/StanfordVL/bddl.git
+cd bddl
+git checkout tags/v1.0.1
+pip install -e .
+```
 
-2. **Generate Prompts for Behavior Evaluation**:
-   ```bash
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
-   ```
+Finally, setup HELM for LLM inference:
 
-3. **Evaluate Action Sequencing in VirtualHome Dataset**:
-   ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequence
-   ```
+[HELM](https://github.com/bryanzhou008/helm)
+```bash
+# Install all HELM dependencies:
+./src/LLMs/helm-embodied_eval/install-dev.sh
+```
 
-4. **Evaluate Results in VirtualHome Dataset**:
-   ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-   ```
-5. **Download helm output files to reproduce evaluation**:
-   ```bash
-   python -m eagent_eval.utils.download_utils
-   ```
+## Data
+
+The dataset is publicly available at [BEHAVIOR Annotations](https://github.com/embodied-agent-eval/embodied-agent-eval/blob/main/dataset/behavior_data.json) and [VirtualHome Annotations](https://github.com/embodied-agent-eval/embodied-agent-eval/blob/main/dataset/virtualhome_data.json).
+
+The dataset is in JSON format:
+```"1057_1": {
+  "task_name": "Watch TV",
+  "natural_language_description": "Go to the living room, sit on the couch, find the 
+    remote, switch on the TV and watch",
+  "vh_goal": {
+    "actions": [
+      "LOOKAT|WATCH"
+    ],
+    "goal": [{
+        "id": 410,
+        "class_name": "television",
+        "state": "ON"
+      }, {
+        "id": 410,
+        "class_name": "television",
+        "state": "PLUGGED_IN"
+      }, {
+        "from_id": 65,
+        "relation_type": "FACING",
+        "to_id": 410
+    }]
+  },
+  "tl_goal": "(exists x0. ((LOOKAT(x0) or WATCH(x0))) then (ON(television.410) and 
+    PLUGGED_IN(television.410) and FACING(character.65, television.410)))",
+  "action_trajectory": [
+    "[WALK] <home_office> (319)",
+    "[WALK] <couch> (352)",
+    "[FIND] <couch> (352)",
+    "[SIT] <couch> (352)",
+    "[FIND] <remote_control> (1000)",
+    "[FIND] <television> (410)",
+    "[SWITCHON] <television> (410)",
+    "[TURNTO] <television> (410)",
+    "[WATCH] <television> (410)"
+  ],
+  "transition_model": <pddl_definition>
+}
+```
+
+### VirtualHome original dataset (Optional)
+```
+cd src/VIRTUALHOME/AgentEval-main/virtualhome/
+mkdir dataset
+./helper_scripts/download_dataset.sh
+```
+Use the above commands to download the scene graph dataset of VirtualHome. This dataset will be used in the `prompt generation` of the tasks on VirtualHome, providing necessary information to LLM. If you are using the provided prompts, this step is not necessary.
+
+## Code
+
+The code structure for `EAgent` is as follows:
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- goal_interpretation
+------------------------ prompts
+------------------------ scripts
+-------------------- action_sequence
+------------------------ prompts
+------------------------ scripts
+-------------------- eval_subgoal_plan
+------------------------ prompts
+------------------------ scripts
+-------------------- transition_modeling
+------------------------ prompts
+------------------------ scripts
+---------------- igibson/evolving_graph
+---------------- igibson/transition_model
+------------ VirtualHome  # Evaluator on VirtualHome
+---------------- virtualhome/simulation/evolving_graph
+-------------------- motion_planner.py
+-------------------- eval_goal.py
+-------------------- eval_action.py
+-------------------- eval_subgoal.py
+-------------------- eval_transition.py
+------------------------ logic_score.py
+------------------------ planner_test.py
+------------------------ pddlgym_planners
+-------------------- virtualhome/prompts
+------------ HELM  # Running LLMs
+---------------- scripts
+```
+
+## Prompt
+
+### Goal Interpretation
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- goal_interpretation
+------------------------ prompts
+------------ VirtualHome  # Evaluator on VirtualHome
+-------------------- virtualhome/prompts
+```
+
+### Action Sequencing
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- action_sequence
+------------------------ prompts
+------------ VirtualHome  # Evaluator on VirtualHome
+-------------------- virtualhome/prompts
+```
+
+### Subgoal Decomposition
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- eval_subgoal_plan
+------------------------ prompts
+------------ VirtualHome  # Evaluator on VirtualHome
+-------------------- virtualhome/prompts
+```
+
+### Transition Modeling
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- transition_modeling
+------------------------ prompts
+------------ VirtualHome  # Evaluator on VirtualHome
+-------------------- virtualhome/prompts
+```
+
+## Evaluation
+
+### Goal Interpretation
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- goal_interpretation
+------------------------ prompts
+------------------------ scripts
+------------ VirtualHome  # Evaluator on VirtualHome
+---------------- virtualhome/simulation/evolving_graph
+-------------------- motion_planner.py
+-------------------- eval_goal.py
+```
+
+### Action Sequencing
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- action_sequence
+------------------------ scripts
+---------------- igibson/evolving_graph
+---------------- igibson/transition_model
+------------ VirtualHome  # Evaluator on VirtualHome
+---------------- virtualhome/simulation/evolving_graph
+-------------------- motion_planner.py
+-------------------- eval_action.py
+```
+
+
+### Subgoal Decomposition
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- eval_subgoal_plan
+------------------------ scripts
+---------------- igibson/evolving_graph
+---------------- igibson/transition_model
+------------ VirtualHome  # Evaluator on VirtualHome
+---------------- virtualhome/simulation/evolving_graph
+-------------------- motion_planner.py
+-------------------- eval_subgoal.py
+```
+
+### Transition Modeling
+```
+---- src
+------------ BEHAVIOR  # Evaluator on BEHAVIOR
+---------------- igibson/evaluation
+-------------------- transition_modeling
+------------------------ scripts
+---------------- igibson/evolving_graph
+---------------- igibson/transition_model
+------------ VirtualHome  # Evaluator on VirtualHome
+---------------- virtualhome/simulation/evolving_graph
+-------------------- motion_planner.py
+-------------------- eval_transition.py
+------------------------ logic_score.py
+------------------------ planner_test.py
+------------------------ pddlgym_planners
+```
 
 
 
+## BEHAVIOR Symbolic Simulator Implementation
+
+### Evolving Graph
+
+We implement the evolving graph at `src/BEHAVIOR/igibson/evolving_graph`.
+
+### Transition Modeling
+
+We implement the evolving graph at `src/BEHAVIOR/igibson/transition_model`.

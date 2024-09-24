@@ -1,0 +1,27 @@
+{
+  "@type": "sc:Dataset",
+  "name": "embodied-agent-eval",
+  "citeAs": "@article{Li2024EmbodiedAI,\n title={Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making},\n author={Manling Li and Shiyu Zhao and Qineng Wang and Kangrui Wang and Yu Zhou and Sanjana Srivastava and Cem Gokmen and Tony Lee and Erran Li and Ruohan Zhang and  Weiyu Liu and Jiayuan Mao and Percy Liang and Fei-Fei Li and Jiajun Wu},\n year={2024},\n}",
+  "description": "We aim to evaluate Large Language Models (LLMs) for embodied decision making. While a significant body of work has been leveraging LLMs for decision making in embodied environments, we still lack a systematic understanding of their performances, because they are usually applied in different domains for different purposes, and built based on different inputs and outputs. Furthermore, existing evaluations tend to rely solely on a final success rate, making it difficult to pinpoint what ability is missing in LLMs and where the problem lies, which in turn, blocks embodied agents from leveraging LLMs effectively and selectively. To address these limitations, we propose a generalized interface (Embodied Agent Interface) that supports the formalization of various types of tasks and input-output specifications of LLM-based modules. Specifically, it allows us to unify 1) a broad set of embodied decision making tasks involving both state and temporally extended goals, 2) four commonly-used LLM-based modules for decision making: goal interpretation, subgoal decomposition, action sequencing, and transition modeling, and 3) a collection of fine-grained metrics which break down evaluation into various types of errors, such as hallucination errors, affordance errors, various types of planning errors, etc. Overall, our benchmark offers a comprehensive and systematic assessment of LLMs' performance for different subtasks, pinpointing the strengths and weaknesses in LLM-powered embodied AI systems, and providing insights for effective and selective use of LLMs in embodied decision making.",
+  "license": "cc-by-4.0",
+  "url": "https://cs.stanford.edu/~manlingl/projects/embodied-eval",
+  "version": "1.0.0",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "virtualhome_data.json",
+      "name": "virtualhome_data.json",
+      "contentUrl": "data/virtualhome_data.json",
+      "encodingFormat": "text/json",
+      "sha256": "b752f3556ea7cc2526839904b90b01925258c04a4057e8229cfd25dc5c887e89"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "behavior_data.json",
+      "name": "behavior_data.json",
+      "contentUrl": "data/behavior_data.json",
+      "encodingFormat": "text/json",
+      "sha256": "51fa1e047fa772e65c694d66e805366eaa02ed345caa84e0b5454fcaf2316d4e"
+    }
+  ]
+}

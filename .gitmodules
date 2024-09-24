@@ -1,0 +1,3 @@
+[submodule "src/BEHAVIOR/iGibson"]
+	path = src/BEHAVIOR/iGibson
+	url = https://github.com/embodied-agent-eval/igibson.git

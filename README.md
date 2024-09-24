@@ -5,8 +5,6 @@
 [![](https://img.shields.io/badge/dataset-download-yellow?style=plastic&logo=Data)](https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset)
 [![](https://img.shields.io/badge/docker-eval--embodied--agent-blue?style=plastic&logo=Docker)](https://hub.docker.com/r/jameskrw/eval-embodied-agent) 
 [![](https://img.shields.io/badge/docs-online-blue?style=plastic&logo=Read%20the%20Docs)](https://embodied-agent-eval.readthedocs.io/en/latest/#)
-[![](https://img.shields.io/badge/pip-behavior--eval-brightgreen?style=plastic&logo=Python)](https://pypi.org/project/behavior-eval/) 
-[![](https://img.shields.io/badge/pip-virtualhome--eval-brightgreen?style=plastic&logo=Python)](https://pypi.org/project/virtualhome-eval/) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 

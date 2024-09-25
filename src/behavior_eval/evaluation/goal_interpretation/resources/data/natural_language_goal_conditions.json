@@ -1,0 +1,569 @@
+{
+    "assembling_gift_baskets": [
+        "for pairs of baskets and candles,\n    the candle is inside the basket",
+        "for pairs of baskets and cheeses,\n    the cheese is inside the basket",
+        "for pairs of baskets and cookies,\n    the cookie is inside the basket",
+        "for pairs of baskets and bows,\n    the bow is inside the basket"
+    ],
+    "bottling_fruit": [
+        "for at least one jar,\n        strawberry1 is inside the jar, and\n        the following is NOT true:\n            peach1 is inside the jar",
+        "for at least one jar,\n        peach1 is inside the jar, and\n        the following is NOT true:\n            strawberry1 is inside the jar",
+        "for every jar,\n    the following is NOT true:\n        the jar is open",
+        "strawberry1 is sliced",
+        "peach1 is sliced"
+    ],
+    "boxing_books_up_for_storage": [
+        "for every book,\n    the book is inside carton1"
+    ],
+    "bringing_in_wood": [
+        "for every plywood,\n    the plywood is onfloor floor2"
+    ],
+    "brushing_lint_off_clothing": [
+        "for every sweater,\n    the following is NOT true:\n        the sweater is dusty",
+        "for every sweater,\n    the sweater is on top of bed1"
+    ],
+    "chopping_vegetables": [
+        "for every tomato,\n        for at least one dish,\n            the tomato is inside the dish, and\n        the tomato is sliced",
+        "for every mushroom,\n        for at least one dish,\n            the mushroom is inside the dish, and\n        the mushroom is sliced",
+        "for every chestnut,\n        for at least one dish,\n            the chestnut is inside the dish, and\n        the chestnut is sliced",
+        "for every vidalia_oniononion.n.01,\n        for at least one dish,\n            vidalia_oniononion.n.01 is inside the dish, and\n        vidalia_oniononion.n.01 is sliced"
+    ],
+    "cleaning_a_car": [
+        "the following is NOT true:\n    car1 is dusty",
+        "soap1 is inside bucket1",
+        "rag1 is inside bucket1"
+    ],
+    "cleaning_barbecue_grill": [
+        "the following is NOT true:\n    grill1 is stained",
+        "the following is NOT true:\n    grill1 is dusty"
+    ],
+    "cleaning_bathrooms": [
+        "the following is NOT true:\n    toilet1 is stained",
+        "the following is NOT true:\n    bathtub1 is stained",
+        "the following is NOT true:\n    sink1 is stained",
+        "the following is NOT true:\n    floor1 is stained",
+        "    rag1 is soaked, and\n    rag1 is inside bucket1"
+    ],
+    "cleaning_bathtub": [
+        "the following is NOT true:\n    bathtub1 is stained"
+    ],
+    "cleaning_bedroom": [
+        "for every apparel,\n    for at least one cabinet,\n        the apparel is inside the cabinet",
+        "    jewelry1 is inside cabinet1, and\n    perfume1 is inside cabinet1",
+        "sheet1 is on top of bed1",
+        "for every cabinet,\n    the following is NOT true:\n        the cabinet is dusty",
+        "vacuum1 is next to bed1",
+        "painting1 is on top of sheet1"
+    ],
+    "cleaning_carpets": [
+        "the following is NOT true:\n    floor1 is stained"
+    ],
+    "cleaning_closet": [
+        "for every jewelry,\n    the jewelry is inside cabinet3",
+        "the following is NOT true:\n    umbrella1 is inside cabinet3",
+        "    hat1 is inside cabinet1, or\n    hat1 is on top of shelf1,\n    or any combination of these",
+        "for every sandal,\n        the sandal is next to shelf1, and\n        the sandal is onfloor floor1",
+        "the following is NOT true:\n    cabinet3 is dusty",
+        "the following is NOT true:\n    shelf1 is dusty",
+        "the following is NOT true:\n    floor1 is dusty"
+    ],
+    "cleaning_cupboards": [
+        "for every cabinet,\n    the following is NOT true:\n        the cabinet is dusty",
+        "for every book,\n    for every cabinet,\n        the following is NOT true:\n            the book is inside the cabinet",
+        "screwdriver1 is inside bin1",
+        "for every marker,\n    the marker is inside bucket1",
+        "pen1 is inside bucket1"
+    ],
+    "cleaning_floors": [
+        "the following is NOT true:\n    floor1 is stained",
+        "the following is NOT true:\n    floor1 is dusty"
+    ],
+    "cleaning_freezer": [
+        "the following is NOT true:\n    electric_refrigerator1 is stained",
+        "for every food,\n    the following is NOT true:\n        the food is inside electric_refrigerator1"
+    ],
+    "cleaning_garage": [
+        "the following is NOT true:\n    floor1 is dusty",
+        "the following is NOT true:\n    cabinet1 is dusty",
+        "the following is NOT true:\n    cabinet1 is stained",
+        "for every newspaper,\n        the newspaper is inside bin1, or\n        the following is NOT true:\n            the newspaper is onfloor floor1,\n        or any combination of these",
+        "for every bottle,\n    the bottle is on top of table1"
+    ],
+    "cleaning_high_chair": [
+        "the following is NOT true:\n    highchair1 is dusty"
+    ],
+    "cleaning_kitchen_cupboard": [
+        "for every cabinet,\n    the following is NOT true:\n        the cabinet is dusty",
+        "for at least one cabinet,\n    for every bowl,\n            the bowl is inside the cabinet, and\n            the following is NOT true:\n                cup1 is inside the cabinet",
+        "for at least one cabinet,\n    for every cup,\n            the cup is inside the cabinet, and\n            the following is NOT true:\n                bowl1 is inside the cabinet"
+    ],
+    "cleaning_microwave_oven": [
+        "the following is NOT true:\n    microwave1 is dusty",
+        "the following is NOT true:\n    microwave1 is stained"
+    ],
+    "cleaning_out_drawers": [
+        "piece_of_cloth1 is next to sink1",
+        "bowl1 is next to sink1",
+        "bowl2 is next to sink1",
+        "spoon1 is next to sink1",
+        "spoon2 is next to sink1"
+    ],
+    "cleaning_oven": [
+        "for every rag,\n    the rag is soaked",
+        "scrub_brush1 is soaked",
+        "the following is NOT true:\n    oven1 is stained"
+    ],
+    "cleaning_shoes": [
+        "for every shoe,\n    the following is NOT true:\n        the shoe is stained",
+        "for every shoe,\n    the following is NOT true:\n        the shoe is dusty",
+        "towel1 is onfloor floor1"
+    ],
+    "cleaning_sneakers": [
+        "towel1 is on top of countertop1",
+        "brush1 is next to towel1",
+        "soap1 is inside sink1",
+        "for every gym_shoeshoe.n.01,\n    the following is NOT true:\n        gym_shoeshoe.n.01 is dusty",
+        "for every gym_shoeshoe.n.01,\n    the following is NOT true:\n        gym_shoeshoe.n.01 is stained",
+        "for exactly 2 gym_shoeshoe.n.01(s),\n    gym_shoeshoe.n.01 is next to table1",
+        "for exactly 2 gym_shoeshoe.n.01(s),\n    gym_shoeshoe.n.01 is under table1",
+        "for every gym_shoeshoe.n.01,\n    gym_shoeshoe.n.01 is onfloor floor1"
+    ],
+    "cleaning_stove": [
+        "the following is NOT true:\n    stove1 is dusty",
+        "the following is NOT true:\n    stove1 is stained",
+        "rag1 is next to sink1",
+        "dishtowel1 is next to sink1"
+    ],
+    "cleaning_table_after_clearing": [
+        "the following is NOT true:\n    table1 is stained"
+    ],
+    "cleaning_the_hot_tub": [
+        "pool1 is onfloor floor1",
+        "the following is NOT true:\n    pool1 is stained"
+    ],
+    "cleaning_the_pool": [
+        "pool1 is onfloor floor1",
+        "the following is NOT true:\n    pool1 is stained",
+        "scrub_brush1 is on top of shelf1",
+        "detergent1 is onfloor floor1"
+    ],
+    "cleaning_toilet": [
+        "the following is NOT true:\n    toilet1 is stained",
+        "scrub_brush1 is onfloor floor1",
+        "detergent1 is onfloor floor1"
+    ],
+    "cleaning_up_after_a_meal": [
+        "for every bowl,\n    the following is NOT true:\n        the bowl is stained",
+        "for every plate,\n    the following is NOT true:\n        the plate is stained",
+        "for every cup,\n    the following is NOT true:\n        the cup is stained",
+        "for every hamburger,\n    the hamburger is inside sack1",
+        "sack1 is onfloor floor1",
+        "the following is NOT true:\n    floor1 is stained",
+        "the following is NOT true:\n    chair2 is stained",
+        "the following is NOT true:\n    floor1 is stained",
+        "the following is NOT true:\n    table1 is stained"
+    ],
+    "cleaning_up_refrigerator": [
+        "for every rag,\n    the rag is next to sink1",
+        "soap1 is inside sink1",
+        "for every tray,\n    the tray is inside electric_refrigerator1",
+        "the following is NOT true:\n    tray1 is stained",
+        "the following is NOT true:\n    tray2 is stained",
+        "bowl1 is next to sink1",
+        "the following is NOT true:\n    bowl1 is dusty",
+        "the following is NOT true:\n    electric_refrigerator1 is stained"
+    ],
+    "cleaning_up_the_kitchen_only": [
+        "blender1 is on top of countertop1",
+        "soap1 is next to sink1",
+        "for at least one cabinet,\n        vegetable_oil1 is inside the cabinet, and\n        the following is NOT true:\n            plate1 is inside the cabinet",
+        "for at least one cabinet,\n        plate1 is inside the cabinet, and\n        the following is NOT true:\n            vegetable_oil1 is inside the cabinet",
+        "    the following is NOT true:\n        cabinet1 is dusty, and\n    the following is NOT true:\n        cabinet2 is dusty, and\n    the following is NOT true:\n        floor1 is dusty",
+        "the following is NOT true:\n    plate1 is stained",
+        "    rag1 is next to sink1, or\n    rag1 is inside sink1,\n    or any combination of these",
+        "    casserole1 is inside electric_refrigerator1, and\n    apple1 is inside electric_refrigerator1"
+    ],
+    "cleaning_windows": [
+        "    rag1 is soaked, and\n    rag2 is soaked",
+        "    the following is NOT true:\n        window1 is dusty, and\n    the following is NOT true:\n        window2 is dusty"
+    ],
+    "clearing_the_table_after_dinner": [
+        "for every cup,\n    for at least one bucket,\n        the cup is inside the bucket",
+        "for every bowl,\n    for at least one bucket,\n        the bowl is inside the bucket",
+        "for at least one bucket,\n    catsup1 is inside the bucket"
+    ],
+    "collect_misplaced_items": [
+        "gym_shoe1 is on top of table2",
+        "necklace1 is on top of table2",
+        "notebook1 is on top of table2",
+        "for every sock,\n    the sock is on top of table2"
+    ],
+    "collecting_aluminum_cans": [
+        "for every pop,\n    the pop is inside bucket1"
+    ],
+    "defrosting_freezer": [
+        "receptacle1 is next to electric_refrigerator1",
+        "bucket1 is next to countertop1",
+        "scraper1 is on top of electric_refrigerator1",
+        "towel1 is on top of countertop1",
+        "rag1 is inside sink1",
+        "rag1 is soaked",
+        "for every food,\n    the food is inside bucket1"
+    ],
+    "filling_a_Christmas_stocking": [
+        "for pairs of stockings and cubes,\n    the cube is inside the stocking",
+        "for pairs of stockings and candys,\n    the candy is inside the stocking",
+        "for pairs of stockings and pens,\n    the pen is inside the stocking"
+    ],
+    "filling_an_Easter_basket": [
+        "for every basket,\n    the basket is on top of countertop1",
+        "for pairs of baskets and eggs,\n    the egg is inside the basket",
+        "for pairs of baskets and candys,\n    the candy is inside the basket",
+        "for at least one basket,\n        jewelry1 is inside the basket, and\n        ball1 is inside the basket",
+        "for pairs of bows and baskets,\n        the bow is on top of the basket, or\n        the bow is inside the basket,\n        or any combination of these",
+        "for pairs of books and baskets,\n    the book is next to the basket"
+    ],
+    "installing_a_fax_machine": [
+        "facsimile1 is on top of table1",
+        "facsimile1 is toggled_on"
+    ],
+    "installing_a_modem": [
+        "modem1 is toggled_on",
+        "modem1 is under table1"
+    ],
+    "installing_a_printer": [
+        "printer1 is on top of table1",
+        "printer1 is toggled_on"
+    ],
+    "installing_a_scanner": [
+        "scanner1 is toggled_on",
+        "scanner1 is under table1"
+    ],
+    "installing_alarms": [
+        "for pairs of alarms and tables,\n    the alarm is on top of the table",
+        "for every alarm,\n    the alarm is toggled_on"
+    ],
+    "laying_tile_floors": [
+        "for every tile,\n    the tile is onfloor floor2"
+    ],
+    "laying_wood_floors": [
+        "for every plywood,\n    the plywood is onfloor floor2",
+        "for every plywood,\n        the plywood is next to plywood1, or\n        the plywood is next to plywood2, or\n        the plywood is next to plywood3, or\n        the plywood is next to plywood4,\n        or any combination of these"
+    ],
+    "loading_the_dishwasher": [
+        "for every plate,\n    the plate is inside dishwasher1",
+        "for every bowl,\n    the bowl is inside dishwasher1",
+        "mug1 is inside dishwasher1"
+    ],
+    "locking_every_door": [
+        "the following is NOT true:\n    door1 is open",
+        "the following is NOT true:\n    door2 is open"
+    ],
+    "locking_every_window": [
+        "the following is NOT true:\n    window1 is open",
+        "the following is NOT true:\n    window2 is open",
+        "the following is NOT true:\n    window3 is open",
+        "the following is NOT true:\n    window4 is open"
+    ],
+    "making_tea": [
+        "lemon1 is sliced",
+        "teapot1 is on top of stove1",
+        "tea_bag1 is inside teapot1",
+        "tea_bag1 is soaked",
+        "stove1 is toggled_on"
+    ],
+    "mopping_floors": [
+        "the following is NOT true:\n    floor1 is stained",
+        "bucket1 is next to sink1",
+        "soap1 is inside bucket1",
+        "broom1 is next to sink1"
+    ],
+    "moving_boxes_to_storage": [
+        "carton1 is onfloor floor2",
+        "carton2 is on top of carton1"
+    ],
+    "opening_packages": [
+        "for every package,\n    the package is open"
+    ],
+    "opening_presents": [
+        "for every package,\n    the package is open"
+    ],
+    "organizing_boxes_in_garage": [
+        "for at least one carton,\n        for every ball,\n            the ball is inside the carton, and\n        for every plate,\n            the plate is inside the carton, and\n        saucepan1 is inside the carton",
+        "for every carton,\n    the carton is onfloor floor1"
+    ],
+    "organizing_file_cabinet": [
+        "marker1 is on top of table1",
+        "for every document,\n    the document is inside cabinet1",
+        "for every folder,\n    the folder is inside cabinet1"
+    ],
+    "organizing_school_stuff": [
+        "    folder1 is next to book1, and\n    folder1 is next to backpack1, and\n    book1 is next to backpack1",
+        "highlighter1 is inside backpack1",
+        "pencil1 is inside backpack1",
+        "pen1 is inside backpack1",
+        "calculator1 is inside backpack1",
+        "backpack1 is on top of bed1"
+    ],
+    "packing_adult_s_bags": [
+        "for every jewelry,\n    the jewelry is inside backpack1",
+        "for every makeup,\n    the makeup is inside backpack1",
+        "toothbrush1 is inside backpack1",
+        "mouse1 is inside backpack1",
+        "backpack1 is onfloor floor2"
+    ],
+    "packing_bags_or_suitcase": [
+        "for every underwear,\n    the underwear is inside backpack1",
+        "toothbrush1 is inside backpack1",
+        "shampoo1 is inside backpack1",
+        "hardback1 is inside backpack1",
+        "toothpaste1 is inside backpack1",
+        "    backpack1 is on top of bed1, or\n    backpack1 is onfloor floor1,\n    or any combination of these"
+    ],
+    "packing_boxes_for_household_move_or_trip": [
+        "for at least one carton,\n        for every plate,\n            the plate is inside the carton, and\n        dishtowel1 is inside the carton",
+        "for at least one carton,\n        for every book,\n            the book is inside the carton, and\n        for every shirt,\n            the shirt is inside the carton, and\n        sweater1 is inside the carton"
+    ],
+    "packing_car_for_trip": [
+        "briefcase1 is inside car1",
+        "pencil_box1 is inside car1",
+        "headset1 is inside car1",
+        "duffel_bag1 is inside car1"
+    ],
+    "packing_child_s_bag": [
+        "backpack1 is next to bed1",
+        "sunglass1 is inside backpack1",
+        "notebook1 is inside backpack1",
+        "bracelet1 is inside backpack1",
+        "apple1 is inside backpack1",
+        "earphone1 is inside backpack1"
+    ],
+    "packing_food_for_work": [
+        "sandwich1 is inside carton1",
+        "apple1 is inside carton1",
+        "snack_food1 is inside carton1",
+        "juice1 is inside carton1",
+        "    carton1 is onfloor floor1, or\n    carton1 is on top of countertop1,\n    or any combination of these"
+    ],
+    "packing_lunches": [
+        "for pairs of chips and cartons,\n    the chip is inside the carton",
+        "for pairs of cookies and cartons,\n    the cookie is inside the carton",
+        "for at least one carton,\n        salad1 is inside the carton, and\n        juice1 is inside the carton, and\n        the following is NOT true:\n            sandwich1 is inside the carton",
+        "for at least one carton,\n        sandwich1 is inside the carton, and\n        pop1 is inside the carton, and\n        the following is NOT true:\n            salad1 is inside the carton",
+        "    apple1 is inside carton1, or\n    banana1 is inside carton1,\n    or any combination of these",
+        "    apple1 is inside carton2, or\n    banana1 is inside carton2,\n    or any combination of these"
+    ],
+    "packing_picnics": [
+        "for at least one carton,\n        for every chip,\n            the chip is inside the carton, and\n        for every sandwich,\n            the sandwich is inside the carton",
+        "for at least one carton,\n        for every strawberry,\n            the strawberry is inside the carton, and\n        for every grape,\n            the grape is inside the carton, and\n        for every peach,\n            the peach is inside the carton, and\n        melon1 is next to the carton",
+        "for at least one carton,\n        for every pop,\n            the pop is inside the carton, and\n        for every beer,\n            the beer is inside the carton, and\n        for every water,\n            the water is inside the carton"
+    ],
+    "picking_up_take-out_food": [
+        "for every carton,\n    the carton is on top of table1",
+        "sushi1 is inside carton1",
+        "hamburger1 is inside carton1"
+    ],
+    "picking_up_trash": [
+        "for every pad,\n    the pad is inside ashcan1",
+        "for every pop,\n    the pop is inside ashcan1"
+    ],
+    "polishing_furniture": [
+        "the following is NOT true:\n    table1 is dusty",
+        "the following is NOT true:\n    shelf1 is dusty",
+        "rag1 is under table1"
+    ],
+    "polishing_shoes": [
+        "rag1 is next to sink1",
+        "rag1 is soaked",
+        "    the following is NOT true:\n        shoe1 is stained, and\n    the following is NOT true:\n        shoe2 is stained"
+    ],
+    "polishing_silver": [
+        "the following is NOT true:\n    spoon1 is dusty",
+        "the following is NOT true:\n    spoon2 is dusty",
+        "the following is NOT true:\n    spoon3 is dusty",
+        "the following is NOT true:\n    spoon4 is dusty",
+        "the following is NOT true:\n    rag1 is inside cabinet1",
+        "spoon1 is inside cabinet1",
+        "spoon2 is inside cabinet1",
+        "spoon3 is inside cabinet1",
+        "spoon4 is inside cabinet1"
+    ],
+    "preparing_a_shower_for_child": [
+        "towel1 is onfloor floor1",
+        "shampoo1 is onfloor floor1",
+        "soap1 is next to sink1"
+    ],
+    "preparing_salad": [
+        "for pairs of lettuces and plates,\n    the lettuce is on top of the plate",
+        "for pairs of apples and plates,\n        the apple is sliced, and\n        the apple is on top of the plate",
+        "for pairs of tomatos and plates,\n        the tomato is on top of the plate, and\n        the tomato is sliced",
+        "for pairs of radishs and plates,\n    the radish is on top of the plate"
+    ],
+    "preserving_food": [
+        "for every strawberry,\n    the strawberry is sliced",
+        "for every strawberry,\n    the strawberry is cooked",
+        "for every strawberry,\n    the strawberry is inside jar1",
+        "the following is NOT true:\n    jar1 is open",
+        "beef1 is inside electric_refrigerator1",
+        "beef1 is frozen"
+    ],
+    "putting_away_Christmas_decorations": [
+        "for every wreath,\n    the wreath is next to cabinet1",
+        "for every bow,\n    the bow is next to cabinet1",
+        "for every ribbon,\n    the ribbon is inside cabinet1"
+    ],
+    "putting_away_Halloween_decorations": [
+        "for every pumpkin,\n    the pumpkin is inside cabinet1",
+        "for every candle,\n    the candle is inside cabinet1",
+        "    sheet1 is next to table1, or\n    sheet1 is on top of table1,\n    or any combination of these",
+        "caldron1 is next to table1"
+    ],
+    "putting_away_toys": [
+        "for every plaything,\n    for at least one carton,\n        the plaything is inside the carton"
+    ],
+    "putting_dishes_away_after_cleaning": [
+        "for at least one cabinet,\n    for every plate,\n        the plate is inside cabinet1"
+    ],
+    "putting_leftovers_away": [
+        "for every pasta,\n    the pasta is inside electric_refrigerator1",
+        "for every sauce,\n    the sauce is inside electric_refrigerator1"
+    ],
+    "putting_up_Christmas_decorations_inside": [
+        "for every wrapping,\n        the wrapping is next to christmas_tree1, or\n        the wrapping is under christmas_tree1,\n        or any combination of these",
+        "for every candle,\n    the candle is on top of table1",
+        "for exactly 1 bow(s),\n    the bow is on top of table1",
+        "for exactly 2 bow(s),\n    the bow is on top of sofa1",
+        "wreath1 is on top of table1"
+    ],
+    "re-shelving_library_books": [
+        "book1 is on top of shelf1",
+        "book2 is on top of shelf1",
+        "book3 is on top of shelf1",
+        "book4 is on top of shelf1",
+        "book5 is on top of table1",
+        "book6 is on top of table1",
+        "book7 is on top of table1",
+        "book8 is on top of table1"
+    ],
+    "rearranging_furniture": [
+        "lamp1 is next to door1",
+        "lamp2 is next to window1",
+        "seat1 is touching bed1",
+        "seat2 is next to window1"
+    ],
+    "serving_a_meal": [
+        "for every plate,\n    the plate is on top of table1",
+        "for every knife,\n    the knife is on top of table1",
+        "for every fork,\n    the fork is on top of table1",
+        "for pairs of spoons and soups,\n    the spoon is next to the soup",
+        "for every water,\n    the water is on top of table1",
+        "for pairs of chickens and plates,\n    the chicken is on top of the plate",
+        "for pairs of salads and plates,\n    the salad is next to the plate",
+        "for pairs of breads and plates,\n    the bread is next to the plate",
+        "for pairs of cakes and plates,\n    the cake is next to the plate"
+    ],
+    "serving_hors_d_oeuvres": [
+        "tray1 is on top of table1",
+        "for every cracker,\n    the cracker is on top of table1",
+        "for pairs of salads and crackers,\n    the salad is next to the cracker",
+        "for pairs of cheeses and parsleys,\n    the parsley is on top of the cheese"
+    ],
+    "setting_mousetraps": [
+        "mousetrap1 is onfloor floor1",
+        "mousetrap2 is onfloor floor1",
+        "mousetrap3 is next to toilet1",
+        "mousetrap4 is next to toilet1"
+    ],
+    "setting_up_candles": [
+        "for exactly 3 candle(s),\n    the candle is on top of table1",
+        "for exactly 3 candle(s),\n    the candle is on top of table2"
+    ],
+    "sorting_books": [
+        "for every hardback,\n    the hardback is on top of shelf1",
+        "for every book,\n    the book is on top of shelf1"
+    ],
+    "sorting_groceries": [
+        "bread1 is inside cabinet1",
+        "flour1 is inside cabinet1",
+        "    milk1 is inside electric_refrigerator1, and\n    meat1 is inside electric_refrigerator1, and\n    cheese1 is inside electric_refrigerator1, and\n    yogurt1 is inside electric_refrigerator1, and\n    soup1 is inside electric_refrigerator1",
+        "for every carrot,\n        the carrot is inside electric_refrigerator1, and\n            the carrot is next to carrot1, or\n            the carrot is next to carrot2, or\n            the carrot is next to carrot3,\n            or any combination of these",
+        "broccoli1 is inside electric_refrigerator1",
+        "for every apple,\n        the apple is inside electric_refrigerator1, and\n            the apple is next to apple1, or\n            the apple is next to apple2,\n            or any combination of these",
+        "for every orange,\n        the orange is on top of table1, and\n            the orange is next to orange1, or\n            the orange is next to orange2, or\n            the orange is next to orange3,\n            or any combination of these"
+    ],
+    "sorting_mail": [
+        "for every envelope,\n        the envelope is touching envelope1, or\n        the envelope is touching envelope2, or\n        the envelope is touching envelope3, or\n        the envelope is touching envelope4,\n        or any combination of these",
+        "for every newspaper,\n        the newspaper is touching newspaper1, or\n        the newspaper is touching newspaper2, or\n        the newspaper is touching newspaper3, or\n        the newspaper is touching newspaper4,\n        or any combination of these"
+    ],
+    "storing_food": [
+        "oatmeal1 is inside cabinet1",
+        "oatmeal2 is inside cabinet1",
+        "chip1 is inside cabinet1",
+        "chip2 is inside cabinet1",
+        "vegetable_oil1 is inside cabinet1",
+        "vegetable_oil2 is inside cabinet1",
+        "sugar1 is inside cabinet1",
+        "sugar2 is inside cabinet1"
+    ],
+    "storing_the_groceries": [
+        "cereal1 is inside cabinet1",
+        "cereal2 is inside cabinet1",
+        "cereal1 is next to cereal2",
+        "lettuce1 is inside electric_refrigerator1",
+        "lettuce2 is inside electric_refrigerator1",
+        "lettuce1 is next to lettuce2",
+        "broccoli1 is inside electric_refrigerator1",
+        "broccoli2 is inside electric_refrigerator1",
+        "broccoli1 is next to broccoli2",
+        "raspberry1 is inside electric_refrigerator1",
+        "raspberry2 is inside electric_refrigerator1",
+        "raspberry1 is next to raspberry2",
+        "pork1 is inside electric_refrigerator1",
+        "pork2 is inside electric_refrigerator1",
+        "pork1 is next to pork2"
+    ],
+    "thawing_frozen_food": [
+        "date1 is next to fish1",
+        "fish1 is next to sink1",
+        "fish2 is next to sink1",
+        "fish3 is next to sink1",
+        "fish4 is next to sink1",
+        "olive1 is next to sink1"
+    ],
+    "throwing_away_leftovers": [
+        "for every hamburger,\n    the hamburger is inside ashcan1"
+    ],
+    "unpacking_suitcase": [
+        "carton1 is onfloor floor1",
+        "for every sock,\n    the sock is on top of sofa1",
+        "perfume1 is on top of sofa1",
+        "toothbrush1 is on top of sofa1",
+        "notebook1 is on top of sofa1"
+    ],
+    "vacuuming_floors": [
+        "the following is NOT true:\n    floor1 is dusty"
+    ],
+    "washing_cars_or_other_vehicles": [
+        "the following is NOT true:\n    car1 is dusty",
+        "the following is NOT true:\n    car1 is stained"
+    ],
+    "washing_dishes": [
+        "for every plate,\n    the following is NOT true:\n        the plate is stained",
+        "the following is NOT true:\n    cup1 is stained",
+        "the following is NOT true:\n    bowl1 is stained"
+    ],
+    "washing_floor": [
+        "the following is NOT true:\n        floor1 is dusty, or\n        floor1 is stained,\n        or any combination of these"
+    ],
+    "washing_pots_and_pans": [
+        "for every pan,\n        the following is NOT true:\n            the pan is stained, and\n        for at least one cabinet,\n            the pan is inside the cabinet",
+        "for every kettle,\n        the following is NOT true:\n            the kettle is stained, and\n        for at least one cabinet,\n            the kettle is inside the cabinet",
+        "for every teapot,\n        the following is NOT true:\n            the teapot is stained, and\n        for at least one cabinet,\n            the teapot is inside the cabinet"
+    ],
+    "watering_houseplants": [
+        "for every pot_plantplant.n.01,\n    pot_plantplant.n.01 is soaked"
+    ],
+    "waxing_cars_or_other_vehicles": [
+        "the following is NOT true:\n    vehicle1 is dusty"
+    ]
+}

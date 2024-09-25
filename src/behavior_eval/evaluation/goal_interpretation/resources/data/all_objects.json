@@ -1,0 +1,4347 @@
+{
+    "cleaning_bathtub_0_Pomaria_0_int_0_2021-09-10_16-22-10": {
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "bathtub.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ]
+    },
+    "putting_dishes_away_after_cleaning_0_Ihlen_1_int_0_2021-10-25_22-54-09": {
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_5": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_6": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_7": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_8": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "washing_pots_and_pans_0_Pomaria_1_int_0_2021-10-26_13-06-44": {
+        "teapot.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "kettle.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pan.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "pan.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "sorting_mail_0_Wainscott_0_int_1_2021-10-26_14-38-16": {
+        "envelope.n.01_1": [],
+        "envelope.n.01_2": [],
+        "envelope.n.01_3": [],
+        "envelope.n.01_4": [],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "newspaper.n.03_1": [
+            "Dusty"
+        ],
+        "newspaper.n.03_2": [
+            "Dusty"
+        ],
+        "newspaper.n.03_3": [
+            "Dusty"
+        ],
+        "newspaper.n.03_4": [
+            "Dusty"
+        ]
+    },
+    "polishing_furniture_0_Ihlen_0_int_0_2021-10-26_11-35-40": {
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_sneakers_0_Pomaria_1_int_0_2021-10-26_13-36-08": {
+        "gym_shoe.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "gym_shoe.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "gym_shoe.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "gym_shoe.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "brush.n.02_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "putting_away_toys_0_Ihlen_0_int_0_2021-10-25_22-47-44": {
+        "plaything.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_5": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_6": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_7": [
+            "Stained",
+            "Dusty"
+        ],
+        "plaything.n.01_8": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_adult_s_bags_0_Ihlen_1_int_0_2021-10-26_09-54-15": {
+        "backpack.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "hanger.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "makeup.n.01_1": [],
+        "makeup.n.01_2": [],
+        "jewelry.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "jewelry.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "toothbrush.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "mouse.n.04_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "cleaning_shoes_0_Pomaria_2_int_0_2021-09-11_13-59-22": {
+        "soap.n.01_1": [],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "shoe.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shoe.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "shoe.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "shoe.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_bedroom_0_Benevolence_2_int_0_2021-06-06_18-10-59": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "apparel.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "apparel.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "jewelry.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "perfume.n.02_1": [
+            "Frozen"
+        ],
+        "painting.n.01_1": [
+            "Dusty"
+        ],
+        "vacuum.n.04_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "hand_towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "sheet.n.03_1": [
+            "Stained"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "bottling_fruit_0_Wainscott_0_int_0_2021-05-24_19-46-46": {
+        "strawberry.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "peach.n.03_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "jar.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "jar.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "carving_knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "installing_a_fax_machine_0_Beechwood_0_int_0_2021-10-25_20-22-22": {
+        "facsimile.n.02_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "locking_every_door_0_Merom_1_int_0_2021-10-20_05-53-14": {
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "door.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_floors_0_Merom_0_int_1_2021-06-23_16-12-28": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "broom.n.01_1": [
+            "Dusty"
+        ],
+        "dustpan.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cleansing_agent.n.01_1": [
+            "Frozen"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "sorting_books_0_Pomaria_1_int_0_2021-10-26_13-27-18": {
+        "hardback.n.01_1": [
+            "Dusty"
+        ],
+        "hardback.n.01_2": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ]
+    },
+    "cleaning_kitchen_cupboard_0_Pomaria_1_int_0_2021-10-26_13-05-36": {
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "piece_of_cloth.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "cleansing_agent.n.01_1": [],
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "organizing_file_cabinet_0_Pomaria_0_int_0_2021-06-08_15-27-20": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "marker.n.03_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "chair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "document.n.01_1": [
+            "Dusty"
+        ],
+        "document.n.01_2": [
+            "Dusty"
+        ],
+        "document.n.01_3": [
+            "Dusty"
+        ],
+        "document.n.01_4": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "folder.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "folder.n.02_2": [
+            "Open",
+            "Dusty"
+        ]
+    },
+    "cleaning_closet_0_Beechwood_1_int_0_2021-10-25_19-50-32": {
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_3": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "jewelry.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "jewelry.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "hat.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sandal.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sandal.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "umbrella.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ]
+    },
+    "packing_child_s_bag_0_Beechwood_1_int_0_2021-10-26_10-33-11": {
+        "backpack.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "notebook.n.01_1": [
+            "Dusty"
+        ],
+        "bracelet.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "earphone.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "sunglass.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "picking_up_trash_0_Beechwood_0_int_1_2021-10-26_14-06-49": {
+        "ashcan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pad.n.01_1": [],
+        "pad.n.01_2": [],
+        "pad.n.01_3": [],
+        "pop.n.02_1": [
+            "Frozen"
+        ],
+        "pop.n.02_2": [
+            "Frozen"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_boxes_for_household_move_or_trip_0_Ihlen_1_int_0_2021-06-08_19-16-19": {
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sweater.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shirt.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shirt.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "dishtowel.n.01_1": [
+            "Stained",
+            "Soaked"
+        ]
+    },
+    "organizing_school_stuff_0_Wainscott_1_int_0_2021-08-24_22-56-24": {
+        "highlighter.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pencil.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pen.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "calculator.n.02_1": [
+            "ToggledOn",
+            "Dusty"
+        ],
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "folder.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "backpack.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "putting_leftovers_away_0_Ihlen_1_int_0_2021-06-08_13-42-57": {
+        "pasta.n.02_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "pasta.n.02_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "pasta.n.02_3": [
+            "Cooked",
+            "Burnt"
+        ],
+        "pasta.n.02_4": [
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sauce.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sauce.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sauce.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sauce.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_oven_0_Benevolence_1_int_0_2021-09-11_12-20-40": {
+        "receptacle.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "rag.n.01_2": [
+            "Stained",
+            "Soaked"
+        ],
+        "newspaper.n.03_1": [
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "oven.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "serving_hors_d_oeuvres_0_Wainscott_0_int_0_2021-10-26_14-00-22": {
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "salad.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "salad.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "salad.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "salad.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "tray.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "parsley.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "parsley.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "parsley.n.02_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "parsley.n.02_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cracker.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cracker.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cracker.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cracker.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cheese.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "installing_alarms_0_Merom_1_int_0_2021-05-23_23-02-24": {
+        "alarm.n.02_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "alarm.n.02_2": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "filling_an_Easter_basket_0_Benevolence_1_int_1_2021-09-10_00-09-54": {
+        "basket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "basket.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ball.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "jewelry.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "bow.n.08_1": [
+            "Dusty"
+        ],
+        "bow.n.08_2": [
+            "Dusty"
+        ],
+        "egg.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "egg.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "candy.n.01_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "candy.n.01_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "unpacking_suitcase_0_Benevolence_1_int_0_2021-06-08_17-58-34": {
+        "sock.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sock.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "perfume.n.02_1": [
+            "Frozen"
+        ],
+        "toothbrush.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "notebook.n.01_1": [
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "washing_floor_0_Ihlen_1_int_1_2021-10-26_14-53-28": {
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "shower.n.01_1": [
+            "Stained"
+        ],
+        "toilet.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "putting_up_Christmas_decorations_inside_0_Ihlen_1_int_0_2021-06-03_14-27-09": {
+        "christmas_tree.n.05_1": [],
+        "wreath.n.01_1": [
+            "Dusty"
+        ],
+        "bow.n.08_1": [
+            "Dusty"
+        ],
+        "bow.n.08_2": [
+            "Dusty"
+        ],
+        "bow.n.08_3": [
+            "Dusty"
+        ],
+        "candle.n.01_1": [
+            "Dusty"
+        ],
+        "candle.n.01_2": [
+            "Dusty"
+        ],
+        "wrapping.n.01_1": [],
+        "wrapping.n.01_2": [],
+        "wrapping.n.01_3": [],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "collect_misplaced_items_0_Wainscott_0_int_1_2021-10-26_18-48-11": {
+        "gym_shoe.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "necklace.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "notebook.n.01_1": [
+            "Dusty"
+        ],
+        "sock.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sock.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "re-shelving_library_books_0_Rs_int_0_2021-10-25_21-22-26": {
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ],
+        "book.n.02_3": [
+            "Dusty"
+        ],
+        "book.n.02_4": [
+            "Dusty"
+        ],
+        "book.n.02_5": [
+            "Dusty"
+        ],
+        "book.n.02_6": [
+            "Dusty"
+        ],
+        "book.n.02_7": [
+            "Dusty"
+        ],
+        "book.n.02_8": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "clearing_the_table_after_dinner_0_Ihlen_0_int_0_2021-10-25_23-01-51": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "chair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "chair.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "catsup.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "beverage.n.01_1": [
+            "Frozen"
+        ],
+        "beverage.n.01_2": [
+            "Frozen"
+        ]
+    },
+    "cleaning_carpets_0_Wainscott_1_int_0_2021-09-11_01-12-41": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "hand_towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "shampoo.n.01_1": [
+            "Frozen"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "washer.n.03_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "dryer.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_stove_0_Wainscott_0_int_0_2021-09-11_12-51-07": {
+        "stove.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "dishtowel.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "installing_a_modem_0_Beechwood_0_int_0_2021-10-25_20-28-55": {
+        "modem.n.01_1": [
+            "ToggledOn",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "putting_away_Christmas_decorations_0_Wainscott_0_int_0_2021-06-06_17-03-25": {
+        "wreath.n.01_1": [
+            "Dusty"
+        ],
+        "wreath.n.01_2": [
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bow.n.08_1": [
+            "Dusty"
+        ],
+        "bow.n.08_2": [
+            "Dusty"
+        ],
+        "bow.n.08_3": [
+            "Dusty"
+        ],
+        "ribbon.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ribbon.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "ribbon.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "picking_up_take-out_food_0_Ihlen_1_int_0_2021-06-10_22-09-43": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sushi.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "hamburger.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ]
+    },
+    "defrosting_freezer_0_Beechwood_0_int_0_2021-10-25_23-10-43": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "receptacle.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scraper.n.01_1": [
+            "Stained"
+        ],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "food.n.02_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "food.n.02_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "food.n.02_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ]
+    },
+    "cleaning_toilet_0_Merom_0_int_1_2021-06-23_17-35-48": {
+        "toilet.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "detergent.n.02_1": [
+            "Frozen"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "laying_wood_floors_0_Pomaria_1_int_0_2021-10-25_20-46-59": {
+        "plywood.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plywood.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plywood.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plywood.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "hammer.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "saw.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_table_after_clearing_0_Merom_1_int_0_2021-06-06_19-48-44": {
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "dishtowel.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "cleaning_cupboards_0_Wainscott_1_int_1_2021-08-25_16-40-44": {
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ],
+        "book.n.02_3": [
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_3": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "pen.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "marker.n.03_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "marker.n.03_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "screwdriver.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "cleansing_agent.n.01_1": [
+            "Frozen"
+        ],
+        "bin.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_up_after_a_meal_0_Wainscott_0_int_0_2021-10-20_05-33-24": {
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sack.n.01_1": [
+            "Stained"
+        ],
+        "chair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "chair.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "hamburger.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "hamburger.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "detergent.n.02_1": [
+            "Frozen"
+        ],
+        "dishwasher.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "boxing_books_up_for_storage_0_Benevolence_1_int_0_2021-09-10_15-35-47": {
+        "book.n.02_1": [
+            "Dusty"
+        ],
+        "book.n.02_2": [
+            "Dusty"
+        ],
+        "book.n.02_3": [
+            "Dusty"
+        ],
+        "book.n.02_4": [
+            "Dusty"
+        ],
+        "book.n.02_5": [
+            "Dusty"
+        ],
+        "book.n.02_6": [
+            "Dusty"
+        ],
+        "book.n.02_7": [
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ]
+    },
+    "making_tea_0_Wainscott_0_int_0_2021-10-26_12-49-48": {
+        "teapot.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "tea_bag.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "lemon.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "stove.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_the_pool_0_Ihlen_0_int_0_2021-06-01_15-30-31": {
+        "pool.n.01_1": [
+            "Stained",
+            "Frozen"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "detergent.n.02_1": [
+            "Frozen"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "chopping_vegetables_0_Rs_int_0_2021-05-25_22-01-16": {
+        "tomato.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "tomato.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "mushroom.n.05_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "mushroom.n.05_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "chestnut.n.03_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "chestnut.n.03_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "vidalia_onion.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "vidalia_onion.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "dish.n.01_1": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "dish.n.01_2": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "throwing_away_leftovers_0_Ihlen_1_int_0_2021-06-04_19-52-40": {
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "hamburger.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "hamburger.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "hamburger.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ashcan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "opening_packages_0_Benevolence_2_int_0_2021-10-25_21-06-42": {
+        "package.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "package.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "setting_mousetraps_0_Beechwood_1_int_0_2021-10-26_13-53-26": {
+        "mousetrap.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "mousetrap.n.01_2": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "mousetrap.n.01_3": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "mousetrap.n.01_4": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "toilet.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "vacuuming_floors_0_Ihlen_1_int_0_2021-06-08_18-03-55": {
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "vacuum.n.04_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "ashcan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "installing_a_scanner_0_Pomaria_0_int_0_2021-06-08_18-34-59": {
+        "scanner.n.02_1": [
+            "ToggledOn",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "watering_houseplants_0_Beechwood_0_int_0_2021-10-26_15-20-01": {
+        "pot_plant.n.01_1": [
+            "Soaked"
+        ],
+        "pot_plant.n.01_2": [
+            "Soaked"
+        ],
+        "pot_plant.n.01_3": [
+            "Soaked"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "preparing_a_shower_for_child_0_Ihlen_0_int_0_2021-10-25_21-36-25": {
+        "shampoo.n.01_1": [
+            "Frozen"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "shower.n.01_1": [
+            "Stained"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_a_car_0_Ihlen_0_int_0_2021-09-11_16-37-11": {
+        "car.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "moving_boxes_to_storage_0_Merom_0_int_0_2021-06-11_20-04-35": {
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_up_the_kitchen_only_0_Pomaria_1_int_0_2021-10-26_00-50-16": {
+        "bin.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "dustpan.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "broom.n.01_1": [
+            "Dusty"
+        ],
+        "blender.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "casserole.n.02_1": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "vegetable_oil.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "window.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_bags_or_suitcase_0_Merom_1_int_0_2021-10-26_10-04-07": {
+        "backpack.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "toothbrush.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shampoo.n.01_1": [
+            "Frozen"
+        ],
+        "hardback.n.01_1": [
+            "Dusty"
+        ],
+        "underwear.n.01_1": [
+            "Stained"
+        ],
+        "underwear.n.01_2": [
+            "Stained"
+        ],
+        "toothpaste.n.01_1": [
+            "Frozen"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "window.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "cleaning_out_drawers_0_Benevolence_1_int_0_2021-10-20_05-03-27": {
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "spoon.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "piece_of_cloth.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "collecting_aluminum_cans_0_Ihlen_1_int_0_2021-06-06_20-13-28": {
+        "pop.n.02_1": [
+            "Frozen"
+        ],
+        "pop.n.02_2": [
+            "Frozen"
+        ],
+        "pop.n.02_3": [
+            "Frozen"
+        ],
+        "pop.n.02_4": [
+            "Frozen"
+        ],
+        "pop.n.02_5": [
+            "Frozen"
+        ],
+        "pop.n.02_6": [
+            "Frozen"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "sorting_groceries_0_Wainscott_0_int_0_2021-10-26_13-36-01": {
+        "bread.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "flour.n.01_1": [],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "milk.n.01_1": [
+            "Frozen",
+            "Cooked"
+        ],
+        "chair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "meat.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cheese.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "yogurt.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "soup.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "carrot.n.03_1": [
+            "Stained",
+            "Frozen",
+            "Dusty",
+            "Cooked",
+            "Burnt"
+        ],
+        "carrot.n.03_2": [
+            "Stained",
+            "Frozen",
+            "Dusty",
+            "Cooked",
+            "Burnt"
+        ],
+        "carrot.n.03_3": [
+            "Stained",
+            "Frozen",
+            "Dusty",
+            "Cooked",
+            "Burnt"
+        ],
+        "broccoli.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "apple.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "orange.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "orange.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "orange.n.01_3": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "filling_a_Christmas_stocking_0_Rs_int_0_2021-06-04_18-47-42": {
+        "cube.n.05_1": [],
+        "cube.n.05_2": [],
+        "cube.n.05_3": [],
+        "cube.n.05_4": [],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "candy.n.01_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "candy.n.01_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "candy.n.01_3": [
+            "Cooked",
+            "Burnt"
+        ],
+        "candy.n.01_4": [
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "pen.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pen.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "pen.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "pen.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "stocking.n.01_1": [
+            "Stained"
+        ],
+        "stocking.n.01_2": [
+            "Stained"
+        ],
+        "stocking.n.01_3": [
+            "Stained"
+        ],
+        "stocking.n.01_4": [
+            "Stained"
+        ]
+    },
+    "laying_tile_floors_0_Beechwood_0_int_0_2021-10-26_17-26-23": {
+        "tile.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "tile.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "tile.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "tile.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_high_chair_0_Wainscott_0_int_0_2021-06-05_18-03-15": {
+        "highchair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "piece_of_cloth.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "rearranging_furniture_0_Pomaria_2_int_1_2021-06-22_16-39-21": {
+        "lamp.n.02_1": [
+            "ToggledOn",
+            "Dusty"
+        ],
+        "lamp.n.02_2": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "seat.n.03_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "seat.n.03_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "window.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "thawing_frozen_food_0_Pomaria_1_int_0_2021-10-26_13-10-33": {
+        "date.n.08_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "olive.n.04_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "fish.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "fish.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "fish.n.02_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "fish.n.02_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "setting_up_candles_0_Wainscott_0_int_0_2021-10-26_13-40-51": {
+        "candle.n.01_1": [
+            "Dusty"
+        ],
+        "candle.n.01_2": [
+            "Dusty"
+        ],
+        "candle.n.01_3": [
+            "Dusty"
+        ],
+        "candle.n.01_4": [
+            "Dusty"
+        ],
+        "candle.n.01_5": [
+            "Dusty"
+        ],
+        "candle.n.01_6": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ]
+    },
+    "cleaning_windows_0_Wainscott_0_int_0_2021-05-23_23-07-05": {
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "towel.n.01_2": [
+            "Stained",
+            "Soaked"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "rag.n.01_2": [
+            "Stained",
+            "Soaked"
+        ],
+        "cleansing_agent.n.01_1": [
+            "Frozen"
+        ],
+        "window.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "window.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_lunches_0_Beechwood_0_int_0_2021-10-26_11-03-14": {
+        "salad.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sandwich.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "chip.n.04_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "chip.n.04_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "juice.n.01_1": [
+            "Frozen"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "pop.n.02_1": [
+            "Frozen"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "banana.n.02_1": [
+            "Stained",
+            "Frozen",
+            "Dusty",
+            "Cooked",
+            "Burnt"
+        ],
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "cookie.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cookie.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "storing_the_groceries_0_Beechwood_0_int_0_2021-10-26_13-13-47": {
+        "cereal.n.03_1": [],
+        "cereal.n.03_2": [],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "lettuce.n.03_1": [
+            "Frozen"
+        ],
+        "lettuce.n.03_2": [
+            "Frozen"
+        ],
+        "broccoli.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "broccoli.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "raspberry.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "raspberry.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "pork.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "pork.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "locking_every_window_0_Merom_1_int_0_2021-11-01_14-51-10": {
+        "window.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "window.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "window.n.01_3": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "window.n.01_4": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_food_for_work_0_Ihlen_1_int_0_2021-06-08_19-36-15": {
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sandwich.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "snack_food.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "juice.n.01_1": [
+            "Frozen"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ]
+    },
+    "packing_car_for_trip_0_Ihlen_0_int_0_2021-10-26_10-27-23": {
+        "car.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "briefcase.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "pencil_box.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "headset.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "duffel_bag.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37": {
+        "basket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "basket.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "basket.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "basket.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "candle.n.01_1": [
+            "Dusty"
+        ],
+        "candle.n.01_2": [
+            "Dusty"
+        ],
+        "candle.n.01_3": [
+            "Dusty"
+        ],
+        "candle.n.01_4": [
+            "Dusty"
+        ],
+        "cookie.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cookie.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cookie.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cookie.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cheese.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "bow.n.08_1": [
+            "Dusty"
+        ],
+        "bow.n.08_2": [
+            "Dusty"
+        ],
+        "bow.n.08_3": [
+            "Dusty"
+        ],
+        "bow.n.08_4": [
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "polishing_silver_0_Merom_1_int_0_2021-10-26_11-43-15": {
+        "spoon.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "washing_dishes_0_Benevolence_1_int_0_2021-06-08_18-07-48": {
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cup.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ]
+    },
+    "preparing_salad_0_Pomaria_1_int_1_2021-10-26_14-17-24": {
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "lettuce.n.03_1": [
+            "Frozen"
+        ],
+        "lettuce.n.03_2": [
+            "Frozen"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "apple.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "apple.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "tomato.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "tomato.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "radish.n.01_1": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "radish.n.01_2": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "carving_knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "opening_presents_0_Benevolence_2_int_0_2021-10-25_21-10-48": {
+        "package.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "package.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_freezer_0_Pomaria_1_int_0_2021-10-26_12-59-25": {
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "food.n.01_1": [
+            "Frozen"
+        ],
+        "food.n.01_2": [
+            "Frozen"
+        ],
+        "food.n.01_3": [
+            "Frozen"
+        ],
+        "cleansing_agent.n.01_1": [
+            "Frozen"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "towel.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "stove.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "door.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "chair.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_bathrooms_0_Benevolence_0_int_1_2021-06-12_19-33-28": {
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "bathtub.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "toilet.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "brush.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ]
+    },
+    "serving_a_meal_0_Merom_1_int_0_2021-10-26_00-34-17": {
+        "chicken.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "chicken.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "knife.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "fork.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "fork.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "spoon.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "soup.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "soup.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bread.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "bread.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "salad.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "salad.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "water.n.06_1": [
+            "Frozen"
+        ],
+        "water.n.06_2": [
+            "Frozen"
+        ],
+        "cake.n.03_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "cake.n.03_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "stove.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_2": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25": {
+        "plywood.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plywood.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plywood.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "installing_a_printer_0_Pomaria_0_int_0_2021-06-08_18-33-07": {
+        "printer.n.03_1": [
+            "ToggledOn",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "waxing_cars_or_other_vehicles_0_Ihlen_0_int_0_2021-10-25_23-03-46": {
+        "vehicle.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "vessel.n.03_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ]
+    },
+    "polishing_shoes_0_Wainscott_0_int_0_2021-06-10_21-28-31": {
+        "shoe.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shoe.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_barbecue_grill_0_Ihlen_0_int_0_2021-09-10_16-02-39": {
+        "grill.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "putting_away_Halloween_decorations_0_Rs_int_0_2021-10-25_22-42-17": {
+        "pumpkin.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "pumpkin.n.02_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "caldron.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sheet.n.03_1": [
+            "Stained"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "candle.n.01_1": [
+            "Dusty"
+        ],
+        "candle.n.01_2": [
+            "Dusty"
+        ],
+        "candle.n.01_3": [
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sofa.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_garage_0_Ihlen_0_int_0_2021-08-24_17-40-48": {
+        "box.n.01_1": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "newspaper.n.03_1": [
+            "Dusty"
+        ],
+        "newspaper.n.03_2": [
+            "Dusty"
+        ],
+        "bottle.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bottle.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "broom.n.01_1": [
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "table.n.02_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bin.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_the_hot_tub_0_Ihlen_0_int_0_2021-08-24_22-19-07": {
+        "pool.n.01_1": [
+            "Stained",
+            "Frozen"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "storing_food_0_Rs_int_0_2021-10-25_21-27-36": {
+        "oatmeal.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "oatmeal.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "chip.n.04_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "chip.n.04_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "vegetable_oil.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "vegetable_oil.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sugar.n.01_1": [
+            "Cooked"
+        ],
+        "sugar.n.01_2": [
+            "Cooked"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "mopping_floors_0_Benevolence_2_int_0_2021-10-25_21-01-58": {
+        "broom.n.01_1": [
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "piece_of_cloth.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "brushing_lint_off_clothing_0_Pomaria_2_int_0_2021-06-04_17-41-56": {
+        "sweater.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sweater.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "sweater.n.01_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "sweater.n.01_4": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bed.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "scrub_brush.n.01_1": [
+            "Stained",
+            "Soaked",
+            "Dusty"
+        ]
+    },
+    "organizing_boxes_in_garage_0_Ihlen_0_int_0_2021-08-24_22-59-54": {
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ball.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ball.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "saucepan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "shelf.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "packing_picnics_0_Wainscott_0_int_0_2021-10-26_11-07-29": {
+        "carton.n.02_1": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_2": [
+            "Open",
+            "Dusty"
+        ],
+        "carton.n.02_3": [
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "chip.n.04_1": [
+            "Cooked",
+            "Burnt"
+        ],
+        "chip.n.04_2": [
+            "Cooked",
+            "Burnt"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sandwich.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sandwich.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sandwich.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "sandwich.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "melon.n.01_1": [
+            "Stained",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "strawberry.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "strawberry.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "strawberry.n.01_3": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "strawberry.n.01_4": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "grape.n.01_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "grape.n.01_2": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "grape.n.01_3": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "grape.n.01_4": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "peach.n.03_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "peach.n.03_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "pop.n.02_1": [
+            "Frozen"
+        ],
+        "pop.n.02_2": [
+            "Frozen"
+        ],
+        "beer.n.01_1": [
+            "Frozen"
+        ],
+        "beer.n.01_2": [
+            "Frozen"
+        ],
+        "water.n.06_1": [
+            "Frozen"
+        ],
+        "water.n.06_2": [
+            "Frozen"
+        ],
+        "water.n.06_3": [
+            "Frozen"
+        ],
+        "water.n.06_4": [
+            "Frozen"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "loading_the_dishwasher_0_Benevolence_1_int_0_2021-10-20_06-10-42": {
+        "plate.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "plate.n.04_3": [
+            "Stained",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "mug.n.04_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bowl.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "dishwasher.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_microwave_oven_0_Benevolence_1_int_0_2021-09-11_01-27-10": {
+        "microwave.n.02_1": [
+            "ToggledOn",
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "ashcan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "preserving_food_0_Rs_int_0_2021-08-25_15-53-33": {
+        "strawberry.n.01_1": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "strawberry.n.01_2": [
+            "Sliced",
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "beef.n.02_1": [
+            "Frozen",
+            "Cooked",
+            "Burnt"
+        ],
+        "jar.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "pan.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "carving_knife.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "washing_cars_or_other_vehicles_0_Ihlen_0_int_0_2021-10-25_22-38-10": {
+        "soap.n.01_1": [],
+        "car.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "bucket.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ]
+    },
+    "cleaning_up_refrigerator_0_Wainscott_0_int_1_2021-06-23_17-46-01": {
+        "rag.n.01_1": [
+            "Stained",
+            "Soaked"
+        ],
+        "rag.n.01_2": [
+            "Stained",
+            "Soaked"
+        ],
+        "cabinet.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "soap.n.01_1": [],
+        "countertop.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "tray.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "tray.n.01_2": [
+            "Stained",
+            "Dusty"
+        ],
+        "electric_refrigerator.n.01_1": [
+            "Stained",
+            "Open",
+            "Dusty"
+        ],
+        "bowl.n.01_1": [
+            "Stained",
+            "Dusty"
+        ],
+        "sink.n.01_1": [
+            "ToggledOn",
+            "Stained",
+            "Dusty"
+        ],
+        "floor.n.01_1": [
+            "Stained",
+            "Dusty"
+        ]
+    }
+}

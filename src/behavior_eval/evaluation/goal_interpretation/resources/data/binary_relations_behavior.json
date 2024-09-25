@@ -1,0 +1,9 @@
+{
+    "inside": "obj1 is inside obj2, eg. ['inside', 'coin_1', 'jar_1'] means coin_1 is inside jar_1.",
+    "ontop": "obj1 rests ontop of obj2, eg. ['ontop', 'book_1', 'table_1'] means book_1 is ontop of table_1.",
+    "nextto": "obj1 is next to obj2, eg. ['nextto', 'chair_1', 'bed_1'] means chair_1 is next to bed_1.",
+    "under": "obj1 is under obj2, eg. ['under', 'box_1', 'table_1'] means box_1 is ontop of table_1.",
+    "onfloor": "obj1 is on floor2, eg. ['onfloor', 'box_1', 'storage_room_floor_1'] means box_1 is ontop of storage_room_floor_1.",
+    "touching": "obj1 is touching obj2, eg. ['touching', 'chair_1', 'bed_1'] means chair_1 is next to bed_1."
+    
+}

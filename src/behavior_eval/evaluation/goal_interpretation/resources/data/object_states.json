@@ -1,0 +1,21 @@
+{
+    "node_states": [
+        "Cooked",
+        "Dusty",
+        "Frozen",
+        "Open",  
+        "Sliced",
+        "Soaked",
+        "Stained",
+        "ToggledOn"
+    ],
+    "edge_states": [
+        "Inside",
+        "NextTo",
+        "OnFloor",
+        "OnTop",
+        "Touching",
+        "Under"
+    ]
+
+}

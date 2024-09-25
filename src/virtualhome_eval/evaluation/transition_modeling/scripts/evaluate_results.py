@@ -503,76 +503,142 @@ def evaluate_results(args):
         logger.info("Full predicate type res dict:")
         print_precision_recall_f1(full_predicate_type_res_dict)
 
-        summary = {
-            "object_states": {
-                "precision": round(
-                    100 * full_predicate_type_res_dict["object_states"][3], 4
-                ),
-                "recall": round(100 * full_predicate_type_res_dict["object_states"][4], 4),
-                "f1": round(100 * full_predicate_type_res_dict["object_states"][5], 4),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["object_states"][2], 4
-                ),
-            },
-            "object_affordance": {
-                "precision": round(
-                    100 * full_predicate_type_res_dict["object_affordance"][3], 4
-                ),
-                "recall": round(
-                    100 * full_predicate_type_res_dict["object_affordance"][4], 4
-                ),
-                "f1": round(100 * full_predicate_type_res_dict["object_affordance"][5], 4),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["object_affordance"][2], 4
-                ),
-            },
-            "object_orientation": {
-                "precision": round(
-                    100 * full_predicate_type_res_dict["object_orientation"][3], 4
-                ),
-                "recall": round(
-                    100 * full_predicate_type_res_dict["object_orientation"][4], 4
-                ),
-                "f1": round(100 * full_predicate_type_res_dict["object_orientation"][5], 4),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["object_orientation"][2], 4
-                ),
-            },
-            "spatial_relations": {
-                "precision": round(
-                    100 * full_predicate_type_res_dict["spatial_relations"][3], 4
-                ),
-                "recall": round(
-                    100 * full_predicate_type_res_dict["spatial_relations"][4], 4
-                ),
-                "f1": round(100 * full_predicate_type_res_dict["spatial_relations"][5], 4),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["spatial_relations"][2], 4
-                ),
-            },
-            "non-spatial_relations": {
-                "precision": round(
-                    100 * full_predicate_type_res_dict["non-spatial_relations"][3], 4
-                ),
-                "recall": round(
-                    100 * full_predicate_type_res_dict["non-spatial_relations"][4], 4
-                ),
-                "f1": round(
-                    100 * full_predicate_type_res_dict["non-spatial_relations"][5], 4
-                ),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["non-spatial_relations"][2], 4
-                ),
-            },
-            "overall": {
-                "precision": round(100 * full_predicate_type_res_dict["overall"][3], 4),
-                "recall": round(100 * full_predicate_type_res_dict["overall"][4], 4),
-                "f1": round(100 * full_predicate_type_res_dict["overall"][5], 4),
-                "planner_success_rate": round(
-                    100 * success_by_task_type_dict["overall"][2], 4
-                ),
-            },
-        }
+        if dataset == "virtualhome":
+            summary = {
+                "object_states": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["object_states"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["object_states"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["object_states"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["object_states"][2], 4
+                    ),
+                },
+                "object_affordance": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["object_affordance"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["object_affordance"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["object_affordance"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["object_affordance"][2], 4
+                    ),
+                },
+                "object_orientation": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["object_orientation"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["object_orientation"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["object_orientation"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["object_orientation"][2], 4
+                    ),
+                },
+                "spatial_relations": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["spatial_relations"][2], 4
+                    ),
+                },
+                "non-spatial_relations": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][3],
+                        4,
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][4],
+                        4,
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][5],
+                        4,
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["non-spatial_relations"][2], 4
+                    ),
+                },
+                "overall": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["overall"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["overall"][4], 4
+                    ),
+                    "f1": round(100 * full_predicate_type_res_dict["overall"][5], 4),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["overall"][2], 4
+                    ),
+                },
+            }
+        elif dataset == "behavior":
+            summary = {
+                "object_states": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["object_states"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["object_states"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["object_states"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["object_states"][2], 4
+                    ),
+                },
+                "spatial_relations": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][3], 4
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][4], 4
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["spatial_relations"][5], 4
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["spatial_relations"][2], 4
+                    ),
+                },
+                "non-spatial_relations": {
+                    "precision": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][3],
+                        4,
+                    ),
+                    "recall": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][4],
+                        4,
+                    ),
+                    "f1": round(
+                        100 * full_predicate_type_res_dict["non-spatial_relations"][5],
+                        4,
+                    ),
+                    "planner_success_rate": round(
+                        100 * success_by_task_type_dict["non-spatial_relations"][2], 4
+                    ),
+                },
+            }
         all_results[model_name] = [summary, None]
         save_path = osp.join(output_dir, model_name)
         if not osp.exists(save_path):

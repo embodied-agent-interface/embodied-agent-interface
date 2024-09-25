@@ -15,4 +15,5 @@ To get started, refer to the User Guide's chapters:
 - [Dataset](dataset.md)
 - [Behavior-Eval](behavior-eval.md)
 - [Virtualhome-Eval](virtualhome-eval.md)
+- [Transition Modeling](transition_modeling.md)
 

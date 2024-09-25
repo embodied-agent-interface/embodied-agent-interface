@@ -3,7 +3,7 @@
 
 [![](https://img.shields.io/badge/website-EAgent-purple?style=plastic&logo=Google%20chrome)](https://embodied-agent-eval.github.io/)
 [![](https://img.shields.io/badge/dataset-download-yellow?style=plastic&logo=Data)](https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset)
-[![](https://img.shields.io/badge/docker-eval--embodied--agent-blue?style=plastic&logo=Docker)](https://hub.docker.com/r/jameskrw/eval-embodied-agent) 
+[![](https://img.shields.io/badge/docker-eval--embodied--agent-blue?style=plastic&logo=Docker)](https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general) 
 [![](https://img.shields.io/badge/docs-online-blue?style=plastic&logo=Read%20the%20Docs)](https://embodied-agent-eval.readthedocs.io/en/latest/#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

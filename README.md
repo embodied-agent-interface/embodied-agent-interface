@@ -4,11 +4,11 @@
     <a href="https://embodied-agent-eval.github.io/">
         <img src="https://img.shields.io/badge/Website-EAgent-purple?style=plastic&logo=Google%20chrome" alt="Website">
     </a>
-    <a href="https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset">
+<!--     <a href="https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
-    </a>
+    </a> -->
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
-        <img src="https://img.shields.io/badge/Huggingface%20Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
+        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
     <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">

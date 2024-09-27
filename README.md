@@ -186,3 +186,37 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
       eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
       ```
 
+
+## Docker
+We provide a ready-to-use Docker image for easy installation and usage.
+
+### Docker Instruction:
+
+First, pull the Docker image from Docker Hub:
+```bash
+docker pull jameskrw/eagent-eval
+```
+
+Next, run the Docker container interactively:
+
+```bash
+docker run -it jameskrw/eagent-eval
+```
+
+When inside the container, make sure you remain in the `/opt/iGibson` directory (do not change to other directories).
+
+To check the available arguments for the `eagent-eval` CLI, use the following command:
+
+```bash
+python3 -m eagent_eval.cli --help
+```
+
+You can run:
+
+```bash
+python3 -m eagent_eval.cli
+```
+
+By default, this will start generating prompts for goal interpretation in Behavior.
+
+The command `python3 -m eagent_eval.cli` is equivalent to `eagent-eval` as introduced above, although currently only `python3 -m eagent_eval.cli` is supported in the docker.

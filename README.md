@@ -193,8 +193,6 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 ## Docker
 We provide a ready-to-use Docker image for easy installation and usage.
 
-### Docker Instruction:
-
 First, pull the Docker image from Docker Hub:
 ```bash
 docker pull jameskrw/eagent-eval

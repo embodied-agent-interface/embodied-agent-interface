@@ -72,20 +72,20 @@ To install the Embodied Agent Interface (EAgent) for benchmarking Large Language
    conda create -n eagent python=3.8 -y 
    conda activate eagent
    ```
+   or
 
-2. **Install from pypi**:
+ 2.  **Install from pypi**:
    ```bash
    pip install eagent-eval
    ```
-   
-3. **Install from source**:
+   **Install from source**:
    ```bash
    git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
    cd embodied-agent-eval
    pip install -e .
    ```
 
-4. **(Optional) Install iGibson for behavior evaluation**:
+3. **(Optional) Install iGibson for behavior evaluation**:
    If you need to use `behavior_eval`, you must install iGibson.
 
    There might be issues during the installation of `iGibson`. 

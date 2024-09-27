@@ -130,12 +130,13 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    ```
 
 2. **Reproduce Our Results**:
+
    Download helm outputs:
    ```bash
    python -m eagent_eval.utils.download_utils
    ```
 
-   Then, run (traverse the arguments):
+   Then, traverse the arguments in the command below to get all the results:
    ```bash
    eagent-eval \
      --dataset {virtualhome,behavior} \
@@ -143,8 +144,10 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
      --mode evaluate_results
    ```
 
-3. **Prompt Generation**:
-   To generate prompts, use (traverse the arguments):
+4. **Prompt Generation**:
+
+
+   To generate prompts, traverse the arguments in the command below:
    ```bash
    eagent-eval \
      --dataset {virtualhome,behavior} \
@@ -152,7 +155,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
      --mode generate_prompts
    ```
 
-4. **Examples**:
+6. **Examples**:
    - ***Generate Prompts***
 
       To generate prompts for the **VirtualHome** dataset with **action sequencing** evaluation type:
@@ -169,7 +172,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
    -  ***Evaluate Results***
       
-      Make sure to download our results if you don't want to specify <path_to_responses>
+      Make sure to download our results first if you don't want to specify <path_to_responses>
 
       ```bash
       python -m eagent_eval.utils.download_utils

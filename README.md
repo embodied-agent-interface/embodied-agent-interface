@@ -49,30 +49,6 @@
 -  Standardized modules and interfaces.
 -  Broad coverage of evaluation and fine-grained metrics.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Requirements](#requirements)
-- [Data](#data)
-  - [VirtualHome original dataset (Optional)](#virtualhome-original-dataset-optional)
-- [Code](#code)
-- [Prompt](#prompt)
-  - [Goal Interpretation](#goal-interpretation)
-  - [Action Sequencing](#action-sequencing)
-  - [Subgoal Decomposition](#subgoal-decomposition)
-  - [Transition Modeling](#transition-modeling)
-- [Evaluation](#evaluation)
-  - [Goal Interpretation](#goal-interpretation-1)
-    - [Evaluation script](#evaluation-script)
-  - [Action Sequencing](#action-sequencing-1)
-    - [Evaluation script](#evaluation-script-1)
-  - [Subgoal Decomposition](#subgoal-decomposition-1)
-  - [Transition Modeling](#transition-modeling-1)
-    - [Evaluation script](#evaluation-script-2)
-- [BEHAVIOR Symbolic Simulator Implementation](#behavior-symbolic-simulator-implementation)
-  - [Evolving Graph](#evolving-graph)
-  - [Transition Modeling](#transition-modeling-2)
-
 ## Overview
 
 We aim to evaluate Large Language Models (LLMs) for embodied decision-making. While many works leverage LLMs for decision-making in embodied environments, a systematic understanding of their performance is still lacking. These models are applied in different domains, for various purposes, and with diverse inputs and outputs. Current evaluations tend to rely on final success rates alone, making it difficult to pinpoint where LLMs fall short and how to leverage them effectively in embodied AI systems.
@@ -193,7 +169,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
    -  ***Evaluate Results***
       
-      Make sure to download our results if you don't wnat to specify <path_to_responses>
+      Make sure to download our results if you don't want to specify <path_to_responses>
 
       ```bash
       python -m eagent_eval.utils.download_utils

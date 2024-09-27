@@ -8,7 +8,7 @@
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
     </a>
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
-        <img src="https://img.shields.io/badge/Huggingface%20Dataset-Download-yellow?style=plastic&logo=Data" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
+        <img src="https://img.shields.io/badge/Huggingface%20Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
     <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">

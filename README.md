@@ -24,7 +24,7 @@
 <p align="center">
     <a href="https://limanling.github.io/">Manling Li</a>, 
     <a href="https://www.linkedin.com/in/shiyu-zhao-1124a0266/">Shiyu Zhao</a>, 
-    <a href="https://github.com/QinengWang-Aiden">Qineng Wang</a>, 
+    <a href="https://qinengwang-aiden.github.io/">Qineng Wang</a>, 
     <a href="https://jameskrw.github.io/">Kangrui Wang</a>, 
     <a href="https://bryanzhou008.github.io/">Yu Zhou</a>, 
     <a href="https://example.com/sanjana-srivastava">Sanjana Srivastava</a>, 

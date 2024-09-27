@@ -176,9 +176,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
      --mode generate_prompts
    ```
 
-4. **Example**:
-Here are the ready-to-run command examples for generating prompts and evaluating results:
-
+4. **Examples**:
    - ***Generate Prompts***
 
       To generate prompts for the **VirtualHome** dataset with **action sequencing** evaluation type:

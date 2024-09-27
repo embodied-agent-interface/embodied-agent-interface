@@ -135,7 +135,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    python -m eagent_eval.utils.download_utils
    ```
 
-   Then, run:
+   Then, run (traverse the arguments):
    ```bash
    eagent-eval \
      --dataset {virtualhome,behavior} \
@@ -144,7 +144,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    ```
 
 3. **Prompt Generation**:
-   To generate prompts, use:
+   To generate prompts, use (traverse the arguments):
    ```bash
    eagent-eval \
      --dataset {virtualhome,behavior} \

@@ -1,31 +1,36 @@
-Embodied Agent Interface
-========================
+.. Embodied Agent Interface documentation master file
 
-A Single Line to Evaluate LLMs for Embodied Decision Making
-------------------------------------------------------------
-
-Welcome! ``Embodied Agent Interface`` is a single-line evaluation
-pipeline to evaluate LLMs for embodied decision making. The aim is to tackle the
-following challenges in building LLM-based embodied agents:
-
-- Standardization of goal specifications.
-- Standardization of modules and interfaces.
-- Broad coverage of evaluation and fine-grained metrics.
-
-The code is `hosted on GitHub here <https://github.com/embodied-agent-interface/embodied-agent-interface>`__.
-
-The project website can be found `here <https://embodied-agent-interface.github.io/>`__.
-
-To get started, refer to the following chapters in the User Guide:
+Welcome to Embodied Agent Interface's documentation!
+====================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: User Guide
+   :maxdepth: 1
+   :caption: Introduction
 
-   overview
-   getting_started/installation
-   getting_started/quick_start
+   overview.md
+   get_started.md
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Modules
+
    modules/transition_modeling
    modules/goal_interpretation
    modules/action_sequencing
    modules/subgoal_decomposition
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Customization
+
+   customization/prompts
+   customization/evaluation
+
+Indices and Tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

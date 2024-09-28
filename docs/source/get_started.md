@@ -1,69 +1,5 @@
-<h1 align="center">Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making</h1>
 
-<p align="center">
-    <a href="https://embodied-agent-interface.github.io/">
-        <img src="https://img.shields.io/badge/Website-EAgent-purple?style=plastic&logo=Google%20chrome" alt="Website">
-    </a>
-<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
-        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
-    </a> -->
-    <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
-        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
-    </a>
-    <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
-        <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
-    </a>
-    <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
-        <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">
-    </a>
-    <a href="https://opensource.org/licenses/MIT">
-        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
-    </a>
-</p>
-
-<p align="center">
-    <a href="https://limanling.github.io/">Manling Li</a>, 
-    <a href="https://www.linkedin.com/in/shiyu-zhao-1124a0266/">Shiyu Zhao</a>, 
-    <a href="https://qinengwang-aiden.github.io/">Qineng Wang</a>, 
-    <a href="https://jameskrw.github.io/">Kangrui Wang</a>, 
-    <a href="https://bryanzhou008.github.io/">Yu Zhou</a>, 
-    <a href="https://example.com/sanjana-srivastava">Sanjana Srivastava</a>, 
-    <a href="https://example.com/cem-gokmen">Cem Gokmen</a>, 
-    <a href="https://example.com/tony-lee">Tony Lee</a>, 
-    <a href="https://sites.google.com/site/lieranli/">Li Erran Li</a>, 
-    <a href="https://example.com/ruohan-zhang">Ruohan Zhang</a>, 
-    <a href="https://example.com/weiyu-liu">Weiyu Liu</a>, 
-    <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, 
-    <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>, 
-    <a href="https://jiayuanm.com/">Jiayuan Mao</a>, 
-    <a href="https://jiajunwu.com/">Jiajun Wu</a>
-</p>
-<p align="center">Stanford Vision and Learning Lab, Stanford University</p>
-
-<p align="center">
-    <a href="https://cs.stanford.edu/~manlingl/projects/embodied-eval" target="_blank">
-        <img src="./EAgent.png" alt="EAgent" width="80%" height="80%" border="10" />
-    </a>
-</p>
-
-## Dataset Highlights
-
--  Standardized goal specifications.
--  Standardized modules and interfaces.
--  Broad coverage of evaluation and fine-grained metrics.
-
-## Overview
-
-We aim to evaluate Large Language Models (LLMs) for embodied decision-making. While many works leverage LLMs for decision-making in embodied environments, a systematic understanding of their performance is still lacking. These models are applied in different domains, for various purposes, and with diverse inputs and outputs. Current evaluations tend to rely on final success rates alone, making it difficult to pinpoint where LLMs fall short and how to leverage them effectively in embodied AI systems.
-
-To address this gap, we propose the **Embodied Agent Interface (EAgent)**, which unifies:
-1. A broad set of embodied decision-making tasks involving both state and temporally extended goals.
-2. Four commonly used LLM-based modules: goal interpretation, subgoal decomposition, action sequencing, and transition modeling.
-3. Fine-grained evaluation metrics, identifying errors such as hallucinations, affordance issues, and planning mistakes.
-
-Our benchmark provides a comprehensive assessment of LLM performance across different subtasks, identifying their strengths and weaknesses in embodied decision-making contexts.
-
-## Installation
+# Installation
 
 To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodied decision-making:
 
@@ -114,7 +50,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
    We have successfully tested installation on Linux, Windows 10+, and macOS.
 
-## Quick Start
+# Quick Start
 
 1. **Arguments**:
    ```bash
@@ -193,7 +129,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
       ```
 
 
-## Docker
+# Docker
 We provide a ready-to-use Docker image for easy installation and usage.
 
 First, pull the Docker image from Docker Hub:

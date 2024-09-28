@@ -13,9 +13,9 @@ following challenges in building LLM-based embodied agents:
 -  Broad coverage of evaluation and fine-grained metrics.
 
 The code is `hosted on GitHub
-here <https://github.com/embodied-agent-eval/embodied-agent-eval>`__.
+here <https://github.com/embodied-agent-interface/embodied-agent-interface>`__.
 
-The project website can be found `here <https://embodied-agent-eval.github.io/>`__.
+The project website can be found `here <https://embodied-agent-interface.github.io/>`__.
 
 
 Overview

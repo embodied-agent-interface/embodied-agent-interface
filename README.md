@@ -1,10 +1,10 @@
 <h1 align="center">Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making</h1>
 
 <p align="center">
-    <a href="https://embodied-agent-eval.github.io/">
+    <a href="https://embodied-agent-interface.github.io/">
         <img src="https://img.shields.io/badge/Website-EAgent-purple?style=plastic&logo=Google%20chrome" alt="Website">
     </a>
-<!--     <a href="https://github.com/embodied-agent-eval/embodied-agent-eval/tree/main/dataset">
+<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
     </a> -->
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
@@ -13,7 +13,7 @@
     <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
-    <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
+    <a href="https://embodied-agent-interface.readthedocs.io/en/latest/#">
         <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">
     </a>
     <a href="https://opensource.org/licenses/MIT">
@@ -80,8 +80,8 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    ```
    Or, install from source:
    ```bash
-   git clone https://github.com/embodied-agent-eval/embodied-agent-eval.git
-   cd embodied-agent-eval
+   git clone https://github.com/embodied-agent-interface/embodied-agent-interface.git
+   cd embodied-agent-interface
    pip install -e .
    ```
 
@@ -102,7 +102,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
      ```
      Alternatively, install it manually:
      ```bash
-     git clone https://github.com/embodied-agent-eval/iGibson.git --recursive
+     git clone https://github.com/embodied-agent-interface/iGibson.git --recursive
      cd iGibson
      pip install -e .
      ```

@@ -13,7 +13,7 @@
     <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
-    <a href="https://embodied-agent-interface.readthedocs.io/en/latest/#">
+    <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
         <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">
     </a>
     <a href="https://opensource.org/licenses/MIT">

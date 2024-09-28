@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='eagent-eval',
-    version='0.0.5',
+    version='0.0.7',
     author='stanford',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/embodied-agent-eval/behavior-eval",
+    url="https://github.com/embodied-agent-interface/embodied-agent-interface",
     packages=find_packages('src'),
     package_dir={'': 'src'},
     python_requires='>=3.8',

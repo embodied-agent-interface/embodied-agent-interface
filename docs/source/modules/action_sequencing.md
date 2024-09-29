@@ -32,8 +32,8 @@ The evaluation of the action sequencing module involves two main components:
 2. **Goal Satisfaction Evaluation**:
    - **Purpose**: To assess if the task goal $g$ is satisfied after executing $\bar{a}$.
    - **Process**:
-     - Execute $\bar{a}$ to obtain the trajectory $T = ⟨\{s_i\}_{i=0}^{m}, \{a_i\}_{i=1}^{m}⟩$.
-     - Use the `eval(g, T)` function to check for goal satisfaction.
+     - Execute $\bar{a}$ to obtain the trajectory $T = ⟨\{s_i\}_{i=0}^{m}, \{a_i\}_{i=1}^{m}⟩$, e.g. `behavior_eval.evolving_graph.eval_evolving_graph_env.apply_action`.
+     - Check for goal satisfaction, e.g. `behavior_eval.evolving_graph.evolving_graph.check_success`.
    - **Partial Goal Satisfaction Evaluation**:
      - Measures the percentage of subgoals in $g$ that are satisfied by $\bar{a}$.
      - **Process**:
@@ -102,7 +102,7 @@ The evaluation process produces several outputs:
 
 **Initial States ($s_0$)**:
 
-```plaintext
+```python
 [
     "['onfloor', 'basket_0', 'room_floor_living_room_0']",
     "['onfloor', 'basket_1', 'room_floor_living_room_0']",
@@ -130,7 +130,7 @@ The evaluation process produces several outputs:
 
 **Goal ($g$)**:
 
-```plaintext
+```python
 [
     "['forpairs', 'basket.n.01', '-', 'basket.n.01', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'basket.n.01']",
     "['forpairs', 'basket.n.01', '-', 'basket.n.01', 'cheese.n.01', '-', 'cheese.n.01', 'inside', 'cheese.n.01', 'basket.n.01']",
@@ -141,9 +141,9 @@ The evaluation process produces several outputs:
 
 **Transition Model ($\mathcal{M}$)**: Behavior simulator
 
-**O1-Preview Output**:
+**Output (o1-preview)**:
 
-```plaintext
+```python
 [
     {"action": "LEFT_GRASP", "object": "candle_0"},
     {"action": "RIGHT_GRASP", "object": "cookie_0"},
@@ -180,9 +180,9 @@ The evaluation process produces several outputs:
 ]
 ```
 
-**Task Results**:
+**Results (o1-preview)**:
 
-```plaintext
+```python
 "llm_rst": {
     "error_type": {
         "parsing": null,            # No parsing errors occurred
@@ -210,41 +210,41 @@ The evaluation process produces several outputs:
         {
             "action": "LEFT_GRASP",
             "object": "candle_0",
-            "execution_success": true,
+            "execution_success": True,
             "step": 0
         },
         {
             "action": "RIGHT_GRASP",
             "object": "cookie_0",
-            "execution_success": true,
+            "execution_success": True,
             "step": 1
         },
         {
             "action": "LEFT_PLACE_INSIDE",
             "object": "basket_0",
-            "execution_success": true,
+            "execution_success": True,
             "step": 2
         },
         {
             "action": "RIGHT_PLACE_INSIDE",
             "object": "basket_0",
-            "execution_success": true,
+            "execution_success": True,
             "step": 3
         },
         ...
         {
             "action": "RIGHT_PLACE_INSIDE",
             "object": "basket_3",
-            "execution_success": true,
+            "execution_success": True,
             "step": 31
         }
     ]
 }
 ```
 
-**Overall Results for Action Sequencing (All Tasks):**
+**Overall Results across tasks (o1-preview)**
 
-```plaintext
+```python
 {
     "goal_evaluation": {
         "task_success_rate": 0.81,    # Overall success rate for completing the task

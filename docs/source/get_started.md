@@ -68,65 +68,43 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    eagent-eval --help
    ```
 
-2. **Reproduce Our Results**:
+2. **Examples**:
 
-   Download helm outputs:
+-  ***Evaluate Results***
+   
+   
+   Make sure to download our results first if you don't want to specify <path_to_responses>
    ```bash
    python -m eagent_eval.utils.download_utils
    ```
 
-   Then, traverse the arguments in the command below to get all the results:
+   Then, run the commands below:
    ```bash
-   eagent-eval \
-     --dataset {virtualhome,behavior} \
-     --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
-     --mode evaluate_results
+   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
+   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
+   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+   eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
+   eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
+   eagent-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
+   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
    ```
 
-4. **Prompt Generation**:
-
-
-   To generate prompts, run in the command below (pick up arguments from ):
+-  ***Generate Pormpts***
+   
+   
+   To generate prompts, you can run:
    ```bash
-   eagent-eval \
-     --dataset {virtualhome,behavior} \
-     --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
-     --mode generate_prompts
+   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
+   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
+   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
+   eagent-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
+   eagent-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
+   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
-6. **Examples**:
-   - ***Generate Prompts***
-
-      To generate prompts for the **VirtualHome** dataset with **action sequencing** evaluation type:
-
-      ```bash
-      eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-      ```
-
-      To generate prompts for the **Behavior** dataset with **goal interpretation** evaluation type:
-
-      ```bash
-      eagent-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
-      ```
-
-   -  ***Evaluate Results***
-      
-      Make sure to download our results first if you don't want to specify <path_to_responses>
-
-      ```bash
-      python -m eagent_eval.utils.download_utils
-      ```
-      To evaluate the results for the **VirtualHome** dataset with **subgoal decomposition** evaluation type:
-
-      ```bash
-      eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-      ```
-
-      To evaluate the results for the **Behavior** dataset with **transition modeling** evaluation type:
-
-      ```bash
-      eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
-      ```
 
 
 # Docker

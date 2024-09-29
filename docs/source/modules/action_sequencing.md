@@ -280,5 +280,3 @@ eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_res
 eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
 eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
 ```
-
-These commands allow you to evaluate results or generate prompts for both the VirtualHome and Behavior datasets.

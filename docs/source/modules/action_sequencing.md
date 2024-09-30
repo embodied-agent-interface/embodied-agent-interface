@@ -9,8 +9,8 @@ The **action sequencing** module takes the task ⟨$s_0$, $g$⟩ as input, where
 
 The module uses a transition model $\mathcal{M}$ specific to the simulator, which governs how the environment evolves based on actions. For more details on the transition model, refer to:
 
-- `src/behavior_eval/evolving_graph/evolving_graph.py` for the behavior transition model.
-- `src/virtualhome_eval/simulation/evolving_graph/environment.py` for the environment's transition model.
+- `src/behavior_eval/evolving_graph/evolving_graph.py` for `Behavior`
+- `src/virtualhome_eval/simulation/evolving_graph/environment.py` for `VirtualHome`
 
 The module generates an action sequence $\bar{a} = \{a_i\}_{i=1}^{n}$, representing the actions required to move from the initial state toward achieving the task goal.
 
@@ -97,7 +97,8 @@ The evaluation process produces several outputs:
 ### Example
 
 **Task**: `assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37`
-
+**Model**: `o1-preview`
+**Transition Model ($\mathcal{M}$)**: `Behavior` simulator
 **Initial States ($s_0$)**:
 
 ```python
@@ -137,9 +138,7 @@ The evaluation process produces several outputs:
 ]
 ```
 
-**Transition Model ($\mathcal{M}$)**: Behavior simulator
-
-**Output (o1-preview)**:
+**Output**:
 
 ```python
 [
@@ -178,7 +177,7 @@ The evaluation process produces several outputs:
 ]
 ```
 
-**Results (o1-preview)**:
+**Results**:
 
 ```python
 "llm_rst": {
@@ -240,7 +239,7 @@ The evaluation process produces several outputs:
 }
 ```
 
-**Overall Results across tasks (o1-preview)**
+**Overall Results Across Tasks**
 
 ```python
 {

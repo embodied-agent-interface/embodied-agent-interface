@@ -20,20 +20,18 @@ The module generates an action sequence $\bar{a} = \{a_i\}_{i=1}^{n}$, represent
 
 The evaluation of the action sequencing module involves two main components:
 
-1. **Trajectory Feasibility Evaluation**:
+1. **Trajectory Evaluation**:
    - **Purpose**: To determine whether the generated action sequence $\bar{a}$ is executable in the simulator.
-   - **Process**: The action sequence is executed from the initial state $s_0$ in the simulator.
+   - **Process**: Execute $\bar{a}$ to obtain the trajectory $T = ⟨\{s_i\}_{i=0}^{m}, \{a_i\}_{i=1}^{m}⟩$, e.g. `behavior_eval.evolving_graph.eval_evolving_graph_env.apply_action`.
    - **Outcome**: If an infeasible action occurs, execution may stop early. Execution failures are categorized into:
      - **Missing Steps**: Necessary actions that were omitted.
      - **Additional Steps**: Unnecessary actions that were included.
      - **Wrong Temporal Order**: Actions executed in an incorrect sequence.
      - **Affordance Errors**: Actions incompatible with the current state of objects (e.g., trying to "open" an object that cannot be opened).
 
-2. **Goal Satisfaction Evaluation**:
+2. **Goal Evaluation**:
    - **Purpose**: To assess if the task goal $g$ is satisfied after executing $\bar{a}$.
-   - **Process**:
-     - Execute $\bar{a}$ to obtain the trajectory $T = ⟨\{s_i\}_{i=0}^{m}, \{a_i\}_{i=1}^{m}⟩$, e.g. `behavior_eval.evolving_graph.eval_evolving_graph_env.apply_action`.
-     - Check for goal satisfaction, e.g. `behavior_eval.evolving_graph.evolving_graph.check_success`.
+   - **Process**: Check for goal satisfaction, e.g. `behavior_eval.evolving_graph.evolving_graph.check_success`.
    - **Partial Goal Satisfaction Evaluation**:
      - Measures the percentage of subgoals in $g$ that are satisfied by $\bar{a}$.
      - **Process**:
@@ -49,7 +47,7 @@ The evaluation of the action sequencing module involves two main components:
 
 The evaluation metrics are divided into two categories:
 
-1. **Trajectory Feasibility Metrics**:
+1. **Trajectory Metrics**:
    - **Execution Success Rate**: The proportion of actions in $\bar{a}$ executed successfully without errors.
    - **Error Rates**:
      - **Parsing Errors**: Issues in interpreting the action sequence.
@@ -60,13 +58,13 @@ The evaluation metrics are divided into two categories:
      - **Wrong Temporal Order**: Rate of actions executed in an incorrect sequence.
      - **Affordance Errors**: Rate of actions that cannot be performed due to object states.
 
-2. **Goal Satisfaction Metrics**:
+2. **Goal Metrics**:
    - **Task Success Rate**: The proportion of tasks where the goal $g$ is fully satisfied after executing $\bar{a}$.
-   - **State Goal Satisfaction**: Success rate for satisfying state-based goals (e.g., object states).
-   - **Relation Goal Satisfaction**: Success rate for satisfying relation-based goals (e.g., object relationships).
-   - **Action Goal Satisfaction**: Success rate for achieving the specified action sequence.
-   - **Total Goal Satisfaction**: Overall goal achievement rate, combining state, relation, and action goals.
-   - **Partial Goal Satisfaction Rate**: The percentage of subgoals that are satisfied after execution.
+   - **Partial Goal Satisfaction Evaluation**:
+        - **State Goal Satisfaction**: Success rate for satisfying state-based goals (e.g., object states).
+        - **Relation Goal Satisfaction**: Success rate for satisfying relation-based goals (e.g., object relationships).
+        - **Action Goal Satisfaction**: Success rate for achieving the specified action sequence.
+        - **Total Goal Satisfaction**: Overall goal achievement rate, combining state, relation, and action goals.
 
 ### Output
 

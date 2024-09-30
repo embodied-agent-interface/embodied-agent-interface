@@ -64,9 +64,6 @@ To address this gap, we propose the **Embodied Agent Interface (EAgent)**, which
 Our benchmark provides a comprehensive assessment of LLM performance across different subtasks, identifying their strengths and weaknesses in embodied decision-making contexts.
 
 ## Installation
-
-To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodied decision-making:
-
 1. **Create and Activate a Conda Environment**:
    ```bash
    conda create -n eagent python=3.8 -y 
@@ -74,10 +71,12 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    ```
 
 2. **Install `eagent-eval`**:
+   
    You can install it from pip:
    ```bash
    pip install eagent-eval
    ```
+
    Or, install from source:
    ```bash
    git clone https://github.com/embodied-agent-interface/embodied-agent-interface.git
@@ -86,6 +85,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    ```
 
 3. **(Optional) Install iGibson for behavior evaluation**:
+   
    If you need to use `behavior_eval`, install iGibson. Follow these steps to minimize installation issues:
 
    - Make sure you are using Python 3.8 and meet the minimum system requirements in the [iGibson installation guide](https://stanfordvl.github.io/iGibson/installation.html).

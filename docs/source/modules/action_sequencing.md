@@ -97,8 +97,11 @@ The evaluation process produces several outputs:
 ### Example
 
 **Task**: `assembling_gift_baskets_0_Beechwood_0_int_0_2021-10-26_12-46-37`
+
 **Model**: `o1-preview`
+
 **Transition Model ($\mathcal{M}$)**: `Behavior` simulator
+
 **Initial States ($s_0$)**:
 
 ```python

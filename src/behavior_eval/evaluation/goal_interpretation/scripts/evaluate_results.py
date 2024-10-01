@@ -159,30 +159,6 @@ def compute_confusion_metrics(all_satisfied_conditions, all_unsatisfied_conditio
             'f1_score': f1_score
         }
         
-
-# def compute_metrics_by_state(all_satisfied_conditions, all_unsatisfied_conditions, predicted_conditions):
-#     """Compute metrics for each state separately."""
-#     node_state_results = {}
-#     edge_state_results = {}
-    
-#     for state in object_states["node_states"]:
-#         node_state_results[state] = compute_confusion_metrics(
-#             [condition for condition in all_satisfied_conditions if is_state_condition(state, condition)],
-#             [condition for condition in all_unsatisfied_conditions if is_state_condition(state, condition)],
-#             [condition for condition in predicted_conditions if is_state_condition(state, condition)],
-#             keep_conditions=False
-#         )
-    
-#     for state in object_states["edge_states"]:
-#         edge_state_results[state] = compute_confusion_metrics(
-#             [condition for condition in all_satisfied_conditions if is_state_condition(state, condition)],
-#             [condition for condition in all_unsatisfied_conditions if is_state_condition(state, condition)],
-#             [condition for condition in predicted_conditions if is_state_condition(state, condition)],
-#             keep_conditions=False
-#         )
-    
-#     return node_state_results, edge_state_results
-
 # Grammatical Error Checks
 
 def is_of_correct_length(condition):
@@ -238,13 +214,13 @@ def dataset_error_analysis(all_satisfied_conditions: list, all_unsatisfied_condi
     """Compute metrics for node and edge conditions separately."""
     
     grammatically_valid_predicted_conditions = []
-    wrong_length = []
+    format_error = []
     state_hallucination = []
     for condition in predicted_conditions:
         if contains_valid_state(condition) and is_of_correct_length(condition):
             grammatically_valid_predicted_conditions.append(condition)
         if not is_of_correct_length(condition):
-            wrong_length.append(condition)
+            format_error.append(condition)
         if not contains_valid_state(condition):
             state_hallucination.append(condition)
     
@@ -260,20 +236,9 @@ def dataset_error_analysis(all_satisfied_conditions: list, all_unsatisfied_condi
     
     overall_confusion = compute_confusion_metrics(all_satisfied_conditions, all_unsatisfied_conditions, all_false_positive_conditions, predicted_conditions, keep_conditions=False)
     state_confusion = compute_confusion_metrics(node_satisfied_conditions, node_unsatisfied_conditions, node_false_positive_conditions, node_predicted_conditions, keep_conditions=False)
-    spatial_confusion = compute_confusion_metrics(edge_satisfied_conditions, edge_unsatisfied_conditions, edge_false_positive_conditions, edge_predicted_conditions, keep_conditions=False)
+    relation_goal_confusion = compute_confusion_metrics(edge_satisfied_conditions, edge_unsatisfied_conditions, edge_false_positive_conditions, edge_predicted_conditions, keep_conditions=False)
     
     return {
-        'grammatical_errors': 
-            {
-                "grammatically_valid_num": len(grammatically_valid_predicted_conditions),
-                "grammatically_valid_rate": len(grammatically_valid_predicted_conditions) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "wrong_length_num": len(wrong_length),
-                "wrong_length_rate": len(wrong_length) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "state_hallucination_num": len(state_hallucination),
-                "state_hallucination_rate": len(state_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "object_hallucination_num": num_object_hallucinations,
-                "object_hallucination_rate": num_object_hallucinations / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-            },
         'overall': 
             {
                 "num_predicted_conditions": len(predicted_conditions),
@@ -283,23 +248,34 @@ def dataset_error_analysis(all_satisfied_conditions: list, all_unsatisfied_condi
                 "num_false_positive_conditions": len(all_false_positive_conditions),
                 'overall_confusion_metrics': overall_confusion,
             },
-        "state":
+        "state_goal":
             {
                 "num_predicted_conditions": len(node_predicted_conditions),
                 "num_GT_conditions": len(node_satisfied_conditions) + len(node_unsatisfied_conditions),
                 "num_satisfied_conditions": len(node_satisfied_conditions),
                 "num_unsatisfied_conditions": len(node_unsatisfied_conditions),
                 "num_false_positive_conditions": len(node_false_positive_conditions),
-                'state_confusion_metrics': state_confusion,
+                'state_goal_confusion_metrics': state_confusion,
             },
-        "spatial":
+        "relation_goal":
             {
                 "num_predicted_conditions": len(edge_predicted_conditions),
                 "num_GT_conditions": len(edge_satisfied_conditions) + len(edge_unsatisfied_conditions),
                 "num_satisfied_conditions": len(edge_satisfied_conditions),
                 "num_unsatisfied_conditions": len(edge_unsatisfied_conditions),
                 "num_false_positive_conditions": len(edge_false_positive_conditions),
-                'spatial_confusion_metrics': spatial_confusion,
+                'relation_goal_confusion_metrics': relation_goal_confusion,
+            },
+        'grammatical_errors': 
+            {
+                "grammatically_valid_num": len(grammatically_valid_predicted_conditions),
+                "grammatically_valid_rate": len(grammatically_valid_predicted_conditions) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "format_error_num": len(format_error),
+                "format_error_rate": len(format_error) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "state_hallucination_num": len(state_hallucination),
+                "state_hallucination_rate": len(state_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "object_hallucination_num": num_object_hallucinations,
+                "object_hallucination_rate": num_object_hallucinations / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
             },
     }
 
@@ -310,14 +286,14 @@ def per_demo_error_analysis(demo, all_satisfied_conditions, all_unsatisfied_cond
     """Compute metrics for node and edge conditions separately."""
     
     grammatically_valid_predicted_conditions = []
-    wrong_length = []
+    format_error = []
     state_hallucination = []
     object_hallucination = []
     for condition in predicted_conditions:
         if contains_valid_state(condition) and is_of_correct_length(condition) and contains_valid_objects(condition, demo, DATA):
             grammatically_valid_predicted_conditions.append(condition)
         if not is_of_correct_length(condition):
-            wrong_length.append(condition)
+            format_error.append(condition)
         if not contains_valid_state(condition):
             state_hallucination.append(condition)
         if not contains_valid_objects(condition, demo, DATA):
@@ -336,20 +312,9 @@ def per_demo_error_analysis(demo, all_satisfied_conditions, all_unsatisfied_cond
     
     overall_confusion = compute_confusion_metrics(all_satisfied_conditions, all_unsatisfied_conditions, all_false_positive_conditions, predicted_conditions, keep_conditions=True)
     state_confusion = compute_confusion_metrics(node_satisfied_conditions, node_unsatisfied_conditions, node_false_positive_conditions, node_predicted_conditions, keep_conditions=True)
-    spatial_confusion = compute_confusion_metrics(edge_satisfied_conditions, edge_unsatisfied_conditions, edge_false_positive_conditions, edge_predicted_conditions, keep_conditions=True)
+    relation_goal_confusion = compute_confusion_metrics(edge_satisfied_conditions, edge_unsatisfied_conditions, edge_false_positive_conditions, edge_predicted_conditions, keep_conditions=True)
     
     return {
-        'grammatical_errors': 
-            {
-                "grammatically_valid_num": len(grammatically_valid_predicted_conditions),
-                "grammatically_valid_rate": len(grammatically_valid_predicted_conditions) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "wrong_length_num": len(wrong_length),
-                "wrong_length_rate": len(wrong_length) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "state_hallucination_num": len(state_hallucination),
-                "state_hallucination_rate": len(state_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-                "object_hallucination_num": len(object_hallucination),
-                "object_hallucination_rate": len(object_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
-            },
         'overall': 
             {
                 "num_predicted_conditions": len(predicted_conditions),
@@ -359,23 +324,34 @@ def per_demo_error_analysis(demo, all_satisfied_conditions, all_unsatisfied_cond
                 "num_false_positive_conditions": len(all_false_positive_conditions),
                 'overall_confusion_metrics': overall_confusion,
             },
-        "state":
+        "state_goal":
             {
                 "num_predicted_conditions": len(node_predicted_conditions),
                 "num_GT_conditions": len(node_satisfied_conditions) + len(node_unsatisfied_conditions),
                 "num_satisfied_conditions": len(node_satisfied_conditions),
                 "num_unsatisfied_conditions": len(node_unsatisfied_conditions),
                 "num_false_positive_conditions": len(node_false_positive_conditions),
-                'state_confusion_metrics': state_confusion,
+                'state_goal_confusion_metrics': state_confusion,
             },
-        "spatial":
+        "relation_goal":
             {
                 "num_predicted_conditions": len(edge_predicted_conditions),
                 "num_GT_conditions": len(edge_satisfied_conditions) + len(edge_unsatisfied_conditions),
                 "num_satisfied_conditions": len(edge_satisfied_conditions),
                 "num_unsatisfied_conditions": len(edge_unsatisfied_conditions),
                 "num_false_positive_conditions": len(edge_false_positive_conditions),
-                'spatial_confusion_metrics': spatial_confusion,
+                'relation_goal_confusion_metrics': relation_goal_confusion,
+            },
+        'grammatical_errors': 
+            {
+                "grammatically_valid_num": len(grammatically_valid_predicted_conditions),
+                "grammatically_valid_rate": len(grammatically_valid_predicted_conditions) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "format_error_num": len(format_error),
+                "format_error_rate": len(format_error) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "state_hallucination_num": len(state_hallucination),
+                "state_hallucination_rate": len(state_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
+                "object_hallucination_num": len(object_hallucination),
+                "object_hallucination_rate": len(object_hallucination) / len(predicted_conditions) if len(predicted_conditions) > 0 else 0,
             },
     }
     

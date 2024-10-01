@@ -18,53 +18,53 @@ The goal interpretation module takes the state `**$s_0$**` and a natural languag
 
 ### Evaluation Workflow
 
-
 The evaluation process is primarily handled by the `evaluate_results` function. Key steps include:
 
 1. **Data Loading**:
-   - Load necessary meta data and configurations.
+   - Loading meta data and configurations.
    - Load LLM responses from the specified path.
 
 2. **Evaluation Loop**:
    - For each LLM response:
-     - Extract predicted operator definitions.
-     - Compare predicted preconditions and effects with ground truth.
-     - Calculate logic matching scores.
-     - Attempt to generate a plan using the predicted operators.
+     - Parse into json format.
+     - Handle format errors and object/state hallucinations.
+     - Evaluate LLM predicted object states against GT.
+     - Evaluate LLM predicted object relations against GT.
 
 3. **Metric Calculation**:
-   - Compute precision, recall, and F1 scores for preconditions and effects.
-   - Calculate planning success rates.
+   - Compute precision, recall, and F1 scores for object states and relations.
+   - Calculate format error and hallucination rates.
 
 4. **Results Aggregation**:
-   - Aggregate results by predicate type, action type, and task type.
+   - Aggregate results by goal type and error type.
 
-5. **Output Generation**:
-   - Generate summary statistics and save results to JSON files.
+5. **Log Output**:
+   - Generate summary statistics and save results to summary files.
+   - Save detailed per-sample error analysis to log files.
 
 ### Metrics
 
 Our metrics are broken down into 4 primary categories:
 
 1. **Grammatical Errors**:
-   - state_hallucination
-   - object_hallucination
-   - wrong_length
+   - Rate and number of state hallucinations.
+   - Rate and number of object hallucinations.
+   - Rate and number of output format errors.
 
 2. **Object States**:
-   - Number of satisfied conditions (TP)
-   - Number of unsatisfied conditions (FN)
-   - Number of false positive conditions (FP)
-   - Confusion matrix (Precision/Recall/F1 Score)
+   - Number of satisfied conditions (TP).
+   - Number of unsatisfied conditions (FN).
+   - Number of false positive conditions (FP).
+   - Confusion matrix (Precision/Recall/F1 Score).
 
 3. **Object Relations**:
-      - Number of satisfied conditions (TP)
-   - Number of unsatisfied conditions (FN)
-   - Number of false positive conditions (FP)
-   - Confusion matrix (Precision/Recall/F1 Score)
+      - Number of satisfied conditions (TP).
+   - Number of unsatisfied conditions (FN).
+   - Number of false positive conditions (FP).
+   - Confusion matrix (Precision/Recall/F1 Score).
 
 4. **Overall Performance**:
-      - Number of satisfied conditions (TP)
-   - Number of unsatisfied conditions (FN)
-   - Number of false positive conditions (FP)
-   - Confusion matrix (Precision/Recall/F1 Score)
+      - Number of satisfied conditions (TP).
+   - Number of unsatisfied conditions (FN).
+   - Number of false positive conditions (FP).
+   - Confusion matrix (Precision/Recall/F1 Score).

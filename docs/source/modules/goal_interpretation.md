@@ -44,27 +44,27 @@ The evaluation process is primarily handled by the `evaluate_results` function. 
 
 ### Metrics
 
-Several key metrics are used in the evaluation:
+Our metrics are broken down into 4 primary categories:
 
-1. **Logic Matching Score**:
-   - Calculated for preconditions and effects separately.
-   - Broken down by predicate type (e.g., object_states, spatial_relations).
-   - Reported as precision, recall, and F1 score.
-   - Variables: `precond_predicate_type_res_dict`, `effect_predicate_type_res_dict`, `full_predicate_type_res_dict`.
+1. **Grammatical Errors**:
+   - state_hallucination
+   - object_hallucination
+   - wrong_length
 
-2. **Planning Success Rate**:
-   - Measures the ability to generate a valid plan using predicted operators.
-   - Calculated per task type.
-   - Variable: `success_by_task_type_dict`.
+2. **Object States**:
+   - Number of satisfied conditions (TP)
+   - Number of unsatisfied conditions (FN)
+   - Number of false positive conditions (FP)
+   - Confusion matrix (Precision/Recall/F1 Score)
 
-3. **Action-specific Metrics**:
-   - Logic matching scores calculated per action.
-   - Variables: `precond_action_type_dict`, `effect_action_type_dict`, `full_action_type_dict`.
+3. **Object Relations**:
+      - Number of satisfied conditions (TP)
+   - Number of unsatisfied conditions (FN)
+   - Number of false positive conditions (FP)
+   - Confusion matrix (Precision/Recall/F1 Score)
 
-4. **Predicate-specific Metrics**:
-   - Logic matching scores calculated per predicate.
-   - Variables: `precond_predicate_score_dict`, `effect_predicate_score_dict`, `full_predicate_score_dict`.
-
-5. **Sensitivity Analysis**:
-   - Measures the impact of individual operator predictions on overall task success.
-   - Variables: `task_variate_control_by_type`, `task_variate_control_precond_by_type`, `task_variate_control_effect_by_type`, `action_variate_control`.
+4. **Overall Performance**:
+      - Number of satisfied conditions (TP)
+   - Number of unsatisfied conditions (FN)
+   - Number of false positive conditions (FP)
+   - Confusion matrix (Precision/Recall/F1 Score)

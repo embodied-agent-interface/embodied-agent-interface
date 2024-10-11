@@ -1,12 +1,12 @@
 <h1 align="center">Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making</h1>
 
 <p align="center">
+    <a href="https://arxiv.org/abs/2410.07166">
+        <img src="https://img.shields.io/badge/arXiv-2410.07166-B31B1B.svg?style=plastic&logo=arxiv" alt="arXiv">
+    </a>
     <a href="https://embodied-agent-interface.github.io/">
         <img src="https://img.shields.io/badge/Website-EAgent-purple?style=plastic&logo=Google%20chrome" alt="Website">
     </a>
-<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
-        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
-    </a> -->
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
@@ -17,8 +17,11 @@
         <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">
     </a>
     <a href="https://opensource.org/licenses/MIT">
-        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" alt="License: MIT">
     </a>
+<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
+        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
+    </a> -->
 </p>
 
 <p align="center">

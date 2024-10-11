@@ -192,5 +192,3 @@ eagent-eval
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.
 
-The command `python3 -m eagent_eval.cli` is equivalent to `eagent-eval` as introduced above, although currently only `python3 -m eagent_eval.cli` is supported in the docker.
-

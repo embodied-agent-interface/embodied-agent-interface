@@ -188,21 +188,10 @@ Next, run the Docker container interactively:
 docker run -it jameskrw/eagent-eval
 ```
 
-When inside the container, make sure you remain in the `/opt/iGibson` directory (do not change to other directories).
-
-To check the available arguments for the `eagent-eval` CLI, use the following command:
+Test docker
 
 ```bash
-python3 -m eagent_eval.cli --help
+eagent-eval
 ```
-
-You can run:
-
-```bash
-python3 -m eagent_eval.cli
-```
-
 By default, this will start generating prompts for goal interpretation in Behavior.
-
-The command `python3 -m eagent_eval.cli` is equivalent to `eagent-eval` as introduced above, although currently only `python3 -m eagent_eval.cli` is supported in the docker.
 

@@ -1,4 +1,4 @@
-<h1 align="center">Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making</h1>
+<h1 align="center">Embodied Agent Interface (EAI): Benchmarking LLMs for Embodied Decision Making</h1>
 
 <p align="center">
     <a href="https://arxiv.org/abs/2410.07166">
@@ -142,7 +142,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    Make sure to download our results first if you don't want to specify <path_to_responses>
    ```bash
-   python -m eagent_eval.utils.download_utils
+   python -m eai.utils.download_utils
    ```
 
    Then, run the commands below:

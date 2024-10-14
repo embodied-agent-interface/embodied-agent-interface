@@ -10,7 +10,7 @@ from behavior_eval.evaluation.transition_modeling.scripts.generate_prompts impor
 from virtualhome_eval.agent_eval import agent_evaluation as virtualhome_agent_evaluation
 import os
 import sys
-import eagent_eval
+import eai
 def agent_evaluation(
         mode="generate_prompts",
         eval_type="goal_interpretation",
@@ -31,8 +31,8 @@ def agent_evaluation(
     os.makedirs(output_dir,exist_ok=True)
     if mode=="evaluate_results":
         if llm_response_path is None:
-            print(f"did not provide llm_response_path, set to default: {eagent_eval.helm_output_path}")
-            llm_response_path=eagent_eval.helm_output_path
+            print(f"did not provide llm_response_path, set to default: {eai.helm_output_path}")
+            llm_response_path=eai.helm_output_path
         
         
         llm_response_path_eval_type=os.path.join(llm_response_path,'behavior',eval_type)

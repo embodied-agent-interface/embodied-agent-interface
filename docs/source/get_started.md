@@ -1,18 +1,18 @@
 
 # Installation
 
-To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodied decision-making:
+To install **Embodied Agent Interface (EAI)** for benchmarking LLMs in embodied decision-making:
 
 1. **Create and Activate a Conda Environment**:
    ```bash
-   conda create -n eagent python=3.8 -y 
-   conda activate eagent
+   conda create -n eai python=3.8 -y 
+   conda activate eai
    ```
 
-2. **Install `eagent-eval`**:
+2. **Install `eai`**:
    You can install it from pip:
    ```bash
-   pip install eagent-eval
+   pip install eai
    ```
    Or, install from source:
    ```bash
@@ -54,7 +54,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
 1. **Arguments**:
    ```bash
-   eagent-eval \
+   eai \
      --dataset {virtualhome,behavior} \
      --mode {generate_prompts,evaluate_results} \
      --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
@@ -65,7 +65,7 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
    Run the following command for further information:
    ```bash
-   eagent-eval --help
+   eai --help
    ```
 
 2. **Examples**:
@@ -80,14 +80,14 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
 
    Then, run the commands below:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
+   eai --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+   eai --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
+   eai --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
+   eai --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+   eai --dataset behavior --eval-type action_sequencing --mode evaluate_results
+   eai --dataset behavior --eval-type transition_modeling --mode evaluate_results
+   eai --dataset behavior --eval-type goal_interpretation --mode evaluate_results
+   eai --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
    ```
 
 -  ***Generate Pormpts***
@@ -95,14 +95,14 @@ To install **Embodied Agent Interface (EAgent)** for benchmarking LLMs in embodi
    
    To generate prompts, you can run:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
+   eai --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+   eai --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
+   eai --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
+   eai --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+   eai --dataset behavior --eval-type action_sequencing --mode generate_prompts
+   eai --dataset behavior --eval-type transition_modeling --mode generate_prompts
+   eai --dataset behavior --eval-type goal_interpretation --mode generate_prompts
+   eai --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
 
@@ -112,18 +112,18 @@ We provide a ready-to-use Docker image for easy installation and usage.
 
 First, pull the Docker image from Docker Hub:
 ```bash
-docker pull jameskrw/eagent-eval
+docker pull jameskrw/eai
 ```
 
 Next, run the Docker container interactively:
 
 ```bash
-docker run -it jameskrw/eagent-eval
+docker run -it jameskrw/eai
 ```
 
 Test docker
 
 ```bash
-eagent-eval
+eai
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.

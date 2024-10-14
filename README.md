@@ -10,7 +10,7 @@
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
-    <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
+    <a href="https://hub.docker.com/repository/docker/jameskrw/eai/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
     <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
@@ -59,7 +59,7 @@
 
 We aim to evaluate Large Language Models (LLMs) for embodied decision-making. While many works leverage LLMs for decision-making in embodied environments, a systematic understanding of their performance is still lacking. These models are applied in different domains, for various purposes, and with diverse inputs and outputs. Current evaluations tend to rely on final success rates alone, making it difficult to pinpoint where LLMs fall short and how to leverage them effectively in embodied AI systems.
 
-To address this gap, we propose the **Embodied Agent Interface (EAgent)**, which unifies:
+To address this gap, we propose the **Embodied Agent Interface (EAI)**, which unifies:
 1. A broad set of embodied decision-making tasks involving both state and temporally extended goals.
 2. Four commonly used LLM-based modules: goal interpretation, subgoal decomposition, action sequencing, and transition modeling.
 3. Fine-grained evaluation metrics, identifying errors such as hallucinations, affordance issues, and planning mistakes.
@@ -69,15 +69,15 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 ## Installation
 1. **Create and Activate a Conda Environment**:
    ```bash
-   conda create -n eagent python=3.8 -y 
-   conda activate eagent
+   conda create -n eai python=3.8 -y 
+   conda activate eai
    ```
 
-2. **Install `eagent-eval`**:
+2. **Install `eai`**:
    
    You can install it from pip:
    ```bash
-   pip install eagent-eval
+   pip install eai
    ```
 
    Or, install from source:
@@ -121,7 +121,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
 1. **Arguments**:
    ```bash
-   eagent-eval \
+   eai \
      --dataset {virtualhome,behavior} \
      --mode {generate_prompts,evaluate_results} \
      --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
@@ -132,7 +132,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
    Run the following command for further information:
    ```bash
-   eagent-eval --help
+   eai --help
    ```
 
 2. **Examples**:
@@ -147,14 +147,14 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
    Then, run the commands below:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
+   eai --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+   eai --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
+   eai --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
+   eai --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+   eai --dataset behavior --eval-type action_sequencing --mode evaluate_results
+   eai --dataset behavior --eval-type transition_modeling --mode evaluate_results
+   eai --dataset behavior --eval-type goal_interpretation --mode evaluate_results
+   eai --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
    ```
 
 -  ***Generate Pormpts***
@@ -162,14 +162,14 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    To generate prompts, you can run:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
+   eai --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+   eai --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
+   eai --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
+   eai --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+   eai --dataset behavior --eval-type action_sequencing --mode generate_prompts
+   eai --dataset behavior --eval-type transition_modeling --mode generate_prompts
+   eai --dataset behavior --eval-type goal_interpretation --mode generate_prompts
+   eai --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
 
@@ -179,19 +179,19 @@ We provide a ready-to-use Docker image for easy installation and usage.
 
 First, pull the Docker image from Docker Hub:
 ```bash
-docker pull jameskrw/eagent-eval
+docker pull jameskrw/eai
 ```
 
 Next, run the Docker container interactively:
 
 ```bash
-docker run -it jameskrw/eagent-eval
+docker run -it jameskrw/eai
 ```
 
 Test docker
 
 ```bash
-eagent-eval
+eai
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.
 

@@ -189,10 +189,10 @@ The evaluation process produces several outputs:
 To evaluate the subgoal decomposition module, use the following commands:
 
 ```bash
-eai --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-eai --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
-eai --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
-eai --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
+eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+eai-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
+eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+eai-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
 ```
 
 

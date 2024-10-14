@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='eai',
+    name='eai-eval',
     version='1.0.0',
     author='stanford',
     long_description=open('README.md').read(),
@@ -27,7 +27,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'eai=eai.cli:main',  
+            'eai-eval=eai_eval.cli:main',  
         ],
     },
 )

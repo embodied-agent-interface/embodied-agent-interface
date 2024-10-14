@@ -47,4 +47,4 @@ src/virtualhome_eval/resources/virtualhome/pddl_files/
 src/virtualhome_eval/resources/behavior/pddl_files/
 logs/
 release_output/
-src/eai/data
+src/eai_eval/data

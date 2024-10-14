@@ -84,10 +84,10 @@ These results are saved in the specified output directory, providing a comprehen
 To run the evaluation:
 
 1. Ensure all LLM responses are in place.
-2. Run the `eai` command with appropriate arguments:
+2. Run the `eai-eval` command with appropriate arguments:
 
    ```bash
-   eai --dataset [virtualhome, behavior] --eval-type transition_modeling --mode evaluate_results
+   eai-eval --dataset [virtualhome, behavior] --eval-type transition_modeling --mode evaluate_results
    ```
 
 3. The function will process all LLM responses, calculate metrics, and save results to the specified output directory.

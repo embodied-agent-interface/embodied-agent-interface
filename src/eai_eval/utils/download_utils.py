@@ -2,7 +2,7 @@ import logging
 import os
 import zipfile
 import fire
-import eai
+import eai_eval
 import gdown  # Import gdown for downloading Google Drive files
 
 log = logging.getLogger(__name__)
@@ -28,7 +28,7 @@ def download_helm_output():
     url = f"https://drive.google.com/uc?id={file_id}"
 
     # Local paths
-    helm_output_path = eai.helm_output_path  # Folder where the content will be unzipped
+    helm_output_path = eai_eval.helm_output_path  # Folder where the content will be unzipped
     zip_file_path = os.path.join(helm_output_path, "helm_output.zip")  # Temporary zip file path
 
     # Ensure the parent directory exists

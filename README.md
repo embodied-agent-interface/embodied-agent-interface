@@ -49,13 +49,13 @@
     </a>
 </p>
 
-## Dataset Highlights
+# Dataset Highlights
 
 -  Standardized goal specifications.
 -  Standardized modules and interfaces.
 -  Broad coverage of evaluation and fine-grained metrics.
 
-## Overview
+# Overview
 
 We aim to evaluate Large Language Models (LLMs) for embodied decision-making. While many works leverage LLMs for decision-making in embodied environments, a systematic understanding of their performance is still lacking. These models are applied in different domains, for various purposes, and with diverse inputs and outputs. Current evaluations tend to rely on final success rates alone, making it difficult to pinpoint where LLMs fall short and how to leverage them effectively in embodied AI systems.
 
@@ -66,18 +66,18 @@ To address this gap, we propose the **Embodied Agent Interface (EAI)**, which un
 
 Our benchmark provides a comprehensive assessment of LLM performance across different subtasks, identifying their strengths and weaknesses in embodied decision-making contexts.
 
-## Installation
+# Installation
 1. **Create and Activate a Conda Environment**:
    ```bash
-   conda create -n eai python=3.8 -y 
-   conda activate eai
+   conda create -n eai-eval python=3.8 -y 
+   conda activate eai-eval
    ```
 
 2. **Install `eai`**:
    
    You can install it from pip:
    ```bash
-   pip install eai
+   pip install eai-eval
    ```
 
    Or, install from source:
@@ -121,7 +121,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
 1. **Arguments**:
    ```bash
-   eai \
+   eai-eval \
      --dataset {virtualhome,behavior} \
      --mode {generate_prompts,evaluate_results} \
      --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
@@ -132,7 +132,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
    Run the following command for further information:
    ```bash
-   eai --help
+   eai-eval --help
    ```
 
 2. **Examples**:
@@ -142,19 +142,19 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    Make sure to download our results first if you don't want to specify <path_to_responses>
    ```bash
-   python -m eai.utils.download_utils
+   python -m eai_eval.utils.download_utils
    ```
 
    Then, run the commands below:
    ```bash
-   eai --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-   eai --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
-   eai --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
-   eai --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-   eai --dataset behavior --eval-type action_sequencing --mode evaluate_results
-   eai --dataset behavior --eval-type transition_modeling --mode evaluate_results
-   eai --dataset behavior --eval-type goal_interpretation --mode evaluate_results
-   eai --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+   eai-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
+   eai-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
+   eai-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
+   eai-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
    ```
 
 -  ***Generate Pormpts***
@@ -162,14 +162,14 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    To generate prompts, you can run:
    ```bash
-   eai --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-   eai --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
-   eai --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
-   eai --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
-   eai --dataset behavior --eval-type action_sequencing --mode generate_prompts
-   eai --dataset behavior --eval-type transition_modeling --mode generate_prompts
-   eai --dataset behavior --eval-type goal_interpretation --mode generate_prompts
-   eai --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+   eai-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
+   eai-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
+   eai-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
+   eai-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
 
@@ -179,19 +179,19 @@ We provide a ready-to-use Docker image for easy installation and usage.
 
 First, pull the Docker image from Docker Hub:
 ```bash
-docker pull jameskrw/eai
+docker pull jameskrw/eai-eval
 ```
 
 Next, run the Docker container interactively:
 
 ```bash
-docker run -it jameskrw/eai
+docker run -it jameskrw/eai-eval
 ```
 
 Test docker
 
 ```bash
-eai
+eai-eval
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.
 

@@ -27,13 +27,13 @@ from virtualhome_eval.evaluation.subgoal_decomposition.scripts.evaluate_results 
     evaluate_results as subgoal_output_evaluation,
 )
 
-import eai
+import eai_eval
 
 package_path = os.path.dirname(os.path.abspath(__file__))
 default_resource_dir = os.path.join(package_path, "resources")
 default_dataset_dir = os.path.join(package_path, "dataset")
 default_evaluation_dir = os.path.join(package_path, "evaluation")
-default_llm_response_path = eai.helm_output_path
+default_llm_response_path = eai_eval.helm_output_path
 
 def agent_evaluation(
     mode="generate_prompts",

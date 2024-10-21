@@ -195,3 +195,18 @@ eai-eval
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.
 
+
+
+# BibTex
+
+If you find our work helpful, please consider citing it:
+
+```bash
+@inproceedings{li2024embodied,
+  title={Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making},
+  author={Li, Manling and Zhao, Shiyu and Wang, Qineng and Wang, Kangrui and Zhou, Yu and Srivastava, Sanjana and Gokmen, Cem and Lee, Tony and Li, Li Erran and Zhang, Ruohan and others},
+  booktitle={NeurIPS 2024},
+  year={2024}
+}
+```
+

@@ -55,4 +55,4 @@ RUN yes | python -m igibson.utils.assets_utils --download_assets && rm -rf /tmp/
 RUN yes | python -m igibson.utils.assets_utils --download_ig_dataset && rm -rf /tmp/*
 RUN python -m igibson.utils.assets_utils --download_ig_key && rm -rf /tmp/*
 
-RUN pip install eagent-eval
+RUN pip install eai-eval

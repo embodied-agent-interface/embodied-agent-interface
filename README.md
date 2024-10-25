@@ -174,7 +174,8 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
 -  ***Simulation***
 
-  To see the effect of our magic actions, refer to this [notebook](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/examples/action_sequencing_simulation.ipynb).
+
+      To see the effect of our magic actions, refer to this [notebook](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/examples/action_sequencing_simulation.ipynb).
   
 
 

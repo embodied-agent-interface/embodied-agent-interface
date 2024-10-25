@@ -172,6 +172,10 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    eai-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
+-  ***Simulation***
+
+  To see the effect of our magic actions, refer to this [notebook](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/examples/action_sequencing_simulation.ipynb).
+  
 
 
 # Docker

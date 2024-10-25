@@ -1,24 +1,27 @@
-<h1 align="center">Embodied Agent Interface (EAgent): Benchmarking LLMs for Embodied Decision Making</h1>
+<h1 align="center">Embodied Agent Interface (EAI): Benchmarking LLMs for Embodied Decision Making</h1>
 
 <p align="center">
-    <a href="https://embodied-agent-interface.github.io/">
-        <img src="https://img.shields.io/badge/Website-EAgent-purple?style=plastic&logo=Google%20chrome" alt="Website">
+    <a href="https://arxiv.org/abs/2410.07166">
+        <img src="https://img.shields.io/badge/arXiv-2410.07166-B31B1B.svg?style=plastic&logo=arxiv" alt="arXiv">
     </a>
-<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
-        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
-    </a> -->
+    <a href="https://embodied-agent-interface.github.io/">
+        <img src="https://img.shields.io/badge/Website-EAI-purple?style=plastic&logo=Google%20chrome" alt="Website">
+    </a>
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
-    <a href="https://hub.docker.com/repository/docker/jameskrw/eagent-eval/general">
+    <a href="https://hub.docker.com/repository/docker/jameskrw/eai/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
     <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
         <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">
     </a>
     <a href="https://opensource.org/licenses/MIT">
-        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" alt="License: MIT">
     </a>
+<!--     <a href="https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/dataset">
+        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=Data" alt="Dataset">
+    </a> -->
 </p>
 
 <p align="center">
@@ -46,35 +49,35 @@
     </a>
 </p>
 
-## Dataset Highlights
+# Dataset Highlights
 
 -  Standardized goal specifications.
 -  Standardized modules and interfaces.
 -  Broad coverage of evaluation and fine-grained metrics.
 
-## Overview
+# Overview
 
 We aim to evaluate Large Language Models (LLMs) for embodied decision-making. While many works leverage LLMs for decision-making in embodied environments, a systematic understanding of their performance is still lacking. These models are applied in different domains, for various purposes, and with diverse inputs and outputs. Current evaluations tend to rely on final success rates alone, making it difficult to pinpoint where LLMs fall short and how to leverage them effectively in embodied AI systems.
 
-To address this gap, we propose the **Embodied Agent Interface (EAgent)**, which unifies:
+To address this gap, we propose the **Embodied Agent Interface (EAI)**, which unifies:
 1. A broad set of embodied decision-making tasks involving both state and temporally extended goals.
 2. Four commonly used LLM-based modules: goal interpretation, subgoal decomposition, action sequencing, and transition modeling.
 3. Fine-grained evaluation metrics, identifying errors such as hallucinations, affordance issues, and planning mistakes.
 
 Our benchmark provides a comprehensive assessment of LLM performance across different subtasks, identifying their strengths and weaknesses in embodied decision-making contexts.
 
-## Installation
+# Installation
 1. **Create and Activate a Conda Environment**:
    ```bash
-   conda create -n eagent python=3.8 -y 
-   conda activate eagent
+   conda create -n eai-eval python=3.8 -y 
+   conda activate eai-eval
    ```
 
-2. **Install `eagent-eval`**:
+2. **Install `eai`**:
    
    You can install it from pip:
    ```bash
-   pip install eagent-eval
+   pip install eai-eval
    ```
 
    Or, install from source:
@@ -118,7 +121,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
 1. **Arguments**:
    ```bash
-   eagent-eval \
+   eai-eval \
      --dataset {virtualhome,behavior} \
      --mode {generate_prompts,evaluate_results} \
      --eval-type {action_sequencing,transition_modeling,goal_interpretation,subgoal_decomposition} \
@@ -129,7 +132,7 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
 
    Run the following command for further information:
    ```bash
-   eagent-eval --help
+   eai-eval --help
    ```
 
 2. **Examples**:
@@ -139,19 +142,19 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    Make sure to download our results first if you don't want to specify <path_to_responses>
    ```bash
-   python -m eagent_eval.utils.download_utils
+   python -m eai_eval.utils.download_utils
    ```
 
    Then, run the commands below:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type transition_modeling --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type goal_interpretation --mode evaluate_results
+   eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode evaluate_results
+   eai-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
+   eai-eval --dataset behavior --eval-type transition_modeling --mode evaluate_results
+   eai-eval --dataset behavior --eval-type goal_interpretation --mode evaluate_results
+   eai-eval --dataset behavior --eval-type subgoal_decomposition --mode evaluate_results
    ```
 
 -  ***Generate Pormpts***
@@ -159,14 +162,14 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    
    To generate prompts, you can run:
    ```bash
-   eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
-   eagent-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type transition_modeling --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type goal_interpretation --mode generate_prompts
+   eai-eval --dataset virtualhome --eval-type subgoal_decomposition --mode generate_prompts
+   eai-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
+   eai-eval --dataset behavior --eval-type transition_modeling --mode generate_prompts
+   eai-eval --dataset behavior --eval-type goal_interpretation --mode generate_prompts
+   eai-eval --dataset behavior --eval-type subgoal_decomposition --mode generate_prompts
    ```
 
 
@@ -176,19 +179,34 @@ We provide a ready-to-use Docker image for easy installation and usage.
 
 First, pull the Docker image from Docker Hub:
 ```bash
-docker pull jameskrw/eagent-eval
+docker pull jameskrw/eai-eval
 ```
 
 Next, run the Docker container interactively:
 
 ```bash
-docker run -it jameskrw/eagent-eval
+docker run -it jameskrw/eai-eval
 ```
 
 Test docker
 
 ```bash
-eagent-eval
+eai-eval
 ```
 By default, this will start generating prompts for goal interpretation in Behavior.
+
+
+
+# BibTex
+
+If you find our work helpful, please consider citing it:
+
+```bash
+@inproceedings{li2024embodied,
+  title={Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making},
+  author={Li, Manling and Zhao, Shiyu and Wang, Qineng and Wang, Kangrui and Zhou, Yu and Srivastava, Sanjana and Gokmen, Cem and Lee, Tony and Li, Li Erran and Zhang, Ruohan and others},
+  booktitle={NeurIPS 2024},
+  year={2024}
+}
+```
 

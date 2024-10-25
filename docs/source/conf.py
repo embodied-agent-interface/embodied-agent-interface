@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'EAgent'
+project = 'EAI'
 copyright = '2024, Stanford SVL'
 author = 'Stanford SVL'
 

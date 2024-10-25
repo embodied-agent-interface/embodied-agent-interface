@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='eagent-eval',
-    version='0.0.9',
+    name='eai-eval',
+    version='1.0.0',
     author='stanford',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
@@ -27,7 +27,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'eagent-eval=eagent_eval.cli:main',  
+            'eai-eval=eai_eval.cli:main',  
         ],
     },
 )

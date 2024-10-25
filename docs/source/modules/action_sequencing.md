@@ -275,8 +275,8 @@ The evaluation process produces several outputs:
 To evaluate the action sequencing module, use the following commands:
 
 ```bash
-eagent-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
-eagent-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
-eagent-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
-eagent-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
+eai-eval --dataset virtualhome --eval-type action_sequencing --mode evaluate_results
+eai-eval --dataset behavior --eval-type action_sequencing --mode evaluate_results
+eai-eval --dataset virtualhome --eval-type action_sequencing --mode generate_prompts
+eai-eval --dataset behavior --eval-type action_sequencing --mode generate_prompts
 ```

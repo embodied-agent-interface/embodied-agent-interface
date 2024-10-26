@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='eai-eval',
-    version='1.0.1',
+    version='1.0.2',
     author='stanford',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
@@ -21,7 +21,6 @@ setup(
         "fire",
         "gdown",
     ],
-    include_package_data=True,
     package_data={
         '': ['*.json', '*.xml', '*.md', '*.yaml', "*.txt", "*.pddl"],
     },

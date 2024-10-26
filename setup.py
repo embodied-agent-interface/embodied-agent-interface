@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='eai-eval',
-    version='1.0.2',
+    version='1.0.3',
     author='stanford',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
@@ -21,9 +21,7 @@ setup(
         "fire",
         "gdown",
     ],
-    package_data={
-        '': ['*.json', '*.xml', '*.md', '*.yaml', "*.txt", "*.pddl"],
-    },
+    include_package_data=True,
     entry_points={
         'console_scripts': [
             'eai-eval=eai_eval.cli:main',  

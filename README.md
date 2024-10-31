@@ -10,7 +10,7 @@
     <a href="https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface" target="_blank">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
-    <a href="https://hub.docker.com/repository/docker/jameskrw/eai/general">
+    <a href="https://hub.docker.com/repository/docker/jameskrw/eai-eval/general">
         <img src="https://img.shields.io/badge/Docker-Eval--Embodied--Agent-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
     <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">

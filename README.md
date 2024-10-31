@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
     </a>
     <a href="https://hub.docker.com/repository/docker/jameskrw/eai-eval/general">
-        <img src="https://img.shields.io/badge/Docker-EAI-Eval-blue?style=plastic&logo=Docker" alt="Docker">
+        <img src="https://img.shields.io/badge/Docker-EAI-blue?style=plastic&logo=Docker" alt="Docker">
     </a>
     <a href="https://embodied-agent-eval.readthedocs.io/en/latest/#">
         <img src="https://img.shields.io/badge/Docs-Online-blue?style=plastic&logo=Read%20the%20Docs" alt="Docs">

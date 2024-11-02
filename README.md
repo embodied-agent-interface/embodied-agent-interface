@@ -179,6 +179,21 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
   
 
 
+3. **Evaluate All Modules in One Command**
+
+
+   To evaluate all modules with default parameters, use the command below:
+   ```bash
+   eai-eval --all
+   ```
+   This command will automatically traverse all unspecified parameter options.
+
+   **Example Usage**:
+   ```bash
+   eai-eval --all --dataset virtualhome
+   ```
+   This will run both `generate_prompts` and `evaluate_results` for all modules in the `virtualhome` dataset. Make sure to download our results first if you don't want to specify <path_to_responses>
+
 # Docker
 We provide a ready-to-use Docker image for easy installation and usage.
 

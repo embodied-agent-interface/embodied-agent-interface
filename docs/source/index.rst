@@ -26,7 +26,6 @@ Welcome to Embodied Agent Interface's documentation!
    :caption: Customization
 
    customization/prompts
-   customization/evaluation
 
 Indices and Tables
 ==================

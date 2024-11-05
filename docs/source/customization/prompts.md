@@ -21,6 +21,7 @@ If you also want to change the inputs passed to the template:
 2. Make adjustments to how these inputs are collected or generated. You can modify the logic in `action_sequence_evaluator.py` to use new input data or alter how the existing information is gathered.
 
 **Useful Files for Reference:**
+
 - **Scripts for prompt generation:**
   - `behavior_eval.evaluation.action_sequencing.scripts.generate_prompts`
   
@@ -38,6 +39,17 @@ You can find example prompts used for action sequencing evaluation in:
 ### Goal Interpretation
 
 ### Subgoal Decomposition
+
+To update subgoal decomposition prompt part, you can modify the file `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`, specifically `system_prompt` and `target_task_info` variables.
+
+**Useful Files for Reference:**
+
+- **Scripts for prompt generation:**
+  - `behavior_eval.evaluation.subgoal_decomposition.scripts.generate_prompts`
+- **Prompt template:**
+  - `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
+- **Prompt generator:**
+  - `behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils`
 
 ### Transition Modeling
 

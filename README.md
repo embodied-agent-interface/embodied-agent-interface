@@ -54,6 +54,7 @@
 -  Standardized goal specifications.
 -  Standardized modules and interfaces.
 -  Broad coverage of evaluation and fine-grained metrics.
+-  Please find our dataset at [this link](https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface).
 
 # Overview
 

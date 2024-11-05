@@ -55,6 +55,7 @@
 -  Standardized modules and interfaces.
 -  Broad coverage of evaluation and fine-grained metrics.
 -  Please find our dataset at [this link](https://huggingface.co/datasets/Inevitablevalor/EmbodiedAgentInterface).
+-  PDDL files for both BEHAVIOR ([domain file](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/src/virtualhome_eval/resources/behavior/behavior.pddl), [problem files](https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/src/virtualhome_eval/resources/behavior/problem_pddl)) and VirtualHome([domain file](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/src/virtualhome_eval/resources/virtualhome/virtualhome.pddl), [problem files](https://github.com/embodied-agent-interface/embodied-agent-interface/tree/main/src/virtualhome_eval/resources/virtualhome/problem_pddl)). 
 
 # Overview
 

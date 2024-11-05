@@ -49,7 +49,7 @@ To update subgoal decomposition prompt part, you can modify the file `behavior_e
 - **Prompt template:**
   - `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
 - **Prompt generator:**
-  - `behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils`
+  - `behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils` and `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
 
 ### Transition Modeling
 
@@ -59,7 +59,7 @@ For any of the four modules in VirtualHome, you can customize the prompt by edit
 
 ### Modify the Prompt Templates
 
-You can customize the prompt for {module} by modifying the prompt template. Create your custom template by editing or adding new content to: `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` with your customized input.
+You can customize the prompt for {module} by modifying the prompt template. Create your custom template by editing or adding new content to: `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` (in subgoal decomposition, this should be  `virtualhome_eval.evaluation.{module}.prompts.meta_prompt`) with your customized input.
 
 ### Change the Inputs to the Template
 
@@ -67,7 +67,7 @@ You can change the inputs passed to the template. Go to `virtualhome_eval.evalua
 
 ### Useful Files for Reference:
 - **Prompt template:**
-  - `virtualhome_eval.evaluation.{module}.prompts.one_shot.py`
+  - `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` (or `...meta_prompt.py`)
 
 - **Example Prompts:**
   - `virtualhome_eval.evaluation.{module}.prompts.helm_prompts.json`

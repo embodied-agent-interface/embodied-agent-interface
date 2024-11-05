@@ -43,10 +43,28 @@ You can find example prompts used for action sequencing evaluation in:
 
 ## VirtualHome
 
-### Action Sequencing
+For any of the four modules in VirtualHome, you can customize the prompt by editing the corresponding files. Here, `{module}` should be one of [`action_sequencing`, `goal_interpretation`, `subgoal_decomposition`, `transition_modeling`]
 
-### Goal Interpretation
+### Modify the Prompt Templates
 
-### Subgoal Decomposition
+You can customize the prompt for {module} by modifying the prompt template. Create your custom template by editing or adding new content to: `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` with your customized input.
 
-### Transition Modeling
+### Change the Inputs to the Template
+
+You can change the inputs passed to the template. Go to `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py` and change lines `prompt = prompt.replace("<YOUR CUSTOM INPUT>", custom_input_variable)`
+
+### Useful Files for Reference:
+- **Prompt template:**
+  - `virtualhome_eval.evaluation.{module}.prompts.one_shot.py`
+
+- **Example Prompts:**
+  - `virtualhome_eval.evaluation.{module}.prompts.helm_prompts.json`
+  
+- **Scripts for prompt generation:**
+  - `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py`
+
+- **Scripts for module evaluation:**
+  - `virtualhome_eval.evaluation.{module}.scripts.evaluate_results.py`
+
+
+

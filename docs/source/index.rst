@@ -27,9 +27,9 @@ Welcome to Embodied Agent Interface's documentation!
 
    customization/prompts
 
-Indices and Tables
-==================
+.. Indices and Tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`

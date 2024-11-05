@@ -176,15 +176,102 @@ The evaluation process produces several outputs:
 
 
 
-### Examples
+## Examples
 
-**Task: ** ``
+**Task: ** `bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25`
 
+**Model**: `o1-preview`
 
+**Transition Model ($\mathcal{M}$)**: `Behavior` simulator
 
+**Initial States ($s_0$)**:
 
+```python
+onfloor(plywood.0, room_floor_living_room.0)
+onfloor(plywood.1, room_floor_living_room.0)
+onfloor(plywood.2, room_floor_living_room.0)
+onfloor(agent_n_01.1, room_floor_living_room.0)
+```
 
-### Usage
+**Goal ($g$)**:
+
+```python
+forall(plywood_n_01, onfloor(plywood_n_01, room_floor_kitchen.0))
+```
+
+**Output**:
+
+```python
+[
+ 'holds_rh(plywood.0)',
+ 'onfloor(agent_n_01.1, room_floor_kitchen.0)',
+ 'onfloor(plywood.0, room_floor_kitchen.0) and not holds_rh(plywood.0)',
+ 'onfloor(agent_n_01.1, room_floor_living_room.0)',
+ 'holds_rh(plywood.1)',
+ 'onfloor(agent_n_01.1, room_floor_kitchen.0)',
+ 'onfloor(plywood.1, room_floor_kitchen.0) and not holds_rh(plywood.1)',
+ 'onfloor(agent_n_01.1, room_floor_living_room.0)',
+ 'holds_rh(plywood.2)',
+ 'onfloor(agent_n_01.1, room_floor_kitchen.0)',
+ 'onfloor(plywood.2, room_floor_kitchen.0) and not holds_rh(plywood.2)'
+]
+```
+
+**Results**:
+
+```python
+"bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25": {
+    "success": true,
+    "info": "('Correct', True, [[{'action': 'RIGHT_GRASP', 'object': 'plywood_0'}, {'action': 'RIGHT_PLACE_ONTOP', 'object': 'room_floor_kitchen_0'}, {'action': 'RIGHT_GRASP', 'object': 'plywood_1'}, {'action': 'RIGHT_PLACE_ONTOP', 'object': 'room_floor_kitchen_0'}, {'action': 'RIGHT_GRASP', 'object': 'plywood_2'}, {'action': 'RIGHT_PLACE_ONTOP', 'object': 'room_floor_kitchen_0'}]], [])",
+    "goal_info": {
+        "success": true,
+        "subgoals": [
+            [
+                "forall",
+                "plywood.n.01",
+                "-",
+                "plywood.n.01",
+                "onfloor",
+                "plywood.n.01",
+                "floor.n.01_2"
+            ]
+        ],
+        "subgoal_success": [
+            true
+        ]
+    }
+},
+```
+
+**Overall Results Across Tasks**
+
+```python
+{
+    "trajectory_evaluation": {
+        "execution_success_rate": 0.62,
+        "grammar_error": {
+            "parsing": 0.02,
+            "hallucination": 0.03,
+            "predicate_argument_number": 0.0
+        },
+        "runtime_error": {
+            "wrong_order": 0.05,
+            "missing_step": 0.25,
+            "affordance": 0.03,
+            "additional_step": 0.07
+        }
+    },
+    "goal_evaluation": {
+        "task_success_rate": 0.57,
+        "state_goal": 0.565,
+        "relation_goal": 0.6936,
+        "action_goal": 0,
+        "total_goal": 0.6585
+    }
+}
+```
+
+## Usage
 
 To evaluate the subgoal decomposition module, use the following commands:
 

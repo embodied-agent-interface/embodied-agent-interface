@@ -50,13 +50,14 @@ def main():
         action="store_true",
         help="If specified, runs all combinations of unspecified arguments",
     )
-
-    # Parse the arguments and create a list of specified arguments
     args = parser.parse_args()
     specified_args = get_specified_args(parser, sys.argv)
     print(args)
     print("Specified arguments:", specified_args)
 
+
+    # Execute different arg combos sequentially
+    # TODO: multiprocessing
     if args.all:
         args_to_consider = ["mode", "eval_type", "dataset"]
         arg_options = {
@@ -70,27 +71,20 @@ def main():
             "dataset": ["virtualhome", "behavior"],
         }
 
-        # Identify unspecified arguments
         unspecified_args = [arg for arg in args_to_consider if arg not in specified_args]
         specified_args_dict = {arg: getattr(args, arg) for arg in args_to_consider if arg in specified_args}
-
-        # Get options for unspecified arguments
         options_list = [arg_options[arg] for arg in unspecified_args]
         combinations = list(product(*options_list))
 
         for combo in combinations:
-            # Create a copy of args
             combo_args = args.__dict__.copy()
-            # Set the specified arguments
             for arg, value in specified_args_dict.items():
                 combo_args[arg] = value
-            # Set the combination arguments
             for arg, value in zip(unspecified_args, combo):
                 combo_args[arg] = value
 
             print(f"Running with arguments: {combo_args}")
 
-            # Now call the evaluation function with combo_args
             if combo_args["dataset"] == "behavior":
                 from behavior_eval.agent_eval import (
                     agent_evaluation as behavior_agent_evaluation,
@@ -140,11 +134,10 @@ def main():
             )
 
 def get_specified_args(parser, argv):
-    """Return a set of argument names that were specified in the command line."""
     specified_args = set()
     for action in parser._actions:
         if not action.option_strings:
-            continue  # Skip positional arguments or actions without option strings
+            continue  
         for option_string in action.option_strings:
             if option_string in argv:
                 specified_args.add(action.dest)

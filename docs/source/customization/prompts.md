@@ -4,79 +4,71 @@
 
 ### Action Sequencing
 
-You can customize the prompts for action sequencing in two ways: by modifying the prompt templates or by changing the inputs to the templates. Follow the steps below depending on your needs:
+#### Customize the Prompt Templates
+- **Edit or Add Content**: Modify the prompt template in `behavior_eval.evaluation.action_sequencing.resources.prompt_templates.one_shot`.
+- **Update Import Path**: In `behavior_eval.evaluation.action_sequencing.action_sequence_evaluator`, point the `prompt` path to your customized template.
 
-**Modify the Prompt Templates**
+#### Customize the Inputs to the Templates
+- **Review Scene Information Collection**: Check how `init_state`, `target_state`, and `obj_list` are gathered in `action_sequence_evaluator.py`.
+- **Adjust Input Logic**: Modify `action_sequence_evaluator.py` to change how inputs are generated or collected.
 
-If you want to modify the prompt templates only:
-1. Create your custom template by editing or adding new content to: `behavior_eval.evaluation.action_sequencing.resources.prompt_templates.one_shot`
-   
-2. Once your new template is ready, update the importing path for the `prompt` in the `behavior_eval.evaluation.action_sequencing` to point to your custom template. 
+#### Useful Files for Reference
+- **Scripts for Prompt Generation**: `behavior_eval.evaluation.action_sequencing.scripts.generate_prompts`
+- **Prompt Template**: `behavior_eval.evaluation.action_sequencing.resources.prompt_templates.one_shot`
+- **Prompt Generator**: `behavior_eval.evaluation.action_sequencing.action_sequence_evaluator`
 
-**Change the Inputs to the Template**
-
-If you also want to change the inputs passed to the template:
-1. Review how the scene information (`init_state`, `target_state`, and `obj_list`) is collected in the `action_sequence_evaluator.py` file. These inputs are essential for generating prompts and are gathered based on the current state of the scene.
-
-2. Make adjustments to how these inputs are collected or generated. You can modify the logic in `action_sequence_evaluator.py` to use new input data or alter how the existing information is gathered.
-
-**Useful Files for Reference:**
-
-- **Scripts for prompt generation:**
-  - `behavior_eval.evaluation.action_sequencing.scripts.generate_prompts`
-  
-- **Prompt template:**
-  - `behavior_eval.evaluation.action_sequencing.resources.prompt_templates.one_shot`
-  
-- **Prompt generator:**
-  - `behavior_eval.evaluation.action_sequencing.action_sequence_evaluator`
-
-**Example Prompts:**
-You can find example prompts used for action sequencing evaluation in:
-- `behavior_eval.evaluation.action_sequencing.resources.prompts.helm_prompts`
-
+---
 
 ### Goal Interpretation
 
+*(No specific customization instructions provided)*
+
+---
+
 ### Subgoal Decomposition
 
-To update subgoal decomposition prompt part, you can modify the file `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`, specifically `system_prompt` and `target_task_info` variables.
+#### Customize the Prompt Templates
+- **Edit or Add Content**: Modify the `system_prompt` and `target_task_info` in `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`.
 
-**Useful Files for Reference:**
+#### Useful Files for Reference
+- **Scripts for Prompt Generation**: `behavior_eval.evaluation.subgoal_decomposition.scripts.generate_prompts`
+- **Prompt Template**: `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
+- **Prompt Generator**: `behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils` and `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
 
-- **Scripts for prompt generation:**
-  - `behavior_eval.evaluation.subgoal_decomposition.scripts.generate_prompts`
-- **Prompt template:**
-  - `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
-- **Prompt generator:**
-  - `behavior_eval.evaluation.subgoal_decomposition.subgoal_prompts_utils` and `behavior_eval.evaluation.subgoal_decomposition.resources.prompt_template.meta_prompt`
+---
 
 ### Transition Modeling
 
+#### Customize the Prompt Templates
+- **Edit or Add Content**: Modify the prompt template in `behavior_eval.evaluation.transition_modeling.resources.prompt_templates.prompts`.
+- **Update Import Path**: In `behavior_eval.evaluation.transition_modeling.transition_modeling_evaluator`, point the `prompt` path to your custom template.
+
+#### Useful Files for Reference
+- **Scripts for Prompt Generation**: `behavior_eval.evaluation.transition_modeling.scripts.generate_prompts`
+- **Prompt Template**: `behavior_eval.evaluation.transition_modeling.resources.prompt_templates.prompts`
+- **Prompt Generator**: `behavior_eval.evaluation.transition_modeling.transition_modeling_evaluator`
+
+---
+
 ## VirtualHome
 
-For any of the four modules in VirtualHome, you can customize the prompt by editing the corresponding files. Here, `{module}` should be one of [`action_sequencing`, `goal_interpretation`, `subgoal_decomposition`, `transition_modeling`]
+For any module in VirtualHome, customize prompts by editing the corresponding files. Here, `{module}` could be `action_sequencing`, `goal_interpretation`, `subgoal_decomposition`, or `transition_modeling`.
 
-### Modify the Prompt Templates
+#### Customize the Prompt Templates
 
-You can customize the prompt for {module} by modifying the prompt template. Create your custom template by editing or adding new content to: `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` (in subgoal decomposition, this should be  `virtualhome_eval.evaluation.{module}.prompts.meta_prompt`) with your customized input.
+To customize the prompt for a specific `{module}`:
+- **Edit or Add Content**: Modify the prompt template in `virtualhome_eval.evaluation.{module}.prompts.one_shot.py`  
+  *(For subgoal decomposition, use `virtualhome_eval.evaluation.{module}.prompts.meta_prompt`)*
 
-### Change the Inputs to the Template
+#### Customize the Inputs to the Templates
 
-You can change the inputs passed to the template. Go to `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py` and change lines `prompt = prompt.replace("<YOUR CUSTOM INPUT>", custom_input_variable)`
+To change the inputs passed to the template:
+- **Edit Input Replacement Code**: In `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py`, update lines to replace the default input using `prompt = prompt.replace("<YOUR CUSTOM INPUT>", custom_input_variable)`.
 
-### Useful Files for Reference:
-- **Prompt template:**
-  - `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` (or `...meta_prompt.py`)
+#### Useful Files for Reference
+- **Prompt Template**: `virtualhome_eval.evaluation.{module}.prompts.one_shot.py` (or `...meta_prompt.py` for subgoal decomposition)
+- **Example Prompts**: `virtualhome_eval.evaluation.{module}.prompts.helm_prompts.json`
+- **Scripts for Prompt Generation**: `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py`
+- **Scripts for Module Evaluation**: `virtualhome_eval.evaluation.{module}.scripts.evaluate_results.py`
 
-- **Example Prompts:**
-  - `virtualhome_eval.evaluation.{module}.prompts.helm_prompts.json`
-  
-- **Scripts for prompt generation:**
-  - `virtualhome_eval.evaluation.{module}.scripts.generate_prompts.py`
-
-- **Scripts for module evaluation:**
-  - `virtualhome_eval.evaluation.{module}.scripts.evaluate_results.py`
-
-
-
+---

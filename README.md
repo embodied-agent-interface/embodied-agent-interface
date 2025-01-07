@@ -89,7 +89,16 @@ Our benchmark provides a comprehensive assessment of LLM performance across diff
    pip install -e .
    ```
 
-3. **(Optional) Install iGibson for behavior evaluation**:
+3. **(Optional) Test PDDL planner for transition modeling**:
+    If you want to evaluate `transition_modeling`, it is highly recommended to test the installation of PDDL planner. You can test by running
+    ```bash
+    python examples/pddl_tester.py
+    ```
+    If the output is `Results:
+    ['walk_towards character light', 'switch_on character light']`, the installation is successful. Otherwise, you can refer to the `BUILD.md` under `pddlgym_planners/` or [this](https://github.com/embodied-agent-interface/embodied-agent-interface/blob/main/examples/build_troubleshooting.md) for more instructions.
+
+
+4. **(Optional) Install iGibson for behavior evaluation**:
    
    If you need to use `behavior_eval`, install iGibson. Follow these steps to minimize installation issues:
 

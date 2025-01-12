@@ -1130,6 +1130,16 @@ def check_no_hallucination_in_arg(action_list, relevant_id):
                     return False
     return True
 
+def check_name_id_format(action_list):
+    for action_dict in action_list:
+        for predicate_name, params in action_dict.items():
+            if len(params) % 2 != 0:
+                logger.info(f"  Action {predicate_name} does not follow name_id format")
+                return (
+                    False,
+                    f"Action {predicate_name} does not follow name_id format",
+                )
+    return True, None
 
 def check_action_grammar(action_list):
     for action_dict in action_list:
@@ -1137,7 +1147,7 @@ def check_action_grammar(action_list):
             params.remove("") if "" in params else None
             # if len(params) != valid_actions[predicate_name][1]:
             # edit by shiwenxuan
-            if len(params) % 2 != 0 or len(params) // 2 != valid_actions[predicate_name][1]:
+            if len(params) // 2 != valid_actions[predicate_name][1]:
                 logger.info(
                     f"Action {predicate_name} has {params} arguments, but expected number is {valid_actions[predicate_name][1]}"
                 )

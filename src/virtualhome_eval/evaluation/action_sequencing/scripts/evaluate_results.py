@@ -172,7 +172,7 @@ def evaluate_results(args):
                 actions = None
                 format_error = True
 
-            if actions is None or len(actions) == 0:
+            if actions is None or len(actions) == 0 or not check_name_id_format(actions)[0]:
                 all_parsing_wrong += 1
                 logger.info(f"Task {task_name}, file {file_id} prediction has no prediction")
                 format_error = True

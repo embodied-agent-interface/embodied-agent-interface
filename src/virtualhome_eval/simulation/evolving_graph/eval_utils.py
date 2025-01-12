@@ -284,22 +284,30 @@ def check_order_with_or_score(action_goals, input_string):
             break
     return cnt, unsatisfied_action_goals
 
-
+# edit by shiwenxuan
 def json_to_action(action_list, relevant_name_to_id):
     actions = []
-    # try:
     for action_json in action_list:
         for action, objects in action_json.items():
             if len(objects) == 0:
                 actions.append(f"[{action}]")
-            elif len(objects) == 1:
-                obg_id1 = relevant_name_to_id[objects[0]]
-                actions.append(f"[{action}] <{objects[0]}> ({obg_id1})")
             elif len(objects) == 2:
-                obg_id1 = relevant_name_to_id[objects[0]]
-                obg_id2 = relevant_name_to_id[objects[1]]
+                obj_name1 = objects[0]
+                obj_id1 = objects[1]
+                key1 = f"{obj_name1}_{obj_id1}"
+                obg_id1 = relevant_name_to_id[key1]
+                actions.append(f"[{action}] <{obj_name1}> ({obg_id1})")
+            elif len(objects) == 4:
+                obj_name1 = objects[0]
+                obj_id1 = objects[1]
+                obj_name2 = objects[2]
+                obj_id2 = objects[3]
+                key1 = f"{obj_name1}_{obj_id1}"
+                key2 = f"{obj_name2}_{obj_id2}"
+                obg_id1 = relevant_name_to_id[key1]
+                obg_id2 = relevant_name_to_id[key2]
                 actions.append(
-                    f"[{action}] <{objects[0]}> ({obg_id1}) <{objects[1]}> ({obg_id2})"
+                    f"[{action}] <{obj_name1}> ({obg_id1}) <{obj_name2}> ({obg_id2})"
                 )
     return actions
     # except Exception as e:
@@ -1111,8 +1119,14 @@ def check_no_hallucination_in_action(action_list):
 def check_no_hallucination_in_arg(action_list, relevant_id):
     for action_dict in action_list:
         for action, objects in action_dict.items():
-            for obj in objects:
-                if relevant_id.get(obj, None) is None:
+            # for obj in objects:
+            #     if relevant_id.get(obj, None) is None:
+            # edit by shiwenxuan
+            for i in range(0, len(objects), 2):
+                obj_name = objects[i]
+                obj_id = objects[i + 1]
+                obj_key = f"{obj_name}_{obj_id}"
+                if relevant_id.get(obj_key, None) is None:
                     return False
     return True
 
@@ -1121,7 +1135,9 @@ def check_action_grammar(action_list):
     for action_dict in action_list:
         for predicate_name, params in action_dict.items():
             params.remove("") if "" in params else None
-            if len(params) != valid_actions[predicate_name][1]:
+            # if len(params) != valid_actions[predicate_name][1]:
+            # edit by shiwenxuan
+            if len(params) % 2 != 0 or len(params) // 2 != valid_actions[predicate_name][1]:
                 logger.info(
                     f"Action {predicate_name} has {params} arguments, but expected number is {valid_actions[predicate_name][1]}"
                 )

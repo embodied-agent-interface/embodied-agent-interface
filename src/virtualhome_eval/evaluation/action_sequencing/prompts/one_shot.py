@@ -1,5 +1,5 @@
 prompt = """
-The task is to guide the robot to take actions from current state to fulfill some node goals, edge goals, and action goals. The input will be the related objects in the scene, nodes and edges in the current environment, and the desired node goals, edge goals, and action goals. The output should be action commands in json format so that after the robot executes the action commands sequentially, the ending environment would satisfy the goals. 
+The task is to guide the robot to take actions from the current state to fulfill some node goals, edge goals, and action goals. The input will be the related objects in the scene, nodes and edges in the current environment, and the desired node goals, edge goals, and action goals. The output should be action commands in JSON format so that after the robot executes the action commands sequentially, the ending environment would satisfy the goals.
 
 Data format:
 Objects in the scene indicates those objects involved in the action execution. It follows the format: <object_name> (object_id)
@@ -24,10 +24,20 @@ The following action(s) should be included:
 There is no action requirement.
 It means there is no action you have to include in output, and you can use any action to achieve the node and edge goals. Warning: No action requirement does not mean empty output. You should always output some actions and their arguments.
 
+Action commands include action names and objects. Each action's number of objects is fixed (0, 1, or 2), and the output should include object names followed by their IDs:
+[]: Represents 0 objects.
+[object, object_id]: Represents 1 object.
+[object 1, object_1_id, object 2, object_2_id]: Represents 2 objects.
+The output must be in JSON format, where:
+Dictionary keys are action names.
+Dictionary values are lists containing the objects (with their IDs) for the corresponding action.
+The order of execution is determined by the order in which the key-value pairs appear in the JSON dictionary.
 
-Action commands include action name and objects. The number of objects (required_number of parameters) for each action is fixed and is given below, either 0, 1, or 2. The output action commands should be in json format. The dictionary keys should be action names. The dictionary values should be a list containing the objects of the corresponding action, where [] is for 0 object, [object] is for 1 object, [object 1, object 2] is for 2 objects. The action commands order is represented by the order they appear in the json dictionary. The key value pair appearing first will be executed first, the key value pair appearing second will be executed second, so on and so forth.
-
-For example, if you want to first FIND the sink and then PUTBACK cup to the sink, you should express it as {'FIND':['sink'], 'PUTBACK':['cup', 'sink']}
+For example, If you want to first FIND the sink and then PUTBACK a cup into the sink, you should express it as:
+{
+  "FIND": ["sink", "sink_id"],
+  "PUTBACK": ["cup", "cup_id", "sink", "sink_id"]
+}
 
 The object of action also needs to satisfied some properties preconditions. For example, SWITCHON's object number is 1. To switch on something, the object should 'HAS_SWITCH'. The rule is represented as SWITCHON = ("Switch on", 1, [['HAS_SWITCH']]). Another example is POUR. POUR's object number is 2. To pour sth A into sth B, A should be pourable and drinkable, and B should be RECIPIENT. The rule is represented as POUR = ("Pour", 2, [['POURABLE', 'DRINKABLE'], ['RECIPIENT']]).
 
@@ -78,7 +88,7 @@ EAT: (1, [['EATABLE']]) # Eat some food
 RELEASE: (1, [[]]) # Let go of something inside the current room
 TYPE: (1, [['HAS_SWITCH']]) # Type on a keyboard
 
-Notice: 
+Notice:
 1. CLOSE action is opposed to OPEN action, CLOSE sth means changing the object's state from OPEN to CLOSE. 
 
 2. You cannot [PUTIN] <character> <room name>. If you want robot INSIDE some room, please [WALK] <room name>.
@@ -89,9 +99,11 @@ Notice:
 
 5. Importantly, if you want to apply ANY action on <object_name>, you should NEAR it. Therefore, you should apply WALK action as [WALK] <object_name> to first get near to the object before you apply any following actions, if you have no clue you are already NEAR <object_name>
 
-6. When output the objects, please only output object names but not their ids. Follow strictly the parameter number for each action. 
+6. Output only object names and their IDs, not just the names.
 
 7. Output should not be empty! Always output some actions and their arguments.
+
+8. If you want to apply an action on an object, you should WALK to the object first.
 
 Input:
 The relevant objects in the scene are:

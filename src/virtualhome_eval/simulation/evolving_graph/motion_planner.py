@@ -277,7 +277,11 @@ class MotionPlanner(object):
                 + str(node_dict["properties"])
             )
             object_in_scene += "\n"
-            relevant_name_to_id[str(node_dict["class_name"])] = node_dict["id"]
+            # relevant_name_to_id[str(node_dict["class_name"])] = node_dict["id"]
+            # edit by shiwenxuan
+            key = f"{node_dict['class_name']}_{node_dict['id']}"
+            relevant_name_to_id[key] = node_dict["id"]
+
         object_in_scene += "-----------------\n"
         change_in_init += "Nodes:\n"
         for node_id in existing_nodes:

@@ -96,7 +96,7 @@ class TemporalOrderChecker:
         elif self.missing_connective == "or":
             return any(preconds_found_list)
         else:
-            return preconds_found_list[0]
+            return preconds_found_list[0] if preconds_found_list else False
 
     def run_checker(self) -> ExecutionInfo:
         if self.error_info.error_type != 1:

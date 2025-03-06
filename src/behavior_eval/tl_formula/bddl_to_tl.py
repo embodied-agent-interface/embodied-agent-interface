@@ -1,5 +1,4 @@
-import bddl
-import json
+import re
 from typing import List, Dict
 from bddl.condition_evaluation import HEAD
 
@@ -35,77 +34,155 @@ def replace_wildcard_name(bddl_body:List, name_to_replace:str, special_symbol_id
             raise ValueError(f'Invalid part type: {part} in bddl_body {bddl_body}')
     return new_bddl_body
 
-def build_tl_expr_from_bddl_condition_recursively(bddl_body:List, special_symbol_id=0, level=0) -> str:
+def clean_object_type(object_type: str) -> str:
+    """Remove suffixes (like _n_01) from object type names"""
+    return re.sub(r'_[nvar]_\d+$', '', object_type)
+
+def build_tl_expr_from_bddl_condition_recursively(bddl_body: List, object_mappings: Dict[str, str] = None, level: int = 0) -> str:
+    """
+    Recursively convert BDDL conditions to temporal logic expressions, using object type names as variables.
+    
+    Args:
+        bddl_body: BDDL condition expression
+        object_mappings: Object mapping dictionary, tracking variable names for each object type
+        level: Nesting level, used to determine whether to add parentheses
+    
+    Returns:
+        Converted temporal logic expression
+    """
+    if object_mappings is None:
+        object_mappings = {}
+        
     connective_or_primitive = bddl_body[0]
+    
     if connective_or_primitive == 'exists' or connective_or_primitive == 'forall':
-        category_name = bddl_body[1][2]
-        special_symbol = f'x{special_symbol_id}'
-        exists_body = replace_wildcard_name(bddl_body[2], category_name, special_symbol_id)
-        special_symbol_id += 1
-        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(exists_body, special_symbol_id, level+1)
+        category_name = bddl_body[1][2]  # Get object type name
+        special_symbol = clean_object_type(category_name)  # Cleaned object type name as quantifier variable
+        
+        # Process sub-expression, pass object type mapping
+        current_mappings = object_mappings.copy()
+        current_mappings[category_name] = special_symbol
+        
+        # Recursively process sub-expression
+        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(bddl_body[2], current_mappings, level+1)
+        
+        # Build quantifier expression
         connective_name = connective_or_primitive
-        tl_expr = f'{connective_name} {special_symbol}. (not {category_name}({special_symbol}) or {tl_exists_body})'
+        tl_expr = f'{connective_name} {special_symbol}. ({tl_exists_body})'
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'forn':
-        num = bddl_body[1][0]
-        category_name = bddl_body[2][2]
-        special_symbol = f'x{special_symbol_id}'
-        exists_body = replace_wildcard_name(bddl_body[3], category_name, special_symbol_id)
-        special_symbol_id += 1
-        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(exists_body, special_symbol_id, level+1)
-        connective_name = 'forn'
-        tl_expr = f'{connective_name} {num}. {special_symbol}. (not {category_name}({special_symbol}) or {tl_exists_body})'
+        num = bddl_body[1][0]  # Get quantity
+        category_name = bddl_body[2][2]  # Get object type name
+        special_symbol = clean_object_type(category_name)  # Cleaned object type name as quantifier variable
+        
+        # Process sub-expression, pass object type mapping
+        current_mappings = object_mappings.copy()
+        current_mappings[category_name] = special_symbol
+        
+        # Recursively process sub-expression
+        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(bddl_body[3], current_mappings, level+1)
+        
+        # Build quantifier expression
+        tl_expr = f'forn {num}. {special_symbol}. ({tl_exists_body})'
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'forpairs':
-        category_name_1 = bddl_body[1][2]
-        category_name_2 = bddl_body[2][2]
-        special_symbol_1 = f'x{special_symbol_id}'
-        special_symbol_2 = f'x{special_symbol_id+1}'
-        exists_body = replace_wildcard_name(bddl_body[3], category_name_1, special_symbol_id)
-        exists_body = replace_wildcard_name(exists_body, category_name_2, special_symbol_id+1)
-        special_symbol_id += 2
-        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(exists_body, special_symbol_id, level+1)
-        tl_expr_1 = f'forall {special_symbol_1}. (not {category_name_1}({special_symbol_1}) or forn 1. {special_symbol_2}. (not {category_name_2}({special_symbol_2}) or {tl_exists_body}))'
-        tl_expr_2 = f'forall {special_symbol_2}. (not {category_name_2}({special_symbol_2}) or forn 1. {special_symbol_1}. (not {category_name_1}({special_symbol_1}) or {tl_exists_body}))'
+        # Example: forpairs(basket_n_01, candle_n_01, inside(candle_n_01, basket_n_01))
+        category_name_1 = bddl_body[1][2]  # Example: basket_n_01
+        category_name_2 = bddl_body[2][2]  # Example: candle_n_01
+        
+        # Use cleaned object type names as variables
+        special_symbol_1 = clean_object_type(category_name_1)
+        special_symbol_2 = clean_object_type(category_name_2)
+        
+        # Get relation expression and process
+        relation_body = bddl_body[3]
+        
+        # Create object mapping for current scope
+        current_mappings = object_mappings.copy()
+        current_mappings[category_name_1] = special_symbol_1
+        current_mappings[category_name_2] = special_symbol_2
+        
+        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(relation_body, current_mappings, level+1)
+        
+        # Build forpairs equivalent expression
+        tl_expr_1 = f'forall {special_symbol_1}. (exists {special_symbol_2}. ({tl_exists_body}))'
+        tl_expr_2 = f'forall {special_symbol_2}. (exists {special_symbol_1}. ({tl_exists_body}))'
         tl_expr = f'{tl_expr_1} and {tl_expr_2}'
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'fornpairs':
-        num = bddl_body[1][0]
-        category_name_1 = bddl_body[2][2]
-        category_name_2 = bddl_body[3][2]
-        special_symbol_1 = f'x{special_symbol_id}'
-        special_symbol_2 = f'x{special_symbol_id+1}'
-        exists_body = replace_wildcard_name(bddl_body[4], category_name_1, special_symbol_id)
-        exists_body = replace_wildcard_name(exists_body, category_name_2, special_symbol_id+1)
-        special_symbol_id += 2
-        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(exists_body, special_symbol_id, level+1)
-        tl_expr_1 = f'forn {num}. {special_symbol_1}. (not {category_name_1}({special_symbol_1}) or forn 1. {special_symbol_2}. (not {category_name_2}({special_symbol_2}) or {tl_exists_body}))'
-        tl_expr_2 = f'forn {num}. {special_symbol_2}. (not {category_name_2}({special_symbol_2}) or forn 1. {special_symbol_1}. (not {category_name_1}({special_symbol_1}) or {tl_exists_body}))'
+        num = bddl_body[1][0]  # Get quantity
+        category_name_1 = bddl_body[2][2]  # Get first object type name
+        category_name_2 = bddl_body[3][2]  # Get second object type name
+        
+        # Use cleaned object type names as variables
+        special_symbol_1 = clean_object_type(category_name_1)
+        special_symbol_2 = clean_object_type(category_name_2)
+        
+        # Get relation expression and process
+        relation_body = bddl_body[4]
+        
+        # Create object mapping for current scope
+        current_mappings = object_mappings.copy()
+        current_mappings[category_name_1] = special_symbol_1
+        current_mappings[category_name_2] = special_symbol_2
+        
+        tl_exists_body = build_tl_expr_from_bddl_condition_recursively(relation_body, current_mappings, level+1)
+        
+        # Build fornpairs equivalent expression
+        tl_expr_1 = f'forn {num}. {special_symbol_1}. (exists {special_symbol_2}. ({tl_exists_body}))'
+        tl_expr_2 = f'forn {num}. {special_symbol_2}. (exists {special_symbol_1}. ({tl_exists_body}))'
         tl_expr = f'{tl_expr_1} and {tl_expr_2}'
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'and':
-        and_statements = [build_tl_expr_from_bddl_condition_recursively(part, special_symbol_id, level+1) for part in bddl_body[1:]]
+        # Process all AND sub-expressions
+        and_statements = [build_tl_expr_from_bddl_condition_recursively(part, object_mappings, level+1) for part in bddl_body[1:]]
         tl_expr = ' and '.join(and_statements)
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'or':
-        or_statements = [build_tl_expr_from_bddl_condition_recursively(part, special_symbol_id, level+1) for part in bddl_body[1:]]
+        # Process all OR sub-expressions
+        or_statements = [build_tl_expr_from_bddl_condition_recursively(part, object_mappings, level+1) for part in bddl_body[1:]]
         tl_expr = ' or '.join(or_statements)
+        
         if level > 0:
             tl_expr = f'({tl_expr})'
+            
     elif connective_or_primitive == 'not':
-        not_statement = build_tl_expr_from_bddl_condition_recursively(bddl_body[1], special_symbol_id, level+1)
+        # Process NOT sub-expression
+        not_statement = build_tl_expr_from_bddl_condition_recursively(bddl_body[1], object_mappings, level+1)
         tl_expr = f'not {not_statement}'
-        if level > 0:
-            tl_expr = f'({tl_expr})'
+        
+        # if level > 0:
+        #     tl_expr = f'({tl_expr})'
+            
     else:
+        # Process basic predicates
         primitive_name = connective_or_primitive
-        params = ', '.join(bddl_body[1:])
-        tl_expr = f'{primitive_name}({params})'
+        
+        # Process predicate parameters, replace object type names with variable names
+        args = []
+        for arg in bddl_body[1:]:
+            if arg in object_mappings:
+                args.append(object_mappings[arg])
+            else:
+                args.append(arg)
+        
+        tl_expr = f'{primitive_name}({", ".join(args)})'
+        
     return tl_expr
 
 
